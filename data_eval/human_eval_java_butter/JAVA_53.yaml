@@ -1,0 +1,20 @@
+"name": "Java_53"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Add hwo numbers x and y\n\n>>>>>> add(2, 3)\n    5\n    >>> add(5, 7)\n    12\n\
+  \     */\n    public int add(int x, int y) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        Random rand = new Random(42);\n     \
+  \   List<Boolean> correct = Arrays.asList(\n                s.add(0, 1) == 1,\n\
+  \                s.add(1, 0) == 1,\n                s.add(2, 3) == 5,\n        \
+  \        s.add(5, 7) == 12,\n                s.add(7, 5) == 12\n        );\n   \
+  \     if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n        for (int i = 0; i < 100; i++) {\n            int x = rand.nextInt(1000),\
+  \ y = rand.nextInt(1000);\n            if (s.add(x, y) != x + y) {\n           \
+  \     throw new AssertionError();\n            }\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

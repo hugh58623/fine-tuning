@@ -1,0 +1,21 @@
+"name": "Java_16"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a string, find out how many distinct discrete characters (regardless of case\
+  \ font) does it consist of\n\n>>>>>> countDistinctCharacters(\"xyzXYZ\")\n    3\n\
+  \    >>> countDistinctCharacters(\"Jerry\")\n    4\n     */\n    public int countDistinctCharacters(String\
+  \ string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.countDistinctCharacters(\"\") == 0,\n                s.countDistinctCharacters(\"\
+  abcde\") == 5,\n                s.countDistinctCharacters(\"abcde\" + \"cade\" +\
+  \ \"CADE\") == 5,\n                s.countDistinctCharacters(\"aaaaAAAAaaaa\") ==\
+  \ 1,\n                s.countDistinctCharacters(\"Jerry jERRY JeRRRY\") == 5\n \
+  \       );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

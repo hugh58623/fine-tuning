@@ -1,0 +1,14 @@
+name: mbpp_499
+language: py
+prompt: "\n\ndef diameter_circle(r):\n  \"\"\"\n  Write a function to find the diameter\
+  \ of a circle.\n  >>> diameter_circle(10)\n  20\n  >>> diameter_circle(40)\n  80\n\
+  \  >>> diameter_circle(15)\n  30\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==20\n\
+  \    assert candidate(40)==80\n    assert candidate(15)==30\n\n\n\ndef test_check():\n\
+  \    check(diameter_circle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

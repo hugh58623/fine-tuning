@@ -1,0 +1,16 @@
+name: mbpp_744
+language: py
+prompt: "\n\ndef check_none(test_tup):\n  \"\"\"\n  Write a function to check if the\
+  \ given tuple has any none value or not.\n  >>> check_none((10, 4, 5, 6, None))\n\
+  \  True\n  >>> check_none((7, 8, 9, 11, 14))\n  False\n  >>> check_none((1, 2, 3,\
+  \ 4, None))\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 5, 6, None)) == True\n    assert candidate((7, 8, 9, 11, 14)) == False\n    assert\
+  \ candidate((1, 2, 3, 4, None)) == True\n\n\n\ndef test_check():\n    check(check_none)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

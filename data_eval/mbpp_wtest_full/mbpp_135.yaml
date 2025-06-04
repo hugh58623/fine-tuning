@@ -1,0 +1,14 @@
+name: mbpp_135
+language: py
+prompt: "\n\ndef hexagonal_num(n):\n\t\"\"\"\n\tWrite a function to find the nth hexagonal\
+  \ number.\n\t>>> hexagonal_num(10)\n\t190\n\t>>> hexagonal_num(5)\n\t45\n\t>>> hexagonal_num(7)\n\
+  \t91\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 190\n    assert candidate(5) == 45\n    assert candidate(7) == 91\n\n\n\ndef test_check():\n\
+  \    check(hexagonal_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

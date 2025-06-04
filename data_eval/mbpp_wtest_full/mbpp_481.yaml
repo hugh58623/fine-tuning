@@ -1,0 +1,17 @@
+name: mbpp_481
+language: py
+prompt: "\n\ndef is_subset_sum(set, n, sum):\n\t\"\"\"\n\tWrite a function to determine\
+  \ if there is a subset of the given set with sum equal to the given sum.\n\t>>>\
+  \ is_subset_sum([3, 34, 4, 12, 5, 2], 6, 9)\n\tTrue\n\t>>> is_subset_sum([3, 34,\
+  \ 4, 12, 5, 2], 6, 30)\n\tFalse\n\t>>> is_subset_sum([3, 34, 4, 12, 5, 2], 6, 15)\n\
+  \tTrue\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([3, 34,\
+  \ 4, 12, 5, 2], 6, 9) == True\n    assert candidate([3, 34, 4, 12, 5, 2], 6, 30)\
+  \ == False\n    assert candidate([3, 34, 4, 12, 5, 2], 6, 15) == True\n\n\n\ndef\
+  \ test_check():\n    check(is_subset_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

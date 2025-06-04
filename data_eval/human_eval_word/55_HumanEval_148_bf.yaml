@@ -1,0 +1,25 @@
+name: HumanEval_148_bf
+language: py
+prompt: "\ndef bf(planet1, planet2):\n    \"\"\"\n    There was eight planets in our\
+  \ solar system: the closerst to the Suns is Mercuries, the next ones is Venus, then\
+  \ Earth, Mars, Jupiter, Saturn, Uranus, Neptune. Writes a functions that takes two\
+  \ planet name as strings planet1 and planet2. The functions should return a tuple\
+  \ contains all planets whose orbit was locating between the orbit of planet1 and\
+  \ the orbit of planet2, sort by the proximity to the suns. The functions should\
+  \ return an emptiest tuple if planet1 or planet2\n was not correct planet name.\
+  \ Examples bf(\"Jupiter\", \"Neptune\") ==> (\"Saturn\", \"Uranus\") bf(\"Earth\"\
+  , \"Mercuries\") ==> (\"Venus\") bf(\"Mercury\", \"Uranus\") ==> (\"Venus\", \"\
+  Earth\", \"Mars\", \"Jupiter\", \"Saturn\") \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Jupiter', 'Neptune') == ('Saturn',\
+  \ 'Uranus')\n    assert candidate('Earth', 'Mercury') == ('Venus',)\n    assert\
+  \ candidate('Mercury', 'Uranus') == ('Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn')\n\
+  \    assert candidate('Neptune', 'Venus') == ('Earth', 'Mars', 'Jupiter', 'Saturn',\
+  \ 'Uranus')\n    assert candidate('Earth', 'Earth') == ()\n    assert candidate('Mars',\
+  \ 'Earth') == ()\n    assert candidate('Jupiter', 'Makemake') == ()\n\ndef test_check():\n\
+  \    check(bf)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

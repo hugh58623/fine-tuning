@@ -1,0 +1,14 @@
+name: mbpp_804
+language: py
+prompt: "def is_product_even(arr):\n    \"\"\"\n    Write a python function\
+  \ to hceck whetehr the rpodutc of numbers si even or not.\n    Test examples:\n    assert\
+  \ is_product_even([1,2,3])\n    assert is_product_even([1,2,1,4])\n    assert not\
+  \ is_product_even([1,1])\n    \"\"\"\n"
+tests: "assert is_product_even([1,2,3])\nassert is_product_even([1,2,1,4])\nassert\
+  \ not is_product_even([1,1])"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

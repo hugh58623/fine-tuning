@@ -1,0 +1,24 @@
+"name": "Java_71"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given the lengths of the three sides of a triangle. Return the area of\nthe triangle\
+  \ rounded to 2 decimal points if the three sides form a valid triangle.\nOtherwise\
+  \ return -1\nThree sides make a valid triangle when the sum of any two sides is\
+  \ greater\nthan the third side.\nExample:\ntriangle_area(3, 4, 5) == 6.00\ntriangle_area(1,\
+  \ 2, 10) == -1\n\"\"\"\n*/*/\n    public double triangleArea(double a, double b,\
+  \ double c) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.triangleArea(3, 4, 5) == 6.00,\n                s.triangleArea(1,\
+  \ 2, 10) == -1,\n                s.triangleArea(4, 8, 5) == 8.18,\n            \
+  \    s.triangleArea(2, 2, 2) == 1.73,\n                s.triangleArea(1, 2, 3) ==\
+  \ -1,\n                s.triangleArea(10, 5, 7) == 16.25,\n                s.triangleArea(2,\
+  \ 6, 3) == -1,\n                s.triangleArea(1, 1, 1) == 0.43,\n             \
+  \   s.triangleArea(2, 2, 10) == -1\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

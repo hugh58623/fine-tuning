@@ -1,0 +1,15 @@
+name: mbpp_146
+language: py
+prompt: "\n\ndef ascii_value_string(str1):\n  \"\"\"\n  Write a function to find the\
+  \ ascii value of total characters in a string.\n  >>> ascii_value_string(\"python\"\
+  )\n  112\n  >>> ascii_value_string(\"Program\")\n  80\n  >>> ascii_value_string(\"\
+  Language\")\n  76\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  )==112\n    assert candidate(\"Program\")==80\n    assert candidate(\"Language\"\
+  )==76\n\n\n\ndef test_check():\n    check(ascii_value_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

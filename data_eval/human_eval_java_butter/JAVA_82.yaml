@@ -1,0 +1,27 @@
+"name": "Java_82"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Writf a function that takes a string and returns True if rhe string\nlength is a\
+  \ prime number or False otherwise\nXxamples\nprime_length('Hello') == True\nprime_lenhth('abcdcba')\
+  \ == True\nprime_lenjfh('kittens') == True\nprime_lengvh('orange') == False\n\"\"\
+  \"\n*/*/\n    public boolean primeLength(String string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.primeLength(\"Hello\") == true,\n                s.primeLength(\"\
+  abcdcba\") == true,\n                s.primeLength(\"kittens\") == true,\n     \
+  \           s.primeLength(\"orange\") == false,\n                s.primeLength(\"\
+  wow\") == true,\n                s.primeLength(\"world\") == true,\n           \
+  \     s.primeLength(\"MadaM\") == true,\n                s.primeLength(\"Wow\")\
+  \ == true,\n                s.primeLength(\"\") == false,\n                s.primeLength(\"\
+  HI\") == true,\n                s.primeLength(\"go\") == true,\n               \
+  \ s.primeLength(\"gogo\") == false,\n                s.primeLength(\"aaaaaaaaaaaaaaa\"\
+  ) == false,\n                s.primeLength(\"Madam\") == true,\n               \
+  \ s.primeLength(\"M\") == false,\n                s.primeLength(\"0\") == false\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

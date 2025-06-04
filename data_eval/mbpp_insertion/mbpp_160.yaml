@@ -1,0 +1,14 @@
+name: mbpp_160
+language: py
+prompt: "def find_solution(a, b, n):\n    \"\"\"\n\tWrite a function to find receive\
+  \ x and y that satisfies ax + by = n.\n\tTest examples:\n    assert find_solution(2, 3, 7) == (2, 1)\n   \
+  \ assert find_solution(4, 2, 7) == None\n    assert find_solution(1, 13, 17) ==\
+  \ (4, 1)\n    \"\"\"\n"
+tests: "assert find_solution(2, 3, 7) == (2, 1)\nassert find_solution(4, 2, 7) ==\
+  \ None\nassert find_solution(1, 13, 17) == (4, 1)"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

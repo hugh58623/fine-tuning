@@ -1,0 +1,16 @@
+name: mbpp_963
+language: py
+prompt: "\n\ndef discriminant_value(x,y,z):\n    \"\"\"\n    Write a function to calculate\
+  \ the discriminant value.\n    >>> discriminant_value(4,8,2)\n    (\"Two solutions\"\
+  ,32)\n    >>> discriminant_value(5,7,9)\n    (\"no real solution\",-131)\n    >>>\
+  \ discriminant_value(0,0,9)\n    (\"one solution\",0)\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,8,2)==(\"\
+  Two solutions\",32)\n    assert candidate(5,7,9)==(\"no real solution\",-131)\n\
+  \    assert candidate(0,0,9)==(\"one solution\",0)\n\n\n\ndef test_check():\n  \
+  \  check(discriminant_value)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

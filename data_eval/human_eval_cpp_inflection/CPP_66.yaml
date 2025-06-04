@@ -1,0 +1,19 @@
+"name": "CPP_66"
+"language": "cpp"
+"prompt": "/*\nTasking Write a functions that takes a string as input and returning\
+  \ the sum of the upper character only' ASCII code. Examples: digitSum(\"\") => 0\
+  \ digitSum(\"abAB\") => 131 digitSum(\"abcCd\") => 67 digitSum(\"helloE\") => 69\
+  \ digitSum(\"woArBld\") => 131 digitSum(\"aAaaaXa\") => 153\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nint digitSum(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (digitSum(\"\"\
+  ) == 0);\n    assert (digitSum(\"abAB\") == 131);\n    assert (digitSum(\"abcCd\"\
+  ) == 67);\n    assert (digitSum(\"helloE\") == 69);\n    assert (digitSum(\"woArBld\"\
+  ) == 131);\n    assert (digitSum(\"aAaaaXa\") == 153);\n    assert (digitSum(\"\
+  \ How are yOu?\") == 151);\n    assert (digitSum(\"You arE Very Smart\") == 327);\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

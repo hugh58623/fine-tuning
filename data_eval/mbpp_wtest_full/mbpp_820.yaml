@@ -1,0 +1,15 @@
+name: mbpp_820
+language: py
+prompt: "\n\ndef check_monthnum_number(monthnum1):\n  \"\"\"\n  Write a function to\
+  \ check whether the given month number contains 28 days or not.\n  >>> check_monthnum_number(2)\n\
+  \  True\n  >>> check_monthnum_number(1)\n  False\n  >>> check_monthnum_number(3)\n\
+  \  False\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2)==True\n\
+  \    assert candidate(1)==False\n    assert candidate(3)==False\n\n\n\ndef test_check():\n\
+  \    check(check_monthnum_number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

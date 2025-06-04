@@ -1,0 +1,23 @@
+name: mbpp_569
+language: py
+prompt: "\n\ndef sort_sublists(list1):\n    \"\"\"\n    Write a function to sort each\
+  \ sublist of strings in a given list of lists.\n    >>> sort_sublists([['green',\
+  \ 'orange'], ['black', 'white'], ['white', 'black', 'orange']])\n    [['green',\
+  \ 'orange'], ['black', 'white'], ['black', 'orange', 'white']]\n    >>> sort_sublists([['green',\
+  \ 'orange'], ['black'], ['green', 'orange'], ['white']])\n    [['green', 'orange'],\
+  \ ['black'], ['green', 'orange'], ['white']]\n    >>> sort_sublists([['a','b'],['d','c'],['g','h']\
+  \ , ['f','e']])\n    [['a', 'b'], ['c', 'd'], ['g', 'h'], ['e', 'f']]\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([['green',\
+  \ 'orange'], ['black', 'white'], ['white', 'black', 'orange']])==[['green', 'orange'],\
+  \ ['black', 'white'], ['black', 'orange', 'white']]\n    assert candidate([['green',\
+  \ 'orange'], ['black'], ['green', 'orange'], ['white']])==[['green', 'orange'],\
+  \ ['black'], ['green', 'orange'], ['white']]\n    assert candidate([['a','b'],['d','c'],['g','h']\
+  \ , ['f','e']])==[['a', 'b'], ['c', 'd'], ['g', 'h'], ['e', 'f']]\n\n\n\ndef test_check():\n\
+  \    check(sort_sublists)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

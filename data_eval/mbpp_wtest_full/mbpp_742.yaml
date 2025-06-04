@@ -1,0 +1,15 @@
+name: mbpp_742
+language: py
+prompt: "\n\ndef area_tetrahedron(side):\n  \"\"\"\n  Write a function to caluclate\
+  \ the area of a tetrahedron.\n  >>> area_tetrahedron(3)\n  15.588457268119894\n\
+  \  >>> area_tetrahedron(20)\n  692.8203230275509\n  >>> area_tetrahedron(10)\n \
+  \ 173.20508075688772\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3)==15.588457268119894\n\
+  \    assert candidate(20)==692.8203230275509\n    assert candidate(10)==173.20508075688772\n\
+  \n\n\ndef test_check():\n    check(area_tetrahedron)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

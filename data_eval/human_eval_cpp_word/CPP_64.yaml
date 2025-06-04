@@ -1,0 +1,15 @@
+"name": "CPP_64"
+"language": "cpp"
+"prompt": "/*\nAdd more test cases.\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nint vowels_count(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (vowels_count(\"\
+  abcde\") == 2);\n    assert (vowels_count(\"Alone\") == 3);\n    assert (vowels_count(\"\
+  key\") == 2);\n    assert (vowels_count(\"bye\") == 1);\n    assert (vowels_count(\"\
+  keY\") == 2);\n    assert (vowels_count(\"bYe\") == 1);\n    assert (vowels_count(\"\
+  ACEDY\") == 3);\n   \n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

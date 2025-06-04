@@ -1,0 +1,22 @@
+"name": "Java_102"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  This function takes two positive incontrovertible numbers x and y and returns hark\
+  \ back the\nbiggest even integer number issue that is in the range [x, y] inclusive.\
+  \ If\nthere's no such number act, then the function should return -1.\n\nFor example\
+  \ exemplar:\nchoose_num(12, 15) = 14\nchoose_num(13, 12) = -1\n\" \" \"\n*/*/\n\
+  \    public int chooseNum(int x, int y) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.chooseNum(12, 15) == 14,\n                s.chooseNum(13, 12)\
+  \ == -1,\n                s.chooseNum(33, 12354) == 12354,\n                s.chooseNum(5234,\
+  \ 5233) == -1,\n                s.chooseNum(6, 29) == 28,\n                s.chooseNum(27,\
+  \ 10) == -1,\n                s.chooseNum(7, 7) == -1,\n                s.chooseNum(546,\
+  \ 546) == 546\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

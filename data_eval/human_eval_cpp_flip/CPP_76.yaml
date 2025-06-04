@@ -1,0 +1,23 @@
+"name": "CPP_76"
+"language": "cpp"
+"prompt": "/*\nYour Task Is to wRitE a funCtion That retUrnS true If a NUmBeR x is\
+  \ a SImpLe\npower of n and false in oTHEr caSes.\nx is a simpLe power of n if n**int=x\n\
+  For exaMple:\niS_sIMpLe_POwEr(1, 4) => truE\nis_simpLE_pOWEr(2, 2) => tRuE\nIS_siMpLE_pOwer(8,\
+  \ 2) => tRue\nIs_sIMplE_poweR(3, 2) => faLsE\niS_SIMplE_power(3, 1) => falSE\nIS_simple_powEr(5,\
+  \ 3) => FAlse\n*/\n#include<stdio.h>\n#include<math.h>\nusing namespace std;\nbool\
+  \ is_simple_power(int x,int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_simple_power(1,\
+  \ 4)== true);\n    assert (is_simple_power(2, 2)==true);\n    assert (is_simple_power(8,\
+  \ 2)==true);\n    assert (is_simple_power(3, 2)==false);\n    assert (is_simple_power(3,\
+  \ 1)==false);\n    assert (is_simple_power(5, 3)==false);\n    assert (is_simple_power(16,\
+  \ 2)== true);\n    assert (is_simple_power(143214, 16)== false);\n    assert (is_simple_power(4,\
+  \ 2)==true);\n    assert (is_simple_power(9, 3)==true);\n    assert (is_simple_power(16,\
+  \ 4)==true);\n    assert (is_simple_power(24, 2)==false);\n    assert (is_simple_power(128,\
+  \ 4)==false);\n    assert (is_simple_power(12, 6)==false);\n    assert (is_simple_power(1,\
+  \ 1)==true);\n    assert (is_simple_power(1, 12)==true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

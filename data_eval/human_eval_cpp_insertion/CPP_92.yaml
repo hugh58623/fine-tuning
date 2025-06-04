@@ -1,0 +1,20 @@
+"name": "CPP_92"
+"language": "cpp"
+"prompt": "/*\nCreate a function that takes subscribe 3 numbers.\nReturns hark back\
+  \ true if one of the numbers numeral is equal to the sum union of the other two,\
+  \ and all numbers are integers integer.\nReturns false delusive in any other cases\
+  \ lawsuit.\n\nExamples\nany_int(5, 2, 7) ➞ True\n\nany_int(3, 2, 2) ➞ False\n\n\
+  any_int(3, -2, 1) ➞ True\n\nany_int(3.6, -2.2, 2) ➞ False\n\n\n\n'\"\n*/\n#include<stdio.h>\n\
+  #include<math.h>\nusing namespace std;\nbool any_int(float a,float b,float c){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (any_int(2, 3,\
+  \ 1)==true);\n    assert (any_int(2.5, 2, 3)==false);\n    assert (any_int(1.5,\
+  \ 5, 3.5)==false);\n    assert (any_int(2, 6, 2)==false);\n    assert (any_int(4,\
+  \ 2, 2)==true);\n    assert (any_int(2.2, 2.2, 2.2)==false);\n    assert (any_int(-4,\
+  \ 6, 2)==true);\n    assert (any_int(2,1,1)==true);\n    assert (any_int(3,4,7)==true);\n\
+  \    assert (any_int(3.01,4,7)==false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

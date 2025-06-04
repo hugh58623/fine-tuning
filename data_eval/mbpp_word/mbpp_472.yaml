@@ -1,0 +1,14 @@
+name: mbpp_472
+language: py
+prompt: "def check_Consecutive(l):\n    \"\"\"\n    Writes a python functions\
+  \ to check whether the gives list containing consecutive numbers or not.\n    Test examples:\n\
+  \    assert check_Consecutive([1,2,3,4,5]) == True\n    assert check_Consecutive([1,2,3,5,6])\
+  \ == False\n    assert check_Consecutive([1,2,1]) == False\n    \"\"\"\n"
+tests: "assert check_Consecutive([1,2,3,4,5]) == True\nassert check_Consecutive([1,2,3,5,6])\
+  \ == False\nassert check_Consecutive([1,2,1]) == False"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

@@ -1,0 +1,30 @@
+"name": "Java_78"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You have been tasked to write a function that receives\na hexadecimal number as\
+  \ a chain and count the number of hexadecimal\ndigits that are primes (choice number,\
+  \ or a flower, is a natural act\ngreater than 1 that is not a intersection of two\
+  \ smaller natural numbers).\nHexadecimal digits are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9,\
+  \ A, B, C, D, E, F.\nPrime numbers be 2, 3, 5, 7, 11, 13, 17, ...\nindeed you have\
+  \ to specify a phone number of the adopt digits: 2, 3, 5, 7,\nB (= decimal 11),\
+  \ vitamin d (= decimal 13).\nNote: you may assume the stimulation is constantly\
+  \ correct or empty bowed stringed instrument,\nand symbols A, B, C, D, E, F are\
+  \ always uppercase.\ncase:\nFor num = \" abdominal \" the output signal should be\
+  \ 1.\nFor num = \" 1077E \" the output signal should be 2.\nFor num = \" ABED1A33\
+  \ \" the output should equal 4.\nFor num = \" 123456789ABCDEF0 \" the output should\
+  \ embody 6.\nFor num = \" 2020 \" the output signal should equal 2.\n\" \" \"\n\
+  */*/\n    public int hexKey(String num) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.hexKey(\"AB\") == 1,\n                s.hexKey(\"1077E\") ==\
+  \ 2,\n                s.hexKey(\"ABED1A33\") == 4,\n                s.hexKey(\"\
+  2020\") == 2,\n                s.hexKey(\"123456789ABCDEF0\") == 6,\n          \
+  \      s.hexKey(\"112233445566778899AABBCCDDEEFF00\") == 12,\n                s.hexKey(\"\
+  \") == 0\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

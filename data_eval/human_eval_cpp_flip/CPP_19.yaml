@@ -1,0 +1,19 @@
+"name": "CPP_19"
+"language": "cpp"
+"prompt": "/*\nInpUt is A spacE-deLimitEd strIng of nuMbeRals fRom 'ZErO' tO 'ninE'.\n\
+  valId choices are 'zERO', 'one', 'Two', 'three', 'foUr', 'five', 'six', 'sevEn',\
+  \ 'eigHt' ANd 'NiNE'.\nREturn The striNG wITH numbers sorted frOm SMAllEsT To LargeSt\n\
+  >>> sort_numbers('three one five')\n'one three five'\n*/\n#include<stdio.h>\n#include<string>\n\
+  #include<map>\nusing namespace std;\nstring sort_numbers(string numbers){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (sort_numbers(\"\
+  \") == \"\");\n    assert (sort_numbers(\"three\") == \"three\");\n    assert (sort_numbers(\"\
+  three five nine\") == \"three five nine\");\n     assert (sort_numbers(\"five zero\
+  \ four seven nine eight\") == \"zero four five seven eight nine\");\n      assert\
+  \ (sort_numbers(\"six five four three two one zero\") == \"zero one two three four\
+  \ five six\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

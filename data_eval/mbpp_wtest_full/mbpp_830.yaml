@@ -1,0 +1,15 @@
+name: mbpp_830
+language: py
+prompt: "\n\ndef round_up(a, digits):\n    \"\"\"\n    Write a function to round up\
+  \ a number to specific digits.\n    >>> round_up(123.01247,0)\n    124\n    >>>\
+  \ round_up(123.01247,1)\n    123.1\n    >>> round_up(123.01247,2)\n    123.02\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(123.01247,0)==124\n\
+  \    assert candidate(123.01247,1)==123.1\n    assert candidate(123.01247,2)==123.02\n\
+  \n\n\ndef test_check():\n    check(round_up)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

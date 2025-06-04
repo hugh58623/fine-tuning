@@ -1,0 +1,18 @@
+name: mbpp_197
+language: py
+prompt: "\n\ndef find_exponentio(test_tup1, test_tup2):\n  \"\"\"\n  Write a function\
+  \ to perform the exponentiation of the given two tuples.\n  >>> find_exponentio((10,\
+  \ 4, 5, 6), (5, 6, 7, 5))\n  (100000, 4096, 78125, 7776)\n  >>> find_exponentio((11,\
+  \ 5, 6, 7), (6, 7, 8, 6))\n  (1771561, 78125, 1679616, 117649)\n  >>> find_exponentio((12,\
+  \ 6, 7, 8), (7, 8, 9, 7))\n  (35831808, 1679616, 40353607, 2097152)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 5, 6), (5, 6, 7, 5)) == (100000, 4096, 78125, 7776)\n    assert candidate((11,\
+  \ 5, 6, 7), (6, 7, 8, 6)) == (1771561, 78125, 1679616, 117649)\n    assert candidate((12,\
+  \ 6, 7, 8), (7, 8, 9, 7)) == (35831808, 1679616, 40353607, 2097152)\n\n\n\ndef test_check():\n\
+  \    check(find_exponentio)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

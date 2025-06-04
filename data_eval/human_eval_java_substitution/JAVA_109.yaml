@@ -1,0 +1,33 @@
+"name": "Java_109"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  We have an array 'arr' of N integers arr[1], arr[2],... , arr[N].The\nnumbers in\
+  \ the array will be randomly ordain. Your undertaking is to settle if\nit is possible\
+  \ to catch an array sorted in non - decreasing order by performing\nthe following\
+  \ operation on the given array:\nYou are allowed to do right transformation operation\
+  \ any issue of time.\n\nOne proper chemise operation means shifting all elements\
+  \ of the array by one\nmilitary position in the right management. The last element\
+  \ of the array will be move to\nthe starting placement in the array i.e. 0th index.\n\
+  \nIf it is potential to prevail the sorted array by performing the above process\n\
+  then return True else return False.\nIf the given array is empty then return True.\n\
+  \nNote: The give list is guarantee to have unique element.\n\nFor Example:\n\nmove_one_ball([3,\
+  \ 4, 5, 1, 2])==>True\nExplanation: By performin 2 right field shift key operation,\
+  \ non - decreasing order can\nbe achieved for the given array.\nmove_one_ball([3,\
+  \ 5, 4, 1, 2])==>False\nExplanation: It is not possible to beget non - decreasing\
+  \ order for the give\narray by performing any phone number of veracious shift operations.\n\
+  \n\" \" \"\n*/*/\n    public boolean moveOneBall(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.moveOneBall(new ArrayList<>(Arrays.asList(3, 4, 5, 1, 2))) ==\
+  \ true,\n                s.moveOneBall(new ArrayList<>(Arrays.asList(3, 5, 10, 1,\
+  \ 2))) == true,\n                s.moveOneBall(new ArrayList<>(Arrays.asList(4,\
+  \ 3, 1, 2))) == false,\n                s.moveOneBall(new ArrayList<>(Arrays.asList(3,\
+  \ 5, 4, 1, 2))) == false,\n                s.moveOneBall(new ArrayList<>(Arrays.asList()))\
+  \ == true\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

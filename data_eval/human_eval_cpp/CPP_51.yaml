@@ -1,0 +1,20 @@
+"name": "CPP_51"
+"language": "cpp"
+"prompt": "/*\nremove_vowels is a function that takes string and returns string without\
+  \ vowels.\n>>> remove_vowels(\"\")\n\"\"\n>>> remove_vowels(\"abcdef\\nghijklm\"\
+  )\n\"bcdf\\nghjklm\"\n>>> remove_vowels(\"abcdef\")\n\"bcdf\"\n>>> remove_vowels(\"\
+  aaaaa\")\n\"\"\n>>> remove_vowels(\"aaBAA\")\n\"B\"\n>>> remove_vowels(\"zbcd\"\
+  )\n\"zbcd\"\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\nusing\
+  \ namespace std;\nstring remove_vowels(string text){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (remove_vowels(\"\
+  \") == \"\");\n    assert (remove_vowels(\"abcdef\\nghijklm\") == \"bcdf\\nghjklm\"\
+  );\n    assert (remove_vowels(\"fedcba\") == \"fdcb\");\n    assert (remove_vowels(\"\
+  eeeee\") == \"\");\n    assert (remove_vowels(\"acBAA\") == \"cB\");\n    assert\
+  \ (remove_vowels(\"EcBOO\") == \"cB\");\n    assert (remove_vowels(\"ybcd\") ==\
+  \ \"ybcd\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

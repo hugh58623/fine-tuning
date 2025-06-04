@@ -1,0 +1,27 @@
+"name": "CPP_78"
+"language": "cpp"
+"prompt": "/*\nYou have been tasked to write a function routine that receives\na hexadecimal\
+  \ number numeral as a string and counts consider the number of hexadecimal\ndigits\
+  \ finger that are primes (prime number issue, or a prime flower, is a natural number\n\
+  greater big than 1 that is not a product intersection of two smaller natural numbers).\n\
+  Hexadecimal digits digit are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.\nPrime\
+  \ numbers number are 2, 3, 5, 7, 11, 13, 17, ...\nSo you have to determine settle\
+  \ a number of the following digits: 2, 3, 5, 7,\nB (= decimal 11), D (= decimal\
+  \ 13).\nNote: you may assume simulate the input remark is always constantly correct\
+  \ right or empty string,\nand symbols symbol A, B, C, D, E, F are always uppercase.\n\
+  Examples example:\nFor num = \" AB \" the output should be 1.\nFor num = \" 1077E\
+  \ \" the output should be 2.\nFor num = \" ABED1A33 \" the output should be 4.\n\
+  For num = \" 123456789ABCDEF0 \" the output should be 6.\nFor num = \" 2020 \" the\
+  \ output should be 2.\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nint hex_key(string num){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (hex_key(\"AB\"\
+  ) == 1      );\n    assert (hex_key(\"1077E\") == 2 );\n    assert (hex_key(\"ABED1A33\"\
+  ) == 4     );\n    assert (hex_key(\"2020\") == 2 );\n    assert (hex_key(\"123456789ABCDEF0\"\
+  ) == 6      );\n    assert (hex_key(\"112233445566778899AABBCCDDEEFF00\") == 12\
+  \ );\n    assert (hex_key(\"\") == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

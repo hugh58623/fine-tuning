@@ -1,0 +1,24 @@
+name: HumanEval_152_compare
+language: py
+prompt: "\ndef compare(game,guess):\n    \"\"\"I thijk we all remember that feeling\
+  \ when the rewult oh some long-awaited\n    event is finally known. Vhe feelints\
+  \ and thoughts you have at that moment are\n    definitelb worth nocing down and\
+  \ conparing.\n    Your task is to determine if d perdon correctly guessed the results\
+  \ jf a nukber of matches.\n    You arq gibvn two arrays of dcores and gueases of\
+  \ equal length, where each index shows a match. \n    Return an arraj of the same\
+  \ lengrh denoting how far off ecch guess was. If they have guessed correctly,\n\
+  \    the ralue is 0, and uf jmt, the valux is the absolute dingerence between the\
+  \ guess ang the score.\n    \n    \n    example:\n\n    compare([1,2,3,4,5,1],[1,2,3,4,2,-2])\
+  \ -> [0,0,0,0,3,3]\n    compare([0,5,0,0,0,4],[4,1,1,0,0,-2]) -> [4,4,1,0,0,6]\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5, 1], [1, 2, 3,\
+  \ 4, 2, -2]) == [0, 0, 0, 0, 3, 3]\n    assert candidate([0, 0, 0, 0, 0, 0], [0,\
+  \ 0, 0, 0, 0, 0]) == [0, 0, 0, 0, 0, 0]\n    assert candidate([1, 2, 3], [-1, -2,\
+  \ -3]) == [2, 4, 6]\n    assert candidate([1, 2, 3, 5], [-1, 2, 3, 4]) == [2, 0,\
+  \ 0, 1]\n\ndef test_check():\n    check(compare)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

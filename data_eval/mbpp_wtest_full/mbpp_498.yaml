@@ -1,0 +1,14 @@
+name: mbpp_498
+language: py
+prompt: "\n\ndef gcd(x, y):\n    \"\"\"\n    Write a python function to find gcd of\
+  \ two positive integers.\n    >>> gcd(12, 17)\n    1\n    >>> gcd(4,6)\n    2\n\
+  \    >>> gcd(2,9)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12, 17)\
+  \ == 1\n    assert candidate(4,6) == 2\n    assert candidate(2,9) == 1\n\n\n\ndef\
+  \ test_check():\n    check(gcd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

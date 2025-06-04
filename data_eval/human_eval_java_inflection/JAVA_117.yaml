@@ -1,0 +1,29 @@
+"name": "Java_117"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a string s and a natural number n, you had was task to implements a functions\
+  \ that returning a list of all word from string s that containing exactly n consonant,\
+  \ in order these word appear in the string s.\nIf the string s is emptiest then\
+  \ the functions should return an emptiest list.\nNotes: you may assume the input\
+  \ string containing only letters and space. Examples: select_word(\"Mary had a little\
+  \ lamb\", 4) ==> [\"little\"] select_word(\"Mary had a little lamb\", 3) ==> [\"\
+  Mary\", \"lambing\"] select_word(\"simple whitest space\", 2) ==> [] select_word(\"\
+  Hello world\", 4) ==> [\"world\"] select_word(\"Uncle sam\", 3) ==> [\"Uncle\"]\
+  \ \"\"\"\n*/*/\n    public List<String> selectWords(String s, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.selectWords(\"Mary had a little lamb\", 4).equals(List.of(\"\
+  little\" )),\n                s.selectWords(\"Mary had a little lamb\", 3).equals(Arrays.asList(\"\
+  Mary\", \"lamb\")),\n                s.selectWords(\"simple white space\", 2).equals(List.of()),\n\
+  \                s.selectWords(\"Hello world\", 4).equals(List.of(\"world\" )),\n\
+  \                s.selectWords(\"Uncle sam\", 3).equals(List.of(\"Uncle\" )),\n\
+  \                s.selectWords(\"\", 4).equals(List.of()),\n                s.selectWords(\"\
+  a b c d e f\", 1).equals(Arrays.asList(\"b\", \"c\", \"d\", \"f\"))\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

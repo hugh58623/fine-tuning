@@ -1,0 +1,19 @@
+name: HumanEval_140_fix_spaces
+language: py
+prompt: "\ndef fix_spaces(text):\n    \"\"\"\n    GivEn a sTring text, RepLace aLl\
+  \ spaCes in it wiTh uNdersCorES, \n    aNd If a sTRinG has more than 2 cONSecuTive\
+  \ spaces, \n    Then replace aLl conSeCUtIvE SpAces wIth - \n    \n    fix_sPAcES(\"\
+  exaMpLE\") == \"exaMpLE\"\n    fIx_spaCes(\"exaMPle 1\") == \"exampLe_1\"\n    fIx_SpACES(\"\
+  \ ExAmple 2\") == \"_ExamPLE_2\"\n    Fix_spaces(\" EXaMPle   3\") == \"_ExamPle-3\"\
+  \n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Example') == 'Example'\n    assert\
+  \ candidate('Mudasir Hanif ') == 'Mudasir_Hanif_'\n    assert candidate('Yellow\
+  \ Yellow  Dirty  Fellow') == 'Yellow_Yellow__Dirty__Fellow'\n    assert candidate('Exa\
+  \   mple') == 'Exa-mple'\n    assert candidate('   Exa 1 2 2 mple') == '-Exa_1_2_2_mple'\n\
+  \ndef test_check():\n    check(fix_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

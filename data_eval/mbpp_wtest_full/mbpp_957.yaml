@@ -1,0 +1,15 @@
+name: mbpp_957
+language: py
+prompt: "\n\ndef get_First_Set_Bit_Pos(n):\n     \"\"\"\n     Write a python function\
+  \ to get the position of rightmost set bit.\n     >>> get_First_Set_Bit_Pos(12)\n\
+  \     3\n     >>> get_First_Set_Bit_Pos(18)\n     2\n     >>> get_First_Set_Bit_Pos(16)\n\
+  \     5\n     \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12) ==\
+  \ 3\n    assert candidate(18) == 2\n    assert candidate(16) == 5\n\n\n\ndef test_check():\n\
+  \    check(get_First_Set_Bit_Pos)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

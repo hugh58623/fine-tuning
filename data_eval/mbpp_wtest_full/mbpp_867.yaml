@@ -1,0 +1,15 @@
+name: mbpp_867
+language: py
+prompt: "\n\ndef min_Num(arr,n):\n    \"\"\"\n    Write a python function to add a\
+  \ minimum number such that the sum of array becomes even.\n    >>> min_Num([1,2,3,4,5,6,7,8,9],9)\n\
+  \    1\n    >>> min_Num([1,2,3,4,5,6,7,8],8)\n    2\n    >>> min_Num([1,2,3],3)\n\
+  \    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4,5,6,7,8,9],9)\
+  \ == 1\n    assert candidate([1,2,3,4,5,6,7,8],8) == 2\n    assert candidate([1,2,3],3)\
+  \ == 2\n\n\n\ndef test_check():\n    check(min_Num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_791
+language: py
+prompt: "\n\ndef remove_nested(test_tup):\n  \"\"\"\n  Write a function to remove\
+  \ the nested record from the given tuple.\n  >>> remove_nested((1, 5, 7, (4, 6),\
+  \ 10))\n  (1, 5, 7, 10)\n  >>> remove_nested((2, 6, 8, (5, 7), 11))\n  (2, 6, 8,\
+  \ 11)\n  >>> remove_nested((3, 7, 9, (6, 8), 12))\n  (3, 7, 9, 12)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((1, 5,\
+  \ 7, (4, 6), 10)) == (1, 5, 7, 10)\n    assert candidate((2, 6, 8, (5, 7), 11))\
+  \ == (2, 6, 8, 11)\n    assert candidate((3, 7, 9, (6, 8), 12)) == (3, 7, 9, 12)\n\
+  \n\n\ndef test_check():\n    check(remove_nested)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

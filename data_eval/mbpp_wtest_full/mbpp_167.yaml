@@ -1,0 +1,15 @@
+name: mbpp_167
+language: py
+prompt: "\n\ndef next_Power_Of_2(n):\n    \"\"\"\n    Write a python function to find\
+  \ smallest power of 2 greater than or equal to n.\n    >>> next_Power_Of_2(0)\n\
+  \    1\n    >>> next_Power_Of_2(5)\n    8\n    >>> next_Power_Of_2(17)\n    32\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(0) == 1\n\
+  \    assert candidate(5) == 8\n    assert candidate(17) == 32\n\n\n\ndef test_check():\n\
+  \    check(next_Power_Of_2)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

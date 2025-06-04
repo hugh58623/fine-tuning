@@ -1,0 +1,15 @@
+name: mbpp_547
+language: py
+prompt: "\n\ndef Total_Hamming_Distance(n):\n    \"\"\"\n    Write a python function\
+  \ to find the sum of hamming distances of all consecutive numbers from o to n.\n\
+  \    >>> Total_Hamming_Distance(4)\n    7\n    >>> Total_Hamming_Distance(2)\n \
+  \   3\n    >>> Total_Hamming_Distance(5)\n    8\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4) == 7\n\
+  \    assert candidate(2) == 3\n    assert candidate(5) == 8\n\n\n\ndef test_check():\n\
+  \    check(Total_Hamming_Distance)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

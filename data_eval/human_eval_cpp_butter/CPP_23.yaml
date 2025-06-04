@@ -1,0 +1,14 @@
+"name": "CPP_23"
+"language": "cpp"
+"prompt": "/*\nRetkrn length of given string\n>>> strlen('')\n0\n>>> strlen('abc')\n\
+  3\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nint strlen(string\
+  \ str){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (strlen(\"\"\
+  ) == 0);\n    assert (strlen(\"x\") == 1);\n     assert (strlen(\"asdasnakj\") ==\
+  \ 9);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

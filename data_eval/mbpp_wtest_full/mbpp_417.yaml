@@ -1,0 +1,18 @@
+name: mbpp_417
+language: py
+prompt: "\n\ndef group_tuples(Input):\n\t\"\"\"\n\tWrite a function to find common\
+  \ first element in given list of tuple.\n\t>>> group_tuples([('x', 'y'), ('x', 'z'),\
+  \ ('w', 't')])\n\t[('x', 'y', 'z'), ('w', 't')]\n\t>>> group_tuples([('a', 'b'),\
+  \ ('a', 'c'), ('d', 'e')])\n\t[('a', 'b', 'c'), ('d', 'e')]\n\t>>> group_tuples([('f',\
+  \ 'g'), ('f', 'g'), ('h', 'i')])\n\t[('f', 'g', 'g'), ('h', 'i')]\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('x',\
+  \ 'y'), ('x', 'z'), ('w', 't')]) == [('x', 'y', 'z'), ('w', 't')]\n    assert candidate([('a',\
+  \ 'b'), ('a', 'c'), ('d', 'e')]) == [('a', 'b', 'c'), ('d', 'e')]\n    assert candidate([('f',\
+  \ 'g'), ('f', 'g'), ('h', 'i')]) == [('f', 'g', 'g'), ('h', 'i')]\n\n\n\ndef test_check():\n\
+  \    check(group_tuples)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

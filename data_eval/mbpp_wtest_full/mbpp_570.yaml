@@ -1,0 +1,23 @@
+name: mbpp_570
+language: py
+prompt: "\n\ndef remove_words(list1, charlist):\n    \"\"\"\n    Write a function\
+  \ to remove words from a given list of strings containing a character or string.\n\
+  \    >>> remove_words(['Red color', 'Orange#', 'Green', 'Orange @', \"White\"],['#',\
+  \ 'color', '@'])\n    ['Red', '', 'Green', 'Orange', 'White']\n    >>> remove_words(['Red\
+  \ &', 'Orange+', 'Green', 'Orange @', 'White'],['&', '+', '@'])\n    ['Red', '',\
+  \ 'Green', 'Orange', 'White']\n    >>> remove_words(['Red &', 'Orange+', 'Green',\
+  \ 'Orange @', 'White'],['@'])\n    ['Red &', 'Orange+', 'Green', 'Orange', 'White']\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['Red color',\
+  \ 'Orange#', 'Green', 'Orange @', \"White\"],['#', 'color', '@'])==['Red', '', 'Green',\
+  \ 'Orange', 'White']\n    assert candidate(['Red &', 'Orange+', 'Green', 'Orange\
+  \ @', 'White'],['&', '+', '@'])==['Red', '', 'Green', 'Orange', 'White']\n    assert\
+  \ candidate(['Red &', 'Orange+', 'Green', 'Orange @', 'White'],['@'])==['Red &',\
+  \ 'Orange+', 'Green', 'Orange', 'White']\n\n\n\ndef test_check():\n    check(remove_words)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

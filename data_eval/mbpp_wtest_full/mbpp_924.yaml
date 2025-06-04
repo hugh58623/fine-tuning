@@ -1,0 +1,14 @@
+name: mbpp_924
+language: py
+prompt: "\n\ndef max_of_two( x, y ):\n    \"\"\"\n    Write a function to find maximum\
+  \ of two numbers.\n    >>> max_of_two(10,20)\n    20\n    >>> max_of_two(19,15)\n\
+  \    19\n    >>> max_of_two(-10,-20)\n    -10\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==20\n\
+  \    assert candidate(19,15)==19\n    assert candidate(-10,-20)==-10\n\n\n\ndef\
+  \ test_check():\n    check(max_of_two)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

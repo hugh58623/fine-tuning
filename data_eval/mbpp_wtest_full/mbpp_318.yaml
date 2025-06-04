@@ -1,0 +1,14 @@
+name: mbpp_318
+language: py
+prompt: "\n\ndef max_volume (s):\n    \"\"\"\n    Write a python function to find\
+  \ the maximum volume of a cuboid with given sum of sides.\n    >>> max_volume(8)\n\
+  \    18\n    >>> max_volume(4)\n    2\n    >>> max_volume(1)\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(8) == 18\n\
+  \    assert candidate(4) == 2\n    assert candidate(1) == 0\n\n\n\ndef test_check():\n\
+  \    check(max_volume)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

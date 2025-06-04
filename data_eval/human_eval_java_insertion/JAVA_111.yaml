@@ -1,0 +1,37 @@
+"name": "Java_111"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a string representing a space outer space separated lowercase small letter\
+  \ letters, return a dictionary\nof the letter with the most repetition repeat and\
+  \ containing the corresponding match count.\nIf several letters letter have the\
+  \ same occurrence happening, return all of them.\n\nExample:\nhistogram('a b c degree\
+  \ centigrade') = = {' a': 1,' b bacillus': 1,' c': 1 }\nhistogram('a b b a') = =\
+  \ {' a': 2,' b barn': 2 }\nhistogram('a b barn c a b') = = {' a': 2,' b boron':\
+  \ 2 }\nhistogram('b b b b a') = = {' b': 4 }\nhistogram('') = = { }\n\n\" \" \"\n\
+  */*/\n    public Map<String, Integer> histogram(String test) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        Map<String, Integer> map1 = new HashMap<>();\n\
+  \        map1.put(\"a\", 2);\n        map1.put(\"b\", 2);\n        Map<String, Integer>\
+  \ map2 = new HashMap<>();\n        map2.put(\"a\", 2);\n        map2.put(\"b\",\
+  \ 2);\n        Map<String, Integer> map3 = new HashMap<>();\n        map3.put(\"\
+  a\", 1);\n        map3.put(\"b\", 1);\n        map3.put(\"c\", 1);\n        map3.put(\"\
+  d\", 1);\n        map3.put(\"g\", 1);\n        Map<String, Integer> map4 = new HashMap<>();\n\
+  \        map4.put(\"r\", 1);\n        map4.put(\"t\", 1);\n        map4.put(\"g\"\
+  , 1);\n        Map<String, Integer> map5 = new HashMap<>();\n        map5.put(\"\
+  b\", 4);\n        Map<String, Integer> map6 = new HashMap<>();\n        map6.put(\"\
+  r\", 1);\n        map6.put(\"t\", 1);\n        map6.put(\"g\", 1);\n        Map<String,\
+  \ Integer> map7 = new HashMap<>();\n        Map<String, Integer> map8 = new HashMap<>();\n\
+  \        map8.put(\"a\", 1);\n        List<Boolean> correct = Arrays.asList(\n \
+  \               s.histogram(\"a b b a\" ).equals(map1),\n                s.histogram(\"\
+  a b c a b\" ).equals(map2),\n                s.histogram(\"a b c d g\" ).equals(map3),\n\
+  \                s.histogram(\"r t g\" ).equals(map4),\n                s.histogram(\"\
+  b b b b a\" ).equals(map5),\n                s.histogram(\"r t g\" ).equals(map6),\n\
+  \                s.histogram(\"\" ).equals(map7),\n                s.histogram(\"\
+  a\" ).equals(map8)\n        );\n        if (correct.contains(false)) {\n       \
+  \     throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

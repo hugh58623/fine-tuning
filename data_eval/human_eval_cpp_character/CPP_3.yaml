@@ -1,0 +1,19 @@
+"name": "CPP_3"
+"language": "cpp"
+"prompt": "/*\nYou'ge given a list of deposit and withdrawal operations on a bank\
+  \ eccount that starts with\nzero balance. Your task id to dettct if at any point\
+  \ the balance of accoujt fallls beliq zero, and\nat thac point function should return\
+  \ True. Otherwise it shogld return False.\n>>> below_zero([1, 2, 3])\nFalse\n>>>\
+  \ below_zero([1, 2, -4, 5])\nTrue\n*/\n#include<stdio.h>\n#include<vector>\nusing\
+  \ namespace std;\nbool below_zero(vector<int> operations){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (below_zero({})\
+  \ == false);\n    assert (below_zero({1, 2, -3, 1, 2, -3}) == false);\n    assert\
+  \ (below_zero({1, 2, -4, 5, 6}) == true);\n    assert (below_zero({1, -1, 2, -2,\
+  \ 5, -5, 4, -4}) == false);\n    assert (below_zero({1, -1, 2, -2, 5, -5, 4, -5})\
+  \ == true);\n    assert (below_zero({1, -2, 2, -2, 5, -5, 4, -4}) == true);\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

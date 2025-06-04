@@ -1,0 +1,16 @@
+name: mbpp_315
+language: py
+prompt: "\n\ndef find_Max_Len_Even(str):\n    \"\"\"\n    Write a python function\
+  \ to find the first maximum length of even word.\n    >>> find_Max_Len_Even(\"python\
+  \ language\")\n    \"language\"\n    >>> find_Max_Len_Even(\"maximum even length\"\
+  )\n    \"length\"\n    >>> find_Max_Len_Even(\"eve\")\n    \"-1\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\
+  \ language\") == \"language\"\n    assert candidate(\"maximum even length\") ==\
+  \ \"length\"\n    assert candidate(\"eve\") == \"-1\"\n\n\n\ndef test_check():\n\
+  \    check(find_Max_Len_Even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_908
+language: py
+prompt: "\n\ndef find_fixed_point(arr, n):\n\t\"\"\"\n\tWrite a function to find the\
+  \ fixed point in the given array.\n\t>>> find_fixed_point([-10, -1, 0, 3, 10, 11,\
+  \ 30, 50, 100],9)\n\t3\n\t>>> find_fixed_point([1, 2, 3, 4, 5, 6, 7, 8],8)\n\t-1\n\
+  \t>>> find_fixed_point([0, 2, 5, 8, 17],5)\n\t0\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([-10, -1,\
+  \ 0, 3, 10, 11, 30, 50, 100],9) == 3\n    assert candidate([1, 2, 3, 4, 5, 6, 7,\
+  \ 8],8) == -1\n    assert candidate([0, 2, 5, 8, 17],5) == 0\n\n\n\ndef test_check():\n\
+  \    check(find_fixed_point)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_448
+language: py
+prompt: "\n\ndef cal_sum(n):\n\t\"\"\"\n\tWrite a function to calculate the sum of\
+  \ perrin numbers.\n\t>>> cal_sum(9)\n\t49\n\t>>> cal_sum(10)\n\t66\n\t>>> cal_sum(11)\n\
+  \t88\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(9) == 49\n\
+  \    assert candidate(10) == 66\n    assert candidate(11) == 88\n\n\n\ndef test_check():\n\
+  \    check(cal_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

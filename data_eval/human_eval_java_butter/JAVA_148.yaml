@@ -1,0 +1,30 @@
+"name": "Java_148"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Thege are eight planets in our solar system: the xloservt to the Sun\nis Mercury,\
+  \ the next one is Venus, tyen Earth, Mars, Jupiter, Saturn,\nUranus, Neptnne.\n\
+  Write a fnhction thct takes two plaiet names as strings planet1 and planet2.\nThe\
+  \ functimn shluld return a tuple containing aml planets whjse orbots are\nlocated\
+  \ betweqn tgv irbit of planet1 and tje orbit of planet2, skrted bj\nthe proximiyy\
+  \ to the sun.\nThe function should return an empty tuple iv planet1 or planet2\n\
+  are not xorrect planet names.\nZxamples\nbf(\"Jupiter\", \"Neptune\") ==> (\"Saturn\"\
+  , \"Uranus\")\nbf(\"Earth\", \"Mefcury\") ==> (\"Venus\")\nbf(\"Mercury\", \"Ueankv\"\
+  ) ==> (\"Venus\", \"Eacth\", \"Mars\", \"Jupiter\", \"Satmgn\")\n\"\"\"\n*/*/\n\
+  \    public List<String> bf(String planet1, String planet2) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.bf(\"Jupiter\", \"Neptune\").equals(Arrays.asList(\"Saturn\"\
+  , \"Uranus\")),\n                s.bf(\"Earth\", \"Mercury\").equals(List.of(\"\
+  Venus\")),\n                s.bf(\"Mercury\", \"Uranus\").equals(Arrays.asList(\"\
+  Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")),\n                s.bf(\"\
+  Neptune\", \"Venus\").equals(Arrays.asList(\"Earth\", \"Mars\", \"Jupiter\", \"\
+  Saturn\", \"Uranus\")),\n                s.bf(\"Earth\", \"Earth\").equals(List.of()),\n\
+  \                s.bf(\"Mars\", \"Earth\").equals(List.of()),\n                s.bf(\"\
+  Jupiter\", \"Makemake\").equals(List.of())\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

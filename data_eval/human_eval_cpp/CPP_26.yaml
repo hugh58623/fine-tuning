@@ -1,0 +1,18 @@
+"name": "CPP_26"
+"language": "cpp"
+"prompt": "/*\nFrom a vector of integers, remove all elements that occur more than\
+  \ once.\nKeep order of elements left the same as in the input.\n>>> remove_duplicates({1,\
+  \ 2, 3, 2, 4})\n{1, 3, 4}\n*/\n#include<stdio.h>\n#include<vector>\n#include<algorithm>\n\
+  using namespace std;\nvector<int> remove_duplicates(vector<int> numbers){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(remove_duplicates({}) , {}));\n     assert (issame(remove_duplicates({1,\
+  \ 2, 3, 4}) , {1, 2, 3, 4}));\n      assert (issame(remove_duplicates({1, 2, 3,\
+  \ 2, 4, 3, 5}) , {1, 4, 5}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

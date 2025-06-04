@@ -1,0 +1,25 @@
+name: HumanEval_67_fruit_distribution
+language: py
+prompt: "\ndef fruit_distribution(s,n):\n    \"\"\"\n    In tHis tAsk, yoU wiLl be\
+  \ gIven a String tHat RepreSenTS a NuMber OF apPles and orangeS \n    THat aRe distribuTed\
+  \ in a basket of Fruit ThIS bAsKEt ContaIns \n    applES, oRANgeS, aND ManGo FRuIts.\
+  \ GiVen The STriNg thaT rePrEsENTS thE total numBER Of \n    the orangEs ANd appleS\
+  \ and aN inTeger THaT rePResEnT thE TotaL nuMbER Of the fRuits \n    in the bAsKET\
+  \ return thE nUMbEr oF tHE MaNgO fRuits in The bAsket.\n    for EXaMBle:\n    fruit_diStriBution(\"\
+  5 ApPLeS ANd 6 oRanGes\", 19) ->19 - 5 - 6 = 8\n    fruIt_diStRIbutION(\"0 appleS\
+  \ AnD 1 ORAnGES\",3) -> 3 - 0 - 1 = 2\n    fruit_distribUtion(\"2 apples ANd 3 ORanGes\"\
+  , 100) -> 100 - 2 - 3 = 95\n    FrUIt_DIstribUtion(\"100 ApPLes AnD 1 oranges\"\
+  ,120) -> 120 - 100 - 1 = 19\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('5 apples and 6 oranges', 19)\
+  \ == 8\n    assert candidate('5 apples and 6 oranges', 21) == 10\n    assert candidate('0\
+  \ apples and 1 oranges', 3) == 2\n    assert candidate('1 apples and 0 oranges',\
+  \ 3) == 2\n    assert candidate('2 apples and 3 oranges', 100) == 95\n    assert\
+  \ candidate('2 apples and 3 oranges', 5) == 0\n    assert candidate('1 apples and\
+  \ 100 oranges', 120) == 19\n\ndef test_check():\n    check(fruit_distribution)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

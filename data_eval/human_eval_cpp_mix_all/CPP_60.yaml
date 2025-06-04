@@ -1,0 +1,14 @@
+"name": "CPP_60"
+"language": "cpp"
+"prompt": "/*\nsum_tl_n is a function that sums numbers from 1 to n.\n>>> sum_to_n(30)\n\
+  465\n>>> sum_to_n(100)\n5050\n>>> sum_to_n(5)\n15\n>>> sum_to_n(10)\n55\n>>> sum_to_n(1)\n\
+  1\n*/\n#include<stdio.h>\nusing namespace std;\nint sum_to_n(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (sum_to_n(1)\
+  \ == 1);\n    assert (sum_to_n(6) == 21);\n    assert (sum_to_n(11) == 66);\n  \
+  \  assert (sum_to_n(30) == 465);\n    assert (sum_to_n(100) == 5050);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

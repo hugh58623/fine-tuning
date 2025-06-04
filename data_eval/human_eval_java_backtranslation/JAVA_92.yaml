@@ -1,0 +1,23 @@
+"name": "Java_92"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Create a function consisting of 3 numbers. Returns true if one of the numbers is\
+  \ equal to the sum of the other two and all numbers are integers. Returns false\
+  \ in all other cases. Examples any _ int (5, 2, 7): True any _ int (3, 2, 2): False\
+  \ any _ int (3, -2, 1): True any _ int (3,6, -2,2, 2): False \"'\n*/*/\n    public\
+  \ boolean anyInt(Object x, Object y, Object z) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.anyInt(2, 3, 1) == true,\n                s.anyInt(2.5, 2, 3)\
+  \ == false,\n                s.anyInt(1.5, 5, 3.5) == false,\n                s.anyInt(2,\
+  \ 6, 2) == false,\n                s.anyInt(4, 2, 2) == true,\n                s.anyInt(2.2,\
+  \ 2.2, 2.2) == false,\n                s.anyInt(-4, 6, 2) == true,\n           \
+  \     s.anyInt(2, 1, 1) == true,\n                s.anyInt(3, 4, 7) == true,\n \
+  \               s.anyInt(3.0, 4, 7) == false\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

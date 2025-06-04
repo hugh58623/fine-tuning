@@ -1,0 +1,17 @@
+name: HumanEval_135_can_arrange
+language: py
+prompt: "\ndef can_arrange(arr):\n    \"\"\"Create a functions which returning the\
+  \ larger indices of an elements which is not greater than or equal to the elements\
+  \ immediately precedes it. If no such elements exists then return -1. The gives\
+  \ array will not containing duplicate value. Examples: can_arrange([1,2,4,3,5])\
+  \ = 3 can_arrange([1,2,3]) = -1 \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 4, 3, 5]) == 3\n    assert\
+  \ candidate([1, 2, 4, 5]) == -1\n    assert candidate([1, 4, 2, 5, 6, 7, 8, 9, 10])\
+  \ == 2\n    assert candidate([4, 8, 5, 7, 3]) == 4\n    assert candidate([]) ==\
+  \ -1\n\ndef test_check():\n    check(can_arrange)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

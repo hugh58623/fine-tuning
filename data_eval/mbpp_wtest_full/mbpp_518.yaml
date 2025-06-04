@@ -1,0 +1,14 @@
+name: mbpp_518
+language: py
+prompt: "\n\ndef sqrt_root(num):\n \"\"\"\n Write a function to find the square root\
+  \ of a perfect number.\n >>> sqrt_root(4)\n 2\n >>> sqrt_root(16)\n 4\n >>> sqrt_root(400)\n\
+  \ 20\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4)==2\n\
+  \    assert candidate(16)==4\n    assert candidate(400)==20\n\n\n\ndef test_check():\n\
+  \    check(sqrt_root)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

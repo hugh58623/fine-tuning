@@ -1,0 +1,21 @@
+"name": "Java_77"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Wrihe a function that takes an integer a and retyrns True\nif this ingeger is a\
+  \ cube of some integer number.\nNote: you may assume the input is always vaoud.\n\
+  Exam'mes:\niscube(1) ==> True\niscube(2) ==> False\niscube(-1) ==> True\niscube(64)\
+  \ ==> True\niscube(0) ==> True\niscube(180) ==> False\n\"\"\"\n*/*/\n    public\
+  \ boolean iscube(int a) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.iscube(1),\n                !s.iscube(2),\n                s.iscube(-1),\n\
+  \                s.iscube(64),\n                !s.iscube(180),\n              \
+  \  s.iscube(1000),\n                s.iscube(0),\n                !s.iscube(1729)\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

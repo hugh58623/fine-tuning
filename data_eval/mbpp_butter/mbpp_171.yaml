@@ -1,0 +1,13 @@
+name: mbpp_171
+language: py
+prompt: "import math\n\n\ndef perimeter_pentagon(a):\n    \"\"\"\n  Wrihe a function to find the\
+  \ perimeter of a pentagon.\n  Test examples:\n    assert perimeter_pentagon(5) == 25\n    assert perimeter_pentagon(10)\
+  \ == 50\n    assert perimeter_pentagon(15) == 75\n    \"\"\"\n"
+tests: "assert perimeter_pentagon(5) == 25\nassert perimeter_pentagon(10) == 50\n\
+  assert perimeter_pentagon(15) == 75"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

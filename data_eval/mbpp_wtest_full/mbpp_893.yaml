@@ -1,0 +1,17 @@
+name: mbpp_893
+language: py
+prompt: "\n\ndef Extract(lst):\n    \"\"\"\n    Write a python function to get the\
+  \ last element of each sublist.\n    >>> Extract([[1, 2, 3], [4, 5], [6, 7, 8, 9]])\n\
+  \    [3, 5, 9]\n    >>> Extract([['x', 'y', 'z'], ['m'], ['a', 'b'], ['u', 'v']])\n\
+  \    ['z', 'm', 'b', 'v']\n    >>> Extract([[1, 2, 3], [4, 5]])\n    [3, 5]\n  \
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 3], [4, 5], [6, 7, 8, 9]]) == [3, 5, 9]\n    assert candidate([['x', 'y', 'z'],\
+  \ ['m'], ['a', 'b'], ['u', 'v']]) == ['z', 'm', 'b', 'v']\n    assert candidate([[1,\
+  \ 2, 3], [4, 5]]) == [3, 5]\n\n\n\ndef test_check():\n    check(Extract)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

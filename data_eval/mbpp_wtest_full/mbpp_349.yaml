@@ -1,0 +1,15 @@
+name: mbpp_349
+language: py
+prompt: "\n\ndef check(string) :\n    \"\"\"\n    Write a python function to check\
+  \ whether the given string is a binary string or not.\n    >>> check(\"01010101010\"\
+  )\n    \"Yes\"\n    >>> check(\"name0\")\n    \"No\"\n    >>> check(\"101\")\n \
+  \   \"Yes\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"01010101010\"\
+  ) == \"Yes\"\n    assert candidate(\"name0\") == \"No\"\n    assert candidate(\"\
+  101\") == \"Yes\"\n\n\n\ndef test_check():\n    check(check)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

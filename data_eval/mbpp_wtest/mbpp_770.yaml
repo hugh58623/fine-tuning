@@ -1,0 +1,15 @@
+name: mbpp_770
+language: py
+prompt: "\n\ndef odd_Num_Sum(n) :\n    \"\"\"\n    Write a python function to find\
+  \ the sum of fourth power of first n odd natural numbers.\n    >>> odd_Num_Sum(2)\n\
+  \    82\n    >>> odd_Num_Sum(3)\n    707\n    >>> odd_Num_Sum(4)\n    3108\n   \
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 82\n\
+  \    assert candidate(3) == 707\n    assert candidate(4) == 3108\n\n\n\ndef test_check():\n\
+  \    check(odd_Num_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

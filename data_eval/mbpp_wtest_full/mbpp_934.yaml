@@ -1,0 +1,14 @@
+name: mbpp_934
+language: py
+prompt: "\n\ndef dealnnoy_num(n, m):\n\t\"\"\"\n\tWrite a function to find the nth\
+  \ delannoy number.\n\t>>> dealnnoy_num(3, 4)\n\t129\n\t>>> dealnnoy_num(3, 3)\n\t\
+  63\n\t>>> dealnnoy_num(4, 5)\n\t681\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3, 4) ==\
+  \ 129\n    assert candidate(3, 3) == 63\n    assert candidate(4, 5) == 681\n\n\n\
+  \ndef test_check():\n    check(dealnnoy_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

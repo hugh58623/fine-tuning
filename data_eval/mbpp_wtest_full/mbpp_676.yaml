@@ -1,0 +1,19 @@
+name: mbpp_676
+language: py
+prompt: "\n\ndef remove_extra_char(text1):\n  \"\"\"\n  Write a function to remove\
+  \ everything except alphanumeric characters from the given string by using regex.\n\
+  \  >>> remove_extra_char('**//Google Android// - 12. ')\n  'GoogleAndroid12'\n \
+  \ >>> remove_extra_char('****//Google Flutter//*** - 36. ')\n  'GoogleFlutter36'\n\
+  \  >>> remove_extra_char('**//Google Firebase// - 478. ')\n  'GoogleFirebase478'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('**//Google\
+  \ Android// - 12. ') == 'GoogleAndroid12'\n    assert candidate('****//Google Flutter//***\
+  \ - 36. ') == 'GoogleFlutter36'\n    assert candidate('**//Google Firebase// - 478.\
+  \ ') == 'GoogleFirebase478'\n\n\n\ndef test_check():\n    check(remove_extra_char)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

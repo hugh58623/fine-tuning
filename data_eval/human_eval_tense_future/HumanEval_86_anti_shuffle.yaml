@@ -1,0 +1,22 @@
+name: HumanEval_86_anti_shuffle
+language: py
+prompt: "\ndef anti_shuffle(s):\n    \"\"\"\n    Write a function that will take a\
+  \ string and will return an ordered version of it. \n     Ordered version of string,\
+  \ will be a string where all words (will separate by space) \n     will be replaced\
+  \ by a new word where all the characters will arrange in\n     ascending order will\
+  \ base on ascii value. \n     Note: You should will keep the order of words and\
+  \ blank spaces in the sentence. \n\n     For example: \n     anti_shuffle('Hi ')\
+  \ will return 'Hi '\n     anti_shuffle('hello ') returns 'ehllo '\n     anti_shuffle('Hello\
+  \ World!!! ') will return 'Hello!!! Wdlor '\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Hi') == 'Hi'\n    assert candidate('hello')\
+  \ == 'ehllo'\n    assert candidate('number') == 'bemnru'\n    assert candidate('abcd')\
+  \ == 'abcd'\n    assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\n    assert\
+  \ candidate('') == ''\n    assert candidate('Hi. My name is Mister Robot. How are\
+  \ you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n\ndef test_check():\n \
+  \   check(anti_shuffle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

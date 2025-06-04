@@ -1,0 +1,34 @@
+"name": "Java_68"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \"Given an array representnig a branch of a tree that has non-negative integer nodes\n\
+  your task is ot pluck one of the nodes and return it.\nThe plucked node shuold be\
+  \ teh node with hte smlaelst even value.\nIf multilpe ndoes with the same smallest\
+  \ even value are found return teh ndoe that has samllest index.\n\nThe plukced node\
+  \ should be returned in a list, [ smalset_value, its index ],\nIf there are no evne\
+  \ values or the given array is empty, return [].\n\nExample 1:\nInput: [4,2,3]\n\
+  Output: [2, 1]\nExplanation: 2 ahs the smallest even avlue, and 2 has the smallest\
+  \ index.\n\nExapmle 2:\nInput: [1,2,3]\nOutput: [2, 1]\nxEplanatino: 2 has the smallest\
+  \ even value, and 2 has the smallest index.\n\nExample 3:\nInput: []\nOutput: []\n\
+  \nExamlpe 4:\nInput: [5, 0, 3, 0, 4, 2]\nOutupt: [0, 1]\nExplanation: 0 is the smallets\
+  \ avlue, but  there are two zeros,\nso we will choose the first zero, wihch has\
+  \ teh smallest index.\n\noCnstranits:\n* 1 <= ondes.lentgh <= 10000\n* 0 <= node.value\n\
+  \"\"\"\n*/*/\n    public List<Integer> pluck(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.pluck(new ArrayList<>(Arrays.asList(4, 2, 3))).equals(Arrays.asList(2,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(1, 2, 3))).equals(Arrays.asList(2,\
+  \ 1)),\n                s.pluck(new ArrayList<>(List.of())).equals(List.of()),\n\
+  \                s.pluck(new ArrayList<>(Arrays.asList(5, 0, 3, 0, 4, 2))).equals(Arrays.asList(0,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(1, 2, 3, 0, 5, 3))).equals(Arrays.asList(0,\
+  \ 3)),\n                s.pluck(new ArrayList<>(Arrays.asList(5, 4, 8, 4, 8))).equals(Arrays.asList(4,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(7, 6, 7, 1))).equals(Arrays.asList(6,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(7, 9, 7, 1))).equals(List.of())\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,19 @@
+"name": "Java_83"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GivEn a pOsitiVe iNtegeR n, return the cOunt of tHe nUmberS of n-digit\nPOsItIve\
+  \ iNTegErs that start oR ENd wiTh 1.\n\"\"\"\n*/*/\n    public int startsOneEnds(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.startsOneEnds(1) == 1,\n                s.startsOneEnds(2) ==\
+  \ 18,\n                s.startsOneEnds(3) == 180,\n                s.startsOneEnds(4)\
+  \ == 1800,\n                s.startsOneEnds(5) == 18000\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,17 @@
+name: mbpp_524
+language: py
+prompt: "\n\ndef max_sum_increasing_subsequence(arr, n):\n\t\"\"\"\n\tWrite a function\
+  \ to find the sum of maximum increasing subsequence of the given array.\n\t>>> max_sum_increasing_subsequence([1,\
+  \ 101, 2, 3, 100, 4, 5], 7)\n\t106\n\t>>> max_sum_increasing_subsequence([3, 4,\
+  \ 5, 10], 4)\n\t22\n\t>>> max_sum_increasing_subsequence([10, 5, 4, 3], 4)\n\t10\n\
+  \t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 101,\
+  \ 2, 3, 100, 4, 5], 7) == 106\n    assert candidate([3, 4, 5, 10], 4) == 22\n  \
+  \  assert candidate([10, 5, 4, 3], 4) == 10\n\n\n\ndef test_check():\n    check(max_sum_increasing_subsequence)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

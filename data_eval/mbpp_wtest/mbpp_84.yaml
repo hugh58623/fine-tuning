@@ -1,0 +1,14 @@
+name: mbpp_84
+language: py
+prompt: "\n\ndef sequence(n):\n\t\"\"\"\n\tWrite a function to find the n-th number\
+  \ in newman conway sequence.\n\t>>> sequence(10)\n\t6\n\t>>> sequence(2)\n\t1\n\t\
+  >>> sequence(3)\n\t2\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 6\n    assert candidate(2) == 1\n    assert candidate(3) == 2\n\n\n\ndef test_check():\n\
+  \    check(sequence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

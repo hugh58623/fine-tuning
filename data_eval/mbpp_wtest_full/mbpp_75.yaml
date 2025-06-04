@@ -1,0 +1,19 @@
+name: mbpp_75
+language: py
+prompt: "\n\ndef find_tuples(test_list, K):\n  \"\"\"\n  Write a function to find\
+  \ tuples which have all elements divisible by k from the given list of tuples.\n\
+  \  >>> find_tuples([(6, 24, 12), (7, 9, 6), (12, 18, 21)], 6)\n  '[(6, 24, 12)]'\n\
+  \  >>> find_tuples([(5, 25, 30), (4, 2, 3), (7, 8, 9)], 5)\n  '[(5, 25, 30)]'\n\
+  \  >>> find_tuples([(7, 9, 16), (8, 16, 4), (19, 17, 18)], 4)\n  '[(8, 16, 4)]'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(6, 24,\
+  \ 12), (7, 9, 6), (12, 18, 21)], 6) == '[(6, 24, 12)]'\n    assert candidate([(5,\
+  \ 25, 30), (4, 2, 3), (7, 8, 9)], 5) == '[(5, 25, 30)]'\n    assert candidate([(7,\
+  \ 9, 16), (8, 16, 4), (19, 17, 18)], 4) == '[(8, 16, 4)]'\n\n\n\ndef test_check():\n\
+  \    check(find_tuples)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

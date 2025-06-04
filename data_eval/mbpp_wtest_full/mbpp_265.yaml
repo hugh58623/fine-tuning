@@ -1,0 +1,20 @@
+name: mbpp_265
+language: py
+prompt: "\n\ndef list_split(S, step):\n    \"\"\"\n    Write a function to split a\
+  \ list for every nth element.\n    >>> list_split(['a', 'b', 'c', 'd', 'e', 'f',\
+  \ 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'],3)\n    [['a', 'd', 'g', 'j', 'm'], ['b',\
+  \ 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']]\n    >>> list_split([1,2,3,4,5,6,7,8,9,10,11,12,13,14],3)\n\
+  \    [[1,4,7,10,13], [2,5,8,11,14], [3,6,9,12]]\n    >>> list_split(['python','java','C','C++','DBMS','SQL'],2)\n\
+  \    [['python', 'C', 'DBMS'], ['java', 'C++', 'SQL']]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['a', 'b',\
+  \ 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n'],3)==[['a', 'd', 'g',\
+  \ 'j', 'm'], ['b', 'e', 'h', 'k', 'n'], ['c', 'f', 'i', 'l']] \n    assert candidate([1,2,3,4,5,6,7,8,9,10,11,12,13,14],3)==[[1,4,7,10,13],\
+  \ [2,5,8,11,14], [3,6,9,12]] \n    assert candidate(['python','java','C','C++','DBMS','SQL'],2)==[['python',\
+  \ 'C', 'DBMS'], ['java', 'C++', 'SQL']] \n\n\n\ndef test_check():\n    check(list_split)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

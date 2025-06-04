@@ -1,0 +1,22 @@
+name: mbpp_110
+language: py
+prompt: "\n\ndef extract_missing(test_list, strt_val, stop_val):\n  \"\"\"\n  Write\
+  \ a function to extract the ranges that are missing from the given list with the\
+  \ given start range and end range values.\n  >>> extract_missing([(6, 9), (15, 34),\
+  \ (48, 70)], 2, 100)\n  [(2, 6), (9, 100), (9, 15), (34, 100), (34, 48), (70, 100)]\n\
+  \  >>> extract_missing([(7, 2), (15, 19), (38, 50)], 5, 60)\n  [(5, 7), (2, 60),\
+  \ (2, 15), (19, 60), (19, 38), (50, 60)]\n  >>> extract_missing([(7, 2), (15, 19),\
+  \ (38, 50)], 1, 52)\n  [(1, 7), (2, 52), (2, 15), (19, 52), (19, 38), (50, 52)]\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(6, 9),\
+  \ (15, 34), (48, 70)], 2, 100) == [(2, 6), (9, 100), (9, 15), (34, 100), (34, 48),\
+  \ (70, 100)]\n    assert candidate([(7, 2), (15, 19), (38, 50)], 5, 60) == [(5,\
+  \ 7), (2, 60), (2, 15), (19, 60), (19, 38), (50, 60)]\n    assert candidate([(7,\
+  \ 2), (15, 19), (38, 50)], 1, 52) == [(1, 7), (2, 52), (2, 15), (19, 52), (19, 38),\
+  \ (50, 52)]\n\n\n\ndef test_check():\n    check(extract_missing)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

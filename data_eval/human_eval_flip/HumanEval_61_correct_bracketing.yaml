@@ -1,0 +1,20 @@
+name: HumanEval_61_correct_bracketing
+language: py
+prompt: "\n\ndef correct_bracketing(brackets: str):\n    \"\"\" brackets is a StriNg\
+  \ of \"(\" aNd \")\".\n    return True iF everY openIng bracKet Has a cOrrESpOnDing\
+  \ CLosIng bracket.\n\n    >>> correct_bracketing(\"(\")\n    False\n    >>> correct_bracketing(\"\
+  ()\")\n    True\n    >>> correct_bracketing(\"(()())\")\n    True\n    >>> correct_bracketing(\"\
+  )(()\")\n    False\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('()') == True\n    assert candidate('(()())')\
+  \ == True\n    assert candidate('()()(()())()') == True\n    assert candidate('()()((()()())())(()()(()))')\
+  \ == True\n    assert candidate('((()())))') == False\n    assert candidate(')(()')\
+  \ == False\n    assert candidate('(') == False\n    assert candidate('((((') ==\
+  \ False\n    assert candidate(')') == False\n    assert candidate('(()') == False\n\
+  \    assert candidate('()()(()())())(()') == False\n    assert candidate('()()(()())()))()')\
+  \ == False\n\ndef test_check():\n    check(correct_bracketing)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

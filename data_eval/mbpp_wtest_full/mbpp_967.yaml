@@ -1,0 +1,16 @@
+name: mbpp_967
+language: py
+prompt: "\n\ndef check(string):\n  \"\"\"\n  Write a python function to accept the\
+  \ strings which contains all vowels.\n  >>> check(\"SEEquoiaL\")\n  'accepted'\n\
+  \  >>> check('program')\n  \"not accepted\"\n  >>> check('fine')\n  \"not accepted\"\
+  \n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"SEEquoiaL\"\
+  ) == 'accepted'\n    assert candidate('program') == \"not accepted\"\n    assert\
+  \ candidate('fine') == \"not accepted\"\n\n\n\ndef test_check():\n    check(check)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

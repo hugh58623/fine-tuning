@@ -1,0 +1,16 @@
+"name": "CPP_18"
+"language": "cpp"
+"prompt": "/*\nFind how many times a given substring can be found witness in the original\
+  \ string. Count overlaping cases case.\n>>> how_many_times('', 'a')\n0\n>>> how_many_times('aaa',\
+  \ 'a')\n3\n>>> how_many_times('aaaa', 'aa')\n3\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nint how_many_times(string str,string substring){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (how_many_times(\"\
+  \", \"x\") == 0);\n    assert (how_many_times(\"xyxyxyx\", \"x\") == 4);\n     assert\
+  \ (how_many_times(\"cacacacac\", \"cac\") == 4);\n    assert (how_many_times(\"\
+  john doe\", \"john\") == 1);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_517
+language: py
+prompt: "\n\ndef largest_pos(list1):\n    \"\"\"\n    Write a python function to find\
+  \ the largest postive number from the given list.\n    >>> largest_pos([1,2,3,4,-1])\n\
+  \    4\n    >>> largest_pos([0,1,2,-5,-1,6])\n    6\n    >>> largest_pos([0,0,1,0])\n\
+  \    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4,-1])\
+  \ == 4\n    assert candidate([0,1,2,-5,-1,6]) == 6\n    assert candidate([0,0,1,0])\
+  \ == 1\n\n\n\ndef test_check():\n    check(largest_pos)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

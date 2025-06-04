@@ -1,0 +1,15 @@
+name: mbpp_540
+language: py
+prompt: "\n\ndef find_Diff(arr,n):\n    \"\"\"\n    Write a python function to find\
+  \ the difference between highest and least frequencies in a given array.\n    >>>\
+  \ find_Diff([1,1,2,2,7,8,4,5,1,4],10)\n    2\n    >>> find_Diff([1,7,9,2,3,3,1,3,3],9)\n\
+  \    3\n    >>> find_Diff([1,2,1,2],4)\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,1,2,2,7,8,4,5,1,4],10)\
+  \ == 2\n    assert candidate([1,7,9,2,3,3,1,3,3],9) == 3\n    assert candidate([1,2,1,2],4)\
+  \ == 0\n\n\n\ndef test_check():\n    check(find_Diff)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

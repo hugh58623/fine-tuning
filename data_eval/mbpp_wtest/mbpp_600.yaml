@@ -1,0 +1,15 @@
+name: mbpp_600
+language: py
+prompt: "\n\ndef is_Even(n) :\n    \"\"\"\n    Write a python function to check whether\
+  \ the given number is even or not using bitwise operator.\n    >>> is_Even(1)\n\
+  \    False\n    >>> is_Even(2)\n    True\n    >>> is_Even(3)\n    False\n    \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1) == False\n\
+  \    assert candidate(2) == True\n    assert candidate(3) == False\n\n\n\ndef test_check():\n\
+  \    check(is_Even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

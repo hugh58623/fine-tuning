@@ -1,0 +1,14 @@
+name: mbpp_248
+language: py
+prompt: "\n\ndef harmonic_sum(n):\n  \"\"\"\n  Write a function to calculate the harmonic\
+  \ sum of n-1.\n  >>> harmonic_sum(7)\n  2.5928571428571425\n  >>> harmonic_sum(4)\n\
+  \  2.083333333333333\n  >>> harmonic_sum(19)\n  3.547739657143682\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7) == 2.5928571428571425\n\
+  \    assert candidate(4) == 2.083333333333333\n    assert candidate(19) == 3.547739657143682\n\
+  \n\n\ndef test_check():\n    check(harmonic_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

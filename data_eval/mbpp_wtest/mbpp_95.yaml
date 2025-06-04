@@ -1,0 +1,15 @@
+name: mbpp_95
+language: py
+prompt: "\n\ndef Find_Min_Length(lst):\n    \"\"\"\n    Write a python function to\
+  \ find the minimum length of sublist.\n    >>> Find_Min_Length([[1],[1,2]])\n  \
+  \  1\n    >>> Find_Min_Length([[1,2],[1,2,3],[1,2,3,4]])\n    2\n    >>> Find_Min_Length([[3,3,3],[4,4,4,4]])\n\
+  \    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1],[1,2]])\
+  \ == 1\n    assert candidate([[1,2],[1,2,3],[1,2,3,4]]) == 2\n    assert candidate([[3,3,3],[4,4,4,4]])\
+  \ == 3\n\n\n\ndef test_check():\n    check(Find_Min_Length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

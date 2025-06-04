@@ -1,0 +1,20 @@
+name: mbpp_361
+language: py
+prompt: "\n\ndef remove_empty(list1):\n  \"\"\"\n  Write a function to remove empty\
+  \ lists from a given list of lists.\n  >>> remove_empty([[], [], [], 'Red', 'Green',\
+  \ [1,2], 'Blue', [], []])\n  ['Red', 'Green', [1, 2], 'Blue']\n  >>> remove_empty([[],\
+  \ [], [],[],[], 'Green', [1,2], 'Blue', [], []])\n  [ 'Green', [1, 2], 'Blue']\n\
+  \  >>> remove_empty([[], [], [], 'Python',[],[], 'programming', 'language',[],[],[],\
+  \ [], []])\n  ['Python', 'programming', 'language']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[], [],\
+  \ [], 'Red', 'Green', [1,2], 'Blue', [], []])==['Red', 'Green', [1, 2], 'Blue']\n\
+  \    assert candidate([[], [], [],[],[], 'Green', [1,2], 'Blue', [], []])==[ 'Green',\
+  \ [1, 2], 'Blue']\n    assert candidate([[], [], [], 'Python',[],[], 'programming',\
+  \ 'language',[],[],[], [], []])==['Python', 'programming', 'language']\n\n\n\ndef\
+  \ test_check():\n    check(remove_empty)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

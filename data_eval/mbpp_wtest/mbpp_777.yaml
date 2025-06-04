@@ -1,0 +1,15 @@
+name: mbpp_777
+language: py
+prompt: "\n\ndef find_Sum(arr,n):\n    \"\"\"\n    Write a python function to find\
+  \ the sum of non-repeated elements in a given array.\n    >>> find_Sum([1,2,3,1,1,4,5,6],8)\n\
+  \    21\n    >>> find_Sum([1,10,9,4,2,10,10,45,4],9)\n    71\n    >>> find_Sum([12,10,9,45,2,10,10,45,10],9)\n\
+  \    78\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,1,1,4,5,6],8)\
+  \ == 21\n    assert candidate([1,10,9,4,2,10,10,45,4],9) == 71\n    assert candidate([12,10,9,45,2,10,10,45,10],9)\
+  \ == 78\n\n\n\ndef test_check():\n    check(find_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

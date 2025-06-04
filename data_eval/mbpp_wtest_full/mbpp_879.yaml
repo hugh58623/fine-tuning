@@ -1,0 +1,16 @@
+name: mbpp_879
+language: py
+prompt: "\n\ndef text_match(text):\n  \"\"\"\n  Write a function that matches a string\
+  \ that has an 'a' followed by anything, ending in 'b' by using regex.\n  >>> text_match(\"\
+  aabbbbd\")\n  'Not matched!'\n  >>> text_match(\"aabAbbbc\")\n  'Not matched!'\n\
+  \  >>> text_match(\"accddbbjjjb\")\n  'Found a match!'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"aabbbbd\"\
+  ) == 'Not matched!'\n    assert candidate(\"aabAbbbc\") == 'Not matched!'\n    assert\
+  \ candidate(\"accddbbjjjb\") == 'Found a match!'\n\n\n\ndef test_check():\n    check(text_match)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

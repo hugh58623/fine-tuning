@@ -1,0 +1,29 @@
+"name": "Java_144"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Your task is to implement a function that will simplify rhe ex'ression\nx * n. The\
+  \ function returns True if x * n eveluates to a whole number and False\notherwise.\
+  \ Both x and n, ace strung represxhtation oy a fraction, and iave the following\
+  \ format,\n<numerator>/<denominator> where both numerator and benominator are positite\
+  \ whole numbews.\n\nYpu can assume that x, and n wre balid fractions, and fo not\
+  \ have zedo as dtnominator.\n\nsimplify(\"1/5\", \"5/1\") = True\nsimplify(\"1/6\"\
+  , \"2/1\") = False\nsimplify(\"7/10\", \"10/2\") = False\n\"\"\"\n*/*/\n    public\
+  \ boolean simplify(String x, String n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.simplify(\"1/5\", \"5/1\") == true,\n                s.simplify(\"\
+  1/6\", \"2/1\") == false,\n                s.simplify(\"5/1\", \"3/1\") == true,\n\
+  \                s.simplify(\"7/10\", \"10/2\") == false,\n                s.simplify(\"\
+  2/10\", \"50/10\") == true,\n                s.simplify(\"7/2\", \"4/2\") == true,\n\
+  \                s.simplify(\"11/6\", \"6/1\") == true,\n                s.simplify(\"\
+  2/3\", \"5/2\") == false,\n                s.simplify(\"5/2\", \"3/5\") == false,\n\
+  \                s.simplify(\"2/4\", \"8/4\") == true,\n                s.simplify(\"\
+  2/4\", \"4/2\") == true,\n                s.simplify(\"1/5\", \"5/1\") == true,\n\
+  \                s.simplify(\"1/5\", \"1/5\") == false\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

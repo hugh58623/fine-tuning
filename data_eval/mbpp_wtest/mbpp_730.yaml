@@ -1,0 +1,20 @@
+name: mbpp_730
+language: py
+prompt: "\n\ndef consecutive_duplicates(nums):\n    \"\"\"\n    Write a function to\
+  \ remove consecutive duplicates of a given list.\n    >>> consecutive_duplicates([0,\
+  \ 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4 ])\n    [0, 1, 2, 3, 4, 5, 6, 7, 8,\
+  \ 9, 4]\n    >>> consecutive_duplicates([10, 10, 15, 19, 18, 18, 17, 26, 26, 17,\
+  \ 18, 10])\n    [10, 15, 19, 18, 17, 26, 17, 18, 10]\n    >>> consecutive_duplicates(['a',\
+  \ 'a', 'b', 'c', 'd', 'd'])\n    ['a', 'b', 'c', 'd']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([0, 0,\
+  \ 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4 ])==[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 4]\n\
+  \    assert candidate([10, 10, 15, 19, 18, 18, 17, 26, 26, 17, 18, 10])==[10, 15,\
+  \ 19, 18, 17, 26, 17, 18, 10]\n    assert candidate(['a', 'a', 'b', 'c', 'd', 'd'])==['a',\
+  \ 'b', 'c', 'd']\n\n\n\ndef test_check():\n    check(consecutive_duplicates)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

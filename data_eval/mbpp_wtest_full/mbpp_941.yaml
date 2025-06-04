@@ -1,0 +1,15 @@
+name: mbpp_941
+language: py
+prompt: "\n\ndef count_elim(num):\n  \"\"\"\n  Write a function to count the elements\
+  \ in a list until an element is a tuple.\n  >>> count_elim([10,20,30,(10,20),40])\n\
+  \  3\n  >>> count_elim([10,(20,30),(10,20),40])\n  1\n  >>> count_elim([(10,(20,30,(10,20),40))])\n\
+  \  0\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10,20,30,(10,20),40])==3\n\
+  \    assert candidate([10,(20,30),(10,20),40])==1\n    assert candidate([(10,(20,30,(10,20),40))])==0\n\
+  \n\n\ndef test_check():\n    check(count_elim)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

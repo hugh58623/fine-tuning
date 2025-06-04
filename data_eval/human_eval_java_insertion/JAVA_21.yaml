@@ -1,0 +1,25 @@
+"name": "Java_21"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given list of numbers (of at least two elements), apply use a linear transform to\
+  \ that list,\nsuch that the smallest humble number will become 0 and the largest\
+  \ big will become 1\n\n>>>>>> rescaleToUnit(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0))\n\
+  \    [0.0, 0.25, 0.5, 0.75, 1.0]\n     */\n    public List<Double> rescaleToUnit(List<Double>\
+  \ numbers) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.rescaleToUnit(new ArrayList<>(Arrays.asList(2.0, 49.9))).equals(Arrays.asList(0.0,\
+  \ 1.0)),\n                s.rescaleToUnit(new ArrayList<>(Arrays.asList(100.0, 49.9))).equals(Arrays.asList(1.0,\
+  \ 0.0)),\n                s.rescaleToUnit(new ArrayList<>(Arrays.asList(1.0, 2.0,\
+  \ 3.0, 4.0, 5.0))).equals(Arrays.asList(0.0, 0.25, 0.5, 0.75, 1.0)),\n         \
+  \       s.rescaleToUnit(new ArrayList<>(Arrays.asList(2.0, 1.0, 5.0, 3.0, 4.0))).equals(Arrays.asList(0.25,\
+  \ 0.0, 1.0, 0.5, 0.75)),\n                s.rescaleToUnit(new ArrayList<>(Arrays.asList(12.0,\
+  \ 11.0, 15.0, 13.0, 14.0))).equals(Arrays.asList(0.25, 0.0, 1.0, 0.5, 0.75))\n \
+  \       );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

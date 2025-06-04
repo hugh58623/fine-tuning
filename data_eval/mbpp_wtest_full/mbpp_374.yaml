@@ -1,0 +1,21 @@
+name: mbpp_374
+language: py
+prompt: "\n\ndef permute_string(str):\n    \"\"\"\n    Write a function to print all\
+  \ permutations of a given string including duplicates.\n    >>> permute_string('ab')\n\
+  \    ['ab', 'ba']\n    >>> permute_string('abc')\n    ['abc', 'bac', 'bca', 'acb',\
+  \ 'cab', 'cba']\n    >>> permute_string('abcd')\n    ['abcd', 'bacd', 'bcad', 'bcda',\
+  \ 'acbd', 'cabd', 'cbad', 'cbda', 'acdb', 'cadb', 'cdab', 'cdba', 'abdc', 'badc',\
+  \ 'bdac', 'bdca', 'adbc', 'dabc', 'dbac', 'dbca', 'adcb', 'dacb', 'dcab', 'dcba']\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('ab')==['ab',\
+  \ 'ba']\n    assert candidate('abc')==['abc', 'bac', 'bca', 'acb', 'cab', 'cba']\n\
+  \    assert candidate('abcd')==['abcd', 'bacd', 'bcad', 'bcda', 'acbd', 'cabd',\
+  \ 'cbad', 'cbda', 'acdb', 'cadb', 'cdab', 'cdba', 'abdc', 'badc', 'bdac', 'bdca',\
+  \ 'adbc', 'dabc', 'dbac', 'dbca', 'adcb', 'dacb', 'dcab', 'dcba']\n\n\n\ndef test_check():\n\
+  \    check(permute_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

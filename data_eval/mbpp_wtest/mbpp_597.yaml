@@ -1,0 +1,18 @@
+name: mbpp_597
+language: py
+prompt: "\n\ndef find_kth(arr1, arr2, m, n, k):\n\t\"\"\"\n\tWrite a function to find\
+  \ kth element from the given two sorted arrays.\n\t>>> find_kth([2, 3, 6, 7, 9],\
+  \ [1, 4, 8, 10], 5, 4, 5)\n\t6\n\t>>> find_kth([100, 112, 256, 349, 770], [72, 86,\
+  \ 113, 119, 265, 445, 892], 5, 7, 7)\n\t256\n\t>>> find_kth([3, 4, 7, 8, 10], [2,\
+  \ 5, 9, 11], 5, 4, 6)\n\t8\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 3,\
+  \ 6, 7, 9], [1, 4, 8, 10], 5, 4, 5) == 6\n    assert candidate([100, 112, 256, 349,\
+  \ 770], [72, 86, 113, 119, 265, 445, 892], 5, 7, 7) == 256\n    assert candidate([3,\
+  \ 4, 7, 8, 10], [2, 5, 9, 11], 5, 4, 6) == 8\n\n\n\ndef test_check():\n    check(find_kth)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

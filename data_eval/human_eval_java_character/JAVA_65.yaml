@@ -1,0 +1,20 @@
+"name": "Java_65"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CircUlar shift The diGitS of thE inteGer x, shift the dIgiTs rigHt bY shift\nAnD\
+  \ return tHe reSUlt As a string.\nIf shift > nuMBEr of Digits, return digiTs reversed.\n\
+  \n>>>>>> circularShift(12, 1)\n    \"21\"\n    >>> circularShift(12, 2)\n    \"\
+  12\"\n     */\n    public String circularShift(int x, int shift) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.circularShift(100, 2).equals(\"001\"),\n                s.circularShift(12,\
+  \ 2).equals(\"12\"),\n                s.circularShift(97, 8).equals(\"79\"),\n \
+  \               s.circularShift(12, 1).equals(\"21\"),\n                s.circularShift(11,\
+  \ 101).equals(\"11\")\n        );\n        if (correct.contains(false)) {\n    \
+  \        throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

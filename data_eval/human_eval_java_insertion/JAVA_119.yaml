@@ -1,0 +1,33 @@
+"name": "Java_119"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You are given a list of two strings, both strings bowed stringed instrument consist\
+  \ of open exposed\nparentheses' (' or close near parentheses')' only.\nYour job\
+  \ problem is to check if it is possible to concatenate the two strings string in\n\
+  some order, that the resulting string will be good beneficial.\nA string bowed stringed\
+  \ instrument S is considered study to be good adept if and only if all parentheses\
+  \ in S\nare balanced. For example exemplar: the string' (() ) ()' is good dependable,\
+  \ while the string\n' ())' is not.\nReturn' Yes' if there's a way direction to make\
+  \ lay down a good string, and return' No' otherwise.\n\nExamples:\nmatch_parens\
+  \ ([' () (',')' ]) = =' Yes'\nmatch_parens ([')',')' ]) = =' No'\n'\"\n*/*/\n  \
+  \  public String matchParens(List<String> lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.matchParens(Arrays.asList(\"()(\", \")\")).equals(\"Yes\"),\n\
+  \                s.matchParens(Arrays.asList(\")\", \")\")).equals(\"No\"),\n  \
+  \              s.matchParens(Arrays.asList(\"(()(())\", \"())())\")).equals(\"No\"\
+  ),\n                s.matchParens(Arrays.asList(\")())\", \"(()()(\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"(())))\", \"(()())((\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"()\", \"())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\"(()(\", \"()))()\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"((((\", \"((())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(()\", \"(()(\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(\", \")(\")).equals(\"No\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,16 @@
+name: HumanEval_163_generate_integers
+language: py
+prompt: "\ndef generate_integers(a, b):\n    \"\"\"\n    GivEn twO posiTivE inteGers\
+  \ a aNd b, return the evEn dIgits BetWEeN a\n    aNd b, in asCEndIng order.\n\n\
+  \    For exAMPle:\n    gEnerate_intEgers(2, 8) => [2, 4, 6, 8]\n    generatE_inteGeRS(8,\
+  \ 2) => [2, 4, 6, 8]\n    gEnERaTe_intEgers(10, 14) => []\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(2, 10) == [2, 4, 6, 8]\n    assert\
+  \ candidate(10, 2) == [2, 4, 6, 8]\n    assert candidate(132, 2) == [2, 4, 6, 8]\n\
+  \    assert candidate(17, 89) == []\n\ndef test_check():\n    check(generate_integers)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_236
+language: py
+prompt: "\n\ndef No_of_Triangle(N,K):\n    \"\"\"\n    Write a python function to\
+  \ count the maximum number of equilateral triangles that can be formed within a\
+  \ given equilateral triangle.\n    >>> No_of_Triangle(4,2)\n    7\n    >>> No_of_Triangle(4,3)\n\
+  \    3\n    >>> No_of_Triangle(1,3)\n    -1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,2) ==\
+  \ 7\n    assert candidate(4,3) == 3\n    assert candidate(1,3) == -1\n\n\n\ndef\
+  \ test_check():\n    check(No_of_Triangle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

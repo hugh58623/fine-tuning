@@ -1,0 +1,15 @@
+name: mbpp_768
+language: py
+prompt: "\n\ndef check_Odd_Parity(x):\n    \"\"\"\n    Write a python function to\
+  \ check for odd parity of a given number.\n    >>> check_Odd_Parity(13)\n    True\n\
+  \    >>> check_Odd_Parity(21)\n    True\n    >>> check_Odd_Parity(18)\n    False\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(13) ==\
+  \ True\n    assert candidate(21) == True\n    assert candidate(18) == False\n\n\n\
+  \ndef test_check():\n    check(check_Odd_Parity)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

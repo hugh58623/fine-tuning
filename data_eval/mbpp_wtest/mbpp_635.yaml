@@ -1,0 +1,18 @@
+name: mbpp_635
+language: py
+prompt: "\n\ndef heap_sort(iterable):\n    \"\"\"\n    Write a function to push all\
+  \ values into a heap and then pop off the smallest values one at a time.\n    >>>\
+  \ heap_sort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])\n    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n\
+  \    >>> heap_sort([25, 35, 22, 85, 14, 65, 75, 25, 58])\n    [14, 22, 25, 25, 35,\
+  \ 58, 65, 75, 85]\n    >>> heap_sort( [7, 1, 9, 5])\n    [1,5,7,9]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 3,\
+  \ 5, 7, 9, 2, 4, 6, 8, 0])==[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]\n    assert candidate([25,\
+  \ 35, 22, 85, 14, 65, 75, 25, 58])==[14, 22, 25, 25, 35, 58, 65, 75, 85]\n    assert\
+  \ candidate( [7, 1, 9, 5])==[1,5,7,9]\n\n\n\ndef test_check():\n    check(heap_sort)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

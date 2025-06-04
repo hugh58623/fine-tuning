@@ -1,0 +1,16 @@
+name: mbpp_623
+language: py
+prompt: "\n\ndef nth_nums(nums,n):\n \"\"\"\n Write a function to find the n-th power\
+  \ of individual elements in a list using lambda function.\n >>> nth_nums([1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10],2)\n [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n >>> nth_nums([10,20,30],3)\n\
+  \ ([1000, 8000, 27000])\n >>> nth_nums([12,15],5)\n ([248832, 759375])\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10],2)==[1, 4, 9, 16, 25, 36, 49, 64, 81, 100]\n    assert\
+  \ candidate([10,20,30],3)==([1000, 8000, 27000])\n    assert candidate([12,15],5)==([248832,\
+  \ 759375])\n\n\n\ndef test_check():\n    check(nth_nums)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

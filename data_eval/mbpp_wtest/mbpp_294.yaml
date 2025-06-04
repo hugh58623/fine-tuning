@@ -1,0 +1,16 @@
+name: mbpp_294
+language: py
+prompt: "\n\ndef max_val(listval):\n     \"\"\"\n     Write a function to find the\
+  \ maximum value in a given heterogeneous list.\n     >>> max_val(['Python', 3, 2,\
+  \ 4, 5, 'version'])\n     5\n     >>> max_val(['Python', 15, 20, 25])\n     25\n\
+  \     >>> max_val(['Python', 30, 20, 40, 50, 'version'])\n     50\n     \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['Python',\
+  \ 3, 2, 4, 5, 'version'])==5\n    assert candidate(['Python', 15, 20, 25])==25\n\
+  \    assert candidate(['Python', 30, 20, 40, 50, 'version'])==50\n\n\n\ndef test_check():\n\
+  \    check(max_val)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_202
+language: py
+prompt: "\n\ndef remove_even(str1):\n \"\"\"\n Write a function to remove even characters\
+  \ in a string.\n >>> remove_even(\"python\")\n (\"pto\")\n >>> remove_even(\"program\"\
+  )\n (\"porm\")\n >>> remove_even(\"language\")\n (\"lnug\")\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  )==(\"pto\")\n    assert candidate(\"program\")==(\"porm\")\n    assert candidate(\"\
+  language\")==(\"lnug\")\n\n\n\ndef test_check():\n    check(remove_even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

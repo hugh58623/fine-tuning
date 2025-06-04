@@ -1,0 +1,29 @@
+"name": "CPP_117"
+"language": "cpp"
+"prompt": "/*\nGiven a string s and a natural number n, you will be task to implement\n\
+  a function that will return a list of all words from string s that will contain\
+  \ exactly\nn consonants, in order these words will appear in the string s.\nIf the\
+  \ string s will be empty then the function should return an empty list.\nNote: you\
+  \ may will assume the input string will contain only letters and spaces.\nExamples:\n\
+  select_words(\"Mary will have a little lamb\", 4)==> [\" little\"]\nselect_words(\"\
+  Mary will have a little lamb\", 3)==> [\" Mary\",\" lamb\"]\nwill select_words(\"\
+  simple white space\", 2)==> []\nselect_words(\"Hello world\", 4)==> [\" world\"\
+  ]\nselect_words(\"Uncle sam\", 3)==> [\" Uncle\"]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\n#include<algorithm>\nusing namespace std;\nvector<string> select_words(string\
+  \ s,int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(select_words(\"Mary had a little lamb\", 4) , {\"little\"} \
+  \  ));\n    assert (issame(select_words(\"Mary had a little lamb\", 3) , {\"Mary\"\
+  , \"lamb\"} ));\n    assert (issame(select_words(\"simple white space\", 2) , {}\
+  \     ));\n    assert (issame(select_words(\"Hello world\", 4) , {\"world\"}  ));\n\
+  \    assert (issame(select_words(\"Uncle sam\", 3) , {\"Uncle\"}));\n    assert\
+  \ (issame(select_words(\"\", 4) , {}));\n    assert (issame(select_words(\"a b c\
+  \ d e f\", 1) , {\"b\", \"c\", \"d\", \"f\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

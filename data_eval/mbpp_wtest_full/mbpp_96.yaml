@@ -1,0 +1,14 @@
+name: mbpp_96
+language: py
+prompt: "\n\ndef divisor(n):\n  \"\"\"\n  Write a python function to find the number\
+  \ of divisors of a given integer.\n  >>> divisor(15)\n  4\n  >>> divisor(12)\n \
+  \ 6\n  >>> divisor(9)\n  3\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(15) ==\
+  \ 4 \n    assert candidate(12) == 6\n    assert candidate(9) == 3\n\n\n\ndef test_check():\n\
+  \    check(divisor)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

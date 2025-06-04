@@ -1,0 +1,15 @@
+name: mbpp_416
+language: py
+prompt: "\n\ndef breakSum(n):\n\t\"\"\"\n\tWrite a function to find the maximum sum\
+  \ we can make by dividing number in three parts recursively and summing them up\
+  \ together for the given number.\n\t>>> breakSum(12)\n\t13\n\t>>> breakSum(24)\n\
+  \t27\n\t>>> breakSum(23)\n\t23\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12) ==\
+  \ 13\n    assert candidate(24) == 27\n    assert candidate(23) == 23\n\n\n\ndef\
+  \ test_check():\n    check(breakSum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

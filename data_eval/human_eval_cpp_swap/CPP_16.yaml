@@ -1,0 +1,17 @@
+"name": "CPP_16"
+"language": "cpp"
+"prompt": "/*\niGven a string, find out how many distinct characters (regardless of\
+  \ caes) does ti consist of\n>>> count_distinct_characters('xyzXYZ')\n3\n>>> count_distinct_characters('Jerry')\n\
+  4\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nint count_distinct_characters(string str){ \n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (count_distinct_characters(\"\
+  \") == 0);\n    assert (count_distinct_characters(\"abcde\") == 5);\n    assert\
+  \ (count_distinct_characters(\"abcdecadeCADE\") == 5);\n    assert (count_distinct_characters(\"\
+  aaaaAAAAaaaa\") == 1);\n    assert (count_distinct_characters(\"Jerry jERRY JeRRRY\"\
+  ) == 5);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

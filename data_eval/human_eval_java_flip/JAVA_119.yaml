@@ -1,0 +1,31 @@
+"name": "Java_119"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You Are gIven a list Of tWo strIngs, bOth striNgs ConsiSt oF OpEn\nPareNTheSes '('\
+  \ or close parENThesEs ')' only.\nYour Job is to check if it iS possIbLE tO cONcAtenaTe\
+  \ the twO StRINgs in\nSoME OrdEr, THaT the rEsuLtiNG stRing wIll Be GoOD.\na StrIng\
+  \ S is conSIDEred to be goOd IF and onlY if alL paRenthESeS in S\naRE baLaNceD.\
+  \ for eXamPlE: THe striNg '(())()' is good, wHiLE The StRInG\n'())' is NoT.\nrEtUrN\
+  \ 'YEs' if tHere'S a way to mAKe A Good string, And return 'NO' otherWiSE.\n\nEXAMplEs:\n\
+  mAtch_paRens(['()(', ')']) == 'yeS'\nMatcH_PArens([')', ')']) == 'NO'\n\"\"\"\n\
+  */*/\n    public String matchParens(List<String> lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.matchParens(Arrays.asList(\"()(\", \")\")).equals(\"Yes\"),\n\
+  \                s.matchParens(Arrays.asList(\")\", \")\")).equals(\"No\"),\n  \
+  \              s.matchParens(Arrays.asList(\"(()(())\", \"())())\")).equals(\"No\"\
+  ),\n                s.matchParens(Arrays.asList(\")())\", \"(()()(\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"(())))\", \"(()())((\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"()\", \"())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\"(()(\", \"()))()\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"((((\", \"((())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(()\", \"(()(\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(\", \")(\")).equals(\"No\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

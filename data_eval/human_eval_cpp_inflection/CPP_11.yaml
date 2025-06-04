@@ -1,0 +1,15 @@
+"name": "CPP_11"
+"language": "cpp"
+"prompt": "/*\nInput was two strings a and b consists only of 1s and 0s. Performing\
+  \ binary XOR on these input and return result also as a string.\n>>> string_xor('010',\
+  \ '110')\n'100'\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\n\
+  string string_xor(string a,string b){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (string_xor(\"\
+  111000\", \"101010\") == \"010010\");\n     assert (string_xor(\"1\", \"1\") ==\
+  \ \"0\");\n    assert (string_xor(\"0101\", \"0000\") == \"0101\");\n\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

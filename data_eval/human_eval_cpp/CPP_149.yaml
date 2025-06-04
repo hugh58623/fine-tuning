@@ -1,0 +1,31 @@
+"name": "CPP_149"
+"language": "cpp"
+"prompt": "/*\nWrite a function that accepts a vector of strings as a parameter,\n\
+  deletes the strings that have odd lengths from it,\nand returns the resulted vector\
+  \ with a sorted order,\nThe vector is always a vector of strings and never a vector\
+  \ of numbers,\nand it may contain duplicates.\nThe order of the vector should be\
+  \ ascending by length of each word, and you\nshould return the vector sorted by\
+  \ that rule.\nIf two words have the same length, sort the vector alphabetically.\n\
+  The function should return a vector of strings in sorted order.\nYou may assume\
+  \ that all words will have the same length.\nFor example:\nassert vector_sort({\"\
+  aa\", \"a\", \"aaa\"}) => {\"aa\"}\nassert vector_sort({\"ab\", \"a\", \"aaa\",\
+  \ \"cd\"}) => {\"ab\", \"cd\"}\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n\
+  #include<algorithm>\nusing namespace std;\nvector<string> sorted_list_sum(vector<string>\
+  \ lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(sorted_list_sum({\"aa\", \"a\", \"aaa\"}) , {\"aa\"}));\n  \
+  \  assert (issame(sorted_list_sum({\"school\", \"AI\", \"asdf\", \"b\"}) , {\"AI\"\
+  , \"asdf\", \"school\"}));\n    assert (issame(sorted_list_sum({\"d\", \"b\", \"\
+  c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"d\", \"dcba\", \"abcd\"\
+  , \"a\"}) , {\"abcd\", \"dcba\"}));\n    assert (issame(sorted_list_sum({\"AI\"\
+  , \"ai\", \"au\"}) , {\"AI\", \"ai\", \"au\"}));\n    assert (issame(sorted_list_sum({\"\
+  a\", \"b\", \"b\", \"c\", \"c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"\
+  aaaa\", \"bbbb\", \"dd\", \"cc\"}) , {\"cc\", \"dd\", \"aaaa\", \"bbbb\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

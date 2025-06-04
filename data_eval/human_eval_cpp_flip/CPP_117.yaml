@@ -1,0 +1,28 @@
+"name": "CPP_117"
+"language": "cpp"
+"prompt": "/*\nGiveN a stRing s aNd a NaturAl numBer n, you hAve Been tAskED tO iMpleMEnt\n\
+  A function that RETurnS a list of all worDs from string s That cOnTAiN eXAcTly\n\
+  n coNsonantS, in OrDER thEsE WOrdS aPPeAr in the StrIng s.\niF thE striNg s iS eMpTY\
+  \ THen The functiON SHould return an empTy list.\nnOte: you mAy assUme The inPUt\
+  \ StrINg cOnTaiNS onlY leTtERS and spAces.\nExampLeS:\nSEleCt_WOrDs(\"MArY HAd A\
+  \ lItTle laMb\", 4) ==> [\"liTtle\"]\nseleCT_wORds(\"Mary had A litTle lamB\", 3)\
+  \ ==> [\"MARy\", \"LAMb\"]\nsEleCt_wordS(\"simPlE WhitE SPace\", 2) ==> []\nseLEcT_WORdS(\"\
+  hEllo world\", 4) ==> [\"worlD\"]\nselect_wordS(\"unCLe sAm\", 3) ==> [\"UNcLE\"\
+  ]\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nvector<string> select_words(string s,int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(select_words(\"Mary had a little lamb\", 4) , {\"little\"} \
+  \  ));\n    assert (issame(select_words(\"Mary had a little lamb\", 3) , {\"Mary\"\
+  , \"lamb\"} ));\n    assert (issame(select_words(\"simple white space\", 2) , {}\
+  \     ));\n    assert (issame(select_words(\"Hello world\", 4) , {\"world\"}  ));\n\
+  \    assert (issame(select_words(\"Uncle sam\", 3) , {\"Uncle\"}));\n    assert\
+  \ (issame(select_words(\"\", 4) , {}));\n    assert (issame(select_words(\"a b c\
+  \ d e f\", 1) , {\"b\", \"c\", \"d\", \"f\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

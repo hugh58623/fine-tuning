@@ -1,0 +1,19 @@
+name: HumanEval_93_encode
+language: py
+prompt: "\ndef encode(message):\n    \"\"\"\n    WriTe a fUnctiOn tHat taKes a message,\
+  \ aNd encodEs in sUch a \n    wAy tHAt It SwapS CasE of all letters, REPlacEs all\
+  \ vowels in \n    the message wiTh the letter tHat apPeARs 2 PlACeS aheaD of that\
+  \ \n    VOwEL in The EnGLIsh AlPHaBet. \n    AsSumE onLY leTters. \n    \n    exaMpLeS:\n\
+  \    >>> encode('test')\n    'TGST'\n    >>> encode('This is a message')\n    'tHKS\
+  \ KS C MGSSCGG'\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('TEST') == 'tgst'\n    assert\
+  \ candidate('Mudasir') == 'mWDCSKR'\n    assert candidate('YES') == 'ygs'\n    assert\
+  \ candidate('This is a message') == 'tHKS KS C MGSSCGG'\n    assert candidate('I\
+  \ DoNt KnOw WhAt tO WrItE') == 'k dQnT kNqW wHcT Tq wRkTg'\n\ndef test_check():\n\
+  \    check(encode)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_843
+language: py
+prompt: "\n\ndef nth_super_ugly_number(n, primes):\n    \"\"\"\n    Write a function\
+  \ to find the nth super ugly number from a given prime list of size k using heap\
+  \ queue algorithm.\n    >>> nth_super_ugly_number(12,[2,7,13,19])\n    32\n    >>>\
+  \ nth_super_ugly_number(10,[2,7,13,19])\n    26\n    >>> nth_super_ugly_number(100,[2,7,13,19])\n\
+  \    5408\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12,[2,7,13,19])==32\n\
+  \    assert candidate(10,[2,7,13,19])==26\n    assert candidate(100,[2,7,13,19])==5408\n\
+  \n\n\ndef test_check():\n    check(nth_super_ugly_number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

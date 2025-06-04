@@ -1,0 +1,20 @@
+name: mbpp_81
+language: py
+prompt: "\n\ndef zip_tuples(test_tup1, test_tup2):\n  \"\"\"\n  Write a function to\
+  \ zip the two given tuples.\n  >>> zip_tuples((7, 8, 4, 5, 9, 10),(1, 5, 6) )\n\
+  \  [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\n  >>> zip_tuples((8, 9, 5,\
+  \ 6, 10, 11),(2, 6, 7) )\n  [(8, 2), (9, 6), (5, 7), (6, 2), (10, 6), (11, 7)]\n\
+  \  >>> zip_tuples((9, 10, 6, 7, 11, 12),(3, 7, 8) )\n  [(9, 3), (10, 7), (6, 8),\
+  \ (7, 3), (11, 7), (12, 8)]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((7, 8,\
+  \ 4, 5, 9, 10),(1, 5, 6) ) == [(7, 1), (8, 5), (4, 6), (5, 1), (9, 5), (10, 6)]\n\
+  \    assert candidate((8, 9, 5, 6, 10, 11),(2, 6, 7) ) == [(8, 2), (9, 6), (5, 7),\
+  \ (6, 2), (10, 6), (11, 7)]\n    assert candidate((9, 10, 6, 7, 11, 12),(3, 7, 8)\
+  \ ) == [(9, 3), (10, 7), (6, 8), (7, 3), (11, 7), (12, 8)]\n\n\n\ndef test_check():\n\
+  \    check(zip_tuples)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,17 @@
+name: mbpp_54
+language: py
+prompt: "\n\ndef counting_sort(my_list):\n    \"\"\"\n    Write a function to sort\
+  \ the given array by using counting sort.\n    >>> counting_sort([1,23,4,5,6,7,8])\n\
+  \    [1, 4, 5, 6, 7, 8, 23]\n    >>> counting_sort([12, 9, 28, 33, 69, 45])\n  \
+  \  [9, 12, 28, 33, 45, 69]\n    >>> counting_sort([8, 4, 14, 3, 2, 1])\n    [1,\
+  \ 2, 3, 4, 8, 14]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,23,4,5,6,7,8])\
+  \ == [1, 4, 5, 6, 7, 8, 23]\n    assert candidate([12, 9, 28, 33, 69, 45]) == [9,\
+  \ 12, 28, 33, 45, 69]\n    assert candidate([8, 4, 14, 3, 2, 1]) == [1, 2, 3, 4,\
+  \ 8, 14]\n\n\n\ndef test_check():\n    check(counting_sort)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

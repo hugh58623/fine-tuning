@@ -1,0 +1,14 @@
+name: mbpp_45
+language: py
+prompt: "\n\ndef get_gcd(l):\n  \"\"\"\n  Write a function to find the gcd of the\
+  \ given array elements.\n  >>> get_gcd([2, 4, 6, 8, 16])\n  2\n  >>> get_gcd([1,\
+  \ 2, 3])\n  1\n  >>> get_gcd([2, 4, 6, 8])\n  2\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 4,\
+  \ 6, 8, 16]) == 2\n    assert candidate([1, 2, 3]) == 1\n    assert candidate([2,\
+  \ 4, 6, 8]) == 2 \n\n\n\ndef test_check():\n    check(get_gcd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

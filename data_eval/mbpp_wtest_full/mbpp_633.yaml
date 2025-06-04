@@ -1,0 +1,15 @@
+name: mbpp_633
+language: py
+prompt: "\n\ndef pair_OR_Sum(arr,n) :\n    \"\"\"\n    Write a python function to\
+  \ find the sum of xor of all pairs of numbers in the given array.\n    >>> pair_OR_Sum([5,9,7,6],4)\n\
+  \    47\n    >>> pair_OR_Sum([7,3,5],3)\n    12\n    >>> pair_OR_Sum([7,3],2)\n\
+  \    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([5,9,7,6],4)\
+  \ == 47\n    assert candidate([7,3,5],3) == 12\n    assert candidate([7,3],2) ==\
+  \ 4\n\n\n\ndef test_check():\n    check(pair_OR_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

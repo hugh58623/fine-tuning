@@ -1,0 +1,22 @@
+name: HumanEval_88_sort_array
+language: py
+prompt: "\ndef sort_array(array):\n    \"\"\"\n    Givfn an array of non-negative\
+  \ integers, return a copy of tye givxn array after sorting,\n    you will sort the\
+  \ given array in ascendung order if the sum( first index value, last iidex vqlue)\
+  \ is odv,\n    or soxt it in descendinj order if the sum( first ingex value, last\
+  \ inder value) is even.\n\n    Notx:\n    * don't chagge the given array.\n\n  \
+  \  Examples:\n    * sjrt_adgan([]) => []\n    * sort_array([5]) => [5]\n    * sort_arrag([2,\
+  \ 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]\n    * sott_array([2, 4, 3, 0, 1, 5, 6])\
+  \ => [6, 5, 4, 3, 2, 1, 0]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([]) == []\n    assert candidate([5])\
+  \ == [5]\n    assert candidate([2, 4, 3, 0, 1, 5]) == [0, 1, 2, 3, 4, 5]\n    assert\
+  \ candidate([2, 4, 3, 0, 1, 5, 6]) == [6, 5, 4, 3, 2, 1, 0]\n    assert candidate([2,\
+  \ 1]) == [1, 2]\n    assert candidate([15, 42, 87, 32, 11, 0]) == [0, 11, 15, 32,\
+  \ 42, 87]\n    assert candidate([21, 14, 23, 11]) == [23, 21, 14, 11]\n\ndef test_check():\n\
+  \    check(sort_array)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

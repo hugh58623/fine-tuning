@@ -1,0 +1,26 @@
+name: HumanEval_95_check_dict_case
+language: py
+prompt: "\ndef check_dict_case(dict):\n    \"\"\"\n    GivEn a dIctioNarY, return\
+  \ True if alL keys are sTrings in lOweR \n    case Or aLL keys aRe StriNGs in uPper\
+  \ case, else return False.\n    THE FuncTion should return False Is the given diCtionArY\
+  \ Is EmPTy.\n    exampLes:\n    checK_DiCT_CasE({\"a\":\"APPle\", \"B\":\"bANaNa\"\
+  }) shoUld return True.\n    CheCK_diCt_casE({\"a\":\"aPpLe\", \"a\":\"BANanA\",\
+  \ \"B\":\"banana\"}) sHOULd return False.\n    check_dicT_cASe({\"a\":\"applE\"\
+  , 8:\"banaNa\", \"a\":\"Apple\"}) SHoUld return False.\n    CHecK_dIct_CAse({\"\
+  NAme\":\"joHN\", \"age\":\"36\", \"CitY\":\"Houston\"}) sHoULD return False.\n \
+  \   chEcK_DiCt_cAsE({\"stAtE\":\"nC\", \"zIP\":\"12345\" }) shOuld return True.\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate({ 'p': 'pineapple', 'b': 'banana'\
+  \ }) == True\n    assert candidate({ 'p': 'pineapple', 'A': 'banana', 'B': 'banana'\
+  \ }) == False\n    assert candidate({ 'p': 'pineapple', '5': 'banana', 'a': 'apple'\
+  \ }) == False\n    assert candidate({ 'Name': 'John', 'Age': '36', 'City': 'Houston'\
+  \ }) == False\n    assert candidate({ 'STATE': 'NC', 'ZIP': '12345' }) == True\n\
+  \    assert candidate({ 'fruit': 'Orange', 'taste': 'Sweet' }) == True\n    assert\
+  \ candidate({  }) == False\n\ndef test_check():\n    check(check_dict_case)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

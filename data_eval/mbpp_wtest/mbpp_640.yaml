@@ -1,0 +1,16 @@
+name: mbpp_640
+language: py
+prompt: "\n\ndef remove_parenthesis(items):\n \"\"\"\n Write a function to remove\
+  \ the parenthesis area in a string.\n >>> remove_parenthesis([\"python (chrome)\"\
+  ])\n (\"python\")\n >>> remove_parenthesis([\"string(.abc)\"])\n (\"string\")\n\
+  \ >>> remove_parenthesis([\"alpha(num)\"])\n (\"alpha\")\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"python\
+  \ (chrome)\"])==(\"python\")\n    assert candidate([\"string(.abc)\"])==(\"string\"\
+  )\n    assert candidate([\"alpha(num)\"])==(\"alpha\")\n\n\n\ndef test_check():\n\
+  \    check(remove_parenthesis)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

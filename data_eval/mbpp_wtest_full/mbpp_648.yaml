@@ -1,0 +1,17 @@
+name: mbpp_648
+language: py
+prompt: "\n\ndef exchange_elements(lst):\n    \"\"\"\n    Write a function to exchange\
+  \ the position of every n-th value with (n+1)th value and (n+1)th value with n-th\
+  \ value in a given list.\n    >>> exchange_elements([0,1,2,3,4,5])\n    [1, 0, 3,\
+  \ 2, 5, 4]\n    >>> exchange_elements([5,6,7,8,9,10])\n    [6,5,8,7,10,9]\n    >>>\
+  \ exchange_elements([25,35,45,55,75,95])\n    [35,25,55,45,95,75]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([0,1,2,3,4,5])==[1,\
+  \ 0, 3, 2, 5, 4] \n    assert candidate([5,6,7,8,9,10])==[6,5,8,7,10,9] \n    assert\
+  \ candidate([25,35,45,55,75,95])==[35,25,55,45,95,75] \n\n\n\ndef test_check():\n\
+  \    check(exchange_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

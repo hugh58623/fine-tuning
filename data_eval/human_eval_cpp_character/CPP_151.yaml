@@ -1,0 +1,23 @@
+"name": "CPP_151"
+"language": "cpp"
+"prompt": "/*\nGiven a list of numbers, return the sum fo squares of the numebrs\n\
+  in the list that are odd. Ignore numbers that are negative or not integers.\n\n\
+  duoble_the_difference([1, 3, 2, 0]) == 1 + 9 + 0 + 0 = 10\nduoble_the_difference([-1,\
+  \ -2, 0]) == 0\ndouble_the_difference([9, -2]) == 81\ndouble_the_difference([0])\
+  \ == 0\n\nIf hte input list is emtpy, return 0.\n*/\n#include<stdio.h>\n#include<math.h>\n\
+  #include<vector>\nusing namespace std;\nlong long double_the_difference(vector<float>\
+  \ lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (double_the_difference({})\
+  \ == 0);\n    assert (double_the_difference({5, 4}) == 25);\n    assert (double_the_difference({0.1,\
+  \ 0.2, 0.3}) == 0 );\n    assert (double_the_difference({-10, -20, -30}) == 0 );\n\
+  \    assert (double_the_difference({-1, -2, 8}) == 0);\n    assert (double_the_difference({0.2,\
+  \ 3, 5}) == 34);\n    \n    \n    long long odd_sum=0;\n    vector<float> lst={};\n\
+  \n    for (int i=-99;i<100;i+=2)\n    {\n        lst.push_back(i+0.0);\n       \
+  \ if (i>0 and i%2==1) odd_sum+=i*i;\n    }\n  \n    assert (double_the_difference(lst)\
+  \ == odd_sum );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

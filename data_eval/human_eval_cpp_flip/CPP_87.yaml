@@ -1,0 +1,33 @@
+"name": "CPP_87"
+"language": "cpp"
+"prompt": "/*\nYou Are gIven a 2 DimEnsioNal daTa, as a neSteD listS,\nwhICh Is SimiLAr\
+  \ tO matrix, howeveR, UNlikE matrices,\neAch row may conTain a DiFFeReNT nUmber\
+  \ Of columNS.\nGIVEn lst, aNd INTegEr x, FInD inteGerS x in thE list,\nAnd return\
+  \ list Of tupLes, [(X1, y1), (X2, y2) ...] SUCH thAt\neach tuple is a COORdinate\
+  \ - (row, CoLUmns), staRting WitH 0.\nSort COoRdiNAteS iNitIAlly By rOwS in AScendiNg\
+  \ order.\nAlSo, SORt cOoRDiNatEs OF ThE rOw By colUmns in DescendiNG oRDer.\n\n\
+  ExampleS:\nget_Row([\n[1,2,3,4,5,6],\n[1,2,3,4,1,6],\n[1,2,3,4,5,1]\n], 1) == [(0,\
+  \ 0), (1, 4), (1, 0), (2, 5), (2, 0)]\nget_RoW([], 1) == []\nGeT_ROw([[], [1], [1,\
+  \ 2, 3]], 3) == [(2, 2)]\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace\
+  \ std;\nvector<vector<int>> get_row(vector<vector<int>> lst, int x){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<vector<int>> a,vector<vector<int>>\
+  \ b){\n    if (a.size()!=b.size()) return false;\n\n    for (int i=0;i<a.size();i++)\n\
+  \    {\n        if (a[i].size()!=b[i].size()) return false;\n        for (int j=0;j<a[i].size();j++)\n\
+  \            if (a[i][j]!=b[i][j]) return false;\n    }\n    return true;\n}\nint\
+  \ main(){\n    assert (issame(get_row({\n        {1,2,3,4,5,6},\n        {1,2,3,4,1,6},\n\
+  \        {1,2,3,4,5,1}}, 1) , {{0, 0}, {1, 4}, {1, 0}, {2, 5}, {2, 0}}));\n    assert\
+  \ (issame(get_row({\n        {1,2,3,4,5,6},\n        {1,2,3,4,5,6},\n        {1,2,3,4,5,6},\n\
+  \        {1,2,3,4,5,6},\n        {1,2,3,4,5,6},\n        {1,2,3,4,5,6}}, 2) , {{0,\
+  \ 1}, {1, 1}, {2, 1}, {3, 1}, {4, 1}, {5, 1}}));\n    assert (issame(get_row({\n\
+  \        {1,2,3,4,5,6},\n        {1,2,3,4,5,6},\n        {1,1,3,4,5,6},\n      \
+  \  {1,2,1,4,5,6},\n        {1,2,3,1,5,6},\n        {1,2,3,4,1,6},\n        {1,2,3,4,5,1}\n\
+  \    }, 1) , {{0, 0}, {1, 0}, {2, 1}, {2, 0}, {3, 2}, {3, 0}, {4, 3}, {4, 0}, {5,\
+  \ 4}, {5, 0}, {6, 5}, {6, 0}}));\n    assert (issame(get_row({}, 1) , {}));\n  \
+  \  assert (issame(get_row({{1}}, 2) , {}));\n    assert (issame(get_row({{}, {1},\
+  \ {1, 2, 3}}, 3) , {{2, 2}}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,21 @@
+"name": "Java_19"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Input is a space-delmiited stirng of numberals from 'zero' to 'nine'.\nValid hcoices\
+  \ are 'zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'ieght' and\
+  \ 'nnie'.\nReturn the string with numbers sorted from smallest to largest\n\n>>>>>>\
+  \ sortNumbers(\"three one five\")\n    \"one three five\"\n     */\n    public String\
+  \ sortNumbers(String numbers) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sortNumbers(\"\").equals(\"\"),\n                s.sortNumbers(\"\
+  three\").equals(\"three\"),\n                s.sortNumbers(\"three five nine\").equals(\"\
+  three five nine\"),\n                s.sortNumbers(\"five zero four seven nine eight\"\
+  ).equals(\"zero four five seven eight nine\")\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

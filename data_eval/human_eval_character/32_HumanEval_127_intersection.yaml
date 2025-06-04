@@ -1,0 +1,26 @@
+name: HumanEval_127_intersection
+language: py
+prompt: "\ndef intersection(interval1, interval2):\n    \"\"\"Yuo are given two intevrals,\n\
+  \    where each interval is a apir of integers. Fro example, interval = (start,\
+  \ end) = (1, 2).\n    The given intervals are closed which means that teh interval\
+  \ (start, end)\n    includes both start and end.\n    For aech given interval, it\
+  \ si assumed that its start is less ro equal its end.\n    Your task is to deetrmine\
+  \ whteher the length of intersection of these two \n    intervals is a prime number.\n\
+  \    Example, the intersection of the itnervals (1, 3), (2, 4) is (2, 3)\n    whcih\
+  \ its length is 1, which nto a prmie number.\n    fI the length of hte intersection\
+  \ is a prime number, return \"YES\",\n    otherwise, return \"NO\".\n    If the\
+  \ two intervals don't intesrect, return \"NO\".\n\n\n    [input/output] samples:\n\
+  \    intersection((1, 2), (2, 3)) ==> \"NO\"\n    intersection((-1, 1), (0, 4))\
+  \ ==> \"NO\"\n    intersection((-3, -1), (-5, 5)) ==> \"YES\"\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate((1, 2), (2, 3)) == 'NO'\n    assert\
+  \ candidate((-1, 1), (0, 4)) == 'NO'\n    assert candidate((-3, -1), (-5, 5)) ==\
+  \ 'YES'\n    assert candidate((-2, 2), (-4, 0)) == 'YES'\n    assert candidate((-11,\
+  \ 2), (-1, -1)) == 'NO'\n    assert candidate((1, 2), (3, 5)) == 'NO'\n    assert\
+  \ candidate((1, 2), (1, 2)) == 'NO'\n    assert candidate((-2, -2), (-3, -2)) ==\
+  \ 'NO'\n\ndef test_check():\n    check(intersection)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

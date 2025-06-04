@@ -1,0 +1,15 @@
+name: mbpp_775
+language: py
+prompt: "\n\ndef odd_position(nums):\n\t\"\"\"\n\tWrite a python function to check\
+  \ whether every odd index contains odd numbers of a given list.\n\t>>> odd_position([2,1,4,3,6,7,6,3])\n\
+  \tTrue\n\t>>> odd_position([4,1,2])\n\tTrue\n\t>>> odd_position([1,2,3])\n\tFalse\n\
+  \t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2,1,4,3,6,7,6,3])\
+  \ == True\n    assert candidate([4,1,2]) == True\n    assert candidate([1,2,3])\
+  \ == False\n\n\n\ndef test_check():\n    check(odd_position)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

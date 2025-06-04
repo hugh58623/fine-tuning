@@ -1,0 +1,14 @@
+name: mbpp_798
+language: py
+prompt: "\n\ndef _sum(arr):\n    \"\"\"\n    Write a python function to find the sum\
+  \ of an array.\n    >>> _sum([1, 2, 3])\n    6\n    >>> _sum([15, 12, 13, 10])\n\
+  \    50\n    >>> _sum([0, 1, 2])\n    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3]) == 6\n    assert candidate([15, 12, 13, 10]) == 50\n    assert candidate([0,\
+  \ 1, 2]) == 3\n\n\n\ndef test_check():\n    check(_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_714
+language: py
+prompt: "\n\ndef count_Fac(n):\n    \"\"\"\n    Write a python function to count the\
+  \ number of distinct power of prime factor of given number.\n    >>> count_Fac(24)\n\
+  \    3\n    >>> count_Fac(12)\n    2\n    >>> count_Fac(4)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(24) ==\
+  \ 3\n    assert candidate(12) == 2\n    assert candidate(4) == 1\n\n\n\ndef test_check():\n\
+  \    check(count_Fac)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

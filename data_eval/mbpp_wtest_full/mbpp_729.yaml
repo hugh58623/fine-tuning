@@ -1,0 +1,15 @@
+name: mbpp_729
+language: py
+prompt: "\n\ndef add_list(nums1,nums2):\n  \"\"\"\n  Write a function to add two lists\
+  \ using map and lambda function.\n  >>> add_list([1, 2, 3],[4,5,6])\n  [5, 7, 9]\n\
+  \  >>> add_list([1,2],[3,4])\n  [4,6]\n  >>> add_list([10,20],[50,70])\n  [60,90]\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3],[4,5,6])==[5, 7, 9]\n    assert candidate([1,2],[3,4])==[4,6]\n    assert candidate([10,20],[50,70])==[60,90]\n\
+  \n\n\ndef test_check():\n    check(add_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

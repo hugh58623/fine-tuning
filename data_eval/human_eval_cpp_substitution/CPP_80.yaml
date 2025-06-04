@@ -1,0 +1,19 @@
+"name": "CPP_80"
+"language": "cpp"
+"prompt": "/*\nYou are given a string s.\nYour task is to check if the drawstring\
+  \ is glad or not.\nA string is happy if its duration is at least 3 and every 3 consecutive\
+  \ letter exist distinct\nFor model:\nis_happy(a) = > False\nis_happy(aa) = > False\n\
+  is_happy(abcd) = > True\nis_happy(aabb) = > False\nis_happy(adb) = > True\nis_happy(xyy)\
+  \ = > False\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nbool\
+  \ is_happy(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_happy(\"\
+  a\") == false );\n    assert (is_happy(\"aa\") == false );\n    assert (is_happy(\"\
+  abcd\") == true );\n    assert (is_happy(\"aabb\") == false );\n    assert (is_happy(\"\
+  adb\") == true );\n    assert (is_happy(\"xyy\") == false );\n    assert (is_happy(\"\
+  iopaxpoi\") == true );\n    assert (is_happy(\"iopaxioi\") == false );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

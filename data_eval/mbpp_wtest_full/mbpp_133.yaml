@@ -1,0 +1,17 @@
+name: mbpp_133
+language: py
+prompt: "\n\ndef sum_negativenum(nums):\n  \"\"\"\n  Write a function to calculate\
+  \ the sum of the negative numbers of a given list of numbers using lambda function.\n\
+  \  >>> sum_negativenum([2, 4, -6, -9, 11, -12, 14, -5, 17])\n  -32\n  >>> sum_negativenum([10,15,-14,13,-18,12,-20])\n\
+  \  -52\n  >>> sum_negativenum([19, -65, 57, 39, 152,-639, 121, 44, 90, -190])\n\
+  \  -894\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 4,\
+  \ -6, -9, 11, -12, 14, -5, 17])==-32\n    assert candidate([10,15,-14,13,-18,12,-20])==-52\n\
+  \    assert candidate([19, -65, 57, 39, 152,-639, 121, 44, 90, -190])==-894\n\n\n\
+  \ndef test_check():\n    check(sum_negativenum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

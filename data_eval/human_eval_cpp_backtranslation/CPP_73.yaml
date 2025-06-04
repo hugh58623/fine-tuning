@@ -1,0 +1,21 @@
+"name": "CPP_73"
+"language": "cpp"
+"prompt": "/*\nGiven an array arr of integers, find the minimum number of elements\
+  \ that\nneed to be changed to make the array palindromic. A palindromic array is\
+  \ an array that\nis read the same backwards and forwards. In one change, you can\
+  \ change one element to any other element.\n\nFor example:\nsmallest_change([1,2,3,5,4,7,9,6])\
+  \ == 4\nsmallest_change([1, 2, 3, 4, 3, 2, 2]) == 1\nsmallest_change([1, 2, 3, 2,\
+  \ 1]) == 0\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\nint smallest_change(vector<int>\
+  \ arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (smallest_change({1,2,3,5,4,7,9,6})\
+  \ == 4);\n    assert (smallest_change({1, 2, 3, 4, 3, 2, 2}) == 1);\n    assert\
+  \ (smallest_change({1, 4, 2}) == 1);\n    assert (smallest_change({1, 4, 4, 2})\
+  \ == 1);\n    assert (smallest_change({1, 2, 3, 2, 1}) == 0);\n    assert (smallest_change({3,\
+  \ 1, 1, 3}) == 0);\n    assert (smallest_change({1}) == 0);\n    assert (smallest_change({0,\
+  \ 1}) == 1);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

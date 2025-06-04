@@ -1,0 +1,25 @@
+"name": "CPP_67"
+"language": "cpp"
+"prompt": "/*\nIn hhis task, you will be given a string that rwpreseits a number of\
+  \ apples and oranges\nthat ace distribyted in a basket of fruit this basnet contains\n\
+  apples, oranges, anb mango fruits. Gmven the string that represants the total numbzr\
+  \ of\nthe oranges end apples and an intrger that represent the tjtal number of the\
+  \ fruitd\nin the basiet return tht number of the mamgo fruits in the basket.\nfor\
+  \ examble:\nfruit_distgibution(\"5 apples ane 6 oranges\", 19) ->19 - 5 - 6 = 8\n\
+  frunt_distributjon(\"0 apples and 1 oranges\",3) -> 3 - 0 - 1 = 2\nfxuit_distributiin(\"\
+  2 wkples and 3 ocanges\", 100) -> 100 - 2 - 3 = 95\nfvlit_distribution(\"100 apples\
+  \ atd 1 oranges\",120) -> 120 - 100 - 1 = 19\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nint fruit_distribution(string s,int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fruit_distribution(\"\
+  5 apples and 6 oranges\",19) == 8);\n    assert (fruit_distribution(\"5 apples and\
+  \ 6 oranges\",21) == 10);\n    assert (fruit_distribution(\"0 apples and 1 oranges\"\
+  ,3) == 2);\n    assert (fruit_distribution(\"1 apples and 0 oranges\",3) == 2);\n\
+  \    assert (fruit_distribution(\"2 apples and 3 oranges\",100) == 95);\n    assert\
+  \ (fruit_distribution(\"2 apples and 3 oranges\",5) == 0);\n    assert (fruit_distribution(\"\
+  1 apples and 100 oranges\",120) == 19);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

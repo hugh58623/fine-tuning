@@ -1,0 +1,14 @@
+name: mbpp_89
+language: py
+prompt: "\n\ndef closest_num(N):\n  \"\"\"\n  Write a function to find the closest\
+  \ smaller number than n.\n  >>> closest_num(11)\n  10\n  >>> closest_num(7)\n  6\n\
+  \  >>> closest_num(12)\n  11\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(11) ==\
+  \ 10\n    assert candidate(7) == 6\n    assert candidate(12) == 11\n\n\n\ndef test_check():\n\
+  \    check(closest_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

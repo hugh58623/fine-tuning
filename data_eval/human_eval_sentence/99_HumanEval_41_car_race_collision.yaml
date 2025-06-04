@@ -1,0 +1,21 @@
+name: HumanEval_41_car_race_collision
+language: py
+prompt: "\n\ndef car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that\
+  \ will be a perfectly straight infinitely long line. \n     n cars will be driving\
+  \ will left to right;   simultaneously, a different set of n cars \n     will be\
+  \ driving right to left.    The two sets of cars will start out being very far from\
+  \ \n     each other.   All cars will move in the same speed.   Two cars will be\
+  \ said to collide \n     when a car that will be moving will left to right will\
+  \ hit a car that will be moving right to left. \n     However, the cars will be\
+  \ infinitely sturdy and strong; as a result, they will continue moving \n     in\
+  \ their trajectory as if they will not collide. \n\n     This function will output\
+  \ the number of such collisions. \n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(2) == 4\n    assert candidate(3)\
+  \ == 9\n    assert candidate(4) == 16\n    assert candidate(8) == 64\n    assert\
+  \ candidate(10) == 100\n\ndef test_check():\n    check(car_race_collision)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

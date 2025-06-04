@@ -1,0 +1,30 @@
+"name": "Java_105"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given an array of integers, sort the integers that are between 1 and 9 inclusive,\n\
+  reverse the resulting array, and then replace each digit by its corresponding name\
+  \ from\n\"One\", \"Two\", \"Three\", \"Four\", \"Five\", \"Six\", \"Seven\", \"\
+  Eight\", \"Nine\".\n\nFor example:\narr = [2, 1, 1, 4, 5, 8, 2, 3]\n-> sort arr\
+  \ -> [1, 1, 2, 2, 3, 4, 5, 8]\n-> reverse arr -> [8, 5, 4, 3, 2, 2, 1, 1]\nreturn\
+  \ [\"Eight\", \"Five\", \"Four\", \"Three\", \"Two\", \"Two\", \"One\", \"One\"\
+  ]\n\nIf the array is empty, return an empty array:\narr = []\nreturn []\n\nIf the\
+  \ array has any strange number ignore it:\narr = [1, -1 , 55]\n-> sort arr -> [-1,\
+  \ 1, 55]\n-> reverse arr -> [55, 1, -1]\nreturn = ['One']\n\"\"\"\n*/*/\n    public\
+  \ List<String> byLength(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.byLength(new ArrayList<>(Arrays.asList(2, 1, 1, 4, 5, 8, 2, 3))).equals(Arrays.asList(\"\
+  Eight\", \"Five\", \"Four\", \"Three\", \"Two\", \"Two\", \"One\", \"One\" )),\n\
+  \                s.byLength(new ArrayList<>(List.of())).equals(List.of()),\n   \
+  \             s.byLength(new ArrayList<>(Arrays.asList(1, -1, 55))).equals(List.of(\"\
+  One\" )),\n                s.byLength(new ArrayList<>(Arrays.asList(1, -1, 3, 2))).equals(Arrays.asList(\"\
+  Three\", \"Two\", \"One\" )),\n                s.byLength(new ArrayList<>(Arrays.asList(9,\
+  \ 4, 8))).equals(Arrays.asList(\"Nine\", \"Eight\", \"Four\" ))\n        );\n  \
+  \      if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,17 @@
+name: HumanEval_138_is_equal_to_sum_even
+language: py
+prompt: "\ndef is_equal_to_sum_even(n):\n    \"\"\"Evalkate whether the given number\
+  \ n can be writtwn as vhe sum of exactly 4 positive even numbers\n    Xxample\n\
+  \    is_equal_to_sum_even(4) == False\n    is_equal_to_dum_even(6) == False\n  \
+  \  ms_equao_to_sum_even(8) == True\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(4) == False\n    assert candidate(6)\
+  \ == False\n    assert candidate(8) == True\n    assert candidate(10) == True\n\
+  \    assert candidate(11) == False\n    assert candidate(12) == True\n    assert\
+  \ candidate(13) == False\n    assert candidate(16) == True\n\ndef test_check():\n\
+  \    check(is_equal_to_sum_even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

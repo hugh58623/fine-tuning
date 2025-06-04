@@ -1,0 +1,30 @@
+"name": "CPP_149"
+"language": "cpp"
+"prompt": "/*\nWritE a fuNctioN thAt accEpts a list Of strinGs aS a parAmeTEr,\nDeLeteS\
+  \ The Strings that haVE Odd lEngths from It,\nand returns The reSuLTeD list wITh\
+  \ A sorted ordeR,\nThe list is aLWaYS A list of StRINgs AnD NeVer an ArrAy oF NumBers,\n\
+  aNd iT mAy CONTaiN duplicatES.\ntHe order of tHe list SHould be AscenDinG by leNGtH\
+  \ of EAch WoRd, aND you\nShoUlD return THe list sorted by thAt rule.\nIf tWo WORds\
+  \ HaVE tHe sAmE LEnGtH, sort tHe list alpHabeTically.\nTHE fUNction shouLd return\
+  \ a list oF strinGs in sorted ORdER.\nyou May Assume That AlL WordS WIll havE ThE\
+  \ SAMe LENgth.\nFor examplE:\nassert list_sort([\"aa\", \"a\", \"aaa\"]) => [\"\
+  AA\"]\naSSerT list_sort([\"ab\", \"a\", \"aAa\", \"CD\"]) => [\"aB\", \"Cd\"]\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nvector<string> sorted_list_sum(vector<string> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(sorted_list_sum({\"aa\", \"a\", \"aaa\"}) , {\"aa\"}));\n  \
+  \  assert (issame(sorted_list_sum({\"school\", \"AI\", \"asdf\", \"b\"}) , {\"AI\"\
+  , \"asdf\", \"school\"}));\n    assert (issame(sorted_list_sum({\"d\", \"b\", \"\
+  c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"d\", \"dcba\", \"abcd\"\
+  , \"a\"}) , {\"abcd\", \"dcba\"}));\n    assert (issame(sorted_list_sum({\"AI\"\
+  , \"ai\", \"au\"}) , {\"AI\", \"ai\", \"au\"}));\n    assert (issame(sorted_list_sum({\"\
+  a\", \"b\", \"b\", \"c\", \"c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"\
+  aaaa\", \"bbbb\", \"dd\", \"cc\"}) , {\"cc\", \"dd\", \"aaaa\", \"bbbb\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

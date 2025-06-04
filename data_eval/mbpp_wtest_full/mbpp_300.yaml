@@ -1,0 +1,15 @@
+name: mbpp_300
+language: py
+prompt: "\n\ndef count_binary_seq(n):\n\t\"\"\"\n\tWrite a function to find the count\
+  \ of all binary sequences of length 2n such that sum of first n bits is same as\
+  \ sum of last n bits.\n\t>>> count_binary_seq(1)\n\t2.0\n\t>>> count_binary_seq(2)\n\
+  \t6.0\n\t>>> count_binary_seq(3)\n\t20.0\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1) == 2.0\n\
+  \    assert candidate(2) == 6.0\n    assert candidate(3) == 20.0\n\n\n\ndef test_check():\n\
+  \    check(count_binary_seq)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

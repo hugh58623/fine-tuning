@@ -1,0 +1,18 @@
+name: mbpp_465
+language: py
+prompt: "\n\ndef drop_empty(dict1):\n  \"\"\"\n  Write a function to drop empty items\
+  \ from a given dictionary.\n  >>> drop_empty({'c1': 'Red', 'c2': 'Green', 'c3':None})\n\
+  \  {'c1': 'Red', 'c2': 'Green'}\n  >>> drop_empty({'c1': 'Red', 'c2': None, 'c3':None})\n\
+  \  {'c1': 'Red'}\n  >>> drop_empty({'c1': None, 'c2': 'Green', 'c3':None})\n  {\
+  \ 'c2': 'Green'}\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'c1':\
+  \ 'Red', 'c2': 'Green', 'c3':None})=={'c1': 'Red', 'c2': 'Green'}\n    assert candidate({'c1':\
+  \ 'Red', 'c2': None, 'c3':None})=={'c1': 'Red'}\n    assert candidate({'c1': None,\
+  \ 'c2': 'Green', 'c3':None})=={ 'c2': 'Green'}\n\n\n\ndef test_check():\n    check(drop_empty)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

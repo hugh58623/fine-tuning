@@ -1,0 +1,16 @@
+name: mbpp_701
+language: py
+prompt: "\n\ndef equilibrium_index(arr):\n  \"\"\"\n  Write a function to find the\
+  \ equilibrium index of the given array.\n  >>> equilibrium_index([1, 2, 3, 4, 1,\
+  \ 2, 3])\n  3\n  >>> equilibrium_index([-7, 1, 5, 2, -4, 3, 0])\n  3\n  >>> equilibrium_index([1,\
+  \ 2, 3])\n  -1\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 1, 2, 3]) == 3\n    assert candidate([-7, 1, 5, 2, -4, 3, 0]) == 3\n   \
+  \ assert candidate([1, 2, 3]) == -1\n\n\n\ndef test_check():\n    check(equilibrium_index)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

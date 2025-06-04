@@ -1,0 +1,17 @@
+name: mbpp_459
+language: py
+prompt: "\n\ndef remove_uppercase(str1):\n  \"\"\"\n  Write a function to remove uppercase\
+  \ substrings from a given string by using regex.\n  >>> remove_uppercase('cAstyoUrFavoRitETVshoWs')\n\
+  \  'cstyoravoitshos'\n  >>> remove_uppercase('wAtchTheinTernEtrAdIo')\n  'wtchheinerntrdo'\n\
+  \  >>> remove_uppercase('VoicESeaRchAndreComMendaTionS')\n  'oiceachndreomendaion'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('cAstyoUrFavoRitETVshoWs')\
+  \ == 'cstyoravoitshos'\n    assert candidate('wAtchTheinTernEtrAdIo') == 'wtchheinerntrdo'\n\
+  \    assert candidate('VoicESeaRchAndreComMendaTionS') == 'oiceachndreomendaion'\n\
+  \n\n\ndef test_check():\n    check(remove_uppercase)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

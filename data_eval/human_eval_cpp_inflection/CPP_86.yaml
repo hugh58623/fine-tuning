@@ -1,0 +1,23 @@
+"name": "CPP_86"
+"language": "cpp"
+"prompt": "/*\nWrites a functions that takes a string and returning an ordered versions\
+  \ of it. Ordered versions of string, is a string where all word (separates by space)\
+  \ was replacing by a newer words where all the character arranging in\nascends order\
+  \ base on ascii value. Notes: You should kept the order of word and blank space\
+  \ in the sentences. For examples: antis_shuffles('Hi') returns 'Hi' antis_shuffles('hello')\
+  \ returns 'ehllo' anti_shuffles('Hello World!!!') returns 'Hello !!!Wdlor'\n*/\n\
+  #include<stdio.h>\n#include<string>\n#include<algorithm>\nusing namespace std;\n\
+  string anti_shuffle(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (anti_shuffle(\"\
+  Hi\") == \"Hi\");\n    assert (anti_shuffle(\"hello\") == \"ehllo\");\n    assert\
+  \ (anti_shuffle(\"number\") == \"bemnru\");\n    assert (anti_shuffle(\"abcd\")\
+  \ == \"abcd\");\n    assert (anti_shuffle(\"Hello World!!!\") == \"Hello !!!Wdlor\"\
+  );\n    assert (anti_shuffle(\"\") == \"\");\n    assert (anti_shuffle(\"Hi. My\
+  \ name is Mister Robot. How are you?\") == \".Hi My aemn is Meirst .Rboot How aer\
+  \ ?ouy\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

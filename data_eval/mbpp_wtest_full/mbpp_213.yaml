@@ -1,0 +1,24 @@
+name: mbpp_213
+language: py
+prompt: "\n\ndef concatenate_strings(test_tup1, test_tup2):\n  \"\"\"\n  Write a function\
+  \ to perform the concatenation of two string tuples.\n  >>> concatenate_strings((\"\
+  Manjeet\", \"Nikhil\", \"Akshat\"), (\" Singh\", \" Meherwal\", \" Garg\"))\n  ('Manjeet\
+  \ Singh', 'Nikhil Meherwal', 'Akshat Garg')\n  >>> concatenate_strings((\"Shaik\"\
+  , \"Ayesha\", \"Sanya\"), (\" Dawood\", \" Begum\", \" Singh\"))\n  ('Shaik Dawood',\
+  \ 'Ayesha Begum', 'Sanya Singh')\n  >>> concatenate_strings((\"Harpreet\", \"Priyanka\"\
+  , \"Muskan\"), (\"Kour\", \" Agarwal\", \"Sethi\"))\n  ('HarpreetKour', 'Priyanka\
+  \ Agarwal', 'MuskanSethi')\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((\"Manjeet\"\
+  , \"Nikhil\", \"Akshat\"), (\" Singh\", \" Meherwal\", \" Garg\")) == ('Manjeet\
+  \ Singh', 'Nikhil Meherwal', 'Akshat Garg')\n    assert candidate((\"Shaik\", \"\
+  Ayesha\", \"Sanya\"), (\" Dawood\", \" Begum\", \" Singh\")) == ('Shaik Dawood',\
+  \ 'Ayesha Begum', 'Sanya Singh')\n    assert candidate((\"Harpreet\", \"Priyanka\"\
+  , \"Muskan\"), (\"Kour\", \" Agarwal\", \"Sethi\")) == ('HarpreetKour', 'Priyanka\
+  \ Agarwal', 'MuskanSethi')\n\n\n\ndef test_check():\n    check(concatenate_strings)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_163
+language: py
+prompt: "\n\ndef area_polygon(s,l):\n  \"\"\"\n  Write a function to calculate the\
+  \ area of a regular polygon.\n  >>> area_polygon(4,20)\n  400.00000000000006\n \
+  \ >>> area_polygon(10,15)\n  1731.1969896610804\n  >>> area_polygon(9,7)\n  302.90938549487214\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,20)==400.00000000000006\n\
+  \    assert candidate(10,15)==1731.1969896610804\n    assert candidate(9,7)==302.90938549487214\n\
+  \n\n\ndef test_check():\n    check(area_polygon)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

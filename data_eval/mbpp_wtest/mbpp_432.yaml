@@ -1,0 +1,14 @@
+name: mbpp_432
+language: py
+prompt: "\n\ndef median_trapezium(base1,base2,height):\n \"\"\"\n Write a function\
+  \ to find the median of a trapezium.\n >>> median_trapezium(15,25,35)\n 20\n >>>\
+  \ median_trapezium(10,20,30)\n 15\n >>> median_trapezium(6,9,4)\n 7.5\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(15,25,35)==20\n\
+  \    assert candidate(10,20,30)==15\n    assert candidate(6,9,4)==7.5\n\n\n\ndef\
+  \ test_check():\n    check(median_trapezium)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

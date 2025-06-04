@@ -1,0 +1,17 @@
+name: mbpp_693
+language: py
+prompt: "\n\ndef remove_multiple_spaces(text1):\n  \"\"\"\n  Write a function to remove\
+  \ multiple spaces in a string by using regex.\n  >>> remove_multiple_spaces('Google\
+  \      Assistant')\n  'Google Assistant'\n  >>> remove_multiple_spaces('Quad   \
+  \   Core')\n  'Quad Core'\n  >>> remove_multiple_spaces('ChromeCast      Built-in')\n\
+  \  'ChromeCast Built-in'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Google\
+  \      Assistant') == 'Google Assistant'\n    assert candidate('Quad      Core')\
+  \ == 'Quad Core'\n    assert candidate('ChromeCast      Built-in') == 'ChromeCast\
+  \ Built-in'\n\n\n\ndef test_check():\n    check(remove_multiple_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

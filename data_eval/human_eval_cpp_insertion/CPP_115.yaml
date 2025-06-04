@@ -1,0 +1,27 @@
+"name": "CPP_115"
+"language": "cpp"
+"prompt": "/*\nYou are given a rectangular grid of wells well. Each row represents\
+  \ present a single well,\nand each 1 in a row course represents a single unmarried\
+  \ unit of water urine.\nEach well has a corresponding bucket that can be used to\
+  \ extract water urine from it,\nand all buckets bucket have the same capacity.\n\
+  Your task undertaking is to use practice the buckets to empty the wells.\nOutput\
+  \ the number numeral of times clock time you need to lower frown the buckets.\n\n\
+  Example 1:\nInput:\ngrid: [ [ 0,0,1,0 ], [ 0,1,0,0 ], [ 1,1,1,1 ] ]\nbucket_capacity:\
+  \ 1\nOutput: 6\n\nExample 2:\nInput input signal:\ngrid: [ [ 0,0,1,1 ], [ 0,0,0,0\
+  \ ], [ 1,1,1,1 ], [ 0,1,1,1 ] ]\nbucket_capacity: 2\nOutput end product: 5\n\nExample\
+  \ exemplar 3:\nInput remark:\ngrid: [ [ 0,0,0 ], [ 0,0,0 ] ]\nbucket_capacity: 5\n\
+  Output: 0\n\nConstraints:\n* all wells well have the same length\n* 1 < = grid.length\
+  \ < = 10 ^ 2\n* 1 < = grid[:,1].length < = 10 ^ 2\n* grid[i][j] - > 0 | 1\n* 1 <\
+  \ = capacity < = 10\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\n\
+  int max_fill(vector<vector<int>> grid,int capacity){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (max_fill({{0,0,1,0},\
+  \ {0,1,0,0}, {1,1,1,1}}, 1) == 6);\n    assert (max_fill({{0,0,1,1}, {0,0,0,0},\
+  \ {1,1,1,1}, {0,1,1,1}}, 2) == 5);\n    assert (max_fill({{0,0,0}, {0,0,0}}, 5)\
+  \ == 0);\n    assert (max_fill({{1,1,1,1}, {1,1,1,1}}, 2) == 4);\n    assert (max_fill({{1,1,1,1},\
+  \ {1,1,1,1}}, 9) == 2);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_208
+language: py
+prompt: "\n\ndef is_decimal(num):\n  \"\"\"\n  Write a function to check the given\
+  \ decimal with a precision of 2 by using regex.\n  >>> is_decimal('123.11')\n  True\n\
+  \  >>> is_decimal('0.21')\n  True\n  >>> is_decimal('123.1214')\n  False\n  \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('123.11')\
+  \ == True\n    assert candidate('0.21') == True\n    assert candidate('123.1214')\
+  \ == False\n\n\n\ndef test_check():\n    check(is_decimal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_582
+language: py
+prompt: "\n\ndef my_dict(dict1):\n  \"\"\"\n  Write a function to check if a dictionary\
+  \ is empty or not.\n  >>> my_dict({10})\n  False\n  >>> my_dict({11})\n  False\n\
+  \  >>> my_dict({})\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({10})==False\n\
+  \    assert candidate({11})==False\n    assert candidate({})==True\n\n\n\ndef test_check():\n\
+  \    check(my_dict)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

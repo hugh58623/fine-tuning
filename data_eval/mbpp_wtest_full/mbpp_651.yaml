@@ -1,0 +1,16 @@
+name: mbpp_651
+language: py
+prompt: "\n\ndef check_subset(test_tup1, test_tup2):\n  \"\"\"\n  Write a function\
+  \ to check if one tuple is a subset of another tuple.\n  >>> check_subset((10, 4,\
+  \ 5, 6), (5, 10))\n  True\n  >>> check_subset((1, 2, 3, 4), (5, 6))\n  False\n \
+  \ >>> check_subset((7, 8, 9, 10), (10, 8))\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 5, 6), (5, 10)) == True\n    assert candidate((1, 2, 3, 4), (5, 6)) == False\n\
+  \    assert candidate((7, 8, 9, 10), (10, 8)) == True\n\n\n\ndef test_check():\n\
+  \    check(check_subset)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

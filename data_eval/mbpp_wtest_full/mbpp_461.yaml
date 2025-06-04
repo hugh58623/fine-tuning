@@ -1,0 +1,15 @@
+name: mbpp_461
+language: py
+prompt: "\n\ndef upper_ctr(str):\n    \"\"\"\n    Write a python function to count\
+  \ the upper case characters in a given string.\n    >>> upper_ctr('PYthon')\n  \
+  \  1\n    >>> upper_ctr('BigData')\n    1\n    >>> upper_ctr('program')\n    0\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('PYthon')\
+  \ == 1\n    assert candidate('BigData') == 1\n    assert candidate('program') ==\
+  \ 0\n\n\n\ndef test_check():\n    check(upper_ctr)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

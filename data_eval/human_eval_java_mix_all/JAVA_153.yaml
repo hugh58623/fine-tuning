@@ -1,0 +1,41 @@
+"name": "Java_153"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You will be given the name of a calss (a string) and a list fo extensions.\nThe\
+  \ extensions are to be usde to laod additional clasess to the clsas. The\nsrtength\
+  \ fo the extensino is as follows: Let CAP be the nmuber of the uppercase\nletters\
+  \ in the extension's name, and let SM be the number of lowercase letters\nin the\
+  \ extension's naem, the stregnth is given by hte fraction CAP - SM.\nYou should\
+  \ find the strongest extension and return a string in thsi\nformat: ClassName.StrongestExtensionNmae.\n\
+  If there are two or more extensions with the same strength, you should\nchosoe the\
+  \ one that comes first in the list.\nFor xeampel, if you are given \"lSicse\" as\
+  \ the class nad a list of the\nextensions: ['SErviNGSliCes', 'Cheese', 'StuFefd']\
+  \ then you sohuld\nreturn 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest\
+  \ xetension\n(its strength is -1).\nExample:\nfor tSrongest_Extension('my_clsas',\
+  \ ['AA', 'Be', 'CC']) == 'my_class.AA'\n\"\"\"\n*/*/\n    public String StrongestExtension(String\
+  \ class_name, List<String> extensions) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.StrongestExtension(\"Watashi\", Arrays.asList(\"\
+  tEN\", \"niNE\", \"eIGHt8OKe\")), \"Watashi.eIGHt8OKe\"),\n                Objects.equals(s.StrongestExtension(\"\
+  Boku123\", Arrays.asList(\"nani\", \"NazeDa\", \"YEs.WeCaNe\", \"32145tggg\")),\
+  \ \"Boku123.YEs.WeCaNe\"),\n                Objects.equals(s.StrongestExtension(\"\
+  __YESIMHERE\", Arrays.asList(\"t\", \"eMptY\", \"nothing\", \"zeR00\", \"NuLl__\"\
+  , \"123NoooneB321\")), \"__YESIMHERE.NuLl__\"),\n                Objects.equals(s.StrongestExtension(\"\
+  K\", Arrays.asList(\"Ta\", \"TAR\", \"t234An\", \"cosSo\")), \"K.TAR\"),\n     \
+  \           Objects.equals(s.StrongestExtension(\"__HAHA\", Arrays.asList(\"Tab\"\
+  , \"123\", \"781345\", \"-_-\")), \"__HAHA.123\"),\n                Objects.equals(s.StrongestExtension(\"\
+  YameRore\", Arrays.asList(\"HhAas\", \"okIWILL123\", \"WorkOut\", \"Fails\", \"\
+  -_-\")), \"YameRore.okIWILL123\"),\n                Objects.equals(s.StrongestExtension(\"\
+  finNNalLLly\", Arrays.asList(\"Die\", \"NowW\", \"Wow\", \"WoW\")), \"finNNalLLly.WoW\"\
+  ),\n                Objects.equals(s.StrongestExtension(\"_\", Arrays.asList(\"\
+  Bb\", \"91245\")), \"_.Bb\"),\n                Objects.equals(s.StrongestExtension(\"\
+  Sp\", Arrays.asList(\"671235\", \"Bb\")), \"Sp.671235\")\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

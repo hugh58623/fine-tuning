@@ -1,0 +1,23 @@
+"name": "Java_140"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Gives a string text, replacing all space in it with underscore, and if a string\
+  \ had more than 2 consecutive space, then replacing all consecutive space with -\
+  \ fixes_space(\"Examples\") == \"Examples\" fixing_space(\"Examples 1\") == \"Examples_1\"\
+  \ fixes_space(\" Examples 2\") == \"_Examples_2\" fixes_space(\" Examples 3\") ==\
+  \ \"_Examples-3\" \"\"\"\n*/*/\n    public String fixSpaces(String text) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.fixSpaces(\"Example\" ), \"Example\" ),\n    \
+  \            Objects.equals(s.fixSpaces(\"Mudasir Hanif \" ), \"Mudasir_Hanif_\"\
+  \ ),\n                Objects.equals(s.fixSpaces(\"Yellow Yellow  Dirty  Fellow\"\
+  \ ), \"Yellow_Yellow__Dirty__Fellow\" ),\n                Objects.equals(s.fixSpaces(\"\
+  Exa   mple\" ), \"Exa-mple\" ),\n                Objects.equals(s.fixSpaces(\" \
+  \  Exa 1 2 2 mple\" ), \"-Exa_1_2_2_mple\" )\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

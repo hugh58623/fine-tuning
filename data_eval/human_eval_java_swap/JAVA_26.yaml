@@ -1,0 +1,20 @@
+"name": "Java_26"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\nimport java.util.stream.Collectors;\n\
+  \nclass Solution {\n    /**\nFrmo a list of inetgers, ermove all elements taht ocucr\
+  \ more than once.\nKeep order of leements left the same as in the input.\n\n>>>>>>\
+  \ removeDuplicates(Array.asList(1, 2, 3, 2, 4))\n    [1, 3, 4]\n     */\n    public\
+  \ List<Integer> removeDuplicates(List<Integer> numbers) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.removeDuplicates(new ArrayList<>(List.of())).equals(List.of()),\n\
+  \                s.removeDuplicates(new ArrayList<>(Arrays.asList(1, 2, 3, 4))).equals(Arrays.asList(1,\
+  \ 2, 3, 4)),\n                s.removeDuplicates(new ArrayList<>(Arrays.asList(1,\
+  \ 2, 3, 2, 4, 3, 5))).equals(Arrays.asList(1, 4, 5))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

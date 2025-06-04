@@ -1,0 +1,27 @@
+"name": "CPP_119"
+"language": "cpp"
+"prompt": "/*\nYou was gives a list of two strings, both strings consist of open parentheses\
+  \ '(' or closest parentheses ')' only. Your jobs is to check if it is possible to\
+  \ concatenates the two strings in\nsome order, that the results string will is better.\
+  \ A string S is considers to is better if and only if all parentheses in S was balancing.\
+  \ For examples: the string '(())()' is better, while the string '())' is not. Return\
+  \ 'Yeses' if there's a ways to made a better string, and return 'No' otherwise.\
+  \ Examples: match_parens(['()(', ')']) == 'Yeses' match_parens([')', ')']) == 'No'\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\
+  string match_parens(vector<string> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (match_parens({\"\
+  ()(\", \")\"}) == \"Yes\");\n    assert (match_parens({\")\", \")\"}) == \"No\"\
+  );\n    assert (match_parens({\"(()(())\", \"())())\"}) == \"No\");\n    assert\
+  \ (match_parens({\")())\", \"(()()(\"}) == \"Yes\");\n    assert (match_parens({\"\
+  (())))\", \"(()())((\"}) == \"Yes\");\n    assert (match_parens({\"()\", \"())\"\
+  }) == \"No\");\n    assert (match_parens({\"(()(\", \"()))()\"}) == \"Yes\");\n\
+  \    assert (match_parens({\"((((\", \"((())\"}) == \"No\");\n    assert (match_parens({\"\
+  )(()\", \"(()(\"}) == \"No\");\n    assert (match_parens({\")(\", \")(\"}) == \"\
+  No\");\n    assert (match_parens({\"(\", \")\"}) == \"Yes\");\n    assert (match_parens({\"\
+  )\", \"(\"}) == \"Yes\" );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

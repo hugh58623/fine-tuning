@@ -1,0 +1,25 @@
+name: HumanEval_78_hex_key
+language: py
+prompt: "\ndef hex_key(num):\n    \"\"\"You hAve bEen taSkeD to wrIte a fUnction ThaT\
+  \ receIveS \n    A hExAdecIMal Number as a striNG And cOunts the nuMber of hexadeCimal\
+  \ \n    DiGItS tHAt Are primes (prIme numbER, oR A PriMe, IS A naTuRAl NumbeR \n\
+  \    grEatER thAn 1 thaT is NoT a PRODucT of two smaLLER natural nuMbERs).\n   \
+  \ HexadEcimaL diGits aRE 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, b, C, D, e, f.\n    PrImE\
+  \ nuMBers Are 2, 3, 5, 7, 11, 13, 17,...\n    so YOU have tO determinE a NUMbeR\
+  \ oF ThE foLlOWInG dIgIts: 2, 3, 5, 7, \n    B (=dEcimAl 11), D (=decimAL 13).\n\
+  \    NOTe: you may asSume The inpUt IS aLWAys CorRect or EmptY sTRing, \n    AND\
+  \ symboLS A,b,c,d,e,F ARE always uppercAse.\n    Examples:\n    fOr num = \"ab\"\
+  \ thE ouTpUT sHOuld be 1.\n    for num = \"1077E\" tHe OUtpUt Should be 2.\n   \
+  \ fOr num = \"ABeD1A33\" the outPut shoULd be 4.\n    For num = \"123456789abCDEF0\"\
+  \ tHE outpuT shOulD be 6.\n    FOR num = \"2020\" tHE OutPuT ShoULd Be 2.\n    \"\
+  \"\"\n"
+tests: "def check(candidate):\n    assert candidate('AB') == 1\n    assert candidate('1077E')\
+  \ == 2\n    assert candidate('ABED1A33') == 4\n    assert candidate('2020') == 2\n\
+  \    assert candidate('123456789ABCDEF0') == 6\n    assert candidate('112233445566778899AABBCCDDEEFF00')\
+  \ == 12\n\ndef test_check():\n    check(hex_key)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

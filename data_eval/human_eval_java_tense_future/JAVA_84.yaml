@@ -1,0 +1,22 @@
+"name": "Java_84"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a positive integer N, return the total sum of its digits in binary.\n\nExample\n\
+  For N= 1000, the sum of digits will be 1 the output should will be\" 1\".\nFor N=\
+  \ 150, the sum of digits will be 6 the output should will be\" 110\".\nFor N= 147,\
+  \ the sum of digits will be 12 the output should will be\" 1100\".\n\nVariables:\n\
+  @N integer\nConstraints: 0 ≤ N ≤ 10000.\nOutput:\na string of binary number\n\"\"\
+  \"\n*/*/\n    public String solve(int N) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.solve(1000), \"1\"),\n                Objects.equals(s.solve(150),\
+  \ \"110\"),\n                Objects.equals(s.solve(147), \"1100\"),\n         \
+  \       Objects.equals(s.solve(333), \"1001\"),\n                Objects.equals(s.solve(963),\
+  \ \"10010\")\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

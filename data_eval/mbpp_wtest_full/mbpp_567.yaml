@@ -1,0 +1,16 @@
+name: mbpp_567
+language: py
+prompt: "\n\ndef issort_list(list1):\n    \"\"\"\n    Write a function to check whether\
+  \ a specified list is sorted or not.\n    >>> issort_list([1,2,4,6,8,10,12,14,16,17])\n\
+  \    True\n    >>> issort_list([1, 2, 4, 6, 8, 10, 12, 14, 20, 17])\n    False\n\
+  \    >>> issort_list([1, 2, 4, 6, 8, 10,15,14,20])\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,4,6,8,10,12,14,16,17])==True\n\
+  \    assert candidate([1, 2, 4, 6, 8, 10, 12, 14, 20, 17])==False\n    assert candidate([1,\
+  \ 2, 4, 6, 8, 10,15,14,20])==False\n\n\n\ndef test_check():\n    check(issort_list)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

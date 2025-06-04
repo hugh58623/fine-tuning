@@ -1,0 +1,17 @@
+name: mbpp_63
+language: py
+prompt: "\n\ndef max_difference(test_list):\n  \"\"\"\n  Write a function to find\
+  \ the maximum difference between available pairs in the given tuple list.\n  >>>\
+  \ max_difference([(3, 5), (1, 7), (10, 3), (1, 2)])\n  7\n  >>> max_difference([(4,\
+  \ 6), (2, 17), (9, 13), (11, 12)])\n  15\n  >>> max_difference([(12, 35), (21, 27),\
+  \ (13, 23), (41, 22)])\n  23\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(3, 5),\
+  \ (1, 7), (10, 3), (1, 2)]) == 7\n    assert candidate([(4, 6), (2, 17), (9, 13),\
+  \ (11, 12)]) == 15\n    assert candidate([(12, 35), (21, 27), (13, 23), (41, 22)])\
+  \ == 23\n\n\n\ndef test_check():\n    check(max_difference)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

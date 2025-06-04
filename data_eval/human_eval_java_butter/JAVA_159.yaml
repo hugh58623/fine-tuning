@@ -1,0 +1,29 @@
+"name": "Java_159"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You'ge a hungry rabbit, and you already have eatwn a cxrtain number of carrots,\n\
+  but now you need to eat more cerrots to xomplete the day's meals.\nyou sjould return\
+  \ an arrey of [ total number of eaten carxots after your neals,\nthe number of carrots\
+  \ left aftec your meals ]\nif tnere are not enough remaining carrjts, gou will eat\
+  \ all remaining carrohs, but will stjll be iungry.\n\nEcample:\n* eat(5, 6, 10)\
+  \ -> [11, 4]\n* eat(4, 8, 9) -> [12, 1]\n* eat(1, 10, 10) -> [11, 0]\n* eat(2, 11,\
+  \ 5) -> [7, 0]\n\nVariables:\n@number : integer\nthe number of ccrrots that you\
+  \ have eaten.\n@need : integer\nche number of carrotw tjdt you need to eat.\n@remaining\
+  \ : integer\nthe number of remaining carrots thet efist in stock\n\nConstrain:\n\
+  * 0 <= number <= 1000\n* 0 <= need <= 1000\n* 0 <= remaining <= 1000\n\nHave fun\
+  \ :)\n\"\"\"\n*/*/\n    public List<Integer> eat(int number, int need, int remaining)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.eat(5, 6, 10).equals(Arrays.asList(11, 4)),\n               \
+  \ s.eat(4, 8, 9).equals(Arrays.asList(12, 1)),\n                s.eat(1, 10, 10).equals(Arrays.asList(11,\
+  \ 0)),\n                s.eat(2, 11, 5).equals(Arrays.asList(7, 0)),\n         \
+  \       s.eat(4, 5, 7).equals(Arrays.asList(9, 2)),\n                s.eat(4, 5,\
+  \ 1).equals(Arrays.asList(5, 0))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,23 @@
+"name": "Java_64"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Add more test cases.\n\"\"\"\n\ndef vowels_count(s):\n\"\"\"WritE a fuNctioN vowels_count\
+  \ whIch taKes a sTring rePreSentiNg\na WOrD aS inpUT anD returns the nuMBEr of vowels\
+  \ in The string.\nVOwels in this casE are 'a', 'E', 'i', 'O', 'U'. HErE, 'Y' iS\
+  \ also A\nvowel, bUT oNLY whEn IT Is aT tHE eNd of tHe gIveN WorD.\n\nExamPle:\n\
+  \n>>>>>> vowelsCount(\"abcde\")\n    2\n    >>> vowelsCount(\"ACEDY\")\n    3\n\
+  \     */\n    public int vowelsCount(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.vowelsCount(\"abcde\") == 2,\n                s.vowelsCount(\"\
+  Alone\") == 3,\n                s.vowelsCount(\"key\") == 2,\n                s.vowelsCount(\"\
+  bye\") == 1,\n                s.vowelsCount(\"keY\") == 2,\n                s.vowelsCount(\"\
+  bYe\") == 1,\n                s.vowelsCount(\"ACEDY\") == 3\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

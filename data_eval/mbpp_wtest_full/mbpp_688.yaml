@@ -1,0 +1,14 @@
+name: mbpp_688
+language: py
+prompt: "\n\ndef len_complex(a,b):\n  \"\"\"\n  Write a function to get the length\
+  \ of a complex number.\n  >>> len_complex(3,4)\n  5.0\n  >>> len_complex(9,10)\n\
+  \  13.45362404707371\n  >>> len_complex(7,9)\n  11.40175425099138\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3,4)==5.0\n\
+  \    assert candidate(9,10)==13.45362404707371\n    assert candidate(7,9)==11.40175425099138\n\
+  \n\n\ndef test_check():\n    check(len_complex)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

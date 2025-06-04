@@ -1,0 +1,14 @@
+name: mbpp_35
+language: py
+prompt: "\n\ndef find_rect_num(n):\n  \"\"\"\n  Write a function to find the n-th\
+  \ rectangular number.\n  >>> find_rect_num(4)\n  20\n  >>> find_rect_num(5)\n  30\n\
+  \  >>> find_rect_num(6)\n  42\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4) == 20\n\
+  \    assert candidate(5) == 30\n    assert candidate(6) == 42\n\n\n\ndef test_check():\n\
+  \    check(find_rect_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

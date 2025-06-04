@@ -1,0 +1,27 @@
+name: mbpp_722
+language: py
+prompt: "\n\ndef filter_data(students,h,w):\n    \"\"\"\n    Write a function to filter\
+  \ the height and width of students which are stored in a dictionary.\n    >>> filter_data({'Cierra\
+  \ Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre\
+  \ Cox': (5.8, 66)},6.0,70)\n    {'Cierra Vega': (6.2, 70)}\n    >>> filter_data({'Cierra\
+  \ Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre\
+  \ Cox': (5.8, 66)},5.9,67)\n    {'Cierra Vega': (6.2, 70),'Kierra Gentry': (6.0,\
+  \ 68)}\n    >>> filter_data({'Cierra Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65),\
+  \ 'Kierra Gentry': (6.0, 68), 'Pierre Cox': (5.8, 66)},5.7,64)\n    {'Cierra Vega':\
+  \ (6.2, 70),'Alden Cantrell': (5.9, 65),'Kierra Gentry': (6.0, 68),'Pierre Cox':\
+  \ (5.8, 66)}\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'Cierra\
+  \ Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre\
+  \ Cox': (5.8, 66)},6.0,70)=={'Cierra Vega': (6.2, 70)}\n    assert candidate({'Cierra\
+  \ Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre\
+  \ Cox': (5.8, 66)},5.9,67)=={'Cierra Vega': (6.2, 70),'Kierra Gentry': (6.0, 68)}\n\
+  \    assert candidate({'Cierra Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra\
+  \ Gentry': (6.0, 68), 'Pierre Cox': (5.8, 66)},5.7,64)=={'Cierra Vega': (6.2, 70),'Alden\
+  \ Cantrell': (5.9, 65),'Kierra Gentry': (6.0, 68),'Pierre Cox': (5.8, 66)}\n\n\n\
+  \ndef test_check():\n    check(filter_data)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

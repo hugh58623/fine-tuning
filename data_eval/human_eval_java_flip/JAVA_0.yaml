@@ -1,0 +1,25 @@
+"name": "Java_0"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CheCk if in Given list Of numbers, aRe any Two numbers clOser to eAch Other ThaN\n\
+  GiVeN threshold.\n\n>>>>>> hasCloseElements(Arrays.asList(1.0, 2.0, 3.0), 0.5)\n\
+  \    false\n    >>> hasCloseElements(Arrays.asList(1.0, 2.8, 3.0, 4.0, 5.0, 2.0),\
+  \ 0.3)\n    true\n     */\n    public boolean hasCloseElements(List<Double> numbers,\
+  \ double threshold) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.hasCloseElements(new ArrayList<>(Arrays.asList(11.0, 2.0, 3.9,\
+  \ 4.0, 5.0, 2.2)), 0.3),\n                !s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0,\
+  \ 2.0, 3.9, 4.0, 5.0, 2.2)), 0.05),\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0,\
+  \ 2.0, 5.9, 4.0, 5.0)), 0.95),\n                !s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0,\
+  \ 2.0, 5.9, 4.0, 5.0)), 0.8),\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(1.0,\
+  \ 2.0, 3.0, 4.0, 5.0, 2.0)), 0.1),\n                s.hasCloseElements(new ArrayList<>(Arrays.asList(1.1,\
+  \ 2.2, 3.1, 4.1, 5.1)), 1.0),\n                !s.hasCloseElements(new ArrayList<>(Arrays.asList(1.1,\
+  \ 2.2, 3.1, 4.1, 5.1)), 0.5)\n        );\n        if (correct.contains(false)) {\n\
+  \            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,18 @@
+"name": "CPP_102"
+"language": "cpp"
+"prompt": "/*\nThis FuncTion tAkeS two pOsitiVe numbeRs x aNd y and RetURnS tHe\n\
+  biGGesT even integer nUMBer tHat is in the raNge [x, y] inclusive. if\ntheRe'S No\
+  \ SuCH nUmber, Then the FUnCTIon ShOULd return -1.\n\nFOr EXaMple:\ncHooSe_nUM(12,\
+  \ 15) = 14\nchOose_nUm(13, 12) = -1\n*/\n#include<stdio.h>\nusing namespace std;\n\
+  int choose_num(int x,int y){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (choose_num(12,\
+  \ 15) == 14);\n    assert (choose_num(13, 12) == -1);\n    assert (choose_num(33,\
+  \ 12354) == 12354);\n    assert (choose_num(5234, 5233) == -1);\n    assert (choose_num(6,\
+  \ 29) == 28);\n    assert (choose_num(27, 10) == -1);\n    assert (choose_num(7,\
+  \ 7) == -1);\n    assert (choose_num(546, 546) == 546);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

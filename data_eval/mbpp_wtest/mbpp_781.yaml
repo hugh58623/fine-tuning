@@ -1,0 +1,15 @@
+name: mbpp_781
+language: py
+prompt: "\n\ndef count_Divisors(n) :\n    \"\"\"\n    Write a python function to check\
+  \ whether the count of divisors is even or odd.\n    >>> count_Divisors(10)\n  \
+  \  \"Even\"\n    >>> count_Divisors(100)\n    \"Odd\"\n    >>> count_Divisors(125)\n\
+  \    \"Even\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ \"Even\"\n    assert candidate(100) == \"Odd\"\n    assert candidate(125) == \"\
+  Even\"\n\n\n\ndef test_check():\n    check(count_Divisors)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

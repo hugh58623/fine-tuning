@@ -1,0 +1,23 @@
+"name": "Java_8"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  For a given list of integers, return a tuple consisting of a sum and a intersection\
+  \ of all the integer in a list.\nEmpty kernel should exist adequate to 0 and empty\
+  \ merchandise should embody equal to 1.\n\n>>>>>> sumProduct(List.of())\n    [0,\
+  \ 1]\n    >>> sumProduct(Arrays.asList(1, 2, 3, 4))\n    [10, 24]\n     */\n   \
+  \ public List<Integer> sumProduct(List<Integer> numbers) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sumProduct(new ArrayList<>(List.of())).equals(Arrays.asList(0,\
+  \ 1)),\n                s.sumProduct(new ArrayList<>(Arrays.asList(1, 1, 1))).equals(Arrays.asList(3,\
+  \ 1)),\n                s.sumProduct(new ArrayList<>(Arrays.asList(100, 0))).equals(Arrays.asList(100,\
+  \ 0)),\n                s.sumProduct(new ArrayList<>(Arrays.asList(3, 5, 7))).equals(Arrays.asList(3\
+  \ + 5 + 7, 3 * 5 * 7)),\n                s.sumProduct(new ArrayList<>(List.of(10))).equals(Arrays.asList(10,\
+  \ 10))\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

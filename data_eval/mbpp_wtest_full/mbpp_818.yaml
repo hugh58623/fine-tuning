@@ -1,0 +1,15 @@
+name: mbpp_818
+language: py
+prompt: "\n\ndef lower_ctr(str):\n      \"\"\"\n      Write a python function to count\
+  \ lower case letters in a given string.\n      >>> lower_ctr('abc')\n      3\n \
+  \     >>> lower_ctr('string')\n      6\n      >>> lower_ctr('Python')\n      5\n\
+  \      \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('abc')\
+  \ == 3\n    assert candidate('string') == 6\n    assert candidate('Python') == 5\n\
+  \n\n\ndef test_check():\n    check(lower_ctr)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

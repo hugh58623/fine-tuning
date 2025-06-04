@@ -1,0 +1,31 @@
+name: mbpp_381
+language: py
+prompt: "\n\ndef index_on_inner_list(list_data, index_no):\n    \"\"\"\n    Write\
+  \ a function to sort a list of lists by a given index of the inner list.\n    >>>\
+  \ index_on_inner_list([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt\
+  \ Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,0)\n    [('Beau Turnbull', 94, 98),\
+  \ ('Brady Kent', 97, 96), ('Greyson Fulton', 98, 99), ('Wyatt Knott', 91, 94)]\n\
+  \    >>> index_on_inner_list([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96),\
+  \ ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,1)\n    [('Wyatt Knott',\
+  \ 91, 94), ('Beau Turnbull', 94, 98), ('Brady Kent', 97, 96), ('Greyson Fulton',\
+  \ 98, 99)]\n    >>> index_on_inner_list([('Greyson Fulton', 98, 99), ('Brady Kent',\
+  \ 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,2)\n    [('Wyatt\
+  \ Knott', 91, 94), ('Brady Kent', 97, 96), ('Beau Turnbull', 94, 98), ('Greyson\
+  \ Fulton', 98, 99)]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('Greyson\
+  \ Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull',\
+  \ 94, 98)] ,0)==[('Beau Turnbull', 94, 98), ('Brady Kent', 97, 96), ('Greyson Fulton',\
+  \ 98, 99), ('Wyatt Knott', 91, 94)]\n    assert candidate([('Greyson Fulton', 98,\
+  \ 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)]\
+  \ ,1)==[('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98), ('Brady Kent', 97, 96),\
+  \ ('Greyson Fulton', 98, 99)]\n    assert candidate([('Greyson Fulton', 98, 99),\
+  \ ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,2)==[('Wyatt\
+  \ Knott', 91, 94), ('Brady Kent', 97, 96), ('Beau Turnbull', 94, 98), ('Greyson\
+  \ Fulton', 98, 99)]\n\n\n\ndef test_check():\n    check(index_on_inner_list)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

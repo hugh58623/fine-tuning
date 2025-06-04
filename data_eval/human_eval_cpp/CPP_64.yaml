@@ -1,0 +1,19 @@
+"name": "CPP_64"
+"language": "cpp"
+"prompt": "/*\nWrite a function vowels_count which takes a string representing a word\
+  \ as input and returns the number of vowels in the string. Vowels in this case are\
+  \ 'a', 'e', 'i', 'o', 'u'. \nHere, 'y' is also a vowel, but only when it is at the\
+  \ end of the given word.\nExample: \n>>> vowels_count(\"abcde\") \n2 \n>>> vowels_count(\"\
+  ACEDY\") \n3\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\nusing\
+  \ namespace std;\nint vowels_count(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (vowels_count(\"\
+  abcde\") == 2);\n    assert (vowels_count(\"Alone\") == 3);\n    assert (vowels_count(\"\
+  key\") == 2);\n    assert (vowels_count(\"bye\") == 1);\n    assert (vowels_count(\"\
+  keY\") == 2);\n    assert (vowels_count(\"bYe\") == 1);\n    assert (vowels_count(\"\
+  ACEDY\") == 3);\n   \n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

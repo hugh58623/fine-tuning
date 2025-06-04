@@ -1,0 +1,16 @@
+name: mbpp_708
+language: py
+prompt: "\n\ndef Convert(string):\n    \"\"\"\n    Write a python function to convert\
+  \ a string to a list.\n    >>> Convert('python program')\n    ['python','program']\n\
+  \    >>> Convert('Data Analysis')\n    ['Data','Analysis']\n    >>> Convert('Hadoop\
+  \ Training')\n    ['Hadoop','Training']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python\
+  \ program') == ['python','program']\n    assert candidate('Data Analysis') ==['Data','Analysis']\n\
+  \    assert candidate('Hadoop Training') == ['Hadoop','Training']\n\n\n\ndef test_check():\n\
+  \    check(Convert)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

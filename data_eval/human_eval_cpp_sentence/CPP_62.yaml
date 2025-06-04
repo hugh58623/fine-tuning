@@ -1,0 +1,20 @@
+"name": "CPP_62"
+"language": "cpp"
+"prompt": "/*\nxs represent coefficients of a polynomial. xs [0] + xs [1] * x + xs\
+  \ [2] * x ^ 2 +.... return derivative of this polynomial in the same form.\n>>>\
+  \ derivative([3, 1, 2, 4, 5])\n[1, 4, 12, 20]\n>>> derivative([1, 2, 3])\n[2, 6]\n\
+  */\n#include<stdio.h>\n#include<math.h>\n#include<vector>\nusing namespace std;\n\
+  vector<float> derivative(vector<float> xs){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<float> a,vector<float>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (abs(a[i]-b[i])>1e-4) return false;\n    }\n    return true;\n\
+  }\nint main(){\n    assert (issame(derivative({3, 1, 2, 4, 5}) , {1, 4, 12, 20}));\n\
+  \    assert (issame(derivative({1, 2, 3}) , {2, 6}));\n    assert (issame(derivative({3,\
+  \ 2, 1}) , {2, 2}));\n    assert (issame(derivative({3, 2, 1, 0, 4}) , {2, 2, 0,\
+  \ 16}));\n    assert (issame(derivative({1}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

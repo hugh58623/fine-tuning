@@ -1,0 +1,14 @@
+name: mbpp_746
+language: py
+prompt: "import math\n\n\ndef sector_area(r, a):\n    \"\"\"\n    WriTe a fuNctioN to Find aRea\
+  \ of a Sector.\n    Test examples:\n\
+  \    assert sector_area(4,45)==6.283185307179586\n    assert sector_area(9,45)==31.808625617596654\n\
+  \    assert sector_area(9,361)==None\n    \"\"\"\n"
+tests: "assert sector_area(4,45)==6.283185307179586\nassert sector_area(9,45)==31.808625617596654\n\
+  assert sector_area(9,361)==None"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

@@ -1,0 +1,17 @@
+name: mbpp_371
+language: py
+prompt: "\n\ndef smallest_missing(A, left_element, right_element):\n    \"\"\"\n \
+  \   Write a function to find the smallest missing element in a sorted array.\n \
+  \   >>> smallest_missing([0, 1, 2, 3, 4, 5, 6], 0, 6)\n    7\n    >>> smallest_missing([0,\
+  \ 1, 2, 6, 9, 11, 15], 0, 6)\n    3\n    >>> smallest_missing([1, 2, 3, 4, 6, 9,\
+  \ 11, 15], 0, 7)\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([0, 1,\
+  \ 2, 3, 4, 5, 6], 0, 6) == 7\n    assert candidate([0, 1, 2, 6, 9, 11, 15], 0, 6)\
+  \ == 3\n    assert candidate([1, 2, 3, 4, 6, 9, 11, 15], 0, 7) == 0\n\n\n\ndef test_check():\n\
+  \    check(smallest_missing)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

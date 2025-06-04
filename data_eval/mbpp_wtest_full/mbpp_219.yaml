@@ -1,0 +1,17 @@
+name: mbpp_219
+language: py
+prompt: "\n\ndef extract_min_max(test_tup, K):\n  \"\"\"\n  Write a function to extract\
+  \ maximum and minimum k elements in the given tuple.\n  >>> extract_min_max((5,\
+  \ 20, 3, 7, 6, 8), 2)\n  (3, 5, 8, 20)\n  >>> extract_min_max((4, 5, 6, 1, 2, 7),\
+  \ 3)\n  (1, 2, 4, 5, 6, 7)\n  >>> extract_min_max((2, 3, 4, 8, 9, 11, 7), 4)\n \
+  \ (2, 3, 4, 7, 8, 9, 11)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((5, 20,\
+  \ 3, 7, 6, 8), 2) == (3, 5, 8, 20)\n    assert candidate((4, 5, 6, 1, 2, 7), 3)\
+  \ == (1, 2, 4, 5, 6, 7)\n    assert candidate((2, 3, 4, 8, 9, 11, 7), 4) == (2,\
+  \ 3, 4, 7, 8, 9, 11)\n\n\n\ndef test_check():\n    check(extract_min_max)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

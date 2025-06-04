@@ -1,0 +1,15 @@
+name: mbpp_660
+language: py
+prompt: "\n\ndef find_Points(l1,r1,l2,r2):\n    \"\"\"\n    Write a python function\
+  \ to choose points from two ranges such that no point lies in both the ranges.\n\
+  \    >>> find_Points(5,10,1,5)\n    (1,10)\n    >>> find_Points(3,5,7,9)\n    (3,9)\n\
+  \    >>> find_Points(1,5,2,8)\n    (1,8)\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,10,1,5)\
+  \ == (1,10)\n    assert candidate(3,5,7,9) == (3,9)\n    assert candidate(1,5,2,8)\
+  \ == (1,8)\n\n\n\ndef test_check():\n    check(find_Points)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

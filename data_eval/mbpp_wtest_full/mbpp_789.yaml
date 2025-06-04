@@ -1,0 +1,14 @@
+name: mbpp_789
+language: py
+prompt: "\n\ndef perimeter_polygon(s,l):\n  \"\"\"\n  Write a function to calculate\
+  \ the perimeter of a regular polygon.\n  >>> perimeter_polygon(4,20)\n  80\n  >>>\
+  \ perimeter_polygon(10,15)\n  150\n  >>> perimeter_polygon(9,7)\n  63\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,20)==80\n\
+  \    assert candidate(10,15)==150\n    assert candidate(9,7)==63\n\n\n\ndef test_check():\n\
+  \    check(perimeter_polygon)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

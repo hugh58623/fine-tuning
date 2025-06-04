@@ -1,0 +1,21 @@
+name: mbpp_674
+language: py
+prompt: "\n\ndef remove_duplicate(string):\n  \"\"\"\n  Write a function to remove\
+  \ duplicate words from a given string using collections module.\n  >>> remove_duplicate(\"\
+  Python Exercises Practice Solution Exercises\")\n  (\"Python Exercises Practice\
+  \ Solution\")\n  >>> remove_duplicate(\"Python Exercises Practice Solution Python\"\
+  )\n  (\"Python Exercises Practice Solution\")\n  >>> remove_duplicate(\"Python Exercises\
+  \ Practice Solution Practice\")\n  (\"Python Exercises Practice Solution\")\n  \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Python\
+  \ Exercises Practice Solution Exercises\")==(\"Python Exercises Practice Solution\"\
+  )\n    assert candidate(\"Python Exercises Practice Solution Python\")==(\"Python\
+  \ Exercises Practice Solution\")\n    assert candidate(\"Python Exercises Practice\
+  \ Solution Practice\")==(\"Python Exercises Practice Solution\")\n\n\n\ndef test_check():\n\
+  \    check(remove_duplicate)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

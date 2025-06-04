@@ -1,0 +1,14 @@
+name: mbpp_379
+language: py
+prompt: "\n\ndef surfacearea_cuboid(l,w,h):\n  \"\"\"\n  Write a function to find\
+  \ the surface area of a cuboid.\n  >>> surfacearea_cuboid(1,2,3)\n  22\n  >>> surfacearea_cuboid(5,7,9)\n\
+  \  286\n  >>> surfacearea_cuboid(10,15,21)\n  1350\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,2,3)==22\n\
+  \    assert candidate(5,7,9)==286\n    assert candidate(10,15,21)==1350\n\n\n\n\
+  def test_check():\n    check(surfacearea_cuboid)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

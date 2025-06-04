@@ -1,0 +1,17 @@
+name: mbpp_120
+language: py
+prompt: "\n\ndef max_product_tuple(list1):\n    \"\"\"\n    Write a function to find\
+  \ the maximum product from the pairs of tuples within a given list.\n    >>> max_product_tuple([(2,\
+  \ 7), (2, 6), (1, 8), (4, 9)] )\n    36\n    >>> max_product_tuple([(10,20), (15,2),\
+  \ (5,10)] )\n    200\n    >>> max_product_tuple([(11,44), (10,15), (20,5), (12,\
+  \ 9)] )\n    484\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(2, 7),\
+  \ (2, 6), (1, 8), (4, 9)] )==36\n    assert candidate([(10,20), (15,2), (5,10)]\
+  \ )==200\n    assert candidate([(11,44), (10,15), (20,5), (12, 9)] )==484\n\n\n\n\
+  def test_check():\n    check(max_product_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

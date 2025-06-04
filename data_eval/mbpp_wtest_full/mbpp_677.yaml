@@ -1,0 +1,15 @@
+name: mbpp_677
+language: py
+prompt: "\n\ndef validity_triangle(a,b,c):\n \"\"\"\n Write a function to check if\
+  \ the triangle is valid or not.\n >>> validity_triangle(60,50,90)\n False\n >>>\
+  \ validity_triangle(45,75,60)\n True\n >>> validity_triangle(30,50,100)\n True\n\
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(60,50,90)==False\n\
+  \    assert candidate(45,75,60)==True\n    assert candidate(30,50,100)==True\n\n\
+  \n\ndef test_check():\n    check(validity_triangle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

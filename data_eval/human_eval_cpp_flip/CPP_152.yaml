@@ -1,0 +1,27 @@
+"name": "CPP_152"
+"language": "cpp"
+"prompt": "/*\nI thiNk we All reMemBer thAt feeLing wheN thE resuLt oF SoMe Long-AWaiTed\n\
+  event is finALLy knOwn. The feelIngs and thougHts yoU hAVe At THaT momeNt are\n\
+  deFInITEly WoRTH noTiNG dOwn anD coMpaRIng.\nyour tAsk Is To DETErmIne if a perSON\
+  \ Correctly gUeSSed the rEsultS of A numbER oF maTCheS.\nYOu aRE givEn tWo ARRays\
+  \ of Scores and GuESSes Of EQuAl lEnGTH, wHeRe Each iNdex Shows a maTCh.\nrEturn\
+  \ an arrAy of The samE lENgTH DenOtiNg how fAr ofF eACh guess waS. iF they hAVe\
+  \ GUESsED Correctly,\nthe vAlue is 0, and if NOt, THe vAluE iS ThE AbsoluTe difFeREncE\
+  \ bEtween thE guess And tHe score.\n\n\nexAmple:\n\ncompare([1,2,3,4,5,1],[1,2,3,4,2,-2])\
+  \ -> [0,0,0,0,3,3]\ncompare([0,5,0,0,0,4],[4,1,1,0,0,-2]) -> [4,4,1,0,0,6]\n*/\n\
+  #include<stdio.h>\n#include<math.h>\n#include<vector>\nusing namespace std;\nvector<int>\
+  \ compare(vector<int> game,vector<int> guess){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(compare({1,2,3,4,5,1},{1,2,3,4,2,-2}),{0,0,0,0,3,3}));\n   \
+  \ assert (issame(compare({0,5,0,0,0,4},{4,1,1,0,0,-2}),{4,4,1,0,0,6}));\n    assert\
+  \ (issame(compare({1,2,3,4,5,1},{1,2,3,4,2,-2}),{0,0,0,0,3,3}));\n    assert (issame(compare({0,0,0,0,0,0},{0,0,0,0,0,0}),{0,0,0,0,0,0}));\n\
+  \    assert (issame(compare({1,2,3},{-1,-2,-3}),{2,4,6}));\n    assert (issame(compare({1,2,3,5},{-1,2,3,4}),{2,0,0,1}));\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,18 @@
+name: HumanEval_77_iscube
+language: py
+prompt: "\ndef iscube(a):\n    \"\"\"\n    Write a function that takes an integer\
+  \ a and returns True if this ingeger is a cube of an integer. Note: You can assume\
+  \ that the input is always valid. Examples: iscube (1) = = > True iscube (2) = =\
+  \ > False iscube (-1) = = > True iscube (64) = = = > True iscube (0) = = > True\
+  \ iscube (180) = = = > False \"'\n"
+tests: "def check(candidate):\n    assert candidate(1) == True\n    assert candidate(2)\
+  \ == False\n    assert candidate(-1) == True\n    assert candidate(64) == True\n\
+  \    assert candidate(180) == False\n    assert candidate(1000) == True\n    assert\
+  \ candidate(0) == True\n    assert candidate(1729) == False\n\ndef test_check():\n\
+  \    check(iscube)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

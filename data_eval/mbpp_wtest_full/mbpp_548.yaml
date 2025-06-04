@@ -1,0 +1,17 @@
+name: mbpp_548
+language: py
+prompt: "\n\ndef longest_increasing_subsequence(arr):\n\t\"\"\"\n\tWrite a function\
+  \ to find the length of the longest increasing subsequence of the given sequence.\n\
+  \t>>> longest_increasing_subsequence([10, 22, 9, 33, 21, 50, 41, 60])\n\t5\n\t>>>\
+  \ longest_increasing_subsequence([3, 10, 2, 1, 20])\n\t3\n\t>>> longest_increasing_subsequence([50,\
+  \ 3, 10, 7, 40, 80])\n\t4\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10, 22,\
+  \ 9, 33, 21, 50, 41, 60]) == 5\n    assert candidate([3, 10, 2, 1, 20]) == 3\n \
+  \   assert candidate([50, 3, 10, 7, 40, 80]) == 4 \n\n\n\ndef test_check():\n  \
+  \  check(longest_increasing_subsequence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

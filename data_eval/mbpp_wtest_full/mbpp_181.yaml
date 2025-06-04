@@ -1,0 +1,18 @@
+name: mbpp_181
+language: py
+prompt: "\n\ndef common_prefix (arr, n):\n\t\"\"\"\n\tWrite a function to find the\
+  \ longest common prefix in the given set of strings.\n\t>>> common_prefix([\"tablets\"\
+  , \"tables\", \"taxi\", \"tamarind\"], 4)\n\t'ta'\n\t>>> common_prefix([\"apples\"\
+  , \"ape\", \"april\"], 3)\n\t'ap'\n\t>>> common_prefix([\"teens\", \"teenager\"\
+  , \"teenmar\"], 3)\n\t'teen'\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"tablets\"\
+  , \"tables\", \"taxi\", \"tamarind\"], 4) == 'ta'\n    assert candidate([\"apples\"\
+  , \"ape\", \"april\"], 3) == 'ap'\n    assert candidate([\"teens\", \"teenager\"\
+  , \"teenmar\"], 3) == 'teen'\n\n\n\ndef test_check():\n    check(common_prefix)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

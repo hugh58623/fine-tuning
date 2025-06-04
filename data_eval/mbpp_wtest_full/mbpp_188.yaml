@@ -1,0 +1,15 @@
+name: mbpp_188
+language: py
+prompt: "\n\ndef prod_Square(n):\n    \"\"\"\n    Write a python function to check\
+  \ whether the given number can be represented by product of two squares or not.\n\
+  \    >>> prod_Square(25)\n    False\n    >>> prod_Square(30)\n    False\n    >>>\
+  \ prod_Square(16)\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(25) ==\
+  \ False\n    assert candidate(30) == False\n    assert candidate(16) == True\n\n\
+  \n\ndef test_check():\n    check(prod_Square)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

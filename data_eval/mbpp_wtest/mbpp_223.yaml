@@ -1,0 +1,16 @@
+name: mbpp_223
+language: py
+prompt: "\n\ndef is_majority(arr, n, x):\n\t\"\"\"\n\tWrite a function to check for\
+  \ majority element in the given sorted array.\n\t>>> is_majority([1, 2, 3, 3, 3,\
+  \ 3, 10], 7, 3)\n\tTrue\n\t>>> is_majority([1, 1, 2, 4, 4, 4, 6, 6], 8, 4)\n\tFalse\n\
+  \t>>> is_majority([1, 1, 1, 2, 2], 5, 1)\n\tTrue\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 3, 3, 3, 10], 7, 3) == True\n    assert candidate([1, 1, 2, 4, 4, 4, 6, 6],\
+  \ 8, 4) == False\n    assert candidate([1, 1, 1, 2, 2], 5, 1) == True\n\n\n\ndef\
+  \ test_check():\n    check(is_majority)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

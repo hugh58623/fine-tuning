@@ -1,0 +1,14 @@
+name: mbpp_491
+language: py
+prompt: "\n\ndef sum_gp(a,n,r):\n \"\"\"\n Write a function to find the sum of geometric\
+  \ progression series.\n >>> sum_gp(1,5,2)\n 31\n >>> sum_gp(1,5,4)\n 341\n >>> sum_gp(2,6,3)\n\
+  \ 728\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,5,2)==31\n\
+  \    assert candidate(1,5,4)==341\n    assert candidate(2,6,3)==728\n\n\n\ndef test_check():\n\
+  \    check(sum_gp)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

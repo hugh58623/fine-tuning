@@ -1,0 +1,16 @@
+name: mbpp_871
+language: py
+prompt: "\n\ndef are_Rotations(string1,string2):\n    \"\"\"\n    Write a python function\
+  \ to check whether the given strings are rotations of each other or not.\n    >>>\
+  \ are_Rotations(\"abc\",\"cba\")\n    False\n    >>> are_Rotations(\"abcd\",\"cdba\"\
+  )\n    False\n    >>> are_Rotations(\"abacd\",\"cdaba\")\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abc\"\
+  ,\"cba\") == False\n    assert candidate(\"abcd\",\"cdba\") == False\n    assert\
+  \ candidate(\"abacd\",\"cdaba\") == True\n\n\n\ndef test_check():\n    check(are_Rotations)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

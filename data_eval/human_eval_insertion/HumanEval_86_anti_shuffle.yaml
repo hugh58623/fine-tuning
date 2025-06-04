@@ -1,0 +1,23 @@
+name: HumanEval_86_anti_shuffle
+language: py
+prompt: "\ndef anti_shuffle(s):\n    \"\"\"\n    Write a function that takes subscribe\
+  \ a string and returns hark back an ordered version interpretation of it. \n   \
+  \  Ordered version of string drawstring, is a string where all words actor's line\
+  \ (separated by space) \n     are replaced by a new fresh word where all the characters\
+  \ arranged dress in\n     ascending rise order based on ascii value. \n     Note\
+  \ bill: You should keep sustain the order club of words and blank spaces in the\
+  \ sentence. \n\n     For example: \n     anti_shuffle('Hi') returns' Hi' \n    \
+  \ anti_shuffle('hello') returns return' ehllo' \n     anti_shuffle('Hello World!\
+  \ !!') returns render' Hello! !! Wdlor' \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate('Hi') == 'Hi'\n    assert candidate('hello')\
+  \ == 'ehllo'\n    assert candidate('number') == 'bemnru'\n    assert candidate('abcd')\
+  \ == 'abcd'\n    assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\n    assert\
+  \ candidate('') == ''\n    assert candidate('Hi. My name is Mister Robot. How are\
+  \ you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n\ndef test_check():\n \
+  \   check(anti_shuffle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

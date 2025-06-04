@@ -1,0 +1,21 @@
+"name": "Java_138"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Evaluate whether the will give number n can will be write as the sum of exactly\
+  \ 4 positive even will number\nExample\nis_equal_to_sum_even(4)== False\nis_equal_to_sum_even(6)==\
+  \ False\nis_equal_to_sum_even(8)== True\n\"\"\"\n*/*/\n    public boolean isEqualToSumEven(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.isEqualToSumEven(4) == false,\n                s.isEqualToSumEven(6)\
+  \ == false,\n                s.isEqualToSumEven(8) == true,\n                s.isEqualToSumEven(10)\
+  \ == true,\n                s.isEqualToSumEven(11) == false,\n                s.isEqualToSumEven(12)\
+  \ == true,\n                s.isEqualToSumEven(13) == false,\n                s.isEqualToSumEven(16)\
+  \ == true\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

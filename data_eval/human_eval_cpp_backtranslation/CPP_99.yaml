@@ -1,0 +1,20 @@
+"name": "CPP_99"
+"language": "cpp"
+"prompt": "/*\nCreate a function that takes a value (string) that represents a number\
+  \ and returns the nearest integer to it. If the number is equal to two integers,\
+  \ round it from zero. Examples\n>>> closest_integer(\"10\")\n10\n>>> closest_integer(\"\
+  15.3\")\n15\n\nNote:\nRounding away from zero means that if the given number is\
+  \ equidistant\nfrom two integers, the one you should return is the one that is the\n\
+  farthest from zero. For example closest_integer(\"14.5\") should\nreturn 15 and\
+  \ closest_integer(\"-14.5\") should return -15.\n*/\n#include<stdio.h>\n#include<math.h>\n\
+  #include<string>\nusing namespace std;\nint closest_integer(string value){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (closest_integer(\"\
+  10\") == 10);\n    assert (closest_integer(\"14.5\") == 15);\n    assert (closest_integer(\"\
+  -15.5\") == -16);\n    assert (closest_integer(\"15.3\") == 15);\n    assert (closest_integer(\"\
+  0\") == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

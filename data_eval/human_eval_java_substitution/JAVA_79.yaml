@@ -1,0 +1,24 @@
+"name": "Java_79"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You will be given a number in decimal form and your task equal to commute it to\n\
+  binary format. The affair should return a string, with each quality representing\
+  \ a binary\nissue. Each quality in the string will be' 0' or' 1'.\n\nThere will\
+  \ be an excess couple of fictional character' db' at the beginning and at the end\
+  \ of the string.\nThe excess character are there to help with the format.\n\nExamples:\n\
+  decimal_to_binary(15)    # returns \" db1111db \"\ndecimal_to_binary(32)    # returns\
+  \ \" db100000db \"\n\" \" \"\n*/*/\n    public String decimalToBinary(int decimal)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.decimalToBinary(0), \"db0db\"),\n            \
+  \    Objects.equals(s.decimalToBinary(32), \"db100000db\"),\n                Objects.equals(s.decimalToBinary(103),\
+  \ \"db1100111db\"),\n                Objects.equals(s.decimalToBinary(15), \"db1111db\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

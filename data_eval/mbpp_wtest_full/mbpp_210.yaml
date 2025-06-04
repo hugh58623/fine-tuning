@@ -1,0 +1,17 @@
+name: mbpp_210
+language: py
+prompt: "\n\ndef is_allowed_specific_char(string):\n    \"\"\"\n    Write a function\
+  \ to check that the given string contains only a certain set of characters(in this\
+  \ case a-z, a-z and 0-9) by using regex.\n    >>> is_allowed_specific_char(\"ABCDEFabcdef123450\"\
+  )\n    True\n    >>> is_allowed_specific_char(\"*&%@#!}{\")\n    False\n    >>>\
+  \ is_allowed_specific_char(\"HELLOhowareyou98765\")\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ABCDEFabcdef123450\"\
+  ) == True\n    assert candidate(\"*&%@#!}{\") == False\n    assert candidate(\"\
+  HELLOhowareyou98765\") == True\n\n\n\ndef test_check():\n    check(is_allowed_specific_char)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,23 @@
+name: mbpp_206
+language: py
+prompt: "\n\ndef concatenate_elements(test_tup):\n  \"\"\"\n  Write a function to\
+  \ perform the adjacent element concatenation in the given tuples.\n  >>> concatenate_elements((\"\
+  DSP \", \"IS \", \"BEST \", \"FOR \", \"ALL \", \"UTS\"))\n  ('DSP IS ', 'IS BEST\
+  \ ', 'BEST FOR ', 'FOR ALL ', 'ALL UTS')\n  >>> concatenate_elements((\"RES \",\
+  \ \"IS \", \"BEST \", \"FOR \", \"ALL \", \"QESR\"))\n  ('RES IS ', 'IS BEST ',\
+  \ 'BEST FOR ', 'FOR ALL ', 'ALL QESR')\n  >>> concatenate_elements((\"MSAM\", \"\
+  IS \", \"BEST \", \"FOR \", \"ALL \", \"SKD\"))\n  ('MSAMIS ', 'IS BEST ', 'BEST\
+  \ FOR ', 'FOR ALL ', 'ALL SKD')\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((\"DSP\
+  \ \", \"IS \", \"BEST \", \"FOR \", \"ALL \", \"UTS\")) == ('DSP IS ', 'IS BEST\
+  \ ', 'BEST FOR ', 'FOR ALL ', 'ALL UTS')\n    assert candidate((\"RES \", \"IS \"\
+  , \"BEST \", \"FOR \", \"ALL \", \"QESR\")) == ('RES IS ', 'IS BEST ', 'BEST FOR\
+  \ ', 'FOR ALL ', 'ALL QESR')\n    assert candidate((\"MSAM\", \"IS \", \"BEST \"\
+  , \"FOR \", \"ALL \", \"SKD\")) == ('MSAMIS ', 'IS BEST ', 'BEST FOR ', 'FOR ALL\
+  \ ', 'ALL SKD')\n\n\n\ndef test_check():\n    check(concatenate_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

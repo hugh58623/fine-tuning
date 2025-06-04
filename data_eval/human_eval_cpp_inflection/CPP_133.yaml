@@ -1,0 +1,22 @@
+"name": "CPP_133"
+"language": "cpp"
+"prompt": "/*\nYou was gives a list of numbers. You needing to return the sums of\
+  \ squared numbers in the gives list,\nround each elements in the list to the upper\
+  \ int(Ceiling) first. Examples: For lst = [1,2,3] the output should is 14 For lst\
+  \ = [1,4,9] the output should is 98 For lst = [1,3,5,7] the output should is 84\
+  \ For lst = [1.4,4.2,0] the output should is 29 For lst = [-2.4,1,1] the output\
+  \ should is 6\n*/\n#include<stdio.h>\n#include<math.h>\n#include<vector>\nusing\
+  \ namespace std;\nint sum_squares(vector<float> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (sum_squares({1,2,3})==14);\n\
+  \    assert (sum_squares({1.0,2,3})==14);\n    assert (sum_squares({1,3,5,7})==84);\n\
+  \    assert (sum_squares({1.4,4.2,0})==29);\n    assert (sum_squares({-2.4,1,1})==6);\n\
+  \    assert (sum_squares({100,1,15,2})==10230);\n    assert (sum_squares({10000,10000})==200000000);\n\
+  \    assert (sum_squares({-1.4,4.6,6.3})==75);\n    assert (sum_squares({-1.4,17.9,18.9,19.9})==1086);\n\
+  \    assert (sum_squares({0})==0);\n    assert (sum_squares({-1})==1);\n    assert\
+  \ (sum_squares({-1,1,0})==2);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

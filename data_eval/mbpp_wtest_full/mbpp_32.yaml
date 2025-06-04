@@ -1,0 +1,15 @@
+name: mbpp_32
+language: py
+prompt: "\n\ndef max_Prime_Factors (n):\n    \"\"\"\n    Write a python function to\
+  \ find the largest prime factor of a given number.\n    >>> max_Prime_Factors(15)\n\
+  \    5\n    >>> max_Prime_Factors(6)\n    3\n    >>> max_Prime_Factors(2)\n    2\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(15) ==\
+  \ 5\n    assert candidate(6) == 3\n    assert candidate(2) == 2\n\n\n\ndef test_check():\n\
+  \    check(max_Prime_Factors)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

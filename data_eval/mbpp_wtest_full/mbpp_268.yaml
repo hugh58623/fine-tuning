@@ -1,0 +1,14 @@
+name: mbpp_268
+language: py
+prompt: "\n\ndef find_star_num(n):\n\t\"\"\"\n\tWrite a function to find the n'th\
+  \ star number.\n\t>>> find_star_num(3)\n\t37\n\t>>> find_star_num(4)\n\t73\n\t>>>\
+  \ find_star_num(5)\n\t121\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3) == 37\n\
+  \    assert candidate(4) == 73\n    assert candidate(5) == 121\n\n\n\ndef test_check():\n\
+  \    check(find_star_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

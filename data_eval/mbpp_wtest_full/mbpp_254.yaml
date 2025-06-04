@@ -1,0 +1,16 @@
+name: mbpp_254
+language: py
+prompt: "\n\ndef words_ae(text):\n \"\"\"\n Write a function to find all words starting\
+  \ with 'a' or 'e' in a given string.\n >>> words_ae(\"python programe\")\n ['ame']\n\
+  \ >>> words_ae(\"python programe language\")\n ['ame','anguage']\n >>> words_ae(\"\
+  assert statement\")\n ['assert', 'atement']\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\
+  \ programe\")==['ame']\n    assert candidate(\"python programe language\")==['ame','anguage']\n\
+  \    assert candidate(\"assert statement\")==['assert', 'atement']\n\n\n\ndef test_check():\n\
+  \    check(words_ae)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_184
+language: py
+prompt: "\n\ndef greater_specificnum(list,num):\n \"\"\"\n Write a function to find\
+  \ all the values in a list that are greater than a specified number.\n >>> greater_specificnum([220,\
+  \ 330, 500],200)\n True\n >>> greater_specificnum([12, 17, 21],20)\n False\n >>>\
+  \ greater_specificnum([1,2,3,4],10)\n False\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([220, 330,\
+  \ 500],200)==True\n    assert candidate([12, 17, 21],20)==False\n    assert candidate([1,2,3,4],10)==False\n\
+  \n\n\ndef test_check():\n    check(greater_specificnum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

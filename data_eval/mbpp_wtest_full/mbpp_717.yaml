@@ -1,0 +1,16 @@
+name: mbpp_717
+language: py
+prompt: "\n\ndef sd_calc(data):\n    \"\"\"\n    Write a function to calculate the\
+  \ standard deviation.\n    >>> sd_calc([4, 2, 5, 8, 6])\n    2.23606797749979\n\
+  \    >>> sd_calc([1,2,3,4,5,6,7])\n    2.160246899469287\n    >>> sd_calc([5,9,10,15,6,4])\n\
+  \    4.070217029430577\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([4, 2,\
+  \ 5, 8, 6])== 2.23606797749979\n    assert candidate([1,2,3,4,5,6,7])==2.160246899469287\n\
+  \    assert candidate([5,9,10,15,6,4])==4.070217029430577\n\n\n\ndef test_check():\n\
+  \    check(sd_calc)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

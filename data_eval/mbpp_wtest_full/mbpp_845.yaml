@@ -1,0 +1,15 @@
+name: mbpp_845
+language: py
+prompt: "\n\ndef find_Digits(n):\n    \"\"\"\n    Write a python function to count\
+  \ the number of digits in factorial of a given number.\n    >>> find_Digits(7)\n\
+  \    4\n    >>> find_Digits(5)\n    3\n    >>> find_Digits(4)\n    2\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7) == 4\n\
+  \    assert candidate(5) == 3\n    assert candidate(4) == 2\n\n\n\ndef test_check():\n\
+  \    check(find_Digits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

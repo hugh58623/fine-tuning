@@ -1,0 +1,17 @@
+name: mbpp_495
+language: py
+prompt: "\n\ndef remove_lowercase(str1):\n  \"\"\"\n  Write a function to remove lowercase\
+  \ substrings from a given string by using regex.\n  >>> remove_lowercase('KDeoALOklOOHserfLoAJSIskdsf')\n\
+  \  'KDALOOOHLAJSI'\n  >>> remove_lowercase('ProducTnamEstreAmIngMediAplAYer')\n\
+  \  'PTEAIMAAY'\n  >>> remove_lowercase('maNufacTuredbYSheZenTechNolOGIes')\n  'NTYSZTNOGI'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('KDeoALOklOOHserfLoAJSIskdsf')\
+  \ == 'KDALOOOHLAJSI'\n    assert candidate('ProducTnamEstreAmIngMediAplAYer') ==\
+  \ 'PTEAIMAAY'\n    assert candidate('maNufacTuredbYSheZenTechNolOGIes') == 'NTYSZTNOGI'\n\
+  \n\n\ndef test_check():\n    check(remove_lowercase)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

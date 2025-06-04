@@ -1,0 +1,19 @@
+"name": "CPP_90"
+"language": "cpp"
+"prompt": "/*\nYou will be gave a list of integers.\nwill Write a function next_smallest\
+  \ () that will return the 2nd smallest element of the list.\nReturn None if there\
+  \ will be no such element.\n\nnext_smallest([1, 2, 3, 4, 5])== 2\nnext_smallest([5,\
+  \ 1, 4, 3, 2])== 2\nnext_smallest ([])== None\nnext_smallest([1, 1])== None\n*/\n\
+  #include<stdio.h>\n#include<vector>\n#include<algorithm>\nusing namespace std;\n\
+  int next_smallest(vector<int> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (next_smallest({1,\
+  \ 2, 3, 4, 5}) == 2);\n    assert (next_smallest({5, 1, 4, 3, 2}) == 2);\n    assert\
+  \ (next_smallest({}) == -1);\n    assert (next_smallest({1, 1}) == -1);\n    assert\
+  \ (next_smallest({1,1,1,1,0}) == 1);\n    assert (next_smallest({-35, 34, 12, -45})\
+  \ == -35);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

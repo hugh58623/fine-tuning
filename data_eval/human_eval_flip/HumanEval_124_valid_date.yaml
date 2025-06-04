@@ -1,0 +1,29 @@
+name: HumanEval_124_valid_date
+language: py
+prompt: "\ndef valid_date(date):\n    \"\"\"You hAve tO writE a fUnctiOn whiCh validAteS\
+  \ a givEn date sTRiNg And\n    rETurNs True if the date is valiD OTherWise False.\n\
+  \    The date is vAlid if all of tHe folLoWInG rULeS are sAtisfieD:\n    1. thE\
+  \ date STriNg IS Not EmPTy.\n    2. the nuMbeR of DAys Is not LesS tHaN 1 OR HigHer\
+  \ than 31 daYS FOr months 1,3,5,7,8,10,12. AnD tHE number Of dayS is Not leSS tHan\
+  \ 1 OR hiGhEr tHAn 30 daYs fOr MONths 4,6,9,11. AnD, the numbeR oF DAys Is NOt LesS\
+  \ tHAN 1 oR hIgHer thAn 29 foR the month 2.\n    3. The mONtHS should not Be leSs\
+  \ than 1 Or HIgHER thAn 12.\n    4. THe date shouLd be in ThE FormAT: Mm-dd-yyYY\n\
+  \n    fOR EXaMPLe: \n    valid_date('03-11-2000') => True\n\n    vaLid_date('15-01-2012')\
+  \ => False\n\n    valiD_DaTE('04-0-2040') => False\n\n    vaLid_DaTE('06-04-2020')\
+  \ => True\n\n    vALid_datE('06/04/2020') => False\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('03-11-2000') == True\n    assert\
+  \ candidate('15-01-2012') == False\n    assert candidate('04-0-2040') == False\n\
+  \    assert candidate('06-04-2020') == True\n    assert candidate('01-01-2007')\
+  \ == True\n    assert candidate('03-32-2011') == False\n    assert candidate('')\
+  \ == False\n    assert candidate('04-31-3000') == False\n    assert candidate('06-06-2005')\
+  \ == True\n    assert candidate('21-31-2000') == False\n    assert candidate('04-12-2003')\
+  \ == True\n    assert candidate('04122003') == False\n    assert candidate('20030412')\
+  \ == False\n    assert candidate('2003-04') == False\n    assert candidate('2003-04-12')\
+  \ == False\n    assert candidate('04-2003') == False\n\ndef test_check():\n    check(valid_date)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,28 @@
+"name": "Java_107"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a positive integer n, return a tuple that will have the number of even and\
+  \ odd\ninteger palindromes that will fall within the range(1, n), inclusive.\n\n\
+  Example 1:\n\nInput: 3\nOutput: (1, 2)\nExplanation:\nInteger palindrome will be\
+  \ 1, 2, 3. one of them will be even, and two of them will be odd.\n\nExample 2:\n\
+  \nInput: 12\nOutput: (4, 6)\nExplanation:\nInteger palindrome will be 1, 2, 3, 4,\
+  \ 5, 6, 7, 8, 9, 11. four of them will be even, and 6 of them will be odd.\n\nNote:\n\
+  1. 1 <= n <= 10^ 3\n2. will return tuple will have the number of even and odd integer\
+  \ palindromes respectively.\n\"\"\"\n*/*/\n    public List<Integer> evenOddPalindrome(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.evenOddPalindrome(123).equals(Arrays.asList(8, 13)),\n      \
+  \          s.evenOddPalindrome(12).equals(Arrays.asList(4, 6)),\n              \
+  \  s.evenOddPalindrome(3).equals(Arrays.asList(1, 2)),\n                s.evenOddPalindrome(63).equals(Arrays.asList(6,\
+  \ 8)),\n                s.evenOddPalindrome(25).equals(Arrays.asList(5, 6)),\n \
+  \               s.evenOddPalindrome(19).equals(Arrays.asList(4, 6)),\n         \
+  \       s.evenOddPalindrome(9).equals(Arrays.asList(4, 5)),\n                s.evenOddPalindrome(1).equals(Arrays.asList(0,\
+  \ 1))\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

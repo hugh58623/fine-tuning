@@ -1,0 +1,14 @@
+name: mbpp_171
+language: py
+prompt: "\n\ndef perimeter_pentagon(a):\n  \"\"\"\n  Write a function to find the\
+  \ perimeter of a pentagon.\n  >>> perimeter_pentagon(5)\n  25\n  >>> perimeter_pentagon(10)\n\
+  \  50\n  >>> perimeter_pentagon(15)\n  75\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5)==25\n\
+  \    assert candidate(10)==50\n    assert candidate(15)==75\n\n\n\ndef test_check():\n\
+  \    check(perimeter_pentagon)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

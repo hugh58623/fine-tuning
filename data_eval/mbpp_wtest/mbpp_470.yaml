@@ -1,0 +1,17 @@
+name: mbpp_470
+language: py
+prompt: "\n\ndef add_pairwise(test_tup):\n  \"\"\"\n  Write a function to find the\
+  \ pairwise addition of the elements of the given tuples.\n  >>> add_pairwise((1,\
+  \ 5, 7, 8, 10))\n  (6, 12, 15, 18)\n  >>> add_pairwise((2, 6, 8, 9, 11))\n  (8,\
+  \ 14, 17, 20)\n  >>> add_pairwise((3, 7, 9, 10, 12))\n  (10, 16, 19, 22)\n  \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((1, 5,\
+  \ 7, 8, 10)) == (6, 12, 15, 18)\n    assert candidate((2, 6, 8, 9, 11)) == (8, 14,\
+  \ 17, 20)\n    assert candidate((3, 7, 9, 10, 12)) == (10, 16, 19, 22)\n\n\n\ndef\
+  \ test_check():\n    check(add_pairwise)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

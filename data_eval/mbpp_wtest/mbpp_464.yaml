@@ -1,0 +1,21 @@
+name: mbpp_464
+language: py
+prompt: "\n\ndef check_value(dict, n):\n    \"\"\"\n    Write a function to check\
+  \ if all values are same in a dictionary.\n    >>> check_value({'Cierra Vega': 12,\
+  \ 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},10)\n    False\n\
+  \    >>> check_value({'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry':\
+  \ 12, 'Pierre Cox': 12},12)\n    True\n    >>> check_value({'Cierra Vega': 12, 'Alden\
+  \ Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},5)\n    False\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'Cierra\
+  \ Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},10)==False\n\
+  \    assert candidate({'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry':\
+  \ 12, 'Pierre Cox': 12},12)==True\n    assert candidate({'Cierra Vega': 12, 'Alden\
+  \ Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12},5)==False\n\n\n\ndef test_check():\n\
+  \    check(check_value)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

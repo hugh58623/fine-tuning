@@ -1,0 +1,15 @@
+name: mbpp_204
+language: py
+prompt: "\n\ndef count(s,c) :\n    \"\"\"\n    Write a python function to count the\
+  \ occurrence of a given character in a string.\n    >>> count(\"abcc\",\"c\")\n\
+  \    2\n    >>> count(\"ababca\",\"a\")\n    3\n    >>> count(\"mnmm0pm\",\"m\"\
+  )\n    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abcc\"\
+  ,\"c\") == 2\n    assert candidate(\"ababca\",\"a\") == 3\n    assert candidate(\"\
+  mnmm0pm\",\"m\") == 4\n\n\n\ndef test_check():\n    check(count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

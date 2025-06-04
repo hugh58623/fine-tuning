@@ -1,0 +1,18 @@
+name: mbpp_94
+language: py
+prompt: "\n\ndef index_minimum(test_list):\n  \"\"\"\n  Write a function to extract\
+  \ the index minimum value record from the given tuples.\n  >>> index_minimum([('Rash',\
+  \ 143), ('Manjeet', 200), ('Varsha', 100)])\n  'Varsha'\n  >>> index_minimum([('Yash',\
+  \ 185), ('Dawood', 125), ('Sanya', 175)])\n  'Dawood'\n  >>> index_minimum([('Sai',\
+  \ 345), ('Salman', 145), ('Ayesha', 96)])\n  'Ayesha'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('Rash',\
+  \ 143), ('Manjeet', 200), ('Varsha', 100)]) == 'Varsha'\n    assert candidate([('Yash',\
+  \ 185), ('Dawood', 125), ('Sanya', 175)]) == 'Dawood'\n    assert candidate([('Sai',\
+  \ 345), ('Salman', 145), ('Ayesha', 96)]) == 'Ayesha'\n\n\n\ndef test_check():\n\
+  \    check(index_minimum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

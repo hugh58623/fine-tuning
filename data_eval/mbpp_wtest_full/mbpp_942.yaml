@@ -1,0 +1,17 @@
+name: mbpp_942
+language: py
+prompt: "\n\ndef check_element(test_tup, check_list):\n  \"\"\"\n  Write a function\
+  \ to check if any list element is present in the given list.\n  >>> check_element((4,\
+  \ 5, 7, 9, 3),  [6, 7, 10, 11])\n  True\n  >>> check_element((1, 2, 3, 4),  [4,\
+  \ 6, 7, 8, 9])\n  True\n  >>> check_element((3, 2, 1, 4, 5),  [9, 8, 7, 6])\n  False\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((4, 5,\
+  \ 7, 9, 3),  [6, 7, 10, 11]) == True\n    assert candidate((1, 2, 3, 4),  [4, 6,\
+  \ 7, 8, 9]) == True\n    assert candidate((3, 2, 1, 4, 5),  [9, 8, 7, 6]) == False\n\
+  \n\n\ndef test_check():\n    check(check_element)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

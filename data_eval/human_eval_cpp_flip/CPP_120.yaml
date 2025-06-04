@@ -1,0 +1,28 @@
+"name": "CPP_120"
+"language": "cpp"
+"prompt": "/*\nGivEn an Array arr Of iNtegeRs and A positiVe iNtegeR k, return a sORtEd\
+  \ list\nOf leNGth k With the maximum k numberS in arr.\n\neXampLe 1:\n\nInput: arr\
+  \ = [-3, -4, 5], k = 3\nOutPut: [-4, -3, 5]\n\nExample 2:\n\nInPut: arr = [4, -4,\
+  \ 4], k = 2\nOuTpUT: [4, 4]\n\nEXaMPlE 3:\n\nInpuT: arr = [-3, 2, 1, 2, -1, -2,\
+  \ 1], k = 1\nOutput: [2]\n\nnOtE:\n1. tHe lEnGTH of ThE ArRay wiLl bE in thE RanGe\
+  \ of [1, 1000].\n2. THe eLeMeNTS in The Array will BE in THe range of [-1000, 1000].\n\
+  3. 0 <= k <= lEn(ARr)\n*/\n#include<stdio.h>\n#include<vector>\n#include<algorithm>\n\
+  using namespace std;\nvector<int> maximum(vector<int> arr,int k){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(maximum({-3, -4, 5}, 3) , {-4, -3, 5}));\n    assert (issame(maximum({4,\
+  \ -4, 4}, 2) , {4, 4}));\n    assert (issame(maximum({-3, 2, 1, 2, -1, -2, 1}, 1)\
+  \ , {2}));\n    assert (issame(maximum({123, -123, 20, 0 , 1, 2, -3}, 3) , {2, 20,\
+  \ 123}));\n    assert (issame(maximum({-123, 20, 0 , 1, 2, -3}, 4) , {0, 1, 2, 20}));\n\
+  \    assert (issame(maximum({5, 15, 0, 3, -13, -8, 0}, 7) , {-13, -8, 0, 0, 3, 5,\
+  \ 15}));\n    assert (issame(maximum({-1, 0, 2, 5, 3, -10}, 2) , {3, 5}));\n   \
+  \ assert (issame(maximum({1, 0, 5, -7}, 1) , {5}));\n    assert (issame(maximum({4,\
+  \ -4}, 2) , {-4, 4}));\n    assert (issame(maximum({-10, 10}, 2) , {-10, 10}));\n\
+  \    assert (issame(maximum({1, 2, 3, -23, 243, -400, 0}, 0) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

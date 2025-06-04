@@ -1,0 +1,15 @@
+name: mbpp_663
+language: py
+prompt: "\n\ndef find_max_val(n, x, y):\n\t\"\"\"\n\tWrite a function to find the\
+  \ largest possible value of k such that k modulo x is y.\n\t>>> find_max_val(15,\
+  \ 10, 5)\n\t15\n\t>>> find_max_val(187, 10, 5)\n\t185\n\t>>> find_max_val(16, 11,\
+  \ 1)\n\t12\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(15, 10,\
+  \ 5) == 15\n    assert candidate(187, 10, 5) == 185\n    assert candidate(16, 11,\
+  \ 1) == 12\n\n\n\ndef test_check():\n    check(find_max_val)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

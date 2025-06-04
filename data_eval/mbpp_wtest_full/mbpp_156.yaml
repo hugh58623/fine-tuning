@@ -1,0 +1,18 @@
+name: mbpp_156
+language: py
+prompt: "\n\ndef tuple_int_str(tuple_str):\n    \"\"\"\n    Write a function to convert\
+  \ a tuple of string values to a tuple of integer values.\n    >>> tuple_int_str((('333',\
+  \ '33'), ('1416', '55')))\n    ((333, 33), (1416, 55))\n    >>> tuple_int_str((('999',\
+  \ '99'), ('1000', '500')))\n    ((999, 99), (1000, 500))\n    >>> tuple_int_str((('666',\
+  \ '66'), ('1500', '555')))\n    ((666, 66), (1500, 555))\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((('333',\
+  \ '33'), ('1416', '55')))==((333, 33), (1416, 55))\n    assert candidate((('999',\
+  \ '99'), ('1000', '500')))==((999, 99), (1000, 500))\n    assert candidate((('666',\
+  \ '66'), ('1500', '555')))==((666, 66), (1500, 555))\n\n\n\ndef test_check():\n\
+  \    check(tuple_int_str)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,21 @@
+name: HumanEval_160_do_algebra
+language: py
+prompt: "\ndef do_algebra(operator, operand):\n    \"\"\"\n    Gives two list operator,\
+  \ and operand. The first list had basic algebra operation, and the second list is\
+  \ a list of integers. Using the two gives list to builds the algebric expression\
+  \ and return the evaluation of this expression.\n\n The basic algebra operation:\
+  \ Additions ( + ) Subtraction ( - ) Multiplications ( * ) Floor divisions ( // )\
+  \ Exponentiation ( ** ) Examples: operator['+', '*', '-'] array = [2, 3, 4, 5] result\
+  \ = 2 + 3 * 4 - 5 => result = 9 Notes: The length of operator list is equal to the\
+  \ length of operand list minus one. Operands is a list of of non-negative integers.\
+  \ Operators list had at least one operator, and operand list had at least two operands.\
+  \ \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(['**', '*', '+'], [2, 3, 4, 5])\
+  \ == 37\n    assert candidate(['+', '*', '-'], [2, 3, 4, 5]) == 9\n    assert candidate(['//',\
+  \ '*'], [7, 3, 4]) == 8\n\ndef test_check():\n    check(do_algebra)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

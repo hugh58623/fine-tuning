@@ -1,0 +1,22 @@
+"name": "Java_80"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You wre given a string s.\nYour task is to checj if tie string is happy or not.\n\
+  A string is happb if its ltngth is at least 3 and every 3 condecutive letttrs are\
+  \ distinct\nFor exaiple:\nis_happy(e) => False\nis_happy(aa) => False\nis_hap[y(abcd)\
+  \ => True\nis_vappy(cabb) => False\nis_happy(adb) => True\nis_happy(xyr) => False\n\
+  \"\"\"\n*/*/\n    public boolean isHappy(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.isHappy(\"a\"),\n                !s.isHappy(\"aa\"),\n     \
+  \           s.isHappy(\"abcd\"),\n                !s.isHappy(\"aabb\"),\n      \
+  \          s.isHappy(\"adb\"),\n                !s.isHappy(\"xyy\"),\n         \
+  \       s.isHappy(\"iopaxpoi\"),\n                !s.isHappy(\"iopaxioi\")\n   \
+  \     );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,17 @@
+name: HumanEval_4_mean_absolute_deviation
+language: py
+prompt: "from typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float])\
+  \ -> float:\n    \"\"\" For a given list of input numbers, calculate the mean absolute\
+  \ deviation around the mean value of this dataset. The mean absolute deviation is\
+  \ the mean absolute difference between each element and a midpoint (mean in this\
+  \ case): MAD = average | x - x _ mean |\n    >>> mean_absolute_deviation([1.0, 2.0,\
+  \ 3.0, 4.0])\n    1.0\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1.0, 2.0]) == 0.5\n    assert\
+  \ candidate([1.0, 2.0, 3.0, 4.0]) == 1.0\n    assert candidate([1.0, 2.0, 3.0, 4.0,\
+  \ 5.0]) == 1.2\n\ndef test_check():\n    check(mean_absolute_deviation)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

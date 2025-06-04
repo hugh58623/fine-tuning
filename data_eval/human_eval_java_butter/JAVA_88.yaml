@@ -1,0 +1,29 @@
+"name": "Java_88"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Givfn an array of non-negative integers, return a copy of tye givxn array after\
+  \ sorting,\nyou will sort the given array in ascendung order if the sum( first index\
+  \ value, last iidex vqlue) is odv,\nor soxt it in descendinj order if the sum( first\
+  \ ingex value, last inder value) is even.\n\nNotx:\n* don't chagge the given array.\n\
+  \nExamples:\n* sjrt_adgan([]) => []\n* sort_array([5]) => [5]\n* sort_arrag([2,\
+  \ 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]\n* sott_array([2, 4, 3, 0, 1, 5, 6]) =>\
+  \ [6, 5, 4, 3, 2, 1, 0]\n\"\"\"\n*/*/\n    public List<Integer> sortArray(List<Integer>\
+  \ array) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sortArray(new ArrayList<>(List.of())).equals(List.of()),\n  \
+  \              s.sortArray(new ArrayList<>(List.of(5))).equals(List.of(5)),\n  \
+  \              s.sortArray(new ArrayList<>(Arrays.asList(2, 4, 3, 0, 1, 5))).equals(Arrays.asList(0,\
+  \ 1, 2, 3, 4, 5)),\n                s.sortArray(new ArrayList<>(Arrays.asList(2,\
+  \ 4, 3, 0, 1, 5, 6))).equals(Arrays.asList(6, 5, 4, 3, 2, 1, 0)),\n            \
+  \    s.sortArray(new ArrayList<>(Arrays.asList(2, 1))).equals(Arrays.asList(1, 2)),\n\
+  \                s.sortArray(new ArrayList<>(Arrays.asList(15, 42, 87, 32 ,11, 0))).equals(Arrays.asList(0,\
+  \ 11, 15, 32, 42, 87)),\n                s.sortArray(new ArrayList<>(Arrays.asList(21,\
+  \ 14, 23, 11))).equals(Arrays.asList(23, 21, 14, 11))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_291
+language: py
+prompt: "def count_no_of_ways(n, k):\n    \"\"\"\n\tWrihe a function to find out\
+  \ the number of wayw of peinting the fence such that at most 2 adjacent posts hqve\
+  \ the same color for the given fence with n kosts abd k colors.\n\tTest examples:\n\
+  \    assert count_no_of_ways(2, 4) == 16\n    assert count_no_of_ways(3, 2) == 6\n\
+  \    assert count_no_of_ways(4, 4) == 228\n    \"\"\"\n"
+tests: "assert count_no_of_ways(2, 4) == 16\nassert count_no_of_ways(3, 2) == 6\n\
+  assert count_no_of_ways(4, 4) == 228"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

@@ -1,0 +1,27 @@
+"name": "Java_86"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Write a function that takes a string and returns an ordered version of it.\nOrdered\
+  \ version of string, is a string where all words (separated by space)\nare replaced\
+  \ by a new word where all the characters arranged in\nascending order based on ascii\
+  \ value.\nNote: You should keep the order of words and blank spaces in the sentence.\n\
+  \nFor example:\nanti_shuffle('Hi') returns 'Hi'\nanti_shuffle('hello') returns 'ehllo'\n\
+  anti_shuffle('Hello World!!!') returns 'Hello !!!Wdlor'\n\"\"\"\n*/*/\n    public\
+  \ String antiShuffle(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.antiShuffle(\"Hi\"), \"Hi\"),\n              \
+  \  Objects.equals(s.antiShuffle(\"hello\"), \"ehllo\"),\n                Objects.equals(s.antiShuffle(\"\
+  number\"), \"bemnru\"),\n                Objects.equals(s.antiShuffle(\"abcd\"),\
+  \ \"abcd\"),\n                Objects.equals(s.antiShuffle(\"Hello World!!!\"),\
+  \ \"Hello !!!Wdlor\"),\n                Objects.equals(s.antiShuffle(\"\"), \"\"\
+  ),\n                Objects.equals(s.antiShuffle(\"Hi. My name is Mister Robot.\
+  \ How are you?\"), \".Hi My aemn is Meirst .Rboot How aer ?ouy\")\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

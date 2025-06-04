@@ -1,0 +1,15 @@
+name: mbpp_557
+language: py
+prompt: "\n\ndef toggle_string(string):\n \"\"\"\n Write a function to toggle characters\
+  \ case in a string.\n >>> toggle_string(\"Python\")\n (\"pYTHON\")\n >>> toggle_string(\"\
+  Pangram\")\n (\"pANGRAM\")\n >>> toggle_string(\"LIttLE\")\n (\"liTTle\")\n \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Python\"\
+  )==(\"pYTHON\")\n    assert candidate(\"Pangram\")==(\"pANGRAM\")\n    assert candidate(\"\
+  LIttLE\")==(\"liTTle\")\n\n\n\ndef test_check():\n    check(toggle_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

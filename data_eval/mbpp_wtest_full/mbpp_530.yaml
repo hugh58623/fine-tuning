@@ -1,0 +1,18 @@
+name: mbpp_530
+language: py
+prompt: "\n\ndef negative_count(nums):\n    \"\"\"\n    Write a function to find the\
+  \ ration of negative numbers in an array of integers.\n    >>> negative_count([0,\
+  \ 1, 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8])\n    0.31\n    >>> negative_count([2,\
+  \ 1, 2, -1, -5, 6, 4, -3, -2, 3, 4, 6, 8])\n    0.31\n    >>> negative_count([2,\
+  \ 4, -6, -9, 11, -12, 14, -5, 17])\n    0.44\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([0, 1,\
+  \ 2, -1, -5, 6, 0, -3, -2, 3, 4, 6, 8])==0.31\n    assert candidate([2, 1, 2, -1,\
+  \ -5, 6, 4, -3, -2, 3, 4, 6, 8])==0.31\n    assert candidate([2, 4, -6, -9, 11,\
+  \ -12, 14, -5, 17])==0.44\n\n\n\ndef test_check():\n    check(negative_count)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

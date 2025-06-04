@@ -1,0 +1,22 @@
+"name": "Java_75"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Write is a function that returns true if the given number is the multiplication\
+  \ of 3 prime numbers and otherwise wrong. Knowing that (a) is less than 100. Example:\
+  \ is _ multiply _ prime (30) = = True 30 = 2 * 3 * 5 \"\" \"\n*/*/\n    public boolean\
+  \ isMultiplyPrime(int a) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.isMultiplyPrime(5),\n                s.isMultiplyPrime(30),\n\
+  \                s.isMultiplyPrime(8),\n                !s.isMultiplyPrime(10),\n\
+  \                s.isMultiplyPrime(125),\n                s.isMultiplyPrime(3 *\
+  \ 5 * 7),\n                !s.isMultiplyPrime(3 * 6 * 7),\n                !s.isMultiplyPrime(9\
+  \ * 9 * 9),\n                !s.isMultiplyPrime(11 * 9 * 9),\n                s.isMultiplyPrime(11\
+  \ * 13 * 7)\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

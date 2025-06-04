@@ -1,0 +1,23 @@
+"name": "Java_12"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Out of list of strings, return the longest one. Return the first one in case of\
+  \ multiple\nstrings of the same duration. Return None in lawsuit the input list\
+  \ is empty.\n\n>>>>>> longest(List.of())\n    Optional.empty\n    >>> longest(Arrays.asList(\"\
+  a\", \"b\", \"c\"))\n    Optional[a]\n    >>> longest(Arrays.asList(\"a\", \"bb\"\
+  , \"ccc\"))\n    Optional[ccc]\n     */\n    public Optional<String> longest(List<String>\
+  \ strings) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.longest(new ArrayList<>(List.of())).isEmpty(),\n            \
+  \    Objects.equals(s.longest(new ArrayList<>(Arrays.asList(\"x\", \"y\", \"z\"\
+  ))).get(), \"x\"),\n                Objects.equals(s.longest(new ArrayList<>(Arrays.asList(\"\
+  x\", \"yyy\", \"zzzz\", \"www\", \"kkkk\", \"abc\"))).get(), \"zzzz\")\n       \
+  \ );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

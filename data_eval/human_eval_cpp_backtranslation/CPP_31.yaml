@@ -1,0 +1,19 @@
+"name": "CPP_31"
+"language": "cpp"
+"prompt": "/*\nReturn true if a given number is a prime number and false otherwise.\n\
+  >>> is_prime(6)\nFalse\n>>> is_prime(101)\nTrue\n>>> is_prime(11)\nTrue\n>>> is_prime(13441)\n\
+  True\n>>> is_prime(61)\nTrue\n>>> is_prime(4)\nFalse\n>>> is_prime(1)\nFalse\n*/\n\
+  #include<stdio.h>\nusing namespace std;\nbool is_prime(long long n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_prime(6)\
+  \ == false);\n    assert (is_prime(101) == true);\n    assert (is_prime(11) == true);\n\
+  \    assert (is_prime(13441) == true);\n    assert (is_prime(61) == true);\n   \
+  \ assert (is_prime(4) == false);\n    assert (is_prime(1) == false);\n    assert\
+  \ (is_prime(5) == true);\n    assert (is_prime(11) == true);\n    assert (is_prime(17)\
+  \ == true);\n    assert (is_prime(5 * 17) == false);\n    assert (is_prime(11 *\
+  \ 7) == false);\n    assert (is_prime(13441 * 19) == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

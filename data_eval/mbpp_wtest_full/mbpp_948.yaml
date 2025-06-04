@@ -1,0 +1,18 @@
+name: mbpp_948
+language: py
+prompt: "\n\ndef get_item(tup1,index):\n  \"\"\"\n  Write a function to get an item\
+  \ of a tuple.\n  >>> get_item((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\"\
+  , \"c\", \"e\"),3)\n  ('e')\n  >>> get_item((\"w\", 3, \"r\", \"e\", \"s\", \"o\"\
+  , \"u\", \"r\", \"c\", \"e\"),-4)\n  ('u')\n  >>> get_item((\"w\", 3, \"r\", \"\
+  e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),-3)\n  ('r')\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((\"w\"\
+  , 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),3)==('e')\n    assert\
+  \ candidate((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),-4)==('u')\n\
+  \    assert candidate((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\"\
+  , \"e\"),-3)==('r')\n\n\n\ndef test_check():\n    check(get_item)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

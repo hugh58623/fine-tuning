@@ -1,0 +1,17 @@
+name: mbpp_261
+language: py
+prompt: "\n\ndef division_elements(test_tup1, test_tup2):\n  \"\"\"\n  Write a function\
+  \ to perform mathematical division operation across the given tuples.\n  >>> division_elements((10,\
+  \ 4, 6, 9),(5, 2, 3, 3))\n  (2, 2, 2, 3)\n  >>> division_elements((12, 6, 8, 16),(6,\
+  \ 3, 4, 4))\n  (2, 2, 2, 4)\n  >>> division_elements((20, 14, 36, 18),(5, 7, 6,\
+  \ 9))\n  (4, 2, 6, 2)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 6, 9),(5, 2, 3, 3)) == (2, 2, 2, 3)\n    assert candidate((12, 6, 8, 16),(6, 3,\
+  \ 4, 4)) == (2, 2, 2, 4)\n    assert candidate((20, 14, 36, 18),(5, 7, 6, 9)) ==\
+  \ (4, 2, 6, 2)\n\n\n\ndef test_check():\n    check(division_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

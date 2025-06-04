@@ -1,0 +1,20 @@
+"name": "Java_85"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a non-empty list of integers lst. add the even elements that are at odd indices..\n\
+  \n\nExamples:\nadd([4, 2, 6, 7]) ==> 2\n\"\"\"\n*/*/\n    public int add(List<Integer>\
+  \ lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.add(new ArrayList<>(Arrays.asList(4, 88))) == 88,\n         \
+  \       s.add(new ArrayList<>(Arrays.asList(4, 5, 6, 7, 2, 122))) == 122,\n    \
+  \            s.add(new ArrayList<>(Arrays.asList(4, 0, 6, 7))) == 0,\n         \
+  \       s.add(new ArrayList<>(Arrays.asList(4, 4, 6, 8))) == 12\n        );\n  \
+  \      if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

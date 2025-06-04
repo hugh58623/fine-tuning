@@ -1,0 +1,16 @@
+name: mbpp_812
+language: py
+prompt: "\n\ndef road_rd(street):\n  \"\"\"\n  Write a function to abbreviate 'road'\
+  \ as 'rd.' in a given string.\n  >>> road_rd(\"ravipadu Road\")\n  ('ravipadu Rd.')\n\
+  \  >>> road_rd(\"palnadu Road\")\n  ('palnadu Rd.')\n  >>> road_rd(\"eshwar enclave\
+  \ Road\")\n  ('eshwar enclave Rd.')\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ravipadu\
+  \ Road\")==('ravipadu Rd.')\n    assert candidate(\"palnadu Road\")==('palnadu Rd.')\n\
+  \    assert candidate(\"eshwar enclave Road\")==('eshwar enclave Rd.')\n\n\n\ndef\
+  \ test_check():\n    check(road_rd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

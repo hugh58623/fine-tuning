@@ -1,0 +1,15 @@
+name: mbpp_387
+language: py
+prompt: "\n\ndef even_or_odd(N):\n    \"\"\"\n    Write a python function to check\
+  \ whether the hexadecimal number is even or odd.\n    >>> even_or_odd(\"AB3454D\"\
+  )\n    \"Odd\"\n    >>> even_or_odd(\"ABC\")\n    \"Even\"\n    >>> even_or_odd(\"\
+  AAD\")\n    \"Odd\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"AB3454D\"\
+  ) ==\"Odd\"\n    assert candidate(\"ABC\") == \"Even\"\n    assert candidate(\"\
+  AAD\") == \"Odd\"\n\n\n\ndef test_check():\n    check(even_or_odd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

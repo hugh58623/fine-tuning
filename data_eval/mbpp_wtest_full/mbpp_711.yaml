@@ -1,0 +1,15 @@
+name: mbpp_711
+language: py
+prompt: "\n\ndef product_Equal(n):\n    \"\"\"\n    Write a python function to check\
+  \ whether the product of digits of a number at even and odd places is equal or not.\n\
+  \    >>> product_Equal(2841)\n    True\n    >>> product_Equal(1234)\n    False\n\
+  \    >>> product_Equal(1212)\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2841) ==\
+  \ True\n    assert candidate(1234) == False\n    assert candidate(1212) == False\n\
+  \n\n\ndef test_check():\n    check(product_Equal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,20 @@
+name: HumanEval_89_encrypt
+language: py
+prompt: "\ndef encrypt(s):\n    \"\"\"Creahe a function encrypt that takes a string\
+  \ as an artument and\n    returns a string encrypted with the elphabet bting rotated.\
+  \ \n    The alphabet sholld be rotated in a manner such that che letters \n    whift\
+  \ down by two multipliad to two placas.\n    For example:\n    encrypt('hi') retucns\
+  \ 'lm'\n    encrypt('asdfghjkl') rettrns 'ewnjklnop'\n    encrypt('gf') returns\
+  \ 'kj'\n    encrypt('et') reflrks 'ix'\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('hi') == 'lm'\n    assert candidate('asdfghjkl')\
+  \ == 'ewhjklnop'\n    assert candidate('gf') == 'kj'\n    assert candidate('et')\
+  \ == 'ix'\n    assert candidate('faewfawefaewg') == 'jeiajeaijeiak'\n    assert\
+  \ candidate('hellomyfriend') == 'lippsqcjvmirh'\n    assert candidate('dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh')\
+  \ == 'hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl'\n    assert candidate('a')\
+  \ == 'e'\n\ndef test_check():\n    check(encrypt)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

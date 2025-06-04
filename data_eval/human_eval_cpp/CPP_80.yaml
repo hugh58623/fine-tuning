@@ -1,0 +1,19 @@
+"name": "CPP_80"
+"language": "cpp"
+"prompt": "/*\nYou are given a string s.\nYour task is to check if the string is happy\
+  \ or not.\nA string is happy if its length is at least 3 and every 3 consecutive\
+  \ letters are distinct\nFor example:\nis_happy(\"a\") => false\nis_happy(\"aa\"\
+  ) => false\nis_happy(\"abcd\") => true\nis_happy(\"aabb\") => false\nis_happy(\"\
+  adb\") => true\nis_happy(\"xyy\") => false\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nbool is_happy(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_happy(\"\
+  a\") == false );\n    assert (is_happy(\"aa\") == false );\n    assert (is_happy(\"\
+  abcd\") == true );\n    assert (is_happy(\"aabb\") == false );\n    assert (is_happy(\"\
+  adb\") == true );\n    assert (is_happy(\"xyy\") == false );\n    assert (is_happy(\"\
+  iopaxpoi\") == true );\n    assert (is_happy(\"iopaxioi\") == false );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

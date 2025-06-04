@@ -1,0 +1,23 @@
+"name": "Java_79"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You wIll bE giveN a nUmber in decimal Form aNd your tAsk Is to cOnvERt It To\nbiNAry\
+  \ Format. The funcTIOn shOuld return a strinG, with each chaRacteR rEPrEsENtIng\
+  \ a bInary\nnuMBeR. eAch ChARActEr in THe StrinG wiLl bE '0' Or '1'.\n\nTHere wIll\
+  \ Be An EXTRa cOuple of chARACters 'db' at tHe BEginninG and aT thE end oF ThE stRIng.\n\
+  thE exTRa chAraCtERS are thEre to help WiTH The FoRMaT.\n\nExAmPLEs:\ndecimal_to_binary(15)\
+  \   # ReTuRns \"db1111Db\"\ndecimal_to_binary(32)   # reTurns \"db100000dB\"\n\"\
+  \"\"\n*/*/\n    public String decimalToBinary(int decimal) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.decimalToBinary(0), \"db0db\"),\n            \
+  \    Objects.equals(s.decimalToBinary(32), \"db100000db\"),\n                Objects.equals(s.decimalToBinary(103),\
+  \ \"db1100111db\"),\n                Objects.equals(s.decimalToBinary(15), \"db1111db\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

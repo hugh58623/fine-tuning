@@ -1,0 +1,19 @@
+name: HumanEval_128_prod_signs
+language: py
+prompt: "\ndef prod_signs(arr):\n    \"\"\"\n    You get an array of integers, and\
+  \ you must return the sum of orders of magnitude multiplied by the product of all\
+  \ the characters of each number in the array, represented by 1, -1, or 0.\n    >>>\
+  \ prod_signs([1, 2, 2, -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([])\
+  \ == None\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 2, -4]) == -9\n    assert\
+  \ candidate([0, 1]) == 0\n    assert candidate([1, 1, 1, 2, 3, -1, 1]) == -10\n\
+  \    assert candidate([]) == None\n    assert candidate([2, 4, 1, 2, -1, -1, 9])\
+  \ == 20\n    assert candidate([-1, 1, -1, 1]) == 4\n    assert candidate([-1, 1,\
+  \ 1, 1]) == -4\n    assert candidate([-1, 1, 1, 0]) == 0\n\ndef test_check():\n\
+  \    check(prod_signs)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

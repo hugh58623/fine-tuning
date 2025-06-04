@@ -1,0 +1,25 @@
+"name": "Java_157"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given the elngths of the three sides of a triangle. Return True if the three\nsidse\
+  \ form a right-angled triangle, False otehrwise.\nA right-agneld triangle is a triangle\
+  \ in which one angle is right angle or\n90 degree.\nExample:\nright_agnle_triangle(3,\
+  \ 4, 5) == True\nright_angle_triangle(1, 2, 3) == False\n\"\"\"\n*/*/\n    public\
+  \ boolean rightAngleTriangle(int a, int b, int c) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.rightAngleTriangle(3, 4, 5) == true,\n                s.rightAngleTriangle(1,\
+  \ 2, 3) == false,\n                s.rightAngleTriangle(10, 6, 8) == true,\n   \
+  \             s.rightAngleTriangle(2, 2, 2) == false,\n                s.rightAngleTriangle(7,\
+  \ 24, 25) == true,\n                s.rightAngleTriangle(10, 5, 7) == false,\n \
+  \               s.rightAngleTriangle(5, 12, 13) == true,\n                s.rightAngleTriangle(15,\
+  \ 8, 17) == true,\n                s.rightAngleTriangle(48, 55, 73) == true,\n \
+  \               s.rightAngleTriangle(1, 1, 1) == false,\n                s.rightAngleTriangle(2,\
+  \ 2, 10) == false\n        );\n        if (correct.contains(false)) {\n        \
+  \    throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

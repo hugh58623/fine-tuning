@@ -1,0 +1,16 @@
+"name": "CPP_98"
+"language": "cpp"
+"prompt": "\ndef count_upper(s):\n    \"\"\"\n    Count the number of uppercase letters\
+  \ in even indices. Example: count _ upper ('aBCdEf') returns 1 count _ upper ('abcdefg')\
+  \ returns 0 count _ upper ('dBBE') returns 0 \"\" \"\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (count_upper(\"\
+  aBCdEf\")  == 1);\n    assert (count_upper(\"abcdefg\") == 0);\n    assert (count_upper(\"\
+  dBBE\") == 0);\n    assert (count_upper(\"B\")  == 0);\n    assert (count_upper(\"\
+  U\")  == 1);\n    assert (count_upper(\"\") == 0);\n    assert (count_upper(\"EEEE\"\
+  ) == 2);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

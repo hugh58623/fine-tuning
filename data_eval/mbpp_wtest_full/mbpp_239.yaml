@@ -1,0 +1,16 @@
+name: mbpp_239
+language: py
+prompt: "\n\ndef get_total_number_of_sequences(m,n):\n\t\"\"\"\n\tWrite a function\
+  \ to find the number of possible sequences of length n such that each of the next\
+  \ element is greater than or equal to twice of the previous element but less than\
+  \ or equal to m.\n\t>>> get_total_number_of_sequences(10, 4)\n\t4\n\t>>> get_total_number_of_sequences(5,\
+  \ 2)\n\t6\n\t>>> get_total_number_of_sequences(16, 3)\n\t84\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10, 4)\
+  \ == 4\n    assert candidate(5, 2) == 6\n    assert candidate(16, 3) == 84\n\n\n\
+  \ndef test_check():\n    check(get_total_number_of_sequences)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

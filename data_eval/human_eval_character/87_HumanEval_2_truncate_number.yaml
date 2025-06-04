@@ -1,0 +1,16 @@
+name: HumanEval_2_truncate_number
+language: py
+prompt: "\n\ndef truncate_number(number: float) -> float:\n    \"\"\" GivEn a pOsitiVe\
+  \ fLoatiNg poiNt number, it can Be dEcompOseD InTo\n    And iNTegEr part (largest\
+  \ INTegeR smaller thAn given number) and deCimalS\n    (lEFtOvER pArt alWays smaLLeR\
+  \ THan 1).\n\n    reTURn tHe DEcImal pArt Of tHE number.\n    >>> truncate_number(3.5)\n\
+  \    0.5\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(3.5) == 0.5\n    assert candidate(1.25)\
+  \ == 0.25\n    assert candidate(123.0) == 0.0\n\ndef test_check():\n    check(truncate_number)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

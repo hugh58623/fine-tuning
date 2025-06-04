@@ -1,0 +1,14 @@
+name: mbpp_877
+language: py
+prompt: "\n\ndef sort_String(str) :\n    \"\"\"\n    Write a python function to sort\
+  \ the given string.\n    >>> sort_String(\"cba\")\n    \"abc\"\n    >>> sort_String(\"\
+  data\")\n    \"aadt\"\n    >>> sort_String(\"zxy\")\n    \"xyz\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"cba\"\
+  ) == \"abc\"\n    assert candidate(\"data\") == \"aadt\"\n    assert candidate(\"\
+  zxy\") == \"xyz\"\n\n\n\ndef test_check():\n    check(sort_String)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,18 @@
+"name": "CPP_44"
+"language": "cpp"
+"prompt": "/*\nChanGe nuMericAl base oF inpuT numbEr x to base.\nreturn strIng RepreSenTAtIoN\
+  \ aftER thE conversion.\nbase nuMBErs aRe less than 10.\n>>> change_base(8, 3)\n\
+  '22'\n>>> change_base(8, 2)\n'1000'\n>>> change_base(7, 2)\n'111'\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nstring change_base(int x,int base){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (change_base(8,\
+  \ 3) == \"22\");\n    assert (change_base(9, 3) == \"100\");\n    assert (change_base(234,\
+  \ 2) == \"11101010\");\n    assert (change_base(16, 2) == \"10000\");\n    assert\
+  \ (change_base(8, 2) == \"1000\");\n    assert (change_base(7, 2) == \"111\");\n\
+  \    for (int x=2;x<8;x++)\n        assert (change_base(x, x + 1) == to_string(x));\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,26 @@
+"name": "Java_76"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Your Task Is to wRitE a funCtion That retUrnS true If a NUmBeR x is a SImpLe\npower\
+  \ of n and false in oTHEr caSes.\nx is a simpLe power of n if n**int=x\nFor exaMple:\n\
+  iS_sIMpLe_POwEr(1, 4) => truE\nis_simpLE_pOWEr(2, 2) => tRuE\nIS_siMpLE_pOwer(8,\
+  \ 2) => tRue\nIs_sIMplE_poweR(3, 2) => faLsE\niS_SIMplE_power(3, 1) => falSE\nIS_simple_powEr(5,\
+  \ 3) => FAlse\n\"\"\"\n*/*/\n    public boolean isSimplePower(int x, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.isSimplePower(1, 4),\n                s.isSimplePower(2, 2),\n\
+  \                s.isSimplePower(8, 2),\n                !s.isSimplePower(3, 2),\n\
+  \                !s.isSimplePower(3, 1),\n                !s.isSimplePower(5, 3),\n\
+  \                s.isSimplePower(16, 2),\n                !s.isSimplePower(143214,\
+  \ 16),\n                s.isSimplePower(4, 2),\n                s.isSimplePower(9,\
+  \ 3),\n                s.isSimplePower(16, 4),\n                !s.isSimplePower(24,\
+  \ 2),\n                !s.isSimplePower(128, 4),\n                !s.isSimplePower(12,\
+  \ 6),\n                s.isSimplePower(1, 1),\n                s.isSimplePower(1,\
+  \ 12)\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

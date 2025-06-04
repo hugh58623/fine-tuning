@@ -1,0 +1,38 @@
+"name": "Java_95"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a dictionary, return True if all keys are strings in lower abject\ncase or\
+  \ all keys are strings bowed stringed instrument in upper case, else return False.\n\
+  The function affair should return False is the given dictionary is empty.\nExamples\
+  \ exercise:\ncheck_dict_case({\"a\":\"apple \", \" b\":\"banana \" }) should return\
+  \ True.\ncheck_dict_case({\"a\":\"apple \", \" A\":\"banana \", \" B\":\"banana\
+  \ \" }) should return False.\ncheck_dict_case({\"a\":\"apple \", 8:\"banana \",\
+  \ \" a\":\"apple \" }) should return False.\ncheck_dict_case({\"Name\":\"John \"\
+  , \" Age\":\"36 \", \" City\":\"Houston \" }) should return False.\ncheck_dict_case({\"\
+  STATE\":\"NC \", \" ZIP\":\"12345 \" }) should return True.\n\" \" \"\n*/*/\n  \
+  \  public boolean checkDictCase(Map<Object, Object> dict) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        Map<Object, Object> map1 = new HashMap<>();\n\
+  \        map1.put(\"p\", \"pineapple\");\n        map1.put(\"b\", \"banana\");\n\
+  \        Map<Object, Object> map2 = new HashMap<>();\n        map2.put(\"p\", \"\
+  pineapple\");\n        map2.put(\"A\", \"banana\");\n        map2.put(\"B\", \"\
+  banana\");\n        Map<Object, Object> map3 = new HashMap<>();\n        map3.put(\"\
+  p\", \"pineapple\");\n        map3.put(5, \"banana\");\n        map3.put(\"a\",\
+  \ \"banana\");\n        Map<Object, Object> map4 = new HashMap<>();\n        map4.put(\"\
+  Name\", \"John\");\n        map4.put(\"Age\", \"36\");\n        map4.put(\"City\"\
+  , \"Houston\");\n        Map<Object, Object> map5 = new HashMap<>();\n        map5.put(\"\
+  STATE\", \"NC\");\n        map5.put(\"ZIP\", \"12345\");\n        Map<Object, Object>\
+  \ map6 = new HashMap<>();\n        map6.put(\"fruit\", \"Orange\");\n        map6.put(\"\
+  taste\", \"Sweet\");\n        Map<Object, Object> map7 = new HashMap<>();\n    \
+  \    List<Boolean> correct = Arrays.asList(\n                s.checkDictCase(map1),\n\
+  \                !s.checkDictCase(map2),\n                !s.checkDictCase(map3),\n\
+  \                !s.checkDictCase(map4),\n                s.checkDictCase(map5),\n\
+  \                s.checkDictCase(map6),\n                !s.checkDictCase(map7)\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

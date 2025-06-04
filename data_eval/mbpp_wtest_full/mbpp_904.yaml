@@ -1,0 +1,14 @@
+name: mbpp_904
+language: py
+prompt: "\n\ndef even_num(x):\n  \"\"\"\n  Write a function to return true if the\
+  \ given number is even else return false.\n  >>> even_num(13.5)\n  False\n  >>>\
+  \ even_num(0)\n  True\n  >>> even_num(-9)\n  False\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(13.5)==False\n\
+  \    assert candidate(0)==True\n    assert candidate(-9)==False\n\n\n\ndef test_check():\n\
+  \    check(even_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

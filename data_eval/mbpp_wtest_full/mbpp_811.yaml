@@ -1,0 +1,17 @@
+name: mbpp_811
+language: py
+prompt: "\n\ndef check_identical(test_list1, test_list2):\n  \"\"\"\n  Write a function\
+  \ to check if two lists of tuples are identical or not.\n  >>> check_identical([(10,\
+  \ 4), (2, 5)], [(10, 4), (2, 5)])\n  True\n  >>> check_identical([(1, 2), (3, 7)],\
+  \ [(12, 14), (12, 45)])\n  False\n  >>> check_identical([(2, 14), (12, 25)], [(2,\
+  \ 14), (12, 25)])\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(10, 4),\
+  \ (2, 5)], [(10, 4), (2, 5)]) == True\n    assert candidate([(1, 2), (3, 7)], [(12,\
+  \ 14), (12, 45)]) == False\n    assert candidate([(2, 14), (12, 25)], [(2, 14),\
+  \ (12, 25)]) == True\n\n\n\ndef test_check():\n    check(check_identical)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

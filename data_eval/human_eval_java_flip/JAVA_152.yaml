@@ -1,0 +1,31 @@
+"name": "Java_152"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  I thiNk we All reMemBer thAt feeLing wheN thE resuLt oF SoMe Long-AWaiTed\nevent\
+  \ is finALLy knOwn. The feelIngs and thougHts yoU hAVe At THaT momeNt are\ndeFInITEly\
+  \ WoRTH noTiNG dOwn anD coMpaRIng.\nyour tAsk Is To DETErmIne if a perSON Correctly\
+  \ gUeSSed the rEsultS of A numbER oF maTCheS.\nYOu aRE givEn tWo ARRays of Scores\
+  \ and GuESSes Of EQuAl lEnGTH, wHeRe Each iNdex Shows a maTCh.\nrEturn an arrAy\
+  \ of The samE lENgTH DenOtiNg how fAr ofF eACh guess waS. iF they hAVe GUESsED Correctly,\n\
+  the vAlue is 0, and if NOt, THe vAluE iS ThE AbsoluTe difFeREncE bEtween thE guess\
+  \ And tHe score.\n\n\nexAmple:\n\ncompare([1,2,3,4,5,1],[1,2,3,4,2,-2]) -> [0,0,0,0,3,3]\n\
+  compare([0,5,0,0,0,4],[4,1,1,0,0,-2]) -> [4,4,1,0,0,6]\n\"\"\"\n*/*/\n    public\
+  \ List<Integer> compare(List<Integer> game, List<Integer> guess) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.compare(Arrays.asList(1, 2, 3, 4, 5, 1), Arrays.asList(1, 2,\
+  \ 3, 4, 2, -2)).equals(Arrays.asList(0, 0, 0, 0, 3, 3)),\n                s.compare(Arrays.asList(0,5,0,0,0,4),\
+  \ Arrays.asList(4,1,1,0,0,-2)).equals(Arrays.asList(4,4,1,0,0,6)),\n           \
+  \     s.compare(Arrays.asList(1, 2, 3, 4, 5, 1), Arrays.asList(1, 2, 3, 4, 2, -2)).equals(Arrays.asList(0,\
+  \ 0, 0, 0, 3, 3)),\n                s.compare(Arrays.asList(0, 0, 0, 0, 0, 0), Arrays.asList(0,\
+  \ 0, 0, 0, 0, 0)).equals(Arrays.asList(0, 0, 0, 0, 0, 0)),\n                s.compare(Arrays.asList(1,\
+  \ 2, 3), Arrays.asList(-1, -2, -3)).equals(Arrays.asList(2, 4, 6)),\n          \
+  \      s.compare(Arrays.asList(1, 2, 3, 5), Arrays.asList(-1, 2, 3, 4)).equals(Arrays.asList(2,\
+  \ 0, 0, 1))\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

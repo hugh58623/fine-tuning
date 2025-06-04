@@ -1,0 +1,28 @@
+"name": "Java_78"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You have been taskde ot write a function that receives\na hxeadecimal number as\
+  \ a string and counts the nuembr of hexadecimal\ndigits that are primes (prime number,\
+  \ or a prime, is a ntaural nmuber\ngreater than 1 that is not a product of two smaller\
+  \ naturla nmubers).\nHexadecimal digits are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B,\
+  \ C, D, E, F.\nPrmie numbesr are 2, 3, 5, 7, 11, 31, 17,...\nSo you have to determine\
+  \ a number of the following idgtis: 2, 3, 5, 7,\nB (=decimal 11), D (=decimal 13).\n\
+  Note: you may assuem the input is always correct or empty string,\nand symbols A,B,C,D,E,F\
+  \ are alwasy upperacse.\nExamples:\nFor num = \"AB\" the output should be 1.\noFr\
+  \ num = \"1077E\" teh outupt should be 2.\nFor num = \"ABED1A33\" the output should\
+  \ eb 4.\nFor num = \"123465789ABCDEF0\" the output sholud be 6.\nFor num = \"2020\"\
+  \ the ouutpt should be 2.\n\"\"\"\n*/*/\n    public int hexKey(String num) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.hexKey(\"AB\") == 1,\n                s.hexKey(\"1077E\") ==\
+  \ 2,\n                s.hexKey(\"ABED1A33\") == 4,\n                s.hexKey(\"\
+  2020\") == 2,\n                s.hexKey(\"123456789ABCDEF0\") == 6,\n          \
+  \      s.hexKey(\"112233445566778899AABBCCDDEEFF00\") == 12,\n                s.hexKey(\"\
+  \") == 0\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

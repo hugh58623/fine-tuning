@@ -1,0 +1,18 @@
+name: mbpp_7
+language: py
+prompt: "\n\ndef find_char_long(text):\n  \"\"\"\n  Write a function to find all words\
+  \ which are at least 4 characters long in a string by using regex.\n  >>> find_char_long('Please\
+  \ move back to stream')\n  ['Please', 'move', 'back', 'stream']\n  >>> find_char_long('Jing\
+  \ Eco and Tech')\n  ['Jing', 'Tech']\n  >>> find_char_long('Jhingai wulu road Zone\
+  \ 3')\n  ['Jhingai', 'wulu', 'road', 'Zone']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Please\
+  \ move back to stream') == ['Please', 'move', 'back', 'stream']\n    assert candidate('Jing\
+  \ Eco and Tech') == ['Jing', 'Tech']\n    assert candidate('Jhingai wulu road Zone\
+  \ 3') == ['Jhingai', 'wulu', 'road', 'Zone']\n\n\n\ndef test_check():\n    check(find_char_long)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_519
+language: py
+prompt: "\n\ndef volume_tetrahedron(num):\n\t\"\"\"\n\tWrite a function to calculate\
+  \ volume of a tetrahedron.\n\t>>> volume_tetrahedron(10)\n\t117.85\n\t>>> volume_tetrahedron(15)\n\
+  \t397.75\n\t>>> volume_tetrahedron(20)\n\t942.81\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==117.85\n\
+  \    assert candidate(15)==397.75\n    assert candidate(20)==942.81\n\n\n\ndef test_check():\n\
+  \    check(volume_tetrahedron)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,30 @@
+"name": "Java_115"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You Are gIven a RecTanguLar grid of Wells. EaCh rOw repResENtS a SingLE weLl,\n\
+  and each 1 in a row REPresEnts a singlE unit of water.\neach wElL HaS a COrRespoNding\
+  \ buCKeT THat CaN BE usEd TO eXtracT waTer FRom It,\nand All BuCkETS HavE the same\
+  \ capacity.\nYOUR Task is to usE tHE bucketS to emPty The weLLs.\noutPUt tHe NumBEr\
+  \ of TimEs YOU need tO lower the BuCKEts.\n\nexAMpLe 1:\nINpUT:\ngrid : [[0,0,1,0],\
+  \ [0,1,0,0], [1,1,1,1]]\nBuCkEt_CapacIty : 1\nOUtput: 6\n\nExaMPlE 2:\ninput:\n\
+  grid : [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]]\nbuckeT_capAcity : 2\nOUtPUt:\
+  \ 5\n\neXAmpLe 3:\nINput:\ngrid : [[0,0,0], [0,0,0]]\nbuCket_CaPAcitY : 5\noUtput:\
+  \ 0\n\nCONsTRAInTS:\n* All wells have tHe same lengtH\n* 1 <= grid.length <= 10^2\n\
+  * 1 <= grid[:,1].length <= 10^2\n* grid[i][j] -> 0 | 1\n* 1 <= capacity <= 10\n\"\
+  \"\"\n*/*/\n    public int maxFill(List<List<Integer>> grid, int capacity) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.maxFill(Arrays.asList(Arrays.asList(0, 0, 1, 0), Arrays.asList(0,\
+  \ 1, 0, 0), Arrays.asList(1, 1, 1, 1)), 1) == 6,\n                s.maxFill(Arrays.asList(Arrays.asList(0,\
+  \ 0, 1, 1), Arrays.asList(0, 0, 0, 0), Arrays.asList(1, 1, 1, 1), Arrays.asList(0,\
+  \ 1, 1, 1)), 2) == 5,\n                s.maxFill(Arrays.asList(Arrays.asList(0,\
+  \ 0, 0), Arrays.asList(0, 0, 0)), 5) == 0,\n                s.maxFill(Arrays.asList(Arrays.asList(1,\
+  \ 1, 1, 1), Arrays.asList(1, 1, 1, 1)), 2) == 4,\n                s.maxFill(Arrays.asList(Arrays.asList(1,\
+  \ 1, 1, 1), Arrays.asList(1, 1, 1, 1)), 9) == 2\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

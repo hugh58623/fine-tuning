@@ -1,0 +1,22 @@
+name: mbpp_31
+language: py
+prompt: "\n\ndef func(nums, k):\n    \"\"\"\n    Write a function to find the top\
+  \ k integers that occur most frequently from given lists of sorted and distinct\
+  \ integers using heap queue algorithm.\n    >>> func([[1, 2, 6], [1, 3, 4, 5, 7,\
+  \ 8], [1, 3, 5, 6, 8, 9], [2, 5, 7, 11], [1, 4, 7, 8, 12]],3)\n    [5, 7, 1]\n \
+  \   >>> func([[1, 2, 6], [1, 3, 4, 5, 7, 8], [1, 3, 5, 6, 8, 9], [2, 5, 7, 11],\
+  \ [1, 4, 7, 8, 12]],1)\n    [1]\n    >>> func([[1, 2, 6], [1, 3, 4, 5, 7, 8], [1,\
+  \ 3, 5, 6, 8, 9], [2, 5, 7, 11], [1, 4, 7, 8, 12]],5)\n    [6, 5, 7, 8, 1]\n   \
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 6], [1, 3, 4, 5, 7, 8], [1, 3, 5, 6, 8, 9], [2, 5, 7, 11], [1, 4, 7, 8, 12]],3)==[5,\
+  \ 7, 1]\n    assert candidate([[1, 2, 6], [1, 3, 4, 5, 7, 8], [1, 3, 5, 6, 8, 9],\
+  \ [2, 5, 7, 11], [1, 4, 7, 8, 12]],1)==[1]\n    assert candidate([[1, 2, 6], [1,\
+  \ 3, 4, 5, 7, 8], [1, 3, 5, 6, 8, 9], [2, 5, 7, 11], [1, 4, 7, 8, 12]],5)==[6, 5,\
+  \ 7, 8, 1]\n\n\n\ndef test_check():\n    check(func)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

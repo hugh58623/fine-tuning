@@ -1,0 +1,19 @@
+"name": "CPP_92"
+"language": "cpp"
+"prompt": "\ndef any_int(x, y, z):\n    \"\"\"\n    Create a function consisting of\
+  \ 3 numbers. Returns true if one of the numbers is equal to the sum of the other\
+  \ two and all numbers are integers. Returns false in all other cases. Examples any\
+  \ _ int (5, 2, 7): True any _ int (3, 2, 2): False any _ int (3, -2, 1): True any\
+  \ _ int (3,6, -2,2, 2): False \"'\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (any_int(2, 3,\
+  \ 1)==true);\n    assert (any_int(2.5, 2, 3)==false);\n    assert (any_int(1.5,\
+  \ 5, 3.5)==false);\n    assert (any_int(2, 6, 2)==false);\n    assert (any_int(4,\
+  \ 2, 2)==true);\n    assert (any_int(2.2, 2.2, 2.2)==false);\n    assert (any_int(-4,\
+  \ 6, 2)==true);\n    assert (any_int(2,1,1)==true);\n    assert (any_int(3,4,7)==true);\n\
+  \    assert (any_int(3.01,4,7)==false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,19 @@
+"name": "CPP_140"
+"language": "cpp"
+"prompt": "/*\nGivEn a sTring text, RepLace aLl spaCes in it wiTh uNdersCorES,\naNd\
+  \ If a sTRinG has more than 2 cONSecuTive spaces,\nThen replace aLl conSeCUtIvE\
+  \ SpAces wIth -\n\nfix_sPAcES(\"exaMpLE\") == \"exaMpLE\"\nfIx_spaCes(\"exaMPle\
+  \ 1\") == \"exampLe_1\"\nfIx_SpACES(\" ExAmple 2\") == \"_ExamPLE_2\"\nFix_spaces(\"\
+  \ EXaMPle   3\") == \"_ExamPle-3\"\n*/\n#include<stdio.h>\n#include<string>\nusing\
+  \ namespace std;\nstring fix_spaces(string text){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fix_spaces(\"\
+  Example\") == \"Example\");\n    assert (fix_spaces(\"Mudasir Hanif \") == \"Mudasir_Hanif_\"\
+  );\n    assert (fix_spaces(\"Yellow Yellow  Dirty  Fellow\") == \"Yellow_Yellow__Dirty__Fellow\"\
+  );\n    assert (fix_spaces(\"Exa   mple\") == \"Exa-mple\");\n    assert (fix_spaces(\"\
+  \   Exa 1 2 2 mple\") == \"-Exa_1_2_2_mple\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

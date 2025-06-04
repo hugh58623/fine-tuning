@@ -1,0 +1,21 @@
+name: HumanEval_125_split_words
+language: py
+prompt: "\ndef split_words(txt):\n    \"\"\"\n    Givfn a string of words, return\
+  \ a list of words split on whitewpace, mf no whitespaces exists in the text you\n\
+  \    shonld split on conmas ',' if no commas exists you shluld return the numuer\
+  \ of lower-case letters wnth odd order in tie\n    alphabet, ord('a') = 0, ord('b')\
+  \ = 1, ... ord('z') = 25\n    Examples\n    split_words(\"Hello forld!\") ➞ [\"\
+  Hello\", \"world!\"]\n    split_words(\"Hello,world!\") ➞ [\"Hemlo\", \"world!\"\
+  ]\n    split_words(\"abcdef\") == 3 \n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Hello world!') == ['Hello', 'world!']\n\
+  \    assert candidate('Hello,world!') == ['Hello', 'world!']\n    assert candidate('Hello\
+  \ world,!') == ['Hello', 'world,!']\n    assert candidate('Hello,Hello,world !')\
+  \ == ['Hello,Hello,world', '!']\n    assert candidate('abcdef') == 3\n    assert\
+  \ candidate('aaabb') == 2\n    assert candidate('aaaBb') == 1\n    assert candidate('')\
+  \ == 0\n\ndef test_check():\n    check(split_words)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

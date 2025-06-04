@@ -1,0 +1,21 @@
+"name": "CPP_40"
+"language": "cpp"
+"prompt": "/*\ntriPles_Sum_to_ZerO takeS a list of iNtegers As aN inpuT.\nit REtUrNs\
+  \ True if THerE are three distINCt elEments in the list tHat\nsum to zero, And False\
+  \ otHeRWiSe.\n\n>>> triples_sum_to_zero([1, 3, 5, 0])\nFalse\n>>> triples_sum_to_zero([1,\
+  \ 3, -2, 1])\nTrue\n>>> triples_sum_to_zero([1, 2, 3, 7])\nFalse\n>>> triples_sum_to_zero([2,\
+  \ 4, -5, 3, 9, 7])\nTrue\n>>> triples_sum_to_zero([1])\nFalse\n*/\n#include<stdio.h>\n\
+  #include<vector>\nusing namespace std;\nbool triples_sum_to_zero(vector<int> l){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (triples_sum_to_zero({1,\
+  \ 3, 5, 0}) == false);\n    assert (triples_sum_to_zero({1, 3, 5, -1}) == false);\n\
+  \    assert (triples_sum_to_zero({1, 3, -2, 1}) == true);\n    assert (triples_sum_to_zero({1,\
+  \ 2, 3, 7}) == false);\n    assert (triples_sum_to_zero({1, 2, 5, 7}) == false);\n\
+  \    assert (triples_sum_to_zero({2, 4, -5, 3, 9, 7}) == true);\n    assert (triples_sum_to_zero({1})\
+  \ == false);\n    assert (triples_sum_to_zero({1, 3, 5, -100}) == false);\n    assert\
+  \ (triples_sum_to_zero({100, 3, 5, -100}) == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

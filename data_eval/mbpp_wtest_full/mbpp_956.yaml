@@ -1,0 +1,20 @@
+name: mbpp_956
+language: py
+prompt: "\n\ndef split_list(text):\n  \"\"\"\n  Write a function to split the given\
+  \ string at uppercase letters by using regex.\n  >>> split_list(\"LearnToBuildAnythingWithGoogle\"\
+  )\n  ['Learn', 'To', 'Build', 'Anything', 'With', 'Google']\n  >>> split_list(\"\
+  ApmlifyingTheBlack+DeveloperCommunity\")\n  ['Apmlifying', 'The', 'Black+', 'Developer',\
+  \ 'Community']\n  >>> split_list(\"UpdateInTheGoEcoSystem\")\n  ['Update', 'In',\
+  \ 'The', 'Go', 'Eco', 'System']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"LearnToBuildAnythingWithGoogle\"\
+  ) == ['Learn', 'To', 'Build', 'Anything', 'With', 'Google']\n    assert candidate(\"\
+  ApmlifyingTheBlack+DeveloperCommunity\") == ['Apmlifying', 'The', 'Black+', 'Developer',\
+  \ 'Community']\n    assert candidate(\"UpdateInTheGoEcoSystem\") == ['Update', 'In',\
+  \ 'The', 'Go', 'Eco', 'System']\n\n\n\ndef test_check():\n    check(split_list)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

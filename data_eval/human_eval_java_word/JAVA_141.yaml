@@ -1,0 +1,48 @@
+"name": "Java_141"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Create a function which takes a string exemplify a file's name, and fall\n' Yes'\
+  \ if the the file's name is valid, and returns' No' differently.\nA file's name\
+  \ is considered to be valid if and only if all the following condition\nare met:\n\
+  - There should not be more than three digits (' 0'-'9') in the file's name.\n- The\
+  \ file's name contains precisely one department of transportation'.'\n- The substring\
+  \ before the department of transportation should not be empty, and it start with\
+  \ a letter from\nthe romance alphapet (' a'-'z' and' A'-'Z').\n- The substring after\
+  \ the dot should be one of these: [' txt',' exe',' dll' ]\nExamples:\nfile_name_check(\"\
+  example.txt \") # = >' Yes'\nfile_name_check(\"1example.dll \") # = >' No' (the\
+  \ name should depart with a romance alphapet letter)\n\" \" \"\n*/*/\n    public\
+  \ String filenameCheck(String file_name) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.filenameCheck(\"example.txt\" ), \"Yes\" ),\n\
+  \                Objects.equals(s.filenameCheck(\"1example.dll\" ), \"No\" ),\n\
+  \                Objects.equals(s.filenameCheck(\"s1sdf3.asd\" ), \"No\" ),\n  \
+  \              Objects.equals(s.filenameCheck(\"K.dll\" ), \"Yes\" ),\n        \
+  \        Objects.equals(s.filenameCheck(\"MY16FILE3.exe\" ), \"Yes\" ),\n      \
+  \          Objects.equals(s.filenameCheck(\"His12FILE94.exe\" ), \"No\" ),\n   \
+  \             Objects.equals(s.filenameCheck(\"_Y.txt\" ), \"No\" ),\n         \
+  \       Objects.equals(s.filenameCheck(\"?aREYA.exe\" ), \"No\" ),\n           \
+  \     Objects.equals(s.filenameCheck(\"/this_is_valid.dll\" ), \"No\" ),\n     \
+  \           Objects.equals(s.filenameCheck(\"this_is_valid.wow\" ), \"No\" ),\n\
+  \                Objects.equals(s.filenameCheck(\"this_is_valid.txt\" ), \"Yes\"\
+  \ ),\n                Objects.equals(s.filenameCheck(\"this_is_valid.txtexe\" ),\
+  \ \"No\" ),\n                Objects.equals(s.filenameCheck(\"#this2_i4s_5valid.ten\"\
+  \ ), \"No\" ),\n                Objects.equals(s.filenameCheck(\"@this1_is6_valid.exe\"\
+  \ ), \"No\" ),\n                Objects.equals(s.filenameCheck(\"this_is_12valid.6exe4.txt\"\
+  \ ), \"No\" ),\n                Objects.equals(s.filenameCheck(\"all.exe.txt\" ),\
+  \ \"No\" ),\n                Objects.equals(s.filenameCheck(\"I563_No.exe\" ), \"\
+  Yes\" ),\n                Objects.equals(s.filenameCheck(\"Is3youfault.txt\" ),\
+  \ \"Yes\" ),\n                Objects.equals(s.filenameCheck(\"no_one#knows.dll\"\
+  \ ), \"Yes\" ),\n                Objects.equals(s.filenameCheck(\"1I563_Yes3.exe\"\
+  \ ), \"No\" ),\n                Objects.equals(s.filenameCheck(\"I563_Yes3.txtt\"\
+  \ ), \"No\" ),\n                Objects.equals(s.filenameCheck(\"final..txt\" ),\
+  \ \"No\" ),\n                Objects.equals(s.filenameCheck(\"final132\" ), \"No\"\
+  \ ),\n                Objects.equals(s.filenameCheck(\"_f4indsartal132.\" ), \"\
+  No\" )\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_850
+language: py
+prompt: "\n\ndef is_triangleexists(a,b,c):\n    \"\"\"\n    Write a function to check\
+  \ if a triangle of positive area is possible with the given angles.\n    >>> is_triangleexists(50,60,70)\n\
+  \    True\n    >>> is_triangleexists(90,45,45)\n    True\n    >>> is_triangleexists(150,30,70)\n\
+  \    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(50,60,70)==True\n\
+  \    assert candidate(90,45,45)==True\n    assert candidate(150,30,70)==False\n\n\
+  \n\ndef test_check():\n    check(is_triangleexists)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

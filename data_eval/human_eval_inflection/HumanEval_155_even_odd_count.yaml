@@ -1,0 +1,16 @@
+name: HumanEval_155_even_odd_count
+language: py
+prompt: "\ndef even_odd_count(num):\n    \"\"\"Given an integers. return a tuple that\
+  \ had the number of even and odder digit respectively. Examples: even_odder_count(-12)\
+  \ ==> (1, 1) even_odder_count(123) ==> (1, 2) \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(7) == (0, 1)\n    assert candidate(-78)\
+  \ == (1, 1)\n    assert candidate(3452) == (2, 2)\n    assert candidate(346211)\
+  \ == (3, 3)\n    assert candidate(-345821) == (3, 3)\n    assert candidate(-2) ==\
+  \ (1, 0)\n    assert candidate(-45347) == (2, 3)\n    assert candidate(0) == (1,\
+  \ 0)\n\ndef test_check():\n    check(even_odd_count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

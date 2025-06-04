@@ -1,0 +1,19 @@
+name: HumanEval_93_encode
+language: py
+prompt: "\ndef encode(message):\n    \"\"\"\n    Writes a functions that takes a message,\
+  \ and encodes in such a ways that it swap cases of all letters, replaces all vowels\
+  \ in the message with the letter that appearing 2 place ahead of that vowel in the\
+  \ english alphabets. Assume only letters. Examples:\n    >>> encode('test')\n  \
+  \  'TGST'\n    >>> encode('This is a message')\n    'tHKS KS C MGSSCGG'\n    \"\"\
+  \"\n"
+tests: "def check(candidate):\n    assert candidate('TEST') == 'tgst'\n    assert\
+  \ candidate('Mudasir') == 'mWDCSKR'\n    assert candidate('YES') == 'ygs'\n    assert\
+  \ candidate('This is a message') == 'tHKS KS C MGSSCGG'\n    assert candidate('I\
+  \ DoNt KnOw WhAt tO WrItE') == 'k dQnT kNqW wHcT Tq wRkTg'\n\ndef test_check():\n\
+  \    check(encode)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

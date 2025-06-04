@@ -1,0 +1,14 @@
+name: mbpp_136
+language: py
+prompt: "\n\ndef cal_electbill(units):\n \"\"\"\n Write a function to calculate electricity\
+  \ bill.\n >>> cal_electbill(75)\n 246.25\n >>> cal_electbill(265)\n 1442.75\n >>>\
+  \ cal_electbill(100)\n 327.5\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(75)==246.25\n\
+  \    assert candidate(265)==1442.75\n    assert candidate(100)==327.5\n\n\n\ndef\
+  \ test_check():\n    check(cal_electbill)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

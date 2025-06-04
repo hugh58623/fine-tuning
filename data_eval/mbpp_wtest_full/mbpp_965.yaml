@@ -1,0 +1,16 @@
+name: mbpp_965
+language: py
+prompt: "\n\ndef camel_to_snake(text):\n        \"\"\"\n        Write a function to\
+  \ convert camel case string to snake case string.\n        >>> camel_to_snake('PythonProgram')\n\
+  \        ('python_program')\n        >>> camel_to_snake('pythonLanguage')\n    \
+  \    ('python_language')\n        >>> camel_to_snake('ProgrammingLanguage')\n  \
+  \      ('programming_language')\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('PythonProgram')==('python_program')\n\
+  \    assert candidate('pythonLanguage')==('python_language')\n    assert candidate('ProgrammingLanguage')==('programming_language')\n\
+  \n\n\ndef test_check():\n    check(camel_to_snake)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

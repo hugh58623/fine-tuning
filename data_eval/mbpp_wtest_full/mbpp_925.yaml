@@ -1,0 +1,15 @@
+name: mbpp_925
+language: py
+prompt: "\n\ndef mutiple_tuple(nums):\n    \"\"\"\n    Write a python function to\
+  \ calculate the product of all the numbers of a given tuple.\n    >>> mutiple_tuple((4,\
+  \ 3, 2, 2, -1, 18))\n    -864\n    >>> mutiple_tuple((1,2,3))\n    6\n    >>> mutiple_tuple((-2,-4,-6))\n\
+  \    -48\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((4, 3,\
+  \ 2, 2, -1, 18)) == -864\n    assert candidate((1,2,3)) == 6\n    assert candidate((-2,-4,-6))\
+  \ == -48\n\n\n\ndef test_check():\n    check(mutiple_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

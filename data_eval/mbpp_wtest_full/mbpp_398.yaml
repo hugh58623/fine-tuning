@@ -1,0 +1,15 @@
+name: mbpp_398
+language: py
+prompt: "\n\ndef sum_of_digits(nums):\n    \"\"\"\n    Write a function to compute\
+  \ the sum of digits of each number of a given list.\n    >>> sum_of_digits([10,2,56])\n\
+  \    14\n    >>> sum_of_digits([[10,20,4,5,'b',70,'a']])\n    19\n    >>> sum_of_digits([10,20,-4,5,-70])\n\
+  \    19\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10,2,56])==14\n\
+  \    assert candidate([[10,20,4,5,'b',70,'a']])==19\n    assert candidate([10,20,-4,5,-70])==19\n\
+  \n\n\ndef test_check():\n    check(sum_of_digits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

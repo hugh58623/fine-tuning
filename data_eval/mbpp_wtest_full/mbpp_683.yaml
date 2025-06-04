@@ -1,0 +1,15 @@
+name: mbpp_683
+language: py
+prompt: "\n\ndef sum_Square(n) :\n    \"\"\"\n    Write a python function to check\
+  \ whether the given number can be represented by sum of two squares or not.\n  \
+  \  >>> sum_Square(25)\n    True\n    >>> sum_Square(24)\n    False\n    >>> sum_Square(17)\n\
+  \    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(25) ==\
+  \ True\n    assert candidate(24) == False\n    assert candidate(17) == True\n\n\n\
+  \ndef test_check():\n    check(sum_Square)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

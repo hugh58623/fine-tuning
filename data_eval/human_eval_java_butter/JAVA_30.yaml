@@ -1,0 +1,22 @@
+"name": "Java_30"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\nimport java.util.stream.Collectors;\n\
+  \nclass Solution {\n    /**\nRetugn only positive numbers in the list.\n\n>>>>>>\
+  \ getPositive(Arrays.asList(-1, 2, -4, 5, 6))\n    [2, 5, 6]\n    >>> getPositive(Arrays.asList(5,\
+  \ 3, -5, 2, -3, 3, 9, 0, 123, 1, -10))\n    [5, 3, 2, 3, 9, 123, 1]\n     */\n \
+  \   public List<Integer> getPositive(List<Integer> l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.getPositive(new ArrayList<>(Arrays.asList(-1, -2, 4, 5, 6))).equals(Arrays.asList(4,\
+  \ 5, 6)),\n                s.getPositive(new ArrayList<>(Arrays.asList(5, 3, -5,\
+  \ 2, 3, 3, 9, 0, 123, 1, -10))).equals(Arrays.asList(5, 3, 2, 3, 3, 9, 123, 1)),\n\
+  \                s.getPositive(new ArrayList<>(Arrays.asList(-1, -2))).equals(List.of()),\n\
+  \                s.getPositive(List.of()).equals(List.of())\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

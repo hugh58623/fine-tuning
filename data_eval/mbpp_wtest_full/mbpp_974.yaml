@@ -1,0 +1,16 @@
+name: mbpp_974
+language: py
+prompt: "\n\ndef min_sum_path(A):\n\t\"\"\"\n\tWrite a function to find the minimum\
+  \ total path sum in the given triangle.\n\t>>> min_sum_path([[ 2 ], [3, 9 ], [1,\
+  \ 6, 7 ]])\n\t6\n\t>>> min_sum_path([[ 2 ], [3, 7 ], [8, 5, 6 ]])\n\t10\n\t>>> min_sum_path([[\
+  \ 3 ], [6, 4 ], [5, 2, 7 ]])\n\t9\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[ 2 ],\
+  \ [3, 9 ], [1, 6, 7 ]]) == 6\n    assert candidate([[ 2 ], [3, 7 ], [8, 5, 6 ]])\
+  \ == 10 \n    assert candidate([[ 3 ], [6, 4 ], [5, 2, 7 ]]) == 9\n\n\n\ndef test_check():\n\
+  \    check(min_sum_path)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,29 @@
+name: HumanEval_109_move_one_ball
+language: py
+prompt: "\ndef move_one_ball(arr):\n    \"\"\"We haVe an Array 'arr' Of N IntegErs\
+  \ arr[1], arr[2], ..., arr[N].The\n    nuMbers in thE arRay wiLl bE RaNdOmly ORdeRed.\
+  \ Your task is TO DeteRmine if\n    it iS possible to gEt an aRrAY sorted in nOn-DEcReasiNg\
+  \ order BY pERForMiNG \n    The FoLLoWing oPerAtiON on The giVen ArRaY:\n      \
+  \  yOU arE allowed tO PERform right ShIFt operaTion aNy nUmber OF tImeS.\n    \n\
+  \    one RiGht SHift OpeRaTIOn meanS shifting AlL ELemEnTS oF thE aRRAy By OnE\n\
+  \    posiTion in The right DIrECtion. The laSt elEment oF tHE aRRAy wIll Be moveD\
+  \ to\n    tHe STartING positIOn in THE ArRAY i.e. 0th index. \n\n    If it is possIble\
+  \ to obtaiN ThE sorted ArrAy bY pERfORming tHe aboVe OPerAtIon\n    then return\
+  \ True eLSe return False.\n    If The given aRray is EMpty theN return True.\n\n\
+  \    note: ThE Given list iS guAraNteeD To HAVe uNiQUe eLEmEntS.\n\n    fOr examPle:\n\
+  \    \n    mOvE_oNe_baLL([3, 4, 5, 1, 2])==>TRuE\n    eXPLanaTioN: By pErfoRMIn\
+  \ 2 riGht shift OpeRatiONs, nON-decReasiNg OrDeR Can\n                 bE AChieVeD\
+  \ FoR tHe Given array.\n    MovE_one_Ball([3, 5, 4, 1, 2])==>FalSe\n    eXpLaNatIoN:It\
+  \ is NOt possIbLE tO Get non-dEcreasiNG orDeR FOR tHe givEn\n                array\
+  \ by perfORMINg Any numbER of RiGHT sHiFT opErATiOnS.\n                \n    \"\"\
+  \"\n"
+tests: "def check(candidate):\n    assert candidate([3, 4, 5, 1, 2]) == True\n   \
+  \ assert candidate([3, 5, 10, 1, 2]) == True\n    assert candidate([4, 3, 1, 2])\
+  \ == False\n    assert candidate([3, 5, 4, 1, 2]) == False\n    assert candidate([])\
+  \ == True\n\ndef test_check():\n    check(move_one_ball)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

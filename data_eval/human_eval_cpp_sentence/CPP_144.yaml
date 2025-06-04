@@ -1,0 +1,26 @@
+"name": "CPP_144"
+"language": "cpp"
+"prompt": "/*\nYour task will be to implement a function that will simplify the expression\n\
+  x* n. The function will return True if x* n will evaluate to a whole number and\
+  \ False\notherwise. Both x and n, will be string representation of a fraction, and\
+  \ will have the following format,\n<numerator>/<denominator> where both numerator\
+  \ and denominator will be positive whole numbers.\n\nYou can will assume that x,\
+  \ and n will be valid fractions, and will not have zero as denominator.\n\nsimplify(\"\
+  1/5\",\" 5/1\")= True\nsimplify(\"1/6\",\" 2/1\")= False\nsimplify(\"7/10\",\" 10/2\"\
+  )= False\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nbool simplify(string\
+  \ x,string n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (simplify(\"\
+  1/5\", \"5/1\") == true);\n    assert (simplify(\"1/6\", \"2/1\") == false);\n \
+  \   assert (simplify(\"5/1\", \"3/1\") == true);\n    assert (simplify(\"7/10\"\
+  , \"10/2\") == false);\n    assert (simplify(\"2/10\", \"50/10\") == true);\n  \
+  \  assert (simplify(\"7/2\", \"4/2\") == true);\n    assert (simplify(\"11/6\",\
+  \ \"6/1\") == true);\n    assert (simplify(\"2/3\", \"5/2\") == false);\n    assert\
+  \ (simplify(\"5/2\", \"3/5\") == false);\n    assert (simplify(\"2/4\", \"8/4\"\
+  ) == true);\n    assert (simplify(\"2/4\", \"4/2\") == true);\n    assert (simplify(\"\
+  1/5\", \"5/1\") == true);\n    assert (simplify(\"1/5\", \"1/5\") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

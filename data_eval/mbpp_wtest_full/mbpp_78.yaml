@@ -1,0 +1,15 @@
+name: mbpp_78
+language: py
+prompt: "\n\ndef count_With_Odd_SetBits(n):\n    \"\"\"\n    Write a python function\
+  \ to find number of integers with odd number of set bits.\n    >>> count_With_Odd_SetBits(5)\n\
+  \    3\n    >>> count_With_Odd_SetBits(10)\n    5\n    >>> count_With_Odd_SetBits(15)\n\
+  \    8\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == 3\n\
+  \    assert candidate(10) == 5\n    assert candidate(15) == 8\n\n\n\ndef test_check():\n\
+  \    check(count_With_Odd_SetBits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

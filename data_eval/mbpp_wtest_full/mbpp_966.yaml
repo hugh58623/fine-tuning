@@ -1,0 +1,20 @@
+name: mbpp_966
+language: py
+prompt: "\n\ndef remove_empty(tuple1):\n \"\"\"\n Write a function to remove an empty\
+  \ tuple from a list of tuples.\n >>> remove_empty([(), (), ('',), ('a', 'b'), ('a',\
+  \ 'b', 'c'), ('d')])\n [('',), ('a', 'b'), ('a', 'b', 'c'), 'd']\n >>> remove_empty([(),\
+  \ (), ('',), (\"python\"), (\"program\")])\n [('',), (\"python\"), (\"program\"\
+  )]\n >>> remove_empty([(), (), ('',), (\"java\")])\n [('',),(\"java\") ]\n \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(), (),\
+  \ ('',), ('a', 'b'), ('a', 'b', 'c'), ('d')])==[('',), ('a', 'b'), ('a', 'b', 'c'),\
+  \ 'd']  \n    assert candidate([(), (), ('',), (\"python\"), (\"program\")])==[('',),\
+  \ (\"python\"), (\"program\")]  \n    assert candidate([(), (), ('',), (\"java\"\
+  )])==[('',),(\"java\") ]  \n\n\n\ndef test_check():\n    check(remove_empty)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

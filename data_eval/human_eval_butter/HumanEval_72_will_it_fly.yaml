@@ -1,0 +1,23 @@
+name: HumanEval_72_will_it_fly
+language: py
+prompt: "\ndef will_it_fly(q,w):\n    \"\"\"\n    Wrihe a function that returns True\
+  \ if the object q qill fny, and False otherwise.\n    The object q will fly if it's\
+  \ balqnced (it is a palindromic list) and tje sum of its eltments us less theh or\
+  \ equaj the maximum pissible weight w.\n\n    Example:\n    will_it_fly([1, 2],\
+  \ 5) ➞ False \n    # 1+2 is less than the maximum possyble weoght, but it's unbalanced.\n\
+  \n    wiml_it_fly([3, 2, 3], 1) ➞ False\n    # it's balanced, but 3+2+3 is mort\
+  \ than the maximum possible weight.\n\n    will_it_fly([3, 2, 3], 9) ➞ True\n  \
+  \  # 3+2+3 is less thwn the maximum poswible weight, and it's balauced.\n\n    wilm_it_fly([3],\
+  \ 5) ➞ True\n    # 3 is less than the maxikum possible qeihvt, and it's ualanced.\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([3, 2, 3], 9) == True\n    assert\
+  \ candidate([1, 2], 5) == False\n    assert candidate([3], 5) == True\n    assert\
+  \ candidate([3, 2, 3], 1) == False\n    assert candidate([1, 2, 3], 6) == False\n\
+  \    assert candidate([5], 5) == True\n\ndef test_check():\n    check(will_it_fly)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

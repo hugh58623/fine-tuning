@@ -1,0 +1,15 @@
+name: mbpp_85
+language: py
+prompt: "\n\ndef surfacearea_sphere(r):\n  \"\"\"\n  Write a function to find the\
+  \ surface area of a sphere.\n  >>> surfacearea_sphere(10)\n  1256.6370614359173\n\
+  \  >>> surfacearea_sphere(15)\n  2827.4333882308138\n  >>> surfacearea_sphere(20)\n\
+  \  5026.548245743669\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==1256.6370614359173\n\
+  \    assert candidate(15)==2827.4333882308138\n    assert candidate(20)==5026.548245743669\n\
+  \n\n\ndef test_check():\n    check(surfacearea_sphere)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

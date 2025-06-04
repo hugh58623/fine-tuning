@@ -1,0 +1,18 @@
+name: mbpp_788
+language: py
+prompt: "\n\ndef new_tuple(test_list, test_str):\n  \"\"\"\n  Write a function to\
+  \ create a new tuple from the given string and list.\n  >>> new_tuple([\"WEB\",\
+  \ \"is\"], \"best\")\n  ('WEB', 'is', 'best')\n  >>> new_tuple([\"We\", \"are\"\
+  ], \"Developers\")\n  ('We', 'are', 'Developers')\n  >>> new_tuple([\"Part\", \"\
+  is\"], \"Wrong\")\n  ('Part', 'is', 'Wrong')\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"WEB\"\
+  , \"is\"], \"best\") == ('WEB', 'is', 'best')\n    assert candidate([\"We\", \"\
+  are\"], \"Developers\") == ('We', 'are', 'Developers')\n    assert candidate([\"\
+  Part\", \"is\"], \"Wrong\") == ('Part', 'is', 'Wrong')\n\n\n\ndef test_check():\n\
+  \    check(new_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

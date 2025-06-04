@@ -1,0 +1,14 @@
+name: mbpp_685
+language: py
+prompt: "\n\ndef sum_Of_Primes(n):\n    \"\"\"\n    Write a python function to find\
+  \ sum of prime numbers between 1 to n.\n    >>> sum_Of_Primes(10)\n    17\n    >>>\
+  \ sum_Of_Primes(20)\n    77\n    >>> sum_Of_Primes(5)\n    10\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 17\n    assert candidate(20) == 77\n    assert candidate(5) == 10\n\n\n\ndef test_check():\n\
+  \    check(sum_Of_Primes)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

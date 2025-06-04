@@ -1,0 +1,16 @@
+name: mbpp_669
+language: py
+prompt: "\n\ndef check_IP(Ip):\n\t\"\"\"\n\tWrite a function to check whether the\
+  \ given ip address is valid or not using regex.\n\t>>> check_IP(\"192.168.0.1\"\
+  )\n\t'Valid IP address'\n\t>>> check_IP(\"110.234.52.124\")\n\t'Valid IP address'\n\
+  \t>>> check_IP(\"366.1.2.2\")\n\t'Invalid IP address'\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"192.168.0.1\"\
+  ) == 'Valid IP address'\n    assert candidate(\"110.234.52.124\") == 'Valid IP address'\n\
+  \    assert candidate(\"366.1.2.2\") == 'Invalid IP address'\n\n\n\ndef test_check():\n\
+  \    check(check_IP)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

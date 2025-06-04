@@ -1,0 +1,15 @@
+name: mbpp_322
+language: py
+prompt: "\n\ndef position_min(list1):\n    \"\"\"\n    Write a function to find all\
+  \ index positions of the minimum values in a given list.\n    >>> position_min([12,33,23,10,67,89,45,667,23,12,11,10,54])\n\
+  \    [3,11]\n    >>> position_min([1,2,2,2,4,4,4,5,5,5,5])\n    [0]\n    >>> position_min([2,1,5,6,8,3,4,9,10,11,8,12])\n\
+  \    [1]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([12,33,23,10,67,89,45,667,23,12,11,10,54])==[3,11]\n\
+  \    assert candidate([1,2,2,2,4,4,4,5,5,5,5])==[0]\n    assert candidate([2,1,5,6,8,3,4,9,10,11,8,12])==[1]\n\
+  \n\n\ndef test_check():\n    check(position_min)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

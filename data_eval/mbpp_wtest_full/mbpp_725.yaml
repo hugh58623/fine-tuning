@@ -1,0 +1,20 @@
+name: mbpp_725
+language: py
+prompt: "\n\ndef extract_quotation(text1):\n  \"\"\"\n  Write a function to extract\
+  \ values between quotation marks of the given string by using regex.\n  >>> extract_quotation('Cortex\
+  \ \"A53\" Based \"multi\" tasking \"Processor\"')\n  ['A53', 'multi', 'Processor']\n\
+  \  >>> extract_quotation('Cast your \"favorite\" entertainment \"apps\"')\n  ['favorite',\
+  \ 'apps']\n  >>> extract_quotation('Watch content \"4k Ultra HD\" resolution with\
+  \ \"HDR 10\" Support')\n  ['4k Ultra HD', 'HDR 10']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Cortex\
+  \ \"A53\" Based \"multi\" tasking \"Processor\"') == ['A53', 'multi', 'Processor']\n\
+  \    assert candidate('Cast your \"favorite\" entertainment \"apps\"') == ['favorite',\
+  \ 'apps']\n    assert candidate('Watch content \"4k Ultra HD\" resolution with \"\
+  HDR 10\" Support') == ['4k Ultra HD', 'HDR 10']\n\n\n\ndef test_check():\n    check(extract_quotation)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,20 @@
+name: HumanEval_89_encrypt
+language: py
+prompt: "\ndef encrypt(s):\n    \"\"\"CreaTe a fUnctiOn encrypt tHat taKes a sTring\
+  \ as An aRgumeNt aND\n    rEtUrns A StrIng encrypted wITH the Alphabet beIng rotated.\
+  \ \n    ThE alphAbET sHoULd Be rotAted in a maNNeR SUch ThAT The LeTTeRs \n    shiFt\
+  \ dOwn BY twO multIplIeD tO TWO plAces.\n    For exAMPLe:\n    encrypt('hi') returns\
+  \ 'lM'\n    encrypt('asdfghjkl') rETurns 'ewHjklnOp'\n    encrypt('gf') rEturnS\
+  \ 'Kj'\n    encrypt('et') RetURns 'Ix'\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('hi') == 'lm'\n    assert candidate('asdfghjkl')\
+  \ == 'ewhjklnop'\n    assert candidate('gf') == 'kj'\n    assert candidate('et')\
+  \ == 'ix'\n    assert candidate('faewfawefaewg') == 'jeiajeaijeiak'\n    assert\
+  \ candidate('hellomyfriend') == 'lippsqcjvmirh'\n    assert candidate('dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh')\
+  \ == 'hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl'\n    assert candidate('a')\
+  \ == 'e'\n\ndef test_check():\n    check(encrypt)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,20 @@
+"name": "CPP_154"
+"language": "cpp"
+"prompt": "/*\nYou will be gave 2 words. You will need to return True if the second\
+  \ word or any of its rotations will be a substring in the first word\ncycpattern_check(\"\
+  abcd\",\"abd\")=> False\ncycpattern_check(\"hello\",\"ell\")=> True\ncycpattern_check(\"\
+  whassup\",\"psus\")=> False\ncycpattern_check(\"abab\",\"baa\")=> True\ncycpattern_check(\"\
+  efef\",\"eeff\")=> False\ncycpattern_check(\"himenss\",\"simen\")=> True\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nbool cycpattern_check(string a,string b){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert  (cycpattern_check(\"\
+  xyzw\",\"xyw\") == false );\n    assert  (cycpattern_check(\"yello\",\"ell\") ==\
+  \ true );\n    assert  (cycpattern_check(\"whattup\",\"ptut\") == false );\n   \
+  \ assert  (cycpattern_check(\"efef\",\"fee\") == true );\n    assert  (cycpattern_check(\"\
+  abab\",\"aabb\") == false );\n    assert  (cycpattern_check(\"winemtt\",\"tinem\"\
+  ) == true );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,17 @@
+name: mbpp_631
+language: py
+prompt: "\n\ndef replace_spaces(text):\n  \"\"\"\n  Write a function to replace whitespaces\
+  \ with an underscore and vice versa in a given string by using regex.\n  >>> replace_spaces('Jumanji\
+  \ The Jungle')\n  'Jumanji_The_Jungle'\n  >>> replace_spaces('The Avengers')\n \
+  \ 'The_Avengers'\n  >>> replace_spaces('Fast and Furious')\n  'Fast_and_Furious'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Jumanji\
+  \ The Jungle') == 'Jumanji_The_Jungle'\n    assert candidate('The Avengers') ==\
+  \ 'The_Avengers'\n    assert candidate('Fast and Furious') == 'Fast_and_Furious'\n\
+  \n\n\ndef test_check():\n    check(replace_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

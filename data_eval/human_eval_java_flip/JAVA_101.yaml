@@ -1,0 +1,27 @@
+"name": "Java_101"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You Will Be givEn a StrinG of woRds sepaRatEd by cOmmAS oR sPaceS. youR task is\n\
+  to split the sTRIng iNto words anD return an array of thE wordS.\n\nFOR eXaMPlE:\n\
+  wordS_string(\"hI, mY NAme Is jOHn\") == [\"HI\", \"mY\", \"NaMe\", \"is\", \"JOhn\"\
+  ]\nWorDS_stRing(\"ONe, tWo, ThREE, FouR, five, six\") == [\"ONE\", \"TWo\", \"three\"\
+  , \"fouR\", \"fIVe\", \"six\"]\n\"\"\"\n*/*/\n    public List<String> wordStrings(String\
+  \ s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.wordStrings(\"Hi, my name is John\" ).equals(Arrays.asList(\"\
+  Hi\", \"my\", \"name\", \"is\", \"John\" )),\n                s.wordStrings(\"One,\
+  \ two, three, four, five, six\" ).equals(Arrays.asList(\"One\", \"two\", \"three\"\
+  , \"four\", \"five\", \"six\" )),\n                s.wordStrings(\"Hi, my name\"\
+  \ ).equals(Arrays.asList(\"Hi\", \"my\", \"name\" )),\n                s.wordStrings(\"\
+  One,, two, three, four, five, six,\" ).equals(Arrays.asList(\"One\", \"two\", \"\
+  three\", \"four\", \"five\", \"six\" )),\n                s.wordStrings(\"\" ).equals(List.of()),\n\
+  \                s.wordStrings(\"ahmed     , gamal\" ).equals(Arrays.asList(\"ahmed\"\
+  , \"gamal\" ))\n        );\n        if (correct.contains(false)) {\n           \
+  \ throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

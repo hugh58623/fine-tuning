@@ -1,0 +1,20 @@
+"name": "CPP_128"
+"language": "cpp"
+"prompt": "/*\nYou was gives an array arr of integers and you needing to return\n\
+  sum of magnitude of integers multiplies by products of all sign of each number in\
+  \ the array, represents by 1, -1 or 0. Notes: return None for emptiest arr.\n\n\
+  Examples:\n>>> prod_signs([1, 2, 2, -4]) == -9\n>>> prod_signs([0, 1]) == 0\n>>>\
+  \ prod_signs([]) == None\n*/\n#include<stdio.h>\n#include<math.h>\n#include<vector>\n\
+  using namespace std;\nint prod_signs(vector<int> arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (prod_signs({1,\
+  \ 2, 2, -4}) == -9);\n    assert (prod_signs({0, 1}) == 0);\n    assert (prod_signs({1,\
+  \ 1, 1, 2, 3, -1, 1}) == -10);\n    assert (prod_signs({}) == -32768);\n    assert\
+  \ (prod_signs({2, 4,1, 2, -1, -1, 9}) == 20);\n    assert (prod_signs({-1, 1, -1,\
+  \ 1}) == 4);\n    assert (prod_signs({-1, 1, 1, 1}) == -4);\n    assert (prod_signs({-1,\
+  \ 1, 1, 0}) == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

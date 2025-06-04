@@ -1,0 +1,18 @@
+name: HumanEval_140_fix_spaces
+language: py
+prompt: "\ndef fix_spaces(text):\n    \"\"\"\n    In a string text, replace all spaces\
+  \ with underscores, and if a string has more than 2 consecutive spaces, replace\
+  \ all consecutive spaces with - fix _ spaces (\"Example\") = = \"Example\" fix _\
+  \ spaces (\"Example 1\") = = \"Example _ 1\" fix _ spaces (\"Example 2\") = \"_\
+  \ Example _ 2\" fix _ spaces (\"Example 3\") = = \"_ Example-3\" \"\" \"\n"
+tests: "def check(candidate):\n    assert candidate('Example') == 'Example'\n    assert\
+  \ candidate('Mudasir Hanif ') == 'Mudasir_Hanif_'\n    assert candidate('Yellow\
+  \ Yellow  Dirty  Fellow') == 'Yellow_Yellow__Dirty__Fellow'\n    assert candidate('Exa\
+  \   mple') == 'Exa-mple'\n    assert candidate('   Exa 1 2 2 mple') == '-Exa_1_2_2_mple'\n\
+  \ndef test_check():\n    check(fix_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

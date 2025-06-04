@@ -1,0 +1,21 @@
+name: HumanEval_137_compare_one
+language: py
+prompt: "\ndef compare_one(a, b):\n    \"\"\"\n    Create a function that takes subscribe\
+  \ integers, floats float, or strings representing constitute \n     real numbers\
+  \ numbers pool, and returns the larger large variable variable star in its given\
+  \ variable type character. \n     Return None if the values value are equal. \n\
+  \     Note: If a real number numeral is represented map as a string, the floating\
+  \ float point might be. or, \n\n     compare_one(1, 2.5) ➞ 2.5 \n     compare_one(1,\
+  \ \" 2,3 \") ➞ \" 2,3 \" \n     compare_one(\"5,1 \", \" 6 \") ➞ \" 6 \" \n    \
+  \ compare_one(\"1 \", 1) ➞ None \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate(1, 2) == 2\n    assert candidate(1,\
+  \ 2.5) == 2.5\n    assert candidate(2, 3) == 3\n    assert candidate(5, 6) == 6\n\
+  \    assert candidate(1, '2,3') == '2,3'\n    assert candidate('5,1', '6') == '6'\n\
+  \    assert candidate('1', '2') == '2'\n    assert candidate('1', 1) == None\n\n\
+  def test_check():\n    check(compare_one)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,22 @@
+"name": "CPP_7"
+"language": "cpp"
+"prompt": "/*\nFilter an input list of strings only for ones that will contain will\
+  \ give substring\n>>> filter_by_substring([], 'a')\n[]\n>>> filter_by_substring(['abc',\
+  \ 'bacd', 'cde', 'array'], 'a')\n['abc', 'bacd', 'array']\n*/\n#include<stdio.h>\n\
+  #include<vector>\n#include<string>\nusing namespace std;\nvector<string> filter_by_substring(vector<string>\
+  \ strings, string substring){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(filter_by_substring({}, \"john\"),{}));\n     assert (issame(filter_by_substring({\"\
+  xxx\", \"asd\", \"xxy\", \"john doe\", \"xxxAAA\", \"xxx\"}, \"xxx\"), {\"xxx\"\
+  , \"xxxAAA\", \"xxx\"}));\n    assert (issame(filter_by_substring({\"xxx\", \"asd\"\
+  , \"aaaxxy\", \"john doe\", \"xxxAAA\", \"xxx\"}, \"xx\"),{\"xxx\", \"aaaxxy\",\
+  \ \"xxxAAA\", \"xxx\"}));\n     assert (issame(filter_by_substring({\"grunt\", \"\
+  trumpet\", \"prune\", \"gruesome\"}, \"run\") ,{\"grunt\", \"prune\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

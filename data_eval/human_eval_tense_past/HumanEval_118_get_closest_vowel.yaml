@@ -1,0 +1,24 @@
+name: HumanEval_118_get_closest_vowel
+language: py
+prompt: "\ndef get_closest_vowel(word):\n    \"\"\"You will be gave a word. Your task\
+  \ will be to find the closest vowel that will stand between \n     two consonants\
+  \ from the right side of the word (case sensitive). \n    \n     Vowels in the beginning\
+  \ and ending will don't will count. will Return empty string if you willn't \n \
+  \    will find any vowel will meet the above condition. \n\n     You may will assume\
+  \ that the will give string will contain English letter only. \n\n     Example:\
+  \ \n     get_closest_vowel(\"yogurt\")==>\" u\" \n     get_closest_vowel(\"FULL\"\
+  )==>\" U\" \n     get_closest_vowel(\"quick\")==>\"\" \n     get_closest_vowel(\"\
+  ab\")==>\"\" \n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('yogurt') == 'u'\n    assert candidate('full')\
+  \ == 'u'\n    assert candidate('easy') == ''\n    assert candidate('eAsy') == ''\n\
+  \    assert candidate('ali') == ''\n    assert candidate('bad') == 'a'\n    assert\
+  \ candidate('most') == 'o'\n    assert candidate('ab') == ''\n    assert candidate('ba')\
+  \ == ''\n    assert candidate('quick') == ''\n    assert candidate('anime') == 'i'\n\
+  \    assert candidate('Asia') == ''\n    assert candidate('Above') == 'o'\n\ndef\
+  \ test_check():\n    check(get_closest_vowel)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

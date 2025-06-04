@@ -1,0 +1,17 @@
+name: mbpp_427
+language: py
+prompt: "\n\ndef change_date_format(dt):\n        \"\"\"\n        Write a function\
+  \ to convert a date of yyyy-mm-dd format to dd-mm-yyyy format by using regex.\n\
+  \        >>> change_date_format(\"2026-01-02\")\n        '02-01-2026'\n        >>>\
+  \ change_date_format(\"2020-11-13\")\n        '13-11-2020'\n        >>> change_date_format(\"\
+  2021-04-26\")\n        '26-04-2021'\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"2026-01-02\"\
+  ) == '02-01-2026'\n    assert candidate(\"2020-11-13\") == '13-11-2020'\n    assert\
+  \ candidate(\"2021-04-26\") == '26-04-2021'\n\n\n\ndef test_check():\n    check(change_date_format)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

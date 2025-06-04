@@ -1,0 +1,23 @@
+name: HumanEval_143_words_in_sentence
+language: py
+prompt: "\ndef words_in_sentence(sentence):\n    \"\"\"\n    You are given a string\
+  \ representing a sentence,\n     the sentence contains some news separate by a space,\
+  \ \n     and you have to return a chain that contains the quarrel from the original\
+  \ sentence,\n     whose duration are choice numbers, \n     the order of the words\
+  \ in the new chain should be the same as the original one. \n\n     exercise 1:\
+  \ \n         stimulation: sentence = \" This is a trial \" \n         end product:\
+  \ \" is \" \n\n     Example 2: \n         Input: sentence = \" lets go for swimming\
+  \ \" \n         Output: \" go for \" \n\n     Constraints: \n         * 1 < = len(sentence)\
+  \ < = 100 \n         * sentence incorporate only letter \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate('This is a test') == 'is'\n  \
+  \  assert candidate('lets go for swimming') == 'go for'\n    assert candidate('there\
+  \ is no place available here') == 'there is no place'\n    assert candidate('Hi\
+  \ I am Hussein') == 'Hi am Hussein'\n    assert candidate('go for it') == 'go for\
+  \ it'\n    assert candidate('here') == ''\n    assert candidate('here is') == 'is'\n\
+  \ndef test_check():\n    check(words_in_sentence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

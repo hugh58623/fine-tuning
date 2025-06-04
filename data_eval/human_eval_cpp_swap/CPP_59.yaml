@@ -1,0 +1,15 @@
+"name": "CPP_59"
+"language": "cpp"
+"prompt": "/*\nReturn the largest prime factor of n. Assume n > 1 and is not a prime.\n\
+  >>> largest_prime_factor(13195)\n29\n>>> largest_prime_factor(2048)\n2\n*/\n#include<stdio.h>\n\
+  using namespace std;\nint largest_prime_factor(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (largest_prime_factor(15)\
+  \ == 5);\n    assert (largest_prime_factor(27) == 3);\n    assert (largest_prime_factor(63)\
+  \ == 7);\n    assert (largest_prime_factor(330) == 11);\n    assert (largest_prime_factor(13195)\
+  \ == 29);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

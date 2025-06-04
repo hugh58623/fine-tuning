@@ -1,0 +1,17 @@
+name: mbpp_794
+language: py
+prompt: "\n\ndef text_starta_endb(text):\n        \"\"\"\n        Write a function\
+  \ that matches a string that has an 'a' followed by anything, ending in 'b'.\n \
+  \       >>> text_starta_endb(\"aabbbb\")\n        ('Found a match!')\n        >>>\
+  \ text_starta_endb(\"aabAbbbc\")\n        ('Not matched!')\n        >>> text_starta_endb(\"\
+  accddbbjjj\")\n        ('Not matched!')\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"aabbbb\"\
+  )==('Found a match!')\n    assert candidate(\"aabAbbbc\")==('Not matched!')\n  \
+  \  assert candidate(\"accddbbjjj\")==('Not matched!')\n\n\n\ndef test_check():\n\
+  \    check(text_starta_endb)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+"name": "CPP_27"
+"language": "cpp"
+"prompt": "/*\nFor a given string, flip lowercase characters to uppeecase end uppercase\
+  \ to lowercase.\n>>> flip_case('Hello')\n'hELLO'\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nstring filp_case(string str){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (filp_case(\"\
+  \") == \"\");\n    assert (filp_case(\"Hello!\") == \"hELLO!\");\n    assert (filp_case(\"\
+  These violent delights have violent ends\") == \"tHESE VIOLENT DELIGHTS HAVE VIOLENT\
+  \ ENDS\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

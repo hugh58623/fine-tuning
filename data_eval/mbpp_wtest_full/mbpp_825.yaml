@@ -1,0 +1,17 @@
+name: mbpp_825
+language: py
+prompt: "\n\ndef access_elements(nums, list_index):\n    \"\"\"\n    Write a python\
+  \ function to access multiple elements of specified index from a given list.\n \
+  \   >>> access_elements([2,3,8,4,7,9],[0,3,5])\n    [2, 4, 9]\n    >>> access_elements([1,\
+  \ 2, 3, 4, 5],[1,2])\n    [2,3]\n    >>> access_elements([1,0,2,3],[0,1])\n    [1,0]\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2,3,8,4,7,9],[0,3,5])\
+  \ == [2, 4, 9]\n    assert candidate([1, 2, 3, 4, 5],[1,2]) == [2,3]\n    assert\
+  \ candidate([1,0,2,3],[0,1]) == [1,0]\n\n\n\ndef test_check():\n    check(access_elements)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

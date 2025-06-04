@@ -1,0 +1,24 @@
+"name": "Java_71"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GivEn thE lengThs Of the Three Sides of a TriAngle. retURn ThE area of\ntHE trIangle\
+  \ rounded TO 2 DeciMal points iF the three sidEs forM a vALiD tRIaNgle.\nOTherwisE\
+  \ return -1\nthREE siDeS MAke a VaLId TrianGle WheN The Sum of Any TwO sIDES is\
+  \ Greater\nthAN THe third sidE.\nEXAmple:\ntrIanglE_arEa(3, 4, 5) == 6.00\ntriANgLe_aREa(1,\
+  \ 2, 10) == -1\n\"\"\"\n*/*/\n    public double triangleArea(double a, double b,\
+  \ double c) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.triangleArea(3, 4, 5) == 6.00,\n                s.triangleArea(1,\
+  \ 2, 10) == -1,\n                s.triangleArea(4, 8, 5) == 8.18,\n            \
+  \    s.triangleArea(2, 2, 2) == 1.73,\n                s.triangleArea(1, 2, 3) ==\
+  \ -1,\n                s.triangleArea(10, 5, 7) == 16.25,\n                s.triangleArea(2,\
+  \ 6, 3) == -1,\n                s.triangleArea(1, 1, 1) == 0.43,\n             \
+  \   s.triangleArea(2, 2, 10) == -1\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

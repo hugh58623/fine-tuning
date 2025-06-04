@@ -1,0 +1,19 @@
+name: mbpp_12
+language: py
+prompt: "\n\ndef sort_matrix(M):\n    \"\"\"\n    Write a function to sort a given\
+  \ matrix in ascending order according to the sum of its rows.\n    >>> sort_matrix([[1,\
+  \ 2, 3], [2, 4, 5], [1, 1, 1]])\n    [[1, 1, 1], [1, 2, 3], [2, 4, 5]]\n    >>>\
+  \ sort_matrix([[1, 2, 3], [-2, 4, -5], [1, -1, 1]])\n    [[-2, 4, -5], [1, -1, 1],\
+  \ [1, 2, 3]]\n    >>> sort_matrix([[5,8,9],[6,4,3],[2,1,4]])\n    [[2, 1, 4], [6,\
+  \ 4, 3], [5, 8, 9]]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 3], [2, 4, 5], [1, 1, 1]])==[[1, 1, 1], [1, 2, 3], [2, 4, 5]]\n    assert candidate([[1,\
+  \ 2, 3], [-2, 4, -5], [1, -1, 1]])==[[-2, 4, -5], [1, -1, 1], [1, 2, 3]]\n    assert\
+  \ candidate([[5,8,9],[6,4,3],[2,1,4]])==[[2, 1, 4], [6, 4, 3], [5, 8, 9]]\n\n\n\n\
+  def test_check():\n    check(sort_matrix)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

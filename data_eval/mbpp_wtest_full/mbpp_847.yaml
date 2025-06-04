@@ -1,0 +1,16 @@
+name: mbpp_847
+language: py
+prompt: "\n\ndef lcopy(xs):\n  \"\"\"\n  Write a python function to copy a list from\
+  \ a singleton tuple.\n  >>> lcopy([1, 2, 3])\n  [1, 2, 3]\n  >>> lcopy([4, 8, 2,\
+  \ 10, 15, 18])\n  [4, 8, 2, 10, 15, 18]\n  >>> lcopy([4, 5, 6])\n  [4, 5, 6]\n \
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3]) == [1, 2, 3]\n    assert candidate([4, 8, 2, 10, 15, 18]) == [4, 8, 2, 10,\
+  \ 15, 18]\n    assert candidate([4, 5, 6]) == [4, 5, 6]\n\n\n\n\ndef test_check():\n\
+  \    check(lcopy)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

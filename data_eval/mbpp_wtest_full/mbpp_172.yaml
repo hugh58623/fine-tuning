@@ -1,0 +1,17 @@
+name: mbpp_172
+language: py
+prompt: "\n\ndef count_occurance(s):\n  \"\"\"\n  Write a function to find the occurence\
+  \ of characters 'std' in the given string 1. list item 1. list item 1. list item\
+  \ 2. list item 2. list item 2. list item\n  >>> count_occurance(\"letstdlenstdporstd\"\
+  )\n  3\n  >>> count_occurance(\"truststdsolensporsd\")\n  1\n  >>> count_occurance(\"\
+  makestdsostdworthit\")\n  2\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"letstdlenstdporstd\"\
+  ) == 3\n    assert candidate(\"truststdsolensporsd\") == 1\n    assert candidate(\"\
+  makestdsostdworthit\") == 2\n\n\n\ndef test_check():\n    check(count_occurance)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

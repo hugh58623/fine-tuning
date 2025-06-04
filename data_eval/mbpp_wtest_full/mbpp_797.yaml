@@ -1,0 +1,15 @@
+name: mbpp_797
+language: py
+prompt: "\n\ndef sum_in_Range(l,r):\n    \"\"\"\n    Write a python function to find\
+  \ the sum of all odd natural numbers within the range l and r.\n    >>> sum_in_Range(2,5)\n\
+  \    8\n    >>> sum_in_Range(5,7)\n    12\n    >>> sum_in_Range(7,13)\n    40\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,5) ==\
+  \ 8\n    assert candidate(5,7) == 12\n    assert candidate(7,13) == 40\n\n\n\ndef\
+  \ test_check():\n    check(sum_in_Range)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

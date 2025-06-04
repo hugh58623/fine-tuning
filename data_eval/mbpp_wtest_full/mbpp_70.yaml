@@ -1,0 +1,18 @@
+name: mbpp_70
+language: py
+prompt: "\n\ndef get_equal(Input, k):\n  \"\"\"\n  Write a function to find whether\
+  \ all the given tuples have equal length or not.\n  >>> get_equal([(11, 22, 33),\
+  \ (44, 55, 66)], 3)\n  'All tuples have same length'\n  >>> get_equal([(1, 2, 3),\
+  \ (4, 5, 6, 7)], 3)\n  'All tuples do not have same length'\n  >>> get_equal([(1,\
+  \ 2), (3, 4)], 2)\n  'All tuples have same length'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(11, 22,\
+  \ 33), (44, 55, 66)], 3) == 'All tuples have same length'\n    assert candidate([(1,\
+  \ 2, 3), (4, 5, 6, 7)], 3) == 'All tuples do not have same length'\n    assert candidate([(1,\
+  \ 2), (3, 4)], 2) == 'All tuples have same length'\n\n\n\ndef test_check():\n  \
+  \  check(get_equal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

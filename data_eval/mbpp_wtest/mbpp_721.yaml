@@ -1,0 +1,17 @@
+name: mbpp_721
+language: py
+prompt: "\n\ndef maxAverageOfPath(cost, N):\n\t\"\"\"\n\tWrite a function to find\
+  \ a path with the maximum average over all existing paths for the given square matrix\
+  \ of size n*n.\n\t>>> maxAverageOfPath([[1, 2, 3], [6, 5, 4], [7, 3, 9]], 3)\n\t\
+  5.2\n\t>>> maxAverageOfPath([[2, 3, 4], [7, 6, 5], [8, 4, 10]], 3)\n\t6.2\n\t>>>\
+  \ maxAverageOfPath([[3, 4, 5], [8, 7, 6], [9, 5, 11]], 3)\n\t7.2\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 3], [6, 5, 4], [7, 3, 9]], 3) == 5.2\n    assert candidate([[2, 3, 4], [7, 6,\
+  \ 5], [8, 4, 10]], 3) == 6.2\n    assert candidate([[3, 4, 5], [8, 7, 6], [9, 5,\
+  \ 11]], 3) == 7.2 \n\n\n\ndef test_check():\n    check(maxAverageOfPath)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

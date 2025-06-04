@@ -1,0 +1,21 @@
+name: mbpp_823
+language: py
+prompt: "\n\ndef check_substring(string, sample) :\n  \"\"\"\n  Write a function to\
+  \ check if the given string starts with a substring using regex.\n  >>> check_substring(\"\
+  dreams for dreams makes life fun\", \"makes\")\n  'string doesnt start with the\
+  \ given substring'\n  >>> check_substring(\"Hi there how are you Hi alex\", \"Hi\"\
+  )\n  'string starts with the given substring'\n  >>> check_substring(\"Its been\
+  \ a long day\", \"been\")\n  'string doesnt start with the given substring'\n  \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"dreams\
+  \ for dreams makes life fun\", \"makes\") == 'string doesnt start with the given\
+  \ substring'\n    assert candidate(\"Hi there how are you Hi alex\", \"Hi\") ==\
+  \ 'string starts with the given substring'\n    assert candidate(\"Its been a long\
+  \ day\", \"been\") == 'string doesnt start with the given substring'\n\n\n\ndef\
+  \ test_check():\n    check(check_substring)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

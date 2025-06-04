@@ -1,0 +1,25 @@
+"name": "Java_108"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Writes a functions count_nums which takes an array of integers and returning the\
+  \ number of elements which had a sum of digit > 0. If a number is negative, then\
+  \ its first sign digit will is negative: e.g. -123 had sign digit -1, 2, and 3.\n\
+  \n>>>>>> countNums(Arrays.asList()) == 0\n    >>> countNums(Arrays.asList(-1, 11,\
+  \ -11)) == 1\n    >>> countNums(Arrays.asList(1, 1, 2)) == 3\n     */\n    public\
+  \ int countNums(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.countNums(List.of()) == 0,\n                s.countNums(Arrays.asList(-1,\
+  \ -2, 0)) == 0,\n                s.countNums(Arrays.asList(1, 1, 2, -2, 3, 4, 5))\
+  \ == 6,\n                s.countNums(Arrays.asList(1, 6, 9, -6, 0, 1, 5)) == 5,\n\
+  \                s.countNums(Arrays.asList(1, 100, 98, -7, 1, -1)) == 4,\n     \
+  \           s.countNums(Arrays.asList(12, 23, 34, -45, -56, 0)) == 5,\n        \
+  \        s.countNums(Arrays.asList(-0, (int) Math.pow(1, 0))) == 1,\n          \
+  \      s.countNums(List.of(1)) == 1\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

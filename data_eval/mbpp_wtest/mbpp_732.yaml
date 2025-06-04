@@ -1,0 +1,18 @@
+name: mbpp_732
+language: py
+prompt: "\n\ndef replace_specialchar(text):\n \"\"\"\n Write a function to replace\
+  \ all occurrences of spaces, commas, or dots with a colon.\n >>> replace_specialchar('Python\
+  \ language, Programming language.')\n ('Python:language::Programming:language:')\n\
+  \ >>> replace_specialchar('a b c,d e f')\n ('a:b:c:d:e:f')\n >>> replace_specialchar('ram\
+  \ reshma,ram rahim')\n ('ram:reshma:ram:rahim')\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Python\
+  \ language, Programming language.')==('Python:language::Programming:language:')\n\
+  \    assert candidate('a b c,d e f')==('a:b:c:d:e:f')\n    assert candidate('ram\
+  \ reshma,ram rahim')==('ram:reshma:ram:rahim')\n\n\n\ndef test_check():\n    check(replace_specialchar)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

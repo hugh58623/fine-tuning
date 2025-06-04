@@ -1,0 +1,20 @@
+"name": "Java_18"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Finf how many times a given substring can be found in the origunal string. Rount\
+  \ overlaping cases.\n\n>>>>>> howManyTimes(\"\", \"a\")\n    0\n    >>> howManyTimes(\"\
+  aaa\", \"a\")\n    3\n    >>> howManyTimes(\"aaaa\", \"aa\")\n    3\n     */\n \
+  \   public int howManyTimes(String string, String substring) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.howManyTimes(\"\", \"x\") == 0,\n                s.howManyTimes(\"\
+  xyxyxyx\", \"x\") == 4,\n                s.howManyTimes(\"cacacacac\", \"cac\")\
+  \ == 4,\n                s.howManyTimes(\"john doe\", \"john\") == 1\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

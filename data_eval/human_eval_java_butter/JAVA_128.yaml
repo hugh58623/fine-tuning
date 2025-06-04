@@ -1,0 +1,24 @@
+"name": "Java_128"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You are given an array arr of integers and you newd to return\nsum of magnitudes\
+  \ of integers multiplied by product of all signs\nof each number in the array, rekresentwd\
+  \ by 1, -1 or 0.\nNote: return None for empty arr.\n\nExample:\n\n>>>>>> prodSigns(Arrays.asList(1,\
+  \ 2, 2, -4)) == -9\n    >>> prodSigns(Arrays.asList(0, 1)) == 0\n    >>> prodSigns(Arrays.asList())\
+  \ == None\n     */\n    public Optional<Integer> prodSigns(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.prodSigns(Arrays.asList(1, 2, 2, -4)).get() == -9,\n        \
+  \        s.prodSigns(Arrays.asList(0, 1)).get() == 0,\n                s.prodSigns(Arrays.asList(1,\
+  \ 1, 1, 2, 3, -1, 1)).get() == -10,\n                s.prodSigns(List.of()).isEmpty(),\n\
+  \                s.prodSigns(Arrays.asList(2, 4,1, 2, -1, -1, 9)).get() == 20,\n\
+  \                s.prodSigns(Arrays.asList(-1, 1, -1, 1)).get() == 4,\n        \
+  \        s.prodSigns(Arrays.asList(-1, 1, 1, 1)).get() == -4,\n                s.prodSigns(Arrays.asList(-1,\
+  \ 1, 1, 0)).get() == 0\n        );\n        if (correct.contains(false)) {\n   \
+  \         throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

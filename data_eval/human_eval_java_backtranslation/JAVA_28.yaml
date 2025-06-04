@@ -1,0 +1,20 @@
+"name": "Java_28"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Merge List of Strings into a Single String\n\n>>>>>> concatenate(List.of())\n  \
+  \  \"\"\n    >>> concatenate(Arrays.asList(\"a\", \"b\", \"c\"))\n    \"abc\"\n\
+  \     */\n    public String concatenate(List<String> strings) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.concatenate(new ArrayList<>(List.of())), \"\"\
+  ),\n                Objects.equals(s.concatenate(new ArrayList<>(Arrays.asList(\"\
+  x\", \"y\", \"z\"))), \"xyz\"),\n                Objects.equals(s.concatenate(new\
+  \ ArrayList<>(Arrays.asList(\"x\", \"y\", \"z\", \"w\", \"k\"))), \"xyzwk\")\n \
+  \       );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

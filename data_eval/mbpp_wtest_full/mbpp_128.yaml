@@ -1,0 +1,18 @@
+name: mbpp_128
+language: py
+prompt: "\n\ndef long_words(n, str):\n    \"\"\"\n    Write a function to shortlist\
+  \ words that are longer than n from a given list of words.\n    >>> long_words(3,\"\
+  python is a programming language\")\n    ['python','programming','language']\n \
+  \   >>> long_words(2,\"writing a program\")\n    ['writing','program']\n    >>>\
+  \ long_words(5,\"sorting list\")\n    ['sorting']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3,\"python\
+  \ is a programming language\")==['python','programming','language']\n    assert\
+  \ candidate(2,\"writing a program\")==['writing','program']\n    assert candidate(5,\"\
+  sorting list\")==['sorting']\n\n\n\ndef test_check():\n    check(long_words)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

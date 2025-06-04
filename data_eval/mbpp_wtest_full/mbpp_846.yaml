@@ -1,0 +1,17 @@
+name: mbpp_846
+language: py
+prompt: "\n\ndef find_platform(arr, dep, n):\n    \"\"\"\n    Write a function to\
+  \ find the minimum number of platforms required for a railway/bus station.\n   \
+  \ >>> find_platform([900, 940, 950, 1100, 1500, 1800],[910, 1200, 1120, 1130, 1900,\
+  \ 2000],6)\n    3\n    >>> find_platform([100,200,300,400],[700,800,900,1000],4)\n\
+  \    4\n    >>> find_platform([5,6,7,8],[4,3,2,1],4)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([900, 940,\
+  \ 950, 1100, 1500, 1800],[910, 1200, 1120, 1130, 1900, 2000],6)==3\n    assert candidate([100,200,300,400],[700,800,900,1000],4)==4\n\
+  \    assert candidate([5,6,7,8],[4,3,2,1],4)==1\n\n\n\ndef test_check():\n    check(find_platform)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

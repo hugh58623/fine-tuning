@@ -1,0 +1,20 @@
+name: mbpp_196
+language: py
+prompt: "\n\ndef remove_tuples(test_list, K):\n  \"\"\"\n  Write a function to remove\
+  \ all the tuples with length k.\n  >>> remove_tuples([(4, 5), (4, ), (8, 6, 7),\
+  \ (1, ), (3, 4, 6, 7)] , 1)\n  [(4, 5), (8, 6, 7), (3, 4, 6, 7)]\n  >>> remove_tuples([(4,\
+  \ 5), (4,5), (6, 7), (1, 2, 3), (3, 4, 6, 7)] ,2)\n  [(1, 2, 3), (3, 4, 6, 7)]\n\
+  \  >>> remove_tuples([(1, 4, 4), (4, 3), (8, 6, 7), (1, ), (3, 6, 7)] , 3)\n  [(4,\
+  \ 3), (1,)]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(4, 5),\
+  \ (4, ), (8, 6, 7), (1, ), (3, 4, 6, 7)] , 1) == [(4, 5), (8, 6, 7), (3, 4, 6, 7)]\n\
+  \    assert candidate([(4, 5), (4,5), (6, 7), (1, 2, 3), (3, 4, 6, 7)] ,2) == [(1,\
+  \ 2, 3), (3, 4, 6, 7)]\n    assert candidate([(1, 4, 4), (4, 3), (8, 6, 7), (1,\
+  \ ), (3, 6, 7)] , 3) == [(4, 3), (1,)]\n\n\n\ndef test_check():\n    check(remove_tuples)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

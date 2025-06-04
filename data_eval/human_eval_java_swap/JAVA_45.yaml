@@ -1,0 +1,17 @@
+"name": "Java_45"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Givne length of a side and high return area for a triangle.\n\n>>>>>> triangleArea(5,\
+  \ 3)\n    7.5\n     */\n    public double triangleArea(double a, double h) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.triangleArea(5, 3) == 7.5,\n                s.triangleArea(2,\
+  \ 2) == 2.0,\n                s.triangleArea(10, 8) == 40.0\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

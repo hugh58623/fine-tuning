@@ -1,0 +1,30 @@
+"name": "Java_112"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Task\nwe arE giveN twO striNgs s anD c, you havE to DeletEd aLL tHe CharACteRs in\
+  \ s that are equaL TO any Character in c\ntHen check if thE resuLt STrInG Is PalinDrome.\n\
+  A sTRiNG Is cAlLED paLiNDrOme if It rEadS The Same bAckWaRd AS FOrwArd.\nYou shoULD\
+  \ return A tuple containinG tHE result StrinG anD True/False for tHE cHecK.\nexaMpLe\n\
+  FOR s = \"abcDe\", c = \"aE\", tHE Result Should be ('bCd',fALse)\nfoR s = \"AbCdeF\"\
+  , c = \"b\"  THE rEsUlT shouLd be ('Acdef',FalSE)\nFOR s = \"abcdedcba\", c = \"\
+  Ab\", thE resulT sHOuLD Be ('cDedC',True)\n\"\"\"\n*/*/\n    public List<Object>\
+  \ reverseDelete(String s, String c) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.reverseDelete(\"abcde\", \"ae\" ).equals(Arrays.asList(\"bcd\"\
+  , false)),\n                s.reverseDelete(\"abcdef\", \"b\" ).equals(Arrays.asList(\"\
+  acdef\", false)),\n                s.reverseDelete(\"abcdedcba\", \"ab\" ).equals(Arrays.asList(\"\
+  cdedc\", true)),\n                s.reverseDelete(\"dwik\", \"w\" ).equals(Arrays.asList(\"\
+  dik\", false)),\n                s.reverseDelete(\"a\", \"a\" ).equals(Arrays.asList(\"\
+  \", true)),\n                s.reverseDelete(\"abcdedcba\", \"\" ).equals(Arrays.asList(\"\
+  abcdedcba\", true)),\n                s.reverseDelete(\"abcdedcba\", \"v\" ).equals(Arrays.asList(\"\
+  abcdedcba\", true)),\n                s.reverseDelete(\"vabba\", \"v\" ).equals(Arrays.asList(\"\
+  abba\", true)),\n                s.reverseDelete(\"mamma\", \"mia\" ).equals(Arrays.asList(\"\
+  \", true))\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

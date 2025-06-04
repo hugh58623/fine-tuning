@@ -1,0 +1,15 @@
+name: mbpp_375
+language: py
+prompt: "\n\ndef round_num(n,m):\n    \"\"\"\n    Write a function to round the given\
+  \ number to the nearest multiple of a specific number.\n    >>> round_num(4722,10)\n\
+  \    4720\n    >>> round_num(1111,5)\n    1110\n    >>> round_num(219,2)\n    218\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4722,10)==4720\n\
+  \    assert candidate(1111,5)==1110\n    assert candidate(219,2)==218\n\n\n\ndef\
+  \ test_check():\n    check(round_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

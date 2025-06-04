@@ -1,0 +1,14 @@
+name: mbpp_913
+language: py
+prompt: "\n\ndef end_num(string):\n    \"\"\"\n    Write a function to check for a\
+  \ number at the end of a string.\n    >>> end_num('abcdef')\n    False\n    >>>\
+  \ end_num('abcdef7')\n    True\n    >>> end_num('abc')\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('abcdef')==False\n\
+  \    assert candidate('abcdef7')==True\n    assert candidate('abc')==False\n\n\n\
+  \ndef test_check():\n    check(end_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

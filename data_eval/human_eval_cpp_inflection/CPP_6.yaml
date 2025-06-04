@@ -1,0 +1,21 @@
+"name": "CPP_6"
+"language": "cpp"
+"prompt": "/*\nInput to this functions is a string represents multiple group for nested\
+  \ parentheses separates by space. For each of the group, output the deeper level\
+  \ of nesting of parentheses. E.g. (()()) had maximum two level of nesting while\
+  \ ((())) had three.\n\n>>> parse_nested_parens('(()()) ((())) () ((())()())')\n\
+  [2, 3, 1, 3]\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace\
+  \ std;\nvector<int> parse_nested_parens(string paren_string){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(parse_nested_parens(\"(()()) ((())) () ((())()())\"),{2, 3,\
+  \ 1, 3}));\n     assert (issame(parse_nested_parens(\"() (()) ((())) (((())))\"\
+  ) , {1, 2, 3, 4}));\n    assert (issame(parse_nested_parens(\"(()(())((())))\")\
+  \ ,{4}));\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

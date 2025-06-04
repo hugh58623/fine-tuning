@@ -1,0 +1,15 @@
+name: mbpp_201
+language: py
+prompt: "\n\ndef chkList(lst):\n    \"\"\"\n    Write a python function to check whether\
+  \ the elements in a list are same or not.\n    >>> chkList(['one','one','one'])\n\
+  \    True\n    >>> chkList(['one','Two','Three'])\n    False\n    >>> chkList(['bigdata','python','Django'])\n\
+  \    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['one','one','one'])\
+  \ == True\n    assert candidate(['one','Two','Three']) == False\n    assert candidate(['bigdata','python','Django'])\
+  \ == False\n\n\n\ndef test_check():\n    check(chkList)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

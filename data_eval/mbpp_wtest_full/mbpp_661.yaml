@@ -1,0 +1,17 @@
+name: mbpp_661
+language: py
+prompt: "\n\ndef max_sum_of_three_consecutive(arr, n):\n\t\"\"\"\n\tWrite a function\
+  \ to find the maximum sum that can be formed which has no three consecutive elements\
+  \ present.\n\t>>> max_sum_of_three_consecutive([100, 1000, 100, 1000, 1], 5)\n\t\
+  2101\n\t>>> max_sum_of_three_consecutive([3000, 2000, 1000, 3, 10], 5)\n\t5013\n\
+  \t>>> max_sum_of_three_consecutive([1, 2, 3, 4, 5, 6, 7, 8], 8)\n\t27\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([100, 1000,\
+  \ 100, 1000, 1], 5) == 2101\n    assert candidate([3000, 2000, 1000, 3, 10], 5)\
+  \ == 5013\n    assert candidate([1, 2, 3, 4, 5, 6, 7, 8], 8) == 27\n\n\n\ndef test_check():\n\
+  \    check(max_sum_of_three_consecutive)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

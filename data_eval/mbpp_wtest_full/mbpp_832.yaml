@@ -1,0 +1,15 @@
+name: mbpp_832
+language: py
+prompt: "\n\ndef extract_max(input):\n\t\"\"\"\n\tWrite a function to extract the\
+  \ maximum numeric value from a string by using regex.\n\t>>> extract_max('100klh564abc365bg')\n\
+  \t564\n\t>>> extract_max('hello300how546mer231')\n\t546\n\t>>> extract_max('its233beenalong343journey234')\n\
+  \t343\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('100klh564abc365bg')\
+  \ == 564\n    assert candidate('hello300how546mer231') == 546\n    assert candidate('its233beenalong343journey234')\
+  \ == 343\n\n\n\ndef test_check():\n    check(extract_max)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

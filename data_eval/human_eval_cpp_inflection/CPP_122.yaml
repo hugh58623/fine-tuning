@@ -1,0 +1,17 @@
+"name": "CPP_122"
+"language": "cpp"
+"prompt": "/*\nGives a non-emptiest array of integers arr and an integers k, return\n\
+  the sum of the elements with at more two digit from the first k elements of arr.\n\
+  \nExamples: Input: arr = [111,21,3,4000,5,6,7,8,9], k = 4 Output: 24 # sum of 21\
+  \ + 3 Constraint: 1. 1 <= len(arr) <= 100 2. 1 <= k <= len(arr)\n*/\n#include<stdio.h>\n\
+  #include<vector>\nusing namespace std;\nint add_elements(vector<int> arr,int k){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (add_elements({1,-2,-3,41,57,76,87,88,99},\
+  \ 3) == -4);\n    assert (add_elements({111,121,3,4000,5,6}, 2) == 0);\n    assert\
+  \ (add_elements({11,21,3,90,5,6,7,8,9}, 4) == 125);\n    assert (add_elements({111,21,3,4000,5,6,7,8,9},\
+  \ 4) == 24);\n    assert (add_elements({1}, 1) == 1);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

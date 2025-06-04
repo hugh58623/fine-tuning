@@ -1,0 +1,16 @@
+name: mbpp_929
+language: py
+prompt: "\n\ndef count_tuplex(tuplex,value):\n  \"\"\"\n  Write a function to count\
+  \ repeated items of a tuple.\n  >>> count_tuplex((2, 4, 5, 6, 2, 3, 4, 4, 7),4)\n\
+  \  3\n  >>> count_tuplex((2, 4, 5, 6, 2, 3, 4, 4, 7),2)\n  2\n  >>> count_tuplex((2,\
+  \ 4, 7, 7, 7, 3, 4, 4, 7),7)\n  4\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((2, 4,\
+  \ 5, 6, 2, 3, 4, 4, 7),4)==3\n    assert candidate((2, 4, 5, 6, 2, 3, 4, 4, 7),2)==2\n\
+  \    assert candidate((2, 4, 7, 7, 7, 3, 4, 4, 7),7)==4\n\n\n\ndef test_check():\n\
+  \    check(count_tuplex)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

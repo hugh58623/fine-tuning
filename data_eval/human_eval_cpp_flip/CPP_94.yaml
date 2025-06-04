@@ -1,0 +1,23 @@
+"name": "CPP_94"
+"language": "cpp"
+"prompt": "/*\nYou aRe giVen a list oF inTegerS.\nYou nEed to fiNd tHe larGesT PrImE\
+  \ valUE anD return the sum of its digiTS.\n\nexamPles:\nFor lst = [0,3,2,1,3,5,7,4,5,5,5,2,181,32,4,32,3,2,32,324,4,3]\
+  \ the Output should Be 10\nFor lst = [1,0,1,8,2,4597,2,1,3,40,1,2,1,2,4,2,5,1] ThE\
+  \ OuTpUT sHould Be 25\nFor lst = [1,3,1,32,5107,34,83278,109,163,23,2323,32,30,1,9,3]\
+  \ thE OuTPUt sHoULD be 13\nfoR lst = [0,724,32,71,99,32,6,0,5,91,83,0,5,6] ThE outpUt\
+  \ sHouLD be 11\nfor lst = [0,81,12,3,1,21] thE ouTpUt SHOUld Be 3\nFor lst = [0,8,1,2,1,7]\
+  \ the oUTPUt should be 7\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n\
+  using namespace std;\nint skjkasdkd(vector<int> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (skjkasdkd({0,3,2,1,3,5,7,4,5,5,5,2,181,32,4,32,3,2,32,324,4,3})\
+  \ == 10);\n    assert (skjkasdkd({1,0,1,8,2,4597,2,1,3,40,1,2,1,2,4,2,5,1}) == 25);\n\
+  \    assert (skjkasdkd({1,3,1,32,5107,34,83278,109,163,23,2323,32,30,1,9,3}) ==\
+  \ 13);\n    assert (skjkasdkd({0,724,32,71,99,32,6,0,5,91,83,0,5,6}) == 11);\n \
+  \   assert (skjkasdkd({0,81,12,3,1,21}) == 3);\n    assert (skjkasdkd({0,8,1,2,1,7})\
+  \ == 7);\n    assert (skjkasdkd({8191}) == 19);\n    assert (skjkasdkd({8191, 123456,\
+  \ 127, 7}) == 19);\n    assert (skjkasdkd({127, 97, 8192}) == 10);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

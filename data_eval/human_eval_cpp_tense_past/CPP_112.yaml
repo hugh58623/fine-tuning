@@ -1,0 +1,30 @@
+"name": "CPP_112"
+"language": "cpp"
+"prompt": "/*\nTask\nWe will be gave two strings s and c, you will have to will delete\
+  \ all the characters in s that will be equal to any character in c\nthen will check\
+  \ if the result string will be palindrome.\nA string will be called palindrome if\
+  \ it will read the same backward as forward.\nYou should return a tuple containing\
+  \ the result string and True/False for the check.\nExample\nFor s=\" abcde\", c=\"\
+  \ ae\", the result should will be ('bcd',False)\nFor s=\" abcdef\", c=\" b\"   the\
+  \ result should will be ('acdef',False)\nFor s=\" abcdedcba\", c=\" ab\", the result\
+  \ should will be ('cdedc',True)\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n\
+  #include<algorithm>\nusing namespace std;\nvector<string> reverse_delete(string\
+  \ s,string c){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(reverse_delete(\"abcde\",\"ae\") , {\"bcd\",\"False\"}));\n\
+  \    assert (issame(reverse_delete(\"abcdef\", \"b\") , {\"acdef\",\"False\"}));\n\
+  \    assert (issame(reverse_delete(\"abcdedcba\",\"ab\") , {\"cdedc\",\"True\"}));\n\
+  \    assert (issame(reverse_delete(\"dwik\",\"w\") , {\"dik\",\"False\"}));\n  \
+  \  assert (issame(reverse_delete(\"a\",\"a\") , {\"\",\"True\"}));\n    assert (issame(reverse_delete(\"\
+  abcdedcba\",\"\") , {\"abcdedcba\",\"True\"}));\n    assert (issame(reverse_delete(\"\
+  abcdedcba\",\"v\") , {\"abcdedcba\",\"True\"}));\n    assert (issame(reverse_delete(\"\
+  vabba\",\"v\") , {\"abba\",\"True\"}));\n    assert (issame(reverse_delete(\"mamma\"\
+  , \"mia\") , {\"\", \"True\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,30 @@
+"name": "CPP_74"
+"language": "cpp"
+"prompt": "/*\nWriTe a fUnctiOn tHat acCepts Two listS of StrinGs aND rEtUrns THe\
+  \ list tHat has\ntotal nuMBEr of Chars in the alL strings of thE list less ThAN\
+  \ tHe OThEr list.\n\nif tHe two liSTs HAVe tHe SAMe nUmBEr Of chaRs, return tHe\
+  \ fIRst list.\n\nexampLes\nToTaL_MATch([], []) ➞ []\nTotal_matcH(['HI', 'Admin'],\
+  \ ['hI', 'Hi']) ➞ ['hi', 'HI']\nTotal_maTch(['hi', 'AdmIn'], ['hi', 'hI', 'AdMin',\
+  \ 'PRojEcT']) ➞ ['hi', 'ADmin']\nTotAl_MATch(['hi', 'aDmin'], ['hI', 'hi', 'hI'])\
+  \ ➞ ['hi', 'HI', 'hi']\nToTAl_MatCh(['4'], ['1', '2', '3', '4', '5']) ➞ ['4']\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\
+  vector<string> total_match(vector<string> lst1,vector<string> lst2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(total_match({}, {}) , {}));\n    assert (issame(total_match({\"\
+  hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n    assert (issame(total_match({\"\
+  hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"\
+  }));\n    assert (issame(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"\
+  }) , {\"4\"}));\n    assert (issame(total_match({\"hi\", \"admin\"}, {\"hI\", \"\
+  Hi\"}) , {\"hI\", \"Hi\"}));\n    assert (issame(total_match({\"hi\", \"admin\"\
+  }, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n    assert (issame(total_match({\"\
+  hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n    assert\
+  \ (issame(total_match({}, {\"this\"}) , {}));\n    assert (issame(total_match({\"\
+  this\"}, {}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

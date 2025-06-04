@@ -1,0 +1,15 @@
+name: mbpp_950
+language: py
+prompt: "\n\ndef chinese_zodiac(year):\n \"\"\"\n Write a function to display sign\
+  \ of the chinese zodiac for given year.\n >>> chinese_zodiac(1997)\n ('Ox')\n >>>\
+  \ chinese_zodiac(1998)\n ('Tiger')\n >>> chinese_zodiac(1994)\n ('Dog')\n \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1997)==('Ox')\n\
+  \    assert candidate(1998)==('Tiger')\n    assert candidate(1994)==('Dog')\n\n\n\
+  \ndef test_check():\n    check(chinese_zodiac)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

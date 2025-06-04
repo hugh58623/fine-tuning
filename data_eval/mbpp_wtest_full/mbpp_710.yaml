@@ -1,0 +1,16 @@
+name: mbpp_710
+language: py
+prompt: "\n\ndef front_and_rear(test_tup):\n  \"\"\"\n  Write a function to access\
+  \ the initial and last data of the given tuple record.\n  >>> front_and_rear((10,\
+  \ 4, 5, 6, 7))\n  (10, 7)\n  >>> front_and_rear((1, 2, 3, 4, 5))\n  (1, 5)\n  >>>\
+  \ front_and_rear((6, 7, 8, 9, 10))\n  (6, 10)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 5, 6, 7)) == (10, 7)\n    assert candidate((1, 2, 3, 4, 5)) == (1, 5)\n    assert\
+  \ candidate((6, 7, 8, 9, 10)) == (6, 10)\n\n\n\ndef test_check():\n    check(front_and_rear)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

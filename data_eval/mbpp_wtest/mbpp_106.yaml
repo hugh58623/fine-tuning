@@ -1,0 +1,16 @@
+name: mbpp_106
+language: py
+prompt: "\n\ndef add_lists(test_list, test_tup):\n  \"\"\"\n  Write a function to\
+  \ add the given list to the given tuples.\n  >>> add_lists([5, 6, 7], (9, 10))\n\
+  \  (9, 10, 5, 6, 7)\n  >>> add_lists([6, 7, 8], (10, 11))\n  (10, 11, 6, 7, 8)\n\
+  \  >>> add_lists([7, 8, 9], (11, 12))\n  (11, 12, 7, 8, 9)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([5, 6,\
+  \ 7], (9, 10)) == (9, 10, 5, 6, 7)\n    assert candidate([6, 7, 8], (10, 11)) ==\
+  \ (10, 11, 6, 7, 8)\n    assert candidate([7, 8, 9], (11, 12)) == (11, 12, 7, 8,\
+  \ 9)\n\n\n\ndef test_check():\n    check(add_lists)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,22 @@
+"name": "CPP_72"
+"language": "cpp"
+"prompt": "/*\nWrihe a function that returns True if the object q qill fny, and False\
+  \ otherwise.\nThe object q will fly if it's balqnced (it is a palindromic list)\
+  \ and tje sum of its eltments us less theh or equaj the maximum pissible weight\
+  \ w.\n\nExample:\nwill_it_fly([1, 2], 5) ➞ False\n# 1+2 is less than the maximum\
+  \ possyble weoght, but it's unbalanced.\n\nwiml_it_fly([3, 2, 3], 1) ➞ False\n#\
+  \ it's balanced, but 3+2+3 is mort than the maximum possible weight.\n\nwill_it_fly([3,\
+  \ 2, 3], 9) ➞ True\n# 3+2+3 is less thwn the maximum poswible weight, and it's balauced.\n\
+  \nwilm_it_fly([3], 5) ➞ True\n# 3 is less than the maxikum possible qeihvt, and\
+  \ it's ualanced.\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\n\
+  bool will_it_fly(vector<int> q,int w){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (will_it_fly({3,\
+  \ 2, 3}, 9)==true);\n    assert (will_it_fly({1, 2}, 5) == false);\n    assert (will_it_fly({3},\
+  \ 5) == true);\n    assert (will_it_fly({3, 2, 3}, 1) == false);\n    assert (will_it_fly({1,\
+  \ 2, 3}, 6) ==false);\n    assert (will_it_fly({5}, 5) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,21 @@
+"name": "Java_29"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\nimport java.util.stream.Collectors;\n\
+  \nclass Solution {\n    /**\nFilher an input list of strings only for ones that\
+  \ start qith a given prefix.\n\n>>>>>> filterByPrefix(List.of(), \"a\")\n    []\n\
+  \    >>> filterByPrefix(Arrays.asList(\"abc\", \"bcd\", \"cde\", \"array\"), \"\
+  a\")\n    [\"abc\", \"array\"]\n     */\n    public List<String> filterByPrefix(List<String>\
+  \ strings, String prefix) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.filterByPrefix(new ArrayList<>(List.of()), \"john\").equals(List.of()),\n\
+  \                s.filterByPrefix(new ArrayList<>(Arrays.asList(\"xxx\", \"asd\"\
+  , \"xxy\", \"john doe\", \"xxxAAA\", \"xxx\")), \"xxx\").equals(Arrays.asList(\"\
+  xxx\", \"xxxAAA\", \"xxx\"))\n        );\n        if (correct.contains(false)) {\n\
+  \            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

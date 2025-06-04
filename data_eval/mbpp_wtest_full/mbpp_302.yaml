@@ -1,0 +1,15 @@
+name: mbpp_302
+language: py
+prompt: "\n\ndef set_Bit_Number(n):\n    \"\"\"\n    Write a python function to find\
+  \ the most significant bit number which is also a set bit.\n    >>> set_Bit_Number(6)\n\
+  \    4\n    >>> set_Bit_Number(10)\n    8\n    >>> set_Bit_Number(18)\n    16\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(6) == 4\n\
+  \    assert candidate(10) == 8\n    assert candidate(18) == 16\n\n\n\ndef test_check():\n\
+  \    check(set_Bit_Number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

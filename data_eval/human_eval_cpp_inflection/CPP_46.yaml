@@ -1,0 +1,17 @@
+"name": "CPP_46"
+"language": "cpp"
+"prompt": "/*\nThe Fib4 number sequences is a sequences similar to the Fibbonacci\
+  \ sequnece that's defining as following: fib4(0) -> 0 fib4(1) -> 0 fib4(2) -> 2\
+  \ fib4(3) -> 0 fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\nPlease\
+  \ writes a functions to efficiently computing the n-th elements of the fib4 number\
+  \ sequences. Do not using recursions.\n>>> fib4(5)\n4\n>>> fib4(6)\n8\n>>> fib4(7)\n\
+  14\n*/\n#include<stdio.h>\nusing namespace std;\nint fib4(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fib4(5) == 4);\n\
+  \    assert (fib4(8) == 28);\n    assert (fib4(10) == 104);\n    assert (fib4(12)\
+  \ == 386);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

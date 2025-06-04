@@ -1,0 +1,15 @@
+name: mbpp_903
+language: py
+prompt: "\n\ndef count_Unset_Bits(n) :\n    \"\"\"\n    Write a python function to\
+  \ count the total unset bits from 1 to n.\n    >>> count_Unset_Bits(2)\n    1\n\
+  \    >>> count_Unset_Bits(5)\n    4\n    >>> count_Unset_Bits(14)\n    17\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 1\n\
+  \    assert candidate(5) == 4\n    assert candidate(14) == 17\n\n\n\ndef test_check():\n\
+  \    check(count_Unset_Bits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

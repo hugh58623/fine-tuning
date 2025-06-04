@@ -1,0 +1,25 @@
+"name": "CPP_101"
+"language": "cpp"
+"prompt": "/*\nYou get a comma or space separated word sequence. Your task is to split\
+  \ the string into words and return an array of words. Example: words _ string (\"\
+  Hi, my name is John\") = = [\"Hi,\" \"my,\" \"name,\" \"is,\" \"John\"] words _\
+  \ string (\"One, two, three, four, five, six\") = = [\"One,\" \"two,\" \"three,\"\
+  \ \"four,\" \"five,\" \"six\"] \"\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n\
+  using namespace std;\nvector<string> words_string(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(words_string(\"Hi, my name is John\") , {\"Hi\", \"my\", \"\
+  name\", \"is\", \"John\"}));\n    assert (issame(words_string(\"One, two, three,\
+  \ four, five, six\") , {\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"\
+  }));\n    assert (issame(words_string(\"Hi, my name\") , {\"Hi\", \"my\", \"name\"\
+  }));\n    assert (issame(words_string(\"One,, two, three, four, five, six,\") ,\
+  \ {\"One\", \"two\", \"three\", \"four\", \"five\", \"six\"}));\n    assert (issame(words_string(\"\
+  \") , {}));\n    assert (issame(words_string(\"ahmed     , gamal\") , {\"ahmed\"\
+  , \"gamal\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

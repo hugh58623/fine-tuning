@@ -1,0 +1,15 @@
+name: mbpp_831
+language: py
+prompt: "\n\ndef count_Pairs(arr,n):\n    \"\"\"\n    Write a python function to count\
+  \ equal element pairs from the given array.\n    >>> count_Pairs([1,1,1,1],4)\n\
+  \    6\n    >>> count_Pairs([1,5,1],3)\n    1\n    >>> count_Pairs([3,2,1,7,8,9],6)\n\
+  \    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,1,1,1],4)\
+  \ == 6\n    assert candidate([1,5,1],3) == 1\n    assert candidate([3,2,1,7,8,9],6)\
+  \ == 0\n\n\n\ndef test_check():\n    check(count_Pairs)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

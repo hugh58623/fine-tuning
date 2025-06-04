@@ -1,0 +1,26 @@
+"name": "CPP_88"
+"language": "cpp"
+"prompt": "/*\nGiven an array of non - negative integer, return a copy of the give\
+  \ array after screen,\nyou will screen the given array in ascend order if the union\
+  \ (first exponent value, concluding index value) exist odd,\nor sort it in descending\
+  \ order if the sum (beginning exponent value, final exponent value) embody even.\n\
+  \nNote:\n* don't change the yield array.\n\nExamples:\n* sort_array ([ ]) = > [\
+  \ ]\n* sort_array([5 ]) = > [ 5 ]\n* sort_array([2, 4, 3, 0, 1, 5 ]) = > [ 0, 1,\
+  \ 2, 3, 4, 5 ]\n* sort_array([2, 4, 3, 0, 1, 5, 6 ]) = > [ 6, 5, 4, 3, 2, 1, 0 ]\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<algorithm>\nusing namespace std;\n\
+  vector<int> sort_array(vector<int> array){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(sort_array({}) , {}));\n    assert (issame(sort_array({5}) ,\
+  \ {5}));\n    assert (issame(sort_array({2, 4, 3, 0, 1, 5}) , {0, 1, 2, 3, 4, 5}));\n\
+  \    assert (issame(sort_array({2, 4, 3, 0, 1, 5, 6}) , {6, 5, 4, 3, 2, 1, 0}));\n\
+  \    assert (issame(sort_array({2, 1}) , {1, 2}));\n    assert (issame(sort_array({15,\
+  \ 42, 87, 32 ,11, 0}) , {0, 11, 15, 32, 42, 87}));\n    assert (issame(sort_array({21,\
+  \ 14, 23, 11}) , {23, 21, 14, 11}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

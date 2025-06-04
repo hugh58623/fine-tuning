@@ -1,0 +1,14 @@
+name: mbpp_145
+language: py
+prompt: "def max_Abs_Diff(arr):\n    \"\"\"\n    WriTe a pYthon FunCtion To\
+  \ finD the maxImuM diffEreNCe BeTweeN Any Two elements in a gIVEn arRay.\n    Test examples:\n\
+  \    assert max_Abs_Diff((2,1,5,3)) == 4\n    assert max_Abs_Diff((9,3,2,5,1)) ==\
+  \ 8\n    assert max_Abs_Diff((3,2,1)) == 2\n    \"\"\"\n"
+tests: "assert max_Abs_Diff((2,1,5,3)) == 4\nassert max_Abs_Diff((9,3,2,5,1)) == 8\n\
+  assert max_Abs_Diff((3,2,1)) == 2"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

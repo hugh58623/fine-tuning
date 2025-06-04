@@ -1,0 +1,16 @@
+name: mbpp_828
+language: py
+prompt: "\n\ndef count_alpha_dig_spl(string):\n  \"\"\"\n  Write a function to count\
+  \ alphabets,digits and special charactes in a given string.\n  >>> count_alpha_dig_spl(\"\
+  abc!@#123\")\n  (3,3,3)\n  >>> count_alpha_dig_spl(\"dgsuy@#$%&1255\")\n  (5,4,5)\n\
+  \  >>> count_alpha_dig_spl(\"fjdsif627348#%$^&\")\n  (6,6,5)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abc!@#123\"\
+  )==(3,3,3)\n    assert candidate(\"dgsuy@#$%&1255\")==(5,4,5)\n    assert candidate(\"\
+  fjdsif627348#%$^&\")==(6,6,5)\n\n\n\ndef test_check():\n    check(count_alpha_dig_spl)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

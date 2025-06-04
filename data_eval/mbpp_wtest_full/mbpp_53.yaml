@@ -1,0 +1,16 @@
+name: mbpp_53
+language: py
+prompt: "\n\ndef check_Equality(str):\n  \"\"\"\n  Write a python function to check\
+  \ whether the first and last characters of a given string are equal or not.\n  >>>\
+  \ check_Equality(\"abcda\")\n  \"Equal\"\n  >>> check_Equality(\"ab\")\n  \"Not\
+  \ Equal\"\n  >>> check_Equality(\"mad\")\n  \"Not Equal\"\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abcda\"\
+  ) == \"Equal\"\n    assert candidate(\"ab\") == \"Not Equal\"\n    assert candidate(\"\
+  mad\") == \"Not Equal\"\n\n\n\ndef test_check():\n    check(check_Equality)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

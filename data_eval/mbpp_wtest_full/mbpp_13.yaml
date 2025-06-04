@@ -1,0 +1,24 @@
+name: mbpp_13
+language: py
+prompt: "\n\ndef count_common(words):\n  \"\"\"\n  Write a function to count the most\
+  \ common words in a dictionary.\n  >>> count_common(['red','green','black','pink','black','white','black','eyes','white','black','orange','pink','pink','red','red','white','orange','white',\"\
+  black\",'pink','green','green','pink','green','pink','white','orange',\"orange\"\
+  ,'red'])\n  [('pink', 6), ('black', 5), ('white', 5), ('red', 4)]\n  >>> count_common(['one',\
+  \ 'two', 'three', 'four', 'five', 'one', 'two', 'one', 'three', 'one'])\n  [('one',\
+  \ 4), ('two', 2), ('three', 2), ('four', 1)]\n  >>> count_common(['Facebook', 'Apple',\
+  \ 'Amazon', 'Netflix', 'Google', 'Apple', 'Netflix', 'Amazon'])\n  [('Apple', 2),\
+  \ ('Amazon', 2), ('Netflix', 2), ('Facebook', 1)]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['red','green','black','pink','black','white','black','eyes','white','black','orange','pink','pink','red','red','white','orange','white',\"\
+  black\",'pink','green','green','pink','green','pink','white','orange',\"orange\"\
+  ,'red']) == [('pink', 6), ('black', 5), ('white', 5), ('red', 4)]\n    assert candidate(['one',\
+  \ 'two', 'three', 'four', 'five', 'one', 'two', 'one', 'three', 'one']) == [('one',\
+  \ 4), ('two', 2), ('three', 2), ('four', 1)]\n    assert candidate(['Facebook',\
+  \ 'Apple', 'Amazon', 'Netflix', 'Google', 'Apple', 'Netflix', 'Amazon']) == [('Apple',\
+  \ 2), ('Amazon', 2), ('Netflix', 2), ('Facebook', 1)]\n\n\n\ndef test_check():\n\
+  \    check(count_common)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

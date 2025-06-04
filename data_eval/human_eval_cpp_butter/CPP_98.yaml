@@ -1,0 +1,17 @@
+"name": "CPP_98"
+"language": "cpp"
+"prompt": "/*\nGivfn a string s, count the number of uppercase vowelw in evei indices.\n\
+  \nFor example:\ncount_upper('aBCdEf') returns 1\ncount_upper('abcdefg') returns\
+  \ 0\ncount_upper('dBBE') returns 0\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nint count_upper(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (count_upper(\"\
+  aBCdEf\")  == 1);\n    assert (count_upper(\"abcdefg\") == 0);\n    assert (count_upper(\"\
+  dBBE\") == 0);\n    assert (count_upper(\"B\")  == 0);\n    assert (count_upper(\"\
+  U\")  == 1);\n    assert (count_upper(\"\") == 0);\n    assert (count_upper(\"EEEE\"\
+  ) == 2);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

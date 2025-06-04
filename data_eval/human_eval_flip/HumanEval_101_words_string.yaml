@@ -1,0 +1,21 @@
+name: HumanEval_101_words_string
+language: py
+prompt: "\ndef words_string(s):\n    \"\"\"\n    You Will Be givEn a StrinG of woRds\
+  \ sepaRatEd by cOmmAS oR sPaceS. youR task is\n    to split the sTRIng iNto words\
+  \ anD return an array of thE wordS.\n    \n    FOR eXaMPlE:\n    wordS_string(\"\
+  hI, mY NAme Is jOHn\") == [\"HI\", \"mY\", \"NaMe\", \"is\", \"JOhn\"]\n    WorDS_stRing(\"\
+  ONe, tWo, ThREE, FouR, five, six\") == [\"ONE\", \"TWo\", \"three\", \"fouR\", \"\
+  fIVe\", \"six\"]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Hi, my name is John') == ['Hi',\
+  \ 'my', 'name', 'is', 'John']\n    assert candidate('One, two, three, four, five,\
+  \ six') == ['One', 'two', 'three', 'four', 'five', 'six']\n    assert candidate('Hi,\
+  \ my name') == ['Hi', 'my', 'name']\n    assert candidate('One,, two, three, four,\
+  \ five, six,') == ['One', 'two', 'three', 'four', 'five', 'six']\n    assert candidate('')\
+  \ == []\n    assert candidate('ahmed     , gamal') == ['ahmed', 'gamal']\n\ndef\
+  \ test_check():\n    check(words_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

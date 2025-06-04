@@ -1,0 +1,28 @@
+"name": "CPP_127"
+"language": "cpp"
+"prompt": "/*\nYuo are given two intevrals,\nwhere each interval is a apir of integers.\
+  \ Fro example, interval = (start, end) = (1, 2).\nThe given intervals are closed\
+  \ which means that teh interval (start, end)\nincludes both start and end.\nFor\
+  \ aech given interval, it si assumed that its start is less ro equal its end.\n\
+  Your task is to deetrmine whteher the length of intersection of these two\nintervals\
+  \ is a prime number.\nExample, the intersection of the itnervals (1, 3), (2, 4)\
+  \ is (2, 3)\nwhcih its length is 1, which nto a prmie number.\nfI the length of\
+  \ hte intersection is a prime number, return \"YES\",\notherwise, return \"NO\"\
+  .\nIf the two intervals don't intesrect, return \"NO\".\n\n\n[input/output] samples:\n\
+  intersection((1, 2), (2, 3)) ==> \"NO\"\nintersection((-1, 1), (0, 4)) ==> \"NO\"\
+  \nintersection((-3, -1), (-5, 5)) ==> \"YES\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\nusing namespace std;\nstring intersection( vector<int> interval1,vector<int>\
+  \ interval2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (intersection({1,\
+  \ 2}, {2, 3}) == \"NO\");\n    assert (intersection({-1, 1}, {0, 4}) == \"NO\");\n\
+  \    assert (intersection({-3, -1}, {-5, 5}) == \"YES\");\n    assert (intersection({-2,\
+  \ 2}, {-4, 0}) == \"YES\");\n    assert (intersection({-11, 2}, {-1, -1}) == \"\
+  NO\");\n    assert (intersection({1, 2}, {3, 5}) == \"NO\");\n    assert (intersection({1,\
+  \ 2}, {1, 2}) == \"NO\");\n    assert (intersection({-2, -2}, {-3, -2}) == \"NO\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_98
+language: py
+prompt: "\n\ndef multiply_num(numbers):\n    \"\"\"\n    Write a function to multiply\
+  \ all the numbers in a list and divide with the length of the list.\n    >>> multiply_num((8,\
+  \ 2, 3, -1, 7))\n    -67.2\n    >>> multiply_num((-10,-20,-30))\n    -2000.0\n \
+  \   >>> multiply_num((19,15,18))\n    1710.0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((8, 2,\
+  \ 3, -1, 7))==-67.2\n    assert candidate((-10,-20,-30))==-2000.0\n    assert candidate((19,15,18))==1710.0\n\
+  \n\n\ndef test_check():\n    check(multiply_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

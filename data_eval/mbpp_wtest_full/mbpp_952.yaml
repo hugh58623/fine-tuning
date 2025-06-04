@@ -1,0 +1,14 @@
+name: mbpp_952
+language: py
+prompt: "\n\ndef nCr_mod_p(n, r, p):\n\t\"\"\"\n\tWrite a function to compute the\
+  \ value of ncr mod p.\n\t>>> nCr_mod_p(10, 2, 13)\n\t6\n\t>>> nCr_mod_p(11, 3, 14)\n\
+  \t11\n\t>>> nCr_mod_p(18, 14, 19)\n\t1\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10, 2,\
+  \ 13) == 6\n    assert candidate(11, 3, 14) == 11\n    assert candidate(18, 14,\
+  \ 19) == 1\n\n\n\ndef test_check():\n    check(nCr_mod_p)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

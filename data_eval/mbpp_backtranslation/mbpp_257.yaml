@@ -1,0 +1,13 @@
+name: mbpp_257
+language: py
+prompt: "def swap_numbers(a, b):\n    \"\"\"\n Write a function to swap two numbers.\n\
+  \ Test examples:\n    assert swap_numbers(10,20)==(20,10)\n    assert swap_numbers(15,17)==(17,15)\n\
+  \    assert swap_numbers(100,200)==(200,100)\n    \"\"\"\n"
+tests: "assert swap_numbers(10,20)==(20,10)\nassert swap_numbers(15,17)==(17,15)\n\
+  assert swap_numbers(100,200)==(200,100)"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

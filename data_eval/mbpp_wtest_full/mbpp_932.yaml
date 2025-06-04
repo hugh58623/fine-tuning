@@ -1,0 +1,23 @@
+name: mbpp_932
+language: py
+prompt: "\n\ndef remove_duplic_list(l):\n    \"\"\"\n    Write a function to remove\
+  \ duplicate words from a given list of strings.\n    >>> remove_duplic_list([\"\
+  Python\", \"Exercises\", \"Practice\", \"Solution\", \"Exercises\"])\n    ['Python',\
+  \ 'Exercises', 'Practice', 'Solution']\n    >>> remove_duplic_list([\"Python\",\
+  \ \"Exercises\", \"Practice\", \"Solution\", \"Exercises\",\"Java\"])\n    ['Python',\
+  \ 'Exercises', 'Practice', 'Solution', 'Java']\n    >>> remove_duplic_list([\"Python\"\
+  , \"Exercises\", \"Practice\", \"Solution\", \"Exercises\",\"C++\",\"C\",\"C++\"\
+  ])\n    ['Python', 'Exercises', 'Practice', 'Solution','C++','C']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"Python\"\
+  , \"Exercises\", \"Practice\", \"Solution\", \"Exercises\"])==['Python', 'Exercises',\
+  \ 'Practice', 'Solution']\n    assert candidate([\"Python\", \"Exercises\", \"Practice\"\
+  , \"Solution\", \"Exercises\",\"Java\"])==['Python', 'Exercises', 'Practice', 'Solution',\
+  \ 'Java']\n    assert candidate([\"Python\", \"Exercises\", \"Practice\", \"Solution\"\
+  , \"Exercises\",\"C++\",\"C\",\"C++\"])==['Python', 'Exercises', 'Practice', 'Solution','C++','C']\n\
+  \n\n\ndef test_check():\n    check(remove_duplic_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

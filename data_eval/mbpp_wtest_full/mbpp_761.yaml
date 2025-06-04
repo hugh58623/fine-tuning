@@ -1,0 +1,15 @@
+name: mbpp_761
+language: py
+prompt: "\n\ndef arc_length(d,a):\n    \"\"\"\n    Write a function to caluclate arc\
+  \ length of an angle.\n    >>> arc_length(9,45)\n    3.5357142857142856\n    >>>\
+  \ arc_length(9,480)\n    None\n    >>> arc_length(5,270)\n    11.785714285714285\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(9,45)==3.5357142857142856\n\
+  \    assert candidate(9,480)==None\n    assert candidate(5,270)==11.785714285714285\n\
+  \n\n\ndef test_check():\n    check(arc_length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

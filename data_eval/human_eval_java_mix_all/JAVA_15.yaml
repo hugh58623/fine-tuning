@@ -1,0 +1,19 @@
+"name": "Java_15"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return a string containing incorporate space - delimited subtend numbers starting\
+  \ get down from 0 upto n inclusive.\n\n>>>>>> stringSequence(0)\n    \"0\"\n   \
+  \ >>> stringSequence(5)\n    \"0 1 2 3 4 5\"\n     */\n    public String stringSequence(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.stringSequence(0).equals(\"0\"),\n                s.stringSequence(3).equals(\"\
+  0 1 2 3\"),\n                s.stringSequence(10).equals(\"0 1 2 3 4 5 6 7 8 9 10\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

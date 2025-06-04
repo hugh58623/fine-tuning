@@ -1,0 +1,15 @@
+name: mbpp_338
+language: py
+prompt: "\n\ndef count_Substring_With_Equal_Ends(s):\n    \"\"\"\n    Write a python\
+  \ function to count the number of substrings with same first and last characters.\n\
+  \    >>> count_Substring_With_Equal_Ends('aba')\n    4\n    >>> count_Substring_With_Equal_Ends('abcab')\n\
+  \    7\n    >>> count_Substring_With_Equal_Ends('abc')\n    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('aba')\
+  \ == 4\n    assert candidate('abcab') == 7\n    assert candidate('abc') == 3\n\n\
+  \n\ndef test_check():\n    check(count_Substring_With_Equal_Ends)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

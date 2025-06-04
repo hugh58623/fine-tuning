@@ -1,0 +1,19 @@
+"name": "Java_14"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Returns a list of all prefixes from the shortest to the longest of the input strings\n\
+  \n>>>>>> allPrefixes(\"abc\")\n    [\"a\", \"ab\", \"abc\"]\n     */\n    public\
+  \ List<String> allPrefixes(String string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.allPrefixes(\"\").equals(List.of()),\n                s.allPrefixes(\"\
+  asdfgh\").equals(Arrays.asList(\"a\", \"as\", \"asd\", \"asdf\", \"asdfg\", \"asdfgh\"\
+  )),\n                s.allPrefixes(\"WWW\").equals(Arrays.asList(\"W\", \"WW\",\
+  \ \"WWW\"))\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

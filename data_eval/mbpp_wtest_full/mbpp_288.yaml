@@ -1,0 +1,17 @@
+name: mbpp_288
+language: py
+prompt: "\n\ndef modular_inverse(arr, N, P):\n\t\"\"\"\n\tWrite a function to count\
+  \ array elements having modular inverse under given prime number p equal to itself.\n\
+  \t>>> modular_inverse([ 1, 6, 4, 5 ], 4, 7)\n\t2\n\t>>> modular_inverse([1, 3, 8,\
+  \ 12, 12], 5, 13)\n\t3\n\t>>> modular_inverse([2, 3, 4, 5], 4, 6)\n\t1\n\t\"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([ 1, 6,\
+  \ 4, 5 ], 4, 7) == 2\n    assert candidate([1, 3, 8, 12, 12], 5, 13) == 3\n    assert\
+  \ candidate([2, 3, 4, 5], 4, 6) == 1\n\n\n\ndef test_check():\n    check(modular_inverse)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

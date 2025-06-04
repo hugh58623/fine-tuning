@@ -1,0 +1,20 @@
+name: mbpp_969
+language: py
+prompt: "\n\ndef join_tuples(test_list):\n  \"\"\"\n  Write a function to join the\
+  \ tuples if they have similar initial elements.\n  >>> join_tuples([(5, 6), (5,\
+  \ 7), (6, 8), (6, 10), (7, 13)] )\n  [(5, 6, 7), (6, 8, 10), (7, 13)]\n  >>> join_tuples([(6,\
+  \ 7), (6, 8), (7, 9), (7, 11), (8, 14)] )\n  [(6, 7, 8), (7, 9, 11), (8, 14)]\n\
+  \  >>> join_tuples([(7, 8), (7, 9), (8, 10), (8, 12), (9, 15)] )\n  [(7, 8, 9),\
+  \ (8, 10, 12), (9, 15)]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(5, 6),\
+  \ (5, 7), (6, 8), (6, 10), (7, 13)] ) == [(5, 6, 7), (6, 8, 10), (7, 13)]\n    assert\
+  \ candidate([(6, 7), (6, 8), (7, 9), (7, 11), (8, 14)] ) == [(6, 7, 8), (7, 9, 11),\
+  \ (8, 14)]\n    assert candidate([(7, 8), (7, 9), (8, 10), (8, 12), (9, 15)] ) ==\
+  \ [(7, 8, 9), (8, 10, 12), (9, 15)]\n\n\n\ndef test_check():\n    check(join_tuples)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

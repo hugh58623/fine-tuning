@@ -1,0 +1,23 @@
+name: HumanEval_132_is_nested
+language: py
+prompt: "\ndef is_nested(string):\n    \"\"\"\n    CreAte a FunctIon That tAkes a\
+  \ string As input WhiCh conTaiNS oNlY squARe bRackets.\n    The funCTIon sHould\
+  \ return True if and Only if there iS a valId SUbSeQUeNce of BracketS \n    WhERE\
+  \ at LeAST onE bRAcKet in thE suBseQUenCe is nEstEd.\n\n    Is_NESTed('[[]]') ➞\
+  \ True\n    Is_nested('[]]]]]]][[[[[]') ➞ False\n    iS_NESted('[][]') ➞ False\n\
+  \    is_nestEd('[]') ➞ False\n    IS_nested('[[][]]') ➞ True\n    Is_nesTed('[[]][[')\
+  \ ➞ True\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('[[]]') == True\n    assert candidate('[]]]]]]][[[[[]')\
+  \ == False\n    assert candidate('[][]') == False\n    assert candidate('[]') ==\
+  \ False\n    assert candidate('[[[[]]]]') == True\n    assert candidate('[]]]]]]]]]]')\
+  \ == False\n    assert candidate('[][][[]]') == True\n    assert candidate('[[]')\
+  \ == False\n    assert candidate('[]]') == False\n    assert candidate('[[]][[')\
+  \ == True\n    assert candidate('[[][]]') == True\n    assert candidate('') == False\n\
+  \    assert candidate('[[[[[[[[') == False\n    assert candidate(']]]]]]]]') ==\
+  \ False\n\ndef test_check():\n    check(is_nested)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

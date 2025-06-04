@@ -1,0 +1,24 @@
+"name": "Java_100"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a positive integer n, you will have to make a pile of n levels of stones.\n\
+  The first level will have n stones.\nThe number of stones in the next level will\
+  \ be:\n-the next odd number if n will be odd.\n-the next even number if n will be\
+  \ even.\nReturn the number of stones in each level in a list, where element at index\n\
+  i will represent the number of stones in the level (i+1).\n\nExamples:\n\n>>>>>>\
+  \ makeAPile(3)\n    [3, 5, 7]\n     */\n    public List<Integer> makeAPile(int n)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.makeAPile(3).equals(Arrays.asList(3, 5, 7)),\n              \
+  \  s.makeAPile(4).equals(Arrays.asList(4, 6, 8, 10)),\n                s.makeAPile(5).equals(Arrays.asList(5,\
+  \ 7, 9, 11, 13)),\n                s.makeAPile(6).equals(Arrays.asList(6, 8, 10,\
+  \ 12, 14, 16)),\n                s.makeAPile(8).equals(Arrays.asList(8, 10, 12,\
+  \ 14, 16, 18, 20, 22))\n        );\n        if (correct.contains(false)) {\n   \
+  \         throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

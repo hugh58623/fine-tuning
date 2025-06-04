@@ -1,0 +1,16 @@
+name: mbpp_880
+language: py
+prompt: "\n\ndef Check_Solution(a,b,c) :\n    \"\"\"\n    Write a python function\
+  \ to find number of solutions in quadratic equation.\n    >>> Check_Solution(2,5,2)\n\
+  \    \"2 solutions\"\n    >>> Check_Solution(1,1,1)\n    \"No solutions\"\n    >>>\
+  \ Check_Solution(1,2,1)\n    \"1 solution\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,5,2)\
+  \ == \"2 solutions\"\n    assert candidate(1,1,1) == \"No solutions\"\n    assert\
+  \ candidate(1,2,1) == \"1 solution\"\n\n\n\ndef test_check():\n    check(Check_Solution)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

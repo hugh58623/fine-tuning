@@ -1,0 +1,15 @@
+name: mbpp_531
+language: py
+prompt: "\n\ndef min_coins(coins, m, V):\n    \"\"\"\n    Write a function to find\
+  \ minimum number of coins that make a given value.\n    >>> min_coins([9, 6, 5,\
+  \ 1] ,4,11)\n    2\n    >>> min_coins([4,5,6,7,8,9],6,9)\n    1\n    >>> min_coins([1,\
+  \ 2, 3],3,4)\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([9, 6,\
+  \ 5, 1] ,4,11)==2\n    assert candidate([4,5,6,7,8,9],6,9)==1\n    assert candidate([1,\
+  \ 2, 3],3,4)==2\n\n\n\ndef test_check():\n    check(min_coins)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

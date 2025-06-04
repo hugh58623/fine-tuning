@@ -1,0 +1,19 @@
+name: mbpp_328
+language: py
+prompt: "\n\ndef rotate_left(list1,m,n):\n  \"\"\"\n  Write a function to rotate a\
+  \ given list by specified number of items to the left direction.\n  >>> rotate_left([1,\
+  \ 2, 3, 4, 5, 6, 7, 8, 9, 10],3,4)\n  [4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4]\n  >>>\
+  \ rotate_left([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],2,2)\n  [3, 4, 5, 6, 7, 8, 9, 10,\
+  \ 1, 2]\n  >>> rotate_left([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],5,2)\n  [6, 7, 8, 9,\
+  \ 10, 1, 2]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10],3,4)==[4, 5, 6, 7, 8, 9, 10, 1, 2, 3, 4]\n    assert\
+  \ candidate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],2,2)==[3, 4, 5, 6, 7, 8, 9, 10, 1, 2]\n\
+  \    assert candidate([1, 2, 3, 4, 5, 6, 7, 8, 9, 10],5,2)==[6, 7, 8, 9, 10, 1,\
+  \ 2]\n\n\n\ndef test_check():\n    check(rotate_left)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

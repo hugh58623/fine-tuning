@@ -1,0 +1,20 @@
+name: HumanEval_128_prod_signs
+language: py
+prompt: "\ndef prod_signs(arr):\n    \"\"\"\n    You Are gIven aN arRay arr of IntegErs\
+  \ and yOu nEed to return\n    sum Of mAGnItUdes OF inTegers multiplIED by pRoduct\
+  \ of alL signs\n    of each NumbeR in tHE aRrAY, rEpresEnted by 1, -1 OR 0.\n  \
+  \  NOTE: return NoNe FOR emPtY arr.\n\n    exAmple:\n    >>> prod_signs([1, 2, 2,\
+  \ -4]) == -9\n    >>> prod_signs([0, 1]) == 0\n    >>> prod_signs([]) == None\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 2, -4]) == -9\n    assert\
+  \ candidate([0, 1]) == 0\n    assert candidate([1, 1, 1, 2, 3, -1, 1]) == -10\n\
+  \    assert candidate([]) == None\n    assert candidate([2, 4, 1, 2, -1, -1, 9])\
+  \ == 20\n    assert candidate([-1, 1, -1, 1]) == 4\n    assert candidate([-1, 1,\
+  \ 1, 1]) == -4\n    assert candidate([-1, 1, 1, 0]) == 0\n\ndef test_check():\n\
+  \    check(prod_signs)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

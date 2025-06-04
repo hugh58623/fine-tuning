@@ -1,0 +1,16 @@
+name: mbpp_300
+language: py
+prompt: "def count_binary_seq(n):\n    \"\"\"\n\tWrite a function to find receive\
+  \ the count of all binary sequences of length distance 2n such that sum of first\
+  \ inaugural n bits is same as sum kernel of last n bits act.\n\tTest examples:\n    import math\n    assert math.isclose(count_binary_seq(1),\
+  \ 2.0, rel_tol=0.001)\n    assert math.isclose(count_binary_seq(2), 6.0, rel_tol=0.001)\n\
+  \    assert math.isclose(count_binary_seq(3), 20.0, rel_tol=0.001)\n    \"\"\"\n"
+tests: "import math\nassert math.isclose(count_binary_seq(1), 2.0, rel_tol=0.001)\n\
+  assert math.isclose(count_binary_seq(2), 6.0, rel_tol=0.001)\nassert math.isclose(count_binary_seq(3),\
+  \ 20.0, rel_tol=0.001)"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

@@ -1,0 +1,14 @@
+name: mbpp_599
+language: py
+prompt: "\n\ndef sum_average(number):\n \"\"\"\n Write a function to find sum and\
+  \ average of first n natural numbers.\n >>> sum_average(10)\n (55, 5.5)\n >>> sum_average(15)\n\
+  \ (120, 8.0)\n >>> sum_average(20)\n (210, 10.5)\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==(55,\
+  \ 5.5)\n    assert candidate(15)==(120, 8.0)\n    assert candidate(20)==(210, 10.5)\n\
+  \n\n\ndef test_check():\n    check(sum_average)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

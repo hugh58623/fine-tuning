@@ -1,0 +1,22 @@
+name: mbpp_507
+language: py
+prompt: "\n\ndef remove_words(list1, removewords):\n    \"\"\"\n    Write a function\
+  \ to remove specific words from a given list.\n    >>> remove_words(['red', 'green',\
+  \ 'blue', 'white', 'black', 'orange'],['white', 'orange'])\n    ['red', 'green',\
+  \ 'blue', 'black']\n    >>> remove_words(['red', 'green', 'blue', 'white', 'black',\
+  \ 'orange'],['black', 'orange'])\n    ['red', 'green', 'blue', 'white']\n    >>>\
+  \ remove_words(['red', 'green', 'blue', 'white', 'black', 'orange'],['blue', 'white'])\n\
+  \    ['red', 'green', 'black', 'orange']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['red',\
+  \ 'green', 'blue', 'white', 'black', 'orange'],['white', 'orange'])==['red', 'green',\
+  \ 'blue', 'black']\n    assert candidate(['red', 'green', 'blue', 'white', 'black',\
+  \ 'orange'],['black', 'orange'])==['red', 'green', 'blue', 'white']\n    assert\
+  \ candidate(['red', 'green', 'blue', 'white', 'black', 'orange'],['blue', 'white'])==['red',\
+  \ 'green', 'black', 'orange']\n\n\n\ndef test_check():\n    check(remove_words)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

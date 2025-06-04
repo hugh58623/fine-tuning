@@ -1,0 +1,15 @@
+name: mbpp_83
+language: py
+prompt: "\n\ndef get_Char(strr):\n    \"\"\"\n    Write a python function to find\
+  \ the character made by adding all the characters of the given string.\n    >>>\
+  \ get_Char(\"abc\")\n    \"f\"\n    >>> get_Char(\"gfg\")\n    \"t\"\n    >>> get_Char(\"\
+  ab\")\n    \"c\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abc\"\
+  ) == \"f\"\n    assert candidate(\"gfg\") == \"t\"\n    assert candidate(\"ab\"\
+  ) == \"c\"\n\n\n\ndef test_check():\n    check(get_Char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

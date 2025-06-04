@@ -1,0 +1,17 @@
+name: mbpp_679
+language: py
+prompt: "\n\ndef access_key(ditionary,key):\n  \"\"\"\n  Write a function to access\
+  \ dictionary key’s element by index.\n  >>> access_key({'physics': 80, 'math': 90,\
+  \ 'chemistry': 86},0)\n  'physics'\n  >>> access_key({'python':10, 'java': 20, 'C++':30},2)\n\
+  \  'C++'\n  >>> access_key({'program':15,'computer':45},1)\n  'computer'\n  \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'physics':\
+  \ 80, 'math': 90, 'chemistry': 86},0)== 'physics'\n    assert candidate({'python':10,\
+  \ 'java': 20, 'C++':30},2)== 'C++'\n    assert candidate({'program':15,'computer':45},1)==\
+  \ 'computer'\n\n\n\ndef test_check():\n    check(access_key)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

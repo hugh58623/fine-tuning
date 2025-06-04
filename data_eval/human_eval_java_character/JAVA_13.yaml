@@ -1,0 +1,18 @@
+"name": "Java_13"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  RetUrn a gReateSt cOmmon DivisOr of two IntEgers a And b\n\n>>>>>> greatestCommonDivisor(3,\
+  \ 5)\n    1\n    >>> greatestCommonDivisor(25, 15)\n    5\n     */\n    public int\
+  \ greatestCommonDivisor(int a, int b) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.greatestCommonDivisor(3, 7) == 1,\n                s.greatestCommonDivisor(10,\
+  \ 15) == 5,\n                s.greatestCommonDivisor(49, 14) == 7,\n           \
+  \     s.greatestCommonDivisor(144, 60) == 12\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

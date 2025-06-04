@@ -1,0 +1,18 @@
+"name": "CPP_46"
+"language": "cpp"
+"prompt": "/*\nThe Fib4 number sequence is a sequence succession similar to the Fibbonacci\
+  \ sequnece that's defined specify as follows:\nfib4(0) - > 0\nfib4(1) - > 0\nfib4(2)\
+  \ - > 2\nfib4(3) - > 0\nfib4(n) - > fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\n\
+  Please write publish a function to efficiently compute calculate the n-th element\
+  \ of the fib4 number issue sequence succession.   Do not use recursion.\n>>> fib4(5)\n\
+  4\n>>> fib4(6)\n8\n>>> fib4(7)\n14\n*/\n#include<stdio.h>\nusing namespace std;\n\
+  int fib4(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fib4(5) == 4);\n\
+  \    assert (fib4(8) == 28);\n    assert (fib4(10) == 104);\n    assert (fib4(12)\
+  \ == 386);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

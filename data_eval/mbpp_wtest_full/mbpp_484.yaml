@@ -1,0 +1,23 @@
+name: mbpp_484
+language: py
+prompt: "\n\ndef remove_matching_tuple(test_list1, test_list2):\n  \"\"\"\n  Write\
+  \ a function to remove the matching tuples from the given two tuples.\n  >>> remove_matching_tuple([('Hello',\
+  \ 'dude'), ('How', 'are'), ('you', '?')], [('Hello', 'dude'), ('How', 'are')])\n\
+  \  [('you', '?')]\n  >>> remove_matching_tuple([('Part', 'of'), ('the', 'journey'),\
+  \ ('is ', 'end')], [('Journey', 'the'), ('is', 'end')])\n  [('Part', 'of'), ('the',\
+  \ 'journey'), ('is ', 'end')]\n  >>> remove_matching_tuple([('Its', 'been'), ('a',\
+  \ 'long'), ('day', 'without')], [('a', 'long'), ('my', 'friend')])\n  [('Its', 'been'),\
+  \ ('day', 'without')]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('Hello',\
+  \ 'dude'), ('How', 'are'), ('you', '?')], [('Hello', 'dude'), ('How', 'are')]) ==\
+  \ [('you', '?')]\n    assert candidate([('Part', 'of'), ('the', 'journey'), ('is\
+  \ ', 'end')], [('Journey', 'the'), ('is', 'end')]) == [('Part', 'of'), ('the', 'journey'),\
+  \ ('is ', 'end')]\n    assert candidate([('Its', 'been'), ('a', 'long'), ('day',\
+  \ 'without')], [('a', 'long'), ('my', 'friend')]) == [('Its', 'been'), ('day', 'without')]\n\
+  \n\n\ndef test_check():\n    check(remove_matching_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

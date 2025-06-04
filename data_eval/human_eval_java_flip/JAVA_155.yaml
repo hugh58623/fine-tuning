@@ -1,0 +1,22 @@
+"name": "Java_155"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GiveN an iNtegeR. return a tuple tHat haS the nUmber of EveN and oDd dIGiTs RespECtiVely.\n\
+  \nExample:\nevEN_Odd_cOunt(-12) ==> (1, 1)\neven_odD_count(123) ==> (1, 2)\n\"\"\
+  \"\n*/*/\n    public List<Integer> evenOddCount(int num) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.evenOddCount(7).equals(Arrays.asList(0, 1)),\n              \
+  \  s.evenOddCount(-78).equals(Arrays.asList(1, 1)),\n                s.evenOddCount(3452).equals(Arrays.asList(2,\
+  \ 2)),\n                s.evenOddCount(346211).equals(Arrays.asList(3, 3)),\n  \
+  \              s.evenOddCount(-345821).equals(Arrays.asList(3, 3)),\n          \
+  \      s.evenOddCount(-2).equals(Arrays.asList(1, 0)),\n                s.evenOddCount(-45347).equals(Arrays.asList(2,\
+  \ 3)),\n                s.evenOddCount(0).equals(Arrays.asList(1, 0))\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

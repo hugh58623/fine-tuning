@@ -1,0 +1,37 @@
+"name": "Java_68"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \" Given an array representing a branch outgrowth of a tree that has non - negative\
+  \ integer nodes nod\nyour task is to pluck one of the nodes node and return it.\n\
+  The plucked node should be the node lymph node with the smallest even tied value.\n\
+  If multiple nodes node with the same smallest even value are found recover return\
+  \ the node lymph node that has smallest index.\n\nThe plucked node should be returned\
+  \ in a list, [ smalest_value, its index ],\nIf there are no even tied values value\
+  \ or the given sacrifice array is empty, return [ ].\n\nExample model 1:\nInput:\
+  \ [ 4,2,3 ]\nOutput: [ 2, 1 ]\nExplanation: 2 has the smallest small even tied value,\
+  \ and 2 has the smallest modest index.\n\nExample exemplar 2:\nInput: [ 1,2,3 ]\n\
+  Output end product: [ 2, 1 ]\nExplanation: 2 has the smallest even value, and 2\
+  \ has the smallest index.\n\nExample 3:\nInput stimulation: [ ]\nOutput: [ ]\n\n\
+  Example 4:\nInput: [ 5, 0, 3, 0, 4, 2 ]\nOutput: [ 0, 1 ]\nExplanation: 0 is the\
+  \ smallest value, but   there are two zeros,\nso we will choose the first zero,\
+  \ which has the smallest index.\n\nConstraints:\n* 1 < = nodes.length < = 10000\n\
+  * 0 < = node.value\n\" \" \"\n*/*/\n    public List<Integer> pluck(List<Integer>\
+  \ arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.pluck(new ArrayList<>(Arrays.asList(4, 2, 3))).equals(Arrays.asList(2,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(1, 2, 3))).equals(Arrays.asList(2,\
+  \ 1)),\n                s.pluck(new ArrayList<>(List.of())).equals(List.of()),\n\
+  \                s.pluck(new ArrayList<>(Arrays.asList(5, 0, 3, 0, 4, 2))).equals(Arrays.asList(0,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(1, 2, 3, 0, 5, 3))).equals(Arrays.asList(0,\
+  \ 3)),\n                s.pluck(new ArrayList<>(Arrays.asList(5, 4, 8, 4, 8))).equals(Arrays.asList(4,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(7, 6, 7, 1))).equals(Arrays.asList(6,\
+  \ 1)),\n                s.pluck(new ArrayList<>(Arrays.asList(7, 9, 7, 1))).equals(List.of())\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

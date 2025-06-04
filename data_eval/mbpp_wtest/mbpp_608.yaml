@@ -1,0 +1,14 @@
+name: mbpp_608
+language: py
+prompt: "\n\ndef bell_Number(n):\n    \"\"\"\n    Write a python function to find\
+  \ nth bell number.\n    >>> bell_Number(2)\n    2\n    >>> bell_Number(3)\n    5\n\
+  \    >>> bell_Number(4)\n    15\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 2\n\
+  \    assert candidate(3) == 5\n    assert candidate(4) == 15\n\n\n\ndef test_check():\n\
+  \    check(bell_Number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

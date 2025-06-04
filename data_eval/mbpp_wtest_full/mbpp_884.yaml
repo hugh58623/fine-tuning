@@ -1,0 +1,17 @@
+name: mbpp_884
+language: py
+prompt: "\n\ndef all_Bits_Set_In_The_Given_Range(n,l,r):\n    \"\"\"\n    Write a\
+  \ python function to check whether all the bits are within a given range or not.\n\
+  \    >>> all_Bits_Set_In_The_Given_Range(10,2,1)\n    True\n    >>> all_Bits_Set_In_The_Given_Range(5,2,4)\n\
+  \    False\n    >>> all_Bits_Set_In_The_Given_Range(22,2,3)\n    True\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,2,1)\
+  \ == True \n    assert candidate(5,2,4) == False\n    assert candidate(22,2,3) ==\
+  \ True \n\n\n\ndef test_check():\n    check(all_Bits_Set_In_The_Given_Range)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

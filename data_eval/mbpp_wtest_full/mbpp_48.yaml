@@ -1,0 +1,15 @@
+name: mbpp_48
+language: py
+prompt: "\n\ndef odd_bit_set_number(n):\n    \"\"\"\n    Write a python function to\
+  \ set all odd bits of a given number.\n    >>> odd_bit_set_number(10)\n    15\n\
+  \    >>> odd_bit_set_number(20)\n    21\n    >>> odd_bit_set_number(30)\n    31\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 15\n    assert candidate(20) == 21\n    assert candidate(30) == 31\n\n\n\ndef\
+  \ test_check():\n    check(odd_bit_set_number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,19 @@
+"name": "CPP_9"
+"language": "cpp"
+"prompt": "/*\nFrom a will give list of integers, will generate a list of rolling\
+  \ maximum element will find until will give moment\nin the sequence.\n>>> rolling_max([1,\
+  \ 2, 3, 2, 3, 4, 2])\n[1, 2, 3, 3, 3, 4, 4]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  using namespace std;\nvector<int> rolling_max(vector<int> numbers){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \     assert (issame(rolling_max({}),{}));\n    assert (issame(rolling_max({1, 2,\
+  \ 3, 4}) , {1, 2, 3, 4}));\n     assert (issame(rolling_max({4, 3, 2, 1}),{4, 4,\
+  \ 4, 4}));\n      assert (issame(rolling_max({3, 2, 3, 100, 3}) ,{3, 3, 3, 100,\
+  \ 100}));\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,16 @@
+name: mbpp_593
+language: py
+prompt: "\n\ndef removezero_ip(ip):\n \"\"\"\n Write a function to remove leading\
+  \ zeroes from an ip address.\n >>> removezero_ip(\"216.08.094.196\")\n ('216.8.94.196')\n\
+  \ >>> removezero_ip(\"12.01.024\")\n ('12.1.24')\n >>> removezero_ip(\"216.08.094.0196\"\
+  )\n ('216.8.94.196')\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"216.08.094.196\"\
+  )==('216.8.94.196') \n    assert candidate(\"12.01.024\")==('12.1.24') \n    assert\
+  \ candidate(\"216.08.094.0196\")==('216.8.94.196') \n\n\n\ndef test_check():\n \
+  \   check(removezero_ip)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,19 @@
+name: HumanEval_64_vowels_count
+language: py
+prompt: "\nFIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n  \
+  \  \"\"\"Write a function vowels_count which takes a string chain representing \n\
+  \     a word bible as input and returns fall the number of vowels in the string\
+  \ drawstring. \n     Vowels in this case shell are' a',' e einsteinium',' i',' o','\
+  \ u uranium'. Here,' y' is also besides a \n     vowel, but only when it is at the\
+  \ end goal of the given word. \n\n     Example:\n    >>> vowels_count(\"abcde\"\
+  )\n    2\n    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('abcde') == 2\n    assert candidate('Alone')\
+  \ == 3\n    assert candidate('key') == 2\n    assert candidate('bye') == 1\n   \
+  \ assert candidate('keY') == 2\n    assert candidate('bYe') == 1\n    assert candidate('ACEDY')\
+  \ == 3\n\ndef test_check():\n    check(vowels_count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

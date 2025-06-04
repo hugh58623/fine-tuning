@@ -1,0 +1,23 @@
+"name": "CPP_20"
+"language": "cpp"
+"prompt": "/*\nFrom a will supply list of numbers (of length at least two) select\
+  \ and return two that will be the closest to each\nother and return them in order\
+  \ (smaller number, larger number).\n>>> find_closest_elements([1.0, 2.0, 3.0, 4.0,\
+  \ 5.0, 2.2])\n(2.0, 2.2)\n>>> find_closest_elements([1.0, 2.0, 3.0, 4.0, 5.0, 2.0])\n\
+  (2.0, 2.0)\n*/\n#include<stdio.h>\n#include<math.h>\n#include<vector>\nusing namespace\
+  \ std;\nvector<float> find_closest_elements(vector<float> numbers){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<float> a,vector<float>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (abs(a[i]-b[i])>1e-4) return false;\n    }\n    return true;\n\
+  }\nint main(){\n    assert (issame(find_closest_elements({1.0, 2.0, 3.9, 4.0, 5.0,\
+  \ 2.2}) , {3.9, 4.0}));\n    assert (issame(find_closest_elements({1.0, 2.0, 5.9,\
+  \ 4.0, 5.0}) , {5.0, 5.9} ));\n    assert (issame(find_closest_elements({1.0, 2.0,\
+  \ 3.0, 4.0, 5.0, 2.2}) ,{2.0, 2.2}));\n     assert (issame(find_closest_elements({1.0,\
+  \ 2.0, 3.0, 4.0, 5.0, 2.0}) ,{2.0, 2.0}));\n      assert (issame(find_closest_elements({1.1,\
+  \ 2.2, 3.1, 4.1, 5.1}) , {2.2, 3.1}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,16 @@
+name: mbpp_492
+language: py
+prompt: "\n\ndef binary_search(item_list,item):\n\t\"\"\"\n\tWrite a function to search\
+  \ an element in the given array by using binary search.\n\t>>> binary_search([1,2,3,5,8],\
+  \ 6)\n\tFalse\n\t>>> binary_search([7, 8, 9, 10, 13], 10)\n\tTrue\n\t>>> binary_search([11,\
+  \ 13, 14, 19, 22, 36], 23)\n\tFalse\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,5,8],\
+  \ 6) == False\n    assert candidate([7, 8, 9, 10, 13], 10) == True\n    assert candidate([11,\
+  \ 13, 14, 19, 22, 36], 23) == False\n\n\n\ndef test_check():\n    check(binary_search)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

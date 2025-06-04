@@ -1,0 +1,16 @@
+name: mbpp_973
+language: py
+prompt: "\n\ndef left_rotate(s,d):\n    \"\"\"\n    Write a python function to left\
+  \ rotate the string.\n    >>> left_rotate(\"python\",2)\n    \"thonpy\"\n    >>>\
+  \ left_rotate(\"bigdata\",3 )\n    \"databig\"\n    >>> left_rotate(\"hadoop\",1\
+  \ )\n    \"adooph\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  ,2) == \"thonpy\"   \n    assert candidate(\"bigdata\",3 ) == \"databig\" \n   \
+  \ assert candidate(\"hadoop\",1 ) == \"adooph\" \n\n\n\ndef test_check():\n    check(left_rotate)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

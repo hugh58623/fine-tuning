@@ -1,0 +1,14 @@
+name: mbpp_292
+language: py
+prompt: "\n\ndef find(n,m):\n    \"\"\"\n    Write a python function to find quotient\
+  \ of two numbers.\n    >>> find(10,3)\n    3\n    >>> find(4,2)\n    2\n    >>>\
+  \ find(20,5)\n    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,3) ==\
+  \ 3\n    assert candidate(4,2) == 2\n    assert candidate(20,5) == 4\n\n\n\ndef\
+  \ test_check():\n    check(find)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

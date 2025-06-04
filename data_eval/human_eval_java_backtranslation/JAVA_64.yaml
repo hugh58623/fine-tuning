@@ -1,0 +1,23 @@
+"name": "Java_64"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Add more test cases.\n\"\"\"\n\ndef vowels_count(s):\n\"\"\"Write is a function\
+  \ vowels _ count that takes a string that represents a word as input and returns\
+  \ the number of vowels in the string. In this case, vowels are \"a,\" \"e,\" \"\
+  i,\" \"o,\" \"u.\" Again, \"y\" is a vowel, but only if it is at the end of the\
+  \ given word. Example:\n\n>>>>>> vowelsCount(\"abcde\")\n    2\n    >>> vowelsCount(\"\
+  ACEDY\")\n    3\n     */\n    public int vowelsCount(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.vowelsCount(\"abcde\") == 2,\n                s.vowelsCount(\"\
+  Alone\") == 3,\n                s.vowelsCount(\"key\") == 2,\n                s.vowelsCount(\"\
+  bye\") == 1,\n                s.vowelsCount(\"keY\") == 2,\n                s.vowelsCount(\"\
+  bYe\") == 1,\n                s.vowelsCount(\"ACEDY\") == 3\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

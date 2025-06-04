@@ -1,0 +1,18 @@
+name: mbpp_906
+language: py
+prompt: "\n\ndef extract_date(url):\n        \"\"\"\n        Write a function to extract\
+  \ year, month and date from a url by using regex.\n        >>> extract_date(\"https://www.washingtonpost.com/news/football-insider/wp/2016/09/02/odell-beckhams-fame-rests-on-one-stupid-little-ball-josh-norman-tells-author/\"\
+  )\n        [('2016', '09', '02')]\n        >>> extract_date(\"https://www.indiatoday.in/movies/celebrities/story/wp/2020/11/03/odeof-sushant-singh-rajput-s-death-his-brother-in-law-shares-advice-for-fans-1749646/\"\
+  )\n        [('2020', '11', '03')]\n        >>> extract_date(\"https://economictimes.indiatimes.com/news/economy/2020/12/29/finance/pension-assets-under-pfrda-touch-rs-5-32-lakh-crore/articleshow/79736619.cms\"\
+  )\n        [('2020', '12', '29')]\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"https://www.washingtonpost.com/news/football-insider/wp/2016/09/02/odell-beckhams-fame-rests-on-one-stupid-little-ball-josh-norman-tells-author/\"\
+  ) == [('2016', '09', '02')]\n    assert candidate(\"https://www.indiatoday.in/movies/celebrities/story/wp/2020/11/03/odeof-sushant-singh-rajput-s-death-his-brother-in-law-shares-advice-for-fans-1749646/\"\
+  ) == [('2020', '11', '03')]\n    assert candidate(\"https://economictimes.indiatimes.com/news/economy/2020/12/29/finance/pension-assets-under-pfrda-touch-rs-5-32-lakh-crore/articleshow/79736619.cms\"\
+  ) == [('2020', '12', '29')]\n\n\n\ndef test_check():\n    check(extract_date)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

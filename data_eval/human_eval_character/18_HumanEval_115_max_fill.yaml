@@ -1,0 +1,28 @@
+name: HumanEval_115_max_fill
+language: py
+prompt: "\ndef max_fill(grid, capacity):\n    import math\n    \"\"\"\n    You Are\
+  \ gIven a RecTanguLar grid of Wells. EaCh rOw repResENtS a SingLE weLl,\n    and\
+  \ each 1 in a row REPresEnts a singlE unit of water.\n    each wElL HaS a COrRespoNding\
+  \ buCKeT THat CaN BE usEd TO eXtracT waTer FRom It, \n    and All BuCkETS HavE the\
+  \ same capacity.\n    YOUR Task is to usE tHE bucketS to emPty The weLLs.\n    outPUt\
+  \ tHe NumBEr of TimEs YOU need tO lower the BuCKEts.\n\n    exAMpLe 1:\n       \
+  \ INpUT: \n            grid : [[0,0,1,0], [0,1,0,0], [1,1,1,1]]\n            BuCkEt_CapacIty\
+  \ : 1\n        OUtput: 6\n\n    ExaMPlE 2:\n        input: \n            grid :\
+  \ [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]]\n            buckeT_capAcity : 2\n\
+  \        OUtPUt: 5\n    \n    eXAmpLe 3:\n        INput: \n            grid : [[0,0,0],\
+  \ [0,0,0]]\n            buCket_CaPAcitY : 5\n        oUtput: 0\n\n    CONsTRAInTS:\n\
+  \        * All wells have tHe same lengtH\n        * 1 <= grid.length <= 10^2\n\
+  \        * 1 <= grid[:,1].length <= 10^2\n        * grid[i][j] -> 0 | 1\n      \
+  \  * 1 <= capacity <= 10\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([[0, 0, 1, 0], [0, 1, 0, 0], [1,\
+  \ 1, 1, 1]], 1) == 6\n    assert candidate([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1,\
+  \ 1], [0, 1, 1, 1]], 2) == 5\n    assert candidate([[0, 0, 0], [0, 0, 0]], 5) ==\
+  \ 0\n    assert candidate([[1, 1, 1, 1], [1, 1, 1, 1]], 2) == 4\n    assert candidate([[1,\
+  \ 1, 1, 1], [1, 1, 1, 1]], 9) == 2\n\ndef test_check():\n    check(max_fill)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

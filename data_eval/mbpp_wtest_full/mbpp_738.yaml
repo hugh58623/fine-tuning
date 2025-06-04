@@ -1,0 +1,14 @@
+name: mbpp_738
+language: py
+prompt: "\n\ndef geometric_sum(n):\n  \"\"\"\n  Write a function to calculate the\
+  \ geometric sum of n-1.\n  >>> geometric_sum(7)\n  1.9921875\n  >>> geometric_sum(4)\n\
+  \  1.9375\n  >>> geometric_sum(8)\n  1.99609375\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7) == 1.9921875\n\
+  \    assert candidate(4) == 1.9375\n    assert candidate(8) == 1.99609375\n\n\n\n\
+  def test_check():\n    check(geometric_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

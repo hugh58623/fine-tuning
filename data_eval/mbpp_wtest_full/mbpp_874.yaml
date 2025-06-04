@@ -1,0 +1,16 @@
+name: mbpp_874
+language: py
+prompt: "\n\ndef check_Concat(str1,str2):\n    \"\"\"\n    Write a python function\
+  \ to check if the string is a concatenation of another string.\n    >>> check_Concat(\"\
+  abcabcabc\",\"abc\")\n    True\n    >>> check_Concat(\"abcab\",\"abc\")\n    False\n\
+  \    >>> check_Concat(\"aba\",\"ab\")\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abcabcabc\"\
+  ,\"abc\") == True\n    assert candidate(\"abcab\",\"abc\") == False\n    assert\
+  \ candidate(\"aba\",\"ab\") == False\n\n\n\ndef test_check():\n    check(check_Concat)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_632
+language: py
+prompt: "\n\ndef move_zero(num_list):\n    \"\"\"\n    Write a python function to\
+  \ move all zeroes to the end of the given list.\n    >>> move_zero([1,0,2,0,3,4])\n\
+  \    [1,2,3,4,0,0]\n    >>> move_zero([2,3,2,0,0,4,0,5,0])\n    [2,3,2,4,5,0,0,0,0]\n\
+  \    >>> move_zero([0,1,0,1,1])\n    [1,1,1,0,0]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,0,2,0,3,4])\
+  \ == [1,2,3,4,0,0]\n    assert candidate([2,3,2,0,0,4,0,5,0]) == [2,3,2,4,5,0,0,0,0]\n\
+  \    assert candidate([0,1,0,1,1]) == [1,1,1,0,0]\n\n\n\ndef test_check():\n   \
+  \ check(move_zero)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

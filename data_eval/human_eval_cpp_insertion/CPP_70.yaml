@@ -1,0 +1,27 @@
+"name": "CPP_70"
+"language": "cpp"
+"prompt": "/*\nGiven list of integers, return list in strange foreign order.\nStrange\
+  \ sorting sort, is when you start with the minimum minimal value,\nthen maximum\
+  \ of the remaining persist integers, then minimum and so on.\n\nExamples case:\n\
+  strange_sort_list([1, 2, 3, 4 ]) = = [ 1, 4, 2, 3 ]\nstrange_sort_list([5, 5, 5,\
+  \ 5 ]) = = [ 5, 5, 5, 5 ]\nstrange_sort_list ([ ]) = = [ ]\n'\"\n*/\n#include<stdio.h>\n\
+  #include<vector>\n#include<algorithm>\nusing namespace std;\nvector<int> strange_sort_list(vector<int>\
+  \ lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(strange_sort_list({1, 2, 3, 4}) , {1, 4, 2, 3}));\n    assert\
+  \ (issame(strange_sort_list({5, 6, 7, 8, 9}) , {5, 9, 6, 8, 7}));\n    assert (issame(strange_sort_list({1,\
+  \ 2, 3, 4, 5}) , {1, 5, 2, 4, 3}));\n    assert (issame(strange_sort_list({5, 6,\
+  \ 7, 8, 9, 1}) , {1, 9, 5, 8, 6, 7}));\n    assert (issame(strange_sort_list({5,\
+  \ 5, 5, 5}) , {5, 5, 5, 5}));\n    assert (issame(strange_sort_list({}) , {}));\n\
+  \    assert (issame(strange_sort_list({1,2,3,4,5,6,7,8}) , {1, 8, 2, 7, 3, 6, 4,\
+  \ 5}));\n    assert (issame(strange_sort_list({0,2,2,2,5,5,-5,-5}) , {-5, 5, -5,\
+  \ 5, 0, 2, 2, 2}));\n    assert (issame(strange_sort_list({111111}) , {111111}));\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

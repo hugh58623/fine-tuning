@@ -1,0 +1,15 @@
+name: mbpp_891
+language: py
+prompt: "\n\ndef same_Length(A,B):\n    \"\"\"\n    Write a python function to check\
+  \ whether the given two numbers have same number of digits or not.\n    >>> same_Length(12,1)\n\
+  \    False\n    >>> same_Length(2,2)\n    True\n    >>> same_Length(10,20)\n   \
+  \ True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12,1) ==\
+  \ False\n    assert candidate(2,2) == True\n    assert candidate(10,20) == True\n\
+  \n\n\ndef test_check():\n    check(same_Length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,23 @@
+"name": "CPP_41"
+"language": "cpp"
+"prompt": "/*\nImagine a road that's a perfectly straight true infinitely long farseeing\
+  \ line.\nn cars car are driving left leave to right;   simultaneously, a different\
+  \ unlike set stage set of n cars cable car\nare driving repel right properly to\
+  \ left.    The two sets of cars start originate out being very far from\neach other.\
+  \   All cars car move affect in the same speed.   Two cars are said to collide\n\
+  when a car that's moving act left leave to right correct hits reach a car that's\
+  \ moving move right to left.\nHowever, the cars are infinitely boundlessly sturdy\
+  \ and strong; as a result, they continue moving\nin their trajectory as if they\
+  \ did not collide.\n\nThis function outputs the number phone number of such collisions\
+  \ collision.\n*/\n#include<stdio.h>\nusing namespace std;\nint car_race_collision(int\
+  \ n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (car_race_collision(2)\
+  \ == 4);\n    assert (car_race_collision(3) == 9);\n    assert (car_race_collision(4)\
+  \ == 16);\n    assert (car_race_collision(8) == 64);\n    assert (car_race_collision(10)\
+  \ == 100);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

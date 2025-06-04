@@ -1,0 +1,19 @@
+"name": "Java_27"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  For a given string, flip lowercase character to uppercase and uppercase to lowercase.\n\
+  \n>>>>>> flipCase(\"Hello\")\n    \"hELLO\"\n     */\n    public String flipCase(String\
+  \ string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.flipCase(\"\"), \"\"),\n                Objects.equals(s.flipCase(\"\
+  Hello!\"), \"hELLO!\"),\n                Objects.equals(s.flipCase(\"These violent\
+  \ delights have violent ends\"), \"tHESE VIOLENT DELIGHTS HAVE VIOLENT ENDS\")\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

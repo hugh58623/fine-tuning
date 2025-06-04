@@ -1,0 +1,16 @@
+name: mbpp_827
+language: py
+prompt: "\n\ndef sum_column(list1, C):\n    \"\"\"\n    Write a function to sum a\
+  \ specific column of a list in a given list of lists.\n    >>> sum_column( [[1,2,3,2],[4,5,6,2],[7,8,9,5],],0)\n\
+  \    12\n    >>> sum_column( [[1,2,3,2],[4,5,6,2],[7,8,9,5],],1)\n    15\n    >>>\
+  \ sum_column( [[1,2,3,2],[4,5,6,2],[7,8,9,5],],3)\n    9\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate( [[1,2,3,2],[4,5,6,2],[7,8,9,5],],0)==12\n\
+  \    assert candidate( [[1,2,3,2],[4,5,6,2],[7,8,9,5],],1)==15\n    assert candidate(\
+  \ [[1,2,3,2],[4,5,6,2],[7,8,9,5],],3)==9\n\n\n\ndef test_check():\n    check(sum_column)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

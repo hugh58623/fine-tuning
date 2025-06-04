@@ -1,0 +1,14 @@
+name: mbpp_266
+language: py
+prompt: "\n\ndef lateralsurface_cube(l):\n  \"\"\"\n  Write a function to find the\
+  \ lateral surface area of a cube.\n  >>> lateralsurface_cube(5)\n  100\n  >>> lateralsurface_cube(9)\n\
+  \  324\n  >>> lateralsurface_cube(10)\n  400\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5)==100\n\
+  \    assert candidate(9)==324\n    assert candidate(10)==400\n\n\n\ndef test_check():\n\
+  \    check(lateralsurface_cube)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

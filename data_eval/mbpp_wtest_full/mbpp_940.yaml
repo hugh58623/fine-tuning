@@ -1,0 +1,17 @@
+name: mbpp_940
+language: py
+prompt: "\n\ndef heap_sort(arr):\n    \"\"\"\n    Write a function to sort the given\
+  \ array by using heap sort.\n    >>> heap_sort([12, 2, 4, 5, 2, 3])\n    [2, 2,\
+  \ 3, 4, 5, 12]\n    >>> heap_sort([32, 14, 5, 6, 7, 19])\n    [5, 6, 7, 14, 19,\
+  \ 32]\n    >>> heap_sort([21, 15, 29, 78, 65])\n    [15, 21, 29, 65, 78]\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([12, 2,\
+  \ 4, 5, 2, 3]) == [2, 2, 3, 4, 5, 12]\n    assert candidate([32, 14, 5, 6, 7, 19])\
+  \ == [5, 6, 7, 14, 19, 32]\n    assert candidate([21, 15, 29, 78, 65]) == [15, 21,\
+  \ 29, 65, 78]\n\n\n\ndef test_check():\n    check(heap_sort)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

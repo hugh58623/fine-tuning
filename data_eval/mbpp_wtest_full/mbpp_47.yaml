@@ -1,0 +1,15 @@
+name: mbpp_47
+language: py
+prompt: "\n\ndef compute_Last_Digit(A,B):\n    \"\"\"\n    Write a python function\
+  \ to find the last digit when factorial of a divides factorial of b.\n    >>> compute_Last_Digit(2,4)\n\
+  \    2\n    >>> compute_Last_Digit(6,8)\n    6\n    >>> compute_Last_Digit(1,2)\n\
+  \    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,4) ==\
+  \ 2\n    assert candidate(6,8) == 6\n    assert candidate(1,2) == 2\n\n\n\ndef test_check():\n\
+  \    check(compute_Last_Digit)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

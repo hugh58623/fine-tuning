@@ -1,0 +1,16 @@
+name: mbpp_426
+language: py
+prompt: "\n\ndef filter_oddnumbers(nums):\n \"\"\"\n Write a function to filter odd\
+  \ numbers using lambda function.\n >>> filter_oddnumbers([1, 2, 3, 4, 5, 6, 7, 8,\
+  \ 9, 10])\n [1,3,5,7,9]\n >>> filter_oddnumbers([10,20,45,67,84,93])\n [45,67,93]\n\
+  \ >>> filter_oddnumbers([5,7,9,8,6,4,3])\n [5,7,9,3]\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10])==[1,3,5,7,9]\n    assert candidate([10,20,45,67,84,93])==[45,67,93]\n\
+  \    assert candidate([5,7,9,8,6,4,3])==[5,7,9,3]\n\n\n\ndef test_check():\n   \
+  \ check(filter_oddnumbers)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

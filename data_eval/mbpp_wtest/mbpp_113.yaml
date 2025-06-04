@@ -1,0 +1,14 @@
+name: mbpp_113
+language: py
+prompt: "\n\ndef check_integer(text):\n \"\"\"\n Write a function to check if a string\
+  \ represents an integer or not.\n >>> check_integer(\"python\")\n False\n >>> check_integer(\"\
+  1\")\n True\n >>> check_integer(\"12345\")\n True\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  )==False\n    assert candidate(\"1\")==True\n    assert candidate(\"12345\")==True\n\
+  \n\n\ndef test_check():\n    check(check_integer)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

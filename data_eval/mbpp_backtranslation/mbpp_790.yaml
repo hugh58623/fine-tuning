@@ -1,0 +1,14 @@
+name: mbpp_790
+language: py
+prompt: "def even_position(nums):\n    \"\"\"\n\tWrite a Python function to check\
+  \ that each even index contains even numbers from a given list.\n\tTest examples:\n\
+  \    assert even_position([3,2,1]) == False\n    assert even_position([1,2,3]) ==\
+  \ False\n    assert even_position([2,1,4]) == True\n    \"\"\"\n"
+tests: "assert even_position([3,2,1]) == False\nassert even_position([1,2,3]) == False\n\
+  assert even_position([2,1,4]) == True"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

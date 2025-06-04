@@ -1,0 +1,15 @@
+name: mbpp_165
+language: py
+prompt: "def count_char_position(str1):\n    \"\"\"\n    WriTe a pYthon FunCtion\
+  \ To couNt charaCteRs at sAme POsItIon in a GIveN string (lower aND UppeRcase charaCters)\
+  \ as in engliSh alpHaBEt.\n    Test examples:\n    assert\
+  \ count_char_position(\"xbcefg\") == 2\n    assert count_char_position(\"ABcED\"\
+  ) == 3\n    assert count_char_position(\"AbgdeF\") == 5\n    \"\"\"\n"
+tests: "assert count_char_position(\"xbcefg\") == 2\nassert count_char_position(\"\
+  ABcED\") == 3\nassert count_char_position(\"AbgdeF\") == 5"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

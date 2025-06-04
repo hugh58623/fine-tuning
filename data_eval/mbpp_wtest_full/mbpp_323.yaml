@@ -1,0 +1,18 @@
+name: mbpp_323
+language: py
+prompt: "\n\ndef re_arrange(arr, n):\n\t\"\"\"\n\tWrite a function to re-arrange the\
+  \ given array in alternating positive and negative items.\n\t>>> re_arrange([-5,\
+  \ -2, 5, 2, 4,\t7, 1, 8, 0, -8], 10)\n\t[-5, 5, -2, 2, -8, 4, 7, 1, 8, 0]\n\t>>>\
+  \ re_arrange([1, 2, 3, -4, -1, 4], 6)\n\t[-4, 1, -1, 2, 3, 4]\n\t>>> re_arrange([4,\
+  \ 7, 9, 77, -4, 5, -3, -9], 8)\n\t[-4, 4, -3, 7, -9, 9, 77, 5]\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([-5, -2,\
+  \ 5, 2, 4,\t7, 1, 8, 0, -8], 10) == [-5, 5, -2, 2, -8, 4, 7, 1, 8, 0]\n    assert\
+  \ candidate([1, 2, 3, -4, -1, 4], 6) == [-4, 1, -1, 2, 3, 4]\n    assert candidate([4,\
+  \ 7, 9, 77, -4, 5, -3, -9], 8) == [-4, 4, -3, 7, -9, 9, 77, 5]\n\n\n\ndef test_check():\n\
+  \    check(re_arrange)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_79
+language: py
+prompt: "\n\ndef word_len(s):\n    \"\"\"\n    Write a python function to check whether\
+  \ the length of the word is odd or not.\n    >>> word_len(\"Hadoop\")\n    False\n\
+  \    >>> word_len(\"great\")\n    True\n    >>> word_len(\"structure\")\n    True\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Hadoop\"\
+  ) == False\n    assert candidate(\"great\") == True\n    assert candidate(\"structure\"\
+  ) == True\n\n\n\ndef test_check():\n    check(word_len)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

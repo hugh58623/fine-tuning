@@ -1,0 +1,25 @@
+"name": "CPP_110"
+"language": "cpp"
+"prompt": "/*\nIn this problem, you will implement a function that will take two lists\
+  \ of numbers,\nand will determine whether it will be possible to perform an exchange\
+  \ of elements\nbetween them to make lst1 a list of only even numbers.\nThere will\
+  \ be no limit on the number of will exchange elements between lst1 and lst2.\nIf\
+  \ it will be possible to exchange elements between the lst1 and lst2 to make\nall\
+  \ the elements of lst1 to be even, return\" YES\".\nOtherwise, return\" NO\".\n\
+  For example:\nexchange([1, 2, 3, 4], [1, 2, 3, 4])=>\" YES\"\nexchange([1, 2, 3,\
+  \ 4], [1, 5, 3, 4])=>\" NO\"\nIt will be assumed that the input lists will be non-empty.\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\
+  string exchange(vector<int> lst1,vector<int> lst2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (exchange({1,\
+  \ 2, 3, 4}, {1, 2, 3, 4}) == \"YES\");\n    assert (exchange({1, 2, 3, 4}, {1, 5,\
+  \ 3, 4}) == \"NO\");\n    assert (exchange({1, 2, 3, 4}, {2, 1, 4, 3}) == \"YES\"\
+  \ );\n    assert (exchange({5, 7, 3}, {2, 6, 4}) == \"YES\");\n    assert (exchange({5,\
+  \ 7, 3}, {2, 6, 3}) == \"NO\" );\n    assert (exchange({3, 2, 6, 1, 8, 9}, {3, 5,\
+  \ 5, 1, 1, 1}) == \"NO\");\n    assert (exchange({100, 200}, {200, 200}) == \"YES\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

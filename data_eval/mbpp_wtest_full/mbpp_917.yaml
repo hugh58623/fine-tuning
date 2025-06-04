@@ -1,0 +1,18 @@
+name: mbpp_917
+language: py
+prompt: "\n\ndef text_uppercase_lowercase(text):\n        \"\"\"\n        Write a\
+  \ function to find the sequences of one upper case letter followed by lower case\
+  \ letters.\n        >>> text_uppercase_lowercase(\"AaBbGg\")\n        ('Found a\
+  \ match!')\n        >>> text_uppercase_lowercase(\"aA\")\n        ('Not matched!')\n\
+  \        >>> text_uppercase_lowercase(\"PYTHON\")\n        ('Not matched!')\n  \
+  \      \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"AaBbGg\"\
+  )==('Found a match!')\n    assert candidate(\"aA\")==('Not matched!')\n    assert\
+  \ candidate(\"PYTHON\")==('Not matched!')\n\n\n\ndef test_check():\n    check(text_uppercase_lowercase)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

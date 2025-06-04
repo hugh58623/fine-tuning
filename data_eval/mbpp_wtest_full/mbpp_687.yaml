@@ -1,0 +1,14 @@
+name: mbpp_687
+language: py
+prompt: "\n\ndef recur_gcd(a, b):\n\t\"\"\"\n\tWrite a function to find the greatest\
+  \ common divisor (gcd) of two integers by using recursion.\n\t>>> recur_gcd(12,14)\n\
+  \t2\n\t>>> recur_gcd(13,17)\n\t1\n\t>>> recur_gcd(9, 3)\n\t3\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12,14)\
+  \ == 2\n    assert candidate(13,17) == 1\n    assert candidate(9, 3) == 3\n\n\n\n\
+  def test_check():\n    check(recur_gcd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

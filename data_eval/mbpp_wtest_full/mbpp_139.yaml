@@ -1,0 +1,15 @@
+name: mbpp_139
+language: py
+prompt: "\n\ndef circle_circumference(r):\n  \"\"\"\n  Write a function to find the\
+  \ circumference of a circle.\n  >>> circle_circumference(10)\n  62.830000000000005\n\
+  \  >>> circle_circumference(5)\n  31.415000000000003\n  >>> circle_circumference(4)\n\
+  \  25.132\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==62.830000000000005\n\
+  \    assert candidate(5)==31.415000000000003\n    assert candidate(4)==25.132\n\n\
+  \n\ndef test_check():\n    check(circle_circumference)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

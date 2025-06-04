@@ -1,0 +1,18 @@
+"name": "CPP_97"
+"language": "cpp"
+"prompt": "/*\nComplete the function that takes two integers and returns \nthe product\
+  \ of their unit digits.\nAssume the input is always valid.\nExamples:\nmultiply(148,\
+  \ 412) should return 16.\nmultiply(19, 28) should return 72.\nmultiply(2020, 1851)\
+  \ should return 0.\nmultiply(14,-15) should return 20.\n*/\n#include<stdio.h>\n\
+  #include<math.h>\nusing namespace std;\nint multiply(int a,int b){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (multiply(148,\
+  \ 412) == 16                   );\n    assert (multiply(19, 28) == 72       );\n\
+  \    assert (multiply(2020, 1851) == 0);\n    assert (multiply(14,-15) == 20   );\n\
+  \    assert (multiply(76, 67) == 42    );\n    assert (multiply(17, 27) == 49  \
+  \  );\n    assert (multiply(0, 1) == 0);\n    assert (multiply(0, 0) == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_218
+language: py
+prompt: "\n\ndef min_Operations(A,B):\n    \"\"\"\n    Write a python function to\
+  \ find the minimum operations required to make two numbers equal.\n    >>> min_Operations(2,4)\n\
+  \    1\n    >>> min_Operations(4,10)\n    4\n    >>> min_Operations(1,4)\n    3\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,4) ==\
+  \ 1\n    assert candidate(4,10) == 4\n    assert candidate(1,4) == 3\n\n\n\ndef\
+  \ test_check():\n    check(min_Operations)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

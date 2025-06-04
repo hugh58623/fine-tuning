@@ -1,0 +1,16 @@
+name: mbpp_947
+language: py
+prompt: "\n\ndef len_log(list1):\n    \"\"\"\n    Write a python function to find\
+  \ the length of the shortest word.\n    >>> len_log([\"win\",\"lose\",\"great\"\
+  ])\n    3\n    >>> len_log([\"a\",\"ab\",\"abc\"])\n    1\n    >>> len_log([\"12\"\
+  ,\"12\",\"1234\"])\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"win\"\
+  ,\"lose\",\"great\"]) == 3\n    assert candidate([\"a\",\"ab\",\"abc\"]) == 1\n\
+  \    assert candidate([\"12\",\"12\",\"1234\"]) == 2\n\n\n\ndef test_check():\n\
+  \    check(len_log)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

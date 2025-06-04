@@ -1,0 +1,16 @@
+name: mbpp_247
+language: py
+prompt: "\n\ndef lps(str):\n\t\"\"\"\n\tWrite a function to find the longest palindromic\
+  \ subsequence in the given string.\n\t>>> lps(\"TENS FOR TENS\")\n\t5\n\t>>> lps(\"\
+  CARDIO FOR CARDS\")\n\t7\n\t>>> lps(\"PART OF THE JOURNEY IS PART\")\n\t9\n\t\"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"TENS\
+  \ FOR TENS\") == 5 \n    assert candidate(\"CARDIO FOR CARDS\") == 7\n    assert\
+  \ candidate(\"PART OF THE JOURNEY IS PART\") == 9 \n\n\n\ndef test_check():\n  \
+  \  check(lps)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

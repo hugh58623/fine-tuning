@@ -1,0 +1,15 @@
+name: mbpp_684
+language: py
+prompt: "\n\ndef count_Char(str,x):\n    \"\"\"\n    Write a python function to count\
+  \ occurences of a character in a repeated string.\n    >>> count_Char(\"abcac\"\
+  ,'a')\n    4\n    >>> count_Char(\"abca\",'c')\n    2\n    >>> count_Char(\"aba\"\
+  ,'a')\n    7\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abcac\"\
+  ,'a') == 4\n    assert candidate(\"abca\",'c') == 2\n    assert candidate(\"aba\"\
+  ,'a') == 7\n\n\n\ndef test_check():\n    check(count_Char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_923
+language: py
+prompt: "\n\ndef super_seq(X, Y, m, n):\n\t\"\"\"\n\tWrite a function to find the\
+  \ length of the shortest string that has both str1 and str2 as subsequences.\n\t\
+  >>> super_seq(\"AGGTAB\", \"GXTXAYB\", 6, 7)\n\t9\n\t>>> super_seq(\"feek\", \"\
+  eke\", 4, 3)\n\t5\n\t>>> super_seq(\"PARRT\", \"RTA\", 5, 3)\n\t6\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"AGGTAB\"\
+  , \"GXTXAYB\", 6, 7) == 9\n    assert candidate(\"feek\", \"eke\", 4, 3) == 5\n\
+  \    assert candidate(\"PARRT\", \"RTA\", 5, 3) == 6\n\n\n\ndef test_check():\n\
+  \    check(super_seq)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

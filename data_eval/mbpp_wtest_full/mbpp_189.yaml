@@ -1,0 +1,15 @@
+name: mbpp_189
+language: py
+prompt: "\n\ndef first_Missing_Positive(arr,n):\n    \"\"\"\n    Write a python function\
+  \ to find the first missing positive number.\n    >>> first_Missing_Positive([1,2,3,-1,5],5)\n\
+  \    4\n    >>> first_Missing_Positive([0,-1,-2,1,5,8],6)\n    2\n    >>> first_Missing_Positive([0,1,2,5,-8],5)\n\
+  \    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,-1,5],5)\
+  \ == 4\n    assert candidate([0,-1,-2,1,5,8],6) == 2\n    assert candidate([0,1,2,5,-8],5)\
+  \ == 3\n\n\n\ndef test_check():\n    check(first_Missing_Positive)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

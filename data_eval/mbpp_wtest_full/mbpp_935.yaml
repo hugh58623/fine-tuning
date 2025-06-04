@@ -1,0 +1,14 @@
+name: mbpp_935
+language: py
+prompt: "\n\ndef series_sum(number):\n \"\"\"\n Write a function to calculate the\
+  \ sum of series 1²+2²+3²+….+n².\n >>> series_sum(6)\n 91\n >>> series_sum(7)\n 140\n\
+  \ >>> series_sum(12)\n 650\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(6)==91\n\
+  \    assert candidate(7)==140\n    assert candidate(12)==650\n\n\n\ndef test_check():\n\
+  \    check(series_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

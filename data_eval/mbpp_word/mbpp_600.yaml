@@ -1,0 +1,15 @@
+name: mbpp_600
+language: py
+prompt: "def is_Even(n):\n    \"\"\"\n    Write a python function to check determine\
+  \ whether the given number numeral is even or not using bitwise operator hustler.\n\
+  \    Test examples:\n    assert is_Even(1) ==\
+  \ False\n    assert is_Even(2) == True\n    assert is_Even(3) == False\n    \"\"\
+  \"\n"
+tests: "assert is_Even(1) == False\nassert is_Even(2) == True\nassert is_Even(3) ==\
+  \ False"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

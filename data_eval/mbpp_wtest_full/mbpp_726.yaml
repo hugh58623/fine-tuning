@@ -1,0 +1,17 @@
+name: mbpp_726
+language: py
+prompt: "\n\ndef multiply_elements(test_tup):\n  \"\"\"\n  Write a function to multiply\
+  \ the adjacent elements of the given tuple.\n  >>> multiply_elements((1, 5, 7, 8,\
+  \ 10))\n  (5, 35, 56, 80)\n  >>> multiply_elements((2, 4, 5, 6, 7))\n  (8, 20, 30,\
+  \ 42)\n  >>> multiply_elements((12, 13, 14, 9, 15))\n  (156, 182, 126, 135)\n  \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((1, 5,\
+  \ 7, 8, 10)) == (5, 35, 56, 80)\n    assert candidate((2, 4, 5, 6, 7)) == (8, 20,\
+  \ 30, 42)\n    assert candidate((12, 13, 14, 9, 15)) == (156, 182, 126, 135)\n\n\
+  \n\ndef test_check():\n    check(multiply_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

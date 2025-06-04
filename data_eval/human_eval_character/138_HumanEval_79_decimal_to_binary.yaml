@@ -1,0 +1,19 @@
+name: HumanEval_79_decimal_to_binary
+language: py
+prompt: "\ndef decimal_to_binary(decimal):\n    \"\"\"You wIll bE giveN a nUmber in\
+  \ decimal Form aNd your tAsk Is to cOnvERt It To\n    biNAry Format. The funcTIOn\
+  \ shOuld return a strinG, with each chaRacteR rEPrEsENtIng a bInary\n    nuMBeR.\
+  \ eAch ChARActEr in THe StrinG wiLl bE '0' Or '1'.\n\n    THere wIll Be An EXTRa\
+  \ cOuple of chARACters 'db' at tHe BEginninG and aT thE end oF ThE stRIng.\n   \
+  \ thE exTRa chAraCtERS are thEre to help WiTH The FoRMaT.\n\n    ExAmPLEs:\n   \
+  \ decimal_to_binary(15)   # ReTuRns \"db1111Db\"\n    decimal_to_binary(32)   #\
+  \ reTurns \"db100000dB\"\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(0) == 'db0db'\n    assert candidate(32)\
+  \ == 'db100000db'\n    assert candidate(103) == 'db1100111db'\n    assert candidate(15)\
+  \ == 'db1111db'\n\ndef test_check():\n    check(decimal_to_binary)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

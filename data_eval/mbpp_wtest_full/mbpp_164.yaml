@@ -1,0 +1,15 @@
+name: mbpp_164
+language: py
+prompt: "\n\ndef areEquivalent(num1,num2):\n    \"\"\"\n    Write a python function\
+  \ to check whether the sum of divisors are same or not.\n    >>> areEquivalent(36,57)\n\
+  \    False\n    >>> areEquivalent(2,4)\n    False\n    >>> areEquivalent(23,47)\n\
+  \    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(36,57)\
+  \ == False\n    assert candidate(2,4) == False\n    assert candidate(23,47) == True\n\
+  \n\n\ndef test_check():\n    check(areEquivalent)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

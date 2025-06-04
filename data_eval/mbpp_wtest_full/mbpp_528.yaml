@@ -1,0 +1,16 @@
+name: mbpp_528
+language: py
+prompt: "\n\ndef min_length(list1):\n   \"\"\"\n   Write a function to find the list\
+  \ of lists with minimum length.\n   >>> min_length([[0], [1, 3], [5, 7], [9, 11],\
+  \ [13, 15, 17]])\n   (1, [0])\n   >>> min_length([[1], [5, 7], [10, 12, 14,15]])\n\
+  \   (1, [1])\n   >>> min_length([[5], [15,20,25]])\n   (1, [5])\n   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[0], [1,\
+  \ 3], [5, 7], [9, 11], [13, 15, 17]])==(1, [0])\n    assert candidate([[1], [5,\
+  \ 7], [10, 12, 14,15]])==(1, [1])\n    assert candidate([[5], [15,20,25]])==(1,\
+  \ [5])\n\n\n\ndef test_check():\n    check(min_length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

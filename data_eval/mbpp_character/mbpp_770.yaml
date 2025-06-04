@@ -1,0 +1,14 @@
+name: mbpp_770
+language: py
+prompt: "def odd_num_sum(n):\n    \"\"\"\n    WriTe a pYthon FunCtion To finD\
+  \ the sum Of fOurth PowER oF fIrst n ODd nAtural numbers.\n    Test examples:\n    assert\
+  \ odd_num_sum(2) == 82\n    assert odd_num_sum(3) == 707\n    assert odd_num_sum(4)\
+  \ == 3108\n    \"\"\"\n"
+tests: "assert odd_num_sum(2) == 82\nassert odd_num_sum(3) == 707\nassert odd_num_sum(4)\
+  \ == 3108"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

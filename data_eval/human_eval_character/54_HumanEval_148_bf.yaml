@@ -1,0 +1,26 @@
+name: HumanEval_148_bf
+language: py
+prompt: "\ndef bf(planet1, planet2):\n    \"\"\"\n    TheRe arE eighT plAnets in Our\
+  \ soLar systEm: tHe cloSerST tO tHe SuN \n    Is MErcury, the next ONE is VEnus,\
+  \ then EaRth, Mars, JupitEr, SatUrN, \n    urAnUS, NEptunE.\n    Write a FUnCTIon\
+  \ ThAT TakEs TWo PlaneT naMes AS stRings planet1 And planet2. \n    thE fUNCTioN\
+  \ should return a tuple cONTAining all pLaNEts whosE orbiTs aRe \n    locATeD beTWeeN\
+  \ tHe oRBit oF planet1 anD tHE Orbit oF planet2, sorted by \n    ThE PRoxImITy To\
+  \ tHe SUN. \n    THe FuNctioN shoUld return an empTY tuple iF planet1 Or planet2\n\
+  \    are not coRrecT planeT nAMeS. \n    eXamPleS\n    bf(\"Jupiter\", \"NeptuNe\"\
+  ) ==> (\"SaTuRN\", \"UraNUS\")\n    bf(\"Earth\", \"MercuRY\") ==> (\"VENUS\")\n\
+  \    bf(\"Mercury\", \"URANus\") ==> (\"Venus\", \"Earth\", \"mars\", \"Jupiter\"\
+  , \"sAtURn\")\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Jupiter', 'Neptune') == ('Saturn',\
+  \ 'Uranus')\n    assert candidate('Earth', 'Mercury') == ('Venus',)\n    assert\
+  \ candidate('Mercury', 'Uranus') == ('Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn')\n\
+  \    assert candidate('Neptune', 'Venus') == ('Earth', 'Mars', 'Jupiter', 'Saturn',\
+  \ 'Uranus')\n    assert candidate('Earth', 'Earth') == ()\n    assert candidate('Mars',\
+  \ 'Earth') == ()\n    assert candidate('Jupiter', 'Makemake') == ()\n\ndef test_check():\n\
+  \    check(bf)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,18 @@
+name: mbpp_263
+language: py
+prompt: "\n\ndef merge_dict(d1,d2):\n \"\"\"\n Write a function to merge two dictionaries.\n\
+  \ >>> merge_dict({'a': 100, 'b': 200},{'x': 300, 'y': 200})\n {'x': 300, 'y': 200,\
+  \ 'a': 100, 'b': 200}\n >>> merge_dict({'a':900,'b':900,'d':900},{'a':900,'b':900,'d':900})\n\
+  \ {'a':900,'b':900,'d':900,'a':900,'b':900,'d':900}\n >>> merge_dict({'a':10,'b':20},{'x':30,'y':40})\n\
+  \ {'x':30,'y':40,'a':10,'b':20}\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'a': 100,\
+  \ 'b': 200},{'x': 300, 'y': 200})=={'x': 300, 'y': 200, 'a': 100, 'b': 200}\n  \
+  \  assert candidate({'a':900,'b':900,'d':900},{'a':900,'b':900,'d':900})=={'a':900,'b':900,'d':900,'a':900,'b':900,'d':900}\n\
+  \    assert candidate({'a':10,'b':20},{'x':30,'y':40})=={'x':30,'y':40,'a':10,'b':20}\n\
+  \n\n\ndef test_check():\n    check(merge_dict)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,19 @@
+"name": "CPP_19"
+"language": "cpp"
+"prompt": "/*\nInput is a sequence of numbers delimited by spaces from \"zero\" to\
+  \ \"nine.\" Valid options are \"zero,\" \"one,\" \"two,\" \"three,\" \"four,\" \"\
+  five,\" \"six,\" \"seven,\" \"eight\" and \"nine.\"\n>>> sort_numbers('three one\
+  \ five')\n'one three five'\n*/\n#include<stdio.h>\n#include<string>\n#include<map>\n\
+  using namespace std;\nstring sort_numbers(string numbers){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (sort_numbers(\"\
+  \") == \"\");\n    assert (sort_numbers(\"three\") == \"three\");\n    assert (sort_numbers(\"\
+  three five nine\") == \"three five nine\");\n     assert (sort_numbers(\"five zero\
+  \ four seven nine eight\") == \"zero four five seven eight nine\");\n      assert\
+  \ (sort_numbers(\"six five four three two one zero\") == \"zero one two three four\
+  \ five six\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

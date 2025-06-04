@@ -1,0 +1,33 @@
+"name": "Java_127"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You aRe giVen twO inTervaLs,\nwheRe each iNteRval iS a pAIr Of InteGErs. for example,\
+  \ intERVal = (sTart, end) = (1, 2).\nThe Given intervaLs are ClOSeD wHIcH meanS\
+  \ that thE InTERvaL (sTARt, eNd)\nINcLudes BotH stARt aNd end.\nfor EaCh GIVEn iNterval,\
+  \ it IS ASsumed that ItS Start is Less oR eqUal itS EnD.\nYoUR taSk Is tO DeteRmiNe\
+  \ WHEther tHe length of intersection of theSe TWO\ninTeRVaLs iS a PRImE nUmBer.\n\
+  ExAmplE, the intersection of thE InTErvals (1, 3), (2, 4) is (2, 3)\nwhIch iTs length\
+  \ is 1, whIcH NoT A PriMe nUmber.\nIF the length Of THe intersection is A PRime\
+  \ nuMBeR, return \"yes\",\noTHErwise, return \"NO\".\nIf the Two intervalS DoN'T\
+  \ inTerSeCT, return \"No\".\n\n\n[Input/oUtput] SaMPleS:\nintersection((1, 2), (2,\
+  \ 3)) ==> \"No\"\nintersection((-1, 1), (0, 4)) ==> \"NO\"\nintersection((-3, -1),\
+  \ (-5, 5)) ==> \"YES\"\n\"\"\"\n*/*/\n    public String intersection(List<Integer>\
+  \ interval1, List<Integer> interval2) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.intersection(Arrays.asList(1, 2), Arrays.asList(2,\
+  \ 3)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(-1,\
+  \ 1), Arrays.asList(0, 4)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(-3,\
+  \ -1), Arrays.asList(-5, 5)), \"YES\" ),\n                Objects.equals(s.intersection(Arrays.asList(-2,\
+  \ 2), Arrays.asList(-4, 0)), \"YES\" ),\n                Objects.equals(s.intersection(Arrays.asList(-11,\
+  \ 2), Arrays.asList(-1, -1)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(1,\
+  \ 2), Arrays.asList(3, 5)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(1,\
+  \ 2), Arrays.asList(1, 2)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(-2,\
+  \ -2), Arrays.asList(-3, -2)), \"NO\" )\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

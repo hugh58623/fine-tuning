@@ -1,0 +1,20 @@
+"name": "Java_47"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return median of elements in the list l.\n\n>>>>>> median(Arrays.asList(3, 1, 2,\
+  \ 4, 5))\n    3\n    >>> median(Arrays.asList(-10, 4, 6, 1000, 10, 20))\n    15.0\n\
+  \     */\n    public double median(List<Integer> l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.median(new ArrayList<>(Arrays.asList(3, 1, 2, 4, 5))) == 3,\n\
+  \                s.median(new ArrayList<>(Arrays.asList(-10, 4, 6, 1000, 10, 20)))\
+  \ == 8.0,\n                s.median(new ArrayList<>(Arrays.asList(5))) == 5,\n \
+  \               s.median(new ArrayList<>(Arrays.asList(6, 5))) == 5.5\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

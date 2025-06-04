@@ -1,0 +1,15 @@
+name: mbpp_29
+language: py
+prompt: "\n\ndef get_Odd_Occurrence(arr,arr_size):\n    \"\"\"\n    Write a python\
+  \ function to find the element occurring odd number of times.\n    >>> get_Odd_Occurrence([1,2,3,1,2,3,1],7)\n\
+  \    1\n    >>> get_Odd_Occurrence([1,2,3,2,3,1,3],7)\n    3\n    >>> get_Odd_Occurrence([2,3,5,4,5,2,4,3,5,2,4,4,2],13)\n\
+  \    5\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,1,2,3,1],7)\
+  \ == 1\n    assert candidate([1,2,3,2,3,1,3],7) == 3\n    assert candidate([2,3,5,4,5,2,4,3,5,2,4,4,2],13)\
+  \ == 5\n\n\n\ndef test_check():\n    check(get_Odd_Occurrence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

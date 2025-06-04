@@ -1,0 +1,18 @@
+"name": "CPP_14"
+"language": "cpp"
+"prompt": "/*\nReturns a list of all prefixes from the shortest to the longest of\
+  \ the input strings\n>>> all_prefixes('abc')\n['a', 'ab', 'abc']\n*/\n#include<stdio.h>\n\
+  #include<vector>\n#include<string>\nusing namespace std;\nvector<string> all_prefixes(string\
+  \ str){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(all_prefixes(\"\"),{}));\n    assert (issame(all_prefixes(\"\
+  asdfgh\") ,{\"a\", \"as\", \"asd\", \"asdf\", \"asdfg\", \"asdfgh\"}));\n     assert\
+  \ (issame(all_prefixes(\"WWW\") ,{\"W\", \"WW\", \"WWW\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,14 @@
+name: mbpp_479
+language: py
+prompt: "\n\ndef first_Digit(n) :\n    \"\"\"\n    Write a python function to find\
+  \ the first digit of a given number.\n    >>> first_Digit(123)\n    1\n    >>> first_Digit(456)\n\
+  \    4\n    >>> first_Digit(12)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(123) ==\
+  \ 1\n    assert candidate(456) == 4\n    assert candidate(12) == 1\n\n\n\ndef test_check():\n\
+  \    check(first_Digit)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

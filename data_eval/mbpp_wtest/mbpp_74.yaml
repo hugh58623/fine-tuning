@@ -1,0 +1,19 @@
+name: mbpp_74
+language: py
+prompt: "\n\ndef is_samepatterns(colors, patterns):\n    \"\"\"\n    Write a function\
+  \ to check whether it follows the sequence given in the patterns array.\n    >>>\
+  \ is_samepatterns([\"red\",\"green\",\"green\"], [\"a\", \"b\", \"b\"])\n    True\n\
+  \    >>> is_samepatterns([\"red\",\"green\",\"greenn\"], [\"a\",\"b\",\"b\"])\n\
+  \    False\n    >>> is_samepatterns([\"red\",\"green\",\"greenn\"], [\"a\",\"b\"\
+  ])\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"red\"\
+  ,\"green\",\"green\"], [\"a\", \"b\", \"b\"])==True \n    assert candidate([\"red\"\
+  ,\"green\",\"greenn\"], [\"a\",\"b\",\"b\"])==False \n    assert candidate([\"red\"\
+  ,\"green\",\"greenn\"], [\"a\",\"b\"])==False \n\n\n\ndef test_check():\n    check(is_samepatterns)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

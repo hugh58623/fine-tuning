@@ -1,0 +1,16 @@
+name: mbpp_160
+language: py
+prompt: "\n\ndef solution (a, b, n):\n\t\"\"\"\n\tWrite a function to find x and y\
+  \ that satisfies ax + by = n.\n\t>>> solution(2, 3, 7)\n\t('x = ', 2, ', y = ',\
+  \ 1)\n\t>>> solution(4, 2, 7)\n\t'No solution'\n\t>>> solution(1, 13, 17)\n\t('x\
+  \ = ', 4, ', y = ', 1)\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2, 3, 7)\
+  \ == ('x = ', 2, ', y = ', 1)\n    assert candidate(4, 2, 7) == 'No candidate'\n\
+  \    assert candidate(1, 13, 17) == ('x = ', 4, ', y = ', 1)\n\n\n\ndef test_check():\n\
+  \    check(solution)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

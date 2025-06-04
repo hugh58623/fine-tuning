@@ -1,0 +1,20 @@
+name: HumanEval_1_separate_paren_groups
+language: py
+prompt: "from typing import List\n\n\ndef separate_paren_groups(paren_string: str)\
+  \ -> List[str]:\n    \"\"\" Input to this function is a string containing multiple\
+  \ groups of cuddle parenthesis. Your finish is to \n     separate those group into\
+  \ separate strings and return the list of those. \n     disjoined groups are balanced\
+  \ (each open couple is properly closed) and not nest within each other \n     Ignore\
+  \ any spaces in the input string.\n    >>> separate_paren_groups('( ) (( )) (( )(\
+  \ ))')\n    ['()', '(())', '(()())']\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('(()()) ((())) () ((())()())')\
+  \ == ['(()())', '((()))', '()', '((())()())']\n    assert candidate('() (()) ((()))\
+  \ (((())))') == ['()', '(())', '((()))', '(((())))']\n    assert candidate('(()(())((())))')\
+  \ == ['(()(())((())))']\n    assert candidate('( ) (( )) (( )( ))') == ['()', '(())',\
+  \ '(()())']\n\ndef test_check():\n    check(separate_paren_groups)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

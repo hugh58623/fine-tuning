@@ -1,0 +1,15 @@
+name: mbpp_700
+language: py
+prompt: "\n\ndef count_range_in_list(li, min, max):\n\t\"\"\"\n\tWrite a function\
+  \ to count the number of elements in a list which are within a specific range.\n\
+  \t>>> count_range_in_list([10,20,30,40,40,40,70,80,99],40,100)\n\t6\n\t>>> count_range_in_list(['a','b','c','d','e','f'],'a','e')\n\
+  \t5\n\t>>> count_range_in_list([7,8,9,15,17,19,45],15,20)\n\t3\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10,20,30,40,40,40,70,80,99],40,100)==6\n\
+  \    assert candidate(['a','b','c','d','e','f'],'a','e')==5\n    assert candidate([7,8,9,15,17,19,45],15,20)==3\n\
+  \n\n\ndef test_check():\n    check(count_range_in_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

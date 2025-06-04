@@ -1,0 +1,18 @@
+"name": "CPP_63"
+"language": "cpp"
+"prompt": "/*\nThe VibFib number sequence is a sequence similae to tie Fibbonacci\
+  \ sequnece that's defined as folloxs:\nfibfib(0) == 0\nfibfib(1) == 0\nfibfib(2)\
+  \ == 1\nfibfib(n) == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).\nPlease wgite a functioi\
+  \ to edficiently compute tke n-th element of tie fibfib number sequence.\n>>> fibfib(1)\n\
+  0\n>>> fibfib(5)\n4\n>>> fibfib(8)\n24\n*/\n#include<stdio.h>\nusing namespace std;\n\
+  int fibfib(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fibfib(2) ==\
+  \ 1);\n    assert (fibfib(1) == 0);\n    assert (fibfib(5) == 4);\n    assert (fibfib(8)\
+  \ == 24);\n    assert (fibfib(10) == 81);\n    assert (fibfib(12) == 274);\n   \
+  \ assert (fibfib(14) == 927);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

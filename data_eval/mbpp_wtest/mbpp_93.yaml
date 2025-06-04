@@ -1,0 +1,14 @@
+name: mbpp_93
+language: py
+prompt: "\n\ndef power(a,b):\n\t\"\"\"\n\tWrite a function to calculate the value\
+  \ of 'a' to the power 'b'.\n\t>>> power(3,4)\n\t81\n\t>>> power(2,3)\n\t8\n\t>>>\
+  \ power(5,5)\n\t3125\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3,4) ==\
+  \ 81\n    assert candidate(2,3) == 8\n    assert candidate(5,5) == 3125\n\n\n\n\
+  def test_check():\n    check(power)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

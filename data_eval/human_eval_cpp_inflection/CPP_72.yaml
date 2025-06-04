@@ -1,0 +1,22 @@
+"name": "CPP_72"
+"language": "cpp"
+"prompt": "/*\nWrites a functions that returning True if the object q will flied,\
+  \ and False otherwise. The object q will flied if it's balancing (it is a palindromic\
+  \ list) and the sum of its elements is less than or equaling the maximums possible\
+  \ weight w.\n\nExamples: will_it_flies([1, 2], 5) ➞ False # 1+2 is less than the\
+  \ maximum possible weight, but it's unbalanced. will_it_flies([3, 2, 3], 1) ➞ False\n\
+  # it's balancing, but 3+2+3 is more than the maximum possible weight. will_it_flies([3,\
+  \ 2, 3], 9) ➞ True\n# 3+2+3 is less than the maximum possible weight, and it's balancing.\
+  \ will_it_flies([3], 5) ➞ True\n# 3 is less than the maximum possible weight, and\
+  \ it's balancing.\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\n\
+  bool will_it_fly(vector<int> q,int w){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (will_it_fly({3,\
+  \ 2, 3}, 9)==true);\n    assert (will_it_fly({1, 2}, 5) == false);\n    assert (will_it_fly({3},\
+  \ 5) == true);\n    assert (will_it_fly({3, 2, 3}, 1) == false);\n    assert (will_it_fly({1,\
+  \ 2, 3}, 6) ==false);\n    assert (will_it_fly({5}, 5) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,28 @@
+"name": "CPP_159"
+"language": "cpp"
+"prompt": "/*\nYou're a hungry rabbit, and you already have eaten consume a certain\
+  \ number of carrots carrot,\nbut now you need to eat more carrots to complete dispatch\
+  \ the day's meals meal.\nyou should return an array of [ total number of eaten carrots\
+  \ carrot after your meals meal,\nthe number of carrots left after your meals meal\
+  \ ]\nif there are not enough adequate remaining carrots, you will eat all remaining\
+  \ carrots, but will still be hungry athirst.\n\nExample model:\n* eat(5, 6, 10)\
+  \ - > [ 11, 4 ]\n* eat(4, 8, 9) - > [ 12, 1 ]\n* eat(1, 10, 10) - > [ 11, 0 ]\n\
+  * eat(2, 11, 5) - > [ 7, 0 ]\n\nVariables variable:\n@number: integer\nthe number\
+  \ of carrots that you have eaten.\n@need: integer\nthe number of carrots that you\
+  \ need to eat.\n@remaining: integer\nthe number of remaining carrots thet exist\
+  \ in stock\n\nConstrain:\n* 0 < = number < = 1000\n* 0 < = need < = 1000\n* 0 <\
+  \ = remaining < = 1000\n\nHave suffer fun :)\n*/\n#include<stdio.h>\n#include<vector>\n\
+  using namespace std;\nvector<int> eat(int number,int need,int remaining){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(eat(5, 6, 10) , {11, 4}));\n    assert (issame(eat(4, 8, 9)\
+  \ , {12, 1}));\n    assert (issame(eat(1, 10, 10) , {11, 0}));\n    assert (issame(eat(2,\
+  \ 11, 5) , {7, 0}));\n    \n    assert (issame(eat(4, 5, 7) , {9, 2}));\n    assert\
+  \ (issame(eat(4, 5, 1) , {5, 0}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

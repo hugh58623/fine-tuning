@@ -1,0 +1,19 @@
+name: mbpp_330
+language: py
+prompt: "\n\ndef find_char(text):\n  \"\"\"\n  Write a function to find all three,\
+  \ four, five characters long words in the given string by using regex.\n  >>> find_char('For\
+  \ the four consumer complaints contact manager AKR reddy')\n  ['For', 'the', 'four',\
+  \ 'AKR', 'reddy']\n  >>> find_char('Certain service are subject to change MSR')\n\
+  \  ['are', 'MSR']\n  >>> find_char('Third party legal desclaimers')\n  ['Third',\
+  \ 'party', 'legal']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('For the\
+  \ four consumer complaints contact manager AKR reddy') == ['For', 'the', 'four',\
+  \ 'AKR', 'reddy']\n    assert candidate('Certain service are subject to change MSR')\
+  \ == ['are', 'MSR']\n    assert candidate('Third party legal desclaimers') == ['Third',\
+  \ 'party', 'legal']\n\n\n\ndef test_check():\n    check(find_char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

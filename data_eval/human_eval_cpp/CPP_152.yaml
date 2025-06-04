@@ -1,0 +1,27 @@
+"name": "CPP_152"
+"language": "cpp"
+"prompt": "/*\nI think we all remember that feeling when the result of some long-awaited\n\
+  event is finally known. The feelings and thoughts you have at that moment are\n\
+  definitely worth noting down and comparing.\nYour task is to determine if a person\
+  \ correctly guessed the results of a number of matches.\nYou are given two vectors\
+  \ of scores and guesses of equal length, where each index shows a match. \nReturn\
+  \ a vector of the same length denoting how far off each guess was. If they have\
+  \ guessed correctly,\nthe value is 0, and if not, the value is the absolute difference\
+  \ between the guess and the score.\n\n\nexample:\n\ncompare({1,2,3,4,5,1},{1,2,3,4,2,-2})\
+  \ -> {0,0,0,0,3,3}\ncompare({0,5,0,0,0,4},{4,1,1,0,0,-2}) -> {4,4,1,0,0,6}\n*/\n\
+  #include<stdio.h>\n#include<math.h>\n#include<vector>\nusing namespace std;\nvector<int>\
+  \ compare(vector<int> game,vector<int> guess){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(compare({1,2,3,4,5,1},{1,2,3,4,2,-2}),{0,0,0,0,3,3}));\n   \
+  \ assert (issame(compare({0,5,0,0,0,4},{4,1,1,0,0,-2}),{4,4,1,0,0,6}));\n    assert\
+  \ (issame(compare({1,2,3,4,5,1},{1,2,3,4,2,-2}),{0,0,0,0,3,3}));\n    assert (issame(compare({0,0,0,0,0,0},{0,0,0,0,0,0}),{0,0,0,0,0,0}));\n\
+  \    assert (issame(compare({1,2,3},{-1,-2,-3}),{2,4,6}));\n    assert (issame(compare({1,2,3,5},{-1,2,3,4}),{2,0,0,1}));\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

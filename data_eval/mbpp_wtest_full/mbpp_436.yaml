@@ -1,0 +1,14 @@
+name: mbpp_436
+language: py
+prompt: "\n\ndef neg_nos(list1):\n  \"\"\"\n  Write a python function to print negative\
+  \ numbers in a list.\n  >>> neg_nos([-1,4,5,-6])\n  -1,-6\n  >>> neg_nos([-1,-2,3,4])\n\
+  \  -1,-2\n  >>> neg_nos([-7,-6,8,9])\n  -7,-6\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([-1,4,5,-6])\
+  \ == -1,-6\n    assert candidate([-1,-2,3,4]) == -1,-2\n    assert candidate([-7,-6,8,9])\
+  \ == -7,-6\n\n\n\ndef test_check():\n    check(neg_nos)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

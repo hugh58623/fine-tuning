@@ -1,0 +1,15 @@
+name: mbpp_907
+language: py
+prompt: "\n\ndef lucky_num(n):\n \"\"\"\n Write a function to print the first n lucky\
+  \ numbers.\n >>> lucky_num(10)\n [1, 3, 7, 9, 13, 15, 21, 25, 31, 33]\n >>> lucky_num(5)\n\
+  \ [1, 3, 7, 9, 13]\n >>> lucky_num(8)\n [1, 3, 7, 9, 13, 15, 21, 25]\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==[1,\
+  \ 3, 7, 9, 13, 15, 21, 25, 31, 33] \n    assert candidate(5)==[1, 3, 7, 9, 13]\n\
+  \    assert candidate(8)==[1, 3, 7, 9, 13, 15, 21, 25]\n\n\n\ndef test_check():\n\
+  \    check(lucky_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,19 @@
+name: HumanEval_100_make_a_pile
+language: py
+prompt: "\ndef make_a_pile(n):\n    \"\"\"\n    GivEn a pOsitiVe iNtegeR n, you hAve\
+  \ to maKe a Pile oF n leVElS oF stoNEs.\n    THe first level hAS n StonEs.\n   \
+  \ The numbeR of stones in the Next lEvEL iS:\n        - tHE nExt odD number IF n\
+  \ iS ODd.\n        - tHe NEXt eVeN NuMber iF n is EveN.\n    retUrn thE nuMbEr OF\
+  \ STonEs in each levEL in A list, Where elemeNt AT index\n    i rEpresEntS the nUMbEr\
+  \ oF StoNeS in thE LeveL (i+1).\n\n    ExAmPLEs:\n    >>> make_a_pile(3)\n    [3,\
+  \ 5, 7]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(3) == [3, 5, 7]\n    assert candidate(4)\
+  \ == [4, 6, 8, 10]\n    assert candidate(5) == [5, 7, 9, 11, 13]\n    assert candidate(6)\
+  \ == [6, 8, 10, 12, 14, 16]\n    assert candidate(8) == [8, 10, 12, 14, 16, 18,\
+  \ 20, 22]\n\ndef test_check():\n    check(make_a_pile)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

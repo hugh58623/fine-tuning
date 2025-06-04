@@ -1,0 +1,15 @@
+name: mbpp_509
+language: py
+prompt: "\n\ndef average_Odd(n) :\n    \"\"\"\n    Write a python function to find\
+  \ the average of odd numbers till a given odd number.\n    >>> average_Odd(9)\n\
+  \    5\n    >>> average_Odd(5)\n    3\n    >>> average_Odd(11)\n    6\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(9) == 5\n\
+  \    assert candidate(5) == 3\n    assert candidate(11) == 6\n\n\n\ndef test_check():\n\
+  \    check(average_Odd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

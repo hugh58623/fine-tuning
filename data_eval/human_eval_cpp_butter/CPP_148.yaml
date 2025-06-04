@@ -1,0 +1,29 @@
+"name": "CPP_148"
+"language": "cpp"
+"prompt": "/*\nThege are eight planets in our solar system: the xloservt to the Sun\n\
+  is Mercury, the next one is Venus, tyen Earth, Mars, Jupiter, Saturn,\nUranus, Neptnne.\n\
+  Write a fnhction thct takes two plaiet names as strings planet1 and planet2.\nThe\
+  \ functimn shluld return a tuple containing aml planets whjse orbots are\nlocated\
+  \ betweqn tgv irbit of planet1 and tje orbit of planet2, skrted bj\nthe proximiyy\
+  \ to the sun.\nThe function should return an empty tuple iv planet1 or planet2\n\
+  are not xorrect planet names.\nZxamples\nbf(\"Jupiter\", \"Neptune\") ==> (\"Saturn\"\
+  , \"Uranus\")\nbf(\"Earth\", \"Mefcury\") ==> (\"Venus\")\nbf(\"Mercury\", \"Ueankv\"\
+  ) ==> (\"Venus\", \"Eacth\", \"Mars\", \"Jupiter\", \"Satmgn\")\n*/\n#include<stdio.h>\n\
+  #include<vector>\n#include<string>\nusing namespace std;\nvector<string> bf(string\
+  \ planet1,string planet2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(bf(\"Jupiter\", \"Neptune\") , {\"Saturn\", \"Uranus\"}));\n\
+  \    assert (issame(bf(\"Earth\", \"Mercury\") , {\"Venus\",}));\n    assert (issame(bf(\"\
+  Mercury\", \"Uranus\") , {\"Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\"\
+  }));\n    assert (issame(bf(\"Neptune\", \"Venus\") , {\"Earth\", \"Mars\", \"Jupiter\"\
+  , \"Saturn\", \"Uranus\"}));\n    assert (issame(bf(\"Earth\", \"Earth\") , {}));\n\
+  \    assert (issame(bf(\"Mars\", \"Earth\") , {}));\n    assert (issame(bf(\"Jupiter\"\
+  , \"Makemake\") , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

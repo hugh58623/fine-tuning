@@ -1,0 +1,18 @@
+name: mbpp_727
+language: py
+prompt: "\n\ndef remove_char(S):\n  \"\"\"\n  Write a function to remove all characters\
+  \ except letters and numbers using regex\n  >>> remove_char(\"123abcjw:, .@! eiw\"\
+  )\n  '123abcjweiw'\n  >>> remove_char(\"Hello1234:, ! Howare33u\")\n  'Hello1234Howare33u'\n\
+  \  >>> remove_char(\"Cool543Triks@:, Make@987Trips\")\n  'Cool543TriksMake987Trips'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"123abcjw:,\
+  \ .@! eiw\") == '123abcjweiw'\n    assert candidate(\"Hello1234:, ! Howare33u\"\
+  ) == 'Hello1234Howare33u'\n    assert candidate(\"Cool543Triks@:, Make@987Trips\"\
+  ) == 'Cool543TriksMake987Trips' \n\n\n\ndef test_check():\n    check(remove_char)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

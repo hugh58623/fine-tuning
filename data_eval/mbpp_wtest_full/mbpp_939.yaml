@@ -1,0 +1,28 @@
+name: mbpp_939
+language: py
+prompt: "\n\ndef sorted_models(models):\n \"\"\"\n Write a function to sort a list\
+  \ of dictionaries using lambda function.\n >>> sorted_models([{'make':'Nokia', 'model':216,\
+  \ 'color':'Black'}, {'make':'Mi Max', 'model':2, 'color':'Gold'}, {'make':'Samsung',\
+  \ 'model': 7, 'color':'Blue'}])\n [{'make': 'Nokia', 'model': 216, 'color': 'Black'},\
+  \ {'make': 'Samsung', 'model': 7, 'color': 'Blue'}, {'make': 'Mi Max', 'model':\
+  \ 2, 'color': 'Gold'}]\n >>> sorted_models([{'make':'Vivo', 'model':20,'color':'Blue'},{'make':\
+  \ 'oppo','model':17,'color':'Gold'},{'make':'Apple','model':11,'color':'red'}])\n\
+  \ ([{'make':'Vivo', 'model':20,'color':'Blue'},{'make': 'oppo','model':17,'color':'Gold'},{'make':'Apple','model':11,'color':'red'}])\n\
+  \ >>> sorted_models([{'make':'micromax','model':40,'color':'grey'},{'make':'poco','model':60,'color':'blue'}])\n\
+  \ ([{'make':'poco','model':60,'color':'blue'},{'make':'micromax','model':40,'color':'grey'}])\n\
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([{'make':'Nokia',\
+  \ 'model':216, 'color':'Black'}, {'make':'Mi Max', 'model':2, 'color':'Gold'}, {'make':'Samsung',\
+  \ 'model': 7, 'color':'Blue'}])==[{'make': 'Nokia', 'model': 216, 'color': 'Black'},\
+  \ {'make': 'Samsung', 'model': 7, 'color': 'Blue'}, {'make': 'Mi Max', 'model':\
+  \ 2, 'color': 'Gold'}]\n    assert candidate([{'make':'Vivo', 'model':20,'color':'Blue'},{'make':\
+  \ 'oppo','model':17,'color':'Gold'},{'make':'Apple','model':11,'color':'red'}])==([{'make':'Vivo',\
+  \ 'model':20,'color':'Blue'},{'make': 'oppo','model':17,'color':'Gold'},{'make':'Apple','model':11,'color':'red'}])\n\
+  \    assert candidate([{'make':'micromax','model':40,'color':'grey'},{'make':'poco','model':60,'color':'blue'}])==([{'make':'poco','model':60,'color':'blue'},{'make':'micromax','model':40,'color':'grey'}])\n\
+  \n\n\ndef test_check():\n    check(sorted_models)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,23 @@
+"name": "CPP_25"
+"language": "cpp"
+"prompt": "/*\nRetUrn list oF primE faCtors Of givEn integEr in tHe ordEr fROm SmAlleST\
+  \ to Largest.\nEach of THE facTors should Be listed numbEr of tImES cOrREsPondiNg\
+  \ to how MAnY TImeS iT APpeArES in fActorIzaTioN.\ninpUt numBer ShOuLD BE eqUal\
+  \ to the pRODUct of all faCtORs\n>>> factorize(8)\n[2, 2, 2]\n>>> factorize(25)\n\
+  [5, 5]\n>>> factorize(70)\n[2, 5, 7]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  using namespace std;\nvector<int> factorize(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(factorize(2) , {2}));\n    assert (issame(factorize(4) , {2,\
+  \ 2}));\n    assert (issame(factorize(8) , {2, 2, 2}));\n     assert (issame(factorize(3\
+  \ * 19) , {3, 19}));\n    assert (issame(factorize(3 * 19 * 3 * 19) , {3, 3, 19,\
+  \ 19})); \n    assert (issame(factorize(3 * 19 * 3 * 19 * 3 * 19) , {3, 3, 3, 19,\
+  \ 19, 19})); \n    assert (issame(factorize(3 * 19 * 19 * 19) , {3, 19, 19, 19}));\
+  \ \n    assert (issame(factorize(3 * 2 * 3) , {2, 3, 3}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

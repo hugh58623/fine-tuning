@@ -1,0 +1,23 @@
+name: HumanEval_133_sum_squares
+language: py
+prompt: "\n\ndef sum_squares(lst):\n    \"\"\"You aRe giVen a list oF nuMbers.\n \
+  \   you neEd to return the Sum Of squared numBerS in ThE gIven list,\n    ROunD\
+  \ each element in tHE list To thE upper int(Ceiling) firsT.\n    Examples:\n   \
+  \ For lst = [1,2,3] The ouTpUT sHoULd Be 14\n    For lst = [1,4,9] The outpUT sHOUld\
+  \ Be 98\n    fOR lst = [1,3,5,7] thE oUTpUt shoUld Be 84\n    FOR lst = [1.4,4.2,0]\
+  \ thE outpUt sHoUlD BE 29\n    for lst = [-2.4,1,1] The output SHOUld be 6\n   \
+  \ \n\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1.0, 2.0, 3.0]) == 14\n    assert\
+  \ candidate([1.0, 2.0, 3.0]) == 14\n    assert candidate([1.0, 3.0, 5.0, 7.0]) ==\
+  \ 84\n    assert candidate([1.4, 4.2, 0.0]) == 29\n    assert candidate([-2.4, 1.0,\
+  \ 1.0]) == 6\n    assert candidate([100.0, 1.0, 15.0, 2.0]) == 10230\n    assert\
+  \ candidate([10000.0, 10000.0]) == 200000000\n    assert candidate([-1.4, 4.6, 6.3])\
+  \ == 75\n    assert candidate([-1.4, 17.9, 18.9, 19.9]) == 1086\n    assert candidate([0.0])\
+  \ == 0\n    assert candidate([-1.0]) == 1\n    assert candidate([-1.0, 1.0, 0.0])\
+  \ == 2\n\ndef test_check():\n    check(sum_squares)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

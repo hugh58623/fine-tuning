@@ -1,0 +1,30 @@
+"name": "Java_117"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a string s and a natural number n, you have been tax to follow through\na\
+  \ function that returns a list of all word from string s that hold exactly\nn consonant,\
+  \ in ordering these words appear in the chain s.\nIf the string s is empty then\
+  \ the function should return an empty list.\nbill: you may assume the stimulation\
+  \ bowed stringed instrument contains only letters and spaces.\nExamples:\nselect_words(\"\
+  Mary have a little lamb \", 4) = = > [ \" little \" ]\nselect_words(\"Mary had a\
+  \ small lamb \", 3) = = > [ \" Mary \", \" lamb \" ]\nselect_words(\"simple blank\
+  \ space \", 2) = = > [ ]\nselect_words(\"Hello world \", 4) = = > [ \" world \"\
+  \ ]\nselect_words(\"Uncle surface-to-air missile \", 3) = = > [ \" Uncle \" ]\n\"\
+  \ \" \"\n*/*/\n    public List<String> selectWords(String s, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.selectWords(\"Mary had a little lamb\", 4).equals(List.of(\"\
+  little\" )),\n                s.selectWords(\"Mary had a little lamb\", 3).equals(Arrays.asList(\"\
+  Mary\", \"lamb\")),\n                s.selectWords(\"simple white space\", 2).equals(List.of()),\n\
+  \                s.selectWords(\"Hello world\", 4).equals(List.of(\"world\" )),\n\
+  \                s.selectWords(\"Uncle sam\", 3).equals(List.of(\"Uncle\" )),\n\
+  \                s.selectWords(\"\", 4).equals(List.of()),\n                s.selectWords(\"\
+  a b c d e f\", 1).equals(Arrays.asList(\"b\", \"c\", \"d\", \"f\"))\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

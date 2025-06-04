@@ -1,0 +1,23 @@
+name: mbpp_778
+language: py
+prompt: "\n\ndef pack_consecutive_duplicates(list1):\n    \"\"\"\n    Write a function\
+  \ to pack consecutive duplicates of a given list elements into sublists.\n    >>>\
+  \ pack_consecutive_duplicates([0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4])\n\
+  \    [[0, 0], [1], [2], [3], [4, 4], [5], [6, 6, 6], [7], [8], [9], [4, 4]]\n  \
+  \  >>> pack_consecutive_duplicates([10, 10, 15, 19, 18, 18, 17, 26, 26, 17, 18,\
+  \ 10])\n    [[10, 10], [15], [19], [18, 18], [17], [26, 26], [17], [18], [10]]\n\
+  \    >>> pack_consecutive_duplicates(['a', 'a', 'b', 'c', 'd', 'd'])\n    [['a',\
+  \ 'a'], ['b'], ['c'], ['d', 'd']]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([0, 0,\
+  \ 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4])==[[0, 0], [1], [2], [3], [4, 4], [5],\
+  \ [6, 6, 6], [7], [8], [9], [4, 4]]\n    assert candidate([10, 10, 15, 19, 18, 18,\
+  \ 17, 26, 26, 17, 18, 10])==[[10, 10], [15], [19], [18, 18], [17], [26, 26], [17],\
+  \ [18], [10]]\n    assert candidate(['a', 'a', 'b', 'c', 'd', 'd'])==[['a', 'a'],\
+  \ ['b'], ['c'], ['d', 'd']]\n\n\n\ndef test_check():\n    check(pack_consecutive_duplicates)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

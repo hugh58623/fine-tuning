@@ -1,0 +1,24 @@
+"name": "Java_99"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Create a function that takes a value (string) that represents a number and returns\
+  \ the nearest integer to it. If the number is equal to two integers, round it from\
+  \ zero. Examples\n\n>>>>>> closest_integer(\"10\")\n    10\n    >>> closest_integer(\"\
+  15.3\")\n    15\n\n    Note:\n    Rounding away from zero means that if the given\
+  \ number is equidistant\n    from two integers, the one you should return is the\
+  \ one that is the\n    farthest from zero. For example closest_integer(\"14.5\"\
+  ) should\n    return 15 and closest_integer(\"-14.5\") should return -15.\n    \
+  \ */\n    public int countUpper(String value) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.countUpper(\"10\") == 10,\n                s.countUpper(\"14.5\"\
+  ) == 15,\n                s.countUpper(\"-15.5\") == -16,\n                s.countUpper(\"\
+  15.3\") == 15,\n                s.countUpper(\"0\") == 0\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

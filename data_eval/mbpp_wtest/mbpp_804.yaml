@@ -1,0 +1,15 @@
+name: mbpp_804
+language: py
+prompt: "\n\ndef is_Product_Even(arr,n):\n    \"\"\"\n    Write a python function\
+  \ to check whether the product of numbers is even or not.\n    >>> is_Product_Even([1,2,3],3)\n\
+  \    True\n    >>> is_Product_Even([1,2,1,4],4)\n    True\n    >>> is_Product_Even([1,1],2)\n\
+  \    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3],3)\
+  \ == True\n    assert candidate([1,2,1,4],4) == True\n    assert candidate([1,1],2)\
+  \ == False\n\n\n\ndef test_check():\n    check(is_Product_Even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

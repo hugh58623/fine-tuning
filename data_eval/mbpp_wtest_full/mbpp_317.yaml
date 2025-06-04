@@ -1,0 +1,19 @@
+name: mbpp_317
+language: py
+prompt: "\n\ndef modified_encode(alist):\n        \"\"\"\n        Write a function\
+  \ to reflect the modified run-length encoding from a list.\n        >>> modified_encode([1,1,2,3,4,4,5,1])\n\
+  \        [[2, 1], 2, 3, [2, 4], 5, 1]\n        >>> modified_encode('automatically')\n\
+  \        ['a', 'u', 't', 'o', 'm', 'a', 't', 'i', 'c', 'a', [2, 'l'], 'y']\n   \
+  \     >>> modified_encode('python')\n        ['p', 'y', 't', 'h', 'o', 'n']\n  \
+  \      \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,1,2,3,4,4,5,1])==[[2,\
+  \ 1], 2, 3, [2, 4], 5, 1]\n    assert candidate('automatically')==['a', 'u', 't',\
+  \ 'o', 'm', 'a', 't', 'i', 'c', 'a', [2, 'l'], 'y']\n    assert candidate('python')==['p',\
+  \ 'y', 't', 'h', 'o', 'n']\n\n\n\ndef test_check():\n    check(modified_encode)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

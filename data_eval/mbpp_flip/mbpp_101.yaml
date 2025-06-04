@@ -1,0 +1,14 @@
+name: mbpp_101
+language: py
+prompt: "def kth_element(arr, k):\n    \"\"\"\n  WriTe a fUnctiOn tO find The\
+  \ ktH elemenT in thE giveN arRAy.\n  Test examples:\n    assert\
+  \ kth_element([12,3,5,7,19], 2) == 3\n    assert kth_element([17,24,8,23], 3) ==\
+  \ 8\n    assert kth_element([16,21,25,36,4], 4) == 36\n    \"\"\"\n"
+tests: "assert kth_element([12,3,5,7,19], 2) == 3\nassert kth_element([17,24,8,23],\
+  \ 3) == 8\nassert kth_element([16,21,25,36,4], 4) == 36"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

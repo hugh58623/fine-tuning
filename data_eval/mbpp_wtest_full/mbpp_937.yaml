@@ -1,0 +1,15 @@
+name: mbpp_937
+language: py
+prompt: "\n\ndef max_char(str1):\n    \"\"\"\n    Write a function to count the most\
+  \ common character in a given string.\n    >>> max_char(\"hello world\")\n    ('l')\n\
+  \    >>> max_char(\"hello \")\n    ('l')\n    >>> max_char(\"python pr\")\n    ('p')\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"hello\
+  \ world\")==('l')\n    assert candidate(\"hello \")==('l')\n    assert candidate(\"\
+  python pr\")==('p')\n\n\n\ndef test_check():\n    check(max_char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

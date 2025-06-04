@@ -1,0 +1,17 @@
+name: mbpp_860
+language: py
+prompt: "\n\ndef check_alphanumeric(string):\n\t\"\"\"\n\tWrite a function to check\
+  \ whether the given string is ending with only alphanumeric characters or not using\
+  \ regex.\n\t>>> check_alphanumeric(\"dawood@\")\n\t'Discard'\n\t>>> check_alphanumeric(\"\
+  skdmsam326\")\n\t'Accept'\n\t>>> check_alphanumeric(\"cooltricks@\")\n\t'Discard'\n\
+  \t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"dawood@\"\
+  ) == 'Discard'\n    assert candidate(\"skdmsam326\") == 'Accept'\n    assert candidate(\"\
+  cooltricks@\") == 'Discard'\n\n\n\ndef test_check():\n    check(check_alphanumeric)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

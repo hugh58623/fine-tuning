@@ -1,0 +1,17 @@
+name: mbpp_400
+language: py
+prompt: "\n\ndef extract_freq(test_list):\n  \"\"\"\n  Write a function to extract\
+  \ the frequency of unique tuples in the given list order irrespective.\n  >>> extract_freq([(3,\
+  \ 4), (1, 2), (4, 3), (5, 6)] )\n  3\n  >>> extract_freq([(4, 15), (2, 3), (5, 4),\
+  \ (6, 7)] )\n  4\n  >>> extract_freq([(5, 16), (2, 3), (6, 5), (6, 9)] )\n  4\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(3, 4),\
+  \ (1, 2), (4, 3), (5, 6)] ) == 3\n    assert candidate([(4, 15), (2, 3), (5, 4),\
+  \ (6, 7)] ) == 4\n    assert candidate([(5, 16), (2, 3), (6, 5), (6, 9)] ) == 4\n\
+  \n\n\ndef test_check():\n    check(extract_freq)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

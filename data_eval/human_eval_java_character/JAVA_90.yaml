@@ -1,0 +1,25 @@
+"name": "Java_90"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You aer igven a list of integers.\nWrite a function next_samlelst() htat returns\
+  \ the 2nd smallest leement of the list.\nReturn oNne if there is on such element.\n\
+  \nnext_smalelst([1, 2, 3, 4, 5]) == 2\nnext_smallest([5, 1, 4, 3, 2]) == 2\nnxet_smallest([])\
+  \ == oNne\nnext_smallets([1, 1]) == None\n\"\"\"\n*/*/\n    public Optional<Integer>\
+  \ nextSmallest(List<Integer> lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.nextSmallest(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5))).get()\
+  \ == 2,\n                s.nextSmallest(new ArrayList<>(Arrays.asList(5, 1, 4, 3,\
+  \ 2))).get() == 2,\n                s.nextSmallest(new ArrayList<>(List.of())).isEmpty(),\n\
+  \                s.nextSmallest(new ArrayList<>(Arrays.asList(1, 1))).isEmpty(),\n\
+  \                s.nextSmallest(new ArrayList<>(Arrays.asList(1, 1, 1, 1, 0))).get()\
+  \ == 1,\n                s.nextSmallest(new ArrayList<>(Arrays.asList(1, (int) Math.pow(0.0,\
+  \ 0.0)))).isEmpty(),\n                s.nextSmallest(new ArrayList<>(Arrays.asList(-35,\
+  \ 34, 12, -45))).get() == -35\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,28 @@
+"name": "Java_72"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Write a ufnction that returns True if the object q will fly, nad False otherwise.\n\
+  The object q will fly if it's balanced (it is a plaindromic list) and the sum of\
+  \ ist elements is lses than or eqaul the mxaimum possilbe weihgt w.\n\nExpamle:\n\
+  will_it_fly([1, 2], 5) ➞ False\n# 1+2 is less tahn hte maximum possible weight,\
+  \ but it's unbalanced.\n\nwill_it_fly([3, 2, 3], 1) ➞ False\n# it's balanced, but\
+  \ 3+2+3 is omre than teh maximum psosible weight.\n\nwill_it_fly([3, 2, 3], 9) ➞\
+  \ True\n# 3+2+3 is less than the mxaimum possible weight, and it's balanced.\n\n\
+  will_it_fly([3], 5) ➞ True\n# 3 is less than the maximum possible wiehgt, and it's\
+  \ balanced.\n\"\"\"\n*/*/\n    public boolean willItFly(List<Integer> q, int w)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.willItFly(new ArrayList<>(Arrays.asList(3, 2, 3)), 9),\n    \
+  \            !s.willItFly(new ArrayList<>(Arrays.asList(1, 2)), 5),\n          \
+  \      s.willItFly(new ArrayList<>(List.of(3)), 5),\n                !s.willItFly(new\
+  \ ArrayList<>(Arrays.asList(3, 2, 3)), 1),\n                !s.willItFly(new ArrayList<>(Arrays.asList(1,\
+  \ 2, 3)), 6),\n                s.willItFly(new ArrayList<>(List.of(5)), 5)\n   \
+  \     );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

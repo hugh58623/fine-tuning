@@ -1,0 +1,22 @@
+name: mbpp_277
+language: py
+prompt: "\n\ndef dict_filter(dict,n):\n \"\"\"\n Write a function to filter a dictionary\
+  \ based on values.\n >>> dict_filter({'Cierra Vega': 175, 'Alden Cantrell': 180,\
+  \ 'Kierra Gentry': 165, 'Pierre Cox': 190},170)\n {'Cierra Vega': 175, 'Alden Cantrell':\
+  \ 180, 'Pierre Cox': 190}\n >>> dict_filter({'Cierra Vega': 175, 'Alden Cantrell':\
+  \ 180, 'Kierra Gentry': 165, 'Pierre Cox': 190},180)\n { 'Alden Cantrell': 180,\
+  \ 'Pierre Cox': 190}\n >>> dict_filter({'Cierra Vega': 175, 'Alden Cantrell': 180,\
+  \ 'Kierra Gentry': 165, 'Pierre Cox': 190},190)\n { 'Pierre Cox': 190}\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'Cierra\
+  \ Vega': 175, 'Alden Cantrell': 180, 'Kierra Gentry': 165, 'Pierre Cox': 190},170)=={'Cierra\
+  \ Vega': 175, 'Alden Cantrell': 180, 'Pierre Cox': 190}\n    assert candidate({'Cierra\
+  \ Vega': 175, 'Alden Cantrell': 180, 'Kierra Gentry': 165, 'Pierre Cox': 190},180)=={\
+  \ 'Alden Cantrell': 180, 'Pierre Cox': 190}\n    assert candidate({'Cierra Vega':\
+  \ 175, 'Alden Cantrell': 180, 'Kierra Gentry': 165, 'Pierre Cox': 190},190)=={ 'Pierre\
+  \ Cox': 190}\n\n\n\ndef test_check():\n    check(dict_filter)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

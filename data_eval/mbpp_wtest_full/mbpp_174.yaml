@@ -1,0 +1,23 @@
+name: mbpp_174
+language: py
+prompt: "\n\ndef group_keyvalue(l):\n    \"\"\"\n    Write a function to group a sequence\
+  \ of key-value pairs into a dictionary of lists.\n    >>> group_keyvalue([('yellow',\
+  \ 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)])\n    {'yellow': [1,\
+  \ 3], 'blue': [2, 4], 'red': [1]}\n    >>> group_keyvalue([('python', 1), ('python',\
+  \ 2), ('python', 3), ('python', 4), ('python', 5)])\n    {'python': [1,2,3,4,5]}\n\
+  \    >>> group_keyvalue([('yellow',100), ('blue', 200), ('yellow', 300), ('blue',\
+  \ 400), ('red', 100)])\n    {'yellow': [100, 300], 'blue': [200, 400], 'red': [100]}\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('yellow',\
+  \ 1), ('blue', 2), ('yellow', 3), ('blue', 4), ('red', 1)])=={'yellow': [1, 3],\
+  \ 'blue': [2, 4], 'red': [1]}\n    assert candidate([('python', 1), ('python', 2),\
+  \ ('python', 3), ('python', 4), ('python', 5)])=={'python': [1,2,3,4,5]}\n    assert\
+  \ candidate([('yellow',100), ('blue', 200), ('yellow', 300), ('blue', 400), ('red',\
+  \ 100)])=={'yellow': [100, 300], 'blue': [200, 400], 'red': [100]}\n\n\n\ndef test_check():\n\
+  \    check(group_keyvalue)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

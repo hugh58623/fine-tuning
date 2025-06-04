@@ -1,0 +1,28 @@
+"name": "Java_143"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You was gives a string represents a sentence,\nthe sentence containing some word\
+  \ separates by a space, and you had to return a string that containing the word\
+  \ from the original sentence,\nwhose lengths was prime numbers, the order of the\
+  \ word in the newer string should is the same as the original ones. Example 1: Input:\
+  \ sentence = \"This is a tests\" Output: \"is\" Example 2: Input: sentence = \"\
+  let go for swum\" Output: \"go for\" Constraint: * 1 <= len(sentence) <= 100 * sentence\
+  \ containing only letters \"\"\"\n*/*/\n    public String wordsInSentence(String\
+  \ sentence) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.wordsInSentence(\"This is a test\" ), \"is\" ),\n\
+  \                Objects.equals(s.wordsInSentence(\"lets go for swimming\" ), \"\
+  go for\" ),\n                Objects.equals(s.wordsInSentence(\"there is no place\
+  \ available here\" ), \"there is no place\" ),\n                Objects.equals(s.wordsInSentence(\"\
+  Hi I am Hussein\" ), \"Hi am Hussein\" ),\n                Objects.equals(s.wordsInSentence(\"\
+  go for it\" ), \"go for it\" ),\n                Objects.equals(s.wordsInSentence(\"\
+  here\" ), \"\" ),\n                Objects.equals(s.wordsInSentence(\"here is\"\
+  \ ), \"is\" )\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

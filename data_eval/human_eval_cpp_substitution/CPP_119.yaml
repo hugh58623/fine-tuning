@@ -1,0 +1,27 @@
+"name": "CPP_119"
+"language": "cpp"
+"prompt": "/*\nYou are given a list of two strings, both strings consist of capable\n\
+  digression' (' or close parentheses')' merely.\nYour job is to check if it be possible\
+  \ to concatenate the two string in\nsome ordering, that the resulting string will\
+  \ embody good.\nA string S is considered to be good if and entirely if all parentheses\
+  \ in S\nare balanced. For case: the bowed stringed instrument' (() ) ()' is good,\
+  \ while the string\n' ())' is not.\nReturn' Yes' if there's a way to cause a good\
+  \ chain, and return' No' otherwise.\n\nexample:\nmatch_parens ([' () (',')' ]) =\
+  \ =' Yes'\nmatch_parens ([')',')' ]) = =' No'\n'\"\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\nusing namespace std;\nstring match_parens(vector<string> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (match_parens({\"\
+  ()(\", \")\"}) == \"Yes\");\n    assert (match_parens({\")\", \")\"}) == \"No\"\
+  );\n    assert (match_parens({\"(()(())\", \"())())\"}) == \"No\");\n    assert\
+  \ (match_parens({\")())\", \"(()()(\"}) == \"Yes\");\n    assert (match_parens({\"\
+  (())))\", \"(()())((\"}) == \"Yes\");\n    assert (match_parens({\"()\", \"())\"\
+  }) == \"No\");\n    assert (match_parens({\"(()(\", \"()))()\"}) == \"Yes\");\n\
+  \    assert (match_parens({\"((((\", \"((())\"}) == \"No\");\n    assert (match_parens({\"\
+  )(()\", \"(()(\"}) == \"No\");\n    assert (match_parens({\")(\", \")(\"}) == \"\
+  No\");\n    assert (match_parens({\"(\", \")\"}) == \"Yes\");\n    assert (match_parens({\"\
+  )\", \"(\"}) == \"Yes\" );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

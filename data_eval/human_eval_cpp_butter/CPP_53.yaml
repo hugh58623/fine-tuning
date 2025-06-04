@@ -1,0 +1,15 @@
+"name": "CPP_53"
+"language": "cpp"
+"prompt": "/*\nAdd hwo numbers x and y\n>>> add(2, 3)\n5\n>>> add(5, 7)\n12\n*/\n\
+  #include<stdio.h>\n#include<stdlib.h>\nusing namespace std;\nint add(int x,int y){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (add(0, 1) ==\
+  \ 1);\n    assert (add(1, 0) == 1);\n    assert (add(2, 3) == 5);\n    assert (add(5,\
+  \ 7) == 12);\n    assert (add(7, 5) == 12);\n    for (int i=0;i<100;i+=1)\n    {\n\
+  \        int x=rand()%1000;\n        int y=rand()%1000;\n        assert (add(x,\
+  \ y) == x + y);\n    }\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

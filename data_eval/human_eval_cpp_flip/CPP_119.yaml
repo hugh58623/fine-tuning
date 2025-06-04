@@ -1,0 +1,27 @@
+"name": "CPP_119"
+"language": "cpp"
+"prompt": "/*\nYou Are gIven a list Of tWo strIngs, bOth striNgs ConsiSt oF OpEn\n\
+  PareNTheSes '(' or close parENThesEs ')' only.\nYour Job is to check if it iS possIbLE\
+  \ tO cONcAtenaTe the twO StRINgs in\nSoME OrdEr, THaT the rEsuLtiNG stRing wIll\
+  \ Be GoOD.\na StrIng S is conSIDEred to be goOd IF and onlY if alL paRenthESeS in\
+  \ S\naRE baLaNceD. for eXamPlE: THe striNg '(())()' is good, wHiLE The StRInG\n\
+  '())' is NoT.\nrEtUrN 'YEs' if tHere'S a way to mAKe A Good string, And return 'NO'\
+  \ otherWiSE.\n\nEXAMplEs:\nmAtch_paRens(['()(', ')']) == 'yeS'\nMatcH_PArens([')',\
+  \ ')']) == 'NO'\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing\
+  \ namespace std;\nstring match_parens(vector<string> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (match_parens({\"\
+  ()(\", \")\"}) == \"Yes\");\n    assert (match_parens({\")\", \")\"}) == \"No\"\
+  );\n    assert (match_parens({\"(()(())\", \"())())\"}) == \"No\");\n    assert\
+  \ (match_parens({\")())\", \"(()()(\"}) == \"Yes\");\n    assert (match_parens({\"\
+  (())))\", \"(()())((\"}) == \"Yes\");\n    assert (match_parens({\"()\", \"())\"\
+  }) == \"No\");\n    assert (match_parens({\"(()(\", \"()))()\"}) == \"Yes\");\n\
+  \    assert (match_parens({\"((((\", \"((())\"}) == \"No\");\n    assert (match_parens({\"\
+  )(()\", \"(()(\"}) == \"No\");\n    assert (match_parens({\")(\", \")(\"}) == \"\
+  No\");\n    assert (match_parens({\"(\", \")\"}) == \"Yes\");\n    assert (match_parens({\"\
+  )\", \"(\"}) == \"Yes\" );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

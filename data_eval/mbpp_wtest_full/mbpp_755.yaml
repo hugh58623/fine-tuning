@@ -1,0 +1,16 @@
+name: mbpp_755
+language: py
+prompt: "\n\ndef second_smallest(numbers):\n  \"\"\"\n  Write a function to find the\
+  \ second smallest number in a list.\n  >>> second_smallest([1, 2, -8, -2, 0, -2])\n\
+  \  -2\n  >>> second_smallest([1, 1, -0.5, 0, 2, -2, -2])\n  -0.5\n  >>> second_smallest([2,2])\n\
+  \  None\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ -8, -2, 0, -2])==-2\n    assert candidate([1, 1, -0.5, 0, 2, -2, -2])==-0.5\n\
+  \    assert candidate([2,2])==None\n\n\n\ndef test_check():\n    check(second_smallest)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

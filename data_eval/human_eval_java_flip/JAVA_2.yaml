@@ -1,0 +1,19 @@
+"name": "Java_2"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GivEn a pOsitiVe fLoatiNg poiNt number, it can Be dEcompOseD InTo\nAnd iNTegEr part\
+  \ (largest INTegeR smaller thAn given number) and deCimalS\n(lEFtOvER pArt alWays\
+  \ smaLLeR THan 1).\n\nreTURn tHe DEcImal pArt Of tHE number.\n\n>>>>>> truncateNumber(3.5)\n\
+  \    0.5\n     */\n    public double truncateNumber(double number) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \            s.truncateNumber(3.5) == 0.5,\n            Math.abs(s.truncateNumber(1.33)\
+  \ - 0.33) < 1e-6,\n            Math.abs(s.truncateNumber(123.456) - 0.456) < 1e-6\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,16 @@
+name: mbpp_885
+language: py
+prompt: "\n\ndef is_Isomorphic(str1,str2):\n    \"\"\"\n    Write a python function\
+  \ to check whether the two given strings are isomorphic to each other or not.\n\
+  \    >>> is_Isomorphic(\"paper\",\"title\")\n    True\n    >>> is_Isomorphic(\"\
+  ab\",\"ba\")\n    True\n    >>> is_Isomorphic(\"ab\",\"aa\")\n    False\n    \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"paper\"\
+  ,\"title\") == True\n    assert candidate(\"ab\",\"ba\") == True\n    assert candidate(\"\
+  ab\",\"aa\") == False\n\n\n\ndef test_check():\n    check(is_Isomorphic)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,18 @@
+"name": "CPP_4"
+"language": "cpp"
+"prompt": "/*\nFor a given vector of input numbers, calculate Mean Absolute Deviation\n\
+  around the mean of this dataset.\nMean Absolute Deviation is the average absolute\
+  \ difference between each\nelement and a centerpoint (mean in this case):\nMAD =\
+  \ average | x - x_mean |\n>>> mean_absolute_deviation({1.0, 2.0, 3.0, 4.0})\n1.0\n\
+  */\n#include<stdio.h>\n#include<math.h>\n#include<vector>\nusing namespace std;\n\
+  float mean_absolute_deviation(vector<float> numbers){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (abs(mean_absolute_deviation({1.0,\
+  \ 2.0, 3.0}) - 2.0/3.0) < 1e-4);\n    assert (abs(mean_absolute_deviation({1.0,\
+  \ 2.0, 3.0, 4.0}) - 1.0) < 1e-4);\n    assert (abs(mean_absolute_deviation({1.0,\
+  \ 2.0, 3.0, 4.0, 5.0}) - 6.0/5.0) < 1e-4);\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

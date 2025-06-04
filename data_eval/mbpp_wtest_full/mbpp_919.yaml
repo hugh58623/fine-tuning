@@ -1,0 +1,15 @@
+name: mbpp_919
+language: py
+prompt: "\n\ndef multiply_list(items):\n    \"\"\"\n    Write a python function to\
+  \ multiply all items in the list.\n    >>> multiply_list([1,-2,3])\n    -6\n   \
+  \ >>> multiply_list([1,2,3,4])\n    24\n    >>> multiply_list([3,1,2,3])\n    18\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,-2,3])\
+  \ == -6\n    assert candidate([1,2,3,4]) == 24\n    assert candidate([3,1,2,3])\
+  \ == 18\n\n\n\ndef test_check():\n    check(multiply_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

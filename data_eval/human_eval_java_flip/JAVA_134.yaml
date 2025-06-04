@@ -1,0 +1,27 @@
+"name": "Java_134"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CreAte a FunctIon That rEturnS True if the lAst CharaCteR\nOf A gIven STriNg is\
+  \ an alphabeTICal cHaracter anD is not\na part oF a worD, aND False oThERwIse.\n\
+  NoTe: \"word\" iS A gROUp oF cHARacTeRS sEparaTed By sPAce.\n\nexampLes:\ncheck_if_last_char_is_a_letter(\"\
+  apple PiE\") ➞ False\ncheck_if_last_char_is_a_letter(\"apple pI E\") ➞ True\ncheck_if_last_char_is_a_letter(\"\
+  apple PI e \") ➞ False\ncheck_if_last_char_is_a_letter(\"\") ➞ False\n\"\"\"\n*/*/\n\
+  \    public boolean checkIfLastCharIsALetter(String txt) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.checkIfLastCharIsALetter(\"apple\" ) == false,\n            \
+  \    s.checkIfLastCharIsALetter(\"apple pi e\" ) == true,\n                s.checkIfLastCharIsALetter(\"\
+  eeeee\" ) == false,\n                s.checkIfLastCharIsALetter(\"A\" ) == true,\n\
+  \                s.checkIfLastCharIsALetter(\"Pumpkin pie \" ) == false,\n     \
+  \           s.checkIfLastCharIsALetter(\"Pumpkin pie 1\" ) == false,\n         \
+  \       s.checkIfLastCharIsALetter(\"\" ) == false,\n                s.checkIfLastCharIsALetter(\"\
+  eeeee e \" ) == false,\n                s.checkIfLastCharIsALetter(\"apple pie\"\
+  \ ) == false,\n                s.checkIfLastCharIsALetter(\"apple pi e \" ) == false\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

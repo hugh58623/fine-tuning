@@ -1,0 +1,34 @@
+"name": "Java_149"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  WritE a fuNctioN thAt accEpts a list Of strinGs aS a parAmeTEr,\nDeLeteS The Strings\
+  \ that haVE Odd lEngths from It,\nand returns The reSuLTeD list wITh A sorted ordeR,\n\
+  The list is aLWaYS A list of StRINgs AnD NeVer an ArrAy oF NumBers,\naNd iT mAy\
+  \ CONTaiN duplicatES.\ntHe order of tHe list SHould be AscenDinG by leNGtH of EAch\
+  \ WoRd, aND you\nShoUlD return THe list sorted by thAt rule.\nIf tWo WORds HaVE\
+  \ tHe sAmE LEnGtH, sort tHe list alpHabeTically.\nTHE fUNction shouLd return a list\
+  \ oF strinGs in sorted ORdER.\nyou May Assume That AlL WordS WIll havE ThE SAMe\
+  \ LENgth.\nFor examplE:\nassert list_sort([\"aa\", \"a\", \"aaa\"]) => [\"AA\"]\n\
+  aSSerT list_sort([\"ab\", \"a\", \"aAa\", \"CD\"]) => [\"aB\", \"Cd\"]\n\"\"\"\n\
+  */*/\n    public List<String> listSort(List<String> lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.listSort(new ArrayList<>(Arrays.asList(\"aa\", \"a\", \"aaa\"\
+  ))).equals(List.of(\"aa\")),\n                s.listSort(new ArrayList<>(Arrays.asList(\"\
+  school\", \"AI\", \"asdf\", \"b\"))).equals(Arrays.asList(\"AI\", \"asdf\", \"school\"\
+  )),\n                s.listSort(new ArrayList<>(Arrays.asList(\"d\", \"b\", \"c\"\
+  , \"a\"))).equals(List.of()),\n                s.listSort(new ArrayList<>(Arrays.asList(\"\
+  d\", \"dcba\", \"abcd\", \"a\"))).equals(Arrays.asList(\"abcd\", \"dcba\")),\n \
+  \               s.listSort(new ArrayList<>(Arrays.asList(\"AI\", \"ai\", \"au\"\
+  ))).equals(Arrays.asList(\"AI\", \"ai\", \"au\")),\n                s.listSort(new\
+  \ ArrayList<>(Arrays.asList(\"a\", \"b\", \"b\", \"c\", \"c\", \"a\"))).equals(List.of()),\n\
+  \                s.listSort(new ArrayList<>(Arrays.asList(\"aaaa\", \"bbbb\", \"\
+  dd\", \"cc\"))).equals(Arrays.asList(\"cc\", \"dd\", \"aaaa\", \"bbbb\"))\n    \
+  \    );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

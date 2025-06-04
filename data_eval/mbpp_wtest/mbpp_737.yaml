@@ -1,0 +1,15 @@
+name: mbpp_737
+language: py
+prompt: "\n\ndef check_str(string):\n\t\"\"\"\n\tWrite a function to check whether\
+  \ the given string is starting with a vowel or not using regex.\n\t>>> check_str(\"\
+  annie\")\n\t'Valid'\n\t>>> check_str(\"dawood\")\n\t'Invalid'\n\t>>> check_str(\"\
+  Else\")\n\t'Valid'\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"annie\"\
+  ) == 'Valid'\n    assert candidate(\"dawood\") == 'Invalid'\n    assert candidate(\"\
+  Else\") == 'Valid'\n\n\n\ndef test_check():\n    check(check_str)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

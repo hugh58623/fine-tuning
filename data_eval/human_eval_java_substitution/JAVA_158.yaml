@@ -1,0 +1,32 @@
+"name": "Java_158"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Write a function that accepts a list of strings.\nThe list check unlike words. Return\
+  \ the news with maximum numeral\nof unique quality. If multiple string have maximal\
+  \ number of alone\ncharacters, return the one which comes foremost in lexicographical\
+  \ ordering.\n\nfind_max([\"name \", \" of \", \" string \" ]) = = \" string \"\n\
+  find_max([\"name \", \" enam \", \" plot \" ]) = = \" enam \"\nfind_max([\"aaaaaaa\
+  \ \", \" bb \", \" milliliter \" ]) = = \" \" aaaaaaa \"\n\" \" \"\n*/*/\n    public\
+  \ String findMax(List<String> words) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.findMax(new ArrayList<>(Arrays.asList(\"name\", \"of\", \"string\"\
+  ))).equals(\"string\"),\n                s.findMax(new ArrayList<>(Arrays.asList(\"\
+  name\", \"enam\", \"game\"))).equals(\"enam\"),\n                s.findMax(new ArrayList<>(Arrays.asList(\"\
+  aaaaaaa\", \"bb\", \"cc\"))).equals(\"aaaaaaa\"),\n                s.findMax(new\
+  \ ArrayList<>(Arrays.asList(\"abc\", \"cba\"))).equals(\"abc\"),\n             \
+  \   s.findMax(new ArrayList<>(Arrays.asList(\"play\", \"this\", \"game\", \"of\"\
+  , \"footbott\"))).equals(\"footbott\"),\n                s.findMax(new ArrayList<>(Arrays.asList(\"\
+  we\", \"are\", \"gonna\", \"rock\"))).equals(\"gonna\"),\n                s.findMax(new\
+  \ ArrayList<>(Arrays.asList(\"we\", \"are\", \"a\", \"mad\", \"nation\"))).equals(\"\
+  nation\"),\n                s.findMax(new ArrayList<>(Arrays.asList(\"this\", \"\
+  is\", \"a\", \"prrk\"))).equals(\"this\"),\n                s.findMax(new ArrayList<>(List.of(\"\
+  b\"))).equals(\"b\"),\n                s.findMax(new ArrayList<>(Arrays.asList(\"\
+  play\", \"play\", \"play\"))).equals(\"play\")\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

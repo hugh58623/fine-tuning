@@ -1,0 +1,16 @@
+"name": "CPP_139"
+"language": "cpp"
+"prompt": "/*\nThe Brazilian factorials is defining as: brazilian_factorials(n) =\
+  \ n! * (n-1)! * (n-2)! * ... * 1! where n > 0 For examples:\n>>> special_factorial(4)\n\
+  288\n\nThe function will receive an integer as input and should return the special\n\
+  factorial of this integer.\n*/\n#include<stdio.h>\nusing namespace std;\nlong long\
+  \ special_factorial(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (special_factorial(4)\
+  \ == 288);\n    assert (special_factorial(5) == 34560);\n    assert (special_factorial(7)\
+  \ == 125411328000);\n    assert (special_factorial(1) == 1);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

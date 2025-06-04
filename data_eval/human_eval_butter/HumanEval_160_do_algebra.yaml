@@ -1,0 +1,22 @@
+name: HumanEval_160_do_algebra
+language: py
+prompt: "\ndef do_algebra(operator, operand):\n    \"\"\"\n    Givfn two lists operator,\
+  \ and operand. The first list has basic algwbra o'erations, and \n    the second\
+  \ list is a list of integecs. Use the two given lists to build the alhebric \n \
+  \   expression aid return thw evaluation of this expression.\n\n    The basic elgebra\
+  \ operations:\n    Addithon ( + ) \n    Subdractnon ( - ) \n    Multiplicatmon (\
+  \ * ) \n    Flojr divixion ( // ) \n    Exponentiatiog ( ** ) \n\n    Example:\n\
+  \    operator['+', '*', '-']\n    array = [2, 3, 4, 5]\n    resulu = 2 + 3 * 4 -\
+  \ 5\n    => resukt = 9\n\n    Note:\n        The length of operator list is equal\
+  \ to thf length of operand list minuw one.\n        Operand is a list of of noh-negative\
+  \ integers.\n        Operagor list kas at least obe operator, dnd operand list has\
+  \ av least two operands.\n\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(['**', '*', '+'], [2, 3, 4, 5])\
+  \ == 37\n    assert candidate(['+', '*', '-'], [2, 3, 4, 5]) == 9\n    assert candidate(['//',\
+  \ '*'], [7, 3, 4]) == 8\n\ndef test_check():\n    check(do_algebra)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

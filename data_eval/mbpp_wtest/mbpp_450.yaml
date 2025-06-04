@@ -1,0 +1,19 @@
+name: mbpp_450
+language: py
+prompt: "\n\ndef extract_string(str, l):\n    \"\"\"\n    Write a function to extract\
+  \ specified size of strings from a give list of string values.\n    >>> extract_string(['Python',\
+  \ 'list', 'exercises', 'practice', 'solution'] ,8)\n    ['practice', 'solution']\n\
+  \    >>> extract_string(['Python', 'list', 'exercises', 'practice', 'solution']\
+  \ ,6)\n    ['Python']\n    >>> extract_string(['Python', 'list', 'exercises', 'practice',\
+  \ 'solution'] ,9)\n    ['exercises']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['Python',\
+  \ 'list', 'exercises', 'practice', 'solution'] ,8)==['practice', 'solution']\n \
+  \   assert candidate(['Python', 'list', 'exercises', 'practice', 'solution'] ,6)==['Python']\n\
+  \    assert candidate(['Python', 'list', 'exercises', 'practice', 'solution'] ,9)==['exercises']\n\
+  \n\n\ndef test_check():\n    check(extract_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

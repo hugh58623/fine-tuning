@@ -1,0 +1,23 @@
+"name": "Java_44"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Cdepend numerical base of the input number x to the base. Returns the string representation\
+  \ after the conversion. Base numbers are less than 10.\n\n>>>>>> changeBase(8, 3)\n\
+  \    \"22\"\n    >>> changeBase(8, 2)\n    \"1000\"\n    >>> changeBase(7, 2)\n\
+  \    \"111\"\n     */\n    public String changeBase(int x, int base) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.changeBase(8, 3), \"22\"),\n                Objects.equals(s.changeBase(9,\
+  \ 3), \"100\"),\n                Objects.equals(s.changeBase(234, 2), \"11101010\"\
+  ),\n                Objects.equals(s.changeBase(16, 2), \"10000\"),\n          \
+  \      Objects.equals(s.changeBase(8, 2), \"1000\"),\n                Objects.equals(s.changeBase(7,\
+  \ 2), \"111\")\n        );\n        if (correct.contains(false)) {\n           \
+  \ throw new AssertionError();\n        }\n        for (int x = 2; x < 8; x++) {\n\
+  \            if (!Objects.equals(s.changeBase(x, x + 1), String.valueOf(x))) {\n\
+  \                throw new AssertionError();\n            }\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

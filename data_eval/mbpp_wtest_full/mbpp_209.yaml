@@ -1,0 +1,18 @@
+name: mbpp_209
+language: py
+prompt: "\n\ndef heap_replace(heap,a):\n  \"\"\"\n  Write a function to delete the\
+  \ smallest element from the given heap and then insert a new item.\n  >>> heap_replace(\
+  \ [25, 44, 68, 21, 39, 23, 89],21)\n  [21, 25, 23, 44, 39, 68, 89]\n  >>> heap_replace([25,\
+  \ 44, 68, 21, 39, 23, 89],110)\n  [23, 25, 68, 44, 39, 110, 89]\n  >>> heap_replace([25,\
+  \ 44, 68, 21, 39, 23, 89],500)\n  [23, 25, 68, 44, 39, 500, 89]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate( [25, 44,\
+  \ 68, 21, 39, 23, 89],21)==[21, 25, 23, 44, 39, 68, 89]\n    assert candidate([25,\
+  \ 44, 68, 21, 39, 23, 89],110)== [23, 25, 68, 44, 39, 110, 89]\n    assert candidate([25,\
+  \ 44, 68, 21, 39, 23, 89],500)==[23, 25, 68, 44, 39, 500, 89]\n\n\n\ndef test_check():\n\
+  \    check(heap_replace)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

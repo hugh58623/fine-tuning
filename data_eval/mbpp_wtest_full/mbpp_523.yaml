@@ -1,0 +1,20 @@
+name: mbpp_523
+language: py
+prompt: "\n\ndef check_string(str1):\n    \"\"\"\n    Write a function to check whether\
+  \ a given string has a capital letter, a lower case letter, a number and specified\
+  \ length using lambda function.\n    >>> check_string('python')\n    ['String must\
+  \ have 1 upper case character.', 'String must have 1 number.', 'String length should\
+  \ be atleast 8.']\n    >>> check_string('123python')\n    ['String must have 1 upper\
+  \ case character.']\n    >>> check_string('123Python')\n    ['Valid string.']\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python')==['String\
+  \ must have 1 upper case character.', 'String must have 1 number.', 'String length\
+  \ should be atleast 8.']\n    assert candidate('123python')==['String must have\
+  \ 1 upper case character.']\n    assert candidate('123Python')==['Valid string.']\n\
+  \n\n\ndef test_check():\n    check(check_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

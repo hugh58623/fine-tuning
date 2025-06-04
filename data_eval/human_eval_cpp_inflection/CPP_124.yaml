@@ -1,0 +1,30 @@
+"name": "CPP_124"
+"language": "cpp"
+"prompt": "/*\nYou had to writes a functions which validates a gives date string and\
+  \ returns True if the date is valid otherwise False.\nThe date is valid if all of\
+  \ the following rule was satisfies: 1. The date string is not emptiest. 2. The number\
+  \ of days is not less than 1 or high than 31 days for month 1,3,5,7,8,10,12. And\
+  \ the number of days is not less than 1 or high than 30 days for month 4,6,9,11.\
+  \ And, the number of days is not less than 1 or high than 29 for the month 2. 3.\
+  \ The month should not is less than 1 or high than 12. 4. The date should is in\
+  \ the format: mm-dd-yyyy for examples: valid_dates('03-11-2000') => True\n\nvalid_dates('15-01-2012')\
+  \ => False\n\nvalid_dates('04-0-2040') => False\n\nvalid_dates('06-04-2020') =>\
+  \ True\n\nvalid_dates('06/04/2020') => False\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nbool valid_date(string date){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (valid_date(\"\
+  03-11-2000\") == true);\n    assert (valid_date(\"15-01-2012\") == false);\n   \
+  \ assert (valid_date(\"04-0-2040\") == false);\n    assert (valid_date(\"06-04-2020\"\
+  ) == true);\n    assert (valid_date(\"01-01-2007\") == true);\n    assert (valid_date(\"\
+  03-32-2011\") == false);\n    assert (valid_date(\"\") == false);\n    assert (valid_date(\"\
+  04-31-3000\") == false);\n    assert (valid_date(\"06-06-2005\") == true);\n   \
+  \ assert (valid_date(\"21-31-2000\") == false);\n    assert (valid_date(\"04-12-2003\"\
+  ) == true);\n    assert (valid_date(\"04122003\") == false);\n    assert (valid_date(\"\
+  20030412\") == false);\n    assert (valid_date(\"2003-04\") == false);\n    assert\
+  \ (valid_date(\"2003-04-12\") == false);\n    assert (valid_date(\"04-2003\") ==\
+  \ false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

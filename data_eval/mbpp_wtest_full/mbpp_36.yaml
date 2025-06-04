@@ -1,0 +1,15 @@
+name: mbpp_36
+language: py
+prompt: "\n\ndef find_Nth_Digit(p,q,N) :\n    \"\"\"\n    Write a python function\
+  \ to find the nth digit in the proper fraction of two given numbers.\n    >>> find_Nth_Digit(1,2,1)\n\
+  \    5\n    >>> find_Nth_Digit(3,5,1)\n    6\n    >>> find_Nth_Digit(5,6,5)\n  \
+  \  3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,2,1)\
+  \ == 5\n    assert candidate(3,5,1) == 6\n    assert candidate(5,6,5) == 3\n\n\n\
+  \ndef test_check():\n    check(find_Nth_Digit)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

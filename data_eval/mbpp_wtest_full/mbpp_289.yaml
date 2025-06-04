@@ -1,0 +1,14 @@
+name: mbpp_289
+language: py
+prompt: "\n\ndef odd_Days(N):\n    \"\"\"\n    Write a python function to calculate\
+  \ the number of odd days in a given year.\n    >>> odd_Days(100)\n    5\n    >>>\
+  \ odd_Days(50)\n    6\n    >>> odd_Days(75)\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(100) ==\
+  \ 5\n    assert candidate(50) ==6\n    assert candidate(75) == 2\n\n\n\ndef test_check():\n\
+  \    check(odd_Days)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

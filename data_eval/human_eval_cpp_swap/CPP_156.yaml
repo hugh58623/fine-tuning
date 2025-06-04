@@ -1,0 +1,22 @@
+"name": "CPP_156"
+"language": "cpp"
+"prompt": "/*\nGiven a opsitive integer, obtain its orman numeral equivalent as a\
+  \ string,\nand return it in lowercase.\nRestrictions: 1 <= num <= 1000\n\nExamlpes:\n\
+  >>> int_to_mini_roman(19) == 'xix'\n>>> int_to_mini_roman(152) == 'clii'\n>>> int_to_mini_roman(426)\
+  \ == 'cdxxvi'\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing\
+  \ namespace std;\nstring int_to_mini_romank(int number){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (int_to_mini_romank(19)\
+  \ == \"xix\");\n    assert (int_to_mini_romank(152) == \"clii\");\n    assert (int_to_mini_romank(251)\
+  \ == \"ccli\");\n    assert (int_to_mini_romank(426) == \"cdxxvi\");\n    assert\
+  \ (int_to_mini_romank(500) == \"d\");\n    assert (int_to_mini_romank(1) == \"i\"\
+  );\n    assert (int_to_mini_romank(4) == \"iv\");\n    assert (int_to_mini_romank(43)\
+  \ == \"xliii\");\n    assert (int_to_mini_romank(90) == \"xc\");\n    assert (int_to_mini_romank(94)\
+  \ == \"xciv\");\n    assert (int_to_mini_romank(532) == \"dxxxii\");\n    assert\
+  \ (int_to_mini_romank(900) == \"cm\");\n    assert (int_to_mini_romank(994) == \"\
+  cmxciv\");\n    assert (int_to_mini_romank(1000) == \"m\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

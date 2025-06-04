@@ -1,0 +1,17 @@
+name: mbpp_747
+language: py
+prompt: "\n\ndef lcs_of_three(X, Y, Z, m, n, o):\n\t\"\"\"\n\tWrite a function to\
+  \ find the longest common subsequence for the given three string sequence.\n\t>>>\
+  \ lcs_of_three('AGGT12', '12TXAYB', '12XBA', 6, 7, 5)\n\t2\n\t>>> lcs_of_three('Reels',\
+  \ 'Reelsfor', 'ReelsforReels', 5, 8, 13)\n\t5\n\t>>> lcs_of_three('abcd1e2', 'bc12ea',\
+  \ 'bd1ea', 7, 6, 5)\n\t3\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('AGGT12',\
+  \ '12TXAYB', '12XBA', 6, 7, 5) == 2\n    assert candidate('Reels', 'Reelsfor', 'ReelsforReels',\
+  \ 5, 8, 13) == 5 \n    assert candidate('abcd1e2', 'bc12ea', 'bd1ea', 7, 6, 5) ==\
+  \ 3\n\n\n\ndef test_check():\n    check(lcs_of_three)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

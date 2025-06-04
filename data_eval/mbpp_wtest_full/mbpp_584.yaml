@@ -1,0 +1,18 @@
+name: mbpp_584
+language: py
+prompt: "\n\ndef find_adverbs(text):\n  \"\"\"\n  Write a function to find all adverbs\
+  \ and their positions in a given sentence by using regex.\n  >>> find_adverbs(\"\
+  Clearly, he has no excuse for such behavior.\")\n  '0-7: Clearly'\n  >>> find_adverbs(\"\
+  Please handle the situation carefuly\")\n  '28-36: carefuly'\n  >>> find_adverbs(\"\
+  Complete the task quickly\")\n  '18-25: quickly'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Clearly,\
+  \ he has no excuse for such behavior.\") == '0-7: Clearly'\n    assert candidate(\"\
+  Please handle the situation carefuly\") == '28-36: carefuly'\n    assert candidate(\"\
+  Complete the task quickly\") == '18-25: quickly'\n\n\n\ndef test_check():\n    check(find_adverbs)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

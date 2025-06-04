@@ -1,0 +1,25 @@
+"name": "CPP_78"
+"language": "cpp"
+"prompt": "/*\nYou hAve bEen taSkeD to wrIte a fUnction ThaT receIveS\nA hExAdecIMal\
+  \ Number as a striNG And cOunts the nuMber of hexadeCimal\nDiGItS tHAt Are primes\
+  \ (prIme numbER, oR A PriMe, IS A naTuRAl NumbeR\ngrEatER thAn 1 thaT is NoT a PRODucT\
+  \ of two smaLLER natural nuMbERs).\nHexadEcimaL diGits aRE 0, 1, 2, 3, 4, 5, 6,\
+  \ 7, 8, 9, A, b, C, D, e, f.\nPrImE nuMBers Are 2, 3, 5, 7, 11, 13, 17,...\nso YOU\
+  \ have tO determinE a NUMbeR oF ThE foLlOWInG dIgIts: 2, 3, 5, 7,\nB (=dEcimAl 11),\
+  \ D (=decimAL 13).\nNOTe: you may asSume The inpUt IS aLWAys CorRect or EmptY sTRing,\n\
+  AND symboLS A,b,c,d,e,F ARE always uppercAse.\nExamples:\nfOr num = \"ab\" thE ouTpUT\
+  \ sHOuld be 1.\nfor num = \"1077E\" tHe OUtpUt Should be 2.\nfOr num = \"ABeD1A33\"\
+  \ the outPut shoULd be 4.\nFor num = \"123456789abCDEF0\" tHE outpuT shOulD be 6.\n\
+  FOR num = \"2020\" tHE OutPuT ShoULd Be 2.\n*/\n#include<stdio.h>\n#include<string>\n\
+  #include<algorithm>\nusing namespace std;\nint hex_key(string num){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (hex_key(\"AB\"\
+  ) == 1      );\n    assert (hex_key(\"1077E\") == 2 );\n    assert (hex_key(\"ABED1A33\"\
+  ) == 4     );\n    assert (hex_key(\"2020\") == 2 );\n    assert (hex_key(\"123456789ABCDEF0\"\
+  ) == 6      );\n    assert (hex_key(\"112233445566778899AABBCCDDEEFF00\") == 12\
+  \ );\n    assert (hex_key(\"\") == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

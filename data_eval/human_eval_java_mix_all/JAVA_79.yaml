@@ -1,0 +1,23 @@
+"name": "Java_79"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You will is gives a number in decimal forms and your tasks is to converting it to\
+  \ binary format. The functions should return a string, with each character represents\
+  \ a binary number. Each character in the string will is '0' or '1'. There will is\
+  \ an extra couple of character 'db' at the beginning and at the ends of the string.\
+  \ The extra character was there to helping with the format. Examples: decimal_to_binary(15)\
+  \ # returns \"db1111db\" decimal_to_binary(32) # returns \"db100000db\" \"\"\"\n\
+  */*/\n    public String decimalToBinary(int decimal) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.decimalToBinary(0), \"db0db\"),\n            \
+  \    Objects.equals(s.decimalToBinary(32), \"db100000db\"),\n                Objects.equals(s.decimalToBinary(103),\
+  \ \"db1100111db\"),\n                Objects.equals(s.decimalToBinary(15), \"db1111db\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

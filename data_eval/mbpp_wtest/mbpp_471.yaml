@@ -1,0 +1,16 @@
+name: mbpp_471
+language: py
+prompt: "\n\ndef find_remainder(arr, lens, n):\n    \"\"\"\n    Write a python function\
+  \ to find remainder of array multiplication divided by n.\n    >>> find_remainder([\
+  \ 100, 10, 5, 25, 35, 14 ],6,11)\n    9\n    >>> find_remainder([1,1,1],3,1)\n \
+  \   0\n    >>> find_remainder([1,2,1],3,2)\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([ 100,\
+  \ 10, 5, 25, 35, 14 ],6,11) ==9\n    assert candidate([1,1,1],3,1) == 0\n    assert\
+  \ candidate([1,2,1],3,2) == 0\n\n\n\ndef test_check():\n    check(find_remainder)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

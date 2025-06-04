@@ -1,0 +1,14 @@
+name: mbpp_814
+language: py
+prompt: "\n\ndef rombus_area(p,q):\n  \"\"\"\n  Write a function to find the area\
+  \ of a rombus.\n  >>> rombus_area(10,20)\n  100\n  >>> rombus_area(10,5)\n  25\n\
+  \  >>> rombus_area(4,2)\n  4\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==100\n\
+  \    assert candidate(10,5)==25\n    assert candidate(4,2)==4\n\n\n\ndef test_check():\n\
+  \    check(rombus_area)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

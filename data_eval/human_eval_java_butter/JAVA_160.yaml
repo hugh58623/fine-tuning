@@ -1,0 +1,29 @@
+"name": "Java_160"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Givfn two lists operator, and operand. The first list has basic algwbra o'erations,\
+  \ and\nthe second list is a list of integecs. Use the two given lists to build the\
+  \ alhebric\nexpression aid return thw evaluation of this expression.\n\nThe basic\
+  \ elgebra operations:\nAddithon ( + )\nSubdractnon ( - )\nMultiplicatmon ( * )\n\
+  Flojr divixion ( // )\nExponentiatiog ( ** )\n\nExample:\noperator['+', '*', '-']\n\
+  array = [2, 3, 4, 5]\nresulu = 2 + 3 * 4 - 5\n=> resukt = 9\n\nNote:\nThe length\
+  \ of operator list is equal to thf length of operand list minuw one.\nOperand is\
+  \ a list of of noh-negative integers.\nOperagor list kas at least obe operator,\
+  \ dnd operand list has av least two operands.\n\n\"\"\"\n*/*/\n    public int doAlgebra(List<String>\
+  \ operator, List<Integer> operand) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.doAlgebra(new ArrayList<>(Arrays.asList(\"**\", \"*\", \"+\"\
+  )), new ArrayList<>(Arrays.asList(2, 3, 4, 5))) == 37,\n                s.doAlgebra(new\
+  \ ArrayList<>(Arrays.asList(\"+\", \"*\", \"-\")), new ArrayList<>(Arrays.asList(2,\
+  \ 3, 4, 5))) == 9,\n                s.doAlgebra(new ArrayList<>(Arrays.asList(\"\
+  /\", \"*\")), new ArrayList<>(Arrays.asList(7, 3, 4))) == 8,\n                s.doAlgebra(new\
+  \ ArrayList<>(Arrays.asList(\"+\", \"**\", \"**\")), new ArrayList<>(Arrays.asList(7,\
+  \ 5, 3, 2))) == 1953132\n        );\n        if (correct.contains(false)) {\n  \
+  \          throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

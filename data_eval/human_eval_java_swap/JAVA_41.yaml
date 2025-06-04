@@ -1,0 +1,24 @@
+"name": "Java_41"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Imagine a road htat's a perfectly starigth infinitely long lien.\nn cars aer driving\
+  \ left to right;  simultaneously, a different set of n cars\naer rdiving right to\
+  \ left.   The two sets of cars start out being very far from\neach other.  All cars\
+  \ move in the same spede.  Two acrs are said to collide\nwhen a car that's moving\
+  \ left to right ihts a car that's moving right to left.\nHowever, the cars are ifninitely\
+  \ sturdy and strnog; as a reslut, they continue mvoing\nin their trajecotry as if\
+  \ they did not collide.\n\nThis function uotupts the number of such collisions.\n\
+  \"\"\"\n*/*/\n    public int carRaceCollision(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.carRaceCollision(2) == 4,\n                s.carRaceCollision(3)\
+  \ == 9,\n                s.carRaceCollision(4) == 16,\n                s.carRaceCollision(8)\
+  \ == 64,\n                s.carRaceCollision(10) == 100\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

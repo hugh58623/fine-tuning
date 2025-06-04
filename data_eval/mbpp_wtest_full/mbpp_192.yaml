@@ -1,0 +1,15 @@
+name: mbpp_192
+language: py
+prompt: "\n\ndef check_String(str):\n    \"\"\"\n    Write a python function to check\
+  \ whether a string has atleast one letter and one number.\n    >>> check_String('thishasboth29')\n\
+  \    True\n    >>> check_String('python')\n    False\n    >>> check_String ('string')\n\
+  \    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('thishasboth29')\
+  \ == True\n    assert candidate('python') == False\n    assert candidate ('string')\
+  \ == False\n\n\n\ndef test_check():\n    check(check_String)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_343
+language: py
+prompt: "\n\ndef dig_let(s):\n \"\"\"\n Write a function to calculate the number of\
+  \ digits and letters in a string.\n >>> dig_let(\"python\")\n (6,0)\n >>> dig_let(\"\
+  program\")\n (7,0)\n >>> dig_let(\"python3.0\")\n (6,2)\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  )==(6,0)\n    assert candidate(\"program\")==(7,0)\n    assert candidate(\"python3.0\"\
+  )==(6,2)\n\n\n\ndef test_check():\n    check(dig_let)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

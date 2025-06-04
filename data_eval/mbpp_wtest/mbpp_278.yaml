@@ -1,0 +1,17 @@
+name: mbpp_278
+language: py
+prompt: "\n\ndef count_first_elements(test_tup):\n  \"\"\"\n  Write a function to\
+  \ find the element count that occurs before the record in the given tuple.\n  >>>\
+  \ count_first_elements((1, 5, 7, (4, 6), 10) )\n  3\n  >>> count_first_elements((2,\
+  \ 9, (5, 7), 11) )\n  2\n  >>> count_first_elements((11, 15, 5, 8, (2, 3), 8) )\n\
+  \  4\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((1, 5,\
+  \ 7, (4, 6), 10) ) == 3\n    assert candidate((2, 9, (5, 7), 11) ) == 2\n    assert\
+  \ candidate((11, 15, 5, 8, (2, 3), 8) ) == 4\n\n\n\ndef test_check():\n    check(count_first_elements)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_668
+language: py
+prompt: "\n\ndef replace(string, char):\n    \"\"\"\n    Write a python function to\
+  \ replace multiple occurence of character by single.\n    >>> replace('peep','e')\n\
+  \    'pep'\n    >>> replace('Greek','e')\n    'Grek'\n    >>> replace('Moon','o')\n\
+  \    'Mon'\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('peep','e')\
+  \ == 'pep'\n    assert candidate('Greek','e') == 'Grek'\n    assert candidate('Moon','o')\
+  \ == 'Mon'\n\n\n\ndef test_check():\n    check(replace)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

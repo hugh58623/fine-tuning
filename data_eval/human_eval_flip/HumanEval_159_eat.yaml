@@ -1,0 +1,26 @@
+name: HumanEval_159_eat
+language: py
+prompt: "\ndef eat(number, need, remaining):\n    \"\"\"\n    You'Re a hUngry RabBit,\
+  \ anD you aLready hAve Eaten A ceRTaIn number Of caRRotS,\n    but now you need\
+  \ to eat mORE carRots to compLete the day's mEals.\n    yOu SHoUlD return An Array\
+  \ Of [ total number OF eATEn cArROTs aFtER yOur meAls,\n                       \
+  \             The number OF caRrots LefT aFtER YOur Meals ]\n    if thERE Are not\
+  \ enouGh remaining CArrots, yOu wilL eat alL remaining carrOTs, But WIll StIll BE\
+  \ hunGry.\n    \n    exAMPle:\n    * eat(5, 6, 10) -> [11, 4]\n    * eat(4, 8, 9)\
+  \ -> [12, 1]\n    * eat(1, 10, 10) -> [11, 0]\n    * eat(2, 11, 5) -> [7, 0]\n \
+  \   \n    VarIables:\n    @number : intEgER\n        The number Of CArRotS tHAT\
+  \ yOu HaVe eatEn.\n    @need : inTeger\n        the number OF cARrots that yOu need\
+  \ to eat.\n    @remaining : IntegeR\n        tHE number oF remaining CArrOts Thet\
+  \ exIst in sToCK\n    \n    ConSTRain:\n    * 0 <= number <= 1000\n    * 0 <= need\
+  \ <= 1000\n    * 0 <= remaining <= 1000\n\n    HaVE fUN :)\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(5, 6, 10) == [11, 4]\n    assert\
+  \ candidate(4, 8, 9) == [12, 1]\n    assert candidate(1, 10, 10) == [11, 0]\n  \
+  \  assert candidate(2, 11, 5) == [7, 0]\n    assert candidate(4, 5, 7) == [9, 2]\n\
+  \    assert candidate(4, 5, 1) == [5, 0]\n\ndef test_check():\n    check(eat)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

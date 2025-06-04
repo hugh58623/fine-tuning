@@ -1,0 +1,25 @@
+"name": "CPP_123"
+"language": "cpp"
+"prompt": "/*\nGivEn a pOsitiVe iNtegeR n, return a sorted list thaT has the Odd NumbeRs\
+  \ in cOLlAtZ seqUEncE.\n\nThe Collatz coNJEctuRe is a conjeCture in mathemaTics\
+  \ tHaT CoNcERnS a seqUence deFInED\nAs fOlLOWs: sTaRT wIth anY poSitIVe iNtegeR\
+  \ n. ThEn EaCH TErm Is obtaineD FROm the\npreviOuS Term as fOllowS: if The prEViOus\
+  \ TErm Is EveN, The nExt TeRM Is one hAlf of\nthe pReVIOus TeRM. IF thE pREViOuS\
+  \ tErm is Odd, tHe next teRM iS 3 Times the prEvioUs\nterm PlUS 1. THE ConJecTure\
+  \ is That No MAtteR WHat valUE oF n, THE sEQUence will alwaYs reach 1.\n\nNote:\n\
+  1. cOlLAtz(1) Is [1].\n2. rEtURnED list sorted in increAsing OrDEr.\n\nFOr Example:\n\
+  gET_odd_Collatz(5) reTurns [1, 5] # THE collatZ SequenCE for 5 is [5, 16, 8, 4,\
+  \ 2, 1], So tHe oDd nuMBeRS Are OnLY 1, anD 5.\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<algorithm>\nusing namespace std;\nvector<int> get_odd_collatz(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(get_odd_collatz(14) , {1, 5, 7, 11, 13, 17}));\n    assert (issame(get_odd_collatz(5)\
+  \ , {1, 5}));\n    assert (issame(get_odd_collatz(12) , {1, 3, 5}));\n    assert\
+  \ (issame(get_odd_collatz(1) , {1}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

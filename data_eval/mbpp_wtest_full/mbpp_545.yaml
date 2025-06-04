@@ -1,0 +1,15 @@
+name: mbpp_545
+language: py
+prompt: "\n\ndef toggle_F_and_L_bits(n) :\n    \"\"\"\n    Write a python function\
+  \ to toggle only first and last bits of a given number.\n    >>> toggle_F_and_L_bits(10)\n\
+  \    3\n    >>> toggle_F_and_L_bits(15)\n    6\n    >>> toggle_F_and_L_bits(20)\n\
+  \    5\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 3\n    assert candidate(15) == 6\n    assert candidate(20) == 5\n\n\n\ndef test_check():\n\
+  \    check(toggle_F_and_L_bits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

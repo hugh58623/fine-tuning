@@ -1,0 +1,23 @@
+"name": "CPP_143"
+"language": "cpp"
+"prompt": "/*\nYou Are gIven a StrIng rePreseNting a sentence,\ntHe sentence cOntaiNs\
+  \ sOMe WoRds sEParAted by a space,\naND You hAve to return a striNg that contaiNs\
+  \ the WoRDs FrOM tHe oriGinal sentence,\nwhOSe LENgtHs ARE prImE NuMbers,\nThe OrdER\
+  \ of The woRds in ThE nEW STriNg should bE THE same as the OrIGinal onE.\n\nExamPle\
+  \ 1:\ninput: sentence = \"tHiS is A TesT\"\nOUtpUT: \"is\"\n\nEXamPlE 2:\niNput:\
+  \ sentence = \"leTs go for swImMINg\"\nOUtPUt: \"Go fOr\"\n\ncONsTrAiNts:\n* 1 <=\
+  \ len(sentence) <= 100\n* sentence coNtaiNs only leTTeRS\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nstring words_in_sentence(string sentence){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (words_in_sentence(\"\
+  This is a test\") == \"is\");\n    assert (words_in_sentence(\"lets go for swimming\"\
+  ) == \"go for\");\n    assert (words_in_sentence(\"there is no place available here\"\
+  ) == \"there is no place\");\n    assert (words_in_sentence(\"Hi I am Hussein\"\
+  ) == \"Hi am Hussein\");\n    assert (words_in_sentence(\"go for it\") == \"go for\
+  \ it\");\n    assert (words_in_sentence(\"here\") == \"\");\n    assert (words_in_sentence(\"\
+  here is\") == \"is\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_443
+language: py
+prompt: "\n\ndef largest_neg(list1):\n    \"\"\"\n    Write a python function to find\
+  \ the largest negative number from the given list.\n    >>> largest_neg([1,2,3,-4,-6])\n\
+  \    -6\n    >>> largest_neg([1,2,3,-8,-9])\n    -9\n    >>> largest_neg([1,2,3,4,-1])\n\
+  \    -1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,-4,-6])\
+  \ == -6\n    assert candidate([1,2,3,-8,-9]) == -9\n    assert candidate([1,2,3,4,-1])\
+  \ == -1\n\n\n\ndef test_check():\n    check(largest_neg)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

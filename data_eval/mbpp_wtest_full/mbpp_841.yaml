@@ -1,0 +1,15 @@
+name: mbpp_841
+language: py
+prompt: "\n\ndef get_inv_count(arr, n):\n\t\"\"\"\n\tWrite a function to count the\
+  \ number of inversions in the given array.\n\t>>> get_inv_count([1, 20, 6, 4, 5],\
+  \ 5)\n\t5\n\t>>> get_inv_count([8, 4, 2, 1], 4)\n\t6\n\t>>> get_inv_count([3, 1,\
+  \ 2], 3)\n\t2\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 20,\
+  \ 6, 4, 5], 5) == 5\n    assert candidate([8, 4, 2, 1], 4) == 6\n    assert candidate([3,\
+  \ 1, 2], 3) == 2\n\n\n\ndef test_check():\n    check(get_inv_count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

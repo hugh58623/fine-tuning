@@ -1,0 +1,16 @@
+name: mbpp_552
+language: py
+prompt: "\n\ndef Seq_Linear(seq_nums):\n  \"\"\"\n  Write a python function to check\
+  \ whether a given sequence is linear or not.\n  >>> Seq_Linear([0,2,4,6,8,10])\n\
+  \  \"Linear Sequence\"\n  >>> Seq_Linear([1,2,3])\n  \"Linear Sequence\"\n  >>>\
+  \ Seq_Linear([1,5,2])\n  \"Non Linear Sequence\"\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([0,2,4,6,8,10])\
+  \ == \"Linear Sequence\"\n    assert candidate([1,2,3]) == \"Linear Sequence\"\n\
+  \    assert candidate([1,5,2]) == \"Non Linear Sequence\"\n\n\n\ndef test_check():\n\
+  \    check(Seq_Linear)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

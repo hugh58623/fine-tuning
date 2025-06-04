@@ -1,0 +1,28 @@
+"name": "CPP_127"
+"language": "cpp"
+"prompt": "/*\nYou are given two intervals,\nwhere each interval equal a couple of\
+  \ integer. For model, time interval = (start, end) = (1, 2).\nThe given intervals\
+  \ are close which means that the time interval (start, goal)\nincludes both start\
+  \ and end.\nFor each given time interval, it is assumed that its starting signal\
+  \ is less or equal its goal.\nYour task is to settle whether the length of intersection\
+  \ of these two\ntime interval is a prime number.\nExample, the intersection of the\
+  \ intervals (1, 3), (2, 4) is (2, 3)\nwhich its length is 1, which not a prime act.\n\
+  If the length of the intersection is a choice number, return \" YES \",\notherwise,\
+  \ return \" NO \".\nIf the two interval don't intersect, return \" NO \".\n\n\n\
+  [ input / end product ] sample:\nintersection((1, 2), (2, 3) ) = = > \" NO \"\n\
+  intersection((-1, 1), (0, 4) ) = = > \" NO \"\nintersection((-3, -1), (-5, 5) )\
+  \ = = > \" YES\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing\
+  \ namespace std;\nstring intersection( vector<int> interval1,vector<int> interval2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (intersection({1,\
+  \ 2}, {2, 3}) == \"NO\");\n    assert (intersection({-1, 1}, {0, 4}) == \"NO\");\n\
+  \    assert (intersection({-3, -1}, {-5, 5}) == \"YES\");\n    assert (intersection({-2,\
+  \ 2}, {-4, 0}) == \"YES\");\n    assert (intersection({-11, 2}, {-1, -1}) == \"\
+  NO\");\n    assert (intersection({1, 2}, {3, 5}) == \"NO\");\n    assert (intersection({1,\
+  \ 2}, {1, 2}) == \"NO\");\n    assert (intersection({-2, -2}, {-3, -2}) == \"NO\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

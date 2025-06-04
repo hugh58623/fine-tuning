@@ -1,0 +1,16 @@
+name: mbpp_659
+language: py
+prompt: "\n\ndef Repeat(x):\n    \"\"\"\n    Write a python function to print duplicants\
+  \ from a list of integers.\n    >>> Repeat([10, 20, 30, 20, 20, 30, 40, 50, -20,\
+  \ 60, 60, -20, -20])\n    [20, 30, -20, 60]\n    >>> Repeat([-1, 1, -1, 8])\n  \
+  \  [-1]\n    >>> Repeat([1, 2, 3, 1, 2,])\n    [1, 2]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10, 20,\
+  \ 30, 20, 20, 30, 40, 50, -20, 60, 60, -20, -20]) == [20, 30, -20, 60]\n    assert\
+  \ candidate([-1, 1, -1, 8]) == [-1]\n    assert candidate([1, 2, 3, 1, 2,]) == [1,\
+  \ 2]\n\n\n\ndef test_check():\n    check(Repeat)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

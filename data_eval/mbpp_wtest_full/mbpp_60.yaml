@@ -1,0 +1,17 @@
+name: mbpp_60
+language: py
+prompt: "\n\ndef max_len_sub( arr, n):\n\t\"\"\"\n\tWrite a function to find the maximum\
+  \ length of the subsequence with difference between adjacent elements for the given\
+  \ array.\n\t>>> max_len_sub([2, 5, 6, 3, 7, 6, 5, 8], 8)\n\t5\n\t>>> max_len_sub([-2,\
+  \ -1, 5, -1, 4, 0, 3], 7)\n\t4\n\t>>> max_len_sub([9, 11, 13, 15, 18], 5)\n\t1\n\
+  \t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 5,\
+  \ 6, 3, 7, 6, 5, 8], 8) == 5\n    assert candidate([-2, -1, 5, -1, 4, 0, 3], 7)\
+  \ == 4\n    assert candidate([9, 11, 13, 15, 18], 5) == 1\n\n\n\ndef test_check():\n\
+  \    check(max_len_sub)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

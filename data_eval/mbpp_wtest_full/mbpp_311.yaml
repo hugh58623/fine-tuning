@@ -1,0 +1,15 @@
+name: mbpp_311
+language: py
+prompt: "\n\ndef set_left_most_unset_bit(n):\n    \"\"\"\n    Write a python function\
+  \ to set the left most unset bit.\n    >>> set_left_most_unset_bit(10)\n    14\n\
+  \    >>> set_left_most_unset_bit(12)\n    14\n    >>> set_left_most_unset_bit(15)\n\
+  \    15\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 14\n    assert candidate(12) == 14\n    assert candidate(15) == 15\n\n\n\ndef\
+  \ test_check():\n    check(set_left_most_unset_bit)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

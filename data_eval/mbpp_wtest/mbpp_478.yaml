@@ -1,0 +1,15 @@
+name: mbpp_478
+language: py
+prompt: "\n\ndef remove_lowercase(str1):\n \"\"\"\n Write a function to remove lowercase\
+  \ substrings from a given string.\n >>> remove_lowercase(\"PYTHon\")\n ('PYTH')\n\
+  \ >>> remove_lowercase(\"FInD\")\n ('FID')\n >>> remove_lowercase(\"STRinG\")\n\
+  \ ('STRG')\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"PYTHon\"\
+  )==('PYTH')\n    assert candidate(\"FInD\")==('FID')\n    assert candidate(\"STRinG\"\
+  )==('STRG')\n\n\n\ndef test_check():\n    check(remove_lowercase)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

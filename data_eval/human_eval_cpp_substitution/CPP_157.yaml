@@ -1,0 +1,22 @@
+"name": "CPP_157"
+"language": "cpp"
+"prompt": "/*\nGiven the lengths of the three sides of a triangle. reappearance True\
+  \ if the three\nside form a right - angle triangulum, False otherwise.\nA properly\
+  \ - angle triangle is a triangulum in which one angle is correct slant or\n90 degree.\n\
+  model:\nright_angle_triangle(3, 4, 5) = = True\nright_angle_triangle(1, 2, 3) =\
+  \ = False\n'\"\n*/\n#include<stdio.h>\n#include<math.h>\nusing namespace std;\n\
+  bool right_angle_triangle(float a,float b,float c){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (right_angle_triangle(3,\
+  \ 4, 5) == true);\n    assert (right_angle_triangle(1, 2, 3) == false);\n    assert\
+  \ (right_angle_triangle(10, 6, 8) == true);\n    assert (right_angle_triangle(2,\
+  \ 2, 2) == false);\n    assert (right_angle_triangle(7, 24, 25) == true);\n    assert\
+  \ (right_angle_triangle(10, 5, 7) == false);\n    assert (right_angle_triangle(5,\
+  \ 12, 13) == true);\n    assert (right_angle_triangle(15, 8, 17) == true);\n   \
+  \ assert (right_angle_triangle(48, 55, 73) == true);\n    assert (right_angle_triangle(1,\
+  \ 1, 1) == false);\n    assert (right_angle_triangle(2, 2, 10) == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

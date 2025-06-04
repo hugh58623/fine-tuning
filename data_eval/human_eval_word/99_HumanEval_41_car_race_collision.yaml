@@ -1,0 +1,20 @@
+name: HumanEval_41_car_race_collision
+language: py
+prompt: "\n\ndef car_race_collision(n: int):\n    \"\"\"\n    Imagine a road that's\
+  \ a perfectly square boundlessly long line. \n     n car are drive exit to correctly;\
+  \   simultaneously, a unlike set of n car \n     are drive right to left.    The\
+  \ two sets of cars start out be very far from \n     each early.   All cars motivate\
+  \ in the like amphetamine.   Two cars are said to clash \n     when a car that's\
+  \ move left to proper hit a car that's move good to left. \n     However, the cars\
+  \ are infinitely sturdy and hard; as a solution, they continue be active \n    \
+  \ in their trajectory as if they did not clash. \n\n     This function output the\
+  \ number of such collisions. \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate(2) == 4\n    assert candidate(3)\
+  \ == 9\n    assert candidate(4) == 16\n    assert candidate(8) == 64\n    assert\
+  \ candidate(10) == 100\n\ndef test_check():\n    check(car_race_collision)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

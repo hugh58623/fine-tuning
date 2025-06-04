@@ -1,0 +1,14 @@
+name: mbpp_389
+language: py
+prompt: "\n\ndef find_lucas(n):\n\t\"\"\"\n\tWrite a function to find the n'th lucas\
+  \ number.\n\t>>> find_lucas(9)\n\t76\n\t>>> find_lucas(4)\n\t7\n\t>>> find_lucas(3)\n\
+  \t4\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(9) == 76\n\
+  \    assert candidate(4) == 7\n    assert candidate(3) == 4\n\n\n\ndef test_check():\n\
+  \    check(find_lucas)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

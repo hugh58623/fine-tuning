@@ -1,0 +1,26 @@
+"name": "Java_1"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Input to this functions is a string contains multiple group of nested parentheses.\
+  \ Your goals is to separating those group into separate strings and return the list\
+  \ of those. Separate group was balancing (each open brace is properly close) and\
+  \ not nest within each other Ignore any space in the input string.\n\n>>>>>> separateParenGroups(\"\
+  ( ) (( )) (( )( ))\")\n    [\"()\", \"(())\", \"(()())\"]\n     */\n    public List<String>\
+  \ separateParenGroups(String paren_string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.separateParenGroups(\"(()()) ((())) () ((())()())\").equals(Arrays.asList(\n\
+  \                        \"(()())\", \"((()))\", \"()\", \"((())()())\"\n      \
+  \          )),\n                s.separateParenGroups(\"() (()) ((())) (((())))\"\
+  ).equals(Arrays.asList(\n                        \"()\", \"(())\", \"((()))\", \"\
+  (((())))\"\n                )),\n                s.separateParenGroups(\"(()(())((())))\"\
+  ).equals(Arrays.asList(\n                        \"(()(())((())))\"\n          \
+  \      )),\n                s.separateParenGroups(\"( ) (( )) (( )( ))\").equals(Arrays.asList(\"\
+  ()\", \"(())\", \"(()())\"))\n        );\n        if (correct.contains(false)) {\n\
+  \            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

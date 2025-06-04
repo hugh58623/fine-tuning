@@ -1,0 +1,24 @@
+name: HumanEval_117_select_words
+language: py
+prompt: "\ndef select_words(s, n):\n    \"\"\"GiveN a stRing s aNd a NaturAl numBer\
+  \ n, you hAve Been tAskED tO iMpleMEnt \n    A function that RETurnS a list of all\
+  \ worDs from string s That cOnTAiN eXAcTly \n    n coNsonantS, in OrDER thEsE WOrdS\
+  \ aPPeAr in the StrIng s.\n    iF thE striNg s iS eMpTY THen The functiON SHould\
+  \ return an empTy list.\n    nOte: you mAy assUme The inPUt StrINg cOnTaiNS onlY\
+  \ leTtERS and spAces.\n    ExampLeS:\n    SEleCt_WOrDs(\"MArY HAd A lItTle laMb\"\
+  , 4) ==> [\"liTtle\"]\n    seleCT_wORds(\"Mary had A litTle lamB\", 3) ==> [\"MARy\"\
+  , \"LAMb\"]\n    sEleCt_wordS(\"simPlE WhitE SPace\", 2) ==> []\n    seLEcT_WORdS(\"\
+  hEllo world\", 4) ==> [\"worlD\"]\n    select_wordS(\"unCLe sAm\", 3) ==> [\"UNcLE\"\
+  ]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Mary had a little lamb', 4) ==\
+  \ ['little']\n    assert candidate('Mary had a little lamb', 3) == ['Mary', 'lamb']\n\
+  \    assert candidate('simple white space', 2) == []\n    assert candidate('Hello\
+  \ world', 4) == ['world']\n    assert candidate('Uncle sam', 3) == ['Uncle']\n \
+  \   assert candidate('', 4) == []\n    assert candidate('a b c d e f', 1) == ['b',\
+  \ 'c', 'd', 'f']\n\ndef test_check():\n    check(select_words)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

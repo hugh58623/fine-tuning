@@ -1,0 +1,14 @@
+name: mbpp_402
+language: py
+prompt: "\n\ndef ncr_modp(n, r, p):\n    \"\"\"\n    Write a function to compute the\
+  \ value of ncr%p.\n    >>> ncr_modp(10,2,13)\n    6\n    >>> ncr_modp(15,12,43)\n\
+  \    25\n    >>> ncr_modp(17,9,18)\n    10\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,2,13)==6\n\
+  \    assert candidate(15,12,43)==25\n    assert candidate(17,9,18)==10\n\n\n\ndef\
+  \ test_check():\n    check(ncr_modp)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

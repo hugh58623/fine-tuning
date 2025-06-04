@@ -1,0 +1,20 @@
+"name": "Java_106"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  ImpLemeNt the FunCtion f That tAkes n as a ParAmeteR,\nanD ReTuRns a list OF siZe\
+  \ n, such that the VALue oF the elemenT at index i is thE factOrIAl Of i IF i iS\
+  \ even\nOr the suM Of NUMbeRs FROm 1 tO i oTHeRwise.\ni StaRts FRom 1.\nThe faCtoRiAl\
+  \ OF i IS thE multipliCATIon of the nuMbERs from 1 tO i (1 * 2 * ... * i).\nExamPle:\n\
+  f(5) == [1, 2, 6, 24, 15]\n\"\"\"\n*/*/\n    public List<Integer> f(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.f(5).equals(Arrays.asList(1, 2, 6, 24, 15)),\n              \
+  \  s.f(7).equals(Arrays.asList(1, 2, 6, 24, 15, 720, 28)),\n                s.f(1).equals(List.of(1)),\n\
+  \                s.f(3).equals(Arrays.asList(1, 2, 6))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

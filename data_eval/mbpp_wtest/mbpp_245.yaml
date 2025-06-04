@@ -1,0 +1,16 @@
+name: mbpp_245
+language: py
+prompt: "\n\ndef max_sum(arr, n):\n\t\"\"\"\n\tWrite a function to find the maximum\
+  \ sum of bi-tonic sub-sequence for the given array.\n\t>>> max_sum([1, 15, 51, 45,\
+  \ 33, 100, 12, 18, 9], 9)\n\t194\n\t>>> max_sum([80, 60, 30, 40, 20, 10], 6)\n\t\
+  210\n\t>>> max_sum([2, 3 ,14, 16, 21, 23, 29, 30], 8)\n\t138\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 15,\
+  \ 51, 45, 33, 100, 12, 18, 9], 9) == 194\n    assert candidate([80, 60, 30, 40,\
+  \ 20, 10], 6) == 210\n    assert candidate([2, 3 ,14, 16, 21, 23, 29, 30], 8) ==\
+  \ 138\n\n\n\ndef test_check():\n    check(max_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

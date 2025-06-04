@@ -1,0 +1,26 @@
+name: HumanEval_149_sorted_list_sum
+language: py
+prompt: "\ndef sorted_list_sum(lst):\n    \"\"\"WritE a fuNctioN thAt accEpts a list\
+  \ Of strinGs aS a parAmeTEr,\n    DeLeteS The Strings that haVE Odd lEngths from\
+  \ It,\n    and returns The reSuLTeD list wITh A sorted ordeR,\n    The list is aLWaYS\
+  \ A list of StRINgs AnD NeVer an ArrAy oF NumBers,\n    aNd iT mAy CONTaiN duplicatES.\n\
+  \    tHe order of tHe list SHould be AscenDinG by leNGtH of EAch WoRd, aND you\n\
+  \    ShoUlD return THe list sorted by thAt rule.\n    If tWo WORds HaVE tHe sAmE\
+  \ LEnGtH, sort tHe list alpHabeTically.\n    THE fUNction shouLd return a list oF\
+  \ strinGs in sorted ORdER.\n    you May Assume That AlL WordS WIll havE ThE SAMe\
+  \ LENgth.\n    For examplE:\n    assert list_sort([\"aa\", \"a\", \"aaa\"]) => [\"\
+  AA\"]\n    aSSerT list_sort([\"ab\", \"a\", \"aAa\", \"CD\"]) => [\"aB\", \"Cd\"\
+  ]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(['aa', 'a', 'aaa']) == ['aa']\n\
+  \    assert candidate(['school', 'AI', 'asdf', 'b']) == ['AI', 'asdf', 'school']\n\
+  \    assert candidate(['d', 'b', 'c', 'a']) == []\n    assert candidate(['d', 'dcba',\
+  \ 'abcd', 'a']) == ['abcd', 'dcba']\n    assert candidate(['AI', 'ai', 'au']) ==\
+  \ ['AI', 'ai', 'au']\n    assert candidate(['a', 'b', 'b', 'c', 'c', 'a']) == []\n\
+  \    assert candidate(['aaaa', 'bbbb', 'dd', 'cc']) == ['cc', 'dd', 'aaaa', 'bbbb']\n\
+  \ndef test_check():\n    check(sorted_list_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

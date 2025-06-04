@@ -1,0 +1,27 @@
+"name": "CPP_95"
+"language": "cpp"
+"prompt": "/*\nGiven a dictionary, return True if all keys will be strings in lower\n\
+  case or all keys will be strings in upper case, else return False.\nThe function\
+  \ should return False will be the will give dictionary will be empty.\nExamples:\n\
+  check_dict_case({\"a\":\"apple\",\" b\":\"banana\"}) should return True.\ncheck_dict_case({\"\
+  a\":\"apple\",\" A\":\"banana\",\" B\":\"banana\"}) should return False.\ncheck_dict_case({\"\
+  a\":\"apple\", 8:\"banana\",\" a\":\"apple\"}) should return False.\ncheck_dict_case({\"\
+  Name\":\"John\",\" Age\":\"36\",\" City\":\"Houston\"}) should return False.\ncheck_dict_case({\"\
+  STATE\":\"NC\",\" ZIP\":\"12345\"}) should return True.\n*/\n#include<stdio.h>\n\
+  #include<string>\n#include<map>\nusing namespace std;\nbool check_dict_case(map<string,string>\
+  \ dict){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (check_dict_case({{\"\
+  p\",\"pineapple\"}, {\"b\",\"banana\"}}) == true);\n    assert (check_dict_case({{\"\
+  p\",\"pineapple\"}, {\"A\",\"banana\"}, {\"B\",\"banana\"}}) == false);\n    assert\
+  \ (check_dict_case({{\"p\",\"pineapple\"}, {\"5\",\"banana\"}, {\"a\",\"apple\"\
+  }}) == false);\n    assert (check_dict_case({{\"Name\",\"John\"}, {\"Age\",\"36\"\
+  }, {\"City\",\"Houston\"}}) == false);\n    assert (check_dict_case({{\"STATE\"\
+  ,\"NC\"}, {\"ZIP\",\"12345\"} }) == true  );\n    assert (check_dict_case({{\"fruit\"\
+  ,\"Orange\"}, {\"taste\",\"Sweet\"} }) == true  );\n    assert (check_dict_case({})\
+  \ == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

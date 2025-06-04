@@ -1,0 +1,14 @@
+name: mbpp_162
+language: py
+prompt: "\n\ndef sum_series(n):\n  \"\"\"\n  Write a function to calculate the sum\
+  \ of the positive integers of n+(n-2)+(n-4)... (until n-x =< 0).\n  >>> sum_series(6)\n\
+  \  12\n  >>> sum_series(10)\n  30\n  >>> sum_series(9)\n  25\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(6)==12\n\
+  \    assert candidate(10)==30\n    assert candidate(9)==25\n\n\n\ndef test_check():\n\
+  \    check(sum_series)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

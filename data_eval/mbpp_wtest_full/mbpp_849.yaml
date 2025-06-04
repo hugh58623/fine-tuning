@@ -1,0 +1,14 @@
+name: mbpp_849
+language: py
+prompt: "\n\ndef Sum(N):\n    \"\"\"\n    Write a python function to find sum of all\
+  \ prime divisors of a given number.\n    >>> Sum(60)\n    10\n    >>> Sum(39)\n\
+  \    16\n    >>> Sum(40)\n    7\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(60) ==\
+  \ 10\n    assert candidate(39) == 16\n    assert candidate(40) == 7\n\n\n\ndef test_check():\n\
+  \    check(Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,17 @@
+name: mbpp_715
+language: py
+prompt: "\n\ndef str_to_tuple(test_str):\n  \"\"\"\n  Write a function to convert\
+  \ the given string of integers into a tuple.\n  >>> str_to_tuple(\"1, -5, 4, 6,\
+  \ 7\")\n  (1, -5, 4, 6, 7)\n  >>> str_to_tuple(\"1, 2, 3, 4, 5\")\n  (1, 2, 3, 4,\
+  \ 5)\n  >>> str_to_tuple(\"4, 6, 9, 11, 13, 14\")\n  (4, 6, 9, 11, 13, 14)\n  \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"1, -5,\
+  \ 4, 6, 7\") == (1, -5, 4, 6, 7)\n    assert candidate(\"1, 2, 3, 4, 5\") == (1,\
+  \ 2, 3, 4, 5)\n    assert candidate(\"4, 6, 9, 11, 13, 14\") == (4, 6, 9, 11, 13,\
+  \ 14)\n\n\n\ndef test_check():\n    check(str_to_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

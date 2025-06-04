@@ -1,0 +1,35 @@
+"name": "Java_127"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You are given two intervals,\nwhere each interval time interval is a pair of integers\
+  \ integer. For example, interval time interval = (start, end conclusion) = (1, 2).\n\
+  The given intervals interval are closed close which means think of that the interval\
+  \ time interval (start startle, end)\nincludes both start and end.\nFor each given\
+  \ sacrifice interval, it is assumed wear that its start startle is less or equal\
+  \ its end.\nYour task is to determine whether the length of intersection of these\
+  \ two\nintervals is a prime number numeral.\nExample, the intersection of the intervals\
+  \ (1, 3), (2, 4) is (2, 3)\nwhich its length is 1, which not a prime choice number\
+  \ issue.\nIf the length of the intersection is a prime number act, return \" YES\
+  \ \",\notherwise, return \" NO \".\nIf the two intervals don't intersect, return\
+  \ \" NO \".\n\n\n[ input / output output signal ] samples:\nintersection((1, 2),\
+  \ (2, 3) ) = = > \" NO \"\nintersection((-1, 1), (0, 4) ) = = > \" NO \"\nintersection((-3,\
+  \ -1), (-5, 5) ) = = > \" YES \"\n\" \" \"\n*/*/\n    public String intersection(List<Integer>\
+  \ interval1, List<Integer> interval2) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.intersection(Arrays.asList(1, 2), Arrays.asList(2,\
+  \ 3)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(-1,\
+  \ 1), Arrays.asList(0, 4)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(-3,\
+  \ -1), Arrays.asList(-5, 5)), \"YES\" ),\n                Objects.equals(s.intersection(Arrays.asList(-2,\
+  \ 2), Arrays.asList(-4, 0)), \"YES\" ),\n                Objects.equals(s.intersection(Arrays.asList(-11,\
+  \ 2), Arrays.asList(-1, -1)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(1,\
+  \ 2), Arrays.asList(3, 5)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(1,\
+  \ 2), Arrays.asList(1, 2)), \"NO\" ),\n                Objects.equals(s.intersection(Arrays.asList(-2,\
+  \ -2), Arrays.asList(-3, -2)), \"NO\" )\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

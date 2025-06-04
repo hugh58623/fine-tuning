@@ -1,0 +1,22 @@
+name: mbpp_114
+language: py
+prompt: "\n\ndef assign_freq(test_list):\n  \"\"\"\n  Write a function to assign frequency\
+  \ to each tuple in the given tuple list.\n  >>> assign_freq([(6, 5, 8), (2, 7),\
+  \ (6, 5, 8), (6, 5, 8), (9, ), (2, 7)] )\n  '[(6, 5, 8, 3), (2, 7, 2), (9, 1)]'\n\
+  \  >>> assign_freq([(4, 2, 4), (7, 1), (4, 8), (4, 2, 4), (9, 2), (7, 1)] )\n  '[(4,\
+  \ 2, 4, 2), (7, 1, 2), (4, 8, 1), (9, 2, 1)]'\n  >>> assign_freq([(11, 13, 10),\
+  \ (17, 21), (4, 2, 3), (17, 21), (9, 2), (4, 2, 3)] )\n  '[(11, 13, 10, 1), (17,\
+  \ 21, 2), (4, 2, 3, 2), (9, 2, 1)]'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(6, 5,\
+  \ 8), (2, 7), (6, 5, 8), (6, 5, 8), (9, ), (2, 7)] ) == '[(6, 5, 8, 3), (2, 7, 2),\
+  \ (9, 1)]'\n    assert candidate([(4, 2, 4), (7, 1), (4, 8), (4, 2, 4), (9, 2),\
+  \ (7, 1)] ) == '[(4, 2, 4, 2), (7, 1, 2), (4, 8, 1), (9, 2, 1)]'\n    assert candidate([(11,\
+  \ 13, 10), (17, 21), (4, 2, 3), (17, 21), (9, 2), (4, 2, 3)] ) == '[(11, 13, 10,\
+  \ 1), (17, 21, 2), (4, 2, 3, 2), (9, 2, 1)]'\n\n\n\ndef test_check():\n    check(assign_freq)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

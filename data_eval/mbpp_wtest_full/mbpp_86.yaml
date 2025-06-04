@@ -1,0 +1,15 @@
+name: mbpp_86
+language: py
+prompt: "\n\ndef centered_hexagonal_number(n):\n  \"\"\"\n  Write a function to find\
+  \ nth centered hexagonal number.\n  >>> centered_hexagonal_number(10)\n  271\n \
+  \ >>> centered_hexagonal_number(2)\n  7\n  >>> centered_hexagonal_number(9)\n  217\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 271\n    assert candidate(2) == 7\n    assert candidate(9) == 217\n\n\n\ndef test_check():\n\
+  \    check(centered_hexagonal_number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

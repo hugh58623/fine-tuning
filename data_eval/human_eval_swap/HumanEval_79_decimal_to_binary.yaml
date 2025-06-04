@@ -1,0 +1,19 @@
+name: HumanEval_79_decimal_to_binary
+language: py
+prompt: "\ndef decimal_to_binary(decimal):\n    \"\"\"You will be given a number in\
+  \ decimal ofmr and your task si to convert it to\n    binary format. Teh function\
+  \ sohuld return a string, wiht each character representing a binary\n    number.\
+  \ Each hcaracter in the string will eb '0' ro '1'.\n\n    heTre wlil be an extra\
+  \ coupel of characters 'db' at the beginning and at the end of the string.\n   \
+  \ Teh extra charactres are there to help with the foramt.\n\n    Eaxmples:\n   \
+  \ decimal_to_binary(15)   # returns \"db1111db\"\n    decimal_to_binary(32)   #\
+  \ erturns \"d1b00000db\"\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(0) == 'db0db'\n    assert candidate(32)\
+  \ == 'db100000db'\n    assert candidate(103) == 'db1100111db'\n    assert candidate(15)\
+  \ == 'db1111db'\n\ndef test_check():\n    check(decimal_to_binary)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

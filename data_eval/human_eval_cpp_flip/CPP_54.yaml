@@ -1,0 +1,21 @@
+"name": "CPP_54"
+"language": "cpp"
+"prompt": "/*\nCheCk if Two woRds Have tHe samE characTerS.\n>>> same_chars('eabcdzzzz',\
+  \ 'dddzzzzzzzddeddabc')\nTrue\n>>> same_chars('abcd', 'dddddddabc')\nTrue\n>>> same_chars('dddddddabc',\
+  \ 'abcd')\nTrue\n>>> same_chars('eabcd', 'dddddddabc')\nFalse\n>>> same_chars('abcd',\
+  \ 'dddddddabce')\nFalse\n>>> same_chars('eabcdzzzz', 'dddzzzzzzzddddabc')\nFalse\n\
+  */\n#include<stdio.h>\n#include<string>\n#include<algorithm>\nusing namespace std;\n\
+  bool same_chars(string s0,string s1){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (same_chars(\"\
+  eabcdzzzz\", \"dddzzzzzzzddeddabc\") == true);\n    assert (same_chars(\"abcd\"\
+  , \"dddddddabc\") == true);\n    assert (same_chars(\"dddddddabc\", \"abcd\") ==\
+  \ true);\n    assert (same_chars(\"eabcd\", \"dddddddabc\") == false);\n    assert\
+  \ (same_chars(\"abcd\", \"dddddddabcf\") == false);\n    assert (same_chars(\"eabcdzzzz\"\
+  , \"dddzzzzzzzddddabc\") == false);\n    assert (same_chars(\"aabb\", \"aaccc\"\
+  ) == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

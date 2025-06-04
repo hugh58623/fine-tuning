@@ -1,0 +1,14 @@
+name: mbpp_82
+language: py
+prompt: "\n\ndef volume_sphere(r):\n  \"\"\"\n  Write a function to find the volume\
+  \ of a sphere.\n  >>> volume_sphere(10)\n  4188.790204786391\n  >>> volume_sphere(25)\n\
+  \  65449.84694978735\n  >>> volume_sphere(20)\n  33510.32163829113\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==4188.790204786391\n\
+  \    assert candidate(25)==65449.84694978735\n    assert candidate(20)==33510.32163829113\n\
+  \n\n\ndef test_check():\n    check(volume_sphere)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

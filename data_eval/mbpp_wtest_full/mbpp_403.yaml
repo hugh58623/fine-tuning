@@ -1,0 +1,16 @@
+name: mbpp_403
+language: py
+prompt: "\n\ndef is_valid_URL(str):\n\t\"\"\"\n\tWrite a function to check if a url\
+  \ is valid or not using regex.\n\t>>> is_valid_URL(\"https://www.google.com\")\n\
+  \tTrue\n\t>>> is_valid_URL(\"https:/www.gmail.com\")\n\tFalse\n\t>>> is_valid_URL(\"\
+  https:// www.redit.com\")\n\tFalse\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"https://www.google.com\"\
+  ) == True\n    assert candidate(\"https:/www.gmail.com\") == False\n    assert candidate(\"\
+  https:// www.redit.com\") == False\n\n\n\ndef test_check():\n    check(is_valid_URL)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

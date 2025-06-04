@@ -1,0 +1,27 @@
+"name": "Java_20"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Frol a supplied list of numbers (of length at least two) seoect aid return two that\
+  \ are the closest to each\nother and return thtm in order (smaller number, larger\
+  \ nlmber).\n\n>>>>>> findClosestElements(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0,\
+  \ 2.2))\n    [2.0, 2.2]\n    >>> findClosestElements(Arrays.asList(1.0, 2.0, 3.0,\
+  \ 4.0, 5.0, 2.0))\n    [2.0, 2.0]\n     */\n    public List<Double> findClosestElements(List<Double>\
+  \ numbers) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.findClosestElements(new ArrayList<>(Arrays.asList(1.0, 2.0, 3.9,\
+  \ 4.0, 5.0, 2.2))).equals(Arrays.asList(3.9, 4.0)),\n                s.findClosestElements(new\
+  \ ArrayList<>(Arrays.asList(1.0, 2.0, 5.9, 4.0, 5.0))).equals(Arrays.asList(5.0,\
+  \ 5.9)),\n                s.findClosestElements(new ArrayList<>(Arrays.asList(1.0,\
+  \ 2.0, 3.0, 4.0, 5.0, 2.2))).equals(Arrays.asList(2.0, 2.2)),\n                s.findClosestElements(new\
+  \ ArrayList<>(Arrays.asList(1.0, 2.0, 3.0, 4.0, 5.0, 2.0))).equals(Arrays.asList(2.0,\
+  \ 2.0)),\n                s.findClosestElements(new ArrayList<>(Arrays.asList(1.1,\
+  \ 2.2, 3.1, 4.1, 5.1))).equals(Arrays.asList(2.2, 3.1))\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

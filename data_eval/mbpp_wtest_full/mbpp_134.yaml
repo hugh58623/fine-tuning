@@ -1,0 +1,16 @@
+name: mbpp_134
+language: py
+prompt: "\n\ndef check_last (arr,n,p):\n    \"\"\"\n    Write a python function to\
+  \ check whether the last element of given array is even or odd after performing\
+  \ an operation p times.\n    >>> check_last([5,7,10],3,1)\n    \"ODD\"\n    >>>\
+  \ check_last([2,3],2,3)\n    \"EVEN\"\n    >>> check_last([1,2,3],3,1)\n    \"ODD\"\
+  \n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([5,7,10],3,1)\
+  \ == \"ODD\"\n    assert candidate([2,3],2,3) == \"EVEN\"\n    assert candidate([1,2,3],3,1)\
+  \ == \"ODD\"\n\n\n\ndef test_check():\n    check(check_last)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

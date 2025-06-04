@@ -1,0 +1,15 @@
+name: mbpp_33
+language: py
+prompt: "\n\ndef decimal_To_Binary(N):\n    \"\"\"\n    Write a python function to\
+  \ convert a decimal number to binary number.\n    >>> decimal_To_Binary(10)\n  \
+  \  1010\n    >>> decimal_To_Binary(1)\n    1\n    >>> decimal_To_Binary(20)\n  \
+  \  10100\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 1010\n    assert candidate(1) == 1\n    assert candidate(20) == 10100\n\n\n\n\
+  def test_check():\n    check(decimal_To_Binary)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

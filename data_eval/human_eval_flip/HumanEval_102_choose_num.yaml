@@ -1,0 +1,18 @@
+name: HumanEval_102_choose_num
+language: py
+prompt: "\ndef choose_num(x, y):\n    \"\"\"This FuncTion tAkeS two pOsitiVe numbeRs\
+  \ x aNd y and RetURnS tHe\n    biGGesT even integer nUMBer tHat is in the raNge\
+  \ [x, y] inclusive. if \n    theRe'S No SuCH nUmber, Then the FUnCTIon ShOULd return\
+  \ -1.\n\n    FOr EXaMple:\n    cHooSe_nUM(12, 15) = 14\n    chOose_nUm(13, 12) =\
+  \ -1\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(12, 15) == 14\n    assert candidate(13,\
+  \ 12) == -1\n    assert candidate(33, 12354) == 12354\n    assert candidate(5234,\
+  \ 5233) == -1\n    assert candidate(6, 29) == 28\n    assert candidate(27, 10) ==\
+  \ -1\n    assert candidate(7, 7) == -1\n    assert candidate(546, 546) == 546\n\n\
+  def test_check():\n    check(choose_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

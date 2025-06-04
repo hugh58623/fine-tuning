@@ -1,0 +1,24 @@
+name: mbpp_810
+language: py
+prompt: "\n\ndef count_variable(a,b,c,d):\n  \"\"\"\n  Write a function to iterate\
+  \ over elements repeating each as many times as its count.\n  >>> count_variable(4,2,0,-2)\n\
+  \  ['p', 'p', 'p', 'p', 'q', 'q']\n  >>> count_variable(0,1,2,3)\n  ['q', 'r', 'r',\
+  \ 's', 's', 's']\n  >>> count_variable(11,15,12,23)\n  ['p', 'p', 'p', 'p', 'p',\
+  \ 'p', 'p', 'p', 'p', 'p', 'p', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q',\
+  \ 'q', 'q', 'q', 'q', 'q', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r',\
+  \ 'r', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's',\
+  \ 's', 's', 's', 's', 's', 's', 's', 's']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,2,0,-2)==['p',\
+  \ 'p', 'p', 'p', 'q', 'q'] \n    assert candidate(0,1,2,3)==['q', 'r', 'r', 's',\
+  \ 's', 's'] \n    assert candidate(11,15,12,23)==['p', 'p', 'p', 'p', 'p', 'p',\
+  \ 'p', 'p', 'p', 'p', 'p', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q', 'q',\
+  \ 'q', 'q', 'q', 'q', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r', 'r',\
+  \ 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's', 's',\
+  \ 's', 's', 's', 's', 's', 's', 's']\n\n\n\ndef test_check():\n    check(count_variable)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

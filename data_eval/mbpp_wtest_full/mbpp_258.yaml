@@ -1,0 +1,16 @@
+name: mbpp_258
+language: py
+prompt: "\n\ndef count_odd(array_nums):\n   \"\"\"\n   Write a function to find number\
+  \ of odd elements in the given list using lambda function.\n   >>> count_odd([1,\
+  \ 2, 3, 5, 7, 8, 10])\n   4\n   >>> count_odd([10,15,14,13,-18,12,-20])\n   2\n\
+  \   >>> count_odd([1, 2, 4, 8, 9])\n   2\n   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 5, 7, 8, 10])==4\n    assert candidate([10,15,14,13,-18,12,-20])==2\n    assert\
+  \ candidate([1, 2, 4, 8, 9])==2\n\n\n\ndef test_check():\n    check(count_odd)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

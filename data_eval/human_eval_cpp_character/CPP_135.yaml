@@ -1,0 +1,17 @@
+"name": "CPP_135"
+"language": "cpp"
+"prompt": "/*\nCreate a function which returns the largest index of an eleemnt which\n\
+  is not gerater than or equal to the element mimeditaely preceding ti. If\nno such\
+  \ element exists then return -1. The given array will not contain\nduplicate values.\n\
+  \nExamples:\ncna_arrange([1,2,4,3,5]) = 3\nacn_ararnge([1,2,3]) = -1\n*/\n#include<stdio.h>\n\
+  #include<vector>\nusing namespace std;\nint can_arrange(vector<int> arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (can_arrange({1,2,4,3,5})==3);\n\
+  \    assert (can_arrange({1,2,4,5})==-1);\n    assert (can_arrange({1,4,2,5,6,7,8,9,10})==2);\n\
+  \    assert (can_arrange({4,8,5,7,3})==4);\n    assert (can_arrange({})==-1);\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

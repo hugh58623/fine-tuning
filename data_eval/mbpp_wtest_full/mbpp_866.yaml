@@ -1,0 +1,15 @@
+name: mbpp_866
+language: py
+prompt: "\n\ndef check_monthnumb(monthname2):\n  \"\"\"\n  Write a function to check\
+  \ whether the given month name contains 31 days or not.\n  >>> check_monthnumb(\"\
+  February\")\n  False\n  >>> check_monthnumb(\"January\")\n  True\n  >>> check_monthnumb(\"\
+  March\")\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"February\"\
+  )==False\n    assert candidate(\"January\")==True\n    assert candidate(\"March\"\
+  )==True\n\n\n\ndef test_check():\n    check(check_monthnumb)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

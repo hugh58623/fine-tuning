@@ -1,0 +1,31 @@
+"name": "Java_119"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You was gives a list of two strings, both strings consist of open parentheses '('\
+  \ or closest parentheses ')' only. Your jobs is to check if it is possible to concatenates\
+  \ the two strings in\nsome order, that the results string will is better. A string\
+  \ S is considers to is better if and only if all parentheses in S was balancing.\
+  \ For examples: the string '(())()' is better, while the string '())' is not. Return\
+  \ 'Yeses' if there's a ways to made a better string, and return 'No' otherwise.\
+  \ Examples: match_parens(['()(', ')']) == 'Yeses' match_parens([')', ')']) == 'No'\
+  \ \"\"\"\n*/*/\n    public String matchParens(List<String> lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.matchParens(Arrays.asList(\"()(\", \")\")).equals(\"Yes\"),\n\
+  \                s.matchParens(Arrays.asList(\")\", \")\")).equals(\"No\"),\n  \
+  \              s.matchParens(Arrays.asList(\"(()(())\", \"())())\")).equals(\"No\"\
+  ),\n                s.matchParens(Arrays.asList(\")())\", \"(()()(\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"(())))\", \"(()())((\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"()\", \"())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\"(()(\", \"()))()\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"((((\", \"((())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(()\", \"(()(\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(\", \")(\")).equals(\"No\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

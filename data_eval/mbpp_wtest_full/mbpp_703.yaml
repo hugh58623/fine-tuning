@@ -1,0 +1,18 @@
+name: mbpp_703
+language: py
+prompt: "\n\ndef is_key_present(d,x):\n  \"\"\"\n  Write a function to check whether\
+  \ the given key is present in the dictionary or not.\n  >>> is_key_present({1: 10,\
+  \ 2: 20, 3: 30, 4: 40, 5: 50, 6: 60},5)\n  True\n  >>> is_key_present({1: 10, 2:\
+  \ 20, 3: 30, 4: 40, 5: 50, 6: 60},6)\n  True\n  >>> is_key_present({1: 10, 2: 20,\
+  \ 3: 30, 4: 40, 5: 50, 6: 60},10)\n  False\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({1: 10,\
+  \ 2: 20, 3: 30, 4: 40, 5: 50, 6: 60},5)==True\n    assert candidate({1: 10, 2: 20,\
+  \ 3: 30, 4: 40, 5: 50, 6: 60},6)==True\n    assert candidate({1: 10, 2: 20, 3: 30,\
+  \ 4: 40, 5: 50, 6: 60},10)==False\n\n\n\ndef test_check():\n    check(is_key_present)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

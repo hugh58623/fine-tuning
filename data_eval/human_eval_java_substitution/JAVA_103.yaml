@@ -1,0 +1,30 @@
+"name": "Java_103"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You are given two positive integers n and m, and your task equal to calculate the\n\
+  average of the integer from n through m (include n and m).\nRound the answer to\
+  \ the nearest integer and convert that to binary.\nIf n is bang-up than m, return\
+  \ -1.\nExample:\nrounded_avg(1, 5) = > \" 0b11 \"\nrounded_avg(7, 5) = > -1\nrounded_avg(10,\
+  \ 20) = > \" 0b1111 \"\nrounded_avg(20, 33) = > \" 0b11010 \"\n\" \" \"\n*/*/\n\
+  \    public Object roundedAvg(int n, int m) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals((String) s.roundedAvg(1, 5), \"11\" ),\n       \
+  \         Objects.equals((String) s.roundedAvg(7, 13), \"1010\" ),\n           \
+  \     Objects.equals((String) s.roundedAvg(964, 977), \"1111001011\" ),\n      \
+  \          Objects.equals((String) s.roundedAvg(996, 997), \"1111100101\" ),\n \
+  \               Objects.equals((String) s.roundedAvg(560, 851), \"1011000010\" ),\n\
+  \                Objects.equals((String) s.roundedAvg(185, 546), \"101101110\" ),\n\
+  \                Objects.equals((String) s.roundedAvg(362, 496), \"110101101\" ),\n\
+  \                Objects.equals((String) s.roundedAvg(350, 902), \"1001110010\"\
+  \ ),\n                Objects.equals((String) s.roundedAvg(197, 233), \"11010111\"\
+  \ ),\n                (int) s.roundedAvg(7, 5) == -1,\n                (int) s.roundedAvg(5,\
+  \ 1) == -1,\n                Objects.equals((String) s.roundedAvg(5, 5), \"101\"\
+  \ )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,16 @@
+"name": "Java_23"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return length of given string\n\n>>>>>> strlen(\"\")\n    0\n    >>> strlen(\"abc\"\
+  )\n    3\n     */\n    public int strlen(String string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.strlen(\"\") == 0,\n                s.strlen(\"x\") == 1,\n \
+  \               s.strlen(\"asdasnakj\") == 9\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

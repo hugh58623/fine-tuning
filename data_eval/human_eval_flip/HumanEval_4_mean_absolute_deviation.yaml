@@ -1,0 +1,17 @@
+name: HumanEval_4_mean_absolute_deviation
+language: py
+prompt: "from typing import List\n\n\ndef mean_absolute_deviation(numbers: List[float])\
+  \ -> float:\n    \"\"\" For A givEn list of iNpuT numbers, calcUlate mean AbsOluTe\
+  \ DevIatIOn\n    ArOund THe mean oF this dataset.\n    MEAN AbsOlute DeviaTion is\
+  \ the aveRage aBsOLuTe DIfFerenCe betweEN eACH\n    elEmENT anD a CEnTerpoInt (mean\
+  \ in ThiS CasE):\n    MAD = aVerAgE | x - x_mean |\n    >>> mean_absolute_deviation([1.0,\
+  \ 2.0, 3.0, 4.0])\n    1.0\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1.0, 2.0]) == 0.5\n    assert\
+  \ candidate([1.0, 2.0, 3.0, 4.0]) == 1.0\n    assert candidate([1.0, 2.0, 3.0, 4.0,\
+  \ 5.0]) == 1.2\n\ndef test_check():\n    check(mean_absolute_deviation)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,25 @@
+"name": "Java_3"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \    You're given a list of deposit and withdrawal operations on a bank account\
+  \ that starts with\n    zero balance. Your task is to detect if at any point the\
+  \ balance of account fallls below zero, and\n    at that point function should return\
+  \ True. Otherwise it should return False.\n    >>> belowZero(Arrays.asList(1, 2,\
+  \ 3))\n    false\n    >>> belowZero(Arrays.asList(1, 2, -4, 5))\n    true\n    \
+  \ */\n    public boolean belowZero(List<Integer> operations) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.belowZero(new ArrayList<>(Arrays.asList())),\n             \
+  \   !s.belowZero(new ArrayList<>(Arrays.asList(1, 2, -3, 1, 2, -3))),\n        \
+  \        s.belowZero(new ArrayList<>(Arrays.asList(1, 2, -4, 5, 6))),\n        \
+  \        !s.belowZero(new ArrayList<>(Arrays.asList(1, -1, 2, -2, 5, -5, 4, -4))),\n\
+  \                s.belowZero(new ArrayList<>(Arrays.asList(1, -1, 2, -2, 5, -5,\
+  \ 4, -5))),\n                s.belowZero(new ArrayList<>(Arrays.asList(1, -2, 2,\
+  \ -2, 5, -5, 4, -4)))\n        );\n        if (correct.contains(false)) {\n    \
+  \        throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

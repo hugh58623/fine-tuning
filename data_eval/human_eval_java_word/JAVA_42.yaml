@@ -1,0 +1,21 @@
+"name": "Java_42"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\nimport java.util.stream.Collectors;\n\
+  \nclass Solution {\n    /**\nReturn list with elements increments by 1.\n\n>>>>>>\
+  \ incrList(Arrays.asList(1, 2, 3))\n    [2, 3, 4]\n    >>> incrList(Arrays.asList(5,\
+  \ 3, 5, 2, 3, 3, 9, 0, 123))\n    [6, 4, 6, 3, 4, 4, 10, 1, 124]\n     */\n    public\
+  \ List<Integer> incrList(List<Integer> l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.incrList(new ArrayList<>(Arrays.asList())).equals(List.of()),\n\
+  \                s.incrList(new ArrayList<>(Arrays.asList(3, 2, 1))).equals(Arrays.asList(4,\
+  \ 3, 2)),\n                s.incrList(new ArrayList<>(Arrays.asList(5, 2, 5, 2,\
+  \ 3, 3, 9, 0, 123))).equals(Arrays.asList(6, 3, 6, 3, 4, 4, 10, 1, 124))\n     \
+  \   );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,21 @@
+"name": "CPP_89"
+"language": "cpp"
+"prompt": "/*\nCreate a function encrypt that takes a string as an argumentation and\n\
+  retort a string encrypted with the rudiment being rotated.\nThe alphabet should\
+  \ be rotated in a manner such that the letter\nswitch down by two multiplied to\
+  \ two places.\nFor example:\nencrypt('hi') returns' lm'\nencrypt('asdfghjkl') restitution'\
+  \ ewhjklnop'\nencrypt('gf') returns' kj'\nencrypt('et') returns' ix'\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nstring encrypt(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (encrypt(\"hi\"\
+  ) == \"lm\");\n    assert (encrypt(\"asdfghjkl\") == \"ewhjklnop\");\n    assert\
+  \ (encrypt(\"gf\") == \"kj\");\n    assert (encrypt(\"et\") == \"ix\");\n    assert\
+  \ (encrypt(\"faewfawefaewg\")==\"jeiajeaijeiak\");\n    assert (encrypt(\"hellomyfriend\"\
+  )==\"lippsqcjvmirh\");\n    assert (encrypt(\"dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh\"\
+  )==\"hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl\");\n    assert (encrypt(\"a\"\
+  )==\"e\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

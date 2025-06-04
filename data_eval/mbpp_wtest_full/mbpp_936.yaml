@@ -1,0 +1,20 @@
+name: mbpp_936
+language: py
+prompt: "\n\ndef re_arrange_tuples(test_list, ord_list):\n  \"\"\"\n  Write a function\
+  \ to re-arrange the given tuples based on the given ordered list.\n  >>> re_arrange_tuples([(4,\
+  \ 3), (1, 9), (2, 10), (3, 2)],  [1, 4, 2, 3])\n  [(1, 9), (4, 3), (2, 10), (3,\
+  \ 2)]\n  >>> re_arrange_tuples([(5, 4), (2, 10), (3, 11), (4, 3)],  [3, 4, 2, 3])\n\
+  \  [(3, 11), (4, 3), (2, 10), (3, 11)]\n  >>> re_arrange_tuples([(6, 3), (3, 8),\
+  \ (5, 7), (2, 4)],  [2, 5, 3, 6])\n  [(2, 4), (5, 7), (3, 8), (6, 3)]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(4, 3),\
+  \ (1, 9), (2, 10), (3, 2)],  [1, 4, 2, 3]) == [(1, 9), (4, 3), (2, 10), (3, 2)]\n\
+  \    assert candidate([(5, 4), (2, 10), (3, 11), (4, 3)],  [3, 4, 2, 3]) == [(3,\
+  \ 11), (4, 3), (2, 10), (3, 11)]\n    assert candidate([(6, 3), (3, 8), (5, 7),\
+  \ (2, 4)],  [2, 5, 3, 6]) == [(2, 4), (5, 7), (3, 8), (6, 3)]\n\n\n\ndef test_check():\n\
+  \    check(re_arrange_tuples)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

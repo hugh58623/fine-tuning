@@ -1,0 +1,18 @@
+name: mbpp_622
+language: py
+prompt: "\n\ndef get_median(arr1, arr2, n):\n  \"\"\"\n  Write a function to find\
+  \ the median of two sorted arrays of same size.\n  >>> get_median([1, 12, 15, 26,\
+  \ 38], [2, 13, 17, 30, 45], 5)\n  16.0\n  >>> get_median([2, 4, 8, 9], [7, 13, 19,\
+  \ 28], 4)\n  8.5\n  >>> get_median([3, 6, 14, 23, 36, 42], [2, 18, 27, 39, 49, 55],\
+  \ 6)\n  25.0\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 12,\
+  \ 15, 26, 38], [2, 13, 17, 30, 45], 5) == 16.0\n    assert candidate([2, 4, 8, 9],\
+  \ [7, 13, 19, 28], 4) == 8.5\n    assert candidate([3, 6, 14, 23, 36, 42], [2, 18,\
+  \ 27, 39, 49, 55], 6) == 25.0\n\n\n\ndef test_check():\n    check(get_median)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

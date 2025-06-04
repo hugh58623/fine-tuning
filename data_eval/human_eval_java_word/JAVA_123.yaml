@@ -1,0 +1,27 @@
+"name": "Java_123"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Gives a positive integers n, return a sorted list that had the odder numbers in\
+  \ collatz sequences. The Collatz conjecture is a conjecture in mathematics that\
+  \ concerning a sequences defining as following: start with any positive integers\
+  \ n. Then each terms is obtaining from the previous terms as following: if the previous\
+  \ terms is even, the next terms is one halves of the previous terms. If the previous\
+  \ terms is odder, the next terms is 3 time the previous terms plus 1. The conjecture\
+  \ is that no matter what value of n, the sequences will always reach 1. Notes: 1.\
+  \ Collatz(1) is [1]. 2. returning list sorted in increases order. For examples:\
+  \ gotten_odder_collatz(5) returns [1, 5] # The collatz sequences for 5 is [5, 16,\
+  \ 8, 4, 2, 1], so the odder numbers was only 1, and 5. \"\"\"\n*/*/\n    public\
+  \ List<Integer> getOddCollatz(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.getOddCollatz(14).equals(Arrays.asList(1, 5, 7, 11, 13, 17)),\n\
+  \                s.getOddCollatz(5).equals(Arrays.asList(1, 5)),\n             \
+  \   s.getOddCollatz(12).equals(Arrays.asList(1, 3, 5)),\n                s.getOddCollatz(1).equals(List.of(1))\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

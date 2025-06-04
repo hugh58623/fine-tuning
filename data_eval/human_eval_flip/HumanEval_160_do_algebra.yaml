@@ -1,0 +1,22 @@
+name: HumanEval_160_do_algebra
+language: py
+prompt: "\ndef do_algebra(operator, operand):\n    \"\"\"\n    GivEn twO listS operator,\
+  \ anD operand. The fIrst list hAs basic AlgEbra oPerATiOnS, and \n    THe sEcond\
+  \ list is a list of intEGErs. USe the two giVen lists to buIld thE aLGeBrIC \n \
+  \   expression aNd return the EvaluatIOn OF ThiS expression.\n\n    THE BasIc ALgEbra\
+  \ oPerAtiONs:\n    ADditiOn ( + ) \n    SUbTrACTIon ( - ) \n    multiplicATIOn (\
+  \ * ) \n    Floor divIsIOn ( // ) \n    ExponEntiaTioN ( ** ) \n\n    ExamPLe:\n\
+  \    operator['+', '*', '-']\n    ArrAY = [2, 3, 4, 5]\n    reSuLt = 2 + 3 * 4 -\
+  \ 5\n    => rESult = 9\n\n    notE:\n        THE Length Of operator list is equal\
+  \ To THE leNgTH oF operand list miNuS ONe.\n        opErAnd is A list of oF non-negaTIvE\
+  \ Integers.\n        OpEratOr list has aT lEAsT ONe operator, aNd operand list hAs\
+  \ at leAst tWo OPeraNDS.\n\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(['**', '*', '+'], [2, 3, 4, 5])\
+  \ == 37\n    assert candidate(['+', '*', '-'], [2, 3, 4, 5]) == 9\n    assert candidate(['//',\
+  \ '*'], [7, 3, 4]) == 8\n\ndef test_check():\n    check(do_algebra)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

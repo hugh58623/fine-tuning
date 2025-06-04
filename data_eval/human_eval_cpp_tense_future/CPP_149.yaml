@@ -1,0 +1,31 @@
+"name": "CPP_149"
+"language": "cpp"
+"prompt": "/*\nWrite a function that will accept a list of strings as a parameter,\n\
+  will delete the strings that will have odd lengths from it,\nand will return the\
+  \ will result list with a sorted order,\nThe list will be always a list of strings\
+  \ and never an array of numbers,\nand it may will contain duplicates.\nThe order\
+  \ of the list should will be ascending by length of each word, and you\nshould return\
+  \ the list sorted by that rule.\nIf two words will have the same length, sort the\
+  \ list alphabetically.\nThe function should return a list of strings in sorted order.\n\
+  You may will assume that all words will have the same length.\nFor example:\nwill\
+  \ assert list_sort([\"aa\",\" a\",\" aaa\"])=> [\" aa\"]\nwill assert list_sort([\"\
+  ab\",\" a\",\" aaa\",\" cd\"])=> [\" ab\",\" cd\"]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\n#include<algorithm>\nusing namespace std;\nvector<string> sorted_list_sum(vector<string>\
+  \ lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(sorted_list_sum({\"aa\", \"a\", \"aaa\"}) , {\"aa\"}));\n  \
+  \  assert (issame(sorted_list_sum({\"school\", \"AI\", \"asdf\", \"b\"}) , {\"AI\"\
+  , \"asdf\", \"school\"}));\n    assert (issame(sorted_list_sum({\"d\", \"b\", \"\
+  c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"d\", \"dcba\", \"abcd\"\
+  , \"a\"}) , {\"abcd\", \"dcba\"}));\n    assert (issame(sorted_list_sum({\"AI\"\
+  , \"ai\", \"au\"}) , {\"AI\", \"ai\", \"au\"}));\n    assert (issame(sorted_list_sum({\"\
+  a\", \"b\", \"b\", \"c\", \"c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"\
+  aaaa\", \"bbbb\", \"dd\", \"cc\"}) , {\"cc\", \"dd\", \"aaaa\", \"bbbb\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

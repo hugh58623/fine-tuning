@@ -1,0 +1,16 @@
+name: mbpp_22
+language: py
+prompt: "\n\ndef find_first_duplicate(nums):\n    \"\"\"\n    Write a function to\
+  \ find the first duplicate element in a given array of integers.\n    >>> find_first_duplicate(([1,\
+  \ 2, 3, 4, 4, 5]))\n    4\n    >>> find_first_duplicate([1, 2, 3, 4])\n    -1\n\
+  \    >>> find_first_duplicate([1, 1, 2, 3, 3, 2, 2])\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(([1, 2,\
+  \ 3, 4, 4, 5]))==4\n    assert candidate([1, 2, 3, 4])==-1\n    assert candidate([1,\
+  \ 1, 2, 3, 3, 2, 2])==1\n\n\n\ndef test_check():\n    check(find_first_duplicate)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_291
+language: py
+prompt: "\n\ndef count_no_of_ways(n, k):\n\t\"\"\"\n\tWrite a function to find out\
+  \ the number of ways of painting the fence such that at most 2 adjacent posts have\
+  \ the same color for the given fence with n posts and k colors.\n\t>>> count_no_of_ways(2,\
+  \ 4)\n\t16\n\t>>> count_no_of_ways(3, 2)\n\t6\n\t>>> count_no_of_ways(4, 4)\n\t\
+  228\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2, 4) ==\
+  \ 16\n    assert candidate(3, 2) == 6\n    assert candidate(4, 4) == 228\n\n\n\n\
+  def test_check():\n    check(count_no_of_ways)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

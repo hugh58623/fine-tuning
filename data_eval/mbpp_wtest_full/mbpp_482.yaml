@@ -1,0 +1,15 @@
+name: mbpp_482
+language: py
+prompt: "\n\ndef match(text):\n\t\t\"\"\"\n\t\tWrite a function to find sequences\
+  \ of one upper case letter followed by lower case letters in the given string by\
+  \ using regex.\n\t\t>>> match(\"Geeks\")\n\t\t'Yes'\n\t\t>>> match(\"geeksforGeeks\"\
+  )\n\t\t'Yes'\n\t\t>>> match(\"geeks\")\n\t\t'No'\n\t\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Geeks\"\
+  ) == 'Yes'\n    assert candidate(\"geeksforGeeks\") == 'Yes'\n    assert candidate(\"\
+  geeks\") == 'No'\n\n\n\ndef test_check():\n    check(match)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

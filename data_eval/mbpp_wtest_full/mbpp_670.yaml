@@ -1,0 +1,15 @@
+name: mbpp_670
+language: py
+prompt: "\n\ndef decreasing_trend(nums):\n    \"\"\"\n    Write a python function\
+  \ to check whether a sequence of numbers has a decreasing trend or not.\n    >>>\
+  \ decreasing_trend([-4,-3,-2,-1])\n    True\n    >>> decreasing_trend([1,2,3])\n\
+  \    True\n    >>> decreasing_trend([3,2,1])\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([-4,-3,-2,-1])\
+  \ == True\n    assert candidate([1,2,3]) == True\n    assert candidate([3,2,1])\
+  \ == False\n\n\n\ndef test_check():\n    check(decreasing_trend)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

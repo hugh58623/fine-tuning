@@ -1,0 +1,19 @@
+name: mbpp_861
+language: py
+prompt: "\n\ndef anagram_lambda(texts,str):\n  \"\"\"\n  Write a function to find\
+  \ all anagrams of a string in a given list of strings using lambda function.\n \
+  \ >>> anagram_lambda([\"bcda\", \"abce\", \"cbda\", \"cbea\", \"adcb\"],\"abcd\"\
+  )\n  ['bcda', 'cbda', 'adcb']\n  >>> anagram_lambda([\"recitals\",\" python\"],\
+  \ \"articles\" )\n  [\"recitals\"]\n  >>> anagram_lambda([\" keep\",\" abcdef\"\
+  ,\" xyz\"],\" peek\")\n  [\" keep\"]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"bcda\"\
+  , \"abce\", \"cbda\", \"cbea\", \"adcb\"],\"abcd\")==['bcda', 'cbda', 'adcb']\n\
+  \    assert candidate([\"recitals\",\" python\"], \"articles\" )==[\"recitals\"\
+  ]\n    assert candidate([\" keep\",\" abcdef\",\" xyz\"],\" peek\")==[\" keep\"\
+  ]\n\n\n\ndef test_check():\n    check(anagram_lambda)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

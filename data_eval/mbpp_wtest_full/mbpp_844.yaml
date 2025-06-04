@@ -1,0 +1,15 @@
+name: mbpp_844
+language: py
+prompt: "\n\ndef get_Number(n, k):\n    \"\"\"\n    Write a python function to find\
+  \ the kth element in an array containing odd elements first and then even elements.\n\
+  \    >>> get_Number(8,5)\n    2\n    >>> get_Number(7,2)\n    3\n    >>> get_Number(5,2)\n\
+  \    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(8,5) ==\
+  \ 2\n    assert candidate(7,2) == 3\n    assert candidate(5,2) == 3\n\n\n\ndef test_check():\n\
+  \    check(get_Number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

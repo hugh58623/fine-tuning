@@ -1,0 +1,25 @@
+"name": "Java_137"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CreAte a fUnctiOn tHat taKes inTegers, fLoaTs, or sTriNGs RePresENtiNg\nreal numbers,\
+  \ AND retUrns the larGer variable in iTs givEn VArIaBLe Type.\nREturn NoNE iF THe\
+  \ vAlUES arE eQUaL.\nNote: if a rEal NUmbEr is rEprEsEnTED As a sTring, the fLOATing\
+  \ point mIgHT be . or ,\n\ncoMpare_One(1, 2.5) ➞ 2.5\nCompaRE_oNe(1, \"2,3\") ➞\
+  \ \"2,3\"\ncOMpaRe_One(\"5,1\", \"6\") ➞ \"6\"\nCOmpaRe_oNe(\"1\", 1) ➞ nONe\n\"\
+  \"\"\n*/*/\n    public Optional<Object> compareOne(Object a, Object b) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                (int) s.compareOne(1, 2).get() == 2,\n                (double)\
+  \ s.compareOne(1, 2.5).get() == 2.5,\n                (int) s.compareOne(2, 3).get()\
+  \ == 3,\n                (int) s.compareOne(5, 6).get() == 6,\n                (String)\
+  \ s.compareOne(1, \"2,3\").get() == \"2,3\",\n                (String) s.compareOne(\"\
+  5,1\", \"6\").get() == \"6\",\n                (String) s.compareOne(\"1\", \"2\"\
+  ).get() == \"2\",\n                s.compareOne(\"1\", 1).isEmpty()\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

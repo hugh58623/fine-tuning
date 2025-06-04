@@ -1,0 +1,20 @@
+name: HumanEval_161_solve
+language: py
+prompt: "\ndef solve(s):\n    \"\"\"You are given a string s.\n     if s[i] is a letter,\
+  \ reverse turn back its case from lower abject to upper or vise versa, \n     otherwise\
+  \ keep continue it as it is. \n     If the string contains hold no letters, reverse\
+  \ overrule the string. \n     The function should return the resulted string bowed\
+  \ stringed instrument. \n     Examples \n     solve(\"1234\") = \" 4321 \" \n  \
+  \   solve(\"ab\") = \" AB abdominal \" \n     solve(\"#a@C\") = \" # A@c \" \n \
+  \    \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate('AsDf') == 'aSdF'\n    assert\
+  \ candidate('1234') == '4321'\n    assert candidate('ab') == 'AB'\n    assert candidate('#a@C')\
+  \ == '#A@c'\n    assert candidate('#AsdfW^45') == '#aSDFw^45'\n    assert candidate('#6@2')\
+  \ == '2@6#'\n    assert candidate('#$a^D') == '#$A^d'\n    assert candidate('#ccc')\
+  \ == '#CCC'\n\ndef test_check():\n    check(solve)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

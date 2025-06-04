@@ -1,0 +1,15 @@
+name: mbpp_352
+language: py
+prompt: "\n\ndef unique_Characters(str):\n    \"\"\"\n    Write a python function\
+  \ to check whether all the characters in a given string are unique.\n    >>> unique_Characters('aba')\n\
+  \    False\n    >>> unique_Characters('abc')\n    True\n    >>> unique_Characters('abab')\n\
+  \    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('aba')\
+  \ == False\n    assert candidate('abc') == True\n    assert candidate('abab') ==\
+  \ False\n\n\n\ndef test_check():\n    check(unique_Characters)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

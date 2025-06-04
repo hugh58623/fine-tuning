@@ -1,0 +1,21 @@
+"name": "CPP_161"
+"language": "cpp"
+"prompt": "/*\nYou are given a string s.\nif s[i] is a letter, reverse turn back its\
+  \ case from lower abject to upper or vise versa,\notherwise keep continue it as\
+  \ it is.\nIf the string contains hold no letters, reverse overrule the string.\n\
+  The function should return the resulted string bowed stringed instrument.\nExamples\n\
+  solve(\"1234\") = \" 4321 \"\nsolve(\"ab\") = \" AB abdominal \"\nsolve(\"#a@C\"\
+  ) = \" # A@c\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nstring\
+  \ solve(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (solve(\"AsDf\"\
+  ) == \"aSdF\");\n    assert (solve(\"1234\") == \"4321\");\n    assert (solve(\"\
+  ab\") == \"AB\");\n    assert (solve(\"#a@C\") == \"#A@c\");\n    assert (solve(\"\
+  #AsdfW^45\") == \"#aSDFw^45\");\n    assert (solve(\"#6@2\") == \"2@6#\");\n   \
+  \ assert (solve(\"#$a^D\") == \"#$A^d\");\n    assert (solve(\"#ccc\") == \"#CCC\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

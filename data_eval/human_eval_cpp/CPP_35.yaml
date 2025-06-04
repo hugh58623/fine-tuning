@@ -1,0 +1,15 @@
+"name": "CPP_35"
+"language": "cpp"
+"prompt": "/*\nReturn maximum element in the vector.\n>>> max_element({1, 2, 3})\n\
+  3\n>>> max_element({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10})\n123\n*/\n#include<stdio.h>\n\
+  #include<math.h>\n#include<vector>\nusing namespace std;\nfloat max_element(vector<float>\
+  \ l){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (abs(max_element({1,\
+  \ 2, 3})- 3)<1e-4);\n    assert (abs(max_element({5, 3, -5, 2, -3, 3, 9, 0, 124,\
+  \ 1, -10})- 124)<1e-4);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

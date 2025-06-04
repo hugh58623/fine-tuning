@@ -1,0 +1,19 @@
+name: mbpp_862
+language: py
+prompt: "\n\ndef n_common_words(text,n):\n  \"\"\"\n  Write a function to find the\
+  \ occurrences of n most common words in a given text.\n  >>> n_common_words(\"python\
+  \ is a programming language\",1)\n  [('python', 1)]\n  >>> n_common_words(\"python\
+  \ is a programming language\",1)\n  [('python', 1)]\n  >>> n_common_words(\"python\
+  \ is a programming language\",5)\n  [('python', 1),('is', 1), ('a', 1), ('programming',\
+  \ 1), ('language', 1)]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\
+  \ is a programming language\",1)==[('python', 1)]\n    assert candidate(\"python\
+  \ is a programming language\",1)==[('python', 1)]\n    assert candidate(\"python\
+  \ is a programming language\",5)==[('python', 1),('is', 1), ('a', 1), ('programming',\
+  \ 1), ('language', 1)]\n\n\n\ndef test_check():\n    check(n_common_words)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

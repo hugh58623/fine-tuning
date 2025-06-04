@@ -1,0 +1,17 @@
+name: mbpp_1
+language: py
+prompt: "\n\ndef min_cost(cost, m, n):\n\t\"\"\"\n\tWrite a function to find the minimum\
+  \ cost path to reach (m, n) from (0, 0) for the given cost matrix cost[][] and a\
+  \ position (m, n) in cost[][].\n\t>>> min_cost([[1, 2, 3], [4, 8, 2], [1, 5, 3]],\
+  \ 2, 2)\n\t8\n\t>>> min_cost([[2, 3, 4], [5, 9, 3], [2, 6, 4]], 2, 2)\n\t12\n\t\
+  >>> min_cost([[3, 4, 5], [6, 10, 4], [3, 7, 5]], 2, 2)\n\t16\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 3], [4, 8, 2], [1, 5, 3]], 2, 2) == 8\n    assert candidate([[2, 3, 4], [5, 9,\
+  \ 3], [2, 6, 4]], 2, 2) == 12\n    assert candidate([[3, 4, 5], [6, 10, 4], [3,\
+  \ 7, 5]], 2, 2) == 16\n\n\n\ndef test_check():\n    check(min_cost)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

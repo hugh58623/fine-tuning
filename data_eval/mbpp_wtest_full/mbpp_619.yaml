@@ -1,0 +1,18 @@
+name: mbpp_619
+language: py
+prompt: "\n\ndef move_num(test_str):\n  \"\"\"\n  Write a function to move all the\
+  \ numbers in it to the given string.\n  >>> move_num('I1love143you55three3000thousand')\n\
+  \  'Iloveyouthreethousand1143553000'\n  >>> move_num('Avengers124Assemble')\n  'AvengersAssemble124'\n\
+  \  >>> move_num('Its11our12path13to14see15things16do17things')\n  'Itsourpathtoseethingsdothings11121314151617'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('I1love143you55three3000thousand')\
+  \ == 'Iloveyouthreethousand1143553000'\n    assert candidate('Avengers124Assemble')\
+  \ == 'AvengersAssemble124'\n    assert candidate('Its11our12path13to14see15things16do17things')\
+  \ == 'Itsourpathtoseethingsdothings11121314151617'\n\n\n\ndef test_check():\n  \
+  \  check(move_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

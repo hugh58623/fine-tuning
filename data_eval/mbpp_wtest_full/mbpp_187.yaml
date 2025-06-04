@@ -1,0 +1,17 @@
+name: mbpp_187
+language: py
+prompt: "\n\ndef longest_common_subsequence(X, Y, m, n):\n    \"\"\"\n    Write a\
+  \ function to find the longest common subsequence for the given two sequences.\n\
+  \    >>> longest_common_subsequence(\"AGGTAB\" , \"GXTXAYB\", 6, 7)\n    4\n   \
+  \ >>> longest_common_subsequence(\"ABCDGH\" , \"AEDFHR\", 6, 6)\n    3\n    >>>\
+  \ longest_common_subsequence(\"AXYT\" , \"AYZX\", 4, 4)\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"AGGTAB\"\
+  \ , \"GXTXAYB\", 6, 7) == 4\n    assert candidate(\"ABCDGH\" , \"AEDFHR\", 6, 6)\
+  \ == 3\n    assert candidate(\"AXYT\" , \"AYZX\", 4, 4) == 2\n\n\n\ndef test_check():\n\
+  \    check(longest_common_subsequence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

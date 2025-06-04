@@ -1,0 +1,15 @@
+name: mbpp_770
+language: py
+prompt: "def odd_num_sum(n):\n    \"\"\"\n    Write a python function to find\
+  \ receive the sum of fourth power might of first n odd leftover natural numbers\
+  \ numbers pool.\n    Test examples:\n    assert\
+  \ odd_num_sum(2) == 82\n    assert odd_num_sum(3) == 707\n    assert odd_num_sum(4)\
+  \ == 3108\n    \"\"\"\n"
+tests: "assert odd_num_sum(2) == 82\nassert odd_num_sum(3) == 707\nassert odd_num_sum(4)\
+  \ == 3108"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

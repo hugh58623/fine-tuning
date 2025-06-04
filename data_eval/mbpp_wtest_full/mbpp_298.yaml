@@ -1,0 +1,21 @@
+name: mbpp_298
+language: py
+prompt: "\n\ndef intersection_nested_lists(l1, l2):\n    \"\"\"\n    Write a function\
+  \ to find the nested list elements which are present in another list.\n    >>> intersection_nested_lists(\
+  \ [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],[[12, 18, 23, 25, 45], [7, 11,\
+  \ 19, 24, 28], [1, 5, 8, 18, 15, 16]])\n    [[12], [7, 11], [1, 5, 8]]\n    >>>\
+  \ intersection_nested_lists([[2, 3, 1], [4, 5], [6, 8]], [[4, 5], [6, 8]])\n   \
+  \ [[], []]\n    >>> intersection_nested_lists(['john','amal','joel','george'],[['john'],['jack','john','mary'],['howard','john'],['jude']])\n\
+  \    [['john'], ['john'], ['john'], []]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate( [1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],[[12, 18, 23, 25, 45], [7, 11, 19, 24,\
+  \ 28], [1, 5, 8, 18, 15, 16]])==[[12], [7, 11], [1, 5, 8]]\n    assert candidate([[2,\
+  \ 3, 1], [4, 5], [6, 8]], [[4, 5], [6, 8]])==[[], []]\n    assert candidate(['john','amal','joel','george'],[['john'],['jack','john','mary'],['howard','john'],['jude']])==[['john'],\
+  \ ['john'], ['john'], []]\n\n\n\ndef test_check():\n    check(intersection_nested_lists)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

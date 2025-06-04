@@ -1,0 +1,20 @@
+"name": "Java_36"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return the number of time the digit 7 appearing in integers less than n which was\
+  \ divisible by 11 or 13.\n\n>>>>>> fizzBuzz(50)\n    0\n    >>> fizzBuzz(78)\n \
+  \   2\n    >>> fizzBuzz(79)\n    3\n     */\n    public int fizzBuzz(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.fizzBuzz(50) == 0,\n                s.fizzBuzz(78) == 2,\n  \
+  \              s.fizzBuzz(79) == 3,\n                s.fizzBuzz(100) == 3,\n   \
+  \             s.fizzBuzz(200) == 6,\n                s.fizzBuzz(4000) == 192,\n\
+  \                s.fizzBuzz(10000) == 639,\n                s.fizzBuzz(100000) ==\
+  \ 8026\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

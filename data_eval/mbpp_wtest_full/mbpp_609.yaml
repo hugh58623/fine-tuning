@@ -1,0 +1,15 @@
+name: mbpp_609
+language: py
+prompt: "\n\ndef floor_Min(A,B,N):\n    \"\"\"\n    Write a python function to find\
+  \ minimum possible value for the given periodic function.\n    >>> floor_Min(10,20,30)\n\
+  \    15\n    >>> floor_Min(1,2,1)\n    0\n    >>> floor_Min(11,10,9)\n    9\n  \
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20,30)\
+  \ == 15\n    assert candidate(1,2,1) == 0\n    assert candidate(11,10,9) == 9\n\n\
+  \n\ndef test_check():\n    check(floor_Min)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

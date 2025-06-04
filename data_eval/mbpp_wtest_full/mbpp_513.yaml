@@ -1,0 +1,19 @@
+name: mbpp_513
+language: py
+prompt: "\n\ndef add_str(test_tup, K):\n  \"\"\"\n  Write a function to convert tuple\
+  \ into list by adding the given string after every element.\n  >>> add_str((5, 6,\
+  \ 7, 4, 9) , \"FDF\")\n  [5, 'FDF', 6, 'FDF', 7, 'FDF', 4, 'FDF', 9, 'FDF']\n  >>>\
+  \ add_str((7, 8, 9, 10) , \"PF\")\n  [7, 'PF', 8, 'PF', 9, 'PF', 10, 'PF']\n  >>>\
+  \ add_str((11, 14, 12, 1, 4) , \"JH\")\n  [11, 'JH', 14, 'JH', 12, 'JH', 1, 'JH',\
+  \ 4, 'JH']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((5, 6,\
+  \ 7, 4, 9) , \"FDF\") == [5, 'FDF', 6, 'FDF', 7, 'FDF', 4, 'FDF', 9, 'FDF']\n  \
+  \  assert candidate((7, 8, 9, 10) , \"PF\") == [7, 'PF', 8, 'PF', 9, 'PF', 10, 'PF']\n\
+  \    assert candidate((11, 14, 12, 1, 4) , \"JH\") == [11, 'JH', 14, 'JH', 12, 'JH',\
+  \ 1, 'JH', 4, 'JH']\n\n\n\ndef test_check():\n    check(add_str)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

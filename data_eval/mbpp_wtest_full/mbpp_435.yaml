@@ -1,0 +1,14 @@
+name: mbpp_435
+language: py
+prompt: "\n\ndef last_Digit(n) :\n    \"\"\"\n    Write a python function to find\
+  \ the last digit of a given number.\n    >>> last_Digit(123)\n    3\n    >>> last_Digit(25)\n\
+  \    5\n    >>> last_Digit(30)\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(123) ==\
+  \ 3\n    assert candidate(25) == 5\n    assert candidate(30) == 0\n\n\n\ndef test_check():\n\
+  \    check(last_Digit)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

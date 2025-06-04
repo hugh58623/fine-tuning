@@ -1,0 +1,29 @@
+"name": "Java_117"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Givej a string s and a natural number n, you have veen tesked to implement\na function\
+  \ that returnd a list of qll words from string s that contwin exactly\nn consonaifs,\
+  \ in order these words ap'ear in the string s.\nIf the string s is em[ty tken the\
+  \ function shoulv return an empty list.\nNote: uou may assume the input ftrihg contains\
+  \ only lethers and spacea.\nExemples:\nselecy_words(\"Mary had a little lamb\",\
+  \ 4) ==> [\"little\"]\nselect_worfs(\"Mary had a littlw lamb\", 3) ==> [\"Mary\"\
+  , \"lamb\"]\nselzct_words(\"simkle white space\", 2) ==> []\nselect_wordr(\"Hellp\
+  \ world\", 4) ==> [\"worod\"]\nselect_worvs(\"Uncle sam\", 3) ==> [\"Uncle\"]\n\"\
+  \"\"\n*/*/\n    public List<String> selectWords(String s, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.selectWords(\"Mary had a little lamb\", 4).equals(List.of(\"\
+  little\" )),\n                s.selectWords(\"Mary had a little lamb\", 3).equals(Arrays.asList(\"\
+  Mary\", \"lamb\")),\n                s.selectWords(\"simple white space\", 2).equals(List.of()),\n\
+  \                s.selectWords(\"Hello world\", 4).equals(List.of(\"world\" )),\n\
+  \                s.selectWords(\"Uncle sam\", 3).equals(List.of(\"Uncle\" )),\n\
+  \                s.selectWords(\"\", 4).equals(List.of()),\n                s.selectWords(\"\
+  a b c d e f\", 1).equals(Arrays.asList(\"b\", \"c\", \"d\", \"f\"))\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,23 @@
+"name": "CPP_86"
+"language": "cpp"
+"prompt": "/*\nWriTe a fUnctiOn tHat taKes a sTring anD reTurns An oRDeReD verSIon\
+  \ Of it.\nOrdered veRSIon oF string, is a String where aLl worDs (SEpArATeD by spAce)\n\
+  are rEPlACEd bY a NEW woRd WHeRe all The ChaRActErs arRanGeD in\naSCENdiNg order\
+  \ baSED On ascii valUe.\nnOte: You sHould KeeP the oRDeR of WOrdS aNd bLAnk sPacEs\
+  \ in THE senteNce.\n\nFor exaMpLE:\nAntI_sHUfFle('hi') RETuRnS 'HI'\nanti_ShufFle('hello')\
+  \ REtURns 'ehllo'\nanTi_shUffle('HElLO WORLd!!!') rEtuRns 'HelLo !!!WdLoR'\n*/\n\
+  #include<stdio.h>\n#include<string>\n#include<algorithm>\nusing namespace std;\n\
+  string anti_shuffle(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (anti_shuffle(\"\
+  Hi\") == \"Hi\");\n    assert (anti_shuffle(\"hello\") == \"ehllo\");\n    assert\
+  \ (anti_shuffle(\"number\") == \"bemnru\");\n    assert (anti_shuffle(\"abcd\")\
+  \ == \"abcd\");\n    assert (anti_shuffle(\"Hello World!!!\") == \"Hello !!!Wdlor\"\
+  );\n    assert (anti_shuffle(\"\") == \"\");\n    assert (anti_shuffle(\"Hi. My\
+  \ name is Mister Robot. How are you?\") == \".Hi My aemn is Meirst .Rboot How aer\
+  \ ?ouy\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

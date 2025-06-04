@@ -1,0 +1,13 @@
+"name": "CPP_55"
+"language": "cpp"
+"prompt": "/*\nReturn n-th Fibonacci number.\n>>> fib(10)\n55\n>>> fib(1)\n1\n>>>\
+  \ fib(8)\n21\n*/\n#include<stdio.h>\nusing namespace std;\nint fib(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fib(10) == 55);\n\
+  \    assert (fib(1) == 1);\n    assert (fib(8) == 21);\n    assert (fib(11) == 89);\n\
+  \    assert (fib(12) == 144);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

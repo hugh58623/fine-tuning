@@ -1,0 +1,18 @@
+name: mbpp_563
+language: py
+prompt: "\n\ndef extract_values(text):\n \"\"\"\n Write a function to extract values\
+  \ between quotation marks of a string.\n >>> extract_values('\"Python\", \"PHP\"\
+  , \"Java\"')\n ['Python', 'PHP', 'Java']\n >>> extract_values('\"python\",\"program\"\
+  ,\"language\"')\n ['python','program','language']\n >>> extract_values('\"red\"\
+  ,\"blue\",\"green\",\"yellow\"')\n ['red','blue','green','yellow']\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('\"Python\"\
+  , \"PHP\", \"Java\"')==['Python', 'PHP', 'Java']\n    assert candidate('\"python\"\
+  ,\"program\",\"language\"')==['python','program','language']\n    assert candidate('\"\
+  red\",\"blue\",\"green\",\"yellow\"')==['red','blue','green','yellow']\n\n\n\ndef\
+  \ test_check():\n    check(extract_values)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,20 @@
+name: HumanEval_17_parse_music
+language: py
+prompt: "from typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n\
+  \    \"\"\" Entering this function is a string that represents notes in a special\
+  \ ASCII format. Your task is to analyze this string and return a list of integers\
+  \ corresponding to the number of beats each one does not hold. Here's a legend:\
+  \ \"o\" - whole note, takes four beats \"o | '- half note, takes two beats.\"\n\n\
+  \    >>> parse_music('o o| .| o| o| .| .| .| .| o o')\n    [4, 2, 1, 2, 2, 1, 1,\
+  \ 1, 1, 4, 4]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('') == []\n    assert candidate('o\
+  \ o o o') == [4, 4, 4, 4]\n    assert candidate('.| .| .| .|') == [1, 1, 1, 1]\n\
+  \    assert candidate('o| o| .| .| o o o o') == [2, 2, 1, 1, 4, 4, 4, 4]\n    assert\
+  \ candidate('o| .| o| .| o o| o o|') == [2, 1, 2, 1, 4, 2, 4, 2]\n\ndef test_check():\n\
+  \    check(parse_music)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

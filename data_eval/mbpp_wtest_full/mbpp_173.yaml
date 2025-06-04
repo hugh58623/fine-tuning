@@ -1,0 +1,18 @@
+name: mbpp_173
+language: py
+prompt: "\n\ndef remove_splchar(text):\n \"\"\"\n Write a function to remove everything\
+  \ except alphanumeric characters from a string.\n >>> remove_splchar('python  @#&^%$*program123')\n\
+  \ ('pythonprogram123')\n >>> remove_splchar('python %^$@!^&*()  programming24%$^^()\
+  \    language')\n ('pythonprogramming24language')\n >>> remove_splchar('python \
+  \  ^%&^()(+_)(_^&67)                  program')\n ('python67program')\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python\
+  \  @#&^%$*program123')==('pythonprogram123')\n    assert candidate('python %^$@!^&*()\
+  \  programming24%$^^()    language')==('pythonprogramming24language')\n    assert\
+  \ candidate('python   ^%&^()(+_)(_^&67)                  program')==('python67program')\n\
+  \n\n\ndef test_check():\n    check(remove_splchar)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

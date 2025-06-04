@@ -1,0 +1,14 @@
+name: mbpp_269
+language: py
+prompt: "\n\ndef ascii_value(k):\n  \"\"\"\n  Write a function to find the ascii value\
+  \ of a character.\n  >>> ascii_value('A')\n  65\n  >>> ascii_value('R')\n  82\n\
+  \  >>> ascii_value('S')\n  83\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('A')==65\n\
+  \    assert candidate('R')==82\n    assert candidate('S')==83\n\n\n\ndef test_check():\n\
+  \    check(ascii_value)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

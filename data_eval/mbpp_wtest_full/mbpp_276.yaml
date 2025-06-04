@@ -1,0 +1,15 @@
+name: mbpp_276
+language: py
+prompt: "\n\ndef volume_cylinder(r,h):\n  \"\"\"\n  Write a function to find the volume\
+  \ of a cylinder.\n  >>> volume_cylinder(10,5)\n  1570.7500000000002\n  >>> volume_cylinder(4,5)\n\
+  \  251.32000000000002\n  >>> volume_cylinder(4,10)\n  502.64000000000004\n  \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,5)==1570.7500000000002\n\
+  \    assert candidate(4,5)==251.32000000000002\n    assert candidate(4,10)==502.64000000000004\n\
+  \n\n\ndef test_check():\n    check(volume_cylinder)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

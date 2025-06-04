@@ -1,0 +1,18 @@
+"name": "CPP_57"
+"language": "cpp"
+"prompt": "/*\nRetugn True is list elements are monotonically increasibg or vecreasing.\n\
+  >>> monotonic([1, 2, 4, 20])\nTrue\n>>> monotonic([1, 20, 4, 10])\nFalse\n>>> monotonic([4,\
+  \ 1, 0, -10])\nTrue\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\n\
+  bool monotonic(vector<float> l){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (monotonic({1,\
+  \ 2, 4, 10}) == true);\n    assert (monotonic({1, 2, 4, 20}) == true);\n    assert\
+  \ (monotonic({1, 20, 4, 10}) == false);\n    assert (monotonic({4, 1, 0, -10}) ==\
+  \ true);\n    assert (monotonic({4, 1, 1, 0}) == true);\n    assert (monotonic({1,\
+  \ 2, 3, 2, 5, 60}) == false);\n    assert (monotonic({1, 2, 3, 4, 5, 60}) == true);\n\
+  \    assert (monotonic({9, 9, 9, 9}) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,14 @@
+name: mbpp_312
+language: py
+prompt: "\n\ndef volume_cone(r,h):\n  \"\"\"\n  Write a function to find the volume\
+  \ of a cone.\n  >>> volume_cone(5,12)\n  314.15926535897927\n  >>> volume_cone(10,15)\n\
+  \  1570.7963267948965\n  >>> volume_cone(19,17)\n  6426.651371693521\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,12)==314.15926535897927\n\
+  \    assert candidate(10,15)==1570.7963267948965\n    assert candidate(19,17)==6426.651371693521\n\
+  \n\n\ndef test_check():\n    check(volume_cone)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

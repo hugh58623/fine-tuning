@@ -1,0 +1,16 @@
+name: mbpp_713
+language: py
+prompt: "\n\ndef check_valid(test_tup):\n  \"\"\"\n  Write a function to check if\
+  \ the given tuple contains all valid values or not.\n  >>> check_valid((True, True,\
+  \ True, True) )\n  True\n  >>> check_valid((True, False, True, True) )\n  False\n\
+  \  >>> check_valid((True, True, True, True) )\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((True,\
+  \ True, True, True) ) == True\n    assert candidate((True, False, True, True) )\
+  \ == False\n    assert candidate((True, True, True, True) ) == True\n\n\n\ndef test_check():\n\
+  \    check(check_valid)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

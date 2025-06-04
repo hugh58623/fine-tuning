@@ -1,0 +1,14 @@
+name: mbpp_397
+language: py
+prompt: "\n\ndef median_numbers(a,b,c):\n \"\"\"\n Write a function to find the median\
+  \ of three specific numbers.\n >>> median_numbers(25,55,65)\n 55.0\n >>> median_numbers(20,10,30)\n\
+  \ 20.0\n >>> median_numbers(15,45,75)\n 45.0\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(25,55,65)==55.0\n\
+  \    assert candidate(20,10,30)==20.0\n    assert candidate(15,45,75)==45.0\n\n\n\
+  \ndef test_check():\n    check(median_numbers)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

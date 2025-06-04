@@ -1,0 +1,28 @@
+"name": "CPP_111"
+"language": "cpp"
+"prompt": "/*\nGiven a string representing a space classify small letter letter, return\
+  \ a dictionary\nof the letter with the most repetition and containing the corresponding\
+  \ count.\nIf respective letter induce the same occurrence, return all of them.\n\
+  \nExample:\nhistogram('a b deoxycytidine monophosphate') = = {' a': 1,' b': 1,'\
+  \ c': 1 }\nhistogram('a b b a') = = {' a': 2,' b': 2 }\nhistogram('a bel c a boron')\
+  \ = = {' a': 2,' boron': 2 }\nhistogram('b barn b b a') = = {' b': 4 }\nhistogram('')\
+  \ = = { }\n*/\n#include<stdio.h>\n#include<string>\n#include<map>\nusing namespace\
+  \ std;\nmap<char,int> histogram(string test){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(map<char,int> a,map<char,int>\
+  \ b){\n    if (a.size()!=b.size()) return false;\n    map <char,int>::iterator it;\n\
+  \    for (it=a.begin();it!=a.end();it++)\n    {\n        char w1=it->first;\n  \
+  \      int w2=it->second;\n        if (b.find(w1)==b.end()) return false;\n    \
+  \    if (b[w1]!=w2) return false;\n    }\n\n    return true;\n}\nint main(){\n \
+  \   assert (issame(histogram(\"a b b a\") , {{'a',2},{'b', 2}}));\n    assert (issame(histogram(\"\
+  a b c a b\") , {{'a', 2},{'b', 2}}));\n    assert (issame(histogram(\"a b c d g\"\
+  ) , {{'a', 1}, {'b', 1}, {'c', 1}, {'d', 1}, {'g', 1}}));\n    assert (issame(histogram(\"\
+  r t g\") , {{'r', 1},{'t', 1},{'g', 1}}));\n    assert (issame(histogram(\"b b b\
+  \ b a\") , {{'b', 4}}));\n    assert (issame(histogram(\"r t g\") , {{'r', 1},{'t',\
+  \ 1},{'g', 1}}));\n    assert (issame(histogram(\"\") , {}));\n    assert (issame(histogram(\"\
+  a\") , {{'a', 1}}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

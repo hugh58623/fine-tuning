@@ -1,0 +1,23 @@
+"name": "CPP_143"
+"language": "cpp"
+"prompt": "/*\nYou was gives a string represents a sentence,\nthe sentence containing\
+  \ some word separates by a space, and you had to return a string that containing\
+  \ the word from the original sentence,\nwhose lengths was prime numbers, the order\
+  \ of the word in the newer string should is the same as the original ones. Example\
+  \ 1: Input: sentence = \"This is a tests\" Output: \"is\" Example 2: Input: sentence\
+  \ = \"let go for swum\" Output: \"go for\" Constraint: * 1 <= len(sentence) <= 100\
+  \ * sentence containing only letters\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nstring words_in_sentence(string sentence){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (words_in_sentence(\"\
+  This is a test\") == \"is\");\n    assert (words_in_sentence(\"lets go for swimming\"\
+  ) == \"go for\");\n    assert (words_in_sentence(\"there is no place available here\"\
+  ) == \"there is no place\");\n    assert (words_in_sentence(\"Hi I am Hussein\"\
+  ) == \"Hi am Hussein\");\n    assert (words_in_sentence(\"go for it\") == \"go for\
+  \ it\");\n    assert (words_in_sentence(\"here\") == \"\");\n    assert (words_in_sentence(\"\
+  here is\") == \"is\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

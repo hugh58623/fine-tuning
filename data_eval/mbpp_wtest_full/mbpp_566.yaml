@@ -1,0 +1,14 @@
+name: mbpp_566
+language: py
+prompt: "\n\ndef sum_digits(n):\n  \"\"\"\n  Write a function to get the sum of a\
+  \ non-negative integer.\n  >>> sum_digits(345)\n  12\n  >>> sum_digits(12)\n  3\n\
+  \  >>> sum_digits(97)\n  16\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(345)==12\n\
+  \    assert candidate(12)==3\n    assert candidate(97)==16\n\n\n\ndef test_check():\n\
+  \    check(sum_digits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

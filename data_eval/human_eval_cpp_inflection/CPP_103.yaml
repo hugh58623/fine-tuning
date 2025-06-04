@@ -1,0 +1,23 @@
+"name": "CPP_103"
+"language": "cpp"
+"prompt": "/*\nYou was gives two positive integers n and m, and your tasks is to computing\
+  \ the averages of the integers from n through m (includes n and m). Round the answer\
+  \ to the nearer integers and converts that to binary. If n is greater than m, return\
+  \ -1. Examples: rounding_avg(1, 5) => \"0b11\" rounding_avg(7, 5) => -1 rounding_avg(10,\
+  \ 20) => \"0b1111\" rounding_avg(20, 33) => \"0b11010\"\n*/\n#include<stdio.h>\n\
+  #include<math.h>\n#include<string>\nusing namespace std;\nstring rounded_avg(int\
+  \ n,int m){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (rounded_avg(1,\
+  \ 5) == \"11\");\n    assert (rounded_avg(7, 13) == \"1010\");\n    assert (rounded_avg(964,977)\
+  \ == \"1111001010\");\n    assert (rounded_avg(996,997) == \"1111100100\");\n  \
+  \  assert (rounded_avg(560,851) == \"1011000001\");  \n    assert (rounded_avg(185,546)\
+  \ == \"101101101\");\n    assert (rounded_avg(362,496) == \"110101101\");\n    assert\
+  \ (rounded_avg(350,902) == \"1001110010\");\n    assert (rounded_avg(197,233) ==\
+  \ \"11010111\");\n    assert (rounded_avg(7, 5) == \"-1\");\n    assert (rounded_avg(5,\
+  \ 1) == \"-1\");\n    assert (rounded_avg(5, 5) == \"101\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

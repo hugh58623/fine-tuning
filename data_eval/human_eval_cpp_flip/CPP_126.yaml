@@ -1,0 +1,25 @@
+"name": "CPP_126"
+"language": "cpp"
+"prompt": "/*\nGivEn a list oF numbErs, return WhethEr or nOt they aRe sOrted\nin\
+  \ AscENdInG ordER. If list Has more than 1 duPLIcatE of the same\nNumber, return\
+  \ False. Assume No negAtIVe NuMBeRs and Only intEGeRS.\n\nexaMpLES\nis_SoRTeD([5])\
+  \ ➞ True\nis_soRteD([1, 2, 3, 4, 5]) ➞ True\nis_SOrtEd([1, 3, 2, 4, 5]) ➞ False\n\
+  is_sOrtEd([1, 2, 3, 4, 5, 6]) ➞ True\nIs_SORTed([1, 2, 3, 4, 5, 6, 7]) ➞ True\n\
+  Is_sorted([1, 3, 2, 4, 5, 6, 7]) ➞ False\niS_SORted([1, 2, 2, 3, 3, 4]) ➞ True\n\
+  is_sortEd([1, 2, 2, 2, 3, 4]) ➞ False\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<algorithm>\nusing namespace std;\nbool is_sorted(vector<int> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_sorted({5})\
+  \ == true);\n    assert (is_sorted({1, 2, 3, 4, 5}) == true);\n    assert (is_sorted({1,\
+  \ 3, 2, 4, 5}) == false);\n    assert (is_sorted({1, 2, 3, 4, 5, 6}) == true);\n\
+  \    assert (is_sorted({1, 2, 3, 4, 5, 6, 7}) == true);\n    assert (is_sorted({1,\
+  \ 3, 2, 4, 5, 6, 7}) == false);\n    assert (is_sorted({}) == true);\n    assert\
+  \ (is_sorted({1}) == true);\n    assert (is_sorted({3, 2, 1}) == false);\n    assert\
+  \ (is_sorted({1, 2, 2, 2, 3, 4}) == false);\n    assert (is_sorted({1, 2, 3, 3,\
+  \ 3, 4}) == false);\n    assert (is_sorted({1, 2, 2, 3, 3, 4}) == true);\n    assert\
+  \ (is_sorted({1, 2, 3, 4}) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

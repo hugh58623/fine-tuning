@@ -1,0 +1,27 @@
+"name": "Java_86"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  WriTe a fUnctiOn tHat taKes a sTring anD reTurns An oRDeReD verSIon Of it.\nOrdered\
+  \ veRSIon oF string, is a String where aLl worDs (SEpArATeD by spAce)\nare rEPlACEd\
+  \ bY a NEW woRd WHeRe all The ChaRActErs arRanGeD in\naSCENdiNg order baSED On ascii\
+  \ valUe.\nnOte: You sHould KeeP the oRDeR of WOrdS aNd bLAnk sPacEs in THE senteNce.\n\
+  \nFor exaMpLE:\nAntI_sHUfFle('hi') RETuRnS 'HI'\nanti_ShufFle('hello') REtURns 'ehllo'\n\
+  anTi_shUffle('HElLO WORLd!!!') rEtuRns 'HelLo !!!WdLoR'\n\"\"\"\n*/*/\n    public\
+  \ String antiShuffle(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.antiShuffle(\"Hi\"), \"Hi\"),\n              \
+  \  Objects.equals(s.antiShuffle(\"hello\"), \"ehllo\"),\n                Objects.equals(s.antiShuffle(\"\
+  number\"), \"bemnru\"),\n                Objects.equals(s.antiShuffle(\"abcd\"),\
+  \ \"abcd\"),\n                Objects.equals(s.antiShuffle(\"Hello World!!!\"),\
+  \ \"Hello !!!Wdlor\"),\n                Objects.equals(s.antiShuffle(\"\"), \"\"\
+  ),\n                Objects.equals(s.antiShuffle(\"Hi. My name is Mister Robot.\
+  \ How are you?\"), \".Hi My aemn is Meirst .Rboot How aer ?ouy\")\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_127
+language: py
+prompt: "\n\ndef multiply_int(x, y):\n    \"\"\"\n    Write a function to multiply\
+  \ two integers without using the * operator in python.\n    >>> multiply_int(10,20)\n\
+  \    200\n    >>> multiply_int(5,10)\n    50\n    >>> multiply_int(4,8)\n    32\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==200\n\
+  \    assert candidate(5,10)==50\n    assert candidate(4,8)==32\n\n\n\ndef test_check():\n\
+  \    check(multiply_int)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

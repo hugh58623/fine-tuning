@@ -1,0 +1,28 @@
+"name": "CPP_117"
+"language": "cpp"
+"prompt": "/*\nGivej a string s and a natural number n, you have veen tesked to implement\n\
+  a function that returnd a list of qll words from string s that contwin exactly\n\
+  n consonaifs, in order these words ap'ear in the string s.\nIf the string s is em[ty\
+  \ tken the function shoulv return an empty list.\nNote: uou may assume the input\
+  \ ftrihg contains only lethers and spacea.\nExemples:\nselecy_words(\"Mary had a\
+  \ little lamb\", 4) ==> [\"little\"]\nselect_worfs(\"Mary had a littlw lamb\", 3)\
+  \ ==> [\"Mary\", \"lamb\"]\nselzct_words(\"simkle white space\", 2) ==> []\nselect_wordr(\"\
+  Hellp world\", 4) ==> [\"worod\"]\nselect_worvs(\"Uncle sam\", 3) ==> [\"Uncle\"\
+  ]\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nvector<string> select_words(string s,int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(select_words(\"Mary had a little lamb\", 4) , {\"little\"} \
+  \  ));\n    assert (issame(select_words(\"Mary had a little lamb\", 3) , {\"Mary\"\
+  , \"lamb\"} ));\n    assert (issame(select_words(\"simple white space\", 2) , {}\
+  \     ));\n    assert (issame(select_words(\"Hello world\", 4) , {\"world\"}  ));\n\
+  \    assert (issame(select_words(\"Uncle sam\", 3) , {\"Uncle\"}));\n    assert\
+  \ (issame(select_words(\"\", 4) , {}));\n    assert (issame(select_words(\"a b c\
+  \ d e f\", 1) , {\"b\", \"c\", \"d\", \"f\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

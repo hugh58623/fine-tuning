@@ -1,0 +1,15 @@
+name: mbpp_962
+language: py
+prompt: "\n\ndef sum_Even(l,r):\n    \"\"\"\n    Write a python function to find the\
+  \ sum of all even natural numbers within the range l and r.\n    >>> sum_Even(2,5)\n\
+  \    6\n    >>> sum_Even(3,8)\n    18\n    >>> sum_Even(4,6)\n    10\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,5) ==\
+  \ 6\n    assert candidate(3,8) == 18\n    assert candidate(4,6) == 10\n\n\n\ndef\
+  \ test_check():\n    check(sum_Even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

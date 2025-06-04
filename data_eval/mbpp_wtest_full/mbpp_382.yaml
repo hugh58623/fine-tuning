@@ -1,0 +1,17 @@
+name: mbpp_382
+language: py
+prompt: "\n\ndef find_rotation_count(A):\n    \"\"\"\n    Write a function to find\
+  \ the number of rotations in a circularly sorted array.\n    >>> find_rotation_count([8,\
+  \ 9, 10, 1, 2, 3, 4, 5, 6, 7])\n    3\n    >>> find_rotation_count([8, 9, 10,2,\
+  \ 5, 6])\n    3\n    >>> find_rotation_count([2, 5, 6, 8, 9, 10])\n    0\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([8, 9,\
+  \ 10, 1, 2, 3, 4, 5, 6, 7]) == 3\n    assert candidate([8, 9, 10,2, 5, 6]) == 3\n\
+  \    assert candidate([2, 5, 6, 8, 9, 10]) == 0\n\n\n\ndef test_check():\n    check(find_rotation_count)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

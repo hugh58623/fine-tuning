@@ -1,0 +1,15 @@
+name: mbpp_664
+language: py
+prompt: "\n\ndef average_Even(n) :\n    \"\"\"\n    Write a python function to find\
+  \ the average of even numbers till a given even number.\n    >>> average_Even(2)\n\
+  \    2\n    >>> average_Even(4)\n    3\n    >>> average_Even(100)\n    51\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 2\n\
+  \    assert candidate(4) == 3\n    assert candidate(100) == 51\n\n\n\ndef test_check():\n\
+  \    check(average_Even)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

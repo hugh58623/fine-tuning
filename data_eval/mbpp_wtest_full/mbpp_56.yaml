@@ -1,0 +1,14 @@
+name: mbpp_56
+language: py
+prompt: "\n\ndef check(n):\n    \"\"\"\n    Write a python function to check if a\
+  \ given number is one less than twice its reverse.\n    >>> check(70)\n    False\n\
+  \    >>> check(23)\n    False\n    >>> check(73)\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(70) ==\
+  \ False\n    assert candidate(23) == False\n    assert candidate(73) == True\n\n\
+  \n\ndef test_check():\n    check(check)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

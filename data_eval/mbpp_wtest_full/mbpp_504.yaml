@@ -1,0 +1,14 @@
+name: mbpp_504
+language: py
+prompt: "\n\ndef sum_Of_Series(n):\n    \"\"\"\n    Write a python function to find\
+  \ the cube sum of first n natural numbers.\n    >>> sum_Of_Series(5)\n    225\n\
+  \    >>> sum_Of_Series(2)\n    9\n    >>> sum_Of_Series(3)\n    36\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == 225\n\
+  \    assert candidate(2) == 9\n    assert candidate(3) == 36\n\n\n\ndef test_check():\n\
+  \    check(sum_Of_Series)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

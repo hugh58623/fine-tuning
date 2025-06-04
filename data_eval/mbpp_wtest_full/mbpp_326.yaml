@@ -1,0 +1,20 @@
+name: mbpp_326
+language: py
+prompt: "\n\ndef most_occurrences(test_list):\n  \"\"\"\n  Write a function to get\
+  \ the word with most number of occurrences in the given strings list.\n  >>> most_occurrences([\"\
+  UTS is best for RTF\", \"RTF love UTS\", \"UTS is best\"] )\n  'UTS'\n  >>> most_occurrences([\"\
+  Its been a great year\", \"this year is so worse\", \"this year is okay\"] )\n \
+  \ 'year'\n  >>> most_occurrences([\"Families can be reunited\", \"people can be\
+  \ reunited\", \"Tasks can be achieved \"] )\n  'can'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"UTS\
+  \ is best for RTF\", \"RTF love UTS\", \"UTS is best\"] ) == 'UTS'\n    assert candidate([\"\
+  Its been a great year\", \"this year is so worse\", \"this year is okay\"] ) ==\
+  \ 'year'\n    assert candidate([\"Families can be reunited\", \"people can be reunited\"\
+  , \"Tasks can be achieved \"] ) == 'can'\n\n\n\ndef test_check():\n    check(most_occurrences)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

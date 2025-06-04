@@ -1,0 +1,29 @@
+"name": "Java_160"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GivEn twO listS operator, anD operand. The fIrst list hAs basic AlgEbra oPerATiOnS,\
+  \ and\nTHe sEcond list is a list of intEGErs. USe the two giVen lists to buIld thE\
+  \ aLGeBrIC\nexpression aNd return the EvaluatIOn OF ThiS expression.\n\nTHE BasIc\
+  \ ALgEbra oPerAtiONs:\nADditiOn ( + )\nSUbTrACTIon ( - )\nmultiplicATIOn ( * )\n\
+  Floor divIsIOn ( // )\nExponEntiaTioN ( ** )\n\nExamPLe:\noperator['+', '*', '-']\n\
+  ArrAY = [2, 3, 4, 5]\nreSuLt = 2 + 3 * 4 - 5\n=> rESult = 9\n\nnotE:\nTHE Length\
+  \ Of operator list is equal To THE leNgTH oF operand list miNuS ONe.\nopErAnd is\
+  \ A list of oF non-negaTIvE Integers.\nOpEratOr list has aT lEAsT ONe operator,\
+  \ aNd operand list hAs at leAst tWo OPeraNDS.\n\n\"\"\"\n*/*/\n    public int doAlgebra(List<String>\
+  \ operator, List<Integer> operand) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.doAlgebra(new ArrayList<>(Arrays.asList(\"**\", \"*\", \"+\"\
+  )), new ArrayList<>(Arrays.asList(2, 3, 4, 5))) == 37,\n                s.doAlgebra(new\
+  \ ArrayList<>(Arrays.asList(\"+\", \"*\", \"-\")), new ArrayList<>(Arrays.asList(2,\
+  \ 3, 4, 5))) == 9,\n                s.doAlgebra(new ArrayList<>(Arrays.asList(\"\
+  /\", \"*\")), new ArrayList<>(Arrays.asList(7, 3, 4))) == 8,\n                s.doAlgebra(new\
+  \ ArrayList<>(Arrays.asList(\"+\", \"**\", \"**\")), new ArrayList<>(Arrays.asList(7,\
+  \ 5, 3, 2))) == 1953132\n        );\n        if (correct.contains(false)) {\n  \
+  \          throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

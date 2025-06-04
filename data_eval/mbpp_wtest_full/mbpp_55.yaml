@@ -1,0 +1,14 @@
+name: mbpp_55
+language: py
+prompt: "\n\ndef tn_gp(a,n,r):\n  \"\"\"\n  Write a function to find t-nth term of\
+  \ geometric series.\n  >>> tn_gp(1,5,2)\n  16\n  >>> tn_gp(1,5,4)\n  256\n  >>>\
+  \ tn_gp(2,6,3)\n  486\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,5,2)==16\n\
+  \    assert candidate(1,5,4)==256\n    assert candidate(2,6,3)==486\n\n\n\ndef test_check():\n\
+  \    check(tn_gp)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

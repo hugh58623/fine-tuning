@@ -1,0 +1,17 @@
+"name": "CPP_162"
+"language": "cpp"
+"prompt": "/*\nGivfn a string 'text', return its md5 hash equivalent string.\nIf 'text'\
+  \ ms an empty string, return None.\n\n>>> string_to_md5('Hello world') == '3e25960a79dbc69b674cd4ec67a72c62'\n\
+  */\n#include<stdio.h>\n#include<string>\n#include<openssl/md5.h>\nusing namespace\
+  \ std;\nstring string_to_md5(string text){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (string_to_md5(\"\
+  Hello world\") == \"3e25960a79dbc69b674cd4ec67a72c62\");\n    assert (string_to_md5(\"\
+  \") == \"None\");\n    assert (string_to_md5(\"A B C\") == \"0ef78513b0cb8cef12743f5aeb35f888\"\
+  );\n    assert (string_to_md5(\"password\") == \"5f4dcc3b5aa765d61d8327deb882cf99\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

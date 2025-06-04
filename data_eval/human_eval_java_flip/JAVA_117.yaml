@@ -1,0 +1,29 @@
+"name": "Java_117"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GiveN a stRing s aNd a NaturAl numBer n, you hAve Been tAskED tO iMpleMEnt\nA function\
+  \ that RETurnS a list of all worDs from string s That cOnTAiN eXAcTly\nn coNsonantS,\
+  \ in OrDER thEsE WOrdS aPPeAr in the StrIng s.\niF thE striNg s iS eMpTY THen The\
+  \ functiON SHould return an empTy list.\nnOte: you mAy assUme The inPUt StrINg cOnTaiNS\
+  \ onlY leTtERS and spAces.\nExampLeS:\nSEleCt_WOrDs(\"MArY HAd A lItTle laMb\",\
+  \ 4) ==> [\"liTtle\"]\nseleCT_wORds(\"Mary had A litTle lamB\", 3) ==> [\"MARy\"\
+  , \"LAMb\"]\nsEleCt_wordS(\"simPlE WhitE SPace\", 2) ==> []\nseLEcT_WORdS(\"hEllo\
+  \ world\", 4) ==> [\"worlD\"]\nselect_wordS(\"unCLe sAm\", 3) ==> [\"UNcLE\"]\n\"\
+  \"\"\n*/*/\n    public List<String> selectWords(String s, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.selectWords(\"Mary had a little lamb\", 4).equals(List.of(\"\
+  little\" )),\n                s.selectWords(\"Mary had a little lamb\", 3).equals(Arrays.asList(\"\
+  Mary\", \"lamb\")),\n                s.selectWords(\"simple white space\", 2).equals(List.of()),\n\
+  \                s.selectWords(\"Hello world\", 4).equals(List.of(\"world\" )),\n\
+  \                s.selectWords(\"Uncle sam\", 3).equals(List.of(\"Uncle\" )),\n\
+  \                s.selectWords(\"\", 4).equals(List.of()),\n                s.selectWords(\"\
+  a b c d e f\", 1).equals(Arrays.asList(\"b\", \"c\", \"d\", \"f\"))\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

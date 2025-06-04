@@ -1,0 +1,19 @@
+"name": "CPP_93"
+"language": "cpp"
+"prompt": "/*\nWrites a functions that takes a message, and encodes in such a ways\
+  \ that it swap cases of all letters, replaces all vowels in the message with the\
+  \ letter that appearing 2 place ahead of that vowel in the english alphabets. Assume\
+  \ only letters. Examples:\n>>> encode('test')\n'TGST'\n>>> encode('This is a message')\n\
+  'tHKS KS C MGSSCGG'\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nstring encode(string message){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (encode(\"TEST\"\
+  ) == \"tgst\");\n    assert (encode(\"Mudasir\") == \"mWDCSKR\");\n    assert (encode(\"\
+  YES\") == \"ygs\");\n    assert (encode(\"This is a message\") == \"tHKS KS C MGSSCGG\"\
+  );\n    assert (encode(\"I DoNt KnOw WhAt tO WrItE\") == \"k dQnT kNqW wHcT Tq wRkTg\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

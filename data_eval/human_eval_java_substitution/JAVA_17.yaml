@@ -1,0 +1,25 @@
+"name": "Java_17"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Input to this function is a string representing melodious notes in a particular\
+  \ ASCII format.\nYour task is to parse this string and return list of integers equate\
+  \ to how many beats does each\nnot concluding.\n\nHere is a legend:\n' oxygen' -\
+  \ whole bill, lasts four beats\n' o|' - one-half bill, lasts two pulse\n' .|' -\
+  \ quater eminence, lasts one beat\n\n\n>>>>>> parseMusic(\"o o| .| o| o| .| .| .|\
+  \ .| o o\")\n    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]\n     */\n    public List<Integer>\
+  \ parseMusic(String string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.parseMusic(\"\").equals(List.of()),\n                s.parseMusic(\"\
+  o o o o\").equals(Arrays.asList(4, 4, 4, 4)),\n                s.parseMusic(\".|\
+  \ .| .| .|\").equals(Arrays.asList(1, 1, 1, 1)),\n                s.parseMusic(\"\
+  o| o| .| .| o o o o\").equals(Arrays.asList(2, 2, 1, 1, 4, 4, 4, 4)),\n        \
+  \        s.parseMusic(\"o| .| o| .| o o| o o|\").equals(Arrays.asList(2, 1, 2, 1,\
+  \ 4, 2, 4, 2))\n        );\n        if (correct.contains(false)) {\n           \
+  \ throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

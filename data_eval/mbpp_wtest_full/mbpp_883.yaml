@@ -1,0 +1,17 @@
+name: mbpp_883
+language: py
+prompt: "\n\ndef div_of_nums(nums,m,n):\n \"\"\"\n Write a function to find numbers\
+  \ divisible by m and n from a list of numbers using lambda function.\n >>> div_of_nums([19,\
+  \ 65, 57, 39, 152, 639, 121, 44, 90, 190],2,4)\n [ 152,44]\n >>> div_of_nums([1,\
+  \ 2, 3, 5, 7, 8, 10],2,5)\n [10]\n >>> div_of_nums([10,15,14,13,18,12,20],10,5)\n\
+  \ [10,20]\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([19, 65,\
+  \ 57, 39, 152, 639, 121, 44, 90, 190],2,4)==[ 152,44]\n    assert candidate([1,\
+  \ 2, 3, 5, 7, 8, 10],2,5)==[10]\n    assert candidate([10,15,14,13,18,12,20],10,5)==[10,20]\n\
+  \n\n\ndef test_check():\n    check(div_of_nums)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

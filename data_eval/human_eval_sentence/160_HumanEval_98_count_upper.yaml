@@ -1,0 +1,15 @@
+name: HumanEval_98_count_upper
+language: py
+prompt: "\ndef count_upper(s):\n    \"\"\"\n    Count the number of uppercase letters\
+  \ in even indices. Example: count _ upper ('aBCdEf') returns 1 count _ upper ('abcdefg')\
+  \ returns 0 count _ upper ('dBBE') returns 0 \"\" \"\n"
+tests: "def check(candidate):\n    assert candidate('aBCdEf') == 1\n    assert candidate('abcdefg')\
+  \ == 0\n    assert candidate('dBBE') == 0\n    assert candidate('B') == 0\n    assert\
+  \ candidate('U') == 1\n    assert candidate('') == 0\n    assert candidate('EEEE')\
+  \ == 2\n\ndef test_check():\n    check(count_upper)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

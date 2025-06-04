@@ -1,0 +1,24 @@
+name: HumanEval_152_compare
+language: py
+prompt: "\ndef compare(game,guess):\n    \"\"\"I thiNk we All reMemBer thAt feeLing\
+  \ wheN thE resuLt oF SoMe Long-AWaiTed\n    event is finALLy knOwn. The feelIngs\
+  \ and thougHts yoU hAVe At THaT momeNt are\n    deFInITEly WoRTH noTiNG dOwn anD\
+  \ coMpaRIng.\n    your tAsk Is To DETErmIne if a perSON Correctly gUeSSed the rEsultS\
+  \ of A numbER oF maTCheS.\n    YOu aRE givEn tWo ARRays of Scores and GuESSes Of\
+  \ EQuAl lEnGTH, wHeRe Each iNdex Shows a maTCh. \n    rEturn an arrAy of The samE\
+  \ lENgTH DenOtiNg how fAr ofF eACh guess waS. iF they hAVe GUESsED Correctly,\n\
+  \    the vAlue is 0, and if NOt, THe vAluE iS ThE AbsoluTe difFeREncE bEtween thE\
+  \ guess And tHe score.\n    \n    \n    exAmple:\n\n    compare([1,2,3,4,5,1],[1,2,3,4,2,-2])\
+  \ -> [0,0,0,0,3,3]\n    compare([0,5,0,0,0,4],[4,1,1,0,0,-2]) -> [4,4,1,0,0,6]\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5, 1], [1, 2, 3,\
+  \ 4, 2, -2]) == [0, 0, 0, 0, 3, 3]\n    assert candidate([0, 0, 0, 0, 0, 0], [0,\
+  \ 0, 0, 0, 0, 0]) == [0, 0, 0, 0, 0, 0]\n    assert candidate([1, 2, 3], [-1, -2,\
+  \ -3]) == [2, 4, 6]\n    assert candidate([1, 2, 3, 5], [-1, 2, 3, 4]) == [2, 0,\
+  \ 0, 1]\n\ndef test_check():\n    check(compare)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

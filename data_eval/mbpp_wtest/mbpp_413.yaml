@@ -1,0 +1,25 @@
+name: mbpp_413
+language: py
+prompt: "\n\ndef extract_nth_element(list1, n):\n    \"\"\"\n    Write a function\
+  \ to extract the nth element from a given list of tuples.\n    >>> extract_nth_element([('Greyson\
+  \ Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull',\
+  \ 94, 98)] ,0)\n    ['Greyson Fulton', 'Brady Kent', 'Wyatt Knott', 'Beau Turnbull']\n\
+  \    >>> extract_nth_element([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96),\
+  \ ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,2)\n    [99, 96, 94, 98]\n\
+  \    >>> extract_nth_element([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96),\
+  \ ('Wyatt Knott', 91, 94), ('Beau Turnbull', 94, 98)],1)\n    [98, 97, 91, 94]\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('Greyson\
+  \ Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott', 91, 94), ('Beau Turnbull',\
+  \ 94, 98)] ,0)==['Greyson Fulton', 'Brady Kent', 'Wyatt Knott', 'Beau Turnbull']\n\
+  \    assert candidate([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt\
+  \ Knott', 91, 94), ('Beau Turnbull', 94, 98)] ,2)==[99, 96, 94, 98]\n    assert\
+  \ candidate([('Greyson Fulton', 98, 99), ('Brady Kent', 97, 96), ('Wyatt Knott',\
+  \ 91, 94), ('Beau Turnbull', 94, 98)],1)==[98, 97, 91, 94]\n\n\n\ndef test_check():\n\
+  \    check(extract_nth_element)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,25 @@
+"name": "CPP_118"
+"language": "cpp"
+"prompt": "/*\nYou aRe giVen a word. YOur Task iS to fiNd the clOseSt vowEl tHAt StAnds\
+  \ BEtwEen\ntwo consonaNTS froM the right sIde of the word (case SensiTiVE).\n\n\
+  VOwELs in The beGinning ANd ENDinG dOESn't CoUNt. returN emPty STriNg if yOu dIdN't\n\
+  FIND anY vowel met THE Above condiTiON.\n\nYou may AssumE thAt the GIvEn sTRinG\
+  \ cOntAIns ENglIsH LEtter oNly.\n\nExamplE:\ngET_CloSeST_vOweL(\"yOGUrT\") ==> \"\
+  u\"\nGeT_closEst_vOwel(\"FULL\") ==> \"u\"\nGeT_Closest_vowEl(\"quIck\") ==> \"\"\
+  \nget_ClOSeST_VowEl(\"aB\") ==> \"\"\n*/\n#include<stdio.h>\n#include<string>\n\
+  #include<algorithm>\nusing namespace std;\nstring get_closest_vowel(string word){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (get_closest_vowel(\"\
+  yogurt\") == \"u\");\n    assert (get_closest_vowel(\"full\") == \"u\");\n    assert\
+  \ (get_closest_vowel(\"easy\") == \"\");\n    assert (get_closest_vowel(\"eAsy\"\
+  ) == \"\");\n    assert (get_closest_vowel(\"ali\") == \"\");\n    assert (get_closest_vowel(\"\
+  bad\") == \"a\");\n    assert (get_closest_vowel(\"most\") ==\"o\");\n    assert\
+  \ (get_closest_vowel(\"ab\") == \"\");\n    assert (get_closest_vowel(\"ba\") ==\
+  \ \"\");\n    assert (get_closest_vowel(\"quick\") == \"\");\n    assert (get_closest_vowel(\"\
+  anime\") == \"i\");\n    assert (get_closest_vowel(\"Asia\") == \"\");\n    assert\
+  \ (get_closest_vowel(\"Above\") == \"o\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,17 @@
+name: mbpp_228
+language: py
+prompt: "\n\ndef all_Bits_Set_In_The_Given_Range(n,l,r):\n    \"\"\"\n    Write a\
+  \ python function to check whether all the bits are unset in the given range or\
+  \ not.\n    >>> all_Bits_Set_In_The_Given_Range(4,1,2)\n    True\n    >>> all_Bits_Set_In_The_Given_Range(17,2,4)\n\
+  \    True\n    >>> all_Bits_Set_In_The_Given_Range(39,4,6)\n    False\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,1,2)\
+  \ == True\n    assert candidate(17,2,4) == True\n    assert candidate(39,4,6) ==\
+  \ False\n\n\n\ndef test_check():\n    check(all_Bits_Set_In_The_Given_Range)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

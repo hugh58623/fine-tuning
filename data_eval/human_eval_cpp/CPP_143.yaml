@@ -1,0 +1,23 @@
+"name": "CPP_143"
+"language": "cpp"
+"prompt": "/*\nYou are given a string representing a sentence,\nthe sentence contains\
+  \ some words separated by a space,\nand you have to return a string that contains\
+  \ the words from the original sentence,\nwhose lengths are prime numbers,\nthe order\
+  \ of the words in the new string should be the same as the original one.\n\nExample\
+  \ 1:\n    Input: sentence = \"This is a test\"\n    Output: \"is\"\n\nExample 2:\n\
+  \    Input: sentence = \"lets go for swimming\"\n    Output: \"go for\"\n\nConstraints:\n\
+  \    * 1 <= len(sentence) <= 100\n    * sentence contains only letters\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nstring words_in_sentence(string sentence){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (words_in_sentence(\"\
+  This is a test\") == \"is\");\n    assert (words_in_sentence(\"lets go for swimming\"\
+  ) == \"go for\");\n    assert (words_in_sentence(\"there is no place available here\"\
+  ) == \"there is no place\");\n    assert (words_in_sentence(\"Hi I am Hussein\"\
+  ) == \"Hi am Hussein\");\n    assert (words_in_sentence(\"go for it\") == \"go for\
+  \ it\");\n    assert (words_in_sentence(\"here\") == \"\");\n    assert (words_in_sentence(\"\
+  here is\") == \"is\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

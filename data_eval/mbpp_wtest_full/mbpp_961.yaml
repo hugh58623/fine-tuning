@@ -1,0 +1,15 @@
+name: mbpp_961
+language: py
+prompt: "\n\ndef roman_to_int(s):\n        \"\"\"\n        Write a function to convert\
+  \ a roman numeral to an integer.\n        >>> roman_to_int('MMMCMLXXXVI')\n    \
+  \    3986\n        >>> roman_to_int('MMMM')\n        4000\n        >>> roman_to_int('C')\n\
+  \        100\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('MMMCMLXXXVI')==3986\n\
+  \    assert candidate('MMMM')==4000\n    assert candidate('C')==100\n\n\n\ndef test_check():\n\
+  \    check(roman_to_int)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

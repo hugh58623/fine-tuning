@@ -1,0 +1,17 @@
+name: mbpp_800
+language: py
+prompt: "\n\ndef remove_all_spaces(text):\n \"\"\"\n Write a function to remove all\
+  \ whitespaces from a string.\n >>> remove_all_spaces('python  program')\n ('pythonprogram')\n\
+  \ >>> remove_all_spaces('python   programming    language')\n ('pythonprogramminglanguage')\n\
+  \ >>> remove_all_spaces('python                     program')\n ('pythonprogram')\n\
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python\
+  \  program')==('pythonprogram')\n    assert candidate('python   programming    language')==('pythonprogramminglanguage')\n\
+  \    assert candidate('python                     program')==('pythonprogram')\n\
+  \n\n\ndef test_check():\n    check(remove_all_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,36 @@
+"name": "Java_149"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Write a function that accepts a list of strings as a argument,\ndeletes the drawstring\
+  \ that take leftover lengths from it,\nand returns the resulted list with a sorted\
+  \ orderliness,\nThe list is always a list of string and never an array of numbers,\n\
+  and it may contain duplicate.\nThe order of the list should be ascending by length\
+  \ of each word, and you\nshould return the list sorted by that rule.\nIf two discussion\
+  \ get the like length, sort the list alphabetically.\nThe function should return\
+  \ a list of strings in sorted order.\nYou may assume that all words will suffer\
+  \ the same distance.\nFor example:\nassert list_sort([\"aa\", \" a \", \" abdominal\
+  \ aortic aneurysm \" ]) = > [ \" alcoholics anonymous \" ]\nassert list_sort([\"\
+  ab\", \" a \", \" abdominal aortic aneurysm \", \" compact disk \" ]) = > [ \" ab\
+  \ \", \" compact disk \" ]\n\" \" \"\n*/*/\n    public List<String> listSort(List<String>\
+  \ lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.listSort(new ArrayList<>(Arrays.asList(\"aa\", \"a\", \"aaa\"\
+  ))).equals(List.of(\"aa\")),\n                s.listSort(new ArrayList<>(Arrays.asList(\"\
+  school\", \"AI\", \"asdf\", \"b\"))).equals(Arrays.asList(\"AI\", \"asdf\", \"school\"\
+  )),\n                s.listSort(new ArrayList<>(Arrays.asList(\"d\", \"b\", \"c\"\
+  , \"a\"))).equals(List.of()),\n                s.listSort(new ArrayList<>(Arrays.asList(\"\
+  d\", \"dcba\", \"abcd\", \"a\"))).equals(Arrays.asList(\"abcd\", \"dcba\")),\n \
+  \               s.listSort(new ArrayList<>(Arrays.asList(\"AI\", \"ai\", \"au\"\
+  ))).equals(Arrays.asList(\"AI\", \"ai\", \"au\")),\n                s.listSort(new\
+  \ ArrayList<>(Arrays.asList(\"a\", \"b\", \"b\", \"c\", \"c\", \"a\"))).equals(List.of()),\n\
+  \                s.listSort(new ArrayList<>(Arrays.asList(\"aaaa\", \"bbbb\", \"\
+  dd\", \"cc\"))).equals(Arrays.asList(\"cc\", \"dd\", \"aaaa\", \"bbbb\"))\n    \
+  \    );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

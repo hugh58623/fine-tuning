@@ -1,0 +1,22 @@
+"name": "CPP_157"
+"language": "cpp"
+"prompt": "/*\nGiven the elngths of the three sides of a triangle. Return True if\
+  \ the three\nsidse form a right-angled triangle, False otehrwise.\nA right-agneld\
+  \ triangle is a triangle in which one angle is right angle or\n90 degree.\nExample:\n\
+  right_agnle_triangle(3, 4, 5) == True\nright_angle_triangle(1, 2, 3) == False\n\
+  */\n#include<stdio.h>\n#include<math.h>\nusing namespace std;\nbool right_angle_triangle(float\
+  \ a,float b,float c){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (right_angle_triangle(3,\
+  \ 4, 5) == true);\n    assert (right_angle_triangle(1, 2, 3) == false);\n    assert\
+  \ (right_angle_triangle(10, 6, 8) == true);\n    assert (right_angle_triangle(2,\
+  \ 2, 2) == false);\n    assert (right_angle_triangle(7, 24, 25) == true);\n    assert\
+  \ (right_angle_triangle(10, 5, 7) == false);\n    assert (right_angle_triangle(5,\
+  \ 12, 13) == true);\n    assert (right_angle_triangle(15, 8, 17) == true);\n   \
+  \ assert (right_angle_triangle(48, 55, 73) == true);\n    assert (right_angle_triangle(1,\
+  \ 1, 1) == false);\n    assert (right_angle_triangle(2, 2, 10) == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

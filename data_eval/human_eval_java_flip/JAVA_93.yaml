@@ -1,0 +1,23 @@
+"name": "Java_93"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  WriTe a fUnctiOn tHat taKes a message, aNd encodEs in sUch a\nwAy tHAt It SwapS\
+  \ CasE of all letters, REPlacEs all vowels in\nthe message wiTh the letter tHat\
+  \ apPeARs 2 PlACeS aheaD of that\nVOwEL in The EnGLIsh AlPHaBet.\nAsSumE onLY leTters.\n\
+  \nexaMpLeS:\n\n>>>>>> encode(\"test\")\n    \"TGST\"\n    >>> encode(\"This is a\
+  \ message\")\n    \"tHKS KS C MGSSCGG\"\n     */\n    public String encode(String\
+  \ message) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.encode(\"TEST\"), \"tgst\"),\n               \
+  \ Objects.equals(s.encode(\"Mudasir\"), \"mWDCSKR\"),\n                Objects.equals(s.encode(\"\
+  YES\"), \"ygs\"),\n                Objects.equals(s.encode(\"This is a message\"\
+  ), \"tHKS KS C MGSSCGG\"),\n                Objects.equals(s.encode(\"I DoNt KnOw\
+  \ WhAt tO WrItE\"), \"k dQnT kNqW wHcT Tq wRkTg\")\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

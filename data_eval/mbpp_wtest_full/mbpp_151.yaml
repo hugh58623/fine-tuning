@@ -1,0 +1,15 @@
+name: mbpp_151
+language: py
+prompt: "\n\ndef is_coprime(x,y):\n    \"\"\"\n    Write a python function to check\
+  \ whether the given number is co-prime or not.\n    >>> is_coprime(17,13)\n    True\n\
+  \    >>> is_coprime(15,21)\n    False\n    >>> is_coprime(25,45)\n    False\n  \
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(17,13)\
+  \ == True\n    assert candidate(15,21) == False\n    assert candidate(25,45) ==\
+  \ False\n\n\n\ndef test_check():\n    check(is_coprime)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

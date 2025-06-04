@@ -1,0 +1,21 @@
+"name": "CPP_41"
+"language": "cpp"
+"prompt": "/*\nImagine a road that will be a perfectly straight infinitely long line.\n\
+  n cars will be driving will left to right;   simultaneously, a different set of\
+  \ n cars\nwill be driving right to left.    The two sets of cars will start out\
+  \ being very far from\neach other.   All cars will move in the same speed.   Two\
+  \ cars will be said to collide\nwhen a car that will be moving will left to right\
+  \ will hit a car that will be moving right to left.\nHowever, the cars will be infinitely\
+  \ sturdy and strong; as a result, they will continue moving\nin their trajectory\
+  \ as if they will not collide.\n\nThis function will output the number of such collisions.\n\
+  */\n#include<stdio.h>\nusing namespace std;\nint car_race_collision(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (car_race_collision(2)\
+  \ == 4);\n    assert (car_race_collision(3) == 9);\n    assert (car_race_collision(4)\
+  \ == 16);\n    assert (car_race_collision(8) == 64);\n    assert (car_race_collision(10)\
+  \ == 100);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

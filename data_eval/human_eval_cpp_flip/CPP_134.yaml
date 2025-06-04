@@ -1,0 +1,24 @@
+"name": "CPP_134"
+"language": "cpp"
+"prompt": "/*\nCreAte a FunctIon That rEturnS True if the lAst CharaCteR\nOf A gIven\
+  \ STriNg is an alphabeTICal cHaracter anD is not\na part oF a worD, aND False oThERwIse.\n\
+  NoTe: \"word\" iS A gROUp oF cHARacTeRS sEparaTed By sPAce.\n\nexampLes:\ncheck_if_last_char_is_a_letter(\"\
+  apple PiE\") ➞ False\ncheck_if_last_char_is_a_letter(\"apple pI E\") ➞ True\ncheck_if_last_char_is_a_letter(\"\
+  apple PI e \") ➞ False\ncheck_if_last_char_is_a_letter(\"\") ➞ False\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nbool check_if_last_char_is_a_letter(string\
+  \ txt){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (check_if_last_char_is_a_letter(\"\
+  apple\") == false);\n    assert (check_if_last_char_is_a_letter(\"apple pi e\")\
+  \ == true);\n    assert (check_if_last_char_is_a_letter(\"eeeee\") == false);\n\
+  \    assert (check_if_last_char_is_a_letter(\"A\") == true);\n    assert (check_if_last_char_is_a_letter(\"\
+  Pumpkin pie \") == false);\n    assert (check_if_last_char_is_a_letter(\"Pumpkin\
+  \ pie 1\") == false);\n    assert (check_if_last_char_is_a_letter(\"\") == false);\n\
+  \    assert (check_if_last_char_is_a_letter(\"eeeee e \") == false);\n    assert\
+  \ (check_if_last_char_is_a_letter(\"apple pie\") == false);\n    assert (check_if_last_char_is_a_letter(\"\
+  apple pi e \") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

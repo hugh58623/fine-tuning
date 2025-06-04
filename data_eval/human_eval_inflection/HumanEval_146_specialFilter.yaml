@@ -1,0 +1,19 @@
+name: HumanEval_146_specialFilter
+language: py
+prompt: "\ndef specialFilter(nums):\n    \"\"\"Write a functions that takes an array\
+  \ of numbers as input and returning the number of elements in the array that was\
+  \ greater than 10 and both first and last digit of a number was odder (1, 3, 5,\
+  \ 7, 9). For examples: specialFilter([15, -73, 14, -15]) => 1 specialFilter([33,\
+  \ -2, -3, 45, 21, 109]) => 2 \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([5, -2, 1, -5]) == 0\n    assert\
+  \ candidate([15, -73, 14, -15]) == 1\n    assert candidate([33, -2, -3, 45, 21,\
+  \ 109]) == 2\n    assert candidate([43, -12, 93, 125, 121, 109]) == 4\n    assert\
+  \ candidate([71, -2, -33, 75, 21, 19]) == 3\n    assert candidate([1]) == 0\n  \
+  \  assert candidate([]) == 0\n\ndef test_check():\n    check(specialFilter)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

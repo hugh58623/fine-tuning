@@ -1,0 +1,18 @@
+"name": "CPP_63"
+"language": "cpp"
+"prompt": "/*\nTThe FibFib number sequence is a sequence similar to the Fibbonacci\
+  \ sequence, which is defined as follows: fibfib (0) = = 0 fibfib (1) = = 0 fibfib\
+  \ (2) = = 1 fibfib (n) = fibfib (n-1) + fibfib (n-2) + fibfib (n-3). Please write\
+  \ a function to efficiently calculate the nth element of the FibFib number sequence.\n\
+  >>> fibfib(1)\n0\n>>> fibfib(5)\n4\n>>> fibfib(8)\n24\n*/\n#include<stdio.h>\nusing\
+  \ namespace std;\nint fibfib(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fibfib(2) ==\
+  \ 1);\n    assert (fibfib(1) == 0);\n    assert (fibfib(5) == 4);\n    assert (fibfib(8)\
+  \ == 24);\n    assert (fibfib(10) == 81);\n    assert (fibfib(12) == 274);\n   \
+  \ assert (fibfib(14) == 927);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

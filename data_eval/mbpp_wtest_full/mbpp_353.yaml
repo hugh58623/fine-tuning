@@ -1,0 +1,19 @@
+name: mbpp_353
+language: py
+prompt: "\n\ndef remove_column(list1, n):\n   \"\"\"\n   Write a function to remove\
+  \ a specified column from a given nested list.\n   >>> remove_column([[1, 2, 3],\
+  \ [2, 4, 5], [1, 1, 1]],0)\n   [[2, 3], [4, 5], [1, 1]]\n   >>> remove_column([[1,\
+  \ 2, 3], [-2, 4, -5], [1, -1, 1]],2)\n   [[1, 2], [-2, 4], [1, -1]]\n   >>> remove_column([[1,\
+  \ 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]],0)\n   [[3], [7], [3], [15,\
+  \ 17], [7], [11]]\n   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 3], [2, 4, 5], [1, 1, 1]],0)==[[2, 3], [4, 5], [1, 1]]\n    assert candidate([[1,\
+  \ 2, 3], [-2, 4, -5], [1, -1, 1]],2)==[[1, 2], [-2, 4], [1, -1]]\n    assert candidate([[1,\
+  \ 3], [5, 7], [1, 3], [13, 15, 17], [5, 7], [9, 11]],0)==[[3], [7], [3], [15, 17],\
+  \ [7], [11]]\n\n\n\ndef test_check():\n    check(remove_column)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

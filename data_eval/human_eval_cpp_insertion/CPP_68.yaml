@@ -1,0 +1,32 @@
+"name": "CPP_68"
+"language": "cpp"
+"prompt": "/*\n\" Given an array representing a branch outgrowth of a tree that has\
+  \ non - negative integer nodes nod\nyour task is to pluck one of the nodes node\
+  \ and return it.\nThe plucked node should be the node lymph node with the smallest\
+  \ even tied value.\nIf multiple nodes node with the same smallest even value are\
+  \ found recover return the node lymph node that has smallest index.\n\nThe plucked\
+  \ node should be returned in a list, [ smalest_value, its index ],\nIf there are\
+  \ no even tied values value or the given sacrifice array is empty, return [ ].\n\
+  \nExample model 1:\nInput: [ 4,2,3 ]\nOutput: [ 2, 1 ]\nExplanation: 2 has the smallest\
+  \ small even tied value, and 2 has the smallest modest index.\n\nExample exemplar\
+  \ 2:\nInput: [ 1,2,3 ]\nOutput end product: [ 2, 1 ]\nExplanation: 2 has the smallest\
+  \ even value, and 2 has the smallest index.\n\nExample 3:\nInput stimulation: [\
+  \ ]\nOutput: [ ]\n\nExample 4:\nInput: [ 5, 0, 3, 0, 4, 2 ]\nOutput: [ 0, 1 ]\n\
+  Explanation: 0 is the smallest value, but   there are two zeros,\nso we will choose\
+  \ the first zero, which has the smallest index.\n\nConstraints:\n* 1 < = nodes.length\
+  \ < = 10000\n* 0 < = node.value\n*/\n#include<stdio.h>\n#include<vector>\nusing\
+  \ namespace std;\nvector<int> pluck(vector<int> arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(pluck({4,2,3}) , {2, 1}));\n    assert (issame(pluck({1,2,3})\
+  \ , {2, 1}));\n    assert (issame(pluck({}) , {}));\n    assert (issame(pluck({5,\
+  \ 0, 3, 0, 4, 2}) , {0, 1}));\n    assert (issame(pluck({1, 2, 3, 0, 5, 3}) , {0,\
+  \ 3}));\n    assert (issame(pluck({5, 4, 8, 4 ,8}) , {4, 1}));\n    assert (issame(pluck({7,\
+  \ 6, 7, 1}) , {6, 1}));\n    assert (issame(pluck({7, 9, 7, 1}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

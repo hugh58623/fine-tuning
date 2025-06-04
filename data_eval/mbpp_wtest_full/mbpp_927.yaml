@@ -1,0 +1,14 @@
+name: mbpp_927
+language: py
+prompt: "\n\ndef max_height(node):\n\t\"\"\"\n\tWrite a function to calculate the\
+  \ height of the given binary tree.\n\t>>> max_height(root)\n\t3\n\t>>> max_height(root1)\n\
+  \t5\n\t>>> max_height(root2)\n\t4\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(root) ==\
+  \ 3\n    assert candidate(root1) == 5 \n    assert candidate(root2) == 4\n\n\n\n\
+  def test_check():\n    check(max_height)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

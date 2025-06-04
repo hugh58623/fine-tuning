@@ -1,0 +1,15 @@
+name: mbpp_250
+language: py
+prompt: "def count_X(tup, x):\n    \"\"\"\n    WriTe a pYthon FunCtion To count\
+  \ the OcccureNceS of an EleMEnT in a tuple.\n    Test examples:\n    assert count_X((10, 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2),4)\
+  \ == 0\n    assert count_X((10, 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2),10) == 3\n \
+  \   assert count_X((10, 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2),8) == 4\n    \"\"\"\n"
+tests: "assert count_X((10, 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2),4) == 0\nassert count_X((10,\
+  \ 8, 5, 2, 10, 15, 10, 8, 5, 8, 8, 2),10) == 3\nassert count_X((10, 8, 5, 2, 10,\
+  \ 15, 10, 8, 5, 8, 8, 2),8) == 4"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

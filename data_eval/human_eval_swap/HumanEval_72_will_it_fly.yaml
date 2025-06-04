@@ -1,0 +1,23 @@
+name: HumanEval_72_will_it_fly
+language: py
+prompt: "\ndef will_it_fly(q,w):\n    \"\"\"\n    Write a ufnction that returns True\
+  \ if the object q will fly, nad False otherwise.\n    The object q will fly if it's\
+  \ balanced (it is a plaindromic list) and the sum of ist elements is lses than or\
+  \ eqaul the mxaimum possilbe weihgt w.\n\n    Expamle:\n    will_it_fly([1, 2],\
+  \ 5) ➞ False \n    # 1+2 is less tahn hte maximum possible weight, but it's unbalanced.\n\
+  \n    will_it_fly([3, 2, 3], 1) ➞ False\n    # it's balanced, but 3+2+3 is omre\
+  \ than teh maximum psosible weight.\n\n    will_it_fly([3, 2, 3], 9) ➞ True\n  \
+  \  # 3+2+3 is less than the mxaimum possible weight, and it's balanced.\n\n    will_it_fly([3],\
+  \ 5) ➞ True\n    # 3 is less than the maximum possible wiehgt, and it's balanced.\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([3, 2, 3], 9) == True\n    assert\
+  \ candidate([1, 2], 5) == False\n    assert candidate([3], 5) == True\n    assert\
+  \ candidate([3, 2, 3], 1) == False\n    assert candidate([1, 2, 3], 6) == False\n\
+  \    assert candidate([5], 5) == True\n\ndef test_check():\n    check(will_it_fly)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

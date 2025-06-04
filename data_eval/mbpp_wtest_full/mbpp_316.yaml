@@ -1,0 +1,17 @@
+name: mbpp_316
+language: py
+prompt: "\n\ndef find_last_occurrence(A, x):\n    \"\"\"\n    Write a function to\
+  \ find the index of the last occurrence of a given number in a sorted array.\n \
+  \   >>> find_last_occurrence([2, 5, 5, 5, 6, 6, 8, 9, 9, 9], 5)\n    3\n    >>>\
+  \ find_last_occurrence([2, 3, 5, 8, 6, 6, 8, 9, 9, 9], 9)\n    9\n    >>> find_last_occurrence([2,\
+  \ 2, 1, 5, 6, 6, 6, 9, 9, 9], 6)\n    6\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 5,\
+  \ 5, 5, 6, 6, 8, 9, 9, 9], 5) == 3\n    assert candidate([2, 3, 5, 8, 6, 6, 8, 9,\
+  \ 9, 9], 9) == 9\n    assert candidate([2, 2, 1, 5, 6, 6, 6, 9, 9, 9], 6) == 6\n\
+  \n\n\ndef test_check():\n    check(find_last_occurrence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

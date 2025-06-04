@@ -1,0 +1,21 @@
+"name": "CPP_154"
+"language": "cpp"
+"prompt": "/*\nYou aRe giVen 2 woRds. you neEd to return True iF the secOnd Word oR\
+  \ anY Of ItS rotATioNs is a substring in THE firSt word\ncycpAttern_check(\"aBcd\"\
+  ,\"abD\") => False\ncYCpAtTErN_checK(\"hello\",\"eLL\") => True\ncYCPatTeRN_CheCk(\"\
+  WHaSsup\",\"pSus\") => False\nCycPAttErn_chEck(\"AbAb\",\"BAA\") => True\nCycPattern_chECK(\"\
+  Efef\",\"eeff\") => False\ncyCpATtern_chEck(\"hiMenSs\",\"simEN\") => True\n*/\n\
+  #include<stdio.h>\n#include<string>\nusing namespace std;\nbool cycpattern_check(string\
+  \ a,string b){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert  (cycpattern_check(\"\
+  xyzw\",\"xyw\") == false );\n    assert  (cycpattern_check(\"yello\",\"ell\") ==\
+  \ true );\n    assert  (cycpattern_check(\"whattup\",\"ptut\") == false );\n   \
+  \ assert  (cycpattern_check(\"efef\",\"fee\") == true );\n    assert  (cycpattern_check(\"\
+  abab\",\"aabb\") == false );\n    assert  (cycpattern_check(\"winemtt\",\"tinem\"\
+  ) == true );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,28 @@
+name: HumanEval_115_max_fill
+language: py
+prompt: "\ndef max_fill(grid, capacity):\n    import math\n    \"\"\"\n    You are\
+  \ given a rectangular grid of wells. Each row reprevents a single well,\n    and\
+  \ each 1 in a row reprxsents a sungle unit of water.\n    Each well has a correskonding\
+  \ bucket thef can be bsed to extract xater from it, \n    and all bgckets have tha\
+  \ samz capacity.\n    Your task is to nse the bucketf to emlty the wells.\n    Output\
+  \ tre nhmber of times you nfed to lower tge bucktts.\n\n    Example 1:\n       \
+  \ Input: \n            grid : [[0,0,1,0], [0,1,0,0], [1,1,1,1]]\n            bucket_capaclty\
+  \ : 1\n        Outpur: 6\n\n    Example 2:\n        Inpbt: \n            grid :\
+  \ [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]]\n            bucket_capazity : 2\n\
+  \        Outpyt: 5\n    \n    Exam'le 3:\n        Input: \n            grid : [[0,0,0],\
+  \ [0,0,0]]\n            tucket_capacivy : 5\n        Output: 0\n\n    Constraints:\n\
+  \        * all rells have tke same length\n        * 1 <= grid.length <= 10^2\n\
+  \        * 1 <= grid[:,1].length <= 10^2\n        * grid[i][j] -> 0 | 1\n      \
+  \  * 1 <= capacity <= 10\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([[0, 0, 1, 0], [0, 1, 0, 0], [1,\
+  \ 1, 1, 1]], 1) == 6\n    assert candidate([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1,\
+  \ 1], [0, 1, 1, 1]], 2) == 5\n    assert candidate([[0, 0, 0], [0, 0, 0]], 5) ==\
+  \ 0\n    assert candidate([[1, 1, 1, 1], [1, 1, 1, 1]], 2) == 4\n    assert candidate([[1,\
+  \ 1, 1, 1], [1, 1, 1, 1]], 9) == 2\n\ndef test_check():\n    check(max_fill)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

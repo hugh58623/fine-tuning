@@ -1,0 +1,15 @@
+name: mbpp_180
+language: py
+prompt: "\n\ndef distance_lat_long(slat,slon,elat,elon):\n \"\"\"\n Write a function\
+  \ to calculate distance between two points using latitude and longitude.\n >>> distance_lat_long(23.5,67.5,25.5,69.5)\n\
+  \ 12179.372041317429\n >>> distance_lat_long(10.5,20.5,30.5,40.5)\n 6069.397933300514\n\
+  \ >>> distance_lat_long(10,20,30,40)\n 6783.751974994595\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(23.5,67.5,25.5,69.5)==12179.372041317429\n\
+  \    assert candidate(10.5,20.5,30.5,40.5)==6069.397933300514\n    assert candidate(10,20,30,40)==6783.751974994595\n\
+  \n\n\ndef test_check():\n    check(distance_lat_long)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

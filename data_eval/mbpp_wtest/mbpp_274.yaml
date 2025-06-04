@@ -1,0 +1,15 @@
+name: mbpp_274
+language: py
+prompt: "\n\ndef even_binomial_Coeff_Sum( n):\n    \"\"\"\n    Write a python function\
+  \ to find sum of even index binomial coefficients.\n    >>> even_binomial_Coeff_Sum(4)\n\
+  \    8\n    >>> even_binomial_Coeff_Sum(6)\n    32\n    >>> even_binomial_Coeff_Sum(2)\n\
+  \    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4) == 8\n\
+  \    assert candidate(6) == 32\n    assert candidate(2) == 2\n\n\n\ndef test_check():\n\
+  \    check(even_binomial_Coeff_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

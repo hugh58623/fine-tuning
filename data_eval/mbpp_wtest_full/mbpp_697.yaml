@@ -1,0 +1,16 @@
+name: mbpp_697
+language: py
+prompt: "\n\ndef count_even(array_nums):\n   \"\"\"\n   Write a function to find number\
+  \ of even elements in the given list using lambda function.\n   >>> count_even([1,\
+  \ 2, 3, 5, 7, 8, 9, 10])\n   3\n   >>> count_even([10,15,14,13,-18,12,-20])\n  \
+  \ 5\n   >>> count_even([1, 2, 4, 8, 9])\n   3\n   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 5, 7, 8, 9, 10])==3\n    assert candidate([10,15,14,13,-18,12,-20])==5\n  \
+  \  assert candidate([1, 2, 4, 8, 9])==3\n\n\n\ndef test_check():\n    check(count_even)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_759
+language: py
+prompt: "\n\ndef is_decimal(num):\n    \"\"\"\n    Write a function to check a decimal\
+  \ with a precision of 2.\n    >>> is_decimal('123.11')\n    True\n    >>> is_decimal('e666.86')\n\
+  \    False\n    >>> is_decimal('3.124587')\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('123.11')==True\n\
+  \    assert candidate('e666.86')==False\n    assert candidate('3.124587')==False\n\
+  \n\n\ndef test_check():\n    check(is_decimal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

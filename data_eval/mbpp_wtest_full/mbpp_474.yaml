@@ -1,0 +1,16 @@
+name: mbpp_474
+language: py
+prompt: "\n\ndef replace_char(str1,ch,newch):\n \"\"\"\n Write a function to replace\
+  \ characters in a string.\n >>> replace_char(\"polygon\",'y','l')\n (\"pollgon\"\
+  )\n >>> replace_char(\"character\",'c','a')\n (\"aharaater\")\n >>> replace_char(\"\
+  python\",'l','a')\n (\"python\")\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"polygon\"\
+  ,'y','l')==(\"pollgon\")\n    assert candidate(\"character\",'c','a')==(\"aharaater\"\
+  )\n    assert candidate(\"python\",'l','a')==(\"python\")\n\n\n\ndef test_check():\n\
+  \    check(replace_char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

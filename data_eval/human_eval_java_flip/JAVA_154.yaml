@@ -1,0 +1,24 @@
+"name": "Java_154"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You aRe giVen 2 woRds. you neEd to return True iF the secOnd Word oR anY Of ItS\
+  \ rotATioNs is a substring in THE firSt word\ncycpAttern_check(\"aBcd\",\"abD\"\
+  ) => False\ncYCpAtTErN_checK(\"hello\",\"eLL\") => True\ncYCPatTeRN_CheCk(\"WHaSsup\"\
+  ,\"pSus\") => False\nCycPAttErn_chEck(\"AbAb\",\"BAA\") => True\nCycPattern_chECK(\"\
+  Efef\",\"eeff\") => False\ncyCpATtern_chEck(\"hiMenSs\",\"simEN\") => True\n\n\"\
+  \"\"\n*/*/\n    public boolean cycpatternCheck(String a, String b) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.cycpatternCheck(\"xyzw\", \"xyw\") == false,\n              \
+  \  s.cycpatternCheck(\"yello\", \"ell\") == true,\n                s.cycpatternCheck(\"\
+  whattup\", \"ptut\") == false,\n                s.cycpatternCheck(\"efef\", \"fee\"\
+  ) == true,\n                s.cycpatternCheck(\"abab\", \"aabb\") == false,\n  \
+  \              s.cycpatternCheck(\"winemtt\", \"tinem\") == true\n        );\n \
+  \       if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

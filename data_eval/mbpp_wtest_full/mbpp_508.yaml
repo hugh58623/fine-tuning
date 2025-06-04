@@ -1,0 +1,21 @@
+name: mbpp_508
+language: py
+prompt: "\n\ndef same_order(l1, l2):\n    \"\"\"\n    Write a function to check if\
+  \ the common elements between two given lists are in the same order or not.\n  \
+  \  >>> same_order([\"red\",\"green\",\"black\",\"orange\"],[\"red\",\"pink\",\"\
+  green\",\"white\",\"black\"])\n    True\n    >>> same_order([\"red\",\"pink\",\"\
+  green\",\"white\",\"black\"],[\"white\",\"orange\",\"pink\",\"black\"])\n    False\n\
+  \    >>> same_order([\"red\",\"green\",\"black\",\"orange\"],[\"red\",\"pink\",\"\
+  green\",\"white\",\"black\"])\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"red\"\
+  ,\"green\",\"black\",\"orange\"],[\"red\",\"pink\",\"green\",\"white\",\"black\"\
+  ])==True\n    assert candidate([\"red\",\"pink\",\"green\",\"white\",\"black\"],[\"\
+  white\",\"orange\",\"pink\",\"black\"])==False\n    assert candidate([\"red\",\"\
+  green\",\"black\",\"orange\"],[\"red\",\"pink\",\"green\",\"white\",\"black\"])==True\n\
+  \n\n\ndef test_check():\n    check(same_order)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_165
+language: py
+prompt: "\n\ndef count_char_position(str1):\n    \"\"\"\n    Write a python function\
+  \ to count characters at same position in a given string (lower and uppercase characters)\
+  \ as in english alphabet.\n    >>> count_char_position(\"xbcefg\")\n    2\n    >>>\
+  \ count_char_position(\"ABcED\")\n    3\n    >>> count_char_position(\"AbgdeF\"\
+  )\n    5\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"xbcefg\"\
+  ) == 2\n    assert candidate(\"ABcED\") == 3\n    assert candidate(\"AbgdeF\") ==\
+  \ 5\n\n\n\ndef test_check():\n    check(count_char_position)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

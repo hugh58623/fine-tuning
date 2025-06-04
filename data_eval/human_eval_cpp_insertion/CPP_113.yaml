@@ -1,0 +1,29 @@
+"name": "CPP_113"
+"language": "cpp"
+"prompt": "/*\nGiven a list of strings, where each string consists consist of only\
+  \ digits, return a list.\nEach element chemical element i of the output should be\
+  \ \" the number issue of odd elements component in the\nstring i of the input input\
+  \ signal. \" where all the i's should be replaced by the number\nof odd digits finger\
+  \ in the i'th string of the input.\n\n>>> odd_count(['1234567'])\n[\"the number\
+  \ of odd elements 4n the str4ng 4 of the 4nput.\"]\n>>> odd_count(['3',\"11111111\"\
+  ])\n[\"the number of odd elements 1n the str1ng 1 of the 1nput.\",\n\"the number\
+  \ of odd elements 8n the str8ng 8 of the 8nput.\"]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\n#include<map>\nusing namespace std;\nvector<string> odd_count(vector<string>\
+  \ lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(odd_count({\"1234567\"}) , {\"the number of odd elements 4n\
+  \ the str4ng 4 of the 4nput.\"}));\n    assert (issame(odd_count({\"3\",\"11111111\"\
+  }) , {\"the number of odd elements 1n the str1ng 1 of the 1nput.\", \"the number\
+  \ of odd elements 8n the str8ng 8 of the 8nput.\"}));\n    assert (issame(odd_count({\"\
+  271\", \"137\", \"314\"}) , {\n        \"the number of odd elements 2n the str2ng\
+  \ 2 of the 2nput.\",\n        \"the number of odd elements 3n the str3ng 3 of the\
+  \ 3nput.\",\n        \"the number of odd elements 2n the str2ng 2 of the 2nput.\"\
+  \n    }));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

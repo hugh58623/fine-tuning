@@ -1,0 +1,22 @@
+name: mbpp_370
+language: py
+prompt: "\n\ndef float_sort(price):\n  \"\"\"\n  Write a function to sort a tuple\
+  \ by its float element.\n  >>> float_sort([('item1', '12.20'), ('item2', '15.10'),\
+  \ ('item3', '24.5')])\n  [('item3', '24.5'), ('item2', '15.10'), ('item1', '12.20')]\n\
+  \  >>> float_sort([('item1', '15'), ('item2', '10'), ('item3', '20')])\n  [('item3',\
+  \ '20'), ('item1', '15'), ('item2', '10')]\n  >>> float_sort([('item1', '5'), ('item2',\
+  \ '10'), ('item3', '14')])\n  [('item3', '14'), ('item2', '10'), ('item1', '5')]\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('item1',\
+  \ '12.20'), ('item2', '15.10'), ('item3', '24.5')])==[('item3', '24.5'), ('item2',\
+  \ '15.10'), ('item1', '12.20')] \n    assert candidate([('item1', '15'), ('item2',\
+  \ '10'), ('item3', '20')])==[('item3', '20'), ('item1', '15'), ('item2', '10')]\
+  \ \n    assert candidate([('item1', '5'), ('item2', '10'), ('item3', '14')])==[('item3',\
+  \ '14'), ('item2', '10'), ('item1', '5')] \n\n\n\ndef test_check():\n    check(float_sort)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

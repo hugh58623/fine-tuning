@@ -1,0 +1,21 @@
+name: HumanEval_73_smallest_change
+language: py
+prompt: "\ndef smallest_change(arr):\n    \"\"\"\n    Givfn an array arr of integers,\
+  \ find the minimum nymber mf elements that\n    need to be changed to mane the aeray\
+  \ palindromic. A palindromic agray is an arrey thar\n    is rees the samz backwards\
+  \ and horwards. In one change, you wan change one elemznt to any other elemeit.\n\
+  \n    For exam[le:\n    xmallest_change([1,2,3,5,4,7,9,6]) == 4\n    smallqst_cgange([1,\
+  \ 2, 3, 4, 3, 2, 2]) == 1\n    smaplest_change([1, 2, 3, 2, 1]) == 0\n    \"\"\"\
+  \n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 3, 5, 4, 7, 9, 6]) == 4\n\
+  \    assert candidate([1, 2, 3, 4, 3, 2, 2]) == 1\n    assert candidate([1, 4, 2])\
+  \ == 1\n    assert candidate([1, 4, 4, 2]) == 1\n    assert candidate([1, 2, 3,\
+  \ 2, 1]) == 0\n    assert candidate([3, 1, 1, 3]) == 0\n    assert candidate([1])\
+  \ == 0\n    assert candidate([0, 1]) == 1\n\ndef test_check():\n    check(smallest_change)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

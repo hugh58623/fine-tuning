@@ -1,0 +1,17 @@
+name: mbpp_454
+language: py
+prompt: "\n\ndef text_match_wordz(text):\n        \"\"\"\n        Write a function\
+  \ that matches a word containing 'z'.\n        >>> text_match_wordz(\"pythonz.\"\
+  )\n        ('Found a match!')\n        >>> text_match_wordz(\"xyz.\")\n        ('Found\
+  \ a match!')\n        >>> text_match_wordz(\"  lang  .\")\n        ('Not matched!')\n\
+  \        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"pythonz.\"\
+  )==('Found a match!')\n    assert candidate(\"xyz.\")==('Found a match!')\n    assert\
+  \ candidate(\"  lang  .\")==('Not matched!')\n\n\n\ndef test_check():\n    check(text_match_wordz)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

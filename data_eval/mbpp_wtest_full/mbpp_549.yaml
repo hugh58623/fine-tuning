@@ -1,0 +1,15 @@
+name: mbpp_549
+language: py
+prompt: "\n\ndef odd_Num_Sum(n) :\n    \"\"\"\n    Write a python function to find\
+  \ the sum of fifth power of first n odd natural numbers.\n    >>> odd_Num_Sum(1)\n\
+  \    1\n    >>> odd_Num_Sum(2)\n    244\n    >>> odd_Num_Sum(3)\n    3369\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1) == 1\n\
+  \    assert candidate(2) == 244\n    assert candidate(3) == 3369\n\n\n\ndef test_check():\n\
+  \    check(odd_Num_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

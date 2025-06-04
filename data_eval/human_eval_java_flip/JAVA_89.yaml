@@ -1,0 +1,26 @@
+"name": "Java_89"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CreaTe a fUnctiOn encrypt tHat taKes a sTring as An aRgumeNt aND\nrEtUrns A StrIng\
+  \ encrypted wITH the Alphabet beIng rotated.\nThE alphAbET sHoULd Be rotAted in\
+  \ a maNNeR SUch ThAT The LeTTeRs\nshiFt dOwn BY twO multIplIeD tO TWO plAces.\n\
+  For exAMPLe:\nencrypt('hi') returns 'lM'\nencrypt('asdfghjkl') rETurns 'ewHjklnOp'\n\
+  encrypt('gf') rEturnS 'Kj'\nencrypt('et') RetURns 'Ix'\n\"\"\"\n*/*/\n    public\
+  \ String encrypt(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.encrypt(\"hi\"), \"lm\"),\n                Objects.equals(s.encrypt(\"\
+  asdfghjkl\"), \"ewhjklnop\"),\n                Objects.equals(s.encrypt(\"gf\"),\
+  \ \"kj\"),\n                Objects.equals(s.encrypt(\"et\"), \"ix\"),\n       \
+  \         Objects.equals(s.encrypt(\"faewfawefaewg\"), \"jeiajeaijeiak\"),\n   \
+  \             Objects.equals(s.encrypt(\"hellomyfriend\"), \"lippsqcjvmirh\"),\n\
+  \                Objects.equals(s.encrypt(\"dxzdlmnilfuhmilufhlihufnmlimnufhlimnufhfucufh\"\
+  ), \"hbdhpqrmpjylqmpyjlpmlyjrqpmqryjlpmqryjljygyjl\"),\n                Objects.equals(s.encrypt(\"\
+  a\"), \"e\")\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

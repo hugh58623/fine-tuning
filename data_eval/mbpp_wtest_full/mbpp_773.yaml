@@ -1,0 +1,19 @@
+name: mbpp_773
+language: py
+prompt: "\n\ndef occurance_substring(text,pattern):\n \"\"\"\n Write a function to\
+  \ find the occurrence and position of the substrings within a string.\n >>> occurance_substring('python\
+  \ programming, python language','python')\n ('python', 0, 6)\n >>> occurance_substring('python\
+  \ programming,programming language','programming')\n ('programming', 7, 18)\n >>>\
+  \ occurance_substring('python programming,programming language','language')\n ('language',\
+  \ 31, 39)\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python\
+  \ programming, python language','python')==('python', 0, 6)\n    assert candidate('python\
+  \ programming,programming language','programming')==('programming', 7, 18)\n   \
+  \ assert candidate('python programming,programming language','language')==('language',\
+  \ 31, 39)\n\n\n\ndef test_check():\n    check(occurance_substring)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

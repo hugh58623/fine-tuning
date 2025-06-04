@@ -1,0 +1,17 @@
+name: mbpp_399
+language: py
+prompt: "\n\ndef bitwise_xor(test_tup1, test_tup2):\n  \"\"\"\n  Write a function\
+  \ to perform the mathematical bitwise xor operation across the given tuples.\n \
+  \ >>> bitwise_xor((10, 4, 6, 9), (5, 2, 3, 3))\n  (15, 6, 5, 10)\n  >>> bitwise_xor((11,\
+  \ 5, 7, 10), (6, 3, 4, 4))\n  (13, 6, 3, 14)\n  >>> bitwise_xor((12, 6, 8, 11),\
+  \ (7, 4, 5, 6))\n  (11, 2, 13, 13)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 6, 9), (5, 2, 3, 3)) == (15, 6, 5, 10)\n    assert candidate((11, 5, 7, 10), (6,\
+  \ 3, 4, 4)) == (13, 6, 3, 14)\n    assert candidate((12, 6, 8, 11), (7, 4, 5, 6))\
+  \ == (11, 2, 13, 13)\n\n\n\ndef test_check():\n    check(bitwise_xor)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

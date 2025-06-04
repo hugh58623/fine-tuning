@@ -1,0 +1,14 @@
+name: mbpp_331
+language: py
+prompt: "\n\ndef count_unset_bits(n):\n    \"\"\"\n    Write a python function to\
+  \ count unset bits of a given number.\n    >>> count_unset_bits(2)\n    1\n    >>>\
+  \ count_unset_bits(4)\n    2\n    >>> count_unset_bits(6)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 1\n\
+  \    assert candidate(4) == 2\n    assert candidate(6) == 1\n\n\n\ndef test_check():\n\
+  \    check(count_unset_bits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

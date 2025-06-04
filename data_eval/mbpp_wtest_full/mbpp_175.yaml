@@ -1,0 +1,15 @@
+name: mbpp_175
+language: py
+prompt: "\n\ndef is_valid_parenthese( str1):\n        \"\"\"\n        Write a function\
+  \ to verify validity of a string of parentheses.\n        >>> is_valid_parenthese(\"\
+  (){}[]\")\n        True\n        >>> is_valid_parenthese(\"()[{)}\")\n        False\n\
+  \        >>> is_valid_parenthese(\"()\")\n        True\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"(){}[]\"\
+  )==True\n    assert candidate(\"()[{)}\")==False\n    assert candidate(\"()\")==True\n\
+  \n\n\ndef test_check():\n    check(is_valid_parenthese)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

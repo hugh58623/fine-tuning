@@ -1,0 +1,22 @@
+"name": "CPP_100"
+"language": "cpp"
+"prompt": "/*\nGives a positive integers n, you had to made a piles of n level of\
+  \ stone. The first level had n stone. The number of stone in the next level is:\
+  \ - the next odder number if n is odder. - the next even number if n is even. Return\
+  \ the number of stone in each level in a list, where elements at indices i represents\
+  \ the number of stone in the level (i+1).\n\nExamples:\n>>> make_a_pile(3)\n[3,\
+  \ 5, 7]\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\nvector<int>\
+  \ make_a_pile(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(make_a_pile(3) , {3, 5, 7}));\n    assert (issame(make_a_pile(4)\
+  \ , {4,6,8,10}));\n    assert (issame(make_a_pile(5) , {5, 7, 9, 11, 13}));\n  \
+  \  assert (issame(make_a_pile(6) , {6, 8, 10, 12, 14, 16}));\n    assert (issame(make_a_pile(8)\
+  \ , {8, 10, 12, 14, 16, 18, 20, 22}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

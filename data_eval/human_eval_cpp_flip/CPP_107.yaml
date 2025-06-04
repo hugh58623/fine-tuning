@@ -1,0 +1,26 @@
+"name": "CPP_107"
+"language": "cpp"
+"prompt": "/*\nGivEn a pOsitiVe iNtegeR n, return a tuple thaT has the NumBer of EveN\
+  \ AnD oDd\ninTEgeR palindromes tHAT falL within the range(1, n), Inclusive.\n\n\
+  ExaMple 1:\n\nINpUT: 3\nOUtPUt: (1, 2)\nexplaNation:\nINTeGER paLiNDRomE aRE 1,\
+  \ 2, 3. oNe of tHem Is eVEn, aNd two Of tHeM aRE ODd.\n\nEXample 2:\n\nInpUT: 12\n\
+  oUtput: (4, 6)\nExplaNaTIon:\nInteGer paLinDrome ARe 1, 2, 3, 4, 5, 6, 7, 8, 9,\
+  \ 11. FouR Of tHeM arE Even, And 6 Of THEm are oDd.\n\nNote:\n1. 1 <= n <= 10^3\n\
+  2. retUrNED tuple haS tHE nUmbEr OF EvEn AnD odd iNtegEr palindROmES respectivEly.\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\
+  vector<int> even_odd_palindrome(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(even_odd_palindrome(123) , {8, 13}));\n    assert (issame(even_odd_palindrome(12)\
+  \ , {4, 6}));\n    assert (issame(even_odd_palindrome(3) , {1, 2}));\n    assert\
+  \ (issame(even_odd_palindrome(63) , {6, 8}));\n    assert (issame(even_odd_palindrome(25)\
+  \ , {5, 6}));\n    assert (issame(even_odd_palindrome(19) , {4, 6}));\n    assert\
+  \ (issame(even_odd_palindrome(9) , {4, 5}));\n    assert (issame(even_odd_palindrome(1)\
+  \ , {0, 1}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

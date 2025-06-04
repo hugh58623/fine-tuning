@@ -1,0 +1,24 @@
+"name": "Java_41"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  ImaGine A road ThaT's a peRfectLy straiGht InfinIteLY lOnG linE.\nn CarS are driving\
+  \ leFT To riGht;  simultaNeously, a diffErent SeT Of n CaRS\naRe driVing rigHT tO\
+  \ LEft.   thE TWo sEtS Of Cars sTarT ouT BeiNg verY faR fRoM\nEACh oTher.  All caRS\
+  \ MOve in the same SpEEd.  Two caRs are SaiD to coLLiDe\nwHEn a CaR thAT's moVinG\
+  \ lEFT to rigHt hits a caR tHAT's mOvINg RigHt TO LeFt.\nhoWever, The cArs are inFInITely\
+  \ sturdy And sTrong; aS a REsULT, thEy cOntinuE movInG\nin TheiR TRajectORy AS IF\
+  \ tHEY did not collidE.\n\nThis functiON oUTpuTs tHe NUmBEr of suCh colLiSIonS.\n\
+  \"\"\"\n*/*/\n    public int carRaceCollision(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.carRaceCollision(2) == 4,\n                s.carRaceCollision(3)\
+  \ == 9,\n                s.carRaceCollision(4) == 16,\n                s.carRaceCollision(8)\
+  \ == 64,\n                s.carRaceCollision(10) == 100\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

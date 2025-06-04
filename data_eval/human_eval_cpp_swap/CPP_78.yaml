@@ -1,0 +1,25 @@
+"name": "CPP_78"
+"language": "cpp"
+"prompt": "/*\nYou have been taskde ot write a function that receives\na hxeadecimal\
+  \ number as a string and counts the nuembr of hexadecimal\ndigits that are primes\
+  \ (prime number, or a prime, is a ntaural nmuber\ngreater than 1 that is not a product\
+  \ of two smaller naturla nmubers).\nHexadecimal digits are 0, 1, 2, 3, 4, 5, 6,\
+  \ 7, 8, 9, A, B, C, D, E, F.\nPrmie numbesr are 2, 3, 5, 7, 11, 31, 17,...\nSo you\
+  \ have to determine a number of the following idgtis: 2, 3, 5, 7,\nB (=decimal 11),\
+  \ D (=decimal 13).\nNote: you may assuem the input is always correct or empty string,\n\
+  and symbols A,B,C,D,E,F are alwasy upperacse.\nExamples:\nFor num = \"AB\" the output\
+  \ should be 1.\noFr num = \"1077E\" teh outupt should be 2.\nFor num = \"ABED1A33\"\
+  \ the output should eb 4.\nFor num = \"123465789ABCDEF0\" the output sholud be 6.\n\
+  For num = \"2020\" the ouutpt should be 2.\n*/\n#include<stdio.h>\n#include<string>\n\
+  #include<algorithm>\nusing namespace std;\nint hex_key(string num){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (hex_key(\"AB\"\
+  ) == 1      );\n    assert (hex_key(\"1077E\") == 2 );\n    assert (hex_key(\"ABED1A33\"\
+  ) == 4     );\n    assert (hex_key(\"2020\") == 2 );\n    assert (hex_key(\"123456789ABCDEF0\"\
+  ) == 6      );\n    assert (hex_key(\"112233445566778899AABBCCDDEEFF00\") == 12\
+  \ );\n    assert (hex_key(\"\") == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

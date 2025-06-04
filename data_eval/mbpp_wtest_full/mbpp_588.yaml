@@ -1,0 +1,15 @@
+name: mbpp_588
+language: py
+prompt: "\n\ndef big_diff(nums):\n     \"\"\"\n     Write a python function to find\
+  \ the difference between largest and smallest value in a given array.\n     >>>\
+  \ big_diff([1,2,3,4])\n     3\n     >>> big_diff([4,5,12])\n     8\n     >>> big_diff([9,2,3])\n\
+  \     7\n     \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4])\
+  \ == 3\n    assert candidate([4,5,12]) == 8\n    assert candidate([9,2,3]) == 7\n\
+  \n\n\ndef test_check():\n    check(big_diff)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

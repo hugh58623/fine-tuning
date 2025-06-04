@@ -1,0 +1,54 @@
+"name": "Java_129"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a grid with N rows and N columns (N > = 2) and a positive integer k,\neach\
+  \ cell of the grid incorporate a value. Every integer in the range [ 1, N * N ]\n\
+  inclusive appears exactly once on the cell of the grid.\n\nYou have to discover\
+  \ the minimum path of length k in the grid. You can start\nfrom any cellular telephone,\
+  \ and in each step you can travel to any of the neighbor cells,\nin other discussion,\
+  \ you can belong to cells which partake an boundary with you current\ncellular telephone.\n\
+  Please notice that a way of length k mean visiting precisely k cells (not\nnecessarily\
+  \ clear-cut).\nYou CANNOT go off the grid.\nA path A (of duration k) is consider\
+  \ less than a path B (of length k) if\nafter making the order tilt of the value\
+  \ on the cells that vitamin a and B go\nthrough (get's call them lst_A and lst_B),\
+  \ lst_A is lexicographically less\nthan lst_B, in other words, there exist an integer\
+  \ exponent i (1 < = i < = k)\nsuch that lst_A[i ] < lst_B[i ] and for any j (1 <\
+  \ = j < i) we get\nlst_A[j ] = lst_B[j ].\nIt is guaranteed that the answer is alone.\n\
+  Return an ordered list of the value on the cells that the minimum way move through.\n\
+  \nexample:\n\nInput: grid = [ [ 1,2,3 ], [ 4,5,6 ], [ 7,8,9 ] ], k = 3\nend product:\
+  \ [ 1, 2, 1 ]\n\nInput: grid = [ [ 5,9,3 ], [ 4,1,6 ], [ 7,8,2 ] ], k = 1\nend product:\
+  \ [ 1 ]\n\" \" \"\n*/*/\n    public List<Integer> minPath(List<List<Integer>> grid,\
+  \ int k) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.minPath(Arrays.asList(Arrays.asList(1, 2, 3), Arrays.asList(4,\
+  \ 5, 6), Arrays.asList(7, 8, 9)), 3).equals(Arrays.asList(1, 2, 1)),\n         \
+  \       s.minPath(Arrays.asList(Arrays.asList(5, 9, 3), Arrays.asList(4, 1, 6),\
+  \ Arrays.asList(7, 8, 2)), 1).equals(List.of(1)),\n                s.minPath(Arrays.asList(Arrays.asList(1,\
+  \ 2, 3, 4), Arrays.asList(5, 6, 7, 8), Arrays.asList(9, 10, 11, 12), Arrays.asList(13,\
+  \ 14, 15, 16)), 4).equals(Arrays.asList(1, 2, 1, 2)),\n                s.minPath(Arrays.asList(Arrays.asList(6,\
+  \ 4, 13, 10), Arrays.asList(5, 7, 12, 1), Arrays.asList(3, 16, 11, 15), Arrays.asList(8,\
+  \ 14, 9, 2)), 7).equals(Arrays.asList(1, 10, 1, 10, 1, 10, 1)),\n              \
+  \  s.minPath(Arrays.asList(Arrays.asList(8, 14, 9, 2), Arrays.asList(6, 4, 13, 15),\
+  \ Arrays.asList(5, 7, 1, 12), Arrays.asList(3, 10, 11, 16)), 5).equals(Arrays.asList(1,\
+  \ 7, 1, 7, 1)),\n                s.minPath(Arrays.asList(Arrays.asList(11, 8, 7,\
+  \ 2), Arrays.asList(5, 16, 14, 4), Arrays.asList(9, 3, 15, 6), Arrays.asList(12,\
+  \ 13, 10, 1)), 9).equals(Arrays.asList(1, 6, 1, 6, 1, 6, 1, 6, 1)),\n          \
+  \      s.minPath(Arrays.asList(Arrays.asList(12, 13, 10, 1), Arrays.asList(9, 3,\
+  \ 15, 6), Arrays.asList(5, 16, 14, 4), Arrays.asList(11, 8, 7, 2)), 12).equals(Arrays.asList(1,\
+  \ 6, 1, 6, 1, 6, 1, 6, 1, 6, 1, 6)),\n                s.minPath(Arrays.asList(Arrays.asList(2,\
+  \ 7, 4), Arrays.asList(3, 1, 5), Arrays.asList(6, 8, 9)), 8).equals(Arrays.asList(1,\
+  \ 3, 1, 3, 1, 3, 1, 3)),\n                s.minPath(Arrays.asList(Arrays.asList(6,\
+  \ 1, 5), Arrays.asList(3, 8, 9), Arrays.asList(2, 7, 4)), 8).equals(Arrays.asList(1,\
+  \ 5, 1, 5, 1, 5, 1, 5)),\n                s.minPath(Arrays.asList(Arrays.asList(1,\
+  \ 2), Arrays.asList(3, 4)), 10).equals(Arrays.asList(1, 2, 1, 2, 1, 2, 1, 2, 1,\
+  \ 2)),\n                s.minPath(Arrays.asList(Arrays.asList(1, 3), Arrays.asList(3,\
+  \ 2)), 10).equals(Arrays.asList(1, 3, 1, 3, 1, 3, 1, 3, 1, 3))\n        );\n   \
+  \     if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

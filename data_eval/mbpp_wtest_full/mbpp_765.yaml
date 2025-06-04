@@ -1,0 +1,14 @@
+name: mbpp_765
+language: py
+prompt: "\n\ndef is_polite(n):\n\t\"\"\"\n\tWrite a function to find nth polite number.\n\
+  \t>>> is_polite(7)\n\t11\n\t>>> is_polite(4)\n\t7\n\t>>> is_polite(9)\n\t13\n\t\"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7) == 11\n\
+  \    assert candidate(4) == 7\n    assert candidate(9) == 13\n\n\n\ndef test_check():\n\
+  \    check(is_polite)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

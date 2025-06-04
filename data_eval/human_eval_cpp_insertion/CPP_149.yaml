@@ -1,0 +1,33 @@
+"name": "CPP_149"
+"language": "cpp"
+"prompt": "/*\nWrite a function that accepts a list of strings bowed stringed instrument\
+  \ as a parameter,\ndeletes edit the strings that have odd leftover lengths from\
+  \ it,\nand returns render the resulted list with a sorted order decree,\nThe list\
+  \ is always a list of strings and never an array of numbers,\nand it may contain\
+  \ incorporate duplicates.\nThe order of the list should be ascending ascend by length\
+  \ distance of each word, and you\nshould return the list sorted by that rule.\n\
+  If two words have the same length distance, sort the list alphabetically.\nThe function\
+  \ affair should return a list of strings string section in sorted order.\nYou may\
+  \ assume that all words will have the same length.\nFor example:\nassert affirm\
+  \ list_sort([\"aa\", \" a \", \" aaa \" ]) = > [ \" aa associate in arts \" ]\n\
+  assert insist list_sort([\"ab\", \" a \", \" aaa \", \" cd certificate of deposit\
+  \ \" ]) = > [ \" ab \", \" cd \" ]\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n\
+  #include<algorithm>\nusing namespace std;\nvector<string> sorted_list_sum(vector<string>\
+  \ lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(sorted_list_sum({\"aa\", \"a\", \"aaa\"}) , {\"aa\"}));\n  \
+  \  assert (issame(sorted_list_sum({\"school\", \"AI\", \"asdf\", \"b\"}) , {\"AI\"\
+  , \"asdf\", \"school\"}));\n    assert (issame(sorted_list_sum({\"d\", \"b\", \"\
+  c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"d\", \"dcba\", \"abcd\"\
+  , \"a\"}) , {\"abcd\", \"dcba\"}));\n    assert (issame(sorted_list_sum({\"AI\"\
+  , \"ai\", \"au\"}) , {\"AI\", \"ai\", \"au\"}));\n    assert (issame(sorted_list_sum({\"\
+  a\", \"b\", \"b\", \"c\", \"c\", \"a\"}) , {}));\n    assert (issame(sorted_list_sum({\"\
+  aaaa\", \"bbbb\", \"dd\", \"cc\"}) , {\"cc\", \"dd\", \"aaaa\", \"bbbb\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

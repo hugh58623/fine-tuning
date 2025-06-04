@@ -1,0 +1,18 @@
+"name": "Java_60"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  sum_tO_n is A funcTioN that Sums nUmbers fRom 1 To n.\n\n>>>>>> sumToN(30)\n   \
+  \ 465\n    >>> sumToN(100)\n    5050\n    >>> sumToN(5)\n    15\n    >>> sumToN(10)\n\
+  \    55\n    >>> sumToN(1)\n    1\n     */\n    public int sumToN(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sumToN(1) == 1,\n                s.sumToN(6) == 21,\n       \
+  \         s.sumToN(11) == 66,\n                s.sumToN(30) == 465,\n          \
+  \      s.sumToN(100) == 5050\n        );\n        if (correct.contains(false)) {\n\
+  \            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

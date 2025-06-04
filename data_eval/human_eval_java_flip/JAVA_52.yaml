@@ -1,0 +1,23 @@
+"name": "Java_52"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  RetuRn True if All nuMbeRs in the list l Are beLow threShoLd t.\n\n>>>>>> belowThreshold(Arrays.asList(1,\
+  \ 2, 4, 10), 100)\n    true\n    >>> belowThreshold(Arrays.asList(1, 20, 4, 10),\
+  \ 5)\n    false\n     */\n    public boolean belowThreshold(List<Integer> l, int\
+  \ t) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.belowThreshold(new ArrayList<>(Arrays.asList(1, 2, 4, 10)), 100),\n\
+  \                !s.belowThreshold(new ArrayList<>(Arrays.asList(1, 20, 4, 10)),\
+  \ 5),\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1, 20, 4,\
+  \ 10)), 21),\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1,\
+  \ 20, 4, 10)), 22),\n                s.belowThreshold(new ArrayList<>(Arrays.asList(1,\
+  \ 8, 4, 10)), 11),\n                !s.belowThreshold(new ArrayList<>(Arrays.asList(1,\
+  \ 8, 4, 10)), 10)\n        );\n        if (correct.contains(false)) {\n        \
+  \    throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

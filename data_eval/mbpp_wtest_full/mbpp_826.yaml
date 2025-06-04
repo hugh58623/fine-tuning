@@ -1,0 +1,17 @@
+name: mbpp_826
+language: py
+prompt: "\n\ndef check_Type_Of_Triangle(a,b,c):\n    \"\"\"\n    Write a python function\
+  \ to find the type of triangle from the given sides.\n    >>> check_Type_Of_Triangle(1,2,3)\n\
+  \    \"Obtuse-angled Triangle\"\n    >>> check_Type_Of_Triangle(2,2,2)\n    \"Acute-angled\
+  \ Triangle\"\n    >>> check_Type_Of_Triangle(1,0,1)\n    \"Right-angled Triangle\"\
+  \n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,2,3)\
+  \ == \"Obtuse-angled Triangle\"\n    assert candidate(2,2,2) == \"Acute-angled Triangle\"\
+  \n    assert candidate(1,0,1) == \"Right-angled Triangle\"\n\n\n\ndef test_check():\n\
+  \    check(check_Type_Of_Triangle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

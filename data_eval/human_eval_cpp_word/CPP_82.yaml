@@ -1,0 +1,23 @@
+"name": "CPP_82"
+"language": "cpp"
+"prompt": "/*\nWrite a function that takes a string and returns hark back True if\
+  \ the string\nlength is a prime premier number or False otherwise differently\n\
+  Examples\nprime_length('Hello') = = True\nprime_length('abcdcba') = = True\nprime_length('kittens')\
+  \ = = True\nprime_length('orange') = = False\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nbool prime_length(string str){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (prime_length(\"\
+  Hello\") == true);\n    assert (prime_length(\"abcdcba\") == true);\n    assert\
+  \ (prime_length(\"kittens\") == true);\n    assert (prime_length(\"orange\") ==\
+  \ false);\n    assert (prime_length(\"wow\") == true);\n    assert (prime_length(\"\
+  world\") == true);\n    assert (prime_length(\"MadaM\") == true);\n    assert (prime_length(\"\
+  Wow\") == true);\n    assert (prime_length(\"\") == false);\n    assert (prime_length(\"\
+  HI\") == true);\n    assert (prime_length(\"go\") == true);\n    assert (prime_length(\"\
+  gogo\") == false);\n    assert (prime_length(\"aaaaaaaaaaaaaaa\") == false);\n \
+  \   assert (prime_length(\"Madam\") == true);\n    assert (prime_length(\"M\") ==\
+  \ false);\n    assert (prime_length(\"0\") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

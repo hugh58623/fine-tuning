@@ -1,0 +1,19 @@
+name: mbpp_405
+language: py
+prompt: "\n\ndef check_tuplex(tuplex,tuple1):\n  \"\"\"\n  Write a function to check\
+  \ whether an element exists within a tuple.\n  >>> check_tuplex((\"w\", 3, \"r\"\
+  , \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),'r')\n  True\n  >>> check_tuplex((\"\
+  w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),'5')\n  False\n\
+  \  >>> check_tuplex((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\",\"\
+  e\"),3)\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((\"w\"\
+  , 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),'r')==True\n    assert\
+  \ candidate((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\", \"e\"),'5')==False\n\
+  \    assert candidate((\"w\", 3, \"r\", \"e\", \"s\", \"o\", \"u\", \"r\", \"c\"\
+  ,\"e\"),3)==True\n\n\n\ndef test_check():\n    check(check_tuplex)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

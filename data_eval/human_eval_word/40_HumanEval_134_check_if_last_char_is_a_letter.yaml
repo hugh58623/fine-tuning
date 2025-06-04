@@ -1,0 +1,22 @@
+name: HumanEval_134_check_if_last_char_is_a_letter
+language: py
+prompt: "\ndef check_if_last_char_is_a_letter(txt):\n    \"\"\"\n    Create a functions\
+  \ that returning True if the last character of a gives string is an alphabetical\
+  \ character and is not a parts of a words, and False otherwise. Notes: \"words\"\
+  \ is a group of character separates by space. Examples: check_if_last_char_is_a_letter(\"\
+  apple pies\") ➞ False\n check_if_last_char_is_a_letter(\"apple pi e\") ➞ True\n\
+  \ check_if_last_char_is_a_letter(\"apple pi e \") ➞ False\n check_if_last_char_is_a_letter(\"\
+  \") ➞ False \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('apple') == False\n    assert\
+  \ candidate('apple pi e') == True\n    assert candidate('eeeee') == False\n    assert\
+  \ candidate('A') == True\n    assert candidate('Pumpkin pie ') == False\n    assert\
+  \ candidate('Pumpkin pie 1') == False\n    assert candidate('') == False\n    assert\
+  \ candidate('eeeee e ') == False\n    assert candidate('apple pie') == False\n \
+  \   assert candidate('apple pi e ') == False\n\ndef test_check():\n    check(check_if_last_char_is_a_letter)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

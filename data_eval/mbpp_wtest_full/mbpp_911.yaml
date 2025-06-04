@@ -1,0 +1,17 @@
+name: mbpp_911
+language: py
+prompt: "\n\ndef maximum_product(nums):\n    \"\"\"\n    Write a function to compute\
+  \ maximum product of three numbers of a given array of integers using heap queue\
+  \ algorithm.\n    >>> maximum_product( [12, 74, 9, 50, 61, 41])\n    225700\n  \
+  \  >>> maximum_product([25, 35, 22, 85, 14, 65, 75, 25, 58])\n    414375\n    >>>\
+  \ maximum_product([18, 14, 10, 9, 8, 7, 9, 3, 2, 4, 1])\n    2520\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate( [12, 74,\
+  \ 9, 50, 61, 41])==225700\n    assert candidate([25, 35, 22, 85, 14, 65, 75, 25,\
+  \ 58])==414375\n    assert candidate([18, 14, 10, 9, 8, 7, 9, 3, 2, 4, 1])==2520\n\
+  \n\n\ndef test_check():\n    check(maximum_product)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

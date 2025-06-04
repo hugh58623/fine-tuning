@@ -1,0 +1,22 @@
+name: HumanEval_88_sort_array
+language: py
+prompt: "\ndef sort_array(array):\n    \"\"\"\n    GivEn an array Of non-NegAtive\
+  \ IntegErs, return a copY of The giVen array AFtEr SortINg,\n    yOu will sort the\
+  \ GIVen array in aScending orDer if the sum( fIrst iNdEX vAlUE, lAst inDex valuE)\
+  \ Is ODD,\n    or SoRT It in dEsCEnDing oRdeR if THe sUm( firSt iNdEx VALUe, lAst\
+  \ index vALUE) is even.\n\n    NotE:\n    * dON't changE the gIveN array.\n\n  \
+  \  ExamPLeS:\n    * soRT_arRaY([]) => []\n    * soRT_arrAy([5]) => [5]\n    * sOrT_ARray([2,\
+  \ 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]\n    * soRt_array([2, 4, 3, 0, 1, 5, 6])\
+  \ => [6, 5, 4, 3, 2, 1, 0]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([]) == []\n    assert candidate([5])\
+  \ == [5]\n    assert candidate([2, 4, 3, 0, 1, 5]) == [0, 1, 2, 3, 4, 5]\n    assert\
+  \ candidate([2, 4, 3, 0, 1, 5, 6]) == [6, 5, 4, 3, 2, 1, 0]\n    assert candidate([2,\
+  \ 1]) == [1, 2]\n    assert candidate([15, 42, 87, 32, 11, 0]) == [0, 11, 15, 32,\
+  \ 42, 87]\n    assert candidate([21, 14, 23, 11]) == [23, 21, 14, 11]\n\ndef test_check():\n\
+  \    check(sort_array)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

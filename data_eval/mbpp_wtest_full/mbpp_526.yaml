@@ -1,0 +1,17 @@
+name: mbpp_526
+language: py
+prompt: "\n\ndef capitalize_first_last_letters(str1):\n     \"\"\"\n     Write a python\
+  \ function to capitalize first and last letters of each word of a given string.\n\
+  \     >>> capitalize_first_last_letters(\"python\")\n     \"PythoN\"\n     >>> capitalize_first_last_letters(\"\
+  bigdata\")\n     \"BigdatA\"\n     >>> capitalize_first_last_letters(\"Hadoop\"\
+  )\n     \"HadooP\"\n     \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  ) == \"PythoN\"\n    assert candidate(\"bigdata\") == \"BigdatA\"\n    assert candidate(\"\
+  Hadoop\") == \"HadooP\"\n\n\n\ndef test_check():\n    check(capitalize_first_last_letters)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

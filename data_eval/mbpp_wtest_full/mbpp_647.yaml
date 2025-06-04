@@ -1,0 +1,16 @@
+name: mbpp_647
+language: py
+prompt: "\n\ndef split_upperstring(text):\n \"\"\"\n Write a function to split a string\
+  \ at uppercase letters.\n >>> split_upperstring(\"PythonProgramLanguage\")\n ['Python','Program','Language']\n\
+  \ >>> split_upperstring(\"PythonProgram\")\n ['Python','Program']\n >>> split_upperstring(\"\
+  ProgrammingLanguage\")\n ['Programming','Language']\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"PythonProgramLanguage\"\
+  )==['Python','Program','Language']\n    assert candidate(\"PythonProgram\")==['Python','Program']\n\
+  \    assert candidate(\"ProgrammingLanguage\")==['Programming','Language']\n\n\n\
+  \ndef test_check():\n    check(split_upperstring)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

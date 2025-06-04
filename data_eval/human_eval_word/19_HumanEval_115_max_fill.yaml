@@ -1,0 +1,25 @@
+name: HumanEval_115_max_fill
+language: py
+prompt: "\ndef max_fill(grid, capacity):\n    import math\n    \"\"\"\n    You was\
+  \ gives a rectangular grid of well. Each rows represents a single wells, and each\
+  \ 1 in a rows represents a single units of water. Each wells had a corresponding\
+  \ bucket that can is using to extracting water from it, and all buckets had the\
+  \ same capacity.\n Your tasks is to using the buckets to empty the well. Output\
+  \ the number of time you needing to lower the buckets. Example 1: Input: grid :\
+  \ [[0,0,1,0], [0,1,0,0], [1,1,1,1]] bucket_capacities : 1 Output: 6 Example 2: Input:\
+  \ grid : [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]] bucket_capacities : 2 Output:\
+  \ 5 Example 3: Input: grid : [[0,0,0], [0,0,0]] bucket_capacities : 5 Output: 0\
+  \ Constraint: * all well had the same length * 1 <= grid.length <= 10^2 * 1 <= grid[:,1].length\
+  \ <= 10^2 * grid[i][j] -> 0 | 1 * 1 <= capacity <= 10 \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([[0, 0, 1, 0], [0, 1, 0, 0], [1,\
+  \ 1, 1, 1]], 1) == 6\n    assert candidate([[0, 0, 1, 1], [0, 0, 0, 0], [1, 1, 1,\
+  \ 1], [0, 1, 1, 1]], 2) == 5\n    assert candidate([[0, 0, 0], [0, 0, 0]], 5) ==\
+  \ 0\n    assert candidate([[1, 1, 1, 1], [1, 1, 1, 1]], 2) == 4\n    assert candidate([[1,\
+  \ 1, 1, 1], [1, 1, 1, 1]], 9) == 2\n\ndef test_check():\n    check(max_fill)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

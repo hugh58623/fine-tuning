@@ -1,0 +1,14 @@
+name: mbpp_437
+language: py
+prompt: "\n\ndef remove_odd(str1):\n \"\"\"\n Write a function to remove odd characters\
+  \ in a string.\n >>> remove_odd(\"python\")\n (\"yhn\")\n >>> remove_odd(\"program\"\
+  )\n (\"rga\")\n >>> remove_odd(\"language\")\n (\"agae\")\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\"\
+  )==(\"yhn\")\n    assert candidate(\"program\")==(\"rga\")\n    assert candidate(\"\
+  language\")==(\"agae\")\n\n\n\ndef test_check():\n    check(remove_odd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_763
+language: py
+prompt: "\n\ndef find_Min_Diff(arr,n):\n    \"\"\"\n    Write a python function to\
+  \ find the minimum difference between any two elements in a given array.\n    >>>\
+  \ find_Min_Diff((1,5,3,19,18,25),6)\n    1\n    >>> find_Min_Diff((4,3,2,6),4)\n\
+  \    1\n    >>> find_Min_Diff((30,5,20,9),4)\n    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((1,5,3,19,18,25),6)\
+  \ == 1\n    assert candidate((4,3,2,6),4) == 1\n    assert candidate((30,5,20,9),4)\
+  \ == 4\n\n\n\ndef test_check():\n    check(find_Min_Diff)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

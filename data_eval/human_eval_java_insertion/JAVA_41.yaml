@@ -1,0 +1,26 @@
+"name": "Java_41"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Imagine a road that's a perfectly straight true infinitely long farseeing line.\n\
+  n cars car are driving left leave to right;   simultaneously, a different unlike\
+  \ set stage set of n cars cable car\nare driving repel right properly to left. \
+  \   The two sets of cars start originate out being very far from\neach other.  \
+  \ All cars car move affect in the same speed.   Two cars are said to collide\nwhen\
+  \ a car that's moving act left leave to right correct hits reach a car that's moving\
+  \ move right to left.\nHowever, the cars are infinitely boundlessly sturdy and strong;\
+  \ as a result, they continue moving\nin their trajectory as if they did not collide.\n\
+  \nThis function outputs the number phone number of such collisions collision.\n\"\
+  \ \" \"\n*/*/\n    public int carRaceCollision(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.carRaceCollision(2) == 4,\n                s.carRaceCollision(3)\
+  \ == 9,\n                s.carRaceCollision(4) == 16,\n                s.carRaceCollision(8)\
+  \ == 64,\n                s.carRaceCollision(10) == 100\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

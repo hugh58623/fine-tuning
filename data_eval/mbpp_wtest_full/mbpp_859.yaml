@@ -1,0 +1,21 @@
+name: mbpp_859
+language: py
+prompt: "\n\ndef sub_lists(my_list):\n\t\"\"\"\n\tWrite a function to generate all\
+  \ sublists of a given list.\n\t>>> sub_lists([10, 20, 30, 40])\n\t[[], [10], [20],\
+  \ [30], [40], [10, 20], [10, 30], [10, 40], [20, 30], [20, 40], [30, 40], [10, 20,\
+  \ 30], [10, 20, 40], [10, 30, 40], [20, 30, 40], [10, 20, 30, 40]]\n\t>>> sub_lists(['X',\
+  \ 'Y', 'Z'])\n\t[[], ['X'], ['Y'], ['Z'], ['X', 'Y'], ['X', 'Z'], ['Y', 'Z'], ['X',\
+  \ 'Y', 'Z']]\n\t>>> sub_lists([1,2,3])\n\t[[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]]\n\
+  \t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10, 20,\
+  \ 30, 40])==[[], [10], [20], [30], [40], [10, 20], [10, 30], [10, 40], [20, 30],\
+  \ [20, 40], [30, 40], [10, 20, 30], [10, 20, 40], [10, 30, 40], [20, 30, 40], [10,\
+  \ 20, 30, 40]]\n    assert candidate(['X', 'Y', 'Z'])==[[], ['X'], ['Y'], ['Z'],\
+  \ ['X', 'Y'], ['X', 'Z'], ['Y', 'Z'], ['X', 'Y', 'Z']]\n    assert candidate([1,2,3])==[[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]]\n\
+  \n\n\ndef test_check():\n    check(sub_lists)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

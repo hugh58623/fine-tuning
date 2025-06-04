@@ -1,0 +1,15 @@
+name: mbpp_958
+language: py
+prompt: "\n\ndef int_to_roman( num):\n        \"\"\"\n        Write a function to\
+  \ convert an integer into a roman numeral.\n        >>> int_to_roman(1)\n      \
+  \  (\"I\")\n        >>> int_to_roman(50)\n        (\"L\")\n        >>> int_to_roman(4)\n\
+  \        (\"IV\")\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1)==(\"\
+  I\")\n    assert candidate(50)==(\"L\")\n    assert candidate(4)==(\"IV\")\n\n\n\
+  \ndef test_check():\n    check(int_to_roman)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,17 @@
+name: mbpp_26
+language: py
+prompt: "\n\ndef check_k_elements(test_list, K):\n  \"\"\"\n  Write a function to\
+  \ check if the given tuple list has all k elements.\n  >>> check_k_elements([(4,\
+  \ 4), (4, 4, 4), (4, 4), (4, 4, 4, 4), (4, )], 4)\n  True\n  >>> check_k_elements([(7,\
+  \ 7, 7), (7, 7)], 7)\n  True\n  >>> check_k_elements([(9, 9), (9, 9, 9, 9)], 7)\n\
+  \  False\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(4, 4),\
+  \ (4, 4, 4), (4, 4), (4, 4, 4, 4), (4, )], 4) == True\n    assert candidate([(7,\
+  \ 7, 7), (7, 7)], 7) == True\n    assert candidate([(9, 9), (9, 9, 9, 9)], 7) ==\
+  \ False\n\n\n\ndef test_check():\n    check(check_k_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

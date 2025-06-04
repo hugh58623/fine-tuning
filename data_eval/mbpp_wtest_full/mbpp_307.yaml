@@ -1,0 +1,18 @@
+name: mbpp_307
+language: py
+prompt: "\n\ndef colon_tuplex(tuplex,m,n):\n  \"\"\"\n  Write a function to get a\
+  \ colon of a tuple.\n  >>> colon_tuplex((\"HELLO\", 5, [], True) ,2,50)\n  (\"HELLO\"\
+  , 5, [50], True)\n  >>> colon_tuplex((\"HELLO\", 5, [], True) ,2,100)\n  ((\"HELLO\"\
+  , 5, [100],True))\n  >>> colon_tuplex((\"HELLO\", 5, [], True) ,2,500)\n  (\"HELLO\"\
+  , 5, [500], True)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((\"HELLO\"\
+  , 5, [], True) ,2,50)==(\"HELLO\", 5, [50], True) \n    assert candidate((\"HELLO\"\
+  , 5, [], True) ,2,100)==((\"HELLO\", 5, [100],True))\n    assert candidate((\"HELLO\"\
+  , 5, [], True) ,2,500)==(\"HELLO\", 5, [500], True)\n\n\n\ndef test_check():\n \
+  \   check(colon_tuplex)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

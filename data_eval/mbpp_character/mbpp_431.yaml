@@ -1,0 +1,15 @@
+name: mbpp_431
+language: py
+prompt: "def common_element(list1, list2):\n    \"\"\"\n     WriTe a fUnctiOn\
+  \ tHat taKes twO lists aNd rEturnS trUE iF tHey hAVe aT least one commON ElemEnt.\n\
+  \     Test examples:\n    assert common_element([1,2,3,4,5], [5,6,7,8,9])==True\n\
+  \    assert common_element([1,2,3,4,5], [6,7,8,9])==None\n    assert common_element(['a','b','c'],\
+  \ ['d','b','e'])==True\n    \"\"\"\n"
+tests: "assert common_element([1,2,3,4,5], [5,6,7,8,9])==True\nassert common_element([1,2,3,4,5],\
+  \ [6,7,8,9])==None\nassert common_element(['a','b','c'], ['d','b','e'])==True"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

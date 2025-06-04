@@ -1,0 +1,16 @@
+name: mbpp_30
+language: py
+prompt: "\n\ndef count_Substring_With_Equal_Ends(s):\n    \"\"\"\n    Write a python\
+  \ function to count all the substrings starting and ending with same characters.\n\
+  \    >>> count_Substring_With_Equal_Ends(\"abc\")\n    3\n    >>> count_Substring_With_Equal_Ends(\"\
+  abcda\")\n    6\n    >>> count_Substring_With_Equal_Ends(\"ab\")\n    2\n    \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abc\"\
+  ) == 3\n    assert candidate(\"abcda\") == 6\n    assert candidate(\"ab\") == 2\n\
+  \n\n\ndef test_check():\n    check(count_Substring_With_Equal_Ends)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

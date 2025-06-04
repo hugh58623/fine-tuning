@@ -1,0 +1,14 @@
+name: mbpp_5
+language: py
+prompt: "\n\ndef count_ways(n):\n\t\"\"\"\n\tWrite a function to find the number of\
+  \ ways to fill it with 2 x 1 dominoes for the given 3 x n board.\n\t>>> count_ways(2)\n\
+  \t3\n\t>>> count_ways(8)\n\t153\n\t>>> count_ways(12)\n\t2131\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 3\n\
+  \    assert candidate(8) == 153\n    assert candidate(12) == 2131\n\n\n\ndef test_check():\n\
+  \    check(count_ways)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

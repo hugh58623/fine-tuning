@@ -1,0 +1,18 @@
+name: mbpp_534
+language: py
+prompt: "\n\ndef search_literal(pattern,text):\n \"\"\"\n Write a function to search\
+  \ a literals string in a string and also find the location within the original string\
+  \ where the pattern occurs.\n >>> search_literal('python','python programming language')\n\
+  \ (0,6)\n >>> search_literal('programming','python programming language')\n (7,18)\n\
+  \ >>> search_literal('language','python programming language')\n (19,27)\n \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python','python\
+  \ programming language')==(0,6)\n    assert candidate('programming','python programming\
+  \ language')==(7,18)\n    assert candidate('language','python programming language')==(19,27)\n\
+  \n\n\ndef test_check():\n    check(search_literal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

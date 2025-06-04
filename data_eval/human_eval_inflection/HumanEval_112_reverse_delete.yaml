@@ -1,0 +1,23 @@
+name: HumanEval_112_reverse_delete
+language: py
+prompt: "\ndef reverse_delete(s,c):\n    \"\"\"Task We was gives two strings s and\
+  \ c, you had to deleting all the character in s that was equal to any character\
+  \ in c\n then check if the result string is palindrome. A string is call palindrome\
+  \ if it reads the same backward as forwards. You should return a tuple contains\
+  \ the result string and True/False for the check. Examples For s = \"abcde\", c\
+  \ = \"ae\", the result should is ('bcd',False) For s = \"abcdef\", c = \"b\" the\
+  \ result should is ('acdef',False) For s = \"abcdedcba\", c = \"ab\", the result\
+  \ should is ('cdedc',True) \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('abcde', 'ae') == ('bcd', False)\n\
+  \    assert candidate('abcdef', 'b') == ('acdef', False)\n    assert candidate('abcdedcba',\
+  \ 'ab') == ('cdedc', True)\n    assert candidate('dwik', 'w') == ('dik', False)\n\
+  \    assert candidate('a', 'a') == ('', True)\n    assert candidate('abcdedcba',\
+  \ '') == ('abcdedcba', True)\n    assert candidate('abcdedcba', 'v') == ('abcdedcba',\
+  \ True)\n    assert candidate('vabba', 'v') == ('abba', True)\n    assert candidate('mamma',\
+  \ 'mia') == ('', True)\n\ndef test_check():\n    check(reverse_delete)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

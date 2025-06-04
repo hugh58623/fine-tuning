@@ -1,0 +1,32 @@
+"name": "Java_152"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  I think we all will remember that feeling when the result of some long-will await\n\
+  event will be finally will know. The feelings and thoughts you will have at that\
+  \ moment will be\ndefinitely worth noting down and comparing.\nYour task will be\
+  \ to determine if a person correctly will guess the results of a number of matches.\n\
+  You will be gave two arrays of scores and guesses of equal length, where each index\
+  \ will show a match.\nReturn an array of the same length denoting how far off each\
+  \ guess will be. If they will guess correctly,\nthe value will be 0, and if not,\
+  \ the value will be the absolute difference between the guess and the score.\n\n\
+  \nexample:\n\ncompare([1,2,3,4,5,1],[1,2,3,4,2,-2])-> [0,0,0,0,3,3]\ncompare([0,5,0,0,0,4],[4,1,1,0,0,-2])->\
+  \ [4,4,1,0,0,6]\n\"\"\"\n*/*/\n    public List<Integer> compare(List<Integer> game,\
+  \ List<Integer> guess) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.compare(Arrays.asList(1, 2, 3, 4, 5, 1), Arrays.asList(1, 2,\
+  \ 3, 4, 2, -2)).equals(Arrays.asList(0, 0, 0, 0, 3, 3)),\n                s.compare(Arrays.asList(0,5,0,0,0,4),\
+  \ Arrays.asList(4,1,1,0,0,-2)).equals(Arrays.asList(4,4,1,0,0,6)),\n           \
+  \     s.compare(Arrays.asList(1, 2, 3, 4, 5, 1), Arrays.asList(1, 2, 3, 4, 2, -2)).equals(Arrays.asList(0,\
+  \ 0, 0, 0, 3, 3)),\n                s.compare(Arrays.asList(0, 0, 0, 0, 0, 0), Arrays.asList(0,\
+  \ 0, 0, 0, 0, 0)).equals(Arrays.asList(0, 0, 0, 0, 0, 0)),\n                s.compare(Arrays.asList(1,\
+  \ 2, 3), Arrays.asList(-1, -2, -3)).equals(Arrays.asList(2, 4, 6)),\n          \
+  \      s.compare(Arrays.asList(1, 2, 3, 5), Arrays.asList(-1, 2, 3, 4)).equals(Arrays.asList(2,\
+  \ 0, 0, 1))\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

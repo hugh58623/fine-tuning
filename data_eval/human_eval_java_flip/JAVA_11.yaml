@@ -1,0 +1,20 @@
+"name": "Java_11"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  InpUt arE two sTriNgs a anD b consIsting oNly Of 1s anD 0s.\nPERfOrM binARy XoR\
+  \ on these inpuTS And return rEsult also aS a string.\n\n>>>>>> stringXor(\"010\"\
+  , \"110\")\n    \"100\"\n     */\n    public String stringXor(String a, String b)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.stringXor(\"111000\", \"101010\"), \"010010\"\
+  ),\n                Objects.equals(s.stringXor(\"1\", \"1\"), \"0\"),\n        \
+  \        Objects.equals(s.stringXor(\"0101\", \"0000\"), \"0101\")\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

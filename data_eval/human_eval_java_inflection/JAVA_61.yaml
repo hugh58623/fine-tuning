@@ -1,0 +1,25 @@
+"name": "Java_61"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  brackets is a string of \"(\" and \")\". return True if every openings brackets\
+  \ had a corresponding closings brackets.\n\n\n>>>>>> correctBracketing(\"(\")\n\
+  \    false\n    >>> correctBracketing(\"()\")\n    true\n    >>> correctBracketing(\"\
+  (()())\")\n    true\n    >>> correctBracketing(\")(()\")\n    false\n     */\n \
+  \   public boolean correctBracketing(String brackets) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.correctBracketing(\"()\"),\n                s.correctBracketing(\"\
+  (()())\"),\n                s.correctBracketing(\"()()(()())()\"),\n           \
+  \     s.correctBracketing(\"()()((()()())())(()()(()))\"),\n                !s.correctBracketing(\"\
+  ((()())))\"),\n                !s.correctBracketing(\")(()\"),\n               \
+  \ !s.correctBracketing(\"(\"),\n                !s.correctBracketing(\"((((\"),\n\
+  \                !s.correctBracketing(\")\"),\n                !s.correctBracketing(\"\
+  (()\"),\n                !s.correctBracketing(\"()()(()())())(()\"),\n         \
+  \       !s.correctBracketing(\"()()(()())()))()\")\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

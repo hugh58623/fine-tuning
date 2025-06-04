@@ -1,0 +1,31 @@
+name: mbpp_87
+language: py
+prompt: "\n\ndef merge_dictionaries_three(dict1,dict2, dict3):\n    \"\"\"\n    Write\
+  \ a function to merge three dictionaries into a single expression.\n    >>> merge_dictionaries_three({\
+  \ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\"\
+  : \"White\" },{ \"O\": \"Orange\", \"W\": \"White\", \"B\": \"Black\" })\n    {'B':\
+  \ 'Black', 'R': 'Red', 'P': 'Pink', 'G': 'Green', 'W': 'White', 'O': 'Orange'}\n\
+  \    >>> merge_dictionaries_three({ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"\
+  Pink\" }, { \"G\": \"Green\", \"W\": \"White\" },{\"L\":\"lavender\",\"B\":\"Blue\"\
+  })\n    {'W': 'White', 'P': 'Pink', 'B': 'Black', 'R': 'Red', 'G': 'Green', 'L':\
+  \ 'lavender'}\n    >>> merge_dictionaries_three({ \"R\": \"Red\", \"B\": \"Black\"\
+  , \"P\": \"Pink\" },{\"L\":\"lavender\",\"B\":\"Blue\"},{ \"G\": \"Green\", \"W\"\
+  : \"White\" })\n    {'B': 'Black', 'P': 'Pink', 'R': 'Red', 'G': 'Green', 'L': 'lavender',\
+  \ 'W': 'White'}\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({ \"R\"\
+  : \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\": \"White\"\
+  \ },{ \"O\": \"Orange\", \"W\": \"White\", \"B\": \"Black\" })=={'B': 'Black', 'R':\
+  \ 'Red', 'P': 'Pink', 'G': 'Green', 'W': 'White', 'O': 'Orange'}\n    assert candidate({\
+  \ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\"\
+  : \"White\" },{\"L\":\"lavender\",\"B\":\"Blue\"})=={'W': 'White', 'P': 'Pink',\
+  \ 'B': 'Black', 'R': 'Red', 'G': 'Green', 'L': 'lavender'}\n    assert candidate({\
+  \ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" },{\"L\":\"lavender\",\"B\"\
+  :\"Blue\"},{ \"G\": \"Green\", \"W\": \"White\" })=={'B': 'Black', 'P': 'Pink',\
+  \ 'R': 'Red', 'G': 'Green', 'L': 'lavender', 'W': 'White'}\n\n\n\ndef test_check():\n\
+  \    check(merge_dictionaries_three)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

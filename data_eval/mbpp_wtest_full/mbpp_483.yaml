@@ -1,0 +1,15 @@
+name: mbpp_483
+language: py
+prompt: "\n\ndef first_Factorial_Divisible_Number(x):\n    \"\"\"\n    Write a python\
+  \ function to find the first natural number whose factorial is divisible by x.\n\
+  \    >>> first_Factorial_Divisible_Number(10)\n    5\n    >>> first_Factorial_Divisible_Number(15)\n\
+  \    5\n    >>> first_Factorial_Divisible_Number(5)\n    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 5\n    assert candidate(15) == 5\n    assert candidate(5) == 4\n\n\n\ndef test_check():\n\
+  \    check(first_Factorial_Divisible_Number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

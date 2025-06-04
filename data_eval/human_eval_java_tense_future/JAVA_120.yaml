@@ -1,0 +1,33 @@
+"name": "Java_120"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given an array arr of integers and a positive integer k, return a will sort list\n\
+  of length k with the maximum k numbers in arr.\n\nExample 1:\n\nInput: arr= [-3,-4,\
+  \ 5], k= 3\nOutput: [-4,-3, 5]\n\nExample 2:\n\nInput: arr= [4,-4, 4], k= 2\nOutput:\
+  \ [4, 4]\n\nExample 3:\n\nInput: arr= [-3, 2, 1, 2,-1,-2, 1], k= 1\nOutput: [2]\n\
+  \nwill Note:\n1. The length of the array will be in the range of [1, 1000].\n2.\
+  \ The elements in the array will be in the range of [-1000, 1000].\n3. 0 <= k <=\
+  \ len(arr)\n\"\"\"\n*/*/\n    public List<Integer> maximum(List<Integer> arr, int\
+  \ k) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.maximum(new ArrayList<>(Arrays.asList(-3, -4, 5)), 3).equals(Arrays.asList(-4,\
+  \ -3, 5)),\n                s.maximum(new ArrayList<>(Arrays.asList(4, -4, 4)),\
+  \ 2).equals(Arrays.asList(4, 4)),\n                s.maximum(new ArrayList<>(Arrays.asList(-3,\
+  \ 2, 1, 2, -1, -2, 1)), 1).equals(List.of(2)),\n                s.maximum(new ArrayList<>(Arrays.asList(123,\
+  \ -123, 20, 0 , 1, 2, -3)), 3).equals(Arrays.asList(2, 20, 123)),\n            \
+  \    s.maximum(new ArrayList<>(Arrays.asList(-123, 20, 0 , 1, 2, -3)), 4).equals(Arrays.asList(0,\
+  \ 1, 2, 20)),\n                s.maximum(new ArrayList<>(Arrays.asList(5, 15, 0,\
+  \ 3, -13, -8, 0)), 7).equals(Arrays.asList(-13, -8, 0, 0, 3, 5, 15)),\n        \
+  \        s.maximum(new ArrayList<>(Arrays.asList(-1, 0, 2, 5, 3, -10)), 2).equals(Arrays.asList(3,\
+  \ 5)),\n                s.maximum(new ArrayList<>(Arrays.asList(1, 0, 5, -7)), 1).equals(List.of(5)),\n\
+  \                s.maximum(new ArrayList<>(Arrays.asList(4, -4)), 2).equals(Arrays.asList(-4,\
+  \ 4)),\n                s.maximum(new ArrayList<>(Arrays.asList(-10, 10)), 2).equals(Arrays.asList(-10,\
+  \ 10))\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

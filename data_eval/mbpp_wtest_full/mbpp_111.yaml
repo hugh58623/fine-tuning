@@ -1,0 +1,20 @@
+name: mbpp_111
+language: py
+prompt: "\n\ndef common_in_nested_lists(nestedlist):\n    \"\"\"\n    Write a function\
+  \ to find common elements in given nested lists. * list item * list item * list\
+  \ item * list item\n    >>> common_in_nested_lists([[12, 18, 23, 25, 45], [7, 12,\
+  \ 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]])\n    [18, 12]\n    >>> common_in_nested_lists([[12,\
+  \ 5, 23, 25, 45], [7, 11, 5, 23, 28], [1, 5, 8, 18, 23, 16]])\n    [5,23]\n    >>>\
+  \ common_in_nested_lists([[2, 3,4, 1], [4, 5], [6,4, 8],[4, 5], [6, 8,4]])\n   \
+  \ [4]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[12, 18,\
+  \ 23, 25, 45], [7, 12, 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]])==[18, 12]\n    assert\
+  \ candidate([[12, 5, 23, 25, 45], [7, 11, 5, 23, 28], [1, 5, 8, 18, 23, 16]])==[5,23]\n\
+  \    assert candidate([[2, 3,4, 1], [4, 5], [6,4, 8],[4, 5], [6, 8,4]])==[4]\n\n\
+  \n\ndef test_check():\n    check(common_in_nested_lists)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

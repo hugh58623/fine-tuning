@@ -1,0 +1,14 @@
+name: mbpp_813
+language: py
+prompt: "\n\ndef string_length(str1):\n    \"\"\"\n    Write a function to find length\
+  \ of the string.\n    >>> string_length('python')\n    6\n    >>> string_length('program')\n\
+  \    7\n    >>> string_length('language')\n    8\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('python')==6\n\
+  \    assert candidate('program')==7\n    assert candidate('language')==8\n\n\n\n\
+  def test_check():\n    check(string_length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

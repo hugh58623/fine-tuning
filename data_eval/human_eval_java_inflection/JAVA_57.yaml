@@ -1,0 +1,25 @@
+"name": "Java_57"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return True is list elements was monotonically increases or decreasing.\n\n>>>>>>\
+  \ monotonic(Arrays.asList(1, 2, 4, 20))\n    true\n    >>> monotonic(Arrays.asList(1,\
+  \ 20, 4, 10))\n    false\n    >>> monotonic(Arrays.asList(4, 1, 0, -10))\n    true\n\
+  \     */\n    public boolean monotonic(List<Integer> l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.monotonic(new ArrayList<>(Arrays.asList(1, 2, 4, 10))),\n   \
+  \             s.monotonic(new ArrayList<>(Arrays.asList(1, 2, 4, 20))),\n      \
+  \          !s.monotonic(new ArrayList<>(Arrays.asList(1, 20, 4, 10))),\n       \
+  \         s.monotonic(new ArrayList<>(Arrays.asList(4, 1, 0, -10))),\n         \
+  \       s.monotonic(new ArrayList<>(Arrays.asList(4, 1, 1, 0))),\n             \
+  \   !s.monotonic(new ArrayList<>(Arrays.asList(1, 2, 3, 2, 5, 60))),\n         \
+  \       s.monotonic(new ArrayList<>(Arrays.asList(1, 2, 3, 4, 5, 60))),\n      \
+  \          s.monotonic(new ArrayList<>(Arrays.asList(9, 9, 9, 9)))\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

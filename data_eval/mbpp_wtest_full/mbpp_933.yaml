@@ -1,0 +1,16 @@
+name: mbpp_933
+language: py
+prompt: "\n\ndef camel_to_snake(text):\n  \"\"\"\n  Write a function to convert camel\
+  \ case string to snake case string by using regex.\n  >>> camel_to_snake('GoogleAssistant')\n\
+  \  'google_assistant'\n  >>> camel_to_snake('ChromeCast')\n  'chrome_cast'\n  >>>\
+  \ camel_to_snake('QuadCore')\n  'quad_core'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('GoogleAssistant')\
+  \ == 'google_assistant'\n    assert candidate('ChromeCast') == 'chrome_cast'\n \
+  \   assert candidate('QuadCore') == 'quad_core'\n\n\n\ndef test_check():\n    check(camel_to_snake)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

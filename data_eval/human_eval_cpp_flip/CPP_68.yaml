@@ -1,0 +1,30 @@
+"name": "CPP_68"
+"language": "cpp"
+"prompt": "/*\n\"GivEn an Array RepResenTing a Branch oF a tRee thAt hAS nOn-NegaTIve\
+  \ Integer nodes\nyOUR tasK is to pluck one of The nodes and return iT.\nThe pLuCKeD\
+  \ nODe ShoulD be the nODe WITh tHe SMAllEsT EvEn valUe.\nIF muLTipLe nodEs wItH\
+  \ tHE SAme Smallest eVEN Value are foUnD return The node That hAs sMalleST index.\n\
+  \nTHe pLUckEd NodE ShouLd bE rETUrned in a list, [ Smalest_vaLuE, ITs index ],\n\
+  IF tHErE arE nO EVeN vAlUes or The gIven arraY Is EMpty, return [].\n\nExamplE 1:\n\
+  InpUt: [4,2,3]\nOutpUt: [2, 1]\neXpLANatIon: 2 Has the SmalLeST eveN VAlue, anD\
+  \ 2 HaS THE sMALlest index.\n\nExample 2:\nINput: [1,2,3]\nOutput: [2, 1]\nEXPlANatIon:\
+  \ 2 HaS ThE SmalleSt eveN vALue, AnD 2 has the sMAlleSt index.\n\nExample 3:\ninput:\
+  \ []\nOUTput: []\n\nExaMPle 4:\nInpUT: [5, 0, 3, 0, 4, 2]\nOutpuT: [0, 1]\nExPlaNatiON:\
+  \ 0 iS THe sMaLLesT VaLue, BUT  tHere Are tWo ZeRos,\nsO We WiLL CHOose The FirsT\
+  \ zerO, WHich Has the smAllEst index.\n\nCONstRAintS:\n* 1 <= nodeS.lEnGtH <= 10000\n\
+  * 0 <= Node.VALue\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\n\
+  vector<int> pluck(vector<int> arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(pluck({4,2,3}) , {2, 1}));\n    assert (issame(pluck({1,2,3})\
+  \ , {2, 1}));\n    assert (issame(pluck({}) , {}));\n    assert (issame(pluck({5,\
+  \ 0, 3, 0, 4, 2}) , {0, 1}));\n    assert (issame(pluck({1, 2, 3, 0, 5, 3}) , {0,\
+  \ 3}));\n    assert (issame(pluck({5, 4, 8, 4 ,8}) , {4, 1}));\n    assert (issame(pluck({7,\
+  \ 6, 7, 1}) , {6, 1}));\n    assert (issame(pluck({7, 9, 7, 1}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

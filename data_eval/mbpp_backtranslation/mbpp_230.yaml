@@ -1,0 +1,16 @@
+name: mbpp_230
+language: py
+prompt: "def replace_blank(str1, char):\n    \"\"\"\n Write a function to replace\
+  \ spaces with any character in a string.\n Test examples:\n    assert replace_blank(\"hello\
+  \ people\",'@')==(\"hello@people\")\n    assert replace_blank(\"python program language\"\
+  ,'$')==(\"python$program$language\")\n    assert replace_blank(\"blank space\",\"\
+  -\")==(\"blank-space\")\n    \"\"\"\n"
+tests: "assert replace_blank(\"hello people\",'@')==(\"hello@people\")\nassert replace_blank(\"\
+  python program language\",'$')==(\"python$program$language\")\nassert replace_blank(\"\
+  blank space\",\"-\")==(\"blank-space\")"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

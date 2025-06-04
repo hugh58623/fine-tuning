@@ -1,0 +1,26 @@
+"name": "Java_137"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \    Create a function that takes integers, floats, or strings representing\n  \
+  \  real numbers, and returns the larger variable in its given variable type.\n \
+  \   Return None if the values are equal.\n    Note: If a real number is represented\
+  \ as a string, the floating point might be . or ,\n\n    compareOne(1, 2.5) -> Optional.of(2.5)\n\
+  \    compareOne(1, \"2,3\") -> Optional.of(\"2,3\")\n    compareOne(\"5,1\", \"\
+  6\") -> Optional.of(\"6\")\n    compareOne(\"1\", 1) -> Optional.empty()\n     */\n\
+  \    public Optional<Object> compareOne(Object a, Object b) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                (int) s.compareOne(1, 2).get() == 2,\n                (double)\
+  \ s.compareOne(1, 2.5).get() == 2.5,\n                (int) s.compareOne(2, 3).get()\
+  \ == 3,\n                (int) s.compareOne(5, 6).get() == 6,\n                (String)\
+  \ s.compareOne(1, \"2,3\").get() == \"2,3\",\n                (String) s.compareOne(\"\
+  5,1\", \"6\").get() == \"6\",\n                (String) s.compareOne(\"1\", \"2\"\
+  ).get() == \"2\",\n                s.compareOne(\"1\", 1).isEmpty()\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

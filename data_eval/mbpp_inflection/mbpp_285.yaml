@@ -1,0 +1,14 @@
+name: mbpp_285
+language: py
+prompt: "import re\n\n\ndef text_match_two_three(text):\n    \"\"\"\n        Writes a functions\
+  \ that matching a string that had an a following by two to three 'b'.\n        Test examples:\n    assert text_match_two_three(\"ac\")==(False)\n\
+  \    assert text_match_two_three(\"dc\")==(False)\n    assert text_match_two_three(\"\
+  abbbba\")==(True)\n    \"\"\"\n"
+tests: "assert text_match_two_three(\"ac\")==(False)\nassert text_match_two_three(\"\
+  dc\")==(False)\nassert text_match_two_three(\"abbbba\")==(True)"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

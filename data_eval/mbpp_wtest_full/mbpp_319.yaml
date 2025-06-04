@@ -1,0 +1,17 @@
+name: mbpp_319
+language: py
+prompt: "\n\ndef find_long_word(text):\n  \"\"\"\n  Write a function to find all five\
+  \ characters long word in the given string by using regex.\n  >>> find_long_word('Please\
+  \ move back to strem')\n  ['strem']\n  >>> find_long_word('4K Ultra HD streaming\
+  \ player')\n  ['Ultra']\n  >>> find_long_word('Streaming Media Player')\n  ['Media']\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Please\
+  \ move back to strem') == ['strem']\n    assert candidate('4K Ultra HD streaming\
+  \ player') == ['Ultra']\n    assert candidate('Streaming Media Player') == ['Media']\n\
+  \n\n\ndef test_check():\n    check(find_long_word)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

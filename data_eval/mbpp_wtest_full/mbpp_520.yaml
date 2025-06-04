@@ -1,0 +1,14 @@
+name: mbpp_520
+language: py
+prompt: "\n\ndef get_lcm(l):\n  \"\"\"\n  Write a function to find the lcm of the\
+  \ given array elements.\n  >>> get_lcm([2, 7, 3, 9, 4])\n  252\n  >>> get_lcm([1,\
+  \ 2, 8, 3])\n  24\n  >>> get_lcm([3, 8, 4, 10, 5])\n  120\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 7,\
+  \ 3, 9, 4]) == 252\n    assert candidate([1, 2, 8, 3]) == 24\n    assert candidate([3,\
+  \ 8, 4, 10, 5]) == 120\n\n\n\ndef test_check():\n    check(get_lcm)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

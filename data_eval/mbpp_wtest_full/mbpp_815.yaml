@@ -1,0 +1,19 @@
+name: mbpp_815
+language: py
+prompt: "\n\ndef sort_by_dnf(arr, n):\n  \"\"\"\n  Write a function to sort the given\
+  \ array without using any sorting algorithm. the given array consists of only 0,\
+  \ 1, and 2.\n  >>> sort_by_dnf([1,2,0,1,0,1,2,1,1], 9)\n  [0, 0, 1, 1, 1, 1, 1,\
+  \ 2, 2]\n  >>> sort_by_dnf([1,0,0,1,2,1,2,2,1,0], 10)\n  [0, 0, 0, 1, 1, 1, 1, 2,\
+  \ 2, 2]\n  >>> sort_by_dnf([2,2,1,0,0,0,1,1,2,1], 10)\n  [0, 0, 0, 1, 1, 1, 1, 2,\
+  \ 2, 2]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,0,1,0,1,2,1,1],\
+  \ 9) == [0, 0, 1, 1, 1, 1, 1, 2, 2]\n    assert candidate([1,0,0,1,2,1,2,2,1,0],\
+  \ 10) == [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]\n    assert candidate([2,2,1,0,0,0,1,1,2,1],\
+  \ 10) == [0, 0, 0, 1, 1, 1, 1, 2, 2, 2]\n\n\n\ndef test_check():\n    check(sort_by_dnf)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

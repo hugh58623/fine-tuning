@@ -1,0 +1,16 @@
+name: mbpp_537
+language: py
+prompt: "\n\ndef first_repeated_word(str1):\n  \"\"\"\n  Write a python function to\
+  \ find the first repeated word in a given string.\n  >>> first_repeated_word(\"\
+  ab ca bc ab\")\n  \"ab\"\n  >>> first_repeated_word(\"ab ca bc\")\n  'None'\n  >>>\
+  \ first_repeated_word(\"ab ca bc ca ab bc\")\n  \"ca\"\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ab ca\
+  \ bc ab\") == \"ab\"\n    assert candidate(\"ab ca bc\") == 'None'\n    assert candidate(\"\
+  ab ca bc ca ab bc\") == \"ca\"\n\n\n\ndef test_check():\n    check(first_repeated_word)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

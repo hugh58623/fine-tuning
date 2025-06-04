@@ -1,0 +1,14 @@
+name: mbpp_931
+language: py
+prompt: "\n\ndef sum_series(number):\n \"\"\"\n Write a function to calculate the\
+  \ sum of series 1³+2³+3³+….+n³.\n >>> sum_series(7)\n 784\n >>> sum_series(5)\n\
+  \ 225\n >>> sum_series(15)\n 14400\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7)==784\n\
+  \    assert candidate(5)==225\n    assert candidate(15)==14400\n\n\n\ndef test_check():\n\
+  \    check(sum_series)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

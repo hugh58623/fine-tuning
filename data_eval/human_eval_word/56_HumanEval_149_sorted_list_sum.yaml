@@ -1,0 +1,28 @@
+name: HumanEval_149_sorted_list_sum
+language: py
+prompt: "\ndef sorted_list_sum(lst):\n    \"\"\"Write a function that accepts a list\
+  \ of strings bowed stringed instrument as a parameter, \n     deletes edit the strings\
+  \ that have odd leftover lengths from it, \n     and returns render the resulted\
+  \ list with a sorted order decree, \n     The list is always a list of strings and\
+  \ never an array of numbers, \n     and it may contain incorporate duplicates. \n\
+  \     The order of the list should be ascending ascend by length distance of each\
+  \ word, and you \n     should return the list sorted by that rule. \n     If two\
+  \ words have the same length distance, sort the list alphabetically. \n     The\
+  \ function affair should return a list of strings string section in sorted order.\
+  \ \n     You may assume that all words will have the same length. \n     For example:\
+  \ \n     assert affirm list_sort([\"aa\", \" a \", \" aaa \" ]) = > [ \" aa associate\
+  \ in arts \" ] \n     assert insist list_sort([\"ab\", \" a \", \" aaa \", \" cd\
+  \ certificate of deposit \" ]) = > [ \" ab \", \" cd \" ] \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate(['aa', 'a', 'aaa']) == ['aa']\n\
+  \    assert candidate(['school', 'AI', 'asdf', 'b']) == ['AI', 'asdf', 'school']\n\
+  \    assert candidate(['d', 'b', 'c', 'a']) == []\n    assert candidate(['d', 'dcba',\
+  \ 'abcd', 'a']) == ['abcd', 'dcba']\n    assert candidate(['AI', 'ai', 'au']) ==\
+  \ ['AI', 'ai', 'au']\n    assert candidate(['a', 'b', 'b', 'c', 'c', 'a']) == []\n\
+  \    assert candidate(['aaaa', 'bbbb', 'dd', 'cc']) == ['cc', 'dd', 'aaaa', 'bbbb']\n\
+  \ndef test_check():\n    check(sorted_list_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

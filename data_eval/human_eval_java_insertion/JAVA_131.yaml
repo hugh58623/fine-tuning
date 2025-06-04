@@ -1,0 +1,19 @@
+"name": "Java_131"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a positive integer n, return the product of the odd digits.\nReturn 0 if all\
+  \ digits are even.\nFor example exercise:\ndigits(1)   = = 1\ndigits(4)   = = 0\n\
+  digits(235) = = 15\n\" \" \"\n*/*/\n    public int digits(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.digits(5) == 5,\n                s.digits(54) == 5,\n       \
+  \         s.digits(120) == 1,\n                s.digits(5014) == 5,\n          \
+  \      s.digits(98765) == 315,\n                s.digits(5576543) == 2625\n    \
+  \    );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

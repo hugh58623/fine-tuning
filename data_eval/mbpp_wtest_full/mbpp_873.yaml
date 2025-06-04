@@ -1,0 +1,14 @@
+name: mbpp_873
+language: py
+prompt: "\n\ndef fibonacci(n):\n  \"\"\"\n  Write a function to solve the fibonacci\
+  \ sequence using recursion.\n  >>> fibonacci(7)\n  13\n  >>> fibonacci(8)\n  21\n\
+  \  >>> fibonacci(9)\n  34\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7) == 13\n\
+  \    assert candidate(8) == 21\n    assert candidate(9) == 34\n\n\n\ndef test_check():\n\
+  \    check(fibonacci)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,16 @@
+name: mbpp_125
+language: py
+prompt: "\n\ndef find_length(string, n):\n\t\"\"\"\n\tWrite a function to find the\
+  \ maximum difference between the number of 0s and number of 1s in any sub-string\
+  \ of the given binary string.\n\t>>> find_length(\"11000010001\", 11)\n\t6\n\t>>>\
+  \ find_length(\"10111\", 5)\n\t1\n\t>>> find_length(\"11011101100101\", 14)\n\t\
+  2\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"11000010001\"\
+  , 11) == 6\n    assert candidate(\"10111\", 5) == 1\n    assert candidate(\"11011101100101\"\
+  , 14) == 2 \n\n\n\ndef test_check():\n    check(find_length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

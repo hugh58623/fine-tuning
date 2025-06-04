@@ -1,0 +1,15 @@
+name: mbpp_116
+language: py
+prompt: "\n\ndef tuple_to_int(nums):\n    \"\"\"\n    Write a function to convert\
+  \ a given tuple of positive integers into an integer.\n    >>> tuple_to_int((1,2,3))\n\
+  \    123\n    >>> tuple_to_int((4,5,6))\n    456\n    >>> tuple_to_int((5,6,7))\n\
+  \    567\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((1,2,3))==123\n\
+  \    assert candidate((4,5,6))==456\n    assert candidate((5,6,7))==567\n\n\n\n\
+  def test_check():\n    check(tuple_to_int)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,24 @@
+"name": "CPP_17"
+"language": "cpp"
+"prompt": "/*\nInput to this function is a string representing melodious notes in\
+  \ a particular ASCII format.\nYour task is to parse this string and return list\
+  \ of integers equate to how many beats does each\nnot concluding.\n\nHere is a legend:\n\
+  ' oxygen' - whole bill, lasts four beats\n' o|' - one-half bill, lasts two pulse\n\
+  ' .|' - quater eminence, lasts one beat\n\n>>> parse_music('o o| .| o| o| .| .|\
+  \ .| .| o o')\n[4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\nusing namespace std;\nvector<int> parse_music(string music_string){\
+  \ \n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(parse_music(\"\") , {}));\n     assert (issame(parse_music(\"\
+  o o o o\") ,{4, 4, 4, 4}));\n      assert (issame(parse_music(\".| .| .| .|\") ,\
+  \ {1, 1, 1, 1}));\n assert (issame(parse_music(\"o| o| .| .| o o o o\") , {2, 2,\
+  \ 1, 1, 4, 4, 4, 4}));\n  assert (issame(parse_music(\"o| .| o| .| o o| o o|\")\
+  \ , {2, 1, 2, 1, 4, 2, 4, 2}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

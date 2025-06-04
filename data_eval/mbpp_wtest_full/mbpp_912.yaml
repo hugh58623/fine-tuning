@@ -1,0 +1,14 @@
+name: mbpp_912
+language: py
+prompt: "\n\ndef lobb_num(n, m):\n\t\"\"\"\n\tWrite a function to find ln, m lobb\
+  \ number.\n\t>>> lobb_num(5, 3)\n\t35\n\t>>> lobb_num(3, 2)\n\t5\n\t>>> lobb_num(4,\
+  \ 2)\n\t20\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5, 3) ==\
+  \ 35\n    assert candidate(3, 2) == 5\n    assert candidate(4, 2) == 20\n\n\n\n\
+  def test_check():\n    check(lobb_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

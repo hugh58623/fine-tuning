@@ -1,0 +1,40 @@
+"name": "Java_74"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \    Write a function that accepts two lists of strings and returns the list that\
+  \ has\n    total number of chars in the all strings of the list less than the other\
+  \ list.\n\n    if the two lists have the same number of chars, return the first\
+  \ list.\n\n    Examples\n    totalMatch(Arrays.asList(), Arrays.asList()) -> []\n\
+  \    totalMatch(Arrays.asList(\"hi\", \"admin\"), Arrays.asList(\"hI\", \"Hi\"))\
+  \ -> [\"hI\", \"Hi\"]\n    totalMatch(Arrays.asList(\"hi\", \"admin\"), Arrays.asList(\"\
+  hi\", \"hi\", \"admin\", \"project\")) -> [\"hi\", \"admin\"]\n    totalMatch(Arrays.asList(\"\
+  hi\", \"admin\"), Arrays.asList(\"hI\", \"hi\", \"hi\")) -> [\"hI\", \"hi\", \"\
+  hi\"]\n    totalMatch(Arrays.asList(\"4\"), Arrays.asList(\"1\", \"2\", \"3\", \"\
+  4\", \"5\")) -> [\"4\"]\n     */\n    public List<String> totalMatch(List<String>\
+  \ lst1, List<String> lst2) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.totalMatch(new ArrayList<>(List.of()), new ArrayList<>(List.of())).equals(List.of()),\n\
+  \                s.totalMatch(new ArrayList<>(Arrays.asList(\"hi\", \"admin\")),\
+  \ new ArrayList<>(Arrays.asList(\"hi\", \"hi\"))).equals(Arrays.asList(\"hi\", \"\
+  hi\")),\n                s.totalMatch(new ArrayList<>(Arrays.asList(\"hi\", \"admin\"\
+  )), new ArrayList<>(Arrays.asList(\"hi\", \"hi\", \"admin\", \"project\"))).equals(Arrays.asList(\"\
+  hi\", \"admin\")),\n                s.totalMatch(new ArrayList<>(List.of(\"4\")),\
+  \ new ArrayList<>(Arrays.asList(\"1\", \"2\", \"3\", \"4\", \"5\"))).equals(List.of(\"\
+  4\")),\n                s.totalMatch(new ArrayList<>(Arrays.asList(\"hi\", \"admin\"\
+  )), new ArrayList<>(Arrays.asList(\"hI\", \"Hi\"))).equals(Arrays.asList(\"hI\"\
+  , \"Hi\")),\n                s.totalMatch(new ArrayList<>(Arrays.asList(\"hi\",\
+  \ \"admin\")), new ArrayList<>(Arrays.asList(\"hI\", \"hi\", \"hi\"))).equals(Arrays.asList(\"\
+  hI\", \"hi\", \"hi\")),\n                s.totalMatch(new ArrayList<>(Arrays.asList(\"\
+  hi\", \"admin\")), new ArrayList<>(Arrays.asList(\"hI\", \"hi\", \"hii\"))).equals(Arrays.asList(\"\
+  hi\", \"admin\")),\n                s.totalMatch(new ArrayList<>(List.of()), new\
+  \ ArrayList<>(List.of(\"this\"))).equals(List.of()),\n                s.totalMatch(new\
+  \ ArrayList<>(List.of(\"this\")), new ArrayList<>(List.of())).equals(List.of())\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

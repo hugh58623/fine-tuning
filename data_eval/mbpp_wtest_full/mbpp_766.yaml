@@ -1,0 +1,19 @@
+name: mbpp_766
+language: py
+prompt: "\n\ndef pair_wise(l1):\n    \"\"\"\n    Write a function to iterate over\
+  \ all pairs of consecutive items in a given list.\n    >>> pair_wise([1,1,2,3,3,4,4,5])\n\
+  \    [(1, 1), (1, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5)]\n    >>> pair_wise([1,5,7,9,10])\n\
+  \    [(1, 5), (5, 7), (7, 9), (9, 10)]\n    >>> pair_wise([1,2,3,4,5,6,7,8,9,10])\n\
+  \    [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)]\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,1,2,3,3,4,4,5])==[(1,\
+  \ 1), (1, 2), (2, 3), (3, 3), (3, 4), (4, 4), (4, 5)]\n    assert candidate([1,5,7,9,10])==[(1,\
+  \ 5), (5, 7), (7, 9), (9, 10)]\n    assert candidate([1,2,3,4,5,6,7,8,9,10])==[(1,\
+  \ 2), (2, 3), (3, 4), (4, 5), (5, 6), (6, 7), (7, 8), (8, 9), (9, 10)]\n\n\n\ndef\
+  \ test_check():\n    check(pair_wise)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

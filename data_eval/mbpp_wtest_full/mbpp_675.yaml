@@ -1,0 +1,15 @@
+name: mbpp_675
+language: py
+prompt: "\n\ndef sum_nums(x, y,m,n):\n    \"\"\"\n    Write a function to add two\
+  \ integers. however, if the sum is between the given range it will return 20.\n\
+  \    >>> sum_nums(2,10,11,20)\n    20\n    >>> sum_nums(15,17,1,10)\n    32\n  \
+  \  >>> sum_nums(10,15,5,30)\n    20\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,10,11,20)==20\n\
+  \    assert candidate(15,17,1,10)==32\n    assert candidate(10,15,5,30)==20\n\n\n\
+  \ndef test_check():\n    check(sum_nums)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

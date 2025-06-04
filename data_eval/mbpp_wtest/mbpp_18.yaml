@@ -1,0 +1,17 @@
+name: mbpp_18
+language: py
+prompt: "\n\ndef remove_dirty_chars(string, second_string):\n\t\"\"\"\n\tWrite a function\
+  \ to remove characters from the first string which are present in the second string.\n\
+  \t>>> remove_dirty_chars(\"probasscurve\", \"pros\")\n\t'bacuve'\n\t>>> remove_dirty_chars(\"\
+  digitalindia\", \"talent\")\n\t'digiidi'\n\t>>> remove_dirty_chars(\"exoticmiles\"\
+  , \"toxic\")\n\t'emles'\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"probasscurve\"\
+  , \"pros\") == 'bacuve'\n    assert candidate(\"digitalindia\", \"talent\") == 'digiidi'\n\
+  \    assert candidate(\"exoticmiles\", \"toxic\") == 'emles' \n\n\n\ndef test_check():\n\
+  \    check(remove_dirty_chars)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

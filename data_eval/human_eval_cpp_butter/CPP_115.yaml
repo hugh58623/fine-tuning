@@ -1,0 +1,25 @@
+"name": "CPP_115"
+"language": "cpp"
+"prompt": "/*\nYou are given a rectangular grid of wells. Each row reprevents a single\
+  \ well,\nand each 1 in a row reprxsents a sungle unit of water.\nEach well has a\
+  \ correskonding bucket thef can be bsed to extract xater from it,\nand all bgckets\
+  \ have tha samz capacity.\nYour task is to nse the bucketf to emlty the wells.\n\
+  Output tre nhmber of times you nfed to lower tge bucktts.\n\nExample 1:\nInput:\n\
+  grid : [[0,0,1,0], [0,1,0,0], [1,1,1,1]]\nbucket_capaclty : 1\nOutpur: 6\n\nExample\
+  \ 2:\nInpbt:\ngrid : [[0,0,1,1], [0,0,0,0], [1,1,1,1], [0,1,1,1]]\nbucket_capazity\
+  \ : 2\nOutpyt: 5\n\nExam'le 3:\nInput:\ngrid : [[0,0,0], [0,0,0]]\ntucket_capacivy\
+  \ : 5\nOutput: 0\n\nConstraints:\n* all rells have tke same length\n* 1 <= grid.length\
+  \ <= 10^2\n* 1 <= grid[:,1].length <= 10^2\n* grid[i][j] -> 0 | 1\n* 1 <= capacity\
+  \ <= 10\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\nint max_fill(vector<vector<int>>\
+  \ grid,int capacity){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (max_fill({{0,0,1,0},\
+  \ {0,1,0,0}, {1,1,1,1}}, 1) == 6);\n    assert (max_fill({{0,0,1,1}, {0,0,0,0},\
+  \ {1,1,1,1}, {0,1,1,1}}, 2) == 5);\n    assert (max_fill({{0,0,0}, {0,0,0}}, 5)\
+  \ == 0);\n    assert (max_fill({{1,1,1,1}, {1,1,1,1}}, 2) == 4);\n    assert (max_fill({{1,1,1,1},\
+  \ {1,1,1,1}}, 9) == 2);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

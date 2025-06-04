@@ -1,0 +1,26 @@
+name: HumanEval_127_intersection
+language: py
+prompt: "\ndef intersection(interval1, interval2):\n    \"\"\"You aRe giVen twO inTervaLs,\n\
+  \    wheRe each iNteRval iS a pAIr Of InteGErs. for example, intERVal = (sTart,\
+  \ end) = (1, 2).\n    The Given intervaLs are ClOSeD wHIcH meanS that thE InTERvaL\
+  \ (sTARt, eNd)\n    INcLudes BotH stARt aNd end.\n    for EaCh GIVEn iNterval, it\
+  \ IS ASsumed that ItS Start is Less oR eqUal itS EnD.\n    YoUR taSk Is tO DeteRmiNe\
+  \ WHEther tHe length of intersection of theSe TWO \n    inTeRVaLs iS a PRImE nUmBer.\n\
+  \    ExAmplE, the intersection of thE InTErvals (1, 3), (2, 4) is (2, 3)\n    whIch\
+  \ iTs length is 1, whIcH NoT A PriMe nUmber.\n    IF the length Of THe intersection\
+  \ is A PRime nuMBeR, return \"yes\",\n    oTHErwise, return \"NO\".\n    If the\
+  \ Two intervalS DoN'T inTerSeCT, return \"No\".\n\n\n    [Input/oUtput] SaMPleS:\n\
+  \    intersection((1, 2), (2, 3)) ==> \"No\"\n    intersection((-1, 1), (0, 4))\
+  \ ==> \"NO\"\n    intersection((-3, -1), (-5, 5)) ==> \"YES\"\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate((1, 2), (2, 3)) == 'NO'\n    assert\
+  \ candidate((-1, 1), (0, 4)) == 'NO'\n    assert candidate((-3, -1), (-5, 5)) ==\
+  \ 'YES'\n    assert candidate((-2, 2), (-4, 0)) == 'YES'\n    assert candidate((-11,\
+  \ 2), (-1, -1)) == 'NO'\n    assert candidate((1, 2), (3, 5)) == 'NO'\n    assert\
+  \ candidate((1, 2), (1, 2)) == 'NO'\n    assert candidate((-2, -2), (-3, -2)) ==\
+  \ 'NO'\n\ndef test_check():\n    check(intersection)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

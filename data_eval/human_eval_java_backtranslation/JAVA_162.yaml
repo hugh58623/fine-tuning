@@ -1,0 +1,22 @@
+"name": "Java_162"
+"language": "Java"
+"prompt": "import java.math.BigInteger;\nimport java.security.*;\nimport java.util.*;\n\
+  import java.lang.*;\n\nclass Solution {\n    /**\nIf you return a string \"text,\"\
+  \ you return the corresponding md5 hash string; if \"text\" is an empty string,\
+  \ you return None.\n\n\n>>>>>> stringToMd5(\"Hello world\") == \"3e25960a79dbc69b674cd4ec67a72c62\"\
+  \n     */\n    public Optional<String> stringToMd5(String text) throws NoSuchAlgorithmException\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) throws NoSuchAlgorithmException\
+  \ {\n        Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.stringToMd5(\"Hello world\").get().equals(\"3e25960a79dbc69b674cd4ec67a72c62\"\
+  ),\n                s.stringToMd5(\"\").isEmpty(),\n                s.stringToMd5(\"\
+  A B C\").get().equals(\"0ef78513b0cb8cef12743f5aeb35f888\"),\n                s.stringToMd5(\"\
+  password\").get().equals(\"5f4dcc3b5aa765d61d8327deb882cf99\")\n        );\n   \
+  \     if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_378
+language: py
+prompt: "\n\ndef move_first(test_list):\n  \"\"\"\n  Write a python function to shift\
+  \ last element to first position in the given list.\n  >>> move_first([1,2,3,4])\n\
+  \  [4,1,2,3]\n  >>> move_first([0,1,2,3])\n  [3,0,1,2]\n  >>> move_first([9,8,7,1])\n\
+  \  [1,9,8,7]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4])\
+  \ == [4,1,2,3]\n    assert candidate([0,1,2,3]) == [3,0,1,2]\n    assert candidate([9,8,7,1])\
+  \ == [1,9,8,7]\n\n\n\ndef test_check():\n    check(move_first)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

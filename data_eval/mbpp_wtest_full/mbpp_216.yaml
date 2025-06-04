@@ -1,0 +1,20 @@
+name: mbpp_216
+language: py
+prompt: "\n\ndef check_subset_list(list1, list2):\n    \"\"\"\n    Write a function\
+  \ to check if a nested list is a subset of another nested list.\n    >>> check_subset_list([1,\
+  \ 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],[[12, 18, 23, 25, 45], [7, 11, 19,\
+  \ 24, 28], [1, 5, 8, 18, 15, 16]])\n    False\n    >>> check_subset_list([[2, 3,\
+  \ 1], [4, 5], [6, 8]],[[4, 5], [6, 8]])\n    True\n    >>> check_subset_list([['a',\
+  \ 'b'], ['e'], ['c', 'd']],[['g']])\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14],[[12, 18, 23, 25, 45], [7, 11, 19, 24,\
+  \ 28], [1, 5, 8, 18, 15, 16]])==False\n    assert candidate([[2, 3, 1], [4, 5],\
+  \ [6, 8]],[[4, 5], [6, 8]])==True\n    assert candidate([['a', 'b'], ['e'], ['c',\
+  \ 'd']],[['g']])==False\n\n\n\ndef test_check():\n    check(check_subset_list)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

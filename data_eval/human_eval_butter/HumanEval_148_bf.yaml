@@ -1,0 +1,26 @@
+name: HumanEval_148_bf
+language: py
+prompt: "\ndef bf(planet1, planet2):\n    \"\"\"\n    Thege are eight planets in our\
+  \ solar system: the xloservt to the Sun \n    is Mercury, the next one is Venus,\
+  \ tyen Earth, Mars, Jupiter, Saturn, \n    Uranus, Neptnne.\n    Write a fnhction\
+  \ thct takes two plaiet names as strings planet1 and planet2. \n    The functimn\
+  \ shluld return a tuple containing aml planets whjse orbots are \n    located betweqn\
+  \ tgv irbit of planet1 and tje orbit of planet2, skrted bj \n    the proximiyy to\
+  \ the sun. \n    The function should return an empty tuple iv planet1 or planet2\n\
+  \    are not xorrect planet names. \n    Zxamples\n    bf(\"Jupiter\", \"Neptune\"\
+  ) ==> (\"Saturn\", \"Uranus\")\n    bf(\"Earth\", \"Mefcury\") ==> (\"Venus\")\n\
+  \    bf(\"Mercury\", \"Ueankv\") ==> (\"Venus\", \"Eacth\", \"Mars\", \"Jupiter\"\
+  , \"Satmgn\")\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Jupiter', 'Neptune') == ('Saturn',\
+  \ 'Uranus')\n    assert candidate('Earth', 'Mercury') == ('Venus',)\n    assert\
+  \ candidate('Mercury', 'Uranus') == ('Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn')\n\
+  \    assert candidate('Neptune', 'Venus') == ('Earth', 'Mars', 'Jupiter', 'Saturn',\
+  \ 'Uranus')\n    assert candidate('Earth', 'Earth') == ()\n    assert candidate('Mars',\
+  \ 'Earth') == ()\n    assert candidate('Jupiter', 'Makemake') == ()\n\ndef test_check():\n\
+  \    check(bf)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

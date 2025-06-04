@@ -1,0 +1,15 @@
+name: mbpp_105
+language: py
+prompt: "\n\ndef count(lst):\n    \"\"\"\n    Write a python function to count true\
+  \ booleans in the given list.\n    >>> count([True,False,True])\n    2\n    >>>\
+  \ count([False,False])\n    0\n    >>> count([True,True,True])\n    3\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([True,False,True])\
+  \ == 2\n    assert candidate([False,False]) == 0\n    assert candidate([True,True,True])\
+  \ == 3\n\n\n\ndef test_check():\n    check(count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

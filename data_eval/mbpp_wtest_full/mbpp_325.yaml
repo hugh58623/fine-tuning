@@ -1,0 +1,15 @@
+name: mbpp_325
+language: py
+prompt: "\n\ndef get_Min_Squares(n):\n    \"\"\"\n    Write a python function to find\
+  \ the minimum number of squares whose sum is equal to a given number.\n    >>> get_Min_Squares(6)\n\
+  \    3\n    >>> get_Min_Squares(2)\n    2\n    >>> get_Min_Squares(4)\n    1\n \
+  \   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(6) == 3\n\
+  \    assert candidate(2) == 2\n    assert candidate(4) == 1\n\n\n\ndef test_check():\n\
+  \    check(get_Min_Squares)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

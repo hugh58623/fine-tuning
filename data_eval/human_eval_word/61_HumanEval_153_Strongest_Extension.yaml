@@ -1,0 +1,32 @@
+name: HumanEval_153_Strongest_Extension
+language: py
+prompt: "\ndef Strongest_Extension(class_name, extensions):\n    \"\"\"You will is\
+  \ gives the names of a class (a string) and a list of extensions.\n The extensions\
+  \ was to is using to loading additional classes to the class. The strengths of the\
+  \ extension is as following: Let CAPS is the number of the uppercase letters in\
+  \ the extension's names, and let SM is the number of lowercase letters in the extension's\
+  \ names, the strengths is gives by the fractions CAPS - SM. You should found the\
+  \ strongest extension and return a string in this format: ClassName.StrongestExtensionName.\
+  \ If there was two or more extensions with the same strengths, you should choose\
+  \ the ones that comes first in the list.\n For examples, if you was gives \"Slice\"\
+  \ as the class and a list of the extensions: ['SErviNGSliCes', 'Cheese', 'StuFfed']\
+  \ then you should return 'Slice.SErviNGSliCes' since 'SErviNGSliCes' is the strongest\
+  \ extension (its strengths is -1). Examples: for Strongest_Extension('my_class',\
+  \ ['AA', 'Be', 'CC']) == 'my_class.AA' \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('Watashi', ['tEN', 'niNE', 'eIGHt8OKe'])\
+  \ == 'Watashi.eIGHt8OKe'\n    assert candidate('Boku123', ['nani', 'NazeDa', 'YEs.WeCaNe',\
+  \ '32145tggg']) == 'Boku123.YEs.WeCaNe'\n    assert candidate('__YESIMHERE', ['t',\
+  \ 'eMptY', 'nothing', 'zeR00', 'NuLl__', '123NoooneB321']) == '__YESIMHERE.NuLl__'\n\
+  \    assert candidate('K', ['Ta', 'TAR', 't234An', 'cosSo']) == 'K.TAR'\n    assert\
+  \ candidate('__HAHA', ['Tab', '123', '781345', '-_-']) == '__HAHA.123'\n    assert\
+  \ candidate('YameRore', ['HhAas', 'okIWILL123', 'WorkOut', 'Fails', '-_-']) == 'YameRore.okIWILL123'\n\
+  \    assert candidate('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW']) == 'finNNalLLly.WoW'\n\
+  \    assert candidate('_', ['Bb', '91245']) == '_.Bb'\n    assert candidate('Sp',\
+  \ ['671235', 'Bb']) == 'Sp.671235'\n\ndef test_check():\n    check(Strongest_Extension)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

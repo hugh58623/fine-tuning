@@ -1,0 +1,15 @@
+name: mbpp_953
+language: py
+prompt: "\n\ndef subset(ar, n):\n    \"\"\"\n    Write a python function to find the\
+  \ minimun number of subsets with distinct elements.\n    >>> subset([1, 2, 3, 4],4)\n\
+  \    1\n    >>> subset([5, 6, 9, 3, 4, 3, 4],7)\n    2\n    >>> subset([1, 2, 3\
+  \ ],3)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4],4) == 1\n    assert candidate([5, 6, 9, 3, 4, 3, 4],7) == 2\n    assert\
+  \ candidate([1, 2, 3 ],3) == 1\n\n\n\ndef test_check():\n    check(subset)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

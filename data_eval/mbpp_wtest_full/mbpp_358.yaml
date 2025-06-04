@@ -1,0 +1,15 @@
+name: mbpp_358
+language: py
+prompt: "\n\ndef moddiv_list(nums1,nums2):\n  \"\"\"\n  Write a function to find modulo\
+  \ division of two lists using map and lambda function.\n  >>> moddiv_list([4,5,6],[1,\
+  \ 2, 3])\n  [0, 1, 0]\n  >>> moddiv_list([3,2],[1,4])\n  [0, 2]\n  >>> moddiv_list([90,120],[50,70])\n\
+  \  [40, 50]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([4,5,6],[1,\
+  \ 2, 3])==[0, 1, 0]\n    assert candidate([3,2],[1,4])==[0, 2]\n    assert candidate([90,120],[50,70])==[40,\
+  \ 50]\n\n\n\ndef test_check():\n    check(moddiv_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

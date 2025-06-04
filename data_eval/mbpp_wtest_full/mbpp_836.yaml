@@ -1,0 +1,16 @@
+name: mbpp_836
+language: py
+prompt: "\n\ndef max_sub_array_sum(a,size):\n\t\"\"\"\n\tWrite a function to find\
+  \ length of the subarray having maximum sum.\n\t>>> max_sub_array_sum([-2, -3, 4,\
+  \ -1, -2, 1, 5, -3],8)\n\t5\n\t>>> max_sub_array_sum([1, -2, 1, 1, -2, 1],6)\n\t\
+  2\n\t>>> max_sub_array_sum([-1, -2, 3, 4, 5],5)\n\t3\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([-2, -3,\
+  \ 4, -1, -2, 1, 5, -3],8) == 5\n    assert candidate([1, -2, 1, 1, -2, 1],6) ==\
+  \ 2\n    assert candidate([-1, -2, 3, 4, 5],5) == 3\n\n\n\ndef test_check():\n \
+  \   check(max_sub_array_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

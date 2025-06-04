@@ -1,0 +1,19 @@
+name: mbpp_456
+language: py
+prompt: "\n\ndef reverse_string_list(stringlist):\n    \"\"\"\n    Write a function\
+  \ to reverse strings in a given list of string values.\n    >>> reverse_string_list(['Red',\
+  \ 'Green', 'Blue', 'White', 'Black'])\n    ['deR', 'neerG', 'eulB', 'etihW', 'kcalB']\n\
+  \    >>> reverse_string_list(['john','amal','joel','george'])\n    ['nhoj','lama','leoj','egroeg']\n\
+  \    >>> reverse_string_list(['jack','john','mary'])\n    ['kcaj','nhoj','yram']\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['Red',\
+  \ 'Green', 'Blue', 'White', 'Black'])==['deR', 'neerG', 'eulB', 'etihW', 'kcalB']\n\
+  \    assert candidate(['john','amal','joel','george'])==['nhoj','lama','leoj','egroeg']\n\
+  \    assert candidate(['jack','john','mary'])==['kcaj','nhoj','yram']\n\n\n\ndef\
+  \ test_check():\n    check(reverse_string_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

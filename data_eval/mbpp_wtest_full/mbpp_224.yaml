@@ -1,0 +1,14 @@
+name: mbpp_224
+language: py
+prompt: "\n\ndef count_Set_Bits(n):\n    \"\"\"\n    Write a python function to count\
+  \ set bits of a given number.\n    >>> count_Set_Bits(2)\n    1\n    >>> count_Set_Bits(4)\n\
+  \    1\n    >>> count_Set_Bits(6)\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 1\n\
+  \    assert candidate(4) == 1\n    assert candidate(6) == 2\n\n\n\ndef test_check():\n\
+  \    check(count_Set_Bits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

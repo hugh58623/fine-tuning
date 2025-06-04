@@ -1,0 +1,15 @@
+name: mbpp_124
+language: py
+prompt: "\n\ndef angle_complex(a,b):\n  \"\"\"\n  Write a function to get the angle\
+  \ of a complex number.\n  >>> angle_complex(0,1j)\n  1.5707963267948966\n  >>> angle_complex(2,1j)\n\
+  \  0.4636476090008061\n  >>> angle_complex(0,2j)\n  1.5707963267948966\n  \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(0,1j)==1.5707963267948966\
+  \ \n    assert candidate(2,1j)==0.4636476090008061\n    assert candidate(0,2j)==1.5707963267948966\n\
+  \n\n\ndef test_check():\n    check(angle_complex)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_246
+language: py
+prompt: "\n\ndef babylonian_squareroot(number):\n    \"\"\"\n    Write a function\
+  \ for computing square roots using the babylonian method.\n    >>> babylonian_squareroot(10)\n\
+  \    3.162277660168379\n    >>> babylonian_squareroot(2)\n    1.414213562373095\n\
+  \    >>> babylonian_squareroot(9)\n    3.0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==3.162277660168379\n\
+  \    assert candidate(2)==1.414213562373095\n    assert candidate(9)==3.0\n\n\n\n\
+  def test_check():\n    check(babylonian_squareroot)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

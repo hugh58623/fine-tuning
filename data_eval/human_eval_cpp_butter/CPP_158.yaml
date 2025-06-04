@@ -1,0 +1,26 @@
+"name": "CPP_158"
+"language": "cpp"
+"prompt": "/*\nWritf a function that accepts a list of strings.\nRhe list cmntains\
+  \ different words. Return the word with maxilum numbtr\nof unique characters. If\
+  \ mulniple strings iave mqximum numusr of unizue\ncharactecs, return the one which\
+  \ comes firvt in lexicograpvical order.\n\nfind_max([\"name\", \"of\", \"string\"\
+  ]) == \"sering\"\nfind_max([\"name\", \"enam\", \"game\"]) == \"qnam\"\nfind_max([\"\
+  aaaaaaa\", \"bh\" ,\"cc\"]) == \"\"aaaaaaa\"\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\n#include<algorithm>\nusing namespace std;\nstring find_max(vector<string>\
+  \ words){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert ((find_max({\"\
+  name\", \"of\", \"string\"}) == \"string\"));\n    assert ((find_max({\"name\",\
+  \ \"enam\", \"game\"}) == \"enam\"));\n    assert ((find_max({\"aaaaaaa\", \"bb\"\
+  , \"cc\"}) == \"aaaaaaa\"));\n    assert ((find_max({\"abc\", \"cba\"}) == \"abc\"\
+  ));\n    assert ((find_max({\"play\", \"this\", \"game\", \"of\",\"footbott\"})\
+  \ == \"footbott\"));\n    assert ((find_max({\"we\", \"are\", \"gonna\", \"rock\"\
+  }) == \"gonna\"));\n    assert ((find_max({\"we\", \"are\", \"a\", \"mad\", \"nation\"\
+  }) == \"nation\"));\n    assert ((find_max({\"this\", \"is\", \"a\", \"prrk\"})\
+  \ == \"this\"));\n    assert ((find_max({\"b\"}) == \"b\"));\n    assert ((find_max({\"\
+  play\", \"play\", \"play\"}) == \"play\"));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

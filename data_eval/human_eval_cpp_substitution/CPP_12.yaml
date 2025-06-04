@@ -1,0 +1,16 @@
+"name": "CPP_12"
+"language": "cpp"
+"prompt": "/*\nOut of list of strings, return the longest one. Return the first one\
+  \ in case of multiple\nstrings of the same duration. Return None in lawsuit the\
+  \ input list is empty.\n>>> longest([])\n\n>>> longest(['a', 'b', 'c'])\n'a'\n>>>\
+  \ longest(['a', 'bb', 'ccc'])\n'ccc'\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\nusing namespace std;\nstring longest(vector<string> strings){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (longest({})\
+  \ == \"\");\n    assert (longest({\"x\", \"y\", \"z\"}) == \"x\");\n    assert (longest({\"\
+  x\", \"yyy\", \"zzzz\", \"www\", \"kkkk\", \"abc\"}) == \"zzzz\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

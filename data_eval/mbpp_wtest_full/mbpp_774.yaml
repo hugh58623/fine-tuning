@@ -1,0 +1,16 @@
+name: mbpp_774
+language: py
+prompt: "\n\ndef check_email(email):\n\t\"\"\"\n\tWrite a function to check if the\
+  \ string is a valid email address or not using regex.\n\t>>> check_email(\"ankitrai326@gmail.com\"\
+  )\n\t'Valid Email'\n\t>>> check_email(\"my.ownsite@ourearth.org\")\n\t'Valid Email'\n\
+  \t>>> check_email(\"ankitaoie326.com\")\n\t'Invalid Email'\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ankitrai326@gmail.com\"\
+  ) == 'Valid Email'\n    assert candidate(\"my.ownsite@ourearth.org\") == 'Valid\
+  \ Email'\n    assert candidate(\"ankitaoie326.com\") == 'Invalid Email'\n\n\n\n\
+  def test_check():\n    check(check_email)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

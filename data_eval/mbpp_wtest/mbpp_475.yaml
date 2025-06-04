@@ -1,0 +1,20 @@
+name: mbpp_475
+language: py
+prompt: "\n\ndef sort_counter(dict1):\n \"\"\"\n Write a function to sort counter\
+  \ by value.\n >>> sort_counter({'Math':81, 'Physics':83, 'Chemistry':87})\n [('Chemistry',\
+  \ 87), ('Physics', 83), ('Math', 81)]\n >>> sort_counter({'Math':400, 'Physics':300,\
+  \ 'Chemistry':250})\n [('Math', 400), ('Physics', 300), ('Chemistry', 250)]\n >>>\
+  \ sort_counter({'Math':900, 'Physics':1000, 'Chemistry':1250})\n [('Chemistry',\
+  \ 1250), ('Physics', 1000), ('Math', 900)]\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'Math':81,\
+  \ 'Physics':83, 'Chemistry':87})==[('Chemistry', 87), ('Physics', 83), ('Math',\
+  \ 81)]\n    assert candidate({'Math':400, 'Physics':300, 'Chemistry':250})==[('Math',\
+  \ 400), ('Physics', 300), ('Chemistry', 250)]\n    assert candidate({'Math':900,\
+  \ 'Physics':1000, 'Chemistry':1250})==[('Chemistry', 1250), ('Physics', 1000), ('Math',\
+  \ 900)]\n\n\n\ndef test_check():\n    check(sort_counter)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

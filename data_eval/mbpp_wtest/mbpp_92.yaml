@@ -1,0 +1,15 @@
+name: mbpp_92
+language: py
+prompt: "\n\ndef is_undulating(n):\n\t\"\"\"\n\tWrite a function to check whether\
+  \ the given number is undulating or not.\n\t>>> is_undulating(\"1212121\")\n\tTrue\n\
+  \t>>> is_undulating(\"1991\")\n\tFalse\n\t>>> is_undulating(\"121\")\n\tTrue\n\t\
+  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"1212121\"\
+  ) == True\n    assert candidate(\"1991\") == False\n    assert candidate(\"121\"\
+  ) == True\n\n\n\ndef test_check():\n    check(is_undulating)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

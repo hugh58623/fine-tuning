@@ -1,0 +1,21 @@
+"name": "CPP_37"
+"language": "cpp"
+"prompt": "/*\nThis FuncTion tAkeS a list l and ReturNs a list l' such ThaT\nl' is\
+  \ idEntICaL tO l in the ODd iNdicies, while iTS ValuEs at the eveN indicies are\
+  \ Equal\nTo THe VaLUeS of thE even inDIcIES of l, BuT SOrtEd.\n>>> sort_even([1,\
+  \ 2, 3])\n[1, 2, 3]\n>>> sort_even([5, 6, 3, 4])\n[3, 6, 5, 4]\n*/\n#include<stdio.h>\n\
+  #include<math.h>\n#include<vector>\n#include<algorithm>\nusing namespace std;\n\
+  vector<float> sort_even(vector<float> l){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<float> a,vector<float>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (abs(a[i]-b[i])>1e-4) return false;\n    }\n    return true;\n\
+  }\nint main(){\n    assert (issame(sort_even({1, 2, 3}), {1, 2, 3}));\n    assert\
+  \ (issame(sort_even({5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10}) , {-10, 3, -5, 2, -3,\
+  \ 3, 5, 0, 9, 1, 123}));\n    assert (issame(sort_even({5, 8, -12, 4, 23, 2, 3,\
+  \ 11, 12, -10}) , {-12, 8, 3, 4, 5, 2, 12, 11, 23, -10}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

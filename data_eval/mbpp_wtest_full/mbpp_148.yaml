@@ -1,0 +1,15 @@
+name: mbpp_148
+language: py
+prompt: "\n\ndef sum_digits_twoparts(N) :\n    \"\"\"\n    Write a function to divide\
+  \ a number into two parts such that the sum of digits is maximum.\n    >>> sum_digits_twoparts(35)\n\
+  \    17\n    >>> sum_digits_twoparts(7)\n    7\n    >>> sum_digits_twoparts(100)\n\
+  \    19\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(35)==17\n\
+  \    assert candidate(7)==7\n    assert candidate(100)==19\n\n\n\ndef test_check():\n\
+  \    check(sum_digits_twoparts)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

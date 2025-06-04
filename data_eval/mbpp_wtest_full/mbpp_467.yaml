@@ -1,0 +1,15 @@
+name: mbpp_467
+language: py
+prompt: "\n\ndef decimal_to_Octal(deciNum):\n    \"\"\"\n    Write a python function\
+  \ to convert decimal number to octal number.\n    >>> decimal_to_Octal(10)\n   \
+  \ 12\n    >>> decimal_to_Octal(2)\n    2\n    >>> decimal_to_Octal(33)\n    41\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 12\n    assert candidate(2) == 2\n    assert candidate(33) == 41\n\n\n\ndef test_check():\n\
+  \    check(decimal_to_Octal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

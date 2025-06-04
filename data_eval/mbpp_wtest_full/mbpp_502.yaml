@@ -1,0 +1,14 @@
+name: mbpp_502
+language: py
+prompt: "\n\ndef find(n,m):\n  \"\"\"\n  Write a python function to find remainder\
+  \ of two numbers.\n  >>> find(3,3)\n  0\n  >>> find(10,3)\n  1\n  >>> find(16,5)\n\
+  \  1\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3,3) ==\
+  \ 0\n    assert candidate(10,3) == 1\n    assert candidate(16,5) == 1\n\n\n\ndef\
+  \ test_check():\n    check(find)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

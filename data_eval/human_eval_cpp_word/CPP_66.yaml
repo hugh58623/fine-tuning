@@ -1,0 +1,20 @@
+"name": "CPP_66"
+"language": "cpp"
+"prompt": "/*\nTask\nWrite a function routine that takes a string chain as input and\
+  \ returns fall the sum of the upper characters only'\nASCII codes code.\n\nExamples:\n\
+  digitSum(\"\") = > 0\ndigitSum(\"abAB\") = > 131\ndigitSum(\"abcCd\") = > 67\ndigitSum(\"\
+  helloE\") = > 69\ndigitSum(\"woArBld\") = > 131\ndigitSum(\"aAaaaXa\") = > 153\n\
+  */\n#include<stdio.h>\n#include<string>\nusing namespace std;\nint digitSum(string\
+  \ s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (digitSum(\"\"\
+  ) == 0);\n    assert (digitSum(\"abAB\") == 131);\n    assert (digitSum(\"abcCd\"\
+  ) == 67);\n    assert (digitSum(\"helloE\") == 69);\n    assert (digitSum(\"woArBld\"\
+  ) == 131);\n    assert (digitSum(\"aAaaaXa\") == 153);\n    assert (digitSum(\"\
+  \ How are yOu?\") == 151);\n    assert (digitSum(\"You arE Very Smart\") == 327);\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

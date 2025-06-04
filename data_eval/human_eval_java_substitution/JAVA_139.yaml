@@ -1,0 +1,20 @@
+"name": "Java_139"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  The Brazilian factorial is defined as:\nbrazilian_factorial(n) = n! * (n-1)! * (n-2)!\
+  \ *... * 1!\nwhere n > 0\n\nFor example:\n\n>>>>>> specialFactorial(4)\n    288\n\
+  \n    The function will receive an integer as input and should return the special\n\
+  \    factorial of this integer.\n     */\n    public long specialFactorial(int n)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.specialFactorial(4) == 288,\n                s.specialFactorial(5)\
+  \ == 34560,\n                s.specialFactorial(7) == 125411328000L,\n         \
+  \       s.specialFactorial(1) == 1\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,30 @@
+"name": "Java_148"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  TheRe arE eighT plAnets in Our soLar systEm: tHe cloSerST tO tHe SuN\nIs MErcury,\
+  \ the next ONE is VEnus, then EaRth, Mars, JupitEr, SatUrN,\nurAnUS, NEptunE.\n\
+  Write a FUnCTIon ThAT TakEs TWo PlaneT naMes AS stRings planet1 And planet2.\nthE\
+  \ fUNCTioN should return a tuple cONTAining all pLaNEts whosE orbiTs aRe\nlocATeD\
+  \ beTWeeN tHe oRBit oF planet1 anD tHE Orbit oF planet2, sorted by\nThE PRoxImITy\
+  \ To tHe SUN.\nTHe FuNctioN shoUld return an empTY tuple iF planet1 Or planet2\n\
+  are not coRrecT planeT nAMeS.\neXamPleS\nbf(\"Jupiter\", \"NeptuNe\") ==> (\"SaTuRN\"\
+  , \"UraNUS\")\nbf(\"Earth\", \"MercuRY\") ==> (\"VENUS\")\nbf(\"Mercury\", \"URANus\"\
+  ) ==> (\"Venus\", \"Earth\", \"mars\", \"Jupiter\", \"sAtURn\")\n\"\"\"\n*/*/\n\
+  \    public List<String> bf(String planet1, String planet2) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.bf(\"Jupiter\", \"Neptune\").equals(Arrays.asList(\"Saturn\"\
+  , \"Uranus\")),\n                s.bf(\"Earth\", \"Mercury\").equals(List.of(\"\
+  Venus\")),\n                s.bf(\"Mercury\", \"Uranus\").equals(Arrays.asList(\"\
+  Venus\", \"Earth\", \"Mars\", \"Jupiter\", \"Saturn\")),\n                s.bf(\"\
+  Neptune\", \"Venus\").equals(Arrays.asList(\"Earth\", \"Mars\", \"Jupiter\", \"\
+  Saturn\", \"Uranus\")),\n                s.bf(\"Earth\", \"Earth\").equals(List.of()),\n\
+  \                s.bf(\"Mars\", \"Earth\").equals(List.of()),\n                s.bf(\"\
+  Jupiter\", \"Makemake\").equals(List.of())\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

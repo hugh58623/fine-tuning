@@ -1,0 +1,22 @@
+"name": "CPP_82"
+"language": "cpp"
+"prompt": "\ndef prime_length(string):\n    \"\"\"Write a function that takes a string\
+  \ and returns true if the string length is a prime number or False otherwise Examples\
+  \ prime _ length ('hello') = = True prime _ length ('abcdcba') = = True prime _\
+  \ length ('kittens') = = True prime _ length ('orange') = = False \"\" \"\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (prime_length(\"\
+  Hello\") == true);\n    assert (prime_length(\"abcdcba\") == true);\n    assert\
+  \ (prime_length(\"kittens\") == true);\n    assert (prime_length(\"orange\") ==\
+  \ false);\n    assert (prime_length(\"wow\") == true);\n    assert (prime_length(\"\
+  world\") == true);\n    assert (prime_length(\"MadaM\") == true);\n    assert (prime_length(\"\
+  Wow\") == true);\n    assert (prime_length(\"\") == false);\n    assert (prime_length(\"\
+  HI\") == true);\n    assert (prime_length(\"go\") == true);\n    assert (prime_length(\"\
+  gogo\") == false);\n    assert (prime_length(\"aaaaaaaaaaaaaaa\") == false);\n \
+  \   assert (prime_length(\"Madam\") == true);\n    assert (prime_length(\"M\") ==\
+  \ false);\n    assert (prime_length(\"0\") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

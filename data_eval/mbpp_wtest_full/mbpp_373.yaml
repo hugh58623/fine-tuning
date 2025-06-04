@@ -1,0 +1,14 @@
+name: mbpp_373
+language: py
+prompt: "\n\ndef volume_cuboid(l,w,h):\n  \"\"\"\n  Write a function to find the volume\
+  \ of a cuboid.\n  >>> volume_cuboid(1,2,3)\n  6\n  >>> volume_cuboid(5,7,9)\n  315\n\
+  \  >>> volume_cuboid(10,15,21)\n  3150\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,2,3)==6\n\
+  \    assert candidate(5,7,9)==315\n    assert candidate(10,15,21)==3150\n\n\n\n\
+  def test_check():\n    check(volume_cuboid)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,18 @@
+name: mbpp_854
+language: py
+prompt: "\n\ndef raw_heap(rawheap):\n  \"\"\"\n  Write a function which accepts an\
+  \ arbitrary list and converts it to a heap using heap queue algorithm.\n  >>> raw_heap([25,\
+  \ 44, 68, 21, 39, 23, 89])\n  [21, 25, 23, 44, 39, 68, 89]\n  >>> raw_heap([25,\
+  \ 35, 22, 85, 14, 65, 75, 25, 58])\n  [14, 25, 22, 25, 35, 65, 75, 85, 58]\n  >>>\
+  \ raw_heap([4, 5, 6, 2])\n  [2, 4, 6, 5]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([25, 44,\
+  \ 68, 21, 39, 23, 89])==[21, 25, 23, 44, 39, 68, 89]\n    assert candidate([25,\
+  \ 35, 22, 85, 14, 65, 75, 25, 58])== [14, 25, 22, 25, 35, 65, 75, 85, 58]\n    assert\
+  \ candidate([4, 5, 6, 2])==[2, 4, 6, 5]\n\n\n\ndef test_check():\n    check(raw_heap)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

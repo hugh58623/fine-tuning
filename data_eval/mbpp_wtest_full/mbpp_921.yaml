@@ -1,0 +1,19 @@
+name: mbpp_921
+language: py
+prompt: "\n\ndef chunk_tuples(test_tup, N):\n  \"\"\"\n  Write a function to perform\
+  \ chunking of tuples each of size n.\n  >>> chunk_tuples((10, 4, 5, 6, 7, 6, 8,\
+  \ 3, 4), 3)\n  [(10, 4, 5), (6, 7, 6), (8, 3, 4)]\n  >>> chunk_tuples((1, 2, 3,\
+  \ 4, 5, 6, 7, 8, 9), 2)\n  [(1, 2), (3, 4), (5, 6), (7, 8), (9,)]\n  >>> chunk_tuples((11,\
+  \ 14, 16, 17, 19, 21, 22, 25), 4)\n  [(11, 14, 16, 17), (19, 21, 22, 25)]\n  \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 5, 6, 7, 6, 8, 3, 4), 3) == [(10, 4, 5), (6, 7, 6), (8, 3, 4)]\n    assert candidate((1,\
+  \ 2, 3, 4, 5, 6, 7, 8, 9), 2) == [(1, 2), (3, 4), (5, 6), (7, 8), (9,)]\n    assert\
+  \ candidate((11, 14, 16, 17, 19, 21, 22, 25), 4) == [(11, 14, 16, 17), (19, 21,\
+  \ 22, 25)]\n\n\n\ndef test_check():\n    check(chunk_tuples)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

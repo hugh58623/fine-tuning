@@ -1,0 +1,17 @@
+name: mbpp_628
+language: py
+prompt: "\n\ndef replace_spaces(string):\n  \"\"\"\n  Write a function to replace\
+  \ all spaces in the given string with character * list item * list item * list item\
+  \ * list item '%20'.\n  >>> replace_spaces(\"My Name is Dawood\")\n  'My%20Name%20is%20Dawood'\n\
+  \  >>> replace_spaces(\"I am a Programmer\")\n  'I%20am%20a%20Programmer'\n  >>>\
+  \ replace_spaces(\"I love Coding\")\n  'I%20love%20Coding'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"My Name\
+  \ is Dawood\") == 'My%20Name%20is%20Dawood'\n    assert candidate(\"I am a Programmer\"\
+  ) == 'I%20am%20a%20Programmer'\n    assert candidate(\"I love Coding\") == 'I%20love%20Coding'\n\
+  \n\n\ndef test_check():\n    check(replace_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

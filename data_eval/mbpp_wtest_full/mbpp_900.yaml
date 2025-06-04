@@ -1,0 +1,15 @@
+name: mbpp_900
+language: py
+prompt: "\n\ndef match_num(string):\n    \"\"\"\n    Write a function where a string\
+  \ will start with a specific number.\n    >>> match_num('5-2345861')\n    True\n\
+  \    >>> match_num('6-2345861')\n    False\n    >>> match_num('78910')\n    False\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('5-2345861')==True\n\
+  \    assert candidate('6-2345861')==False\n    assert candidate('78910')==False\n\
+  \n\n\ndef test_check():\n    check(match_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_771
+language: py
+prompt: "\n\ndef check_expression(exp):\n    \"\"\"\n    Write a function to check\
+  \ if the given expression is balanced or not.\n    >>> check_expression(\"{()}[{}]\"\
+  )\n    True\n    >>> check_expression(\"{()}[{]\")\n    False\n    >>> check_expression(\"\
+  {()}[{}][]({})\")\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"{()}[{}]\"\
+  ) == True\n    assert candidate(\"{()}[{]\") == False\n    assert candidate(\"{()}[{}][]({})\"\
+  ) == True\n\n\n\ndef test_check():\n    check(check_expression)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

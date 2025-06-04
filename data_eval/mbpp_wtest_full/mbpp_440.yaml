@@ -1,0 +1,18 @@
+name: mbpp_440
+language: py
+prompt: "\n\ndef find_adverb_position(text):\n \"\"\"\n Write a function to find all\
+  \ adverbs and their positions in a given sentence.\n >>> find_adverb_position(\"\
+  clearly!! we can see the sky\")\n (0, 7, 'clearly')\n >>> find_adverb_position(\"\
+  seriously!! there are many roses\")\n (0, 9, 'seriously')\n >>> find_adverb_position(\"\
+  unfortunately!! sita is going to home\")\n (0, 13, 'unfortunately')\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"clearly!!\
+  \ we can see the sky\")==(0, 7, 'clearly')\n    assert candidate(\"seriously!! there\
+  \ are many roses\")==(0, 9, 'seriously')\n    assert candidate(\"unfortunately!!\
+  \ sita is going to home\")==(0, 13, 'unfortunately')\n\n\n\ndef test_check():\n\
+  \    check(find_adverb_position)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

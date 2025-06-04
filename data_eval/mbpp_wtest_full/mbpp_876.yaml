@@ -1,0 +1,14 @@
+name: mbpp_876
+language: py
+prompt: "\n\ndef lcm(x, y):\n   \"\"\"\n   Write a python function to find lcm of\
+  \ two positive integers.\n   >>> lcm(4,6)\n   12\n   >>> lcm(15,17)\n   255\n  \
+  \ >>> lcm(2,6)\n   6\n   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,6) ==\
+  \ 12\n    assert candidate(15,17) == 255\n    assert candidate(2,6) == 6\n\n\n\n\
+  def test_check():\n    check(lcm)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

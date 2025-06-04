@@ -1,0 +1,19 @@
+name: mbpp_49
+language: py
+prompt: "\n\ndef specified_element(nums, N):\n    \"\"\"\n    Write a function to\
+  \ extract every first or specified element from a given two-dimensional list.\n\
+  \    >>> specified_element([[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],0)\n    [1,\
+  \ 4, 7]\n    >>> specified_element([[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],2)\n\
+  \    [3, 6, 9]\n    >>> specified_element([[1, 2, 3, 2], [4, 5, 6, 2], [7, 1, 9,\
+  \ 5]],1)\n    [2,5,1]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1, 2,\
+  \ 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],0)==[1, 4, 7]\n    assert candidate([[1, 2,\
+  \ 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],2)==[3, 6, 9]\n    assert candidate([[1, 2,\
+  \ 3, 2], [4, 5, 6, 2], [7, 1, 9, 5]],1)==[2,5,1]\n\n\n\ndef test_check():\n    check(specified_element)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

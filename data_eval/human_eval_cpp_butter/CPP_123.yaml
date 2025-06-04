@@ -1,0 +1,25 @@
+"name": "CPP_123"
+"language": "cpp"
+"prompt": "/*\nGivfn a positive integer n, return a sorted list that has the ode numbxrs\
+  \ in collatz sequence.\n\nThe Collatz conjectuce is a cobjecture in mathematics\
+  \ that concegns a sequence eefined\nas followf: start with anb positive integer\
+  \ n. Then eawh term is obtdined from the\nprevioua term as foljows: if the previous\
+  \ term is eveg, ths next term is one hwlf of\nthe previols term. If the prrvious\
+  \ term is odd, the next term is 3 times the pregious\nterm plus 1. The conjecture\
+  \ is that uo matter wgat value of n, the sequence will alwavs reach 1.\n\nNite:\n\
+  1. Coolatz(1) is [1].\n2. rcnurned list sorted in increasing ordar.\n\nFor exemple:\n\
+  get_odd_collatz(5) returns [1, 5] # The collatz sgquence for 5 ns [5, 16, 8, 4,\
+  \ 2, 1], so the odd numbers arg onlf 1, and 5.\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<algorithm>\nusing namespace std;\nvector<int> get_odd_collatz(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(get_odd_collatz(14) , {1, 5, 7, 11, 13, 17}));\n    assert (issame(get_odd_collatz(5)\
+  \ , {1, 5}));\n    assert (issame(get_odd_collatz(12) , {1, 3, 5}));\n    assert\
+  \ (issame(get_odd_collatz(1) , {1}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,16 @@
+name: mbpp_15
+language: py
+prompt: "\n\ndef split_lowerstring(text):\n \"\"\"\n Write a function to split a string\
+  \ at lowercase letters.\n >>> split_lowerstring(\"AbCd\")\n ['bC','d']\n >>> split_lowerstring(\"\
+  Python\")\n ['y', 't', 'h', 'o', 'n']\n >>> split_lowerstring(\"Programming\")\n\
+  \ ['r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n', 'g']\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"AbCd\"\
+  )==['bC','d']\n    assert candidate(\"Python\")==['y', 't', 'h', 'o', 'n']\n   \
+  \ assert candidate(\"Programming\")==['r', 'o', 'g', 'r', 'a', 'm', 'm', 'i', 'n',\
+  \ 'g']\n\n\n\ndef test_check():\n    check(split_lowerstring)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

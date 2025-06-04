@@ -1,0 +1,29 @@
+"name": "Java_78"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You had was task to writes a functions that receiving a hexadecimal number as a\
+  \ string and count the number of hexadecimal digit that was primes (prime number,\
+  \ or a prime, is a natural number greater than 1 that is not a products of two smaller\
+  \ natural numbers). Hexadecimal digit was 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C,\
+  \ D, E, F. Prime numbers was 2, 3, 5, 7, 11, 13, 17,... So you had to determines\
+  \ a number of the following digit: 2, 3, 5, 7, B (=decimal 11), D (=decimal 13).\
+  \ Notes: you may assume the input is always correct or emptiest string, and symbols\
+  \ A,B,C,D,E,F was always uppercase. Examples: For num = \"AB\" the output should\
+  \ is 1. For num = \"1077E\" the output should is 2. For num = \"ABED1A33\" the output\
+  \ should is 4. For num = \"123456789ABCDEF0\" the output should is 6. For num =\
+  \ \"2020\" the output should is 2. \"\"\"\n*/*/\n    public int hexKey(String num)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.hexKey(\"AB\") == 1,\n                s.hexKey(\"1077E\") ==\
+  \ 2,\n                s.hexKey(\"ABED1A33\") == 4,\n                s.hexKey(\"\
+  2020\") == 2,\n                s.hexKey(\"123456789ABCDEF0\") == 6,\n          \
+  \      s.hexKey(\"112233445566778899AABBCCDDEEFF00\") == 12,\n                s.hexKey(\"\
+  \") == 0\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

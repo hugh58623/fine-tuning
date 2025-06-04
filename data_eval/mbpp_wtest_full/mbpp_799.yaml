@@ -1,0 +1,14 @@
+name: mbpp_799
+language: py
+prompt: "\n\ndef left_Rotate(n,d):\n    \"\"\"\n    Write a python function to left\
+  \ rotate the bits of a given number.\n    >>> left_Rotate(16,2)\n    64\n    >>>\
+  \ left_Rotate(10,2)\n    40\n    >>> left_Rotate(99,3)\n    792\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(16,2) ==\
+  \ 64\n    assert candidate(10,2) == 40\n    assert candidate(99,3) == 792\n\n\n\n\
+  def test_check():\n    check(left_Rotate)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

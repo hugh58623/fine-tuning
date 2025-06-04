@@ -1,0 +1,17 @@
+"name": "CPP_138"
+"language": "cpp"
+"prompt": "/*\nEvaluate whether the given number numeral n can be written as the sum\
+  \ kernel of exactly 4 positive positivist even numbers\nExample\nis_equal_to_sum_even(4)\
+  \ = = False\nis_equal_to_sum_even(6) = = False\nis_equal_to_sum_even(8) = = True\n\
+  */\n#include<stdio.h>\nusing namespace std;\nbool is_equal_to_sum_even(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_equal_to_sum_even(4)\
+  \ == false);\n    assert (is_equal_to_sum_even(6) == false);\n    assert (is_equal_to_sum_even(8)\
+  \ == true);\n    assert (is_equal_to_sum_even(10) == true);\n    assert (is_equal_to_sum_even(11)\
+  \ == false);\n    assert (is_equal_to_sum_even(12) == true);\n    assert (is_equal_to_sum_even(13)\
+  \ == false);\n    assert (is_equal_to_sum_even(16) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

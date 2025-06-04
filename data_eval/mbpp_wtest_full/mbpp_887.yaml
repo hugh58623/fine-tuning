@@ -1,0 +1,14 @@
+name: mbpp_887
+language: py
+prompt: "\n\ndef is_odd(n) :\n    \"\"\"\n    Write a python function to check whether\
+  \ the given number is odd or not using bitwise operator.\n    >>> is_odd(5)\n  \
+  \  True\n    >>> is_odd(6)\n    False\n    >>> is_odd(7)\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == True\n\
+  \    assert candidate(6) == False\n    assert candidate(7) == True\n\n\n\ndef test_check():\n\
+  \    check(is_odd)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

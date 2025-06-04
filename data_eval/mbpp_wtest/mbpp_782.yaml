@@ -1,0 +1,15 @@
+name: mbpp_782
+language: py
+prompt: "\n\ndef Odd_Length_Sum(arr):\n    \"\"\"\n    Write a python function to\
+  \ find the sum of all odd length subarrays.\n    >>> Odd_Length_Sum([1,2,4])\n \
+  \   14\n    >>> Odd_Length_Sum([1,2,1,2])\n    15\n    >>> Odd_Length_Sum([1,7])\n\
+  \    8\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,4])\
+  \ == 14\n    assert candidate([1,2,1,2]) == 15\n    assert candidate([1,7]) == 8\n\
+  \n\n\ndef test_check():\n    check(Odd_Length_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

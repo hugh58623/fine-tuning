@@ -1,0 +1,17 @@
+name: mbpp_870
+language: py
+prompt: "\n\ndef sum_positivenum(nums):\n  \"\"\"\n  Write a function to calculate\
+  \ the sum of the positive numbers of a given list of numbers using lambda function.\n\
+  \  >>> sum_positivenum([2, 4, -6, -9, 11, -12, 14, -5, 17])\n  48\n  >>> sum_positivenum([10,15,-14,13,-18,12,-20])\n\
+  \  50\n  >>> sum_positivenum([19, -65, 57, 39, 152,-639, 121, 44, 90, -190])\n \
+  \ 522\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 4,\
+  \ -6, -9, 11, -12, 14, -5, 17])==48\n    assert candidate([10,15,-14,13,-18,12,-20])==50\n\
+  \    assert candidate([19, -65, 57, 39, 152,-639, 121, 44, 90, -190])==522\n\n\n\
+  \ndef test_check():\n    check(sum_positivenum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

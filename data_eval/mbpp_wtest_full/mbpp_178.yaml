@@ -1,0 +1,17 @@
+name: mbpp_178
+language: py
+prompt: "\n\ndef string_literals(patterns,text):\n  \"\"\"\n  Write a function to\
+  \ search some literals strings in a string.\n  >>> string_literals(['language'],'python\
+  \ language')\n  ('Matched!')\n  >>> string_literals(['program'],'python language')\n\
+  \  ('Not Matched!')\n  >>> string_literals(['python'],'programming language')\n\
+  \  ('Not Matched!')\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['language'],'python\
+  \ language')==('Matched!')\n    assert candidate(['program'],'python language')==('Not\
+  \ Matched!')\n    assert candidate(['python'],'programming language')==('Not Matched!')\n\
+  \n\n\ndef test_check():\n    check(string_literals)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

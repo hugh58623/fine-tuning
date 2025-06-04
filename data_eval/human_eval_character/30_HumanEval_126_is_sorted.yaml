@@ -1,0 +1,25 @@
+name: HumanEval_126_is_sorted
+language: py
+prompt: "\ndef is_sorted(lst):\n    \"\"\"\n    GivEn a list oF numbErs, return WhethEr\
+  \ or nOt they aRe sOrted\n    in AscENdInG ordER. If list Has more than 1 duPLIcatE\
+  \ of the same\n    Number, return False. Assume No negAtIVe NuMBeRs and Only intEGeRS.\n\
+  \n    exaMpLES\n    is_SoRTeD([5]) ➞ True\n    is_soRteD([1, 2, 3, 4, 5]) ➞ True\n\
+  \    is_SOrtEd([1, 3, 2, 4, 5]) ➞ False\n    is_sOrtEd([1, 2, 3, 4, 5, 6]) ➞ True\n\
+  \    Is_SORTed([1, 2, 3, 4, 5, 6, 7]) ➞ True\n    Is_sorted([1, 3, 2, 4, 5, 6, 7])\
+  \ ➞ False\n    iS_SORted([1, 2, 2, 3, 3, 4]) ➞ True\n    is_sortEd([1, 2, 2, 2,\
+  \ 3, 4]) ➞ False\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([5]) == True\n    assert candidate([1,\
+  \ 2, 3, 4, 5]) == True\n    assert candidate([1, 3, 2, 4, 5]) == False\n    assert\
+  \ candidate([1, 2, 3, 4, 5, 6]) == True\n    assert candidate([1, 2, 3, 4, 5, 6,\
+  \ 7]) == True\n    assert candidate([1, 3, 2, 4, 5, 6, 7]) == False\n    assert\
+  \ candidate([]) == True\n    assert candidate([1]) == True\n    assert candidate([3,\
+  \ 2, 1]) == False\n    assert candidate([1, 2, 2, 2, 3, 4]) == False\n    assert\
+  \ candidate([1, 2, 3, 3, 3, 4]) == False\n    assert candidate([1, 2, 2, 3, 3, 4])\
+  \ == True\n    assert candidate([1, 2, 3, 4]) == True\n\ndef test_check():\n   \
+  \ check(is_sorted)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

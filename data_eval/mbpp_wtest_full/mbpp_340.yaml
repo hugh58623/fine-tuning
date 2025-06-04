@@ -1,0 +1,15 @@
+name: mbpp_340
+language: py
+prompt: "\n\ndef sum_three_smallest_nums(lst):\n\t\"\"\"\n\tWrite a python function\
+  \ to find the sum of the three lowest positive numbers from a given list of numbers.\n\
+  \t>>> sum_three_smallest_nums([10,20,30,40,50,60,7])\n\t37\n\t>>> sum_three_smallest_nums([1,2,3,4,5])\n\
+  \t6\n\t>>> sum_three_smallest_nums([0,1,2,3,4,5])\n\t6\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10,20,30,40,50,60,7])\
+  \ == 37\n    assert candidate([1,2,3,4,5]) == 6\n    assert candidate([0,1,2,3,4,5])\
+  \ == 6\n\n\n\ndef test_check():\n    check(sum_three_smallest_nums)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

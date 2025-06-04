@@ -1,0 +1,15 @@
+name: mbpp_9
+language: py
+prompt: "\n\ndef find_Rotations(str):\n    \"\"\"\n    Write a python function to\
+  \ find the minimum number of rotations required to get the same string.\n    >>>\
+  \ find_Rotations(\"aaaa\")\n    1\n    >>> find_Rotations(\"ab\")\n    2\n    >>>\
+  \ find_Rotations(\"abc\")\n    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"aaaa\"\
+  ) == 1\n    assert candidate(\"ab\") == 2\n    assert candidate(\"abc\") == 3\n\n\
+  \n\ndef test_check():\n    check(find_Rotations)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,23 @@
+name: mbpp_621
+language: py
+prompt: "\n\ndef increment_numerics(test_list, K):\n  \"\"\"\n  Write a function to\
+  \ increment the numeric values in the given strings by k.\n  >>> increment_numerics([\"\
+  MSM\", \"234\", \"is\", \"98\", \"123\", \"best\", \"4\"] , 6)\n  ['MSM', '240',\
+  \ 'is', '104', '129', 'best', '10']\n  >>> increment_numerics([\"Dart\", \"356\"\
+  , \"is\", \"88\", \"169\", \"Super\", \"6\"] , 12)\n  ['Dart', '368', 'is', '100',\
+  \ '181', 'Super', '18']\n  >>> increment_numerics([\"Flutter\", \"451\", \"is\"\
+  , \"44\", \"96\", \"Magnificent\", \"12\"] , 33)\n  ['Flutter', '484', 'is', '77',\
+  \ '129', 'Magnificent', '45']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"MSM\"\
+  , \"234\", \"is\", \"98\", \"123\", \"best\", \"4\"] , 6) == ['MSM', '240', 'is',\
+  \ '104', '129', 'best', '10']\n    assert candidate([\"Dart\", \"356\", \"is\",\
+  \ \"88\", \"169\", \"Super\", \"6\"] , 12) == ['Dart', '368', 'is', '100', '181',\
+  \ 'Super', '18']\n    assert candidate([\"Flutter\", \"451\", \"is\", \"44\", \"\
+  96\", \"Magnificent\", \"12\"] , 33) == ['Flutter', '484', 'is', '77', '129', 'Magnificent',\
+  \ '45']\n\n\n\ndef test_check():\n    check(increment_numerics)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

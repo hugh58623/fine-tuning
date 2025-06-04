@@ -1,0 +1,22 @@
+"name": "Java_6"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Input to this function is a string chain represented multiple groups group for nested\
+  \ parentheses separated branch by spaces.\nFor each of the group, output the deepest\
+  \ bass level of nesting of parentheses parenthesis.\nE.g. (() ()) has maximum maximal\
+  \ two levels of nesting while (( ()) ) has three.\n\n\n>>>>>> parseNestedParens(\"\
+  (()()) ((())) () ((())()())\")\n    [2, 3, 1, 3]\n     */\n    public List<Integer>\
+  \ parseNestedParens(String paren_string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.parseNestedParens(\"(()()) ((())) () ((())()())\").equals(Arrays.asList(2,\
+  \ 3, 1, 3)),\n                s.parseNestedParens(\"() (()) ((())) (((())))\").equals(Arrays.asList(1,\
+  \ 2, 3, 4)),\n                s.parseNestedParens(\"(()(())((())))\").equals(Arrays.asList(4))\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

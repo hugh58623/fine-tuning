@@ -1,0 +1,14 @@
+name: mbpp_211
+language: py
+prompt: "\n\ndef count_Num(n):\n    \"\"\"\n    Write a python function to count numbers\
+  \ whose oth and nth bits are set.\n    >>> count_Num(2)\n    1\n    >>> count_Num(3)\n\
+  \    2\n    >>> count_Num(1)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 1\n\
+  \    assert candidate(3) == 2\n    assert candidate(1) == 1\n\n\n\ndef test_check():\n\
+  \    check(count_Num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

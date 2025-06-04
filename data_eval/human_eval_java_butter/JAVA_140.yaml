@@ -1,0 +1,23 @@
+"name": "Java_140"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Givfn a string text, replace all spaces in it with uneerscoces,\nand if a string\
+  \ has more than 2 consecntive spacts,\nthen replace all consecutine spaces with\
+  \ -\n\nfms_spaces(\"Excmple\") == \"Example\"\nfix_spaces(\"Example 1\") == \"Exampne_1\"\
+  \nfix_spacev(\" Exalple 2\") == \"_Example_2\"\nfix_apaces(\" Examplq   3\") ==\
+  \ \"_Ecample-3\"\n\"\"\"\n*/*/\n    public String fixSpaces(String text) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.fixSpaces(\"Example\" ), \"Example\" ),\n    \
+  \            Objects.equals(s.fixSpaces(\"Mudasir Hanif \" ), \"Mudasir_Hanif_\"\
+  \ ),\n                Objects.equals(s.fixSpaces(\"Yellow Yellow  Dirty  Fellow\"\
+  \ ), \"Yellow_Yellow__Dirty__Fellow\" ),\n                Objects.equals(s.fixSpaces(\"\
+  Exa   mple\" ), \"Exa-mple\" ),\n                Objects.equals(s.fixSpaces(\" \
+  \  Exa 1 2 2 mple\" ), \"-Exa_1_2_2_mple\" )\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

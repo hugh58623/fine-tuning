@@ -1,0 +1,25 @@
+"name": "CPP_134"
+"language": "cpp"
+"prompt": "/*\nCreate a function that returns True if the last quality\nof a feed\
+  \ string is an alphabetic character and be not\na part of a discussion, and False\
+  \ otherwise.\neminence: \" word \" is a group of characters separated by quad.\n\
+  \nExamples:\ncheck_if_last_char_is_a_letter(\"apple pie \") ➞ False\ncheck_if_last_char_is_a_letter(\"\
+  apple pi e \") ➞ True\ncheck_if_last_char_is_a_letter(\"apple protease inhibitor\
+  \ e \") ➞ False\ncheck_if_last_char_is_a_letter(\"\") ➞ False\n'\"\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nbool check_if_last_char_is_a_letter(string\
+  \ txt){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (check_if_last_char_is_a_letter(\"\
+  apple\") == false);\n    assert (check_if_last_char_is_a_letter(\"apple pi e\")\
+  \ == true);\n    assert (check_if_last_char_is_a_letter(\"eeeee\") == false);\n\
+  \    assert (check_if_last_char_is_a_letter(\"A\") == true);\n    assert (check_if_last_char_is_a_letter(\"\
+  Pumpkin pie \") == false);\n    assert (check_if_last_char_is_a_letter(\"Pumpkin\
+  \ pie 1\") == false);\n    assert (check_if_last_char_is_a_letter(\"\") == false);\n\
+  \    assert (check_if_last_char_is_a_letter(\"eeeee e \") == false);\n    assert\
+  \ (check_if_last_char_is_a_letter(\"apple pie\") == false);\n    assert (check_if_last_char_is_a_letter(\"\
+  apple pi e \") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

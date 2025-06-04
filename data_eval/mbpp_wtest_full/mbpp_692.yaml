@@ -1,0 +1,15 @@
+name: mbpp_692
+language: py
+prompt: "\n\ndef last_Two_Digits(N):\n    \"\"\"\n    Write a python function to find\
+  \ the last two digits in factorial of a given number.\n    >>> last_Two_Digits(7)\n\
+  \    40\n    >>> last_Two_Digits(5)\n    20\n    >>> last_Two_Digits(2)\n    2\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(7) == 40\n\
+  \    assert candidate(5) == 20\n    assert candidate(2) == 2\n\n\n\ndef test_check():\n\
+  \    check(last_Two_Digits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

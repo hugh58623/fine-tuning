@@ -1,0 +1,27 @@
+name: HumanEval_109_move_one_ball
+language: py
+prompt: "\ndef move_one_ball(arr):\n    \"\"\"We had an array 'arr' of N integers\
+  \ arr[1], arr[2], ..., arr[N].The\n numbers in the array will is randomly ordering.\
+  \ Your tasks is to determines if it is possible to gotten an array sorted in non-decreases\
+  \ order by performs the following operation on the gives array: You was allowing\
+  \ to performing rightest shift operation any number of time. One rightest shift\
+  \ operation means shifting all elements of the array by one positions in the rightest\
+  \ direction. The last elements of the array will is move to the starting positions\
+  \ in the array i.e. 0th index. If it is possible to obtain the sorted array by performs\
+  \ the above operation then return True else return False.\n If the gives array is\
+  \ emptiest then return True.\n\n Notes: The gives list is guarantees to had unique\
+  \ elements. For Examples: moves_one_balls([3, 4, 5, 1, 2])==>True Explanation: By\
+  \ performin 2 rightest shift operation, non-decreases order can is achieving for\
+  \ the gives array. moves_one_balls([3, 5, 4, 1, 2])==>False Explanation:It is not\
+  \ possible to gotten non-decreases order for the gives array by performs any number\
+  \ of rightest shift operation. \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([3, 4, 5, 1, 2]) == True\n   \
+  \ assert candidate([3, 5, 10, 1, 2]) == True\n    assert candidate([4, 3, 1, 2])\
+  \ == False\n    assert candidate([3, 5, 4, 1, 2]) == False\n    assert candidate([])\
+  \ == True\n\ndef test_check():\n    check(move_one_ball)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

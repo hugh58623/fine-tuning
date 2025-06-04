@@ -1,0 +1,16 @@
+name: mbpp_959
+language: py
+prompt: "\n\ndef Average(lst):\n    \"\"\"\n    Write a python function to find the\
+  \ average of a list.\n    >>> Average([15, 9, 55, 41, 35, 20, 62, 49])\n    35.75\n\
+  \    >>> Average([4, 5, 1, 2, 9, 7, 10, 8])\n    5.75\n    >>> Average([1,2,3])\n\
+  \    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([15, 9,\
+  \ 55, 41, 35, 20, 62, 49]) == 35.75\n    assert candidate([4, 5, 1, 2, 9, 7, 10,\
+  \ 8]) == 5.75\n    assert candidate([1,2,3]) == 2\n\n\n\ndef test_check():\n   \
+  \ check(Average)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

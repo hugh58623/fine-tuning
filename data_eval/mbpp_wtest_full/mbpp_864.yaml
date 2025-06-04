@@ -1,0 +1,19 @@
+name: mbpp_864
+language: py
+prompt: "\n\ndef palindrome_lambda(texts):\n  \"\"\"\n  Write a function to find palindromes\
+  \ in a given list of strings using lambda function.\n  >>> palindrome_lambda([\"\
+  php\", \"res\", \"Python\", \"abcd\", \"Java\", \"aaa\"])\n  ['php', 'aaa']\n  >>>\
+  \ palindrome_lambda([\"abcd\", \"Python\", \"abba\", \"aba\"])\n  ['abba', 'aba']\n\
+  \  >>> palindrome_lambda([\"abcd\", \"abbccbba\", \"abba\", \"aba\"])\n  ['abbccbba',\
+  \ 'abba', 'aba']\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"php\"\
+  , \"res\", \"Python\", \"abcd\", \"Java\", \"aaa\"])==['php', 'aaa']\n    assert\
+  \ candidate([\"abcd\", \"Python\", \"abba\", \"aba\"])==['abba', 'aba']\n    assert\
+  \ candidate([\"abcd\", \"abbccbba\", \"abba\", \"aba\"])==['abbccbba', 'abba', 'aba']\n\
+  \n\n\ndef test_check():\n    check(palindrome_lambda)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

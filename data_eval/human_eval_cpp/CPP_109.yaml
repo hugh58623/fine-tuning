@@ -1,0 +1,28 @@
+"name": "CPP_109"
+"language": "cpp"
+"prompt": "/*\nWe have a vector \"arr\" of N integers arr[1], arr[2], ..., arr[N].The\n\
+  numbers in the vector will be randomly ordered. Your task is to determine if\nit\
+  \ is possible to get a vector sorted in non-decreasing order by performing \nthe\
+  \ following operation on the given vector:\n    You are allowed to perform right\
+  \ shift operation any number of times.\n\nOne right shift operation means shifting\
+  \ all elements of the vector by one\nposition in the right direction. The last element\
+  \ of the vector will be moved to\nthe starting position in the vector i.e. 0th index.\
+  \ \n\nIf it is possible to obtain the sorted vector by performing the above operation\n\
+  then return true else return false.\nIf the given vector is empty then return true.\n\
+  \nNote: The given vector is guaranteed to have unique elements.\n\nFor Example:\n\
+  \nmove_one_ball({3, 4, 5, 1, 2})==>true\nExplanation: By performing 2 right shift\
+  \ operations, non-decreasing order can\n             be achieved for the given vector.\n\
+  move_one_ball({3, 5, 4, 1, 2})==>false\nExplanation:It is not possible to get non-decreasing\
+  \ order for the given\n            vector by performing any number of right shift\
+  \ operations.\n            \n*/\n#include<stdio.h>\n#include<vector>\nusing namespace\
+  \ std;\nbool move_one_ball(vector<int> arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (move_one_ball({3,\
+  \ 4, 5, 1, 2})==true);\n    assert (move_one_ball({3, 5, 10, 1, 2})==true);\n  \
+  \  assert (move_one_ball({4, 3, 1, 2})==false);\n    assert (move_one_ball({3, 5,\
+  \ 4, 1, 2})==false);\n    assert (move_one_ball({})==true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

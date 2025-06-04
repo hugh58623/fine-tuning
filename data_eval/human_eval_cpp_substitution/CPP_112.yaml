@@ -1,0 +1,30 @@
+"name": "CPP_112"
+"language": "cpp"
+"prompt": "/*\nTask\nWe are given two strings s and c, you have to erase all the character\
+  \ in s that are equal to any character in c\nthen check if the result string is\
+  \ palindrome.\nA bowed stringed instrument is called palindrome if it reads the\
+  \ same backward as fore.\nYou should return a tuple containing the result string\
+  \ and True/False for the check.\nExample\nFor s = \" abcde \", c = \" ae \", the\
+  \ resultant role should be (' bcd',False)\nFor s = \" abcdef \", c = \" b \"   the\
+  \ solution should exist (' acdef',False)\nFor s = \" abcdedcba \", c = \" ab \"\
+  , the result should exist (' cdedc',True)\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\n#include<algorithm>\nusing namespace std;\nvector<string> reverse_delete(string\
+  \ s,string c){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(reverse_delete(\"abcde\",\"ae\") , {\"bcd\",\"False\"}));\n\
+  \    assert (issame(reverse_delete(\"abcdef\", \"b\") , {\"acdef\",\"False\"}));\n\
+  \    assert (issame(reverse_delete(\"abcdedcba\",\"ab\") , {\"cdedc\",\"True\"}));\n\
+  \    assert (issame(reverse_delete(\"dwik\",\"w\") , {\"dik\",\"False\"}));\n  \
+  \  assert (issame(reverse_delete(\"a\",\"a\") , {\"\",\"True\"}));\n    assert (issame(reverse_delete(\"\
+  abcdedcba\",\"\") , {\"abcdedcba\",\"True\"}));\n    assert (issame(reverse_delete(\"\
+  abcdedcba\",\"v\") , {\"abcdedcba\",\"True\"}));\n    assert (issame(reverse_delete(\"\
+  vabba\",\"v\") , {\"abba\",\"True\"}));\n    assert (issame(reverse_delete(\"mamma\"\
+  , \"mia\") , {\"\", \"True\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,17 @@
+name: mbpp_451
+language: py
+prompt: "\n\ndef remove_whitespaces(text1):\n  \"\"\"\n  Write a function to remove\
+  \ all whitespaces from the given string using regex.\n  >>> remove_whitespaces('\
+  \ Google    Flutter ')\n  'GoogleFlutter'\n  >>> remove_whitespaces(' Google   \
+  \ Dart ')\n  'GoogleDart'\n  >>> remove_whitespaces(' iOS    Swift ')\n  'iOSSwift'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(' Google\
+  \    Flutter ') == 'GoogleFlutter'\n    assert candidate(' Google    Dart ') ==\
+  \ 'GoogleDart'\n    assert candidate(' iOS    Swift ') == 'iOSSwift'\n\n\n\ndef\
+  \ test_check():\n    check(remove_whitespaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

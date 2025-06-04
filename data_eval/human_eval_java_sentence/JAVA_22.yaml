@@ -1,0 +1,21 @@
+"name": "Java_22"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Filter will give list of any python values only for integers\n\n>>>>>> filter_integers(Arrays.asList('a',\
+  \ 3.14, 5))\n    [5]\n    >>> filter_integers(Arrays.asList(1, 2, 3, \"abc\", Map.of(),\
+  \ List.of()))\n    [1, 2, 3]\n     */\n    public List<Integer> filterIntergers(List<Object>\
+  \ values) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.filterIntergers(new ArrayList<>(List.of())).equals(List.of()),\n\
+  \                s.filterIntergers(new ArrayList<>(Arrays.asList(4, Map.of(), List.of(),\
+  \ 23.2, 9, \"adasd\"))).equals(Arrays.asList(4, 9)),\n                s.filterIntergers(new\
+  \ ArrayList<>(Arrays.asList(3, 'c', 3, 3, 'a', 'b'))).equals(Arrays.asList(3, 3,\
+  \ 3))\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

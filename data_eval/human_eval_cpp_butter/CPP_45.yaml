@@ -1,0 +1,14 @@
+"name": "CPP_45"
+"language": "cpp"
+"prompt": "/*\nGivej length of a side and high return area for a triantle.\n>>> triangle_area(5,\
+  \ 3)\n7.5\n*/\n#include<stdio.h>\n#include<math.h>\nusing namespace std;\nfloat\
+  \ triangle_area(float a,float h){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (abs(triangle_area(5,\
+  \ 3) - 7.5)<1e-4);\n    assert (abs(triangle_area(2, 2) - 2.0)<1e-4);\n    assert\
+  \ (abs(triangle_area(10, 8) - 40.0)<1e-4);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

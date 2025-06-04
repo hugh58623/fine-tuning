@@ -1,0 +1,15 @@
+name: mbpp_185
+language: py
+prompt: "\n\ndef parabola_focus(a, b, c):\n  \"\"\"\n  Write a function to find the\
+  \ focus of a parabola.\n  >>> parabola_focus(5,3,2)\n  (-0.3, 1.6)\n  >>> parabola_focus(9,8,4)\n\
+  \  (-0.4444444444444444, 2.25)\n  >>> parabola_focus(2,4,6)\n  (-1.0, 4.125)\n \
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,3,2)==(-0.3,\
+  \ 1.6)\n    assert candidate(9,8,4)==(-0.4444444444444444, 2.25)\n    assert candidate(2,4,6)==(-1.0,\
+  \ 4.125)\n\n\n\ndef test_check():\n    check(parabola_focus)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

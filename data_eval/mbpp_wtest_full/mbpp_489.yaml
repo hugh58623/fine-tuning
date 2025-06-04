@@ -1,0 +1,15 @@
+name: mbpp_489
+language: py
+prompt: "\n\ndef frequency_Of_Largest(n,arr):\n    \"\"\"\n    Write a python function\
+  \ to find the frequency of the largest value in a given array.\n    >>> frequency_Of_Largest(5,[1,2,3,4,4])\n\
+  \    2\n    >>> frequency_Of_Largest(3,[5,6,5])\n    1\n    >>> frequency_Of_Largest(4,[2,7,7,7])\n\
+  \    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,[1,2,3,4,4])\
+  \ == 2\n    assert candidate(3,[5,6,5]) == 1\n    assert candidate(4,[2,7,7,7])\
+  \ == 3\n\n\n\ndef test_check():\n    check(frequency_Of_Largest)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

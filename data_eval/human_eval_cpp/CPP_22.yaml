@@ -1,0 +1,19 @@
+"name": "CPP_22"
+"language": "cpp"
+"prompt": "/*\nFilter given vector of any python values only for integers\n>>> filter_integers({\"\
+  a\", 3.14, 5})\n{5}\n>>> filter_integers({1, 2, 3, \"abc\", {}, {}})\n{1, 2, 3}\n\
+  */\n#include<stdio.h>\n#include<vector>\n#include<string>\n#include<boost/any.hpp>\n\
+  #include<list>\ntypedef std::list<boost::any> list_any;\nusing namespace std;\n\
+  vector<int> filter_integers(list_any values){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(filter_integers({}),{}));\n\n    assert (issame(filter_integers({4,\
+  \  {},23.2, 9, string(\"adasd\")}) ,{4, 9}));\n    assert (issame(filter_integers({3,\
+  \ 'c', 3, 3, 'a', 'b'}) ,{3, 3, 3}));\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

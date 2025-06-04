@@ -1,0 +1,14 @@
+name: mbpp_267
+language: py
+prompt: "\n\ndef square_Sum(n):\n    \"\"\"\n    Write a python function to find the\
+  \ sum of squares of first n odd natural numbers.\n    >>> square_Sum(2)\n    10\n\
+  \    >>> square_Sum(3)\n    35\n    >>> square_Sum(4)\n    84\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 10\n\
+  \    assert candidate(3) == 35\n    assert candidate(4) == 84\n\n\n\ndef test_check():\n\
+  \    check(square_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

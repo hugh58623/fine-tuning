@@ -1,0 +1,16 @@
+name: mbpp_301
+language: py
+prompt: "\n\ndef dict_depth(d):\n    \"\"\"\n    Write a function to find the depth\
+  \ of a dictionary.\n    >>> dict_depth({'a':1, 'b': {'c': {'d': {}}}})\n    4\n\
+  \    >>> dict_depth({'a':1, 'b': {'c':'python'}})\n    2\n    >>> dict_depth({1:\
+  \ 'Sun', 2: {3: {4:'Mon'}}})\n    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'a':1,\
+  \ 'b': {'c': {'d': {}}}})==4\n    assert candidate({'a':1, 'b': {'c':'python'}})==2\n\
+  \    assert candidate({1: 'Sun', 2: {3: {4:'Mon'}}})==3\n\n\n\ndef test_check():\n\
+  \    check(dict_depth)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_257
+language: py
+prompt: "\n\ndef swap_numbers(a,b):\n \"\"\"\n Write a function to swap two numbers.\n\
+  \ >>> swap_numbers(10,20)\n (20,10)\n >>> swap_numbers(15,17)\n (17,15)\n >>> swap_numbers(100,200)\n\
+  \ (200,100)\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==(20,10)\n\
+  \    assert candidate(15,17)==(17,15)\n    assert candidate(100,200)==(200,100)\n\
+  \n\n\ndef test_check():\n    check(swap_numbers)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

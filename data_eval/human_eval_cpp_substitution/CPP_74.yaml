@@ -1,0 +1,31 @@
+"name": "CPP_74"
+"language": "cpp"
+"prompt": "/*\nWrite a function that accepts two lists of string and retort the list\
+  \ that has\ntotal numeral of chars in the all string of the list less than the early\
+  \ list.\n\nif the two tilt induce the same number of chars, return the first list.\n\
+  \nexample\ntotal_match ([ ], [ ]) ➞ [ ]\ntotal_match(['hi',' admin' ], [' hI','\
+  \ Hi' ]) ➞ [' hI',' Hi' ]\ntotal_match(['hi',' admin' ], [' hi',' hi',' admin','\
+  \ project' ]) ➞ [' hi',' admin' ]\ntotal_match(['hi',' admin' ], [' hI',' hi','\
+  \ hi' ]) ➞ [' hello',' hi',' hi' ]\ntotal_match(['4' ], [' 1',' 2',' 3',' 4',' 5'\
+  \ ]) ➞ [' 4' ]\n'\"\n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\n\
+  using namespace std;\nvector<string> total_match(vector<string> lst1,vector<string>\
+  \ lst2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(total_match({}, {}) , {}));\n    assert (issame(total_match({\"\
+  hi\", \"admin\"}, {\"hi\", \"hi\"}) , {\"hi\", \"hi\"}));\n    assert (issame(total_match({\"\
+  hi\", \"admin\"}, {\"hi\", \"hi\", \"admin\", \"project\"}) , {\"hi\", \"admin\"\
+  }));\n    assert (issame(total_match({\"4\"}, {\"1\", \"2\", \"3\", \"4\", \"5\"\
+  }) , {\"4\"}));\n    assert (issame(total_match({\"hi\", \"admin\"}, {\"hI\", \"\
+  Hi\"}) , {\"hI\", \"Hi\"}));\n    assert (issame(total_match({\"hi\", \"admin\"\
+  }, {\"hI\", \"hi\", \"hi\"}) , {\"hI\", \"hi\", \"hi\"}));\n    assert (issame(total_match({\"\
+  hi\", \"admin\"}, {\"hI\", \"hi\", \"hii\"}) , {\"hi\", \"admin\"}));\n    assert\
+  \ (issame(total_match({}, {\"this\"}) , {}));\n    assert (issame(total_match({\"\
+  this\"}, {}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

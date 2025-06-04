@@ -1,0 +1,18 @@
+"name": "Java_35"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Retugn maximum element in the list.\n\n>>>>>> maxElement(Arrays.asList(1, 2, 3))\n\
+  \    3\n    >>> maxElement(Arrays.asList(5, 3, -5, 2, -3, 3, 9, 0, 123, 1, -10))\n\
+  \    123\n     */\n    public int maxElement(List<Integer> l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.maxElement(new ArrayList<>(Arrays.asList(1, 2, 3))) == 3,\n \
+  \               s.maxElement(new ArrayList<>(Arrays.asList(5, 3, -5, 2, -3, 3, 9,\
+  \ 0, 124, 1, -10))) == 124\n        );\n        if (correct.contains(false)) {\n\
+  \            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

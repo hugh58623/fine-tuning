@@ -1,0 +1,15 @@
+name: mbpp_838
+language: py
+prompt: "\n\ndef min_Swaps(s1,s2) :\n    \"\"\"\n    Write a python function to find\
+  \ minimum number swaps required to make two binary strings equal.\n    >>> min_Swaps(\"\
+  0011\",\"1111\")\n    1\n    >>> min_Swaps(\"00011\",\"01001\")\n    2\n    >>>\
+  \ min_Swaps(\"111\",\"111\")\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"0011\"\
+  ,\"1111\") == 1\n    assert candidate(\"00011\",\"01001\") == 2\n    assert candidate(\"\
+  111\",\"111\") == 0\n\n\n\ndef test_check():\n    check(min_Swaps)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

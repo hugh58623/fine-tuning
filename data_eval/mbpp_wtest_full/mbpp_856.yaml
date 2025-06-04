@@ -1,0 +1,15 @@
+name: mbpp_856
+language: py
+prompt: "\n\ndef find_Min_Swaps(arr,n) :\n    \"\"\"\n    Write a python function\
+  \ to find minimum adjacent swaps required to sort binary array.\n    >>> find_Min_Swaps([1,0,1,0],4)\n\
+  \    3\n    >>> find_Min_Swaps([0,1,0],3)\n    1\n    >>> find_Min_Swaps([0,0,1,1,0],5)\n\
+  \    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,0,1,0],4)\
+  \ == 3\n    assert candidate([0,1,0],3) == 1\n    assert candidate([0,0,1,1,0],5)\
+  \ == 2\n\n\n\ndef test_check():\n    check(find_Min_Swaps)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_169
+language: py
+prompt: "\n\ndef get_pell(n):\n\t\"\"\"\n\tWrite a function to calculate the nth pell\
+  \ number.\n\t>>> get_pell(4)\n\t12\n\t>>> get_pell(7)\n\t169\n\t>>> get_pell(8)\n\
+  \t408\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4) == 12\n\
+  \    assert candidate(7) == 169\n    assert candidate(8) == 408\n\n\n\ndef test_check():\n\
+  \    check(get_pell)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

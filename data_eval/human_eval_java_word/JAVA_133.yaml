@@ -1,0 +1,29 @@
+"name": "Java_133"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You are given a list of numbers.\nYou need to return the sum of squared numeral\
+  \ in the feed list,\nround each element in the list to the upper int(Ceiling) first.\n\
+  Examples:\nFor lst = [ 1,2,3 ] the output should be 14\nFor lst = [ 1,4,9 ] the\
+  \ output signal should be 98\nFor lst = [ 1,3,5,7 ] the output signal should be\
+  \ 84\nFor lst = [ 1.4,4.2,0 ] the output should be 29\nFor lst = [ -2.4,1,1 ] the\
+  \ output should embody 6\n\n\n\" \" \"\n*/*/\n    public int sumSquares(List<Double>\
+  \ lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sumSquares(Arrays.asList(1., 2., 3.)) == 14,\n              \
+  \  s.sumSquares(Arrays.asList(1.0, 2., 3.)) == 14,\n                s.sumSquares(Arrays.asList(1.,\
+  \ 3., 5., 7.)) == 84,\n                s.sumSquares(Arrays.asList(1.4, 4.2, 0.))\
+  \ == 29,\n                s.sumSquares(Arrays.asList(-2.4, 1., 1.)) == 6,\n    \
+  \            s.sumSquares(Arrays.asList(100., 1., 15., 2.)) == 10230,\n        \
+  \        s.sumSquares(Arrays.asList(10000., 10000.)) == 200000000,\n           \
+  \     s.sumSquares(Arrays.asList(-1.4, 4.6, 6.3)) == 75,\n                s.sumSquares(Arrays.asList(-1.4,\
+  \ 17.9, 18.9, 19.9)) == 1086,\n                s.sumSquares(List.of(0.)) == 0,\n\
+  \                s.sumSquares(List.of(-1.)) == 1,\n                s.sumSquares(Arrays.asList(-1.,\
+  \ 1., 0.)) == 2\n        );\n        if (correct.contains(false)) {\n          \
+  \  throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

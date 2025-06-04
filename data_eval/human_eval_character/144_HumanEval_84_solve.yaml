@@ -1,0 +1,19 @@
+name: HumanEval_84_solve
+language: py
+prompt: "\ndef solve(N):\n    \"\"\"GiveN a poSitivE inTeger N, return The toTal sum\
+  \ of itS diGits in bInaRY.\n    \n    EXaMple\n        fOr N = 1000, tHe sum of\
+  \ digits wilL BE 1 the Output shouLd be \"1\".\n        For N = 150, the sum of\
+  \ DigitS wILl Be 6 THe OutpuT should BE \"110\".\n        FOR N = 147, The sum Of\
+  \ DIGitS wILl Be 12 the OutPut SHouLd be \"1100\".\n    \n    VAriAbLeS:\n     \
+  \   @N INTegEr\n             ConstraINTS: 0 ≤ N ≤ 10000.\n    Output:\n        \
+  \ a stRiNG of binaRy numBer\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(1000) == '1'\n    assert candidate(150)\
+  \ == '110'\n    assert candidate(147) == '1100'\n    assert candidate(333) == '1001'\n\
+  \    assert candidate(963) == '10010'\n\ndef test_check():\n    check(solve)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

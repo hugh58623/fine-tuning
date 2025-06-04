@@ -1,0 +1,20 @@
+"name": "CPP_79"
+"language": "cpp"
+"prompt": "/*\nYou wIll bE giveN a nUmber in decimal Form aNd your tAsk Is to cOnvERt\
+  \ It To\nbiNAry Format. The funcTIOn shOuld return a strinG, with each chaRacteR\
+  \ rEPrEsENtIng a bInary\nnuMBeR. eAch ChARActEr in THe StrinG wiLl bE '0' Or '1'.\n\
+  \nTHere wIll Be An EXTRa cOuple of chARACters 'db' at tHe BEginninG and aT thE end\
+  \ oF ThE stRIng.\nthE exTRa chAraCtERS are thEre to help WiTH The FoRMaT.\n\nExAmPLEs:\n\
+  decimal_to_binary(15)   # ReTuRns \"db1111Db\"\ndecimal_to_binary(32)   # reTurns\
+  \ \"db100000dB\"\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\n\
+  string decimal_to_binary(int decimal){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (decimal_to_binary(0)\
+  \ == \"db0db\");\n    assert (decimal_to_binary(32) == \"db100000db\");\n    assert\
+  \ (decimal_to_binary(103) == \"db1100111db\");\n    assert (decimal_to_binary(15)\
+  \ == \"db1111db\");\n\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

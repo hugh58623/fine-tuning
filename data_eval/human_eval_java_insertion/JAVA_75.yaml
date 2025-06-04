@@ -1,0 +1,22 @@
+"name": "Java_75"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Write a function that returns true truthful if the given number numeral is the multiplication\
+  \ of 3 prime choice numbers\nand false assumed otherwise.\nKnowing sleep together\
+  \ that (a) is less then 100.\nExample:\nis_multiply_prime(30) = = True\n30 = 2 *\
+  \ 3 * 5\n\" \" \"\n*/*/\n    public boolean isMultiplyPrime(int a) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.isMultiplyPrime(5),\n                s.isMultiplyPrime(30),\n\
+  \                s.isMultiplyPrime(8),\n                !s.isMultiplyPrime(10),\n\
+  \                s.isMultiplyPrime(125),\n                s.isMultiplyPrime(3 *\
+  \ 5 * 7),\n                !s.isMultiplyPrime(3 * 6 * 7),\n                !s.isMultiplyPrime(9\
+  \ * 9 * 9),\n                !s.isMultiplyPrime(11 * 9 * 9),\n                s.isMultiplyPrime(11\
+  \ * 13 * 7)\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

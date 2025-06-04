@@ -1,0 +1,17 @@
+name: mbpp_284
+language: py
+prompt: "\n\ndef check_element(list,element):\n  \"\"\"\n  Write a function to check\
+  \ whether all items of a list are equal to a given string.\n  >>> check_element([\"\
+  green\", \"orange\", \"black\", \"white\"],'blue')\n  False\n  >>> check_element([1,2,3,4],7)\n\
+  \  False\n  >>> check_element([\"green\", \"green\", \"green\", \"green\"],'green')\n\
+  \  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([\"green\"\
+  , \"orange\", \"black\", \"white\"],'blue')==False\n    assert candidate([1,2,3,4],7)==False\n\
+  \    assert candidate([\"green\", \"green\", \"green\", \"green\"],'green')==True\n\
+  \n\n\ndef test_check():\n    check(check_element)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

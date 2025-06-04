@@ -1,0 +1,18 @@
+name: mbpp_590
+language: py
+prompt: "\n\ndef polar_rect(x,y):\n \"\"\"\n Write a function to convert polar coordinates\
+  \ to rectangular coordinates.\n >>> polar_rect(3,4)\n ((5.0, 0.9272952180016122),\
+  \ (-2+2.4492935982947064e-16j))\n >>> polar_rect(4,7)\n ((8.06225774829855, 1.0516502125483738),\
+  \ (-2+2.4492935982947064e-16j))\n >>> polar_rect(15,17)\n ((22.67156809750927, 0.8478169733934057),\
+  \ (-2+2.4492935982947064e-16j))\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3,4)==((5.0,\
+  \ 0.9272952180016122), (-2+2.4492935982947064e-16j))\n    assert candidate(4,7)==((8.06225774829855,\
+  \ 1.0516502125483738), (-2+2.4492935982947064e-16j))\n    assert candidate(15,17)==((22.67156809750927,\
+  \ 0.8478169733934057), (-2+2.4492935982947064e-16j))\n\n\n\ndef test_check():\n\
+  \    check(polar_rect)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

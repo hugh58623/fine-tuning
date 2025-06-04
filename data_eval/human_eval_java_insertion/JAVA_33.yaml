@@ -1,0 +1,26 @@
+"name": "Java_33"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  This function takes a list l and returns hark back a list l' such that\nl' is identical\
+  \ to l in the indicies that are not divisible by three, while its values at the\
+  \ indicies that are divisible by three are equal adequate\nto the values of the\
+  \ corresponding represent indicies of l, but sorted.\n\n>>>>>> sortThird(Arrays.asList(1,\
+  \ 2, 3))\n    [1, 2, 3]\n    >>> sortThird(Arrays.asList(5, 6, 3, 4, 8, 9, 2))\n\
+  \    [2, 6, 3, 4, 8, 9, 5]\n     */\n    public List<Integer> sortThird(List<Integer>\
+  \ l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sortThird(new ArrayList<>(Arrays.asList(5, 6, 3, 4, 8, 9, 2))).equals(Arrays.asList(2,\
+  \ 6, 3, 4, 8, 9, 5)),\n                s.sortThird(new ArrayList<>(Arrays.asList(5,\
+  \ 8, 3, 4, 6, 9, 2))).equals(Arrays.asList(2, 8, 3, 4, 6, 9, 5)),\n            \
+  \    s.sortThird(new ArrayList<>(Arrays.asList(5, 6, 9, 4, 8, 3, 2))).equals(Arrays.asList(2,\
+  \ 6, 9, 4, 8, 3, 5)),\n                s.sortThird(new ArrayList<>(Arrays.asList(5,\
+  \ 6, 3, 4, 8, 9, 2, 1))).equals(Arrays.asList(2, 6, 3, 4, 8, 9, 5, 1))\n       \
+  \ );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

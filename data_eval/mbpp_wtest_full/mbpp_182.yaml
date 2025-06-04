@@ -1,0 +1,21 @@
+name: mbpp_182
+language: py
+prompt: "\n\ndef find_character(string):\n  \"\"\"\n  Write a function to find uppercase,\
+  \ lowercase, special character and numeric values using regex.\n  >>> find_character(\"\
+  ThisIsGeeksforGeeks\")\n  (['T', 'I', 'G', 'G'], ['h', 'i', 's', 's', 'e', 'e',\
+  \ 'k', 's', 'f', 'o', 'r', 'e', 'e', 'k', 's'], [], [])\n  >>> find_character(\"\
+  Hithere2\")\n  (['H'], ['i', 't', 'h', 'e', 'r', 'e'], ['2'], [])\n  >>> find_character(\"\
+  HeyFolks32\")\n  (['H', 'F'], ['e', 'y', 'o', 'l', 'k', 's'], ['3', '2'], [])\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ThisIsGeeksforGeeks\"\
+  ) == (['T', 'I', 'G', 'G'], ['h', 'i', 's', 's', 'e', 'e', 'k', 's', 'f', 'o', 'r',\
+  \ 'e', 'e', 'k', 's'], [], [])\n    assert candidate(\"Hithere2\") == (['H'], ['i',\
+  \ 't', 'h', 'e', 'r', 'e'], ['2'], [])\n    assert candidate(\"HeyFolks32\") ==\
+  \ (['H', 'F'], ['e', 'y', 'o', 'l', 'k', 's'], ['3', '2'], [])\n\n\n\ndef test_check():\n\
+  \    check(find_character)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

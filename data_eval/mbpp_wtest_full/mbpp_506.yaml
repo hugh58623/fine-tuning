@@ -1,0 +1,15 @@
+name: mbpp_506
+language: py
+prompt: "\n\ndef permutation_coefficient(n, k):\n\t\"\"\"\n\tWrite a function to calculate\
+  \ the permutation coefficient of given p(n, k).\n\t>>> permutation_coefficient(10,\
+  \ 2)\n\t90\n\t>>> permutation_coefficient(10, 3)\n\t720\n\t>>> permutation_coefficient(10,\
+  \ 1)\n\t10\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10, 2)\
+  \ == 90\n    assert candidate(10, 3) == 720\n    assert candidate(10, 1) == 10\n\
+  \n\n\ndef test_check():\n    check(permutation_coefficient)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

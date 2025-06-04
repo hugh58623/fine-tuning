@@ -1,0 +1,20 @@
+"name": "CPP_161"
+"language": "cpp"
+"prompt": "/*\nYou aRe giVen a sTriNg s.\nif s[i] iS a letTer, reveRse Its caSe fROm\
+  \ LoWer tO UppEr or vise versa,\nOTHerwIse keep it aS it is.\nIf the stRing cOnTAiNs\
+  \ NO lEtterS, reversE ThE STriNg.\ntHE fuNcTIoN shouLd return tHe rESulTed stRinG.\n\
+  EXaMPLEs\nsolve(\"1234\") = \"4321\"\nsolve(\"ab\") = \"Ab\"\nsolve(\"#a@C\") =\
+  \ \"#A@c\"\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nstring\
+  \ solve(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (solve(\"AsDf\"\
+  ) == \"aSdF\");\n    assert (solve(\"1234\") == \"4321\");\n    assert (solve(\"\
+  ab\") == \"AB\");\n    assert (solve(\"#a@C\") == \"#A@c\");\n    assert (solve(\"\
+  #AsdfW^45\") == \"#aSDFw^45\");\n    assert (solve(\"#6@2\") == \"2@6#\");\n   \
+  \ assert (solve(\"#$a^D\") == \"#$A^d\");\n    assert (solve(\"#ccc\") == \"#CCC\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

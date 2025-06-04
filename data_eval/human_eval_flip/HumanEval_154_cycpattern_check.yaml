@@ -1,0 +1,20 @@
+name: HumanEval_154_cycpattern_check
+language: py
+prompt: "\ndef cycpattern_check(a , b):\n    \"\"\"You aRe giVen 2 woRds. you neEd\
+  \ to return True iF the secOnd Word oR anY Of ItS rotATioNs is a substring in THE\
+  \ firSt word\n    cycpAttern_check(\"aBcd\",\"abD\") => False\n    cYCpAtTErN_checK(\"\
+  hello\",\"eLL\") => True\n    cYCPatTeRN_CheCk(\"WHaSsup\",\"pSus\") => False\n\
+  \    CycPAttErn_chEck(\"AbAb\",\"BAA\") => True\n    CycPattern_chECK(\"Efef\",\"\
+  eeff\") => False\n    cyCpATtern_chEck(\"hiMenSs\",\"simEN\") => True\n\n    \"\"\
+  \"\n"
+tests: "def check(candidate):\n    assert candidate('xyzw', 'xyw') == False\n    assert\
+  \ candidate('yello', 'ell') == True\n    assert candidate('whattup', 'ptut') ==\
+  \ False\n    assert candidate('efef', 'fee') == True\n    assert candidate('abab',\
+  \ 'aabb') == False\n    assert candidate('winemtt', 'tinem') == True\n\ndef test_check():\n\
+  \    check(cycpattern_check)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

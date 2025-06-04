@@ -1,0 +1,16 @@
+name: mbpp_321
+language: py
+prompt: "\n\ndef find_demlo(s):\n\t\"\"\"\n\tWrite a function to find the demlo number\
+  \ for the given number.\n\t>>> find_demlo(\"111111\")\n\t'12345654321'\n\t>>> find_demlo(\"\
+  1111\")\n\t'1234321'\n\t>>> find_demlo(\"13333122222\")\n\t'123456789101110987654321'\n\
+  \t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"111111\"\
+  ) == '12345654321'\n    assert candidate(\"1111\") == '1234321'\n    assert candidate(\"\
+  13333122222\") == '123456789101110987654321'\n\n\n\ndef test_check():\n    check(find_demlo)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

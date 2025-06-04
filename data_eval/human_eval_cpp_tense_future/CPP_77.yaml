@@ -1,0 +1,19 @@
+"name": "CPP_77"
+"language": "cpp"
+"prompt": "/*\nWrite a function that will take an integer a and will return True\n\
+  if this ingeger will be a cube of some integer number.\nNote: you may will assume\
+  \ the input will be always valid.\nExamples:\niscube(1)==> True\niscube(2)==> False\n\
+  iscube(-1)==> True\niscube(64)==> True\niscube(0)==> True\niscube(180)==> False\n\
+  */\n#include<stdio.h>\n#include<math.h>\nusing namespace std;\nbool iscuber(int\
+  \ a){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (iscuber(1) ==\
+  \ true);\n    assert (iscuber(2) == false);\n    assert (iscuber(-1) == true);\n\
+  \    assert (iscuber(64) == true);\n    assert (iscuber(180) == false);\n    assert\
+  \ (iscuber(1000) == true);\n    assert (iscuber(0) == true);\n    assert (iscuber(1729)\
+  \ == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

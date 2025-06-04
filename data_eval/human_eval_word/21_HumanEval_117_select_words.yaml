@@ -1,0 +1,25 @@
+name: HumanEval_117_select_words
+language: py
+prompt: "\ndef select_words(s, n):\n    \"\"\"Given a string s and a natural number\
+  \ n, you have been tax to follow through \n     a function that returns a list of\
+  \ all word from string s that hold exactly \n     n consonant, in ordering these\
+  \ words appear in the chain s.\n     If the string s is empty then the function\
+  \ should return an empty list.\n     bill: you may assume the stimulation bowed\
+  \ stringed instrument contains only letters and spaces. \n     Examples: \n    \
+  \ select_words(\"Mary have a little lamb \", 4) = = > [ \" little \" ] \n     select_words(\"\
+  Mary had a small lamb \", 3) = = > [ \" Mary \", \" lamb \" ] \n     select_words(\"\
+  simple blank space \", 2) = = > [ ] \n     select_words(\"Hello world \", 4) = =\
+  \ > [ \" world \" ] \n     select_words(\"Uncle surface-to-air missile \", 3) =\
+  \ = > [ \" Uncle \" ] \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate('Mary had a little lamb', 4) ==\
+  \ ['little']\n    assert candidate('Mary had a little lamb', 3) == ['Mary', 'lamb']\n\
+  \    assert candidate('simple white space', 2) == []\n    assert candidate('Hello\
+  \ world', 4) == ['world']\n    assert candidate('Uncle sam', 3) == ['Uncle']\n \
+  \   assert candidate('', 4) == []\n    assert candidate('a b c d e f', 1) == ['b',\
+  \ 'c', 'd', 'f']\n\ndef test_check():\n    check(select_words)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_822
+language: py
+prompt: "\n\ndef pass_validity(p):\n \"\"\"\n Write a function to return true if the\
+  \ password is valid.\n >>> pass_validity(\"password\")\n False\n >>> pass_validity(\"\
+  Password@10\")\n True\n >>> pass_validity(\"password@10\")\n False\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"password\"\
+  )==False\n    assert candidate(\"Password@10\")==True\n    assert candidate(\"password@10\"\
+  )==False\n\n\n\ndef test_check():\n    check(pass_validity)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

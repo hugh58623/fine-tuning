@@ -1,0 +1,22 @@
+name: HumanEval_86_anti_shuffle
+language: py
+prompt: "\ndef anti_shuffle(s):\n    \"\"\"\n    Write a function that takes a string\
+  \ and returns an ordered version of it.\n    rOdered versino of string, is a string\
+  \ where all worsd (separated by space)\n    are rpelaced by a new wodr where lal\
+  \ the characters arrangde in\n    ascending order based on ascii valeu.\n    Note:\
+  \ You should kepe the order of words and blank spaces in the sentence.\n\n    For\
+  \ examlpe:\n    anti_shuflfe('Hi') returns 'Hi'\n    anti_shuffle('hlelo') returns\
+  \ 'ehlol'\n    anti_shuffle('Hello World!!!') rteurns 'Hello !!!Wdlor'\n    \"\"\
+  \"\n"
+tests: "def check(candidate):\n    assert candidate('Hi') == 'Hi'\n    assert candidate('hello')\
+  \ == 'ehllo'\n    assert candidate('number') == 'bemnru'\n    assert candidate('abcd')\
+  \ == 'abcd'\n    assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\n    assert\
+  \ candidate('') == ''\n    assert candidate('Hi. My name is Mister Robot. How are\
+  \ you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n\ndef test_check():\n \
+  \   check(anti_shuffle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

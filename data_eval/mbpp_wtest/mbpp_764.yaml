@@ -1,0 +1,15 @@
+name: mbpp_764
+language: py
+prompt: "\n\ndef number_ctr(str):\n      \"\"\"\n      Write a python function to\
+  \ count numeric values in a given string.\n      >>> number_ctr('program2bedone')\n\
+  \      1\n      >>> number_ctr('3wonders')\n      1\n      >>> number_ctr('123')\n\
+  \      3\n      \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('program2bedone')\
+  \ == 1\n    assert candidate('3wonders') ==1\n    assert candidate('123') == 3\n\
+  \n\n\ndef test_check():\n    check(number_ctr)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_34
+language: py
+prompt: "\n\ndef find_missing(ar,N):\n    \"\"\"\n    Write a python function to find\
+  \ the missing number in a sorted array.\n    >>> find_missing([1,2,3,5],4)\n   \
+  \ 4\n    >>> find_missing([1,3,4,5],4)\n    2\n    >>> find_missing([1,2,3,5,6,7],5)\n\
+  \    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,5],4)\
+  \ == 4\n    assert candidate([1,3,4,5],4) == 2\n    assert candidate([1,2,3,5,6,7],5)\
+  \ == 4\n\n\n\ndef test_check():\n    check(find_missing)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

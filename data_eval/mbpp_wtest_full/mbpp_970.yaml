@@ -1,0 +1,14 @@
+name: mbpp_970
+language: py
+prompt: "\n\ndef min_of_two( x, y ):\n    \"\"\"\n    Write a function to find minimum\
+  \ of two numbers.\n    >>> min_of_two(10,20)\n    10\n    >>> min_of_two(19,15)\n\
+  \    15\n    >>> min_of_two(-10,-20)\n    -20\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==10\n\
+  \    assert candidate(19,15)==15\n    assert candidate(-10,-20)==-20\n\n\n\ndef\
+  \ test_check():\n    check(min_of_two)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

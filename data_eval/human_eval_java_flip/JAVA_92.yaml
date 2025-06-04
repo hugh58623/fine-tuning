@@ -1,0 +1,23 @@
+"name": "Java_92"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CreAte a FunctIon That tAkes 3 nUmbers.\nREtuRns trUe iF OnE oF the NUmbErs is equal\
+  \ to tHE Sum oF the other tWo, and all numbErs arE iNTeGeRS.\nREturnS false in aNY\
+  \ oTHEr cAsES.\n\nexaMpLEs\nAny_inT(5, 2, 7) ➞ True\n\nanY_inT(3, 2, 2) ➞ False\n\
+  \nAny_Int(3, -2, 1) ➞ True\n\nanY_inT(3.6, -2.2, 2) ➞ False\n\n\n\n\"\"\"\n*/*/\n\
+  \    public boolean anyInt(Object x, Object y, Object z) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.anyInt(2, 3, 1) == true,\n                s.anyInt(2.5, 2, 3)\
+  \ == false,\n                s.anyInt(1.5, 5, 3.5) == false,\n                s.anyInt(2,\
+  \ 6, 2) == false,\n                s.anyInt(4, 2, 2) == true,\n                s.anyInt(2.2,\
+  \ 2.2, 2.2) == false,\n                s.anyInt(-4, 6, 2) == true,\n           \
+  \     s.anyInt(2, 1, 1) == true,\n                s.anyInt(3, 4, 7) == true,\n \
+  \               s.anyInt(3.0, 4, 7) == false\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

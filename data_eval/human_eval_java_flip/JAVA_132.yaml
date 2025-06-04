@@ -1,0 +1,26 @@
+"name": "Java_132"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  CreAte a FunctIon That tAkes a string As input WhiCh conTaiNS oNlY squARe bRackets.\n\
+  The funCTIon sHould return True if and Only if there iS a valId SUbSeQUeNce of BracketS\n\
+  WhERE at LeAST onE bRAcKet in thE suBseQUenCe is nEstEd.\n\nIs_NESTed('[[]]') ➞\
+  \ True\nIs_nested('[]]]]]]][[[[[]') ➞ False\niS_NESted('[][]') ➞ False\nis_nestEd('[]')\
+  \ ➞ False\nIS_nested('[[][]]') ➞ True\nIs_nesTed('[[]][[') ➞ True\n\"\"\"\n*/*/\n\
+  \    public boolean isNested(String string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.isNested(\"[[]]\" ),\n                !s.isNested(\"[]]]]]]][[[[[]\"\
+  \ ),\n                !s.isNested(\"[][]\" ),\n                !s.isNested(\"[]\"\
+  \ ),\n                s.isNested(\"[[[[]]]]\" ),\n                !s.isNested(\"\
+  []]]]]]]]]]\" ),\n                s.isNested(\"[][][[]]\" ),\n                !s.isNested(\"\
+  [[]\" ),\n                !s.isNested(\"[]]\" ),\n                s.isNested(\"\
+  [[]][[\" ),\n                s.isNested(\"[[][]]\" ),\n                !s.isNested(\"\
+  \" ),\n                !s.isNested(\"[[[[[[[[\" ),\n                !s.isNested(\"\
+  ]]]]]]]]\" )\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

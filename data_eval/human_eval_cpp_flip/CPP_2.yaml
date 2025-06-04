@@ -1,0 +1,16 @@
+"name": "CPP_2"
+"language": "cpp"
+"prompt": "/*\nGivEn a pOsitiVe fLoatiNg poiNt number, it can Be dEcompOseD InTo\n\
+  And iNTegEr part (largest INTegeR smaller thAn given number) and deCimalS\n(lEFtOvER\
+  \ pArt alWays smaLLeR THan 1).\n\nreTURn tHe DEcImal pArt Of tHE number.\n>>> truncate_number(3.5)\n\
+  0.5\n*/\n#include<stdio.h>\n#include<math.h>\nusing namespace std;\nfloat truncate_number(float\
+  \ number){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n assert (truncate_number(3.5)\
+  \ == 0.5); \n assert (abs(truncate_number(1.33) - 0.33) < 1e-4);\n  assert (abs(truncate_number(123.456)\
+  \ - 0.456) < 1e-4);\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

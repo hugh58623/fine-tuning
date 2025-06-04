@@ -1,0 +1,14 @@
+name: mbpp_295
+language: py
+prompt: "\n\ndef sum_div(number):\n    \"\"\"\n    Write a function to return the\
+  \ sum of all divisors of a number.\n    >>> sum_div(8)\n    7\n    >>> sum_div(12)\n\
+  \    16\n    >>> sum_div(7)\n    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(8)==7\n\
+  \    assert candidate(12)==16\n    assert candidate(7)==1\n\n\n\ndef test_check():\n\
+  \    check(sum_div)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

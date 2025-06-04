@@ -1,0 +1,17 @@
+name: mbpp_829
+language: py
+prompt: "\n\ndef second_frequent(input):\n\t\"\"\"\n\tWrite a function to find out\
+  \ the second most repeated (or frequent) string in the given sequence.\n\t>>> second_frequent(['aaa','bbb','ccc','bbb','aaa','aaa'])\n\
+  \t'bbb'\n\t>>> second_frequent(['abc','bcd','abc','bcd','bcd','bcd'])\n\t'abc'\n\
+  \t>>> second_frequent(['cdma','gsm','hspa','gsm','cdma','cdma'])\n\t'gsm'\n\t\"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['aaa','bbb','ccc','bbb','aaa','aaa'])\
+  \ == 'bbb'\n    assert candidate(['abc','bcd','abc','bcd','bcd','bcd']) == 'abc'\n\
+  \    assert candidate(['cdma','gsm','hspa','gsm','cdma','cdma']) == 'gsm'\n\n\n\n\
+  def test_check():\n    check(second_frequent)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

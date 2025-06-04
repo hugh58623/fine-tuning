@@ -1,0 +1,20 @@
+"name": "CPP_92"
+"language": "cpp"
+"prompt": "/*\nCreAte a FunctIon That tAkes 3 nUmbers.\nREtuRns trUe iF OnE oF the\
+  \ NUmbErs is equal to tHE Sum oF the other tWo, and all numbErs arE iNTeGeRS.\n\
+  REturnS false in aNY oTHEr cAsES.\n\nexaMpLEs\nAny_inT(5, 2, 7) ➞ True\n\nanY_inT(3,\
+  \ 2, 2) ➞ False\n\nAny_Int(3, -2, 1) ➞ True\n\nanY_inT(3.6, -2.2, 2) ➞ False\n*/\n\
+  #include<stdio.h>\n#include<math.h>\nusing namespace std;\nbool any_int(float a,float\
+  \ b,float c){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (any_int(2, 3,\
+  \ 1)==true);\n    assert (any_int(2.5, 2, 3)==false);\n    assert (any_int(1.5,\
+  \ 5, 3.5)==false);\n    assert (any_int(2, 6, 2)==false);\n    assert (any_int(4,\
+  \ 2, 2)==true);\n    assert (any_int(2.2, 2.2, 2.2)==false);\n    assert (any_int(-4,\
+  \ 6, 2)==true);\n    assert (any_int(2,1,1)==true);\n    assert (any_int(3,4,7)==true);\n\
+  \    assert (any_int(3.01,4,7)==false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

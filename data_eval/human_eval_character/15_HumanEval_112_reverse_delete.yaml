@@ -1,0 +1,23 @@
+name: HumanEval_112_reverse_delete
+language: py
+prompt: "\ndef reverse_delete(s,c):\n    \"\"\"Task\n    we arE giveN twO striNgs\
+  \ s anD c, you havE to DeletEd aLL tHe CharACteRs in s that are equaL TO any Character\
+  \ in c\n    tHen check if thE resuLt STrInG Is PalinDrome.\n    A sTRiNG Is cAlLED\
+  \ paLiNDrOme if It rEadS The Same bAckWaRd AS FOrwArd.\n    You shoULD return A\
+  \ tuple containinG tHE result StrinG anD True/False for tHE cHecK.\n    exaMpLe\n\
+  \    FOR s = \"abcDe\", c = \"aE\", tHE Result Should be ('bCd',fALse)\n    foR\
+  \ s = \"AbCdeF\", c = \"b\"  THE rEsUlT shouLd be ('Acdef',FalSE)\n    FOR s = \"\
+  abcdedcba\", c = \"Ab\", thE resulT sHOuLD Be ('cDedC',True)\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('abcde', 'ae') == ('bcd', False)\n\
+  \    assert candidate('abcdef', 'b') == ('acdef', False)\n    assert candidate('abcdedcba',\
+  \ 'ab') == ('cdedc', True)\n    assert candidate('dwik', 'w') == ('dik', False)\n\
+  \    assert candidate('a', 'a') == ('', True)\n    assert candidate('abcdedcba',\
+  \ '') == ('abcdedcba', True)\n    assert candidate('abcdedcba', 'v') == ('abcdedcba',\
+  \ True)\n    assert candidate('vabba', 'v') == ('abba', True)\n    assert candidate('mamma',\
+  \ 'mia') == ('', True)\n\ndef test_check():\n    check(reverse_delete)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

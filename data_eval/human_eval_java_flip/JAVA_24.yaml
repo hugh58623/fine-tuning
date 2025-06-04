@@ -1,0 +1,18 @@
+"name": "Java_24"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  For A givEn numBer n, Find tHe larGest numBer That dIviDEs n EvEnly, SMalLer than\
+  \ n\n\n>>>>>> largestDivisor(15)\n    5\n     */\n    public int largestDivisor(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.largestDivisor(3) == 1,\n                s.largestDivisor(7)\
+  \ == 1,\n                s.largestDivisor(10) == 5,\n                s.largestDivisor(100)\
+  \ == 50,\n                s.largestDivisor(49) == 7\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,14 @@
+name: mbpp_606
+language: py
+prompt: "\n\ndef radian_degree(degree):\n \"\"\"\n Write a function to convert degrees\
+  \ to radians.\n >>> radian_degree(90)\n 1.5707963267948966\n >>> radian_degree(60)\n\
+  \ 1.0471975511965976\n >>> radian_degree(120)\n 2.0943951023931953\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(90)==1.5707963267948966\n\
+  \    assert candidate(60)==1.0471975511965976\n    assert candidate(120)==2.0943951023931953\n\
+  \n\n\ndef test_check():\n    check(radian_degree)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

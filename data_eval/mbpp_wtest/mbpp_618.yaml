@@ -1,0 +1,16 @@
+name: mbpp_618
+language: py
+prompt: "\n\ndef div_list(nums1,nums2):\n  \"\"\"\n  Write a function to divide two\
+  \ lists using map and lambda function.\n  >>> div_list([4,5,6],[1, 2, 3])\n  [4.0,2.5,2.0]\n\
+  \  >>> div_list([3,2],[1,4])\n  [3.0, 0.5]\n  >>> div_list([90,120],[50,70])\n \
+  \ [1.8, 1.7142857142857142]\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([4,5,6],[1,\
+  \ 2, 3])==[4.0,2.5,2.0]\n    assert candidate([3,2],[1,4])==[3.0, 0.5]\n    assert\
+  \ candidate([90,120],[50,70])==[1.8, 1.7142857142857142]\n\n\n\ndef test_check():\n\
+  \    check(div_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

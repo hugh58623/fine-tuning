@@ -1,0 +1,15 @@
+name: mbpp_195
+language: py
+prompt: "\n\ndef first(arr,x,n):\n    \"\"\"\n    Write a python function to find\
+  \ the first position of an element in a sorted array.\n    >>> first([1,2,3,4,5,6,6],6,6)\n\
+  \    5\n    >>> first([1,2,2,2,3,2,2,4,2],2,9)\n    1\n    >>> first([1,2,3],1,3)\n\
+  \    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4,5,6,6],6,6)\
+  \ == 5\n    assert candidate([1,2,2,2,3,2,2,4,2],2,9) == 1\n    assert candidate([1,2,3],1,3)\
+  \ == 0\n\n\n\ndef test_check():\n    check(first)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

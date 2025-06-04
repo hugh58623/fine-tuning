@@ -1,0 +1,23 @@
+name: mbpp_869
+language: py
+prompt: "\n\ndef remove_list_range(list1, leftrange, rigthrange):\n   \"\"\"\n   Write\
+  \ a function to remove sublists from a given list of lists, which are outside a\
+  \ given range.\n   >>> remove_list_range([[2], [0], [1, 2, 3], [0, 1, 2, 3, 6, 7],\
+  \ [9, 11], [13, 14, 15, 17]],13,17)\n   [[13, 14, 15, 17]]\n   >>> remove_list_range([[2],\
+  \ [0], [1, 2, 3], [0, 1, 2, 3, 6, 7], [9, 11], [13, 14, 15, 17]],1,3)\n   [[2],\
+  \ [1, 2, 3]]\n   >>> remove_list_range([[2], [0], [1, 2, 3], [0, 1, 2, 3, 6, 7],\
+  \ [9, 11], [13, 14, 15, 17]],0,7)\n   [[2], [0], [1, 2, 3], [0, 1, 2, 3, 6, 7]]\n\
+  \   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[2], [0],\
+  \ [1, 2, 3], [0, 1, 2, 3, 6, 7], [9, 11], [13, 14, 15, 17]],13,17)==[[13, 14, 15,\
+  \ 17]]\n    assert candidate([[2], [0], [1, 2, 3], [0, 1, 2, 3, 6, 7], [9, 11],\
+  \ [13, 14, 15, 17]],1,3)==[[2], [1, 2, 3]]\n    assert candidate([[2], [0], [1,\
+  \ 2, 3], [0, 1, 2, 3, 6, 7], [9, 11], [13, 14, 15, 17]],0,7)==[[2], [0], [1, 2,\
+  \ 3], [0, 1, 2, 3, 6, 7]]\n\n\n\ndef test_check():\n    check(remove_list_range)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

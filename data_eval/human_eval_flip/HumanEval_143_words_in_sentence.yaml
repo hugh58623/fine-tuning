@@ -1,0 +1,23 @@
+name: HumanEval_143_words_in_sentence
+language: py
+prompt: "\ndef words_in_sentence(sentence):\n    \"\"\"\n    You Are gIven a StrIng\
+  \ rePreseNting a sentence,\n    tHe sentence cOntaiNs sOMe WoRds sEParAted by a\
+  \ space,\n    aND You hAve to return a striNg that contaiNs the WoRDs FrOM tHe oriGinal\
+  \ sentence,\n    whOSe LENgtHs ARE prImE NuMbers,\n    The OrdER of The woRds in\
+  \ ThE nEW STriNg should bE THE same as the OrIGinal onE.\n\n    ExamPle 1:\n   \
+  \     input: sentence = \"tHiS is A TesT\"\n        OUtpUT: \"is\"\n\n    EXamPlE\
+  \ 2:\n        iNput: sentence = \"leTs go for swImMINg\"\n        OUtPUt: \"Go fOr\"\
+  \n\n    cONsTrAiNts:\n        * 1 <= len(sentence) <= 100\n        * sentence coNtaiNs\
+  \ only leTTeRS\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('This is a test') == 'is'\n  \
+  \  assert candidate('lets go for swimming') == 'go for'\n    assert candidate('there\
+  \ is no place available here') == 'there is no place'\n    assert candidate('Hi\
+  \ I am Hussein') == 'Hi am Hussein'\n    assert candidate('go for it') == 'go for\
+  \ it'\n    assert candidate('here') == ''\n    assert candidate('here is') == 'is'\n\
+  \ndef test_check():\n    check(words_in_sentence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

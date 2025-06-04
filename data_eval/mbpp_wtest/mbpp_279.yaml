@@ -1,0 +1,14 @@
+name: mbpp_279
+language: py
+prompt: "\n\ndef is_num_decagonal(n):\n\t\"\"\"\n\tWrite a function to find the nth\
+  \ decagonal number.\n\t>>> is_num_decagonal(3)\n\t27\n\t>>> is_num_decagonal(7)\n\
+  \t175\n\t>>> is_num_decagonal(10)\n\t370\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3) == 27\n\
+  \    assert candidate(7) == 175\n    assert candidate(10) == 370\n\n\n\ndef test_check():\n\
+  \    check(is_num_decagonal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

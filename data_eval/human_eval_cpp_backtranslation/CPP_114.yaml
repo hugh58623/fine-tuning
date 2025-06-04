@@ -1,0 +1,20 @@
+"name": "CPP_114"
+"language": "cpp"
+"prompt": "\ndef minSubArraySum(nums):\n    \"\"\"\n    Given an array of integers,\
+  \ calculate the minimum sum of all non-empty sub-arrays of numbers. Example minSubArraySum\
+  \ ([2, 3, 4, 1, 2, 4]) = = 1 minSubArraySum ([-1, -2, -3]) = = -6 \"\"\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (minSubArraySum({2,\
+  \ 3, 4, 1, 2, 4}) == 1);\n    assert (minSubArraySum({-1, -2, -3}) == -6);\n   \
+  \ assert (minSubArraySum({-1, -2, -3, 2, -10}) == -14);\n    assert (minSubArraySum({-9999999999999999})\
+  \ == -9999999999999999);\n    assert (minSubArraySum({0, 10, 20, 1000000}) == 0);\n\
+  \    assert (minSubArraySum({-1, -2, -3, 10, -5}) == -6);\n    assert (minSubArraySum({100,\
+  \ -1, -2, -3, 10, -5}) == -6);\n    assert (minSubArraySum({10, 11, 13, 8, 3, 4})\
+  \ == 3);\n    assert (minSubArraySum({100, -33, 32, -1, 0, -2}) == -33);\n    assert\
+  \ (minSubArraySum({-10}) == -10);\n    assert (minSubArraySum({7}) == 7);\n    assert\
+  \ (minSubArraySum({1, -1}) == -1);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

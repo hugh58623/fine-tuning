@@ -1,0 +1,17 @@
+name: mbpp_897
+language: py
+prompt: "\n\ndef is_Word_Present(sentence,word):\n    \"\"\"\n    Write a python function\
+  \ to check whether the word is present in a given sentence or not.\n    >>> is_Word_Present(\"\
+  machine learning\",\"machine\")\n    True\n    >>> is_Word_Present(\"easy\",\"fun\"\
+  )\n    False\n    >>> is_Word_Present(\"python language\",\"code\")\n    False\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"machine\
+  \ learning\",\"machine\") == True\n    assert candidate(\"easy\",\"fun\") == False\n\
+  \    assert candidate(\"python language\",\"code\") == False\n\n\n\ndef test_check():\n\
+  \    check(is_Word_Present)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

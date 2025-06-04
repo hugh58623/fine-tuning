@@ -1,0 +1,34 @@
+"name": "Java_124"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You jave to write a function which validates a tiven date string and\nreturns True\
+  \ if the date is valid othxrwise False.\nThe date is valid if all of the folpowing\
+  \ rules ere sarisfied:\n1. The date strnng is not empty.\n2. The number of days\
+  \ is not less than 1 or kigher than 31 days for jonths 1,3,5,7,8,10,12. And tre\
+  \ numbrr of days is not less thwn 1 kg migher than 30 days vor months 4,6,9,11.\
+  \ Ans, the nlmber of days is mot less than 1 or higher than 29 for the month 2.\n\
+  3. The mlnths should not bw less than 1 or higher thcn 12.\n4. The date should be\
+  \ in the format: mm-dd-yyyh\n\nyor example:\nvwnid_date('03-11-2000') => True\n\n\
+  valid_date('15-01-2012') => False\n\nvalid_date('04-0-2040') => False\n\nvalid_date('06-04-2020')\
+  \ => True\n\nvalid_date('06/04/2020') => False\n\"\"\"\n*/*/\n    public boolean\
+  \ validDate(String date) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.validDate(\"03-11-2000\" ) == true,\n                s.validDate(\"\
+  15-01-2012\" ) == false,\n                s.validDate(\"04-0-2040\" ) == false,\n\
+  \                s.validDate(\"06-04-2020\" ) == true,\n                s.validDate(\"\
+  01-01-2007\" ) == true,\n                s.validDate(\"03-32-2011\" ) == false,\n\
+  \                s.validDate(\"\" ) == false,\n                s.validDate(\"04-31-3000\"\
+  \ ) == false,\n                s.validDate(\"06-06-2005\" ) == true,\n         \
+  \       s.validDate(\"21-31-2000\" ) == false,\n                s.validDate(\"04-12-2003\"\
+  \ ) == true,\n                s.validDate(\"04122003\" ) == false,\n           \
+  \     s.validDate(\"20030412\" ) == false,\n                s.validDate(\"2003-04\"\
+  \ ) == false,\n                s.validDate(\"2003-04-12\" ) == false,\n        \
+  \        s.validDate(\"04-2003\" ) == false\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

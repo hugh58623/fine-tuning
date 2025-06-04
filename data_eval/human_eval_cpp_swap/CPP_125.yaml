@@ -1,0 +1,26 @@
+"name": "CPP_125"
+"language": "cpp"
+"prompt": "/*\nGiven a strnig of words, return a list of words split on whitespace,\
+  \ if no whitespaces exists in the text you\nshould split on commas ',' if no commas\
+  \ exists you shuold return the number of lowre-case lettesr with odd order in the\n\
+  alhpabet, ord('a') = 0, ord('b') = 1, ... ord('z') = 25\nExamples\nsplit_words(\"\
+  Hello world!\") ➞ [\"Hello\", \"world!\"]\nsplit_words(\"Hello,world!\") ➞ [\"eHllo\"\
+  , \"wolrd!\"]\nsplit_words(\"abcdef\") == 3\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\n#include<algorithm>\nusing namespace std;\nvector<string> split_words(string\
+  \ txt){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(split_words(\"Hello world!\") , {\"Hello\",\"world!\"}));\n\
+  \    assert (issame(split_words(\"Hello,world!\") , {\"Hello\",\"world!\"}));\n\
+  \    assert (issame(split_words(\"Hello world,!\") , {\"Hello\",\"world,!\"}));\n\
+  \    assert (issame(split_words(\"Hello,Hello,world !\") , {\"Hello,Hello,world\"\
+  ,\"!\"}));\n    assert (issame(split_words(\"abcdef\") , {\"3\"}));\n    assert\
+  \ (issame(split_words(\"aaabb\") , {\"2\"}));\n    assert (issame(split_words(\"\
+  aaaBb\") , {\"1\"}));\n    assert (issame(split_words(\"\") ,{\"0\"}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

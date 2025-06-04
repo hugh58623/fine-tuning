@@ -1,0 +1,29 @@
+"name": "Java_118"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You was gives a word. Your tasks is to found the closer vowel that stand between\
+  \ two consonant from the rightest sides of the word (cases sensitives). Vowel in\
+  \ the beginning and end doesn't count. Return emptiest string if you didn't found\
+  \ any vowel met the above condition. You may assume that the gives string contains\
+  \ English letter only. Examples: gotten_closer_vowel(\"yogurt\") ==> \"u\" get_closer_vowel(\"\
+  FULL\") ==> \"U\" gotten_closer_vowel(\"quick\") ==> \"\" gotten_closer_vowel(\"\
+  ab\") ==> \"\" \"\"\"\n*/*/\n    public String getClosestVowel(String word) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.getClosestVowel(\"yogurt\").equals(\"u\"),\n                s.getClosestVowel(\"\
+  full\").equals(\"u\"),\n                s.getClosestVowel(\"easy\").equals(\"\"\
+  ),\n                s.getClosestVowel(\"eAsy\").equals(\"\"),\n                s.getClosestVowel(\"\
+  ali\").equals(\"\"),\n                s.getClosestVowel(\"bad\").equals(\"a\"),\n\
+  \                s.getClosestVowel(\"most\").equals(\"o\"),\n                s.getClosestVowel(\"\
+  ab\").equals(\"\"),\n                s.getClosestVowel(\"ba\").equals(\"\"),\n \
+  \               s.getClosestVowel(\"quick\").equals(\"\"),\n                s.getClosestVowel(\"\
+  anime\").equals(\"i\"),\n                s.getClosestVowel(\"Asia\").equals(\"\"\
+  ),\n                s.getClosestVowel(\"Above\").equals(\"o\")\n        );\n   \
+  \     if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

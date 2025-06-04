@@ -1,0 +1,16 @@
+name: mbpp_805
+language: py
+prompt: "\n\ndef max_sum_list(lists):\n \"\"\"\n Write a function to find the list\
+  \ in a list of lists whose sum of elements is the highest.\n >>> max_sum_list([[1,2,3],\
+  \ [4,5,6], [10,11,12], [7,8,9]])\n [10, 11, 12]\n >>> max_sum_list([[3,2,1], [6,5,4],\
+  \ [12,11,10]])\n [12,11,10]\n >>> max_sum_list([[2,3,1]])\n [2,3,1]\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[1,2,3],\
+  \ [4,5,6], [10,11,12], [7,8,9]])==[10, 11, 12] \n    assert candidate([[3,2,1],\
+  \ [6,5,4], [12,11,10]])==[12,11,10] \n    assert candidate([[2,3,1]])==[2,3,1] \n\
+  \n\n\ndef test_check():\n    check(max_sum_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

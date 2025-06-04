@@ -1,0 +1,15 @@
+name: mbpp_968
+language: py
+prompt: "\n\ndef floor_Max(A,B,N):\n    \"\"\"\n    Write a python function to find\
+  \ maximum possible value for the given periodic function.\n    >>> floor_Max(11,10,9)\n\
+  \    9\n    >>> floor_Max(5,7,4)\n    2\n    >>> floor_Max(2,2,1)\n    1\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(11,10,9)\
+  \ == 9\n    assert candidate(5,7,4) == 2\n    assert candidate(2,2,1) == 1\n\n\n\
+  \ndef test_check():\n    check(floor_Max)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

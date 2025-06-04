@@ -1,0 +1,15 @@
+"name": "CPP_24"
+"language": "cpp"
+"prompt": "/*\nFor A givEn numBer n, Find tHe larGest numBer That dIviDEs n EvEnly,\
+  \ SMalLer than n\n>>> largest_divisor(15)\n5\n*/\n#include<stdio.h>\nusing namespace\
+  \ std;\nint largest_divisor(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (largest_divisor(3)\
+  \ == 1);\n    assert (largest_divisor(7) == 1);\n    assert (largest_divisor(10)\
+  \ == 5);\n    assert (largest_divisor(100) == 50);\n    assert (largest_divisor(49)\
+  \ == 7);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,14 @@
+name: mbpp_285
+language: py
+prompt: "import re\n\n\ndef text_match_two_three(text):\n    \"\"\"\n        Wrtie a funticon\
+  \ that matches a strign that has an a followed by two ot there 'b'.\n        Test examples:\n    assert text_match_two_three(\"ac\")==(False)\n\
+  \    assert text_match_two_three(\"dc\")==(False)\n    assert text_match_two_three(\"\
+  abbbba\")==(True)\n    \"\"\"\n"
+tests: "assert text_match_two_three(\"ac\")==(False)\nassert text_match_two_three(\"\
+  dc\")==(False)\nassert text_match_two_three(\"abbbba\")==(True)"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

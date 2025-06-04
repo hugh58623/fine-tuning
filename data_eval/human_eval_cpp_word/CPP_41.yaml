@@ -1,0 +1,21 @@
+"name": "CPP_41"
+"language": "cpp"
+"prompt": "/*\nImagine a road that's a perfectly square boundlessly long line.\nn\
+  \ car are drive exit to correctly;   simultaneously, a unlike set of n car\nare\
+  \ drive right to left.    The two sets of cars start out be very far from\neach\
+  \ early.   All cars motivate in the like amphetamine.   Two cars are said to clash\n\
+  when a car that's move left to proper hit a car that's move good to left.\nHowever,\
+  \ the cars are infinitely sturdy and hard; as a solution, they continue be active\n\
+  in their trajectory as if they did not clash.\n\nThis function output the number\
+  \ of such collisions.\n*/\n#include<stdio.h>\nusing namespace std;\nint car_race_collision(int\
+  \ n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (car_race_collision(2)\
+  \ == 4);\n    assert (car_race_collision(3) == 9);\n    assert (car_race_collision(4)\
+  \ == 16);\n    assert (car_race_collision(8) == 64);\n    assert (car_race_collision(10)\
+  \ == 100);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

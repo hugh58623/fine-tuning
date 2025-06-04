@@ -1,0 +1,14 @@
+name: mbpp_356
+language: py
+prompt: "\n\ndef find_angle(a,b):\n \"\"\"\n Write a function to find the third angle\
+  \ of a triangle using two angles.\n >>> find_angle(47,89)\n 44\n >>> find_angle(45,95)\n\
+  \ 40\n >>> find_angle(50,40)\n 90\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(47,89)==44\n\
+  \    assert candidate(45,95)==40\n    assert candidate(50,40)==90\n\n\n\ndef test_check():\n\
+  \    check(find_angle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

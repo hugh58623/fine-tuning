@@ -1,0 +1,15 @@
+name: mbpp_422
+language: py
+prompt: "\n\ndef find_Average_Of_Cube(n):\n    \"\"\"\n    Write a python function\
+  \ to find the average of cubes of first n natural numbers.\n    >>> find_Average_Of_Cube(2)\n\
+  \    4.5\n    >>> find_Average_Of_Cube(3)\n    12\n    >>> find_Average_Of_Cube(1)\n\
+  \    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2) == 4.5\n\
+  \    assert candidate(3) == 12\n    assert candidate(1) == 1\n\n\n\ndef test_check():\n\
+  \    check(find_Average_Of_Cube)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

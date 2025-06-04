@@ -1,0 +1,17 @@
+name: mbpp_172
+language: py
+prompt: "def count_occurance(s):\n    \"\"\"\n  WriTe a fUnctiOn tO find The ocCurence\
+  \ Of cHaracTerS 'StD' in tHe giVEn sTring 1. list item 1. list item 1. list ITEm\
+  \ 2. list itEm 2. list item 2. list item\n  Test examples:\n    assert\
+  \ count_occurance(\"letstdlenstdporstd\") == 3\n    assert count_occurance(\"truststdsolensporsd\"\
+  ) == 1\n    assert count_occurance(\"makestdsostdworthit\") == 2\n    assert count_occurance(\"\
+  stds\") == 1\n    assert count_occurance(\"\") == 0\n    \"\"\"\n"
+tests: "assert count_occurance(\"letstdlenstdporstd\") == 3\nassert count_occurance(\"\
+  truststdsolensporsd\") == 1\nassert count_occurance(\"makestdsostdworthit\") ==\
+  \ 2\nassert count_occurance(\"stds\") == 1\nassert count_occurance(\"\") == 0"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

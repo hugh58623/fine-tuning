@@ -1,0 +1,18 @@
+name: HumanEval_75_is_multiply_prime
+language: py
+prompt: "\ndef is_multiply_prime(a):\n    \"\"\"Write is a function that returns true\
+  \ if the given number is the multiplication of 3 prime numbers and otherwise wrong.\
+  \ Knowing that (a) is less than 100. Example: is _ multiply _ prime (30) = = True\
+  \ 30 = 2 * 3 * 5 \"\" \"\n"
+tests: "def check(candidate):\n    assert candidate(5) == False\n    assert candidate(30)\
+  \ == True\n    assert candidate(8) == True\n    assert candidate(10) == False\n\
+  \    assert candidate(125) == True\n    assert candidate(105) == True\n    assert\
+  \ candidate(126) == False\n    assert candidate(729) == False\n    assert candidate(891)\
+  \ == False\n    assert candidate(1001) == True\n\ndef test_check():\n    check(is_multiply_prime)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

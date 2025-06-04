@@ -1,0 +1,19 @@
+"name": "Java_59"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  RSuppose n > 1 and is not a prime number.\n\n>>>>>> largestPrimeFactor(13195)\n\
+  \    29\n    >>> largestPrimeFactor(2048)\n    2\n     */\n    public int largestPrimeFactor(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.largestPrimeFactor(15) == 5,\n                s.largestPrimeFactor(27)\
+  \ == 3,\n                s.largestPrimeFactor(63) == 7,\n                s.largestPrimeFactor(330)\
+  \ == 11,\n                s.largestPrimeFactor(13195) == 29\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

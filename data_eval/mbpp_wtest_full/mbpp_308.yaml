@@ -1,0 +1,19 @@
+name: mbpp_308
+language: py
+prompt: "\n\ndef large_product(nums1, nums2, N):\n    \"\"\"\n    Write a function\
+  \ to find the specified number of largest products from two given lists.\n    >>>\
+  \ large_product([1, 2, 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],3)\n    [60, 54, 50]\n  \
+  \  >>> large_product([1, 2, 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],4)\n    [60, 54, 50,\
+  \ 48]\n    >>> large_product([1, 2, 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],5)\n    [60,\
+  \ 54, 50, 48, 45]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],3)==[60, 54, 50]\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],4)==[60, 54, 50, 48]\n    assert candidate([1,\
+  \ 2, 3, 4, 5, 6],[3, 6, 8, 9, 10, 6],5)==[60, 54, 50, 48, 45]\n\n\n\ndef test_check():\n\
+  \    check(large_product)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

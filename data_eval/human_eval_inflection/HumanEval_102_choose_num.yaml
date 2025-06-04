@@ -1,0 +1,17 @@
+name: HumanEval_102_choose_num
+language: py
+prompt: "\ndef choose_num(x, y):\n    \"\"\"This functions takes two positive numbers\
+  \ x and y and returning the bigger even integer number that is in the range [x,\
+  \ y] inclusive. If there's no such number, then the functions should return -1.\
+  \ For examples: choose_num(12, 15) = 14 choose_num(13, 12) = -1 \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(12, 15) == 14\n    assert candidate(13,\
+  \ 12) == -1\n    assert candidate(33, 12354) == 12354\n    assert candidate(5234,\
+  \ 5233) == -1\n    assert candidate(6, 29) == 28\n    assert candidate(27, 10) ==\
+  \ -1\n    assert candidate(7, 7) == -1\n    assert candidate(546, 546) == 546\n\n\
+  def test_check():\n    check(choose_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

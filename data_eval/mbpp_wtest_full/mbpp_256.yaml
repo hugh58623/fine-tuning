@@ -1,0 +1,15 @@
+name: mbpp_256
+language: py
+prompt: "\n\ndef count_Primes_nums(n):\n    \"\"\"\n    Write a python function to\
+  \ count the number of prime numbers less than a given non-negative number.\n   \
+  \ >>> count_Primes_nums(5)\n    2\n    >>> count_Primes_nums(10)\n    4\n    >>>\
+  \ count_Primes_nums(100)\n    25\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == 2\n\
+  \    assert candidate(10) == 4\n    assert candidate(100) == 25\n\n\n\ndef test_check():\n\
+  \    check(count_Primes_nums)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

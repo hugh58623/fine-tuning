@@ -1,0 +1,15 @@
+name: mbpp_833
+language: py
+prompt: "\n\ndef get_key(dict):\n    \"\"\"\n    Write a function to get dictionary\
+  \ keys as a list.\n    >>> get_key({1:'python',2:'java'})\n    [1,2]\n    >>> get_key({10:'red',20:'blue',30:'black'})\n\
+  \    [10,20,30]\n    >>> get_key({27:'language',39:'java',44:'little'})\n    [27,39,44]\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({1:'python',2:'java'})==[1,2]\n\
+  \    assert candidate({10:'red',20:'blue',30:'black'})==[10,20,30]\n    assert candidate({27:'language',39:'java',44:'little'})==[27,39,44]\n\
+  \n\n\ndef test_check():\n    check(get_key)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

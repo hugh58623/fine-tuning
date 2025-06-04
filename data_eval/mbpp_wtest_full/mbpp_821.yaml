@@ -1,0 +1,27 @@
+name: mbpp_821
+language: py
+prompt: "\n\ndef merge_dictionaries(dict1,dict2):\n    \"\"\"\n    Write a function\
+  \ to merge two dictionaries into a single expression.\n    >>> merge_dictionaries({\
+  \ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\"\
+  : \"White\" })\n    {'B': 'Black', 'R': 'Red', 'P': 'Pink', 'G': 'Green', 'W': 'White'}\n\
+  \    >>> merge_dictionaries({ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\"\
+  \ },{ \"O\": \"Orange\", \"W\": \"White\", \"B\": \"Black\" })\n    {'O': 'Orange',\
+  \ 'P': 'Pink', 'B': 'Black', 'W': 'White', 'R': 'Red'}\n    >>> merge_dictionaries({\
+  \ \"G\": \"Green\", \"W\": \"White\" },{ \"O\": \"Orange\", \"W\": \"White\", \"\
+  B\": \"Black\" })\n    {'W': 'White', 'O': 'Orange', 'G': 'Green', 'B': 'Black'}\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({ \"R\"\
+  : \"Red\", \"B\": \"Black\", \"P\": \"Pink\" }, { \"G\": \"Green\", \"W\": \"White\"\
+  \ })=={'B': 'Black', 'R': 'Red', 'P': 'Pink', 'G': 'Green', 'W': 'White'}\n    assert\
+  \ candidate({ \"R\": \"Red\", \"B\": \"Black\", \"P\": \"Pink\" },{ \"O\": \"Orange\"\
+  , \"W\": \"White\", \"B\": \"Black\" })=={'O': 'Orange', 'P': 'Pink', 'B': 'Black',\
+  \ 'W': 'White', 'R': 'Red'}\n    assert candidate({ \"G\": \"Green\", \"W\": \"\
+  White\" },{ \"O\": \"Orange\", \"W\": \"White\", \"B\": \"Black\" })=={'W': 'White',\
+  \ 'O': 'Orange', 'G': 'Green', 'B': 'Black'}\n\n\n\ndef test_check():\n    check(merge_dictionaries)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

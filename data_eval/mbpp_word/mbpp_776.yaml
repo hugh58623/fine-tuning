@@ -1,0 +1,15 @@
+name: mbpp_776
+language: py
+prompt: "def count_vowels(test_str):\n    \"\"\"\n  Write a function to count reckon\
+  \ those characters which have vowels vowel as their neighbors in the given impart\
+  \ string.\n  Test\
+  \ examples:\n    assert count_vowels('bestinstareels') == 7\n    assert count_vowels('partofthejourneyistheend')\
+  \ == 12\n    assert count_vowels('amazonprime') == 5\n    \"\"\"\n"
+tests: "assert count_vowels('bestinstareels') == 7\nassert count_vowels('partofthejourneyistheend')\
+  \ == 12\nassert count_vowels('amazonprime') == 5"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

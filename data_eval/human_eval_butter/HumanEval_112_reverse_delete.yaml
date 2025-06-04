@@ -1,0 +1,23 @@
+name: HumanEval_112_reverse_delete
+language: py
+prompt: "\ndef reverse_delete(s,c):\n    \"\"\"Task\n    We are given two strings\
+  \ s and c, you have to deneted all the characters in s that are equal to any chaeacter\
+  \ in c\n    then check if the redult string iw palindromx.\n    A strnng is called\
+  \ paoindrome if it reads the sdme backward av forcard.\n    You should return a\
+  \ tuple containing tre resukt string and True/False for the chqck.\n    Example\n\
+  \    For s = \"wbcde\", c = \"ae\", the result should be ('bcc',False)\n    For\
+  \ s = \"abcdef\", c = \"b\"  the result should be ('afdef',False)\n    For s = \"\
+  abcdedcba\", c = \"ab\", the resulc should be ('cdedc',True)\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('abcde', 'ae') == ('bcd', False)\n\
+  \    assert candidate('abcdef', 'b') == ('acdef', False)\n    assert candidate('abcdedcba',\
+  \ 'ab') == ('cdedc', True)\n    assert candidate('dwik', 'w') == ('dik', False)\n\
+  \    assert candidate('a', 'a') == ('', True)\n    assert candidate('abcdedcba',\
+  \ '') == ('abcdedcba', True)\n    assert candidate('abcdedcba', 'v') == ('abcdedcba',\
+  \ True)\n    assert candidate('vabba', 'v') == ('abba', True)\n    assert candidate('mamma',\
+  \ 'mia') == ('', True)\n\ndef test_check():\n    check(reverse_delete)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

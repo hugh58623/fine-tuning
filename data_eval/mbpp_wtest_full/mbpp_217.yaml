@@ -1,0 +1,15 @@
+name: mbpp_217
+language: py
+prompt: "\n\ndef first_Repeated_Char(str):\n    \"\"\"\n    Write a python function\
+  \ to find the first repeated character in a given string.\n    >>> first_Repeated_Char(\"\
+  Google\")\n    \"o\"\n    >>> first_Repeated_Char(\"data\")\n    \"a\"\n    >>>\
+  \ first_Repeated_Char(\"python\")\n    '\\0'\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Google\"\
+  ) == \"o\"\n    assert candidate(\"data\") == \"a\"\n    assert candidate(\"python\"\
+  ) == '\\0'\n\n\n\ndef test_check():\n    check(first_Repeated_Char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

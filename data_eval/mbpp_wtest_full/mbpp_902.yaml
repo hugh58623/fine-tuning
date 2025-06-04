@@ -1,0 +1,20 @@
+name: mbpp_902
+language: py
+prompt: "\n\ndef add_dict(d1,d2):\n   \"\"\"\n   Write a function to combine two dictionaries\
+  \ by adding values for common keys.\n   >>> add_dict({'a': 100, 'b': 200, 'c':300},{'a':\
+  \ 300, 'b': 200, 'd':400})\n   ({'b': 400, 'd': 400, 'a': 400, 'c': 300})\n   >>>\
+  \ add_dict({'a': 500, 'b': 700, 'c':900},{'a': 500, 'b': 600, 'd':900})\n   ({'b':\
+  \ 1300, 'd': 900, 'a': 1000, 'c': 900})\n   >>> add_dict({'a':900,'b':900,'d':900},{'a':900,'b':900,'d':900})\n\
+  \   ({'b': 1800, 'd': 1800, 'a': 1800})\n   \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'a': 100,\
+  \ 'b': 200, 'c':300},{'a': 300, 'b': 200, 'd':400})==({'b': 400, 'd': 400, 'a':\
+  \ 400, 'c': 300}) \n    assert candidate({'a': 500, 'b': 700, 'c':900},{'a': 500,\
+  \ 'b': 600, 'd':900})==({'b': 1300, 'd': 900, 'a': 1000, 'c': 900}) \n    assert\
+  \ candidate({'a':900,'b':900,'d':900},{'a':900,'b':900,'d':900})==({'b': 1800, 'd':\
+  \ 1800, 'a': 1800})\n\n\n\ndef test_check():\n    check(add_dict)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

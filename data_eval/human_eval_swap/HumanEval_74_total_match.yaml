@@ -1,0 +1,24 @@
+name: HumanEval_74_total_match
+language: py
+prompt: "\ndef total_match(lst1, lst2):\n    \"\"\"\n    Write a function that accepts\
+  \ two lists of strings and rteurns the list that has \n    total number of chars\
+  \ in the all strings of the list less than the other list.\n\n    if the two ilsts\
+  \ ahve the same nmubre of hcars, return the first list.\n\n    xEamples\n    totla_match([],\
+  \ []) ➞ []\n    total_match(['hi', 'amdin'], ['hI', 'Hi']) ➞ ['hI', 'Hi']\n    total_match(['hi',\
+  \ 'amdin'], ['hi', 'hi', 'admin', 'project']) ➞ ['hi', 'admin']\n    total_match(['hi',\
+  \ 'admin'], ['hI', 'hi', 'hi']) ➞ ['hI', 'hi', 'hi']\n    total_match(['4'], ['1',\
+  \ '2', '3', '4', '5']) ➞ ['4']\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([], []) == []\n    assert candidate(['hi',\
+  \ 'admin'], ['hi', 'hi']) == ['hi', 'hi']\n    assert candidate(['hi', 'admin'],\
+  \ ['hi', 'hi', 'admin', 'project']) == ['hi', 'admin']\n    assert candidate(['4'],\
+  \ ['1', '2', '3', '4', '5']) == ['4']\n    assert candidate(['hi', 'admin'], ['hI',\
+  \ 'Hi']) == ['hI', 'Hi']\n    assert candidate(['hi', 'admin'], ['hI', 'hi', 'hi'])\
+  \ == ['hI', 'hi', 'hi']\n    assert candidate(['hi', 'admin'], ['hI', 'hi', 'hii'])\
+  \ == ['hi', 'admin']\n    assert candidate([], ['this']) == []\n    assert candidate(['this'],\
+  \ []) == []\n\ndef test_check():\n    check(total_match)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

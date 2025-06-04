@@ -1,0 +1,17 @@
+name: mbpp_516
+language: py
+prompt: "\n\ndef radix_sort(nums):\n    \"\"\"\n    Write a function to sort a list\
+  \ of elements using radix sort.\n    >>> radix_sort([15, 79, 25, 68, 37])\n    [15,\
+  \ 25, 37, 68, 79]\n    >>> radix_sort([9, 11, 8, 7, 3, 2])\n    [2, 3, 7, 8, 9,\
+  \ 11]\n    >>> radix_sort([36, 12, 24, 26, 29])\n    [12, 24, 26, 29, 36]\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([15, 79,\
+  \ 25, 68, 37]) == [15, 25, 37, 68, 79]\n    assert candidate([9, 11, 8, 7, 3, 2])\
+  \ == [2, 3, 7, 8, 9, 11]\n    assert candidate([36, 12, 24, 26, 29]) == [12, 24,\
+  \ 26, 29, 36]\n\n\n\ndef test_check():\n    check(radix_sort)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

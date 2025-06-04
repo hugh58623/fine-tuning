@@ -1,0 +1,23 @@
+"name": "CPP_86"
+"language": "cpp"
+"prompt": "/*\nWrite a function that takes a string and return an coherent version\
+  \ of it.\nOrdered version of chain, is a string where all word (break by space)\n\
+  are supplant by a new word where all the characters format in\nascending order based\
+  \ on ascii value.\neminence: You should observe the decree of word and blank spaces\
+  \ in the sentence.\n\nFor example:\nanti_shuffle('Hi') returns' Hi'\nanti_shuffle('hello')\
+  \ return' ehllo'\nanti_shuffle('Hello World! !!') returns' Hello! !! Wdlor'\n*/\n\
+  #include<stdio.h>\n#include<string>\n#include<algorithm>\nusing namespace std;\n\
+  string anti_shuffle(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (anti_shuffle(\"\
+  Hi\") == \"Hi\");\n    assert (anti_shuffle(\"hello\") == \"ehllo\");\n    assert\
+  \ (anti_shuffle(\"number\") == \"bemnru\");\n    assert (anti_shuffle(\"abcd\")\
+  \ == \"abcd\");\n    assert (anti_shuffle(\"Hello World!!!\") == \"Hello !!!Wdlor\"\
+  );\n    assert (anti_shuffle(\"\") == \"\");\n    assert (anti_shuffle(\"Hi. My\
+  \ name is Mister Robot. How are you?\") == \".Hi My aemn is Meirst .Rboot How aer\
+  \ ?ouy\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

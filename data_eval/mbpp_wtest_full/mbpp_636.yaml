@@ -1,0 +1,15 @@
+name: mbpp_636
+language: py
+prompt: "\n\ndef Check_Solution(a,b,c):\n    \"\"\"\n    Write a python function to\
+  \ check if roots of a quadratic equation are reciprocal of each other or not.\n\
+  \    >>> Check_Solution(2,0,2)\n    \"Yes\"\n    >>> Check_Solution(2,-5,2)\n  \
+  \  \"Yes\"\n    >>> Check_Solution(1,2,3)\n    \"No\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,0,2)\
+  \ == \"Yes\"\n    assert candidate(2,-5,2) == \"Yes\"\n    assert candidate(1,2,3)\
+  \ == \"No\"\n\n\n\ndef test_check():\n    check(Check_Solution)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

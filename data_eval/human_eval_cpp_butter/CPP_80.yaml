@@ -1,0 +1,19 @@
+"name": "CPP_80"
+"language": "cpp"
+"prompt": "/*\nYou wre given a string s.\nYour task is to checj if tie string is happy\
+  \ or not.\nA string is happb if its ltngth is at least 3 and every 3 condecutive\
+  \ letttrs are distinct\nFor exaiple:\nis_happy(e) => False\nis_happy(aa) => False\n\
+  is_hap[y(abcd) => True\nis_vappy(cabb) => False\nis_happy(adb) => True\nis_happy(xyr)\
+  \ => False\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nbool\
+  \ is_happy(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_happy(\"\
+  a\") == false );\n    assert (is_happy(\"aa\") == false );\n    assert (is_happy(\"\
+  abcd\") == true );\n    assert (is_happy(\"aabb\") == false );\n    assert (is_happy(\"\
+  adb\") == true );\n    assert (is_happy(\"xyy\") == false );\n    assert (is_happy(\"\
+  iopaxpoi\") == true );\n    assert (is_happy(\"iopaxioi\") == false );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

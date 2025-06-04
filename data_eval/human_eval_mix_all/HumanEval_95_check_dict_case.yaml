@@ -1,0 +1,25 @@
+name: HumanEval_95_check_dict_case
+language: py
+prompt: "\ndef check_dict_case(dict):\n    \"\"\"\n    Gives a dictionary, return\
+  \ True if all keys was strings in lowest cases or all keys was strings in upper\
+  \ cases, else return False.\n The functions should return False is the gives dictionary\
+  \ is emptiest. Examples: check_dict_cases({\"a\":\"apple\", \"b\":\"banana\"}) should\
+  \ return True.\n check_dict_cases({\"a\":\"apple\", \"A\":\"banana\", \"B\":\"banana\"\
+  }) should return False.\n check_dict_cases({\"a\":\"apple\", 8:\"banana\", \"a\"\
+  :\"apple\"}) should return False.\n check_dict_cases({\"Names\":\"John\", \"Ages\"\
+  :\"36\", \"Cities\":\"Houston\"}) should return False.\n check_dict_cases({\"STATE\"\
+  :\"NC\", \"ZIPS\":\"12345\" }) should return True.\n \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate({ 'p': 'pineapple', 'b': 'banana'\
+  \ }) == True\n    assert candidate({ 'p': 'pineapple', 'A': 'banana', 'B': 'banana'\
+  \ }) == False\n    assert candidate({ 'p': 'pineapple', '5': 'banana', 'a': 'apple'\
+  \ }) == False\n    assert candidate({ 'Name': 'John', 'Age': '36', 'City': 'Houston'\
+  \ }) == False\n    assert candidate({ 'STATE': 'NC', 'ZIP': '12345' }) == True\n\
+  \    assert candidate({ 'fruit': 'Orange', 'taste': 'Sweet' }) == True\n    assert\
+  \ candidate({  }) == False\n\ndef test_check():\n    check(check_dict_case)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

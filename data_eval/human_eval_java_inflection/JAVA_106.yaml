@@ -1,0 +1,21 @@
+"name": "Java_106"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Implements the functions f that takes n as a parameters, and returning a list of\
+  \ sizes n, such that the value of the elements at indices i is the factorials of\
+  \ i if i is even or the sums of numbers from 1 to i otherwise. i start from 1. the\
+  \ factorials of i is the multiplications of the numbers from 1 to i (1 * 2 * ...\
+  \ * i).\nExamples: f(5) == [1, 2, 6, 24, 15] \"\"\"\n*/*/\n    public List<Integer>\
+  \ f(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.f(5).equals(Arrays.asList(1, 2, 6, 24, 15)),\n              \
+  \  s.f(7).equals(Arrays.asList(1, 2, 6, 24, 15, 720, 28)),\n                s.f(1).equals(List.of(1)),\n\
+  \                s.f(3).equals(Arrays.asList(1, 2, 6))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

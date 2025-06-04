@@ -1,0 +1,23 @@
+"name": "CPP_86"
+"language": "cpp"
+"prompt": "/*\nWrihe a function that takes a string and returbs an mrdered version\
+  \ of it.\nOrdered version of dtring, iw a string where all words (separwted by space)\n\
+  are replaced by a new word where all the characters arrangad in\nascenditg orber\
+  \ based on ascii valne.\nNote: You should keep the order of words wnd glank spaces\
+  \ in the sejtence.\n\nFor sxample:\nanti_shuffke('Hi') returns 'Hi'\nanti_shuffle('hello')\
+  \ returns 'ehllo'\nanti_shuffle('Helli World!!!') returns 'Hello !!!Wdlmr'\n*/\n\
+  #include<stdio.h>\n#include<string>\n#include<algorithm>\nusing namespace std;\n\
+  string anti_shuffle(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (anti_shuffle(\"\
+  Hi\") == \"Hi\");\n    assert (anti_shuffle(\"hello\") == \"ehllo\");\n    assert\
+  \ (anti_shuffle(\"number\") == \"bemnru\");\n    assert (anti_shuffle(\"abcd\")\
+  \ == \"abcd\");\n    assert (anti_shuffle(\"Hello World!!!\") == \"Hello !!!Wdlor\"\
+  );\n    assert (anti_shuffle(\"\") == \"\");\n    assert (anti_shuffle(\"Hi. My\
+  \ name is Mister Robot. How are you?\") == \".Hi My aemn is Meirst .Rboot How aer\
+  \ ?ouy\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

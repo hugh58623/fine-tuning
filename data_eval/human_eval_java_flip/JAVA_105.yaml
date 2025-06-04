@@ -1,0 +1,30 @@
+"name": "Java_105"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GivEn an Array Of iNtegeRs, sorT the intEgeRs thaT arE BeTwEen 1 aND 9 inClusive,\n\
+  reverse the resULTing Array, and thEn replace eacH digiT bY ItS cORrEsponDing namE\
+  \ FrOM\n\"one\", \"twO\", \"tHreE\", \"FOUr\", \"five\", \"SIx\", \"SEveN\", \"\
+  eigHt\", \"NinE\".\n\nFoR eXaMPLE:\narr = [2, 1, 1, 4, 5, 8, 2, 3]\n-> soRt arr\
+  \ -> [1, 1, 2, 2, 3, 4, 5, 8]\n-> reverse arr -> [8, 5, 4, 3, 2, 2, 1, 1]\nreturn\
+  \ [\"Eight\", \"FiVE\", \"fOur\", \"Three\", \"TwO\", \"TWO\", \"One\", \"One\"\
+  ]\n\nif the ArrAy is eMPtY, return an EMptY aRraY:\narr = []\nreturn []\n\nif thE\
+  \ arRaY HAs any sTrange numBeR IGnoRe IT:\narr = [1, -1 , 55]\n-> sOrt arr -> [-1,\
+  \ 1, 55]\n-> reverse arr -> [55, 1, -1]\nreturn = ['onE']\n\"\"\"\n*/*/\n    public\
+  \ List<String> byLength(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.byLength(new ArrayList<>(Arrays.asList(2, 1, 1, 4, 5, 8, 2, 3))).equals(Arrays.asList(\"\
+  Eight\", \"Five\", \"Four\", \"Three\", \"Two\", \"Two\", \"One\", \"One\" )),\n\
+  \                s.byLength(new ArrayList<>(List.of())).equals(List.of()),\n   \
+  \             s.byLength(new ArrayList<>(Arrays.asList(1, -1, 55))).equals(List.of(\"\
+  One\" )),\n                s.byLength(new ArrayList<>(Arrays.asList(1, -1, 3, 2))).equals(Arrays.asList(\"\
+  Three\", \"Two\", \"One\" )),\n                s.byLength(new ArrayList<>(Arrays.asList(9,\
+  \ 4, 8))).equals(Arrays.asList(\"Nine\", \"Eight\", \"Four\" ))\n        );\n  \
+  \      if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

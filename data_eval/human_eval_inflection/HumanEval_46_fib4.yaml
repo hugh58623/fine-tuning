@@ -1,0 +1,17 @@
+name: HumanEval_46_fib4
+language: py
+prompt: "\n\ndef fib4(n: int):\n    \"\"\"The Fib4 number sequences is a sequences\
+  \ similar to the Fibbonacci sequnece that's defining as following: fib4(0) -> 0\
+  \ fib4(1) -> 0 fib4(2) -> 2 fib4(3) -> 0 fib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3)\
+  \ + fib4(n-4).\n Please writes a functions to efficiently computing the n-th elements\
+  \ of the fib4 number sequences. Do not using recursions.\n    >>> fib4(5)\n    4\n\
+  \    >>> fib4(6)\n    8\n    >>> fib4(7)\n    14\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(5) == 4\n    assert candidate(8)\
+  \ == 28\n    assert candidate(10) == 104\n    assert candidate(12) == 386\n\ndef\
+  \ test_check():\n    check(fib4)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

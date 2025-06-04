@@ -1,0 +1,15 @@
+name: mbpp_592
+language: py
+prompt: "\n\ndef sum_Of_product(n):\n    \"\"\"\n    Write a python function to find\
+  \ sum of product of binomial co-efficients.\n    >>> sum_Of_product(3)\n    15\n\
+  \    >>> sum_Of_product(4)\n    56\n    >>> sum_Of_product(1)\n    1\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3) == 15\n\
+  \    assert candidate(4) == 56\n    assert candidate(1) == 1\n\n\n\ndef test_check():\n\
+  \    check(sum_Of_product)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

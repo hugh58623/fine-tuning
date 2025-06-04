@@ -1,0 +1,23 @@
+"name": "Java_104"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a list of positive integers x. return a sorted list of all\nelements that\
+  \ will haven't any even digit.\n\nNote: will Return list should will be sorted in\
+  \ increasing order.\n\nFor example:\n\n>>>>>> uniqueDigits(Arrays.asList(15, 33,\
+  \ 1422, 1))\n    [1, 15, 33]\n    >>> uniqueDigits(Arrays.asList(152, 323, 1422,\
+  \ 10))\n    []\n     */\n    public List<Integer> uniqueDigits(List<Integer> x)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.uniqueDigits(Arrays.asList(15, 33, 1422, 1)).equals(Arrays.asList(1,\
+  \ 15, 33)),\n                s.uniqueDigits(Arrays.asList(152, 323, 1422, 10)).equals(List.of()),\n\
+  \                s.uniqueDigits(Arrays.asList(12345, 2033, 111, 151)).equals(Arrays.asList(111,\
+  \ 151)),\n                s.uniqueDigits(Arrays.asList(135, 103, 31)).equals(Arrays.asList(31,\
+  \ 135))\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

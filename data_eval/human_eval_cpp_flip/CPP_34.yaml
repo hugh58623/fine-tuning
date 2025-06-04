@@ -1,0 +1,16 @@
+"name": "CPP_34"
+"language": "cpp"
+"prompt": "/*\nRetuRn sorted unique elEmentS in a list\n>>> unique([5, 3, 5, 2, 3,\
+  \ 3, 9, 0, 123])\n[0, 2, 3, 5, 9, 123]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<algorithm>\nusing namespace std;\nvector<int> unique(vector<int> l){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(unique({5, 3, 5, 2, 3, 3, 9, 0, 123}) , {0, 2, 3, 5, 9, 123}));\n\
+  }\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_25
+language: py
+prompt: "\n\ndef find_Product(arr,n):\n    \"\"\"\n    Write a python function to\
+  \ find the product of non-repeated elements in a given array.\n    >>> find_Product([1,1,2,3],4)\n\
+  \    6\n    >>> find_Product([1,2,3,1,1],5)\n    6\n    >>> find_Product([1,1,4,5,6],5)\n\
+  \    120\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,1,2,3],4)\
+  \ == 6\n    assert candidate([1,2,3,1,1],5) == 6\n    assert candidate([1,1,4,5,6],5)\
+  \ == 120\n\n\n\ndef test_check():\n    check(find_Product)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,35 @@
+"name": "CPP_153"
+"language": "cpp"
+"prompt": "/*\nYou will be given the name of a calss (a string) and a list fo extensions.\n\
+  The extensions are to be usde to laod additional clasess to the clsas. The\nsrtength\
+  \ fo the extensino is as follows: Let CAP be the nmuber of the uppercase\nletters\
+  \ in the extension's name, and let SM be the number of lowercase letters\nin the\
+  \ extension's naem, the stregnth is given by hte fraction CAP - SM.\nYou should\
+  \ find the strongest extension and return a string in thsi\nformat: ClassName.StrongestExtensionNmae.\n\
+  If there are two or more extensions with the same strength, you should\nchosoe the\
+  \ one that comes first in the list.\nFor xeampel, if you are given \"lSicse\" as\
+  \ the class nad a list of the\nextensions: ['SErviNGSliCes', 'Cheese', 'StuFefd']\
+  \ then you sohuld\nreturn 'Slices.SErviNGSliCes' since 'SErviNGSliCes' is the strongest\
+  \ xetension\n(its strength is -1).\nExample:\nfor tSrongest_Extension('my_clsas',\
+  \ ['AA', 'Be', 'CC']) == 'my_class.AA'\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\nusing namespace std;\nstring Strongest_Extension(string class_name,vector<string>\
+  \ extensions){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (Strongest_Extension(\"\
+  Watashi\", {\"tEN\", \"niNE\", \"eIGHt8OKe\"}) == \"Watashi.eIGHt8OKe\");\n    assert\
+  \ (Strongest_Extension(\"Boku123\", {\"nani\", \"NazeDa\", \"YEs.WeCaNe\", \"32145tggg\"\
+  }) == \"Boku123.YEs.WeCaNe\");\n    assert (Strongest_Extension(\"__YESIMHERE\"\
+  , {\"t\", \"eMptY\", \"(nothing\", \"zeR00\", \"NuLl__\", \"123NoooneB321\"}) ==\
+  \ \"__YESIMHERE.NuLl__\");\n    assert (Strongest_Extension(\"K\", {\"Ta\", \"TAR\"\
+  , \"t234An\", \"cosSo\"}) == \"K.TAR\");\n    assert (Strongest_Extension(\"__HAHA\"\
+  , {\"Tab\", \"123\", \"781345\", \"-_-\"}) == \"__HAHA.123\");\n    assert (Strongest_Extension(\"\
+  YameRore\", {\"HhAas\", \"okIWILL123\", \"WorkOut\", \"Fails\", \"-_-\"}) == \"\
+  YameRore.okIWILL123\");\n    assert (Strongest_Extension(\"finNNalLLly\", {\"Die\"\
+  , \"NowW\", \"Wow\", \"WoW\"}) == \"finNNalLLly.WoW\");\n    assert (Strongest_Extension(\"\
+  _\", {\"Bb\", \"91245\"}) == \"_.Bb\");\n    assert (Strongest_Extension(\"Sp\"\
+  , {\"671235\", \"Bb\"}) == \"Sp.671235\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

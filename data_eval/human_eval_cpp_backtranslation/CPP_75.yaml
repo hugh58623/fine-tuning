@@ -1,0 +1,19 @@
+"name": "CPP_75"
+"language": "cpp"
+"prompt": "\ndef is_multiply_prime(a):\n    \"\"\"Write is a function that returns\
+  \ true if the given number is the multiplication of 3 prime numbers and otherwise\
+  \ wrong. Knowing that (a) is less than 100. Example: is _ multiply _ prime (30)\
+  \ = = True 30 = 2 * 3 * 5 \"\" \"\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_multiply_prime(5)\
+  \ == false);\n    assert (is_multiply_prime(30) == true);\n    assert (is_multiply_prime(8)\
+  \ == true);\n    assert (is_multiply_prime(10) == false);\n    assert (is_multiply_prime(125)\
+  \ == true);\n    assert (is_multiply_prime(3 * 5 * 7) == true);\n    assert (is_multiply_prime(3\
+  \ * 6 * 7) == false);\n    assert (is_multiply_prime(9 * 9 * 9) == false);\n   \
+  \ assert (is_multiply_prime(11 * 9 * 9) == false);\n    assert (is_multiply_prime(11\
+  \ * 13 * 7) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

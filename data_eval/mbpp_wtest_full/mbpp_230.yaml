@@ -1,0 +1,17 @@
+name: mbpp_230
+language: py
+prompt: "\n\ndef replace_blank(str1,char):\n \"\"\"\n Write a function to replace\
+  \ blank spaces with any character in a string.\n >>> replace_blank(\"hello people\"\
+  ,'@')\n (\"hello@people\")\n >>> replace_blank(\"python program language\",'$')\n\
+  \ (\"python$program$language\")\n >>> replace_blank(\"blank space\",\"-\")\n (\"\
+  blank-space\")\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"hello\
+  \ people\",'@')==(\"hello@people\")\n    assert candidate(\"python program language\"\
+  ,'$')==(\"python$program$language\")\n    assert candidate(\"blank space\",\"-\"\
+  )==(\"blank-space\")\n\n\n\ndef test_check():\n    check(replace_blank)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

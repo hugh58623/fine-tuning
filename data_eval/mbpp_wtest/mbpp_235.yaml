@@ -1,0 +1,15 @@
+name: mbpp_235
+language: py
+prompt: "\n\ndef even_bit_set_number(n):\n    \"\"\"\n    Write a python function\
+  \ to set all even bits of a given number.\n    >>> even_bit_set_number(10)\n   \
+  \ 10\n    >>> even_bit_set_number(20)\n    30\n    >>> even_bit_set_number(30)\n\
+  \    30\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 10\n    assert candidate(20) == 30\n    assert candidate(30) == 30\n\n\n\ndef\
+  \ test_check():\n    check(even_bit_set_number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

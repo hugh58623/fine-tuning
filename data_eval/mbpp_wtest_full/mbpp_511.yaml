@@ -1,0 +1,14 @@
+name: mbpp_511
+language: py
+prompt: "\n\ndef find_Min_Sum(num):\n    \"\"\"\n    Write a python function to find\
+  \ minimum sum of factors of a given number.\n    >>> find_Min_Sum(12)\n    7\n \
+  \   >>> find_Min_Sum(105)\n    15\n    >>> find_Min_Sum(2)\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12) ==\
+  \ 7\n    assert candidate(105) == 15\n    assert candidate(2) == 2\n\n\n\ndef test_check():\n\
+  \    check(find_Min_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

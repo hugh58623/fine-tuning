@@ -1,0 +1,15 @@
+name: mbpp_57
+language: py
+prompt: "\n\ndef find_Max_Num(arr,n) :\n    \"\"\"\n    Write a python function to\
+  \ find the largest number that can be formed with the given digits.\n    >>> find_Max_Num([1,2,3],3)\n\
+  \    321\n    >>> find_Max_Num([4,5,6,1],4)\n    6541\n    >>> find_Max_Num([1,2,3,9],4)\n\
+  \    9321\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3],3)\
+  \ == 321\n    assert candidate([4,5,6,1],4) == 6541\n    assert candidate([1,2,3,9],4)\
+  \ == 9321\n\n\n\ndef test_check():\n    check(find_Max_Num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

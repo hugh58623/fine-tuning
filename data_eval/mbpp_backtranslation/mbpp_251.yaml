@@ -1,0 +1,18 @@
+name: mbpp_251
+language: py
+prompt: "def insert_element(list, element):\n    \"\"\"\n Write a function to insert\
+  \ an element before each element in a list.\n Test examples:\n    assert insert_element(['Red',\
+  \ 'Green', 'Black'] ,'c')==['c', 'Red', 'c', 'Green', 'c', 'Black']\n    assert\
+  \ insert_element(['python', 'java'] ,'program')==['program', 'python', 'program',\
+  \ 'java']\n    assert insert_element(['happy', 'sad'] ,'laugh')==['laugh', 'happy',\
+  \ 'laugh', 'sad']\n    \"\"\"\n"
+tests: "assert insert_element(['Red', 'Green', 'Black'] ,'c')==['c', 'Red', 'c', 'Green',\
+  \ 'c', 'Black']\nassert insert_element(['python', 'java'] ,'program')==['program',\
+  \ 'python', 'program', 'java']\nassert insert_element(['happy', 'sad'] ,'laugh')==['laugh',\
+  \ 'happy', 'laugh', 'sad']"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

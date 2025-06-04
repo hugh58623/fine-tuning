@@ -1,0 +1,29 @@
+name: HumanEval_68_pluck
+language: py
+prompt: "\ndef pluck(arr):\n    \"\"\"\n    \"GivEn an Array RepResenTing a Branch\
+  \ oF a tRee thAt hAS nOn-NegaTIve Integer nodes\n    yOUR tasK is to pluck one of\
+  \ The nodes and return iT.\n    The pLuCKeD nODe ShoulD be the nODe WITh tHe SMAllEsT\
+  \ EvEn valUe.\n    IF muLTipLe nodEs wItH tHE SAme Smallest eVEN Value are foUnD\
+  \ return The node That hAs sMalleST index.\n\n    THe pLUckEd NodE ShouLd bE rETUrned\
+  \ in a list, [ Smalest_vaLuE, ITs index ],\n    IF tHErE arE nO EVeN vAlUes or The\
+  \ gIven arraY Is EMpty, return [].\n\n    ExamplE 1:\n        InpUt: [4,2,3]\n \
+  \       OutpUt: [2, 1]\n        eXpLANatIon: 2 Has the SmalLeST eveN VAlue, anD\
+  \ 2 HaS THE sMALlest index.\n\n    Example 2:\n        INput: [1,2,3]\n        Output:\
+  \ [2, 1]\n        EXPlANatIon: 2 HaS ThE SmalleSt eveN vALue, AnD 2 has the sMAlleSt\
+  \ index. \n\n    Example 3:\n        input: []\n        OUTput: []\n    \n    ExaMPle\
+  \ 4:\n        InpUT: [5, 0, 3, 0, 4, 2]\n        OutpuT: [0, 1]\n        ExPlaNatiON:\
+  \ 0 iS THe sMaLLesT VaLue, BUT  tHere Are tWo ZeRos,\n                     sO We\
+  \ WiLL CHOose The FirsT zerO, WHich Has the smAllEst index.\n\n    CONstRAintS:\n\
+  \        * 1 <= nodeS.lEnGtH <= 10000\n        * 0 <= Node.VALue\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([4, 2, 3]) == [2, 1]\n    assert\
+  \ candidate([1, 2, 3]) == [2, 1]\n    assert candidate([]) == []\n    assert candidate([5,\
+  \ 0, 3, 0, 4, 2]) == [0, 1]\n    assert candidate([1, 2, 3, 0, 5, 3]) == [0, 3]\n\
+  \    assert candidate([5, 4, 8, 4, 8]) == [4, 1]\n    assert candidate([7, 6, 7,\
+  \ 1]) == [6, 1]\n    assert candidate([7, 9, 7, 1]) == []\n\ndef test_check():\n\
+  \    check(pluck)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

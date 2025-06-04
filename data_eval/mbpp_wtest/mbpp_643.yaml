@@ -1,0 +1,18 @@
+name: mbpp_643
+language: py
+prompt: "\n\ndef text_match_wordz_middle(text):\n        \"\"\"\n        Write a function\
+  \ that matches a word containing 'z', not at the start or end of the word.\n   \
+  \     >>> text_match_wordz_middle(\"pythonzabc.\")\n        ('Found a match!')\n\
+  \        >>> text_match_wordz_middle(\"xyzabc.\")\n        ('Found a match!')\n\
+  \        >>> text_match_wordz_middle(\"  lang  .\")\n        ('Not matched!')\n\
+  \        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"pythonzabc.\"\
+  )==('Found a match!')\n    assert candidate(\"xyzabc.\")==('Found a match!')\n \
+  \   assert candidate(\"  lang  .\")==('Not matched!')\n\n\n\ndef test_check():\n\
+  \    check(text_match_wordz_middle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

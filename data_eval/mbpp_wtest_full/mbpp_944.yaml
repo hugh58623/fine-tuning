@@ -1,0 +1,16 @@
+name: mbpp_944
+language: py
+prompt: "\n\ndef num_position(text):\n \"\"\"\n Write a function to separate and print\
+  \ the numbers and their position of a given string.\n >>> num_position(\"there are\
+  \ 70 flats in this apartment\")\n 10\n >>> num_position(\"every adult have 32 teeth\"\
+  )\n 17\n >>> num_position(\"isha has 79 chocolates in her bag\")\n 9\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"there\
+  \ are 70 flats in this apartment\")==10\n    assert candidate(\"every adult have\
+  \ 32 teeth\")==17\n    assert candidate(\"isha has 79 chocolates in her bag\")==9\n\
+  \n\n\ndef test_check():\n    check(num_position)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

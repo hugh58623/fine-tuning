@@ -1,0 +1,24 @@
+"name": "Java_58"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return sorted unique common elements for two list.\n\n>>>>>> common(Arrays.asList(1,\
+  \ 4, 3, 34, 653, 2, 5), Arrays.asList(5, 7, 1, 5, 9, 653, 121))\n    [1, 5, 653]\n\
+  \    >>> common(Arrays.asList(5, 3, 2, 8), Arrays.asList(3, 2))\n    [2, 3]\n  \
+  \   */\n    public List<Integer> common(List<Integer> l1, List<Integer> l2) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.common(new ArrayList<>(Arrays.asList(1, 4, 3, 34, 653, 2, 5)),\
+  \ new ArrayList<>(Arrays.asList(5, 7, 1, 5, 9, 653, 121))).equals(Arrays.asList(1,\
+  \ 5, 653)),\n                s.common(new ArrayList<>(Arrays.asList(5, 3, 2, 8)),\
+  \ new ArrayList<>(Arrays.asList(3, 2))).equals(Arrays.asList(2, 3)),\n         \
+  \       s.common(new ArrayList<>(Arrays.asList(4, 3, 2, 8)), new ArrayList<>(Arrays.asList(3,\
+  \ 2, 4))).equals(Arrays.asList(2, 3, 4)),\n                s.common(new ArrayList<>(Arrays.asList(4,\
+  \ 3, 2, 8)), new ArrayList<>(List.of())).equals(List.of())\n        );\n       \
+  \ if (correct.contains(false)) {\n            throw new AssertionError();\n    \
+  \    }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

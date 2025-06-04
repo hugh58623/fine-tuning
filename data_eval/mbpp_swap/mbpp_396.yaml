@@ -1,0 +1,16 @@
+name: mbpp_396
+language: py
+prompt: "import re\n\nregex = r\"^[a-z]$|^([a-z]).*\\1$\"\n\n\ndef check_char(string):\n\
+  \    \"\"\"\n\tWirte a functoin ot check whether\
+  \ the given string statrs and ends with the same chracater or not using regex.\n\
+  \tTest examples:\n    assert check_char(\"\
+  abba\") == \"Valid\"\n    assert check_char(\"a\") == \"Valid\"\n    assert check_char(\"\
+  abcd\") == \"Invalid\"\n    \"\"\"\n"
+tests: "assert check_char(\"abba\") == \"Valid\"\nassert check_char(\"a\") == \"Valid\"\
+  \nassert check_char(\"abcd\") == \"Invalid\""
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

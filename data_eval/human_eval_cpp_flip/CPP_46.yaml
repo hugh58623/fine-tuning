@@ -1,0 +1,17 @@
+"name": "CPP_46"
+"language": "cpp"
+"prompt": "/*\nThe FIb4 nuMber sEquEnce iS a seqUence siMilAr to tHe FIBbOnAcci SEquNece\
+  \ that's defiNED as fOllows:\nfib4(0) -> 0\nfib4(1) -> 0\nfib4(2) -> 2\nfib4(3)\
+  \ -> 0\nfib4(n) -> fib4(n-1) + fib4(n-2) + fib4(n-3) + fib4(n-4).\nPleaSe write\
+  \ a funcTion tO eFFiCiENtLy comPute the n-th ELeMENt oF tHE fib4 NumBeR SeQuencE.\
+  \  Do Not USe rEcursIon.\n>>> fib4(5)\n4\n>>> fib4(6)\n8\n>>> fib4(7)\n14\n*/\n\
+  #include<stdio.h>\nusing namespace std;\nint fib4(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fib4(5) == 4);\n\
+  \    assert (fib4(8) == 28);\n    assert (fib4(10) == 104);\n    assert (fib4(12)\
+  \ == 386);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

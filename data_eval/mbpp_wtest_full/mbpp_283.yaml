@@ -1,0 +1,15 @@
+name: mbpp_283
+language: py
+prompt: "\n\ndef validate(n):\n    \"\"\"\n    Write a python function to check whether\
+  \ the frequency of each digit is less than or equal to the digit itself.\n    >>>\
+  \ validate(1234)\n    True\n    >>> validate(51241)\n    False\n    >>> validate(321)\n\
+  \    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1234) ==\
+  \ True\n    assert candidate(51241) == False\n    assert candidate(321) == True\n\
+  \n\n\ndef test_check():\n    check(validate)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

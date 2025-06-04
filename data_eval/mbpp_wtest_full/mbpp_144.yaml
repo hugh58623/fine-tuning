@@ -1,0 +1,15 @@
+name: mbpp_144
+language: py
+prompt: "\n\ndef sum_Pairs(arr,n):\n    \"\"\"\n    Write a python function to find\
+  \ the sum of absolute differences in all pairs of the given array.\n    >>> sum_Pairs([1,8,9,15,16],5)\n\
+  \    74\n    >>> sum_Pairs([1,2,3,4],4)\n    10\n    >>> sum_Pairs([1,2,3,4,5,7,9,11,14],9)\n\
+  \    188\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,8,9,15,16],5)\
+  \ == 74\n    assert candidate([1,2,3,4],4) == 10\n    assert candidate([1,2,3,4,5,7,9,11,14],9)\
+  \ == 188\n\n\n\ndef test_check():\n    check(sum_Pairs)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

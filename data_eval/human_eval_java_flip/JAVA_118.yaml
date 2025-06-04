@@ -1,0 +1,29 @@
+"name": "Java_118"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You aRe giVen a word. YOur Task iS to fiNd the clOseSt vowEl tHAt StAnds BEtwEen\n\
+  two consonaNTS froM the right sIde of the word (case SensiTiVE).\n\nVOwELs in The\
+  \ beGinning ANd ENDinG dOESn't CoUNt. returN emPty STriNg if yOu dIdN't\nFIND anY\
+  \ vowel met THE Above condiTiON.\n\nYou may AssumE thAt the GIvEn sTRinG cOntAIns\
+  \ ENglIsH LEtter oNly.\n\nExamplE:\ngET_CloSeST_vOweL(\"yOGUrT\") ==> \"u\"\nGeT_closEst_vOwel(\"\
+  FULL\") ==> \"u\"\nGeT_Closest_vowEl(\"quIck\") ==> \"\"\nget_ClOSeST_VowEl(\"aB\"\
+  ) ==> \"\"\n\"\"\"\n*/*/\n    public String getClosestVowel(String word) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.getClosestVowel(\"yogurt\").equals(\"u\"),\n                s.getClosestVowel(\"\
+  full\").equals(\"u\"),\n                s.getClosestVowel(\"easy\").equals(\"\"\
+  ),\n                s.getClosestVowel(\"eAsy\").equals(\"\"),\n                s.getClosestVowel(\"\
+  ali\").equals(\"\"),\n                s.getClosestVowel(\"bad\").equals(\"a\"),\n\
+  \                s.getClosestVowel(\"most\").equals(\"o\"),\n                s.getClosestVowel(\"\
+  ab\").equals(\"\"),\n                s.getClosestVowel(\"ba\").equals(\"\"),\n \
+  \               s.getClosestVowel(\"quick\").equals(\"\"),\n                s.getClosestVowel(\"\
+  anime\").equals(\"i\"),\n                s.getClosestVowel(\"Asia\").equals(\"\"\
+  ),\n                s.getClosestVowel(\"Above\").equals(\"o\")\n        );\n   \
+  \     if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

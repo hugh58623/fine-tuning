@@ -1,0 +1,18 @@
+name: mbpp_390
+language: py
+prompt: "\n\ndef add_string(list,string):\n \"\"\"\n Write a function to insert a\
+  \ given string at the beginning of all items in a list.\n >>> add_string([1,2,3,4],'temp{0}')\n\
+  \ ['temp1', 'temp2', 'temp3', 'temp4']\n >>> add_string(['a','b','c','d'], 'python{0}')\n\
+  \ [ 'pythona', 'pythonb', 'pythonc', 'pythond']\n >>> add_string([5,6,7,8],'string{0}')\n\
+  \ ['string5', 'string6', 'string7', 'string8']\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4],'temp{0}')==['temp1',\
+  \ 'temp2', 'temp3', 'temp4']\n    assert candidate(['a','b','c','d'], 'python{0}')==[\
+  \ 'pythona', 'pythonb', 'pythonc', 'pythond']\n    assert candidate([5,6,7,8],'string{0}')==['string5',\
+  \ 'string6', 'string7', 'string8']\n\n\n\ndef test_check():\n    check(add_string)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

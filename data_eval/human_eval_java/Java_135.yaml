@@ -1,0 +1,22 @@
+"name": "Java_135"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \    Create a function which returns the largest index of an element which\n   \
+  \ is not greater than or equal to the element immediately preceding it. If\n   \
+  \ no such element exists then return -1. The given array will not contain\n    duplicate\
+  \ values.\n\n    Examples:\n    canArrange(Arrays.asList(1,2,4,3,5)) = 3\n    canArrange(Arrays.asList(1,2,3))\
+  \ = -1\n     */\n    public int canArrange(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.canArrange(Arrays.asList(1, 2, 4, 3, 5)) == 3,\n            \
+  \    s.canArrange(Arrays.asList(1, 2, 4, 5)) == -1,\n                s.canArrange(Arrays.asList(1,\
+  \ 4, 2, 5, 6, 7, 8, 9, 10)) == 2,\n                s.canArrange(Arrays.asList(4,\
+  \ 8, 5, 7, 3)) == 4,\n                s.canArrange(List.of()) == -1\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

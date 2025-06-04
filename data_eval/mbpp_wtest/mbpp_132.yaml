@@ -1,0 +1,16 @@
+name: mbpp_132
+language: py
+prompt: "\n\ndef tup_string(tup1):\n  \"\"\"\n  Write a function to convert tuple\
+  \ to a string.\n  >>> tup_string(('e', 'x', 'e', 'r', 'c', 'i', 's', 'e', 's'))\n\
+  \  (\"exercises\")\n  >>> tup_string(('p','y','t','h','o','n'))\n  (\"python\")\n\
+  \  >>> tup_string(('p','r','o','g','r','a','m'))\n  (\"program\")\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(('e', 'x',\
+  \ 'e', 'r', 'c', 'i', 's', 'e', 's'))==(\"exercises\")\n    assert candidate(('p','y','t','h','o','n'))==(\"\
+  python\")\n    assert candidate(('p','r','o','g','r','a','m'))==(\"program\")\n\n\
+  \n\ndef test_check():\n    check(tup_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

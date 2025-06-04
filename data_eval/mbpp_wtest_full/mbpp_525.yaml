@@ -1,0 +1,16 @@
+name: mbpp_525
+language: py
+prompt: "\n\ndef parallel_lines(line1, line2):\n  \"\"\"\n  Write a python function\
+  \ to check whether two given lines are parallel or not.\n  >>> parallel_lines([2,3,4],\
+  \ [2,3,8])\n  True\n  >>> parallel_lines([2,3,4], [4,-3,8])\n  False\n  >>> parallel_lines([3,3],[5,5])\n\
+  \  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2,3,4],\
+  \ [2,3,8]) == True\n    assert candidate([2,3,4], [4,-3,8]) == False\n    assert\
+  \ candidate([3,3],[5,5]) == True\n\n\n\ndef test_check():\n    check(parallel_lines)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

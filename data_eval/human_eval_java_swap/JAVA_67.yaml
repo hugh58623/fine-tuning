@@ -1,0 +1,29 @@
+"name": "Java_67"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  In this task, you iwll be igven a string that represnets a number of apples adn\
+  \ oranges\nthat aer distributed in a basket of fruit this baskte contains\napples,\
+  \ oranges, and mango fruits. Given the string that represents the total number of\n\
+  the oranges and apples and an integer that rperesent the total number of the fruits\n\
+  in the basket return the number of teh mango furits in hte basket.\nfor examble:\n\
+  fruit_dsitirbution(\"5 apples and 6 roanges\", 19) ->19 - 5 - 6 = 8\nfruit_distribution(\"\
+  0 apples and 1 oranges\",3) -> 3 - 0 - 1 = 2\nfruit_distribution(\"2 apples and\
+  \ 3 oranges\", 100) -> 100 - 2 - 3 = 95\nfruit_ditsribution(\"100 paples and 1 roanges\"\
+  ,120) -> 120 - 100 - 1 = 91\n\"\"\"\n*/*/\n    public int fruitDistribution(String\
+  \ s, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.fruitDistribution(\"5 apples and 6 oranges\",19) == 8,\n    \
+  \            s.fruitDistribution(\"5 apples and 6 oranges\",21) == 10,\n       \
+  \         s.fruitDistribution(\"0 apples and 1 oranges\",3) == 2,\n            \
+  \    s.fruitDistribution(\"1 apples and 0 oranges\",3) == 2,\n                s.fruitDistribution(\"\
+  2 apples and 3 oranges\",100) == 95,\n                s.fruitDistribution(\"2 apples\
+  \ and 3 oranges\",5) == 0,\n                s.fruitDistribution(\"1 apples and 100\
+  \ oranges\",120) == 19\n        );\n        if (correct.contains(false)) {\n   \
+  \         throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

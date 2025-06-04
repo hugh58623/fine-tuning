@@ -1,0 +1,17 @@
+name: mbpp_756
+language: py
+prompt: "\n\ndef text_match_zero_one(text):\n        \"\"\"\n        Write a function\
+  \ that matches a string that has an a followed by zero or one 'b'.\n        >>>\
+  \ text_match_zero_one(\"ac\")\n        ('Found a match!')\n        >>> text_match_zero_one(\"\
+  dc\")\n        ('Not matched!')\n        >>> text_match_zero_one(\"abbbba\")\n \
+  \       ('Found a match!')\n        \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ac\"\
+  )==('Found a match!')\n    assert candidate(\"dc\")==('Not matched!')\n    assert\
+  \ candidate(\"abbbba\")==('Found a match!')\n\n\n\ndef test_check():\n    check(text_match_zero_one)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

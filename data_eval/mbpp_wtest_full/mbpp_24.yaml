@@ -1,0 +1,15 @@
+name: mbpp_24
+language: py
+prompt: "\n\ndef binary_to_decimal(binary):\n    \"\"\"\n    Write a function to convert\
+  \ the given binary number to its decimal equivalent.\n    >>> binary_to_decimal(100)\n\
+  \    4\n    >>> binary_to_decimal(1011)\n    11\n    >>> binary_to_decimal(1101101)\n\
+  \    109\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(100) ==\
+  \ 4\n    assert candidate(1011) == 11\n    assert candidate(1101101) == 109\n\n\n\
+  \ndef test_check():\n    check(binary_to_decimal)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

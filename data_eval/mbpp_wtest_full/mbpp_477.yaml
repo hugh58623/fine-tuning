@@ -1,0 +1,15 @@
+name: mbpp_477
+language: py
+prompt: "\n\ndef is_lower(string):\n  \"\"\"\n  Write a python function to convert\
+  \ the given string to lower case.\n  >>> is_lower(\"InValid\")\n  \"invalid\"\n\
+  \  >>> is_lower(\"TruE\")\n  \"true\"\n  >>> is_lower(\"SenTenCE\")\n  \"sentence\"\
+  \n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"InValid\"\
+  ) == \"invalid\"\n    assert candidate(\"TruE\") == \"true\"\n    assert candidate(\"\
+  SenTenCE\") == \"sentence\"\n\n\n\ndef test_check():\n    check(is_lower)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

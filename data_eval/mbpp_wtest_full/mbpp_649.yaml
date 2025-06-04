@@ -1,0 +1,17 @@
+name: mbpp_649
+language: py
+prompt: "\n\ndef sum_Range_list(nums, m, n):\n    \"\"\"\n    Write a python function\
+  \ to calculate the sum of the numbers in a list between the indices of a specified\
+  \ range.\n    >>> sum_Range_list([2, 1, 5, 6, 8, 3, 4, 9, 10, 11, 8, 12],8,10)\n\
+  \    29\n    >>> sum_Range_list([1,2,3,4,5],1,2)\n    5\n    >>> sum_Range_list([1,0,1,2,5,6],4,5)\n\
+  \    11\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2, 1,\
+  \ 5, 6, 8, 3, 4, 9, 10, 11, 8, 12],8,10) == 29\n    assert candidate([1,2,3,4,5],1,2)\
+  \ == 5\n    assert candidate([1,0,1,2,5,6],4,5) == 11\n\n\n\ndef test_check():\n\
+  \    check(sum_Range_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

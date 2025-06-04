@@ -1,0 +1,14 @@
+name: mbpp_910
+language: py
+prompt: "\n\ndef check_date(m, d, y):\n    \"\"\"\n    Write a function to validate\
+  \ a gregorian date.\n    >>> check_date(11,11,2002)\n    True\n    >>> check_date(13,11,2002)\n\
+  \    False\n    >>> check_date('11','11','2002')\n    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(11,11,2002)==True\n\
+  \    assert candidate(13,11,2002)==False\n    assert candidate('11','11','2002')==True\n\
+  \n\n\ndef test_check():\n    check(check_date)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,25 @@
+name: mbpp_73
+language: py
+prompt: "\n\ndef multiple_split(text):\n  \"\"\"\n  Write a function to split the\
+  \ given string with multiple delimiters by using regex.\n  >>> multiple_split('Forces\
+  \ of the \\ndarkness*are coming into the play.')\n  ['Forces of the ', 'darkness',\
+  \ 'are coming into the play.']\n  >>> multiple_split('Mi Box runs on the \\n Latest\
+  \ android*which has google assistance and chromecast.')\n  ['Mi Box runs on the\
+  \ ', ' Latest android', 'which has google assistance and chromecast.']\n  >>> multiple_split('Certain\
+  \ services\\nare subjected to change*over the seperate subscriptions.')\n  ['Certain\
+  \ services', 'are subjected to change', 'over the seperate subscriptions.']\n  \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('Forces\
+  \ of the \\ndarkness*are coming into the play.') == ['Forces of the ', 'darkness',\
+  \ 'are coming into the play.']\n    assert candidate('Mi Box runs on the \\n Latest\
+  \ android*which has google assistance and chromecast.') == ['Mi Box runs on the\
+  \ ', ' Latest android', 'which has google assistance and chromecast.']\n    assert\
+  \ candidate('Certain services\\nare subjected to change*over the seperate subscriptions.')\
+  \ == ['Certain services', 'are subjected to change', 'over the seperate subscriptions.']\n\
+  \n\n\ndef test_check():\n    check(multiple_split)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_21
+language: py
+prompt: "\n\ndef multiples_of_num(m,n):\n    \"\"\"\n    Write a function to find\
+  \ m number of multiples of n.\n    >>> multiples_of_num(4,3)\n    [3,6,9,12]\n \
+  \   >>> multiples_of_num(2,5)\n    [5,10]\n    >>> multiples_of_num(9,2)\n    [2,4,6,8,10,12,14,16,18]\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4,3)==\
+  \ [3,6,9,12]\n    assert candidate(2,5)== [5,10]\n    assert candidate(9,2)== [2,4,6,8,10,12,14,16,18]\n\
+  \n\n\ndef test_check():\n    check(multiples_of_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

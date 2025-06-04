@@ -1,0 +1,29 @@
+"name": "Java_159"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You'Re a hUngry RabBit, anD you aLready hAve Eaten A ceRTaIn number Of caRRotS,\n\
+  but now you need to eat mORE carRots to compLete the day's mEals.\nyOu SHoUlD return\
+  \ An Array Of [ total number OF eATEn cArROTs aFtER yOur meAls,\nThe number OF caRrots\
+  \ LefT aFtER YOur Meals ]\nif thERE Are not enouGh remaining CArrots, yOu wilL eat\
+  \ alL remaining carrOTs, But WIll StIll BE hunGry.\n\nexAMPle:\n* eat(5, 6, 10)\
+  \ -> [11, 4]\n* eat(4, 8, 9) -> [12, 1]\n* eat(1, 10, 10) -> [11, 0]\n* eat(2, 11,\
+  \ 5) -> [7, 0]\n\nVarIables:\n@number : intEgER\nThe number Of CArRotS tHAT yOu\
+  \ HaVe eatEn.\n@need : inTeger\nthe number OF cARrots that yOu need to eat.\n@remaining\
+  \ : IntegeR\ntHE number oF remaining CArrOts Thet exIst in sToCK\n\nConSTRain:\n\
+  * 0 <= number <= 1000\n* 0 <= need <= 1000\n* 0 <= remaining <= 1000\n\nHaVE fUN\
+  \ :)\n\"\"\"\n*/*/\n    public List<Integer> eat(int number, int need, int remaining)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.eat(5, 6, 10).equals(Arrays.asList(11, 4)),\n               \
+  \ s.eat(4, 8, 9).equals(Arrays.asList(12, 1)),\n                s.eat(1, 10, 10).equals(Arrays.asList(11,\
+  \ 0)),\n                s.eat(2, 11, 5).equals(Arrays.asList(7, 0)),\n         \
+  \       s.eat(4, 5, 7).equals(Arrays.asList(9, 2)),\n                s.eat(4, 5,\
+  \ 1).equals(Arrays.asList(5, 0))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

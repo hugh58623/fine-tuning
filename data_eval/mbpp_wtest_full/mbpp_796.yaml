@@ -1,0 +1,16 @@
+name: mbpp_796
+language: py
+prompt: "\n\ndef return_sum(dict):\n  \"\"\"\n  Write function to find the sum of\
+  \ all items in the given dictionary.\n  >>> return_sum({'a': 100, 'b':200, 'c':300})\n\
+  \  600\n  >>> return_sum({'a': 25, 'b':18, 'c':45})\n  88\n  >>> return_sum({'a':\
+  \ 36, 'b':39, 'c':49})\n  124\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({'a': 100,\
+  \ 'b':200, 'c':300}) == 600\n    assert candidate({'a': 25, 'b':18, 'c':45}) ==\
+  \ 88\n    assert candidate({'a': 36, 'b':39, 'c':49}) == 124\n\n\n\ndef test_check():\n\
+  \    check(return_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_14
+language: py
+prompt: "\n\ndef find_Volume(l,b,h) :\n    \"\"\"\n    Write a python function to\
+  \ find the volume of a triangular prism.\n    >>> find_Volume(10,8,6)\n    240\n\
+  \    >>> find_Volume(3,2,2)\n    6\n    >>> find_Volume(1,2,1)\n    1\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,8,6)\
+  \ == 240\n    assert candidate(3,2,2) == 6\n    assert candidate(1,2,1) == 1\n\n\
+  \n\ndef test_check():\n    check(find_Volume)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_158
+language: py
+prompt: "\n\ndef min_Ops(arr,n,k):\n    \"\"\"\n    Write a python function to find\
+  \ k number of operations required to make all elements equal.\n    >>> min_Ops([2,2,2,2],4,3)\n\
+  \    0\n    >>> min_Ops([4,2,6,8],4,3)\n    -1\n    >>> min_Ops([21,33,9,45,63],5,6)\n\
+  \    24\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2,2,2,2],4,3)\
+  \ == 0\n    assert candidate([4,2,6,8],4,3) == -1\n    assert candidate([21,33,9,45,63],5,6)\
+  \ == 24\n\n\n\ndef test_check():\n    check(min_Ops)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

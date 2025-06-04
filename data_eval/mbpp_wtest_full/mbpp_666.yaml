@@ -1,0 +1,14 @@
+name: mbpp_666
+language: py
+prompt: "\n\ndef count_char(string,char):\n \"\"\"\n Write a function to count occurrence\
+  \ of a character in a string.\n >>> count_char(\"Python\",'o')\n 1\n >>> count_char(\"\
+  little\",'t')\n 2\n >>> count_char(\"assert\",'s')\n 2\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"Python\"\
+  ,'o')==1\n    assert candidate(\"little\",'t')==2\n    assert candidate(\"assert\"\
+  ,'s')==2\n\n\n\ndef test_check():\n    check(count_char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

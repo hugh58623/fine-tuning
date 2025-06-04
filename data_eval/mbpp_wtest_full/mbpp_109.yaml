@@ -1,0 +1,15 @@
+name: mbpp_109
+language: py
+prompt: "\n\ndef odd_Equivalent(s,n):\n    \"\"\"\n    Write a python function to\
+  \ find the count of rotations of a binary string with odd value.\n    >>> odd_Equivalent(\"\
+  011001\",6)\n    3\n    >>> odd_Equivalent(\"11011\",5)\n    4\n    >>> odd_Equivalent(\"\
+  1010\",4)\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"011001\"\
+  ,6) == 3\n    assert candidate(\"11011\",5) == 4\n    assert candidate(\"1010\"\
+  ,4) == 2\n\n\n\ndef test_check():\n    check(odd_Equivalent)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

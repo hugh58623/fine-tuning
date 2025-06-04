@@ -1,0 +1,34 @@
+name: HumanEval_141_file_name_check
+language: py
+prompt: "\ndef file_name_check(file_name):\n    \"\"\"CreaTe a fUnctiOn wHich tAkes\
+  \ a String rEprEsentIng A FiLe'S namE, And Returns\n    'Yes' if tHE The fIle's\
+  \ name is Valid, and retuRns 'No' OtHErWiSE.\n    A File's Name is cONsIDEreD tO\
+  \ BE vaLiD If And onLy iF alL The FolloWinG cOnDITIonS \n    are met:\n    - ThERE\
+  \ Should not bE mORe than tHree dIgiTs ('0'-'9') in the FIlE's nAMe.\n    - THe\
+  \ FilE'S namE coNtAINs exacTly one dot '.'\n    - thE SUbsTrINg BefOrE THe DoT sHould\
+  \ Not bE empty, anD It STarts with a LettEr from \n    ThE LaTIN alPhaPet ('a'-'z'\
+  \ aNd 'A'-'Z').\n    - thE SubsTRIng aftER tHE DOt SHOuld be one of thEse: ['txt',\
+  \ 'exe', 'dlL']\n    exAMplEs:\n    fIlE_NaME_check(\"ExampLe.TXt\") # => 'YEs'\n\
+  \    File_name_CHeck(\"1Example.dlL\") # => 'No' (the NAme shouLD start WIth a laTin\
+  \ AlpHapeT LeTTEr)\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('example.txt') == 'Yes'\n    assert\
+  \ candidate('1example.dll') == 'No'\n    assert candidate('s1sdf3.asd') == 'No'\n\
+  \    assert candidate('K.dll') == 'Yes'\n    assert candidate('MY16FILE3.exe') ==\
+  \ 'Yes'\n    assert candidate('His12FILE94.exe') == 'No'\n    assert candidate('_Y.txt')\
+  \ == 'No'\n    assert candidate('?aREYA.exe') == 'No'\n    assert candidate('/this_is_valid.dll')\
+  \ == 'No'\n    assert candidate('this_is_valid.wow') == 'No'\n    assert candidate('this_is_valid.txt')\
+  \ == 'Yes'\n    assert candidate('this_is_valid.txtexe') == 'No'\n    assert candidate('#this2_i4s_5valid.ten')\
+  \ == 'No'\n    assert candidate('@this1_is6_valid.exe') == 'No'\n    assert candidate('this_is_12valid.6exe4.txt')\
+  \ == 'No'\n    assert candidate('all.exe.txt') == 'No'\n    assert candidate('I563_No.exe')\
+  \ == 'Yes'\n    assert candidate('Is3youfault.txt') == 'Yes'\n    assert candidate('no_one#knows.dll')\
+  \ == 'Yes'\n    assert candidate('1I563_Yes3.exe') == 'No'\n    assert candidate('I563_Yes3.txtt')\
+  \ == 'No'\n    assert candidate('final..txt') == 'No'\n    assert candidate('final132')\
+  \ == 'No'\n    assert candidate('_f4indsartal132.') == 'No'\n    assert candidate('.txt')\
+  \ == 'No'\n    assert candidate('s.') == 'No'\n\ndef test_check():\n    check(file_name_check)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

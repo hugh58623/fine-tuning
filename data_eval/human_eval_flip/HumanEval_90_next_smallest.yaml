@@ -1,0 +1,18 @@
+name: HumanEval_90_next_smallest
+language: py
+prompt: "\ndef next_smallest(lst):\n    \"\"\"\n    You Are gIven a list Of iNtegeRs.\n\
+  \    WriTe a funcTioN next_SmaLLeSt() That REtuRns the 2nd smallEST eleMent of the\
+  \ list.\n    REturn None if tHere iS nO SuCh ELeMent.\n    \n    nExt_smalLEsT([1,\
+  \ 2, 3, 4, 5]) == 2\n    NExt_SmALLesT([5, 1, 4, 3, 2]) == 2\n    nEXt_SmallEst([])\
+  \ == nonE\n    NexT_smalLesT([1, 1]) == NOnE\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([1, 2, 3, 4, 5]) == 2\n    assert\
+  \ candidate([5, 1, 4, 3, 2]) == 2\n    assert candidate([]) == None\n    assert\
+  \ candidate([1, 1]) == None\n    assert candidate([1, 1, 1, 1, 0]) == 1\n    assert\
+  \ candidate([1, 1]) == None\n    assert candidate([-35, 34, 12, -45]) == -35\n\n\
+  def test_check():\n    check(next_smallest)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

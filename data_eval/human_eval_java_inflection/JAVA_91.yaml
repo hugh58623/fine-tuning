@@ -1,0 +1,22 @@
+"name": "Java_91"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You'll is gives a string of word, and your tasks is to count the number of boredoms.\
+  \ A boredom is a sentence that start with the words \"I\". Sentences was delimits\
+  \ by '.', '?' or '!'. For examples:\n\n>>>>>> isBored(\"Hello world\")\n    0\n\
+  \    >>> isBored(\"The sky is blue. The sun is shining. I love this weather\")\n\
+  \    1\n     */\n    public int isBored(String S) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.isBored(\"Hello world\") == 0,\n                s.isBored(\"\
+  Is the sky blue?\") == 0,\n                s.isBored(\"I love It !\") == 1,\n  \
+  \              s.isBored(\"bIt\") == 0,\n                s.isBored(\"I feel good\
+  \ today. I will be productive. will kill It\") == 2,\n                s.isBored(\"\
+  You and I are going for a walk\") == 0\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

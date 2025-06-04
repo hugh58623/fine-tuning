@@ -1,0 +1,24 @@
+"name": "Java_161"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You aRe giVen a sTriNg s.\nif s[i] iS a letTer, reveRse Its caSe fROm LoWer tO UppEr\
+  \ or vise versa,\nOTHerwIse keep it aS it is.\nIf the stRing cOnTAiNs NO lEtterS,\
+  \ reversE ThE STriNg.\ntHE fuNcTIoN shouLd return tHe rESulTed stRinG.\nEXaMPLEs\n\
+  solve(\"1234\") = \"4321\"\nsolve(\"ab\") = \"Ab\"\nsolve(\"#a@C\") = \"#A@c\"\n\
+  \"\"\"\n*/*/\n    public String solve(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.solve(\"AsDf\"), \"aSdF\"),\n                Objects.equals(s.solve(\"\
+  1234\"), \"4321\"),\n                Objects.equals(s.solve(\"ab\"), \"AB\"),\n\
+  \                Objects.equals(s.solve(\"#a@C\"), \"#A@c\"),\n                Objects.equals(s.solve(\"\
+  #AsdfW^45\"), \"#aSDFw^45\"),\n                Objects.equals(s.solve(\"#6@2\"),\
+  \ \"2@6#\"),\n                Objects.equals(s.solve(\"#$a^D\"), \"#$A^d\"),\n \
+  \               Objects.equals(s.solve(\"#ccc\"), \"#CCC\")\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

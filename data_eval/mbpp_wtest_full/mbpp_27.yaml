@@ -1,0 +1,18 @@
+name: mbpp_27
+language: py
+prompt: "\n\ndef remove(list):\n    \"\"\"\n    Write a python function to remove\
+  \ all digits from a list of strings.\n    >>> remove(['4words', '3letters', '4digits'])\n\
+  \    ['words', 'letters', 'digits']\n    >>> remove(['28Jan','12Jan','11Jan'])\n\
+  \    ['Jan','Jan','Jan']\n    >>> remove(['wonder1','wonder2','wonder3'])\n    ['wonder','wonder','wonder']\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['4words',\
+  \ '3letters', '4digits']) == ['words', 'letters', 'digits']\n    assert candidate(['28Jan','12Jan','11Jan'])\
+  \ == ['Jan','Jan','Jan']\n    assert candidate(['wonder1','wonder2','wonder3'])\
+  \ == ['wonder','wonder','wonder']\n\n\n\ndef test_check():\n    check(remove)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

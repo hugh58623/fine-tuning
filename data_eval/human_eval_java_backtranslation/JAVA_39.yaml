@@ -1,0 +1,22 @@
+"name": "Java_39"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  prime _ fib returns the nth number, which is a Fibonacci number, and also a prime\
+  \ number.\n\n>>>>>> primeFib(1)\n    2\n    >>> primeFib(2)\n    3\n    >>> primeFib(3)\n\
+  \    5\n    >>> primeFib(4)\n    13\n    >>> primeFib(5)\n    89\n     */\n    public\
+  \ int primeFib(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.primeFib(1) == 2,\n                s.primeFib(2) == 3,\n    \
+  \            s.primeFib(3) == 5,\n                s.primeFib(4) == 13,\n       \
+  \         s.primeFib(5) == 89,\n                s.primeFib(6) == 233,\n        \
+  \        s.primeFib(7) == 1597,\n                s.primeFib(8) == 28657,\n     \
+  \           s.primeFib(9) == 514229,\n                s.primeFib(10) == 433494437\n\
+  \        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

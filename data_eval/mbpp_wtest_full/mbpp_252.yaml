@@ -1,0 +1,14 @@
+name: mbpp_252
+language: py
+prompt: "\n\ndef convert(numbers):\n  \"\"\"\n  Write a python function to convert\
+  \ complex numbers to polar coordinates.\n  >>> convert(1)\n  (1.0, 0.0)\n  >>> convert(4)\n\
+  \  (4.0,0.0)\n  >>> convert(5)\n  (5.0,0.0)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1) == (1.0,\
+  \ 0.0)\n    assert candidate(4) == (4.0,0.0)\n    assert candidate(5) == (5.0,0.0)\n\
+  \n\n\ndef test_check():\n    check(convert)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

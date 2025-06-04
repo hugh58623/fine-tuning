@@ -1,0 +1,15 @@
+name: mbpp_386
+language: py
+prompt: "\n\ndef swap_count(s):\n\t\"\"\"\n\tWrite a function to find out the minimum\
+  \ no of swaps required for bracket balancing in the given string.\n\t>>> swap_count(\"\
+  []][][\")\n\t2\n\t>>> swap_count(\"[[][]]\")\n\t0\n\t>>> swap_count(\"[[][]]][\"\
+  )\n\t1\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"[]][][\"\
+  ) == 2\n    assert candidate(\"[[][]]\") == 0\n    assert candidate(\"[[][]]][\"\
+  ) == 1\n\n\n\ndef test_check():\n    check(swap_count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

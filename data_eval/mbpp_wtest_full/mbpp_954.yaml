@@ -1,0 +1,15 @@
+name: mbpp_954
+language: py
+prompt: "\n\ndef profit_amount(actual_cost,sale_amount):\n \"\"\"\n Write a function\
+  \ that gives profit amount if the given amount has profit else return none.\n >>>\
+  \ profit_amount(1500,1200)\n 300\n >>> profit_amount(100,200)\n None\n >>> profit_amount(2000,5000)\n\
+  \ None\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1500,1200)==300\n\
+  \    assert candidate(100,200)==None\n    assert candidate(2000,5000)==None\n\n\n\
+  \ndef test_check():\n    check(profit_amount)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_159
+language: py
+prompt: "\n\ndef month_season(month,days):\n \"\"\"\n Write a function to print the\
+  \ season for the given month and day.\n >>> month_season('January',4)\n ('winter')\n\
+  \ >>> month_season('October',28)\n ('autumn')\n >>> month_season('June',6)\n ('spring')\n\
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('January',4)==('winter')\n\
+  \    assert candidate('October',28)==('autumn')\n    assert candidate('June',6)==('spring')\n\
+  \n\n\ndef test_check():\n    check(month_season)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,19 @@
+"name": "CPP_30"
+"language": "cpp"
+"prompt": "/*\nReturn only positive numbers in the vector.\n>>> get_positive({-1,\
+  \ 2, -4, 5, 6})\n{2, 5, 6}\n>>> get_positive({5, 3, -5, 2, -3, 3, 9, 0, 123, 1,\
+  \ -10})\n{5, 3, 2, 3, 9, 123, 1}\n*/\n#include<stdio.h>\n#include<math.h>\n#include<vector>\n\
+  using namespace std;\nvector<float> get_positive(vector<float> l){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<float> a,vector<float>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (abs(a[i]-b[i])>1e-4) return false;\n    }\n    return true;\n\
+  }\nint main(){\n    assert (issame(get_positive({-1, -2, 4, 5, 6}) , {4, 5, 6} ));\n\
+  \    assert (issame(get_positive({5, 3, -5, 2, 3, 3, 9, 0, 123, 1, -10}) , {5, 3,\
+  \ 2, 3, 3, 9, 123, 1}));\n     assert (issame(get_positive({-1, -2}) , {} ));\n\
+  \     assert (issame(get_positive({}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

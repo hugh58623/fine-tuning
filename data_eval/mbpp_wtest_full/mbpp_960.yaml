@@ -1,0 +1,14 @@
+name: mbpp_960
+language: py
+prompt: "\n\ndef get_noOfways(n):\n    \"\"\"\n    Write a function to solve tiling\
+  \ problem.\n    >>> get_noOfways(4)\n    3\n    >>> get_noOfways(3)\n    2\n   \
+  \ >>> get_noOfways(5)\n    5\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(4)==3\n\
+  \    assert candidate(3)==2\n    assert candidate(5)==5\n\n\n\ndef test_check():\n\
+  \    check(get_noOfways)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

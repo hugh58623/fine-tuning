@@ -1,0 +1,15 @@
+name: mbpp_901
+language: py
+prompt: "\n\ndef smallest_multiple(n):\n    \"\"\"\n    Write a function to find the\
+  \ smallest multiple of the first n numbers.\n    >>> smallest_multiple(13)\n   \
+  \ 360360\n    >>> smallest_multiple(2)\n    2\n    >>> smallest_multiple(1)\n  \
+  \  1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(13)==360360\n\
+  \    assert candidate(2)==2\n    assert candidate(1)==1\n\n\n\ndef test_check():\n\
+  \    check(smallest_multiple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

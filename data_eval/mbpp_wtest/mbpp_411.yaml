@@ -1,0 +1,16 @@
+name: mbpp_411
+language: py
+prompt: "\n\ndef snake_to_camel(word):\n  \"\"\"\n  Write a function to convert the\
+  \ given snake case string to camel case string by using regex.\n  >>> snake_to_camel('android_tv')\n\
+  \  'AndroidTv'\n  >>> snake_to_camel('google_pixel')\n  'GooglePixel'\n  >>> snake_to_camel('apple_watch')\n\
+  \  'AppleWatch'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('android_tv')\
+  \ == 'AndroidTv'\n    assert candidate('google_pixel') == 'GooglePixel'\n    assert\
+  \ candidate('apple_watch') == 'AppleWatch'\n\n\n\ndef test_check():\n    check(snake_to_camel)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_914
+language: py
+prompt: "\n\ndef is_Two_Alter(s):\n    \"\"\"\n    Write a python function to check\
+  \ whether the given string is made up of two alternating characters or not.\n  \
+  \  >>> is_Two_Alter(\"abab\")\n    True\n    >>> is_Two_Alter(\"aaaa\")\n    False\n\
+  \    >>> is_Two_Alter(\"xyz\")\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abab\"\
+  ) == True\n    assert candidate(\"aaaa\") == False\n    assert candidate(\"xyz\"\
+  ) == False\n\n\n\ndef test_check():\n    check(is_Two_Alter)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

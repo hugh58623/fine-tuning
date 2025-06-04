@@ -1,0 +1,29 @@
+"name": "CPP_119"
+"language": "cpp"
+"prompt": "/*\nYou are given a list of two strings, both strings bowed stringed instrument\
+  \ consist of open exposed\nparentheses' (' or close near parentheses')' only.\n\
+  Your job problem is to check if it is possible to concatenate the two strings string\
+  \ in\nsome order, that the resulting string will be good beneficial.\nA string bowed\
+  \ stringed instrument S is considered study to be good adept if and only if all\
+  \ parentheses in S\nare balanced. For example exemplar: the string' (() ) ()' is\
+  \ good dependable, while the string\n' ())' is not.\nReturn' Yes' if there's a way\
+  \ direction to make lay down a good string, and return' No' otherwise.\n\nExamples:\n\
+  match_parens ([' () (',')' ]) = =' Yes'\nmatch_parens ([')',')' ]) = =' No'\n'\"\
+  \n*/\n#include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\n\
+  string match_parens(vector<string> lst){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (match_parens({\"\
+  ()(\", \")\"}) == \"Yes\");\n    assert (match_parens({\")\", \")\"}) == \"No\"\
+  );\n    assert (match_parens({\"(()(())\", \"())())\"}) == \"No\");\n    assert\
+  \ (match_parens({\")())\", \"(()()(\"}) == \"Yes\");\n    assert (match_parens({\"\
+  (())))\", \"(()())((\"}) == \"Yes\");\n    assert (match_parens({\"()\", \"())\"\
+  }) == \"No\");\n    assert (match_parens({\"(()(\", \"()))()\"}) == \"Yes\");\n\
+  \    assert (match_parens({\"((((\", \"((())\"}) == \"No\");\n    assert (match_parens({\"\
+  )(()\", \"(()(\"}) == \"No\");\n    assert (match_parens({\")(\", \")(\"}) == \"\
+  No\");\n    assert (match_parens({\"(\", \")\"}) == \"Yes\");\n    assert (match_parens({\"\
+  )\", \"(\"}) == \"Yes\" );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

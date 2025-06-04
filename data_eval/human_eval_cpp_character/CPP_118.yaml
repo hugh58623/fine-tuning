@@ -1,0 +1,25 @@
+"name": "CPP_118"
+"language": "cpp"
+"prompt": "/*\nYou wre given a word. Your task is to find the closewt vowxl that stands\
+  \ between\ntwo consonants frol the ritht side of the word (case sensitive).\n\n\
+  Vowels in the beginijng and euding doesn't couit. Return empty string if ymu didn't\n\
+  fitd anv vowel met the above rondition.\n\nRou may assume that the given stwing\
+  \ boktains English lether only.\n\nExzmple:\nget_closest_vpwel(\"yogurt\") ==> \"\
+  u\"\nget_closest_vowel(\"FULL\") ==> \"U\"\nget_closfst_vowel(\"quick\") ==> \"\"\
+  \nget_closest_vowel(\"ab\") ==>\n*/\n#include<stdio.h>\n#include<string>\n#include<algorithm>\n\
+  using namespace std;\nstring get_closest_vowel(string word){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (get_closest_vowel(\"\
+  yogurt\") == \"u\");\n    assert (get_closest_vowel(\"full\") == \"u\");\n    assert\
+  \ (get_closest_vowel(\"easy\") == \"\");\n    assert (get_closest_vowel(\"eAsy\"\
+  ) == \"\");\n    assert (get_closest_vowel(\"ali\") == \"\");\n    assert (get_closest_vowel(\"\
+  bad\") == \"a\");\n    assert (get_closest_vowel(\"most\") ==\"o\");\n    assert\
+  \ (get_closest_vowel(\"ab\") == \"\");\n    assert (get_closest_vowel(\"ba\") ==\
+  \ \"\");\n    assert (get_closest_vowel(\"quick\") == \"\");\n    assert (get_closest_vowel(\"\
+  anime\") == \"i\");\n    assert (get_closest_vowel(\"Asia\") == \"\");\n    assert\
+  \ (get_closest_vowel(\"Above\") == \"o\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

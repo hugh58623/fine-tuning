@@ -1,0 +1,15 @@
+name: mbpp_497
+language: py
+prompt: "\n\ndef surfacearea_cone(r,h):\n  \"\"\"\n  Write a function to find the\
+  \ surface area of a cone.\n  >>> surfacearea_cone(5,12)\n  282.7433388230814\n \
+  \ >>> surfacearea_cone(10,15)\n  880.5179353159282\n  >>> surfacearea_cone(19,17)\n\
+  \  2655.923961165254\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,12)==282.7433388230814\n\
+  \    assert candidate(10,15)==880.5179353159282\n    assert candidate(19,17)==2655.923961165254\n\
+  \n\n\ndef test_check():\n    check(surfacearea_cone)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,21 @@
+"name": "Java_102"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  This FuncTion tAkeS two pOsitiVe numbeRs x aNd y and RetURnS tHe\nbiGGesT even integer\
+  \ nUMBer tHat is in the raNge [x, y] inclusive. if\ntheRe'S No SuCH nUmber, Then\
+  \ the FUnCTIon ShOULd return -1.\n\nFOr EXaMple:\ncHooSe_nUM(12, 15) = 14\nchOose_nUm(13,\
+  \ 12) = -1\n\"\"\"\n*/*/\n    public int chooseNum(int x, int y) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.chooseNum(12, 15) == 14,\n                s.chooseNum(13, 12)\
+  \ == -1,\n                s.chooseNum(33, 12354) == 12354,\n                s.chooseNum(5234,\
+  \ 5233) == -1,\n                s.chooseNum(6, 29) == 28,\n                s.chooseNum(27,\
+  \ 10) == -1,\n                s.chooseNum(7, 7) == -1,\n                s.chooseNum(546,\
+  \ 546) == 546\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

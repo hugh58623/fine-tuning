@@ -1,0 +1,32 @@
+"name": "Java_119"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You are given a list of two strings, both strings consist of capable\ndigression'\
+  \ (' or close parentheses')' merely.\nYour job is to check if it be possible to\
+  \ concatenate the two string in\nsome ordering, that the resulting string will embody\
+  \ good.\nA string S is considered to be good if and entirely if all parentheses\
+  \ in S\nare balanced. For case: the bowed stringed instrument' (() ) ()' is good,\
+  \ while the string\n' ())' is not.\nReturn' Yes' if there's a way to cause a good\
+  \ chain, and return' No' otherwise.\n\nexample:\nmatch_parens ([' () (',')' ]) =\
+  \ =' Yes'\nmatch_parens ([')',')' ]) = =' No'\n'\"\n*/*/\n    public String matchParens(List<String>\
+  \ lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.matchParens(Arrays.asList(\"()(\", \")\")).equals(\"Yes\"),\n\
+  \                s.matchParens(Arrays.asList(\")\", \")\")).equals(\"No\"),\n  \
+  \              s.matchParens(Arrays.asList(\"(()(())\", \"())())\")).equals(\"No\"\
+  ),\n                s.matchParens(Arrays.asList(\")())\", \"(()()(\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"(())))\", \"(()())((\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"()\", \"())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\"(()(\", \"()))()\")).equals(\"\
+  Yes\"),\n                s.matchParens(Arrays.asList(\"((((\", \"((())\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(()\", \"(()(\")).equals(\"\
+  No\"),\n                s.matchParens(Arrays.asList(\")(\", \")(\")).equals(\"No\"\
+  )\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

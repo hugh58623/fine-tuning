@@ -1,0 +1,15 @@
+name: mbpp_964
+language: py
+prompt: "\n\ndef word_len(s):\n    \"\"\"\n    Write a python function to check whether\
+  \ the length of the word is even or not.\n    >>> word_len(\"program\")\n    False\n\
+  \    >>> word_len(\"solution\")\n    True\n    >>> word_len(\"data\")\n    True\n\
+  \    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"program\"\
+  ) == False\n    assert candidate(\"solution\") == True\n    assert candidate(\"\
+  data\") == True\n\n\n\ndef test_check():\n    check(word_len)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

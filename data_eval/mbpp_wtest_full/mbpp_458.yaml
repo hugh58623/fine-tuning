@@ -1,0 +1,14 @@
+name: mbpp_458
+language: py
+prompt: "\n\ndef rectangle_area(l,b):\n  \"\"\"\n  Write a function to find the area\
+  \ of a rectangle.\n  >>> rectangle_area(10,20)\n  200\n  >>> rectangle_area(10,5)\n\
+  \  50\n  >>> rectangle_area(4,2)\n  8\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==200\n\
+  \    assert candidate(10,5)==50\n    assert candidate(4,2)==8\n\n\n\ndef test_check():\n\
+  \    check(rectangle_area)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

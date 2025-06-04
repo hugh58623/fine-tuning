@@ -1,0 +1,15 @@
+name: mbpp_672
+language: py
+prompt: "\n\ndef max_of_three(num1,num2,num3):\n    \"\"\"\n    Write a function to\
+  \ find maximum of three numbers.\n    >>> max_of_three(10,20,30)\n    30\n    >>>\
+  \ max_of_three(55,47,39)\n    55\n    >>> max_of_three(10,49,30)\n    49\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20,30)==30\n\
+  \    assert candidate(55,47,39)==55\n    assert candidate(10,49,30)==49\n\n\n\n\
+  def test_check():\n    check(max_of_three)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

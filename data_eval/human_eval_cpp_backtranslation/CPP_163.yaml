@@ -1,0 +1,18 @@
+"name": "CPP_163"
+"language": "cpp"
+"prompt": "\ndef generate_integers(a, b):\n    \"\"\"\n    For two positive integers\
+  \ a and b, return the even digits between a and b in ascending order. Example: generate\
+  \ _ integers (2, 8) = > [2, 4, 6, 8] generate _ integers (8, 2) = > [2, 4, 6, 8]\
+  \ generate _ integers (10, 14) = > [] \"\"\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(generate_integers(2, 10) , {2, 4, 6, 8}));\n    assert (issame(generate_integers(10,\
+  \ 2) , {2, 4, 6, 8}));\n    assert (issame(generate_integers(132, 2) , {2, 4, 6,\
+  \ 8}));\n    assert (issame(generate_integers(17,89) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

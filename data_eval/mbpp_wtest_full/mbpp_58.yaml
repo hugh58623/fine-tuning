@@ -1,0 +1,15 @@
+name: mbpp_58
+language: py
+prompt: "\n\ndef opposite_Signs(x,y):\n    \"\"\"\n    Write a python function to\
+  \ check whether the given two integers have opposite sign or not.\n    >>> opposite_Signs(1,-2)\n\
+  \    True\n    >>> opposite_Signs(3,2)\n    False\n    >>> opposite_Signs(-10,-10)\n\
+  \    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,-2) ==\
+  \ True\n    assert candidate(3,2) == False\n    assert candidate(-10,-10) == False\n\
+  \n\n\ndef test_check():\n    check(opposite_Signs)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_736
+language: py
+prompt: "\n\ndef left_insertion(a, x):\n    \"\"\"\n    Write a function to locate\
+  \ the left insertion point for a specified value in sorted order.\n    >>> left_insertion([1,2,4,5],6)\n\
+  \    4\n    >>> left_insertion([1,2,4,5],3)\n    2\n    >>> left_insertion([1,2,4,5],7)\n\
+  \    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,4,5],6)==4\n\
+  \    assert candidate([1,2,4,5],3)==2\n    assert candidate([1,2,4,5],7)==4\n\n\n\
+  \ndef test_check():\n    check(left_insertion)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

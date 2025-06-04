@@ -1,0 +1,22 @@
+"name": "Java_9"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  From a will give list of integers, will generate a list of rolling maximum element\
+  \ will find until will give moment\nin the sequence.\n\n>>>>>> rollingMax(Arrays.asList(1,\
+  \ 2, 3, 2, 3, 4, 2))\n    [1, 2, 3, 3, 3, 4, 4]\n     */\n    public List<Integer>\
+  \ rollingMax(List<Integer> numbers) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.rollingMax(new ArrayList<>(List.of())).equals(List.of()),\n \
+  \               s.rollingMax(new ArrayList<>(Arrays.asList(1, 2, 3, 4))).equals(Arrays.asList(1,\
+  \ 2, 3, 4)),\n                s.rollingMax(new ArrayList<>(Arrays.asList(4, 3, 2,\
+  \ 1))).equals(Arrays.asList(4, 4, 4, 4)),\n                s.rollingMax(new ArrayList<>(Arrays.asList(3,\
+  \ 2, 3, 100, 3))).equals(Arrays.asList(3, 3, 3, 100, 100))\n        );\n       \
+  \ if (correct.contains(false)) {\n            throw new AssertionError();\n    \
+  \    }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

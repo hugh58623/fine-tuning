@@ -1,0 +1,23 @@
+"name": "Java_80"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \    You are given a string s.\n    Your task is to check if the string is happy\
+  \ or not.\n    A string is happy if its length is at least 3 and every 3 consecutive\
+  \ letters are distinct\n    For example:\n    isHappy(a) => false\n    isHappy(aa)\
+  \ => false\n    isHappy(abcd) => true\n    isHappy(aabb) => false\n    isHappy(adb)\
+  \ => true\n    isHappy(xyy) => false\n     */\n    public boolean isHappy(String\
+  \ s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.isHappy(\"a\"),\n                !s.isHappy(\"aa\"),\n     \
+  \           s.isHappy(\"abcd\"),\n                !s.isHappy(\"aabb\"),\n      \
+  \          s.isHappy(\"adb\"),\n                !s.isHappy(\"xyy\"),\n         \
+  \       s.isHappy(\"iopaxpoi\"),\n                !s.isHappy(\"iopaxioi\")\n   \
+  \     );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

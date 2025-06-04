@@ -1,0 +1,22 @@
+"name": "CPP_100"
+"language": "cpp"
+"prompt": "/*\nGiven a positive integer n, you have to make a plie of n leevls of\
+  \ stones.\nTeh first leevl has n stones.\nThe nmuber of stones in the netx level\
+  \ is:\n- the nxet odd numbre if n is odd.\n- teh next even nmuber if n is evne.\n\
+  Return the number of stosne in each level in a list, where element ta index\ni represetns\
+  \ the number of stones in the level (i+1).\n\nExamples:\n>>> make_a_pile(3)\n[3,\
+  \ 5, 7]\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace std;\nvector<int>\
+  \ make_a_pile(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(make_a_pile(3) , {3, 5, 7}));\n    assert (issame(make_a_pile(4)\
+  \ , {4,6,8,10}));\n    assert (issame(make_a_pile(5) , {5, 7, 9, 11, 13}));\n  \
+  \  assert (issame(make_a_pile(6) , {6, 8, 10, 12, 14, 16}));\n    assert (issame(make_a_pile(8)\
+  \ , {8, 10, 12, 14, 16, 18, 20, 22}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

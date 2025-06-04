@@ -1,0 +1,19 @@
+name: mbpp_118
+language: py
+prompt: "\n\ndef string_to_list(string):\n    \"\"\"\n    [link text](https:// [link\
+  \ text](https:// [link text](https://)))write a function to convert a string to\
+  \ a list.\n    >>> string_to_list(\"python programming\")\n    ['python','programming']\n\
+  \    >>> string_to_list(\"lists tuples strings\")\n    ['lists','tuples','strings']\n\
+  \    >>> string_to_list(\"write a program\")\n    ['write','a','program']\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\
+  \ programming\")==['python','programming']\n    assert candidate(\"lists tuples\
+  \ strings\")==['lists','tuples','strings']\n    assert candidate(\"write a program\"\
+  )==['write','a','program']\n\n\n\ndef test_check():\n    check(string_to_list)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

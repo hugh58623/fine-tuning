@@ -1,0 +1,17 @@
+name: mbpp_719
+language: py
+prompt: "\n\ndef text_match(text):\n        \"\"\"\n        Write a function that\
+  \ matches a string that has an a followed by zero or more b's.\n        >>> text_match(\"\
+  ac\")\n        ('Found a match!')\n        >>> text_match(\"dc\")\n        ('Not\
+  \ matched!')\n        >>> text_match(\"abba\")\n        ('Found a match!')\n   \
+  \     \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"ac\"\
+  )==('Found a match!')\n    assert candidate(\"dc\")==('Not matched!')\n    assert\
+  \ candidate(\"abba\")==('Found a match!')\n\n\n\ndef test_check():\n    check(text_match)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

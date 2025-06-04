@@ -1,0 +1,25 @@
+"name": "CPP_96"
+"language": "cpp"
+"prompt": "/*\nImplement a function that takes an non - negative integer and returns\
+  \ an array of the inaugural n\nintegers that be prime number and less than n.\n\
+  for exemplar:\ncount_up_to(5) = > [ 2,3 ]\ncount_up_to(11) = > [ 2,3,5,7 ]\ncount_up_to(0)\
+  \ = > [ ]\ncount_up_to(20) = > [ 2,3,5,7,11,13,17,19 ]\ncount_up_to(1) = > [ ]\n\
+  count_up_to(18) = > [ 2,3,5,7,11,13,17 ]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  using namespace std;\nvector<int> count_up_to(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(count_up_to(5) , {2,3}));\n    assert (issame(count_up_to(6)\
+  \ , {2,3,5}));\n    assert (issame(count_up_to(7) , {2,3,5}));\n    assert (issame(count_up_to(10)\
+  \ , {2,3,5,7}));\n    assert (issame(count_up_to(0) , {}));\n    assert (issame(count_up_to(22)\
+  \ , {2,3,5,7,11,13,17,19}));\n    assert (issame(count_up_to(1) , {}));\n    assert\
+  \ (issame(count_up_to(18) , {2,3,5,7,11,13,17}));\n    assert (issame(count_up_to(47)\
+  \ , {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43}));\n    assert (issame(count_up_to(101)\
+  \ , {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71,\
+  \ 73, 79, 83, 89, 97}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

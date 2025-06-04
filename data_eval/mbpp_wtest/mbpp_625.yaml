@@ -1,0 +1,15 @@
+name: mbpp_625
+language: py
+prompt: "\n\ndef swap_List(newList):\n    \"\"\"\n    Write a python function to interchange\
+  \ first and last elements in a given list.\n    >>> swap_List([1,2,3])\n    [3,2,1]\n\
+  \    >>> swap_List([1,2,3,4,4])\n    [4,2,3,4,1]\n    >>> swap_List([4,5,6])\n \
+  \   [6,5,4]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3])\
+  \ == [3,2,1]\n    assert candidate([1,2,3,4,4]) == [4,2,3,4,1]\n    assert candidate([4,5,6])\
+  \ == [6,5,4]\n\n\n\ndef test_check():\n    check(swap_List)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

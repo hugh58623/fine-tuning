@@ -1,0 +1,14 @@
+name: mbpp_309
+language: py
+prompt: "\n\ndef maximum(a,b):\n    \"\"\"\n    Write a python function to find the\
+  \ maximum of two numbers.\n    >>> maximum(5,10)\n    10\n    >>> maximum(-1,-2)\n\
+  \    -1\n    >>> maximum(9,7)\n    9\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,10) ==\
+  \ 10\n    assert candidate(-1,-2) == -1\n    assert candidate(9,7) == 9\n\n\n\n\
+  def test_check():\n    check(maximum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

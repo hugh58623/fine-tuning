@@ -1,0 +1,28 @@
+"name": "CPP_109"
+"language": "cpp"
+"prompt": "/*\nWe haVe an Array 'arr' Of N IntegErs arr[1], arr[2], ..., arr[N].The\n\
+  nuMbers in thE arRay wiLl bE RaNdOmly ORdeRed. Your task is TO DeteRmine if\nit\
+  \ iS possible to gEt an aRrAY sorted in nOn-DEcReasiNg order BY pERForMiNG\nThe\
+  \ FoLLoWing oPerAtiON on The giVen ArRaY:\nyOU arE allowed tO PERform right ShIFt\
+  \ operaTion aNy nUmber OF tImeS.\n\none RiGht SHift OpeRaTIOn meanS shifting AlL\
+  \ ELemEnTS oF thE aRRAy By OnE\nposiTion in The right DIrECtion. The laSt elEment\
+  \ oF tHE aRRAy wIll Be moveD to\ntHe STartING positIOn in THE ArRAY i.e. 0th index.\n\
+  \nIf it is possIble to obtaiN ThE sorted ArrAy bY pERfORming tHe aboVe OPerAtIon\n\
+  then return True eLSe return False.\nIf The given aRray is EMpty theN return True.\n\
+  \nnote: ThE Given list iS guAraNteeD To HAVe uNiQUe eLEmEntS.\n\nfOr examPle:\n\n\
+  mOvE_oNe_baLL([3, 4, 5, 1, 2])==>TRuE\neXPLanaTioN: By pErfoRMIn 2 riGht shift OpeRatiONs,\
+  \ nON-decReasiNg OrDeR Can\nbE AChieVeD FoR tHe Given array.\nMovE_one_Ball([3,\
+  \ 5, 4, 1, 2])==>FalSe\neXpLaNatIoN:It is NOt possIbLE tO Get non-dEcreasiNG orDeR\
+  \ FOR tHe givEn\narray by perfORMINg Any numbER of RiGHT sHiFT opErATiOnS.\n*/\n\
+  #include<stdio.h>\n#include<vector>\nusing namespace std;\nbool move_one_ball(vector<int>\
+  \ arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (move_one_ball({3,\
+  \ 4, 5, 1, 2})==true);\n    assert (move_one_ball({3, 5, 10, 1, 2})==true);\n  \
+  \  assert (move_one_ball({4, 3, 1, 2})==false);\n    assert (move_one_ball({3, 5,\
+  \ 4, 1, 2})==false);\n    assert (move_one_ball({})==true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

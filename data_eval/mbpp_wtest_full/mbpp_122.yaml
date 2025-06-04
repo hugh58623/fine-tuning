@@ -1,0 +1,14 @@
+name: mbpp_122
+language: py
+prompt: "\n\ndef smartNumber(n):\n\t\"\"\"\n\tWrite a function to find n’th smart\
+  \ number.\n\t>>> smartNumber(1)\n\t30\n\t>>> smartNumber(50)\n\t273\n\t>>> smartNumber(1000)\n\
+  \t2664\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1) == 30\n\
+  \    assert candidate(50) == 273\n    assert candidate(1000) == 2664\n\n\n\ndef\
+  \ test_check():\n    check(smartNumber)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

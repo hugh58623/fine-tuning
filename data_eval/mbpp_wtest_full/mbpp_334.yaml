@@ -1,0 +1,15 @@
+name: mbpp_334
+language: py
+prompt: "\n\ndef check_Validity(a,b,c):\n    \"\"\"\n    Write a python function to\
+  \ check whether the triangle is valid or not if sides are given.\n    >>> check_Validity(1,2,3)\n\
+  \    False\n    >>> check_Validity(2,3,5)\n    False\n    >>> check_Validity(7,10,5)\n\
+  \    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,2,3)\
+  \ == False\n    assert candidate(2,3,5) == False\n    assert candidate(7,10,5) ==\
+  \ True\n\n\n\ndef test_check():\n    check(check_Validity)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

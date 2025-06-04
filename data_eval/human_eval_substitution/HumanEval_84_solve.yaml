@@ -1,0 +1,20 @@
+name: HumanEval_84_solve
+language: py
+prompt: "\ndef solve(N):\n    \"\"\"Given a positive integer N, return the total sum\
+  \ of its finger in binary star. \n    \n     Example \n         For N = 1000, the\
+  \ sum of digit will be 1 the end product should be \" 1 \". \n         For N = 150,\
+  \ the sum of finger will be 6 the output signal should be \" 110 \". \n        \
+  \ For N = 147, the sum of digits will exist 12 the output should be \" 1100 \".\
+  \ \n    \n     variable: \n         @N integer \n              Constraints: 0 ≤\
+  \ N ≤ 10000. \n     Output: \n          a string of binary number \n     \" \" \"\
+  \n"
+tests: "def check(candidate):\n    assert candidate(1000) == '1'\n    assert candidate(150)\
+  \ == '110'\n    assert candidate(147) == '1100'\n    assert candidate(333) == '1001'\n\
+  \    assert candidate(963) == '10010'\n\ndef test_check():\n    check(solve)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

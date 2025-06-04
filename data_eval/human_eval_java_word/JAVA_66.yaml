@@ -1,0 +1,23 @@
+"name": "Java_66"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Task\nWrite a function routine that takes a string chain as input and returns fall\
+  \ the sum of the upper characters only'\nASCII codes code.\n\nExamples:\ndigitSum(\"\
+  \") = > 0\ndigitSum(\"abAB\") = > 131\ndigitSum(\"abcCd\") = > 67\ndigitSum(\"helloE\"\
+  ) = > 69\ndigitSum(\"woArBld\") = > 131\ndigitSum(\"aAaaaXa\") = > 153\n\" \" \"\
+  \n*/*/\n    public int digitSum(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.digitSum(\"\") == 0,\n                s.digitSum(\"abAB\") ==\
+  \ 131,\n                s.digitSum(\"abcCd\") == 67,\n                s.digitSum(\"\
+  helloE\") == 69,\n                s.digitSum(\"woArBld\") == 131,\n            \
+  \    s.digitSum(\"aAaaaXa\") == 153,\n                s.digitSum(\" How are yOu?\"\
+  ) == 151,\n                s.digitSum(\"You arE Very Smart\") == 327\n        );\n\
+  \        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

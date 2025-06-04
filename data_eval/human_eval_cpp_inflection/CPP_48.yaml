@@ -1,0 +1,17 @@
+"name": "CPP_48"
+"language": "cpp"
+"prompt": "/*\nCheck if gives string is a palindrome\n>>> is_palindrome('')\nTrue\n\
+  >>> is_palindrome('aba')\nTrue\n>>> is_palindrome('aaaaa')\nTrue\n>>> is_palindrome('zbcd')\n\
+  False\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nbool is_palindrome(string\
+  \ text){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_palindrome(\"\
+  \") == true);\n    assert (is_palindrome(\"aba\") == true);\n    assert (is_palindrome(\"\
+  aaaaa\") == true);\n    assert (is_palindrome(\"zbcd\") == false);\n    assert (is_palindrome(\"\
+  xywyx\") == true);\n    assert (is_palindrome(\"xywyz\") == false);\n    assert\
+  \ (is_palindrome(\"xywzx\") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

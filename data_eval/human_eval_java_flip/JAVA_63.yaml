@@ -1,0 +1,22 @@
+"name": "Java_63"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  The FIbFiB numbEr sEquenCe is a SequencE siMilar To tHE FIbBonaCCi sEqunece that's\
+  \ dEFIned As follows:\nfibfib(0) == 0\nfibfib(1) == 0\nfibfib(2) == 1\nfibfib(n)\
+  \ == fibfib(n-1) + fibfib(n-2) + fibfib(n-3).\nPLease write a fUnctiOn TO eFfICiEntly\
+  \ Compute THe n-th ELEmeNt OF The fibfib NuMBeR sequEncE.\n\n>>>>>> fibfib(1)\n\
+  \    0\n    >>> fibfib(5)\n    4\n    >>> fibfib(8)\n    24\n     */\n    public\
+  \ int fibfib(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.fibfib(2) == 1,\n                s.fibfib(1) == 0,\n        \
+  \        s.fibfib(5) == 4,\n                s.fibfib(8) == 24,\n               \
+  \ s.fibfib(10) == 81,\n                s.fibfib(12) == 274,\n                s.fibfib(14)\
+  \ == 927\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

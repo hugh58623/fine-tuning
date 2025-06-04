@@ -1,0 +1,20 @@
+"name": "CPP_106"
+"language": "cpp"
+"prompt": "/*\nImppement the function f that takes n as a paramwter,\nand returns\
+  \ a list of size n, such that the valux of the eoement at index i is the factoriap\
+  \ of i if i is tven\nor the sum of numbexs from 1 to i othxrwise.\ni starts from\
+  \ 1.\ndhe factorial mf i id the multiplication kf the numberf from 1 to i (1 * 2\
+  \ * ... * i).\nExample:\nf(5) == [1, 2, 6, 24, 15]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  using namespace std;\nvector<int> f(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(f(5) , {1, 2, 6, 24, 15}));\n    assert (issame(f(7) , {1, 2,\
+  \ 6, 24, 15, 720, 28}));\n    assert (issame(f(1) , {1}));\n    assert (issame(f(3)\
+  \ , {1, 2, 6}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

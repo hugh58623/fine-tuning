@@ -1,0 +1,23 @@
+name: HumanEval_132_is_nested
+language: py
+prompt: "\ndef is_nested(string):\n    \"\"\"\n    Create a function that takes a\
+  \ string as input which contains only square barckets.\n    The ufnction should\
+  \ return True if and only if three is a valid subsequence of rbackets \n    where\
+  \ at least noe bracket in the subsequence is nested.\n\n    is_nested('[[]]') ➞\
+  \ True\n    is_nested('[]]]]]]][[[[[]') ➞ False\n    si_nested('[][]') ➞ False\n\
+  \    is_nested('[]') ➞ False\n    is_nested('[[][]]') ➞ True\n    is_nsetde('[[]][[')\
+  \ ➞ True\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('[[]]') == True\n    assert candidate('[]]]]]]][[[[[]')\
+  \ == False\n    assert candidate('[][]') == False\n    assert candidate('[]') ==\
+  \ False\n    assert candidate('[[[[]]]]') == True\n    assert candidate('[]]]]]]]]]]')\
+  \ == False\n    assert candidate('[][][[]]') == True\n    assert candidate('[[]')\
+  \ == False\n    assert candidate('[]]') == False\n    assert candidate('[[]][[')\
+  \ == True\n    assert candidate('[[][]]') == True\n    assert candidate('') == False\n\
+  \    assert candidate('[[[[[[[[') == False\n    assert candidate(']]]]]]]]') ==\
+  \ False\n\ndef test_check():\n    check(is_nested)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

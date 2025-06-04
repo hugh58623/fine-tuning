@@ -1,0 +1,15 @@
+name: mbpp_377
+language: py
+prompt: "\n\ndef remove_Char(s,c) :\n    \"\"\"\n    Write a python function to remove\
+  \ all occurrences of a character in a given string.\n    >>> remove_Char(\"aba\"\
+  ,'a')\n    \"b\"\n    >>> remove_Char(\"toggle\",'g')\n    \"tole\"\n    >>> remove_Char(\"\
+  aabbc\",'b')\n    \"aac\"\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"aba\"\
+  ,'a') == \"b\"\n    assert candidate(\"toggle\",'g') == \"tole\"\n    assert candidate(\"\
+  aabbc\",'b') == \"aac\"\n\n\n\ndef test_check():\n    check(remove_Char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

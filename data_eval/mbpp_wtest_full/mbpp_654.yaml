@@ -1,0 +1,14 @@
+name: mbpp_654
+language: py
+prompt: "\n\ndef rectangle_perimeter(l,b):\n  \"\"\"\n  Write a function to find the\
+  \ perimeter of a rectangle.\n  >>> rectangle_perimeter(10,20)\n  60\n  >>> rectangle_perimeter(10,5)\n\
+  \  30\n  >>> rectangle_perimeter(4,2)\n  12\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==60\n\
+  \    assert candidate(10,5)==30\n    assert candidate(4,2)==12\n\n\n\ndef test_check():\n\
+  \    check(rectangle_perimeter)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

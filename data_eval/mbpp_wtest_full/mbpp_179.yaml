@@ -1,0 +1,14 @@
+name: mbpp_179
+language: py
+prompt: "\n\ndef is_num_keith(x):\n\t\"\"\"\n\tWrite a function to find if the given\
+  \ number is a keith number or not.\n\t>>> is_num_keith(14)\n\tTrue\n\t>>> is_num_keith(12)\n\
+  \tFalse\n\t>>> is_num_keith(197)\n\tTrue\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(14) ==\
+  \ True\n    assert candidate(12) == False\n    assert candidate(197) == True\n\n\
+  \n\ndef test_check():\n    check(is_num_keith)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

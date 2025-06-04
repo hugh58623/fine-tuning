@@ -1,0 +1,18 @@
+name: mbpp_690
+language: py
+prompt: "\n\ndef mul_consecutive_nums(nums):\n    \"\"\"\n    Write a function to\
+  \ multiply consecutive numbers of a given list.\n    >>> mul_consecutive_nums([1,\
+  \ 1, 3, 4, 4, 5, 6, 7])\n    [1, 3, 12, 16, 20, 30, 42]\n    >>> mul_consecutive_nums([4,\
+  \ 5, 8, 9, 6, 10])\n    [20, 40, 72, 54, 60]\n    >>> mul_consecutive_nums([1, 2,\
+  \ 3, 4, 5, 6, 7, 8, 9, 10])\n    [2, 6, 12, 20, 30, 42, 56, 72, 90]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 1,\
+  \ 3, 4, 4, 5, 6, 7])==[1, 3, 12, 16, 20, 30, 42]\n    assert candidate([4, 5, 8,\
+  \ 9, 6, 10])==[20, 40, 72, 54, 60]\n    assert candidate([1, 2, 3, 4, 5, 6, 7, 8,\
+  \ 9, 10])==[2, 6, 12, 20, 30, 42, 56, 72, 90]\n\n\n\ndef test_check():\n    check(mul_consecutive_nums)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

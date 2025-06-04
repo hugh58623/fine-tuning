@@ -1,0 +1,15 @@
+name: mbpp_367
+language: py
+prompt: "\n\ndef is_tree_balanced(root):\n\t\"\"\"\n\tWrite a function to check if\
+  \ a binary tree is balanced or not.\n\t>>> is_tree_balanced(root)\n\tFalse\n\t>>>\
+  \ is_tree_balanced(root1)\n\tTrue\n\t>>> is_tree_balanced(root2)\n\tFalse\n\t\"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(root) ==\
+  \ False\n    assert candidate(root1) == True\n    assert candidate(root2) == False\
+  \ \n\n\n\ndef test_check():\n    check(is_tree_balanced)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

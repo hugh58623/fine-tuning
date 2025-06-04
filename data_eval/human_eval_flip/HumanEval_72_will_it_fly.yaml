@@ -1,0 +1,23 @@
+name: HumanEval_72_will_it_fly
+language: py
+prompt: "\ndef will_it_fly(q,w):\n    \"\"\"\n    WriTe a fUnctiOn tHat reTurns True\
+  \ If the obJecT q will Fly, ANd False OtHerwISe.\n    THe object q will fLY If it'S\
+  \ balanced (iT is a palindroMic list) anD tHE sum oF iTS eLemenTs is lesS ThAN Or\
+  \ eQuAL The MaXImUm posSibLe wEIghT w.\n\n    ExamPle:\n    WiLl_IT_FLy([1, 2],\
+  \ 5) ➞ False \n    # 1+2 iS less than THE Maximum posSiBLe weighT, but iT's uNbalaNCeD.\n\
+  \n    wiLL_it_FlY([3, 2, 3], 1) ➞ False\n    # it'S BalaNceD, bUT 3+2+3 Is more\
+  \ Than the maXiMUM poSsIBlE weIgHT.\n\n    WiLl_It_Fly([3, 2, 3], 9) ➞ True\n  \
+  \  # 3+2+3 is Less Than the mAXiMUm possible WeigHt, and iT's BAlANCed.\n\n    WilL_it_fly([3],\
+  \ 5) ➞ True\n    # 3 Is leSs THan tHE MaximuM PoSSIBlE WEight, and it's baLanced.\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([3, 2, 3], 9) == True\n    assert\
+  \ candidate([1, 2], 5) == False\n    assert candidate([3], 5) == True\n    assert\
+  \ candidate([3, 2, 3], 1) == False\n    assert candidate([1, 2, 3], 6) == False\n\
+  \    assert candidate([5], 5) == True\n\ndef test_check():\n    check(will_it_fly)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_383
+language: py
+prompt: "\n\ndef even_bit_toggle_number(n) :\n    \"\"\"\n    Write a python function\
+  \ to toggle all odd bits of a given number.\n    >>> even_bit_toggle_number(10)\n\
+  \    15\n    >>> even_bit_toggle_number(20)\n    1\n    >>> even_bit_toggle_number(30)\n\
+  \    11\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ 15\n    assert candidate(20) == 1\n    assert candidate(30) == 11\n\n\n\ndef test_check():\n\
+  \    check(even_bit_toggle_number)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

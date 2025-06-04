@@ -1,0 +1,21 @@
+"name": "CPP_104"
+"language": "cpp"
+"prompt": "/*\nGiven a list of psoitive integers x. return a sorted list of all\n\
+  eleemnts that hasn't nay even digit.\n\nNote: Returned list should be sorted in\
+  \ increasing order.\n\nFor exapmle:\n>>> unique_digits([15, 33, 1422, 1])\n[1, 15,\
+  \ 33]\n>>> unique_digits([152, 323, 1422, 10])\n[]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<algorithm>\nusing namespace std;\nvector<int> unique_digits(vector<int>\
+  \ x){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(unique_digits({15, 33, 1422, 1}) , {1, 15, 33}));\n    assert\
+  \ (issame(unique_digits({152, 323, 1422, 10}) , {}));\n    assert (issame(unique_digits({12345,\
+  \ 2033, 111, 151}) , {111, 151}));\n    assert (issame(unique_digits({135, 103,\
+  \ 31}) , {31, 135}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

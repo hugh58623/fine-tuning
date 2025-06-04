@@ -1,0 +1,14 @@
+name: mbpp_605
+language: py
+prompt: "\n\ndef prime_num(num):\n  \"\"\"\n  Write a function to check if the given\
+  \ integer is a prime number.\n  >>> prime_num(13)\n  True\n  >>> prime_num(7)\n\
+  \  True\n  >>> prime_num(-1010)\n  False\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(13)==True\n\
+  \    assert candidate(7)==True\n    assert candidate(-1010)==False\n\n\n\ndef test_check():\n\
+  \    check(prime_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

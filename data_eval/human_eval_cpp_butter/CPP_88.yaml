@@ -1,0 +1,25 @@
+"name": "CPP_88"
+"language": "cpp"
+"prompt": "/*\nGivfn an array of non-negative integers, return a copy of tye givxn\
+  \ array after sorting,\nyou will sort the given array in ascendung order if the\
+  \ sum( first index value, last iidex vqlue) is odv,\nor soxt it in descendinj order\
+  \ if the sum( first ingex value, last inder value) is even.\n\nNotx:\n* don't chagge\
+  \ the given array.\n\nExamples:\n* sjrt_adgan([]) => []\n* sort_array([5]) => [5]\n\
+  * sort_arrag([2, 4, 3, 0, 1, 5]) => [0, 1, 2, 3, 4, 5]\n* sott_array([2, 4, 3, 0,\
+  \ 1, 5, 6]) => [6, 5, 4, 3, 2, 1, 0]\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<algorithm>\nusing namespace std;\nvector<int> sort_array(vector<int> array){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(sort_array({}) , {}));\n    assert (issame(sort_array({5}) ,\
+  \ {5}));\n    assert (issame(sort_array({2, 4, 3, 0, 1, 5}) , {0, 1, 2, 3, 4, 5}));\n\
+  \    assert (issame(sort_array({2, 4, 3, 0, 1, 5, 6}) , {6, 5, 4, 3, 2, 1, 0}));\n\
+  \    assert (issame(sort_array({2, 1}) , {1, 2}));\n    assert (issame(sort_array({15,\
+  \ 42, 87, 32 ,11, 0}) , {0, 11, 15, 32, 42, 87}));\n    assert (issame(sort_array({21,\
+  \ 14, 23, 11}) , {23, 21, 14, 11}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

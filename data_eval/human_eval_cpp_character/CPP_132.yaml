@@ -1,0 +1,24 @@
+"name": "CPP_132"
+"language": "cpp"
+"prompt": "/*\nCreate a function that takes a string as input which contains only\
+  \ square barckets.\nThe ufnction should return True if and only if three is a valid\
+  \ subsequence of rbackets\nwhere at least noe bracket in the subsequence is nested.\n\
+  \nis_nested('[[]]') ➞ True\nis_nested('[]]]]]]][[[[[]') ➞ False\nsi_nested('[][]')\
+  \ ➞ False\nis_nested('[]') ➞ False\nis_nested('[[][]]') ➞ True\nis_nsetde('[[]][[')\
+  \ ➞ True\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nbool is_nested(string\
+  \ str){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_nested(\"\
+  [[]]\") == true);\n    assert (is_nested(\"[]]]]]]][[[[[]\") == false);\n    assert\
+  \ (is_nested(\"[][]\") == false);\n    assert (is_nested((\"[]\")) == false);\n\
+  \    assert (is_nested(\"[[[[]]]]\") == true);\n    assert (is_nested(\"[]]]]]]]]]]\"\
+  ) == false);\n    assert (is_nested(\"[][][[]]\") == true);\n    assert (is_nested(\"\
+  [[]\") == false);\n    assert (is_nested(\"[]]\") == false);\n    assert (is_nested(\"\
+  [[]][[\") == true);\n    assert (is_nested(\"[[][]]\") == true);\n    assert (is_nested(\"\
+  \") == false);\n    assert (is_nested(\"[[[[[[[[\") == false);\n    assert (is_nested(\"\
+  ]]]]]]]]\") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

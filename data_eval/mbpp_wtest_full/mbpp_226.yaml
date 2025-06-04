@@ -1,0 +1,15 @@
+name: mbpp_226
+language: py
+prompt: "\n\ndef odd_values_string(str):\n  \"\"\"\n  Write a python function to remove\
+  \ the characters which have odd index values of a given string.\n  >>> odd_values_string('abcdef')\n\
+  \  'ace'\n  >>> odd_values_string('python')\n  'pto'\n  >>> odd_values_string('data')\n\
+  \  'dt'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('abcdef')\
+  \ == 'ace'\n    assert candidate('python') == 'pto'\n    assert candidate('data')\
+  \ == 'dt'\n\n\n\ndef test_check():\n    check(odd_values_string)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

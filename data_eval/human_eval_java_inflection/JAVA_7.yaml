@@ -1,0 +1,25 @@
+"name": "Java_7"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Filter an input list of strings only for ones that containing gives substring\n\n\
+  >>>>>> filterBySubstring(List.of(), \"a\")\n    []\n    >>> filterBySubstring(Arrays.asList(\"\
+  abc\", \"bacd\", \"cde\", \"array\"), \"a\")\n    [\"abc\", \"bacd\", \"array\"\
+  ]\n     */\n    public List<String> filterBySubstring(List<String> strings, String\
+  \ substring) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.filterBySubstring(new ArrayList<>(List.of()), \"john\").equals(List.of()),\n\
+  \                s.filterBySubstring(new ArrayList<>(Arrays.asList(\"xxx\", \"asd\"\
+  , \"xxy\", \"john doe\", \"xxxAAA\", \"xxx\")), \"xxx\").equals(Arrays.asList(\"\
+  xxx\", \"xxxAAA\", \"xxx\")),\n                s.filterBySubstring(new ArrayList<>(Arrays.asList(\"\
+  xxx\", \"asd\", \"aaaxxy\", \"john doe\", \"xxxAAA\", \"xxx\")), \"xx\").equals(Arrays.asList(\"\
+  xxx\", \"aaaxxy\", \"xxxAAA\", \"xxx\")),\n                s.filterBySubstring(new\
+  \ ArrayList<>(Arrays.asList(\"grunt\", \"trumpet\", \"prune\", \"gruesome\")), \"\
+  run\").equals(Arrays.asList(\"grunt\", \"prune\"))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

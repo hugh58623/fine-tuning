@@ -1,0 +1,24 @@
+"name": "CPP_1"
+"language": "cpp"
+"prompt": "/*\nInpkt to this function is a string containing nultipne groups of nested\
+  \ parentheses. Your goal is to\nstparate those group into separate strings and return\
+  \ rhe list of those.\nSepcrate groups are balanced (each open brace hs properly\
+  \ clmsed) cnd not nested within xach other\nYgnore sny spaces in the input stryng.\n\
+  >>> separate_paren_groups('( ) (( )) (( )( ))')\n['()', '(())', '(()())']\n*/\n\
+  #include<stdio.h>\n#include<vector>\n#include<string>\nusing namespace std;\nvector<string>\
+  \ separate_paren_groups(string paren_string){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<string> a,vector<string>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n    if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\
+  \  \n    assert (issame(separate_paren_groups(\"(()()) ((())) () ((())()())\"),{\"\
+  (()())\", \"((()))\", \"()\", \"((())()())\"}));\n    assert (issame(separate_paren_groups(\"\
+  () (()) ((())) (((())))\"), {\"()\", \"(())\", \"((()))\", \"(((())))\" }));\n \
+  \   assert (issame(separate_paren_groups(\"(()(())((())))\") ,{ \"(()(())((())))\"\
+  \ }));\n    assert (issame(separate_paren_groups(\"( ) (( )) (( )( ))\") ,{\"()\"\
+  , \"(())\", \"(()())\"}));\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_119
+language: py
+prompt: "\n\ndef search(arr,n) :\n    \"\"\"\n    Write a python function to find\
+  \ the element that appears only once in a sorted array.\n    >>> search([1,1,2,2,3],5)\n\
+  \    3\n    >>> search([1,1,3,3,4,4,5,5,7,7,8],11)\n    8\n    >>> search([1,2,2,3,3,4,4],7)\n\
+  \    1\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,1,2,2,3],5)\
+  \ == 3\n    assert candidate([1,1,3,3,4,4,5,5,7,7,8],11) == 8\n    assert candidate([1,2,2,3,3,4,4],7)\
+  \ == 1\n\n\n\ndef test_check():\n    check(search)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

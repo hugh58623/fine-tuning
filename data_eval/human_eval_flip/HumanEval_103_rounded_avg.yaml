@@ -1,0 +1,22 @@
+name: HumanEval_103_rounded_avg
+language: py
+prompt: "\ndef rounded_avg(n, m):\n    \"\"\"You aRe giVen twO poSitivE inteGers n\
+  \ and m, And Your tAsk IS tO cOmpuTE thE\n    average of the INTegeRs from n throUgh\
+  \ m (including n And m). \n    RoUnD ThE aNSwEr to tHe neareST iNTEgeR aND ConVeRT\
+  \ tHat to BinAry.\n    iF n is GreatEr tHaN m, return -1.\n    EXAMPle:\n    Rounded_avG(1,\
+  \ 5) => \"0B11\"\n    ROunded_avg(7, 5) => -1\n    rOuNDed_avg(10, 20) => \"0b1111\"\
+  \n    RoundEd_aVg(20, 33) => \"0b11010\"\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(1, 5) == '0b11'\n    assert candidate(7,\
+  \ 13) == '0b1010'\n    assert candidate(964, 977) == '0b1111001010'\n    assert\
+  \ candidate(996, 997) == '0b1111100100'\n    assert candidate(560, 851) == '0b1011000010'\n\
+  \    assert candidate(185, 546) == '0b101101110'\n    assert candidate(362, 496)\
+  \ == '0b110101101'\n    assert candidate(350, 902) == '0b1001110010'\n    assert\
+  \ candidate(197, 233) == '0b11010111'\n    assert candidate(7, 5) == -1\n    assert\
+  \ candidate(5, 1) == -1\n    assert candidate(5, 5) == '0b101'\n\ndef test_check():\n\
+  \    check(rounded_avg)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

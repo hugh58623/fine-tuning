@@ -1,0 +1,14 @@
+name: mbpp_354
+language: py
+prompt: "\n\ndef tn_ap(a,n,d):\n  \"\"\"\n  Write a function to find t-nth term of\
+  \ arithemetic progression.\n  >>> tn_ap(1,5,2)\n  9\n  >>> tn_ap(2,6,4)\n  22\n\
+  \  >>> tn_ap(1,4,5)\n  16\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,5,2)==9\n\
+  \    assert candidate(2,6,4)==22\n    assert candidate(1,4,5)==16\n\n\n\ndef test_check():\n\
+  \    check(tn_ap)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

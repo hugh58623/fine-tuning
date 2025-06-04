@@ -1,0 +1,14 @@
+name: mbpp_541
+language: py
+prompt: "\n\ndef check_abundant(n):\n\t\"\"\"\n\tWrite a function to find if the given\
+  \ number is abundant or not.\n\t>>> check_abundant(12)\n\tTrue\n\t>>> check_abundant(15)\n\
+  \tFalse\n\t>>> check_abundant(18)\n\tTrue\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12) ==\
+  \ True\n    assert candidate(15) == False\n    assert candidate(18) == True\n\n\n\
+  \ndef test_check():\n    check(check_abundant)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

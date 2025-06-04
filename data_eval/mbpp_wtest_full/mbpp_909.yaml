@@ -1,0 +1,15 @@
+name: mbpp_909
+language: py
+prompt: "\n\ndef previous_palindrome(num):\n    \"\"\"\n    Write a function to find\
+  \ the previous palindrome of a specified number.\n    >>> previous_palindrome(99)\n\
+  \    88\n    >>> previous_palindrome(1221)\n    1111\n    >>> previous_palindrome(120)\n\
+  \    111\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(99)==88\n\
+  \    assert candidate(1221)==1111\n    assert candidate(120)==111\n\n\n\ndef test_check():\n\
+  \    check(previous_palindrome)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

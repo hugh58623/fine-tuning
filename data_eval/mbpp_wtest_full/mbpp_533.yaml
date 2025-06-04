@@ -1,0 +1,17 @@
+name: mbpp_533
+language: py
+prompt: "\n\ndef remove_datatype(test_tuple, data_type):\n  \"\"\"\n  Write a function\
+  \ to remove particular data type elements from the given tuple.\n  >>> remove_datatype((4,\
+  \ 5, 4, 7.7, 1.2), int)\n  [7.7, 1.2]\n  >>> remove_datatype((7, 8, 9, \"SR\"),\
+  \ str)\n  [7, 8, 9]\n  >>> remove_datatype((7, 1.1, 2, 2.2), float)\n  [7, 2]\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((4, 5,\
+  \ 4, 7.7, 1.2), int) == [7.7, 1.2]\n    assert candidate((7, 8, 9, \"SR\"), str)\
+  \ == [7, 8, 9]\n    assert candidate((7, 1.1, 2, 2.2), float) == [7, 2]\n\n\n\n\
+  def test_check():\n    check(remove_datatype)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

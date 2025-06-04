@@ -1,0 +1,15 @@
+name: mbpp_868
+language: py
+prompt: "\n\ndef length_Of_Last_Word(a):\n    \"\"\"\n    Write a python function\
+  \ to find the length of the last word in a given string.\n    >>> length_Of_Last_Word(\"\
+  python language\")\n    8\n    >>> length_Of_Last_Word(\"PHP\")\n    3\n    >>>\
+  \ length_Of_Last_Word(\"\")\n    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"python\
+  \ language\") == 8\n    assert candidate(\"PHP\") == 3\n    assert candidate(\"\"\
+  ) == 0\n\n\n\ndef test_check():\n    check(length_Of_Last_Word)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

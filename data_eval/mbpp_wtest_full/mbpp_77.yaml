@@ -1,0 +1,15 @@
+name: mbpp_77
+language: py
+prompt: "\n\ndef is_Diff(n):\n    \"\"\"\n    Write a python function to find the\
+  \ difference between sum of even and odd digits.\n    >>> is_Diff (12345)\n    False\n\
+  \    >>> is_Diff(1212112)\n    True\n    >>> is_Diff(1212)\n    False\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate (12345)\
+  \ == False\n    assert candidate(1212112) == True\n    assert candidate(1212) ==\
+  \ False\n\n\n\ndef test_check():\n    check(is_Diff)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

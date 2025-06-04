@@ -1,0 +1,15 @@
+name: mbpp_735
+language: py
+prompt: "\n\ndef toggle_middle_bits(n):\n    \"\"\"\n    Write a python function to\
+  \ toggle bits of the number except the first and the last bit.\n    >>> toggle_middle_bits(9)\n\
+  \    15\n    >>> toggle_middle_bits(10)\n    12\n    >>> toggle_middle_bits(11)\n\
+  \    13\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(9) == 15\n\
+  \    assert candidate(10) == 12\n    assert candidate(11) == 13\n\n\n\ndef test_check():\n\
+  \    check(toggle_middle_bits)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

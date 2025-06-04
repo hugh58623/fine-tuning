@@ -1,0 +1,14 @@
+name: mbpp_103
+language: py
+prompt: "\n\ndef eulerian_num(n, m):\n\t\"\"\"\n\tWrite a function to find eulerian\
+  \ number a(n, m).\n\t>>> eulerian_num(3, 1)\n\t4\n\t>>> eulerian_num(4, 1)\n\t11\n\
+  \t>>> eulerian_num(5, 3)\n\t26\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3, 1) ==\
+  \ 4\n    assert candidate(4, 1) == 11\n    assert candidate(5, 3) == 26\n\n\n\n\
+  def test_check():\n    check(eulerian_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

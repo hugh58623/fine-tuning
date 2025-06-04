@@ -1,0 +1,20 @@
+"name": "Java_98"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a string s, count the number of uppercase vowel in even indices.\n\nFor model:\n\
+  count_upper('aBCdEf') return 1\ncount_upper('abcdefg') returns 0\ncount_upper('dBBE')\
+  \ render 0\n\" \" \"\n*/*/    \n    public int countUpper(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.countUpper(\"aBCdEf\")  == 1,\n                s.countUpper(\"\
+  abcdefg\") == 0,\n                s.countUpper(\"dBBE\") == 0,\n               \
+  \ s.countUpper(\"B\")  == 0,\n                s.countUpper(\"U\")  == 1,\n     \
+  \           s.countUpper(\"\") == 0,\n                s.countUpper(\"EEEE\") ==\
+  \ 2\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

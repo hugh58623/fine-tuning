@@ -1,0 +1,16 @@
+name: mbpp_480
+language: py
+prompt: "\n\ndef get_max_occuring_char(str1):\n  \"\"\"\n  Write a python function\
+  \ to find the maximum occurring character in a given string.\n  >>> get_max_occuring_char(\"\
+  data\")\n  \"a\"\n  >>> get_max_occuring_char(\"create\")\n  \"e\"\n  >>> get_max_occuring_char(\"\
+  brilliant girl\")\n  \"i\"\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"data\"\
+  ) == \"a\"\n    assert candidate(\"create\") == \"e\"\n    assert candidate(\"brilliant\
+  \ girl\") == \"i\"\n\n\n\ndef test_check():\n    check(get_max_occuring_char)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

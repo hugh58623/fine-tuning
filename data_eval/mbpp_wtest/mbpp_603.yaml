@@ -1,0 +1,16 @@
+name: mbpp_603
+language: py
+prompt: "\n\ndef get_ludic(n):\n\t\"\"\"\n\tWrite a function to get a lucid number\
+  \ smaller than or equal to n.\n\t>>> get_ludic(10)\n\t[1, 2, 3, 5, 7]\n\t>>> get_ludic(25)\n\
+  \t[1, 2, 3, 5, 7, 11, 13, 17, 23, 25]\n\t>>> get_ludic(45)\n\t[1, 2, 3, 5, 7, 11,\
+  \ 13, 17, 23, 25, 29, 37, 41, 43]\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10) ==\
+  \ [1, 2, 3, 5, 7]\n    assert candidate(25) == [1, 2, 3, 5, 7, 11, 13, 17, 23, 25]\n\
+  \    assert candidate(45) == [1, 2, 3, 5, 7, 11, 13, 17, 23, 25, 29, 37, 41, 43]\n\
+  \n\n\ndef test_check():\n    check(get_ludic)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

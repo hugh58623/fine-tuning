@@ -1,0 +1,15 @@
+name: mbpp_51
+language: py
+prompt: "\n\ndef check_equilateral(x,y,z):\n  \"\"\"\n  Write a function to print\
+  \ check if the triangle is equilateral or not.\n  >>> check_equilateral(6,8,12)\n\
+  \  False\n  >>> check_equilateral(6,6,12)\n  False\n  >>> check_equilateral(6,6,6)\n\
+  \  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(6,8,12)==False\
+  \ \n    assert candidate(6,6,12)==False\n    assert candidate(6,6,6)==True\n\n\n\
+  \ndef test_check():\n    check(check_equilateral)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

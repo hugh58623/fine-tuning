@@ -1,0 +1,19 @@
+name: mbpp_500
+language: py
+prompt: "\n\ndef concatenate_elements(list):\n  \"\"\"\n  Write a function to concatenate\
+  \ all elements of the given list into a string.\n  >>> concatenate_elements(['hello','there','have','a','rocky','day']\
+  \ )\n  '  hello there have a rocky day'\n  >>> concatenate_elements([ 'Hi', 'there',\
+  \ 'How','are', 'you'] )\n  '  Hi there How are you'\n  >>> concatenate_elements([\
+  \ 'Part', 'of', 'the','journey', 'is', 'end'] )\n  '  Part of the journey is end'\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['hello','there','have','a','rocky','day']\
+  \ ) == '  hello there have a rocky day'\n    assert candidate([ 'Hi', 'there', 'How','are',\
+  \ 'you'] ) == '  Hi there How are you'\n    assert candidate([ 'Part', 'of', 'the','journey',\
+  \ 'is', 'end'] ) == '  Part of the journey is end'\n\n\n\ndef test_check():\n  \
+  \  check(concatenate_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

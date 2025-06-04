@@ -1,0 +1,17 @@
+name: mbpp_273
+language: py
+prompt: "\n\ndef substract_elements(test_tup1, test_tup2):\n  \"\"\"\n  Write a function\
+  \ to substract the contents of one tuple with corresponding index of other tuple.\n\
+  \  >>> substract_elements((10, 4, 5), (2, 5, 18))\n  (8, -1, -13)\n  >>> substract_elements((11,\
+  \ 2, 3), (24, 45 ,16))\n  (-13, -43, -13)\n  >>> substract_elements((7, 18, 9),\
+  \ (10, 11, 12))\n  (-3, 7, -3)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate((10, 4,\
+  \ 5), (2, 5, 18)) == (8, -1, -13)\n    assert candidate((11, 2, 3), (24, 45 ,16))\
+  \ == (-13, -43, -13)\n    assert candidate((7, 18, 9), (10, 11, 12)) == (-3, 7,\
+  \ -3)\n\n\n\ndef test_check():\n    check(substract_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

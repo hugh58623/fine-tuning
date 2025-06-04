@@ -1,0 +1,27 @@
+name: HumanEval_68_pluck
+language: py
+prompt: "\ndef pluck(arr):\n    \"\"\"\n    \"Given an array represents a branch of\
+  \ a trees that had non-negative integers nodes your tasks is to pluck one of the\
+  \ node and return it. The plucked nodes should is the nodes with the smaller even\
+  \ value. If multiple node with the same smaller even value was finds return the\
+  \ nodes that had smallest index.\n\n The plucked nodes should is returning in a\
+  \ list, [ smalest_value, its index ], If there was no even value or the gives array\
+  \ is emptiest, return []. Example 1: Input: [4,2,3] Output: [2, 1] Explanation:\
+  \ 2 had the smaller even value, and 2 had the smaller index.\n\n Examples 2: Input:\
+  \ [1,2,3] Output: [2, 1] Explanation: 2 had the smaller even value, and 2 had the\
+  \ smaller index. Examples 3: Input: [] Output: [] Example 4: Input: [5, 0, 3, 0,\
+  \ 4, 2] Output: [0, 1] Explanation: 0 is the smaller value, but there was two zeroes,\
+  \ so we will choose the first zeros, which had the smaller index.\n\n Constraint:\
+  \ * 1 <= node.length <= 10000 * 0 <= nodes.value \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([4, 2, 3]) == [2, 1]\n    assert\
+  \ candidate([1, 2, 3]) == [2, 1]\n    assert candidate([]) == []\n    assert candidate([5,\
+  \ 0, 3, 0, 4, 2]) == [0, 1]\n    assert candidate([1, 2, 3, 0, 5, 3]) == [0, 3]\n\
+  \    assert candidate([5, 4, 8, 4, 8]) == [4, 1]\n    assert candidate([7, 6, 7,\
+  \ 1]) == [6, 1]\n    assert candidate([7, 9, 7, 1]) == []\n\ndef test_check():\n\
+  \    check(pluck)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

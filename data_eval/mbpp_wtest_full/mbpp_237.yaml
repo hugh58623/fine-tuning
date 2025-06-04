@@ -1,0 +1,21 @@
+name: mbpp_237
+language: py
+prompt: "\n\ndef check_occurences(test_list):\n  \"\"\"\n  Write a function to check\
+  \ the occurrences of records which occur similar times in the given tuples.\n  >>>\
+  \ check_occurences([(3, 1), (1, 3), (2, 5), (5, 2), (6, 3)] )\n  {(1, 3): 2, (2,\
+  \ 5): 2, (3, 6): 1}\n  >>> check_occurences([(4, 2), (2, 4), (3, 6), (6, 3), (7,\
+  \ 4)] )\n  {(2, 4): 2, (3, 6): 2, (4, 7): 1}\n  >>> check_occurences([(13, 2), (11,\
+  \ 23), (12, 25), (25, 12), (16, 23)] )\n  {(2, 13): 1, (11, 23): 1, (12, 25): 2,\
+  \ (16, 23): 1}\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(3, 1),\
+  \ (1, 3), (2, 5), (5, 2), (6, 3)] ) == {(1, 3): 2, (2, 5): 2, (3, 6): 1}\n    assert\
+  \ candidate([(4, 2), (2, 4), (3, 6), (6, 3), (7, 4)] ) == {(2, 4): 2, (3, 6): 2,\
+  \ (4, 7): 1}\n    assert candidate([(13, 2), (11, 23), (12, 25), (25, 12), (16,\
+  \ 23)] ) == {(2, 13): 1, (11, 23): 1, (12, 25): 2, (16, 23): 1}\n\n\n\ndef test_check():\n\
+  \    check(check_occurences)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

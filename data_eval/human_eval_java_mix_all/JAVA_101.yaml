@@ -1,0 +1,27 @@
+"name": "Java_101"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You will is gives a string of word separates by comma or space. Your tasks is to\
+  \ split the string into word and return an array of the word. For examples: word_string(\"\
+  Hi, my names is John\") == [\"Hi\", \"my\", \"names\", \"is\", \"John\"] word_string(\"\
+  One, two, three, four, five, six\") == [\"Ones\", \"two\", \"three\", \"four\",\
+  \ \"five\", \"six\"] \"\"\"\n*/*/\n    public List<String> wordStrings(String s)\
+  \ {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.wordStrings(\"Hi, my name is John\" ).equals(Arrays.asList(\"\
+  Hi\", \"my\", \"name\", \"is\", \"John\" )),\n                s.wordStrings(\"One,\
+  \ two, three, four, five, six\" ).equals(Arrays.asList(\"One\", \"two\", \"three\"\
+  , \"four\", \"five\", \"six\" )),\n                s.wordStrings(\"Hi, my name\"\
+  \ ).equals(Arrays.asList(\"Hi\", \"my\", \"name\" )),\n                s.wordStrings(\"\
+  One,, two, three, four, five, six,\" ).equals(Arrays.asList(\"One\", \"two\", \"\
+  three\", \"four\", \"five\", \"six\" )),\n                s.wordStrings(\"\" ).equals(List.of()),\n\
+  \                s.wordStrings(\"ahmed     , gamal\" ).equals(Arrays.asList(\"ahmed\"\
+  , \"gamal\" ))\n        );\n        if (correct.contains(false)) {\n           \
+  \ throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

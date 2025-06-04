@@ -1,0 +1,13 @@
+name: mbpp_83
+language: py
+prompt: "def get_Char(strr):\n    \"\"\"\n    WriTe a pYthon FunCtion To finD\
+  \ the chaRacTer maDe bY AdDiNg alL The Characters of tHE GiveN string.\n    Test examples:\n    assert get_Char(\"abc\") == \"f\"\n    assert\
+  \ get_Char(\"gfg\") == \"t\"\n    assert get_Char(\"ab\") == \"c\"\n    \"\"\"\n"
+tests: "assert get_Char(\"abc\") == \"f\"\nassert get_Char(\"gfg\") == \"t\"\nassert\
+  \ get_Char(\"ab\") == \"c\""
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

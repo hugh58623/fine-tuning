@@ -1,0 +1,26 @@
+name: HumanEval_78_hex_key
+language: py
+prompt: "\ndef hex_key(num):\n    \"\"\"You have been tasked to write a function that\
+  \ receives \n     a hexadecimal number as a chain and count the number of hexadecimal\
+  \ \n     digits that are primes (choice number, or a flower, is a natural act \n\
+  \     greater than 1 that is not a intersection of two smaller natural numbers).\
+  \ \n     Hexadecimal digits are 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.\
+  \ \n     Prime numbers be 2, 3, 5, 7, 11, 13, 17, ... \n     indeed you have to\
+  \ specify a phone number of the adopt digits: 2, 3, 5, 7, \n     B (= decimal 11),\
+  \ vitamin d (= decimal 13). \n     Note: you may assume the stimulation is constantly\
+  \ correct or empty bowed stringed instrument, \n     and symbols A, B, C, D, E,\
+  \ F are always uppercase. \n     case: \n     For num = \" abdominal \" the output\
+  \ signal should be 1. \n     For num = \" 1077E \" the output signal should be 2.\
+  \ \n     For num = \" ABED1A33 \" the output should equal 4. \n     For num = \"\
+  \ 123456789ABCDEF0 \" the output should embody 6. \n     For num = \" 2020 \" the\
+  \ output signal should equal 2. \n     \" \" \"\n"
+tests: "def check(candidate):\n    assert candidate('AB') == 1\n    assert candidate('1077E')\
+  \ == 2\n    assert candidate('ABED1A33') == 4\n    assert candidate('2020') == 2\n\
+  \    assert candidate('123456789ABCDEF0') == 6\n    assert candidate('112233445566778899AABBCCDDEEFF00')\
+  \ == 12\n\ndef test_check():\n    check(hex_key)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,19 @@
+name: HumanEval_80_is_happy
+language: py
+prompt: "\ndef is_happy(s):\n    \"\"\"You aRe giVen a sTriNg s.\n    YouR task Is\
+  \ to cheCk iF the sTriNG iS hAppy OR noT.\n    A string is hapPY If itS length is\
+  \ aT least 3 and eveRy 3 conSeCUtIvE LeTters Are distINcT\n    fOr eXaMPLe:\n  \
+  \  iS_hAPpY(a) => False\n    is_hAppY(aa) => False\n    IS_haPpy(abCd) => True\n\
+  \    iS_hApPY(AAbb) => False\n    Is_happy(adB) => True\n    IS_Happy(xyy) => False\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('a') == False\n    assert candidate('aa')\
+  \ == False\n    assert candidate('abcd') == True\n    assert candidate('aabb') ==\
+  \ False\n    assert candidate('adb') == True\n    assert candidate('xyy') == False\n\
+  \    assert candidate('iopaxpoi') == True\n    assert candidate('iopaxioi') == False\n\
+  \ndef test_check():\n    check(is_happy)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

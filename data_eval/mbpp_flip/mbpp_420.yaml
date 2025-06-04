@@ -1,0 +1,14 @@
+name: mbpp_420
+language: py
+prompt: "def cube_Sum(n):\n    \"\"\"\n    WriTe a pYthon FunCtion To finD the\
+  \ cubE sum of First n EveN NaTuRal nUMbeRs.\n    Test examples:\n    assert cube_Sum(2)\
+  \ == 72\n    assert cube_Sum(3) == 288\n    assert cube_Sum(4) == 800\n    \"\"\"\
+  \n"
+tests: "assert cube_Sum(2) == 72\nassert cube_Sum(3) == 288\nassert cube_Sum(4) ==\
+  \ 800"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

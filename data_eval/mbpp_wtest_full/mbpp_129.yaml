@@ -1,0 +1,18 @@
+name: mbpp_129
+language: py
+prompt: "\n\ndef magic_square_test(my_matrix):\n    \"\"\"\n    Write a function to\
+  \ calculate magic square.\n    >>> magic_square_test([[7, 12, 1, 14], [2, 13, 8,\
+  \ 11], [16, 3, 10, 5], [9, 6, 15, 4]])\n    True\n    >>> magic_square_test([[2,\
+  \ 7, 6], [9, 5, 1], [4, 3, 8]])\n    True\n    >>> magic_square_test([[2, 7, 6],\
+  \ [9, 5, 1], [4, 3, 7]])\n    False\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[7, 12,\
+  \ 1, 14], [2, 13, 8, 11], [16, 3, 10, 5], [9, 6, 15, 4]])==True\n    assert candidate([[2,\
+  \ 7, 6], [9, 5, 1], [4, 3, 8]])==True\n    assert candidate([[2, 7, 6], [9, 5, 1],\
+  \ [4, 3, 7]])==False\n\n\n\ndef test_check():\n    check(magic_square_test)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,28 @@
+"name": "Java_156"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  GivEn a pOsitiVe iNtegeR, obtaIn its roMan NumerAl eQUiVaLent AS a sTring,\nand\
+  \ return it in lowERCase.\nrestrictioNs: 1 <= num <= 1000\n\nExamples:\n\n>>>>>>\
+  \ intToMiniRoman(19) == \"xix\"\n    >>> intToMiniRoman(152) == \"clii\"\n    >>>\
+  \ intToMiniRoman(426) == \"cdxxvi\"\n     */\n    public String intToMiniRoman(int\
+  \ number) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.intToMiniRoman(19), \"xix\"),\n              \
+  \  Objects.equals(s.intToMiniRoman(152), \"clii\"),\n                Objects.equals(s.intToMiniRoman(251),\
+  \ \"ccli\"),\n                Objects.equals(s.intToMiniRoman(426), \"cdxxvi\"),\n\
+  \                Objects.equals(s.intToMiniRoman(500), \"d\"),\n               \
+  \ Objects.equals(s.intToMiniRoman(1), \"i\"),\n                Objects.equals(s.intToMiniRoman(4),\
+  \ \"iv\"),\n                Objects.equals(s.intToMiniRoman(43), \"xliii\"),\n \
+  \               Objects.equals(s.intToMiniRoman(90), \"xc\"),\n                Objects.equals(s.intToMiniRoman(94),\
+  \ \"xciv\"),\n                Objects.equals(s.intToMiniRoman(532), \"dxxxii\"),\n\
+  \                Objects.equals(s.intToMiniRoman(900), \"cm\"),\n              \
+  \  Objects.equals(s.intToMiniRoman(994), \"cmxciv\"),\n                Objects.equals(s.intToMiniRoman(1000),\
+  \ \"m\")\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

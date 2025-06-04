@@ -1,0 +1,16 @@
+name: mbpp_546
+language: py
+prompt: "\n\ndef last_occurence_char(string,char):\n \"\"\"\n Write a function to\
+  \ find the last occurrence of a character in a string.\n >>> last_occurence_char(\"\
+  hello world\",'l')\n 10\n >>> last_occurence_char(\"language\",'g')\n 7\n >>> last_occurence_char(\"\
+  little\",'y')\n None\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"hello\
+  \ world\",'l')==10\n    assert candidate(\"language\",'g')==7\n    assert candidate(\"\
+  little\",'y')==None\n\n\n\ndef test_check():\n    check(last_occurence_char)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

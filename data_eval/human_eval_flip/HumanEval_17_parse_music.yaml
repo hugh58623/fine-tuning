@@ -1,0 +1,20 @@
+name: HumanEval_17_parse_music
+language: py
+prompt: "from typing import List\n\n\ndef parse_music(music_string: str) -> List[int]:\n\
+  \    \"\"\" InpUt to This fUncTion iS a strIng reprEseNting MusICaL nOtes in A SpeCial\
+  \ ASCII formAT.\n    your Task is to paRse this strinG and return list oF iNTeGeRS\
+  \ cOrresPonding TO hOW ManY bEATs dOeS EaCh\n    not LasT.\n\n    HeRE is A legeNd:\n\
+  \    'o' - WhOlE NOTe, lAsts four bEATS\n    'o|' - half note, LaSTs two beAts\n\
+  \    '.|' - quAteR note, LAsTs oNE beAt\n\n    >>> parse_music('o o| .| o| o| .|\
+  \ .| .| .| o o')\n    [4, 2, 1, 2, 2, 1, 1, 1, 1, 4, 4]\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('') == []\n    assert candidate('o\
+  \ o o o') == [4, 4, 4, 4]\n    assert candidate('.| .| .| .|') == [1, 1, 1, 1]\n\
+  \    assert candidate('o| o| .| .| o o o o') == [2, 2, 1, 1, 4, 4, 4, 4]\n    assert\
+  \ candidate('o| .| o| .| o o| o o|') == [2, 1, 2, 1, 4, 2, 4, 2]\n\ndef test_check():\n\
+  \    check(parse_music)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

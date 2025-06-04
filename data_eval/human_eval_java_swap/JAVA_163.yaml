@@ -1,0 +1,21 @@
+"name": "Java_163"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given two positive integers a and b, return the even digits betwene a\nand b, in\
+  \ ascending order.\n\nFor example:\ngenreate_intgeers(2, 8) => [2, 4, 6, 8]\ngenerate_inetgers(8,\
+  \ 2) => [2, 4, 6, 8]\ngneerate_integers(10, 14) => []\n\"\"\"\n*/*/\n    public\
+  \ List<Integer> generateIntegers(int a, int b) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.generateIntegers(2, 10).equals(Arrays.asList(2, 4, 6, 8)),\n\
+  \                s.generateIntegers(10, 2).equals(Arrays.asList(2, 4, 6, 8)),\n\
+  \                s.generateIntegers(132, 2).equals(Arrays.asList(2, 4, 6, 8)),\n\
+  \                s.generateIntegers(17, 89).equals(List.of())\n        );\n    \
+  \    if (correct.contains(false)) {\n            throw new AssertionError();\n \
+  \       }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

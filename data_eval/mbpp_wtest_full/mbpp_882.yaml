@@ -1,0 +1,15 @@
+name: mbpp_882
+language: py
+prompt: "\n\ndef parallelogram_perimeter(b,h):\n  \"\"\"\n  Write a function to caluclate\
+  \ perimeter of a parallelogram.\n  >>> parallelogram_perimeter(10,20)\n  400\n \
+  \ >>> parallelogram_perimeter(15,20)\n  600\n  >>> parallelogram_perimeter(8,9)\n\
+  \  144\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20)==400\n\
+  \    assert candidate(15,20)==600\n    assert candidate(8,9)==144\n\n\n\ndef test_check():\n\
+  \    check(parallelogram_perimeter)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

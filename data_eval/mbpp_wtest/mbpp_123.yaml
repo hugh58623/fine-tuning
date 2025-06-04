@@ -1,0 +1,15 @@
+name: mbpp_123
+language: py
+prompt: "\n\ndef amicable_numbers_sum(limit):\n    \"\"\"\n    Write a function to\
+  \ sum all amicable numbers from 1 to a specified number.\n    >>> amicable_numbers_sum(999)\n\
+  \    504\n    >>> amicable_numbers_sum(9999)\n    31626\n    >>> amicable_numbers_sum(99)\n\
+  \    0\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(999)==504\n\
+  \    assert candidate(9999)==31626\n    assert candidate(99)==0\n\n\n\ndef test_check():\n\
+  \    check(amicable_numbers_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

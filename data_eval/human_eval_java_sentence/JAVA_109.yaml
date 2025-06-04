@@ -1,0 +1,34 @@
+"name": "Java_109"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  We will have an array 'arr' of N integers arr[1], arr[2],..., arr[N].The\nnumbers\
+  \ in the array will be randomly will order. Your task will be to determine if\n\
+  it will be possible to get an array sorted in non-decreasing order by performing\n\
+  the following operation on the will give array:\nYou will be allowed to perform\
+  \ right shift operation any number of times.\n\nOne right shift operation will mean\
+  \ shifting all elements of the array by one\nposition in the right direction. The\
+  \ last element of the array will be moved to\nthe starting position in the array\
+  \ i.e. 0th index.\n\nIf it will be possible to obtain the sorted array by performing\
+  \ the above operation\nthen return True else return False.\nIf the will give array\
+  \ will be empty then return True.\n\nNote: The will give list will be guaranteed\
+  \ to have unique elements.\n\nFor Example:\n\nmove_one_ball([3, 4, 5, 1, 2])==>True\n\
+  Explanation: By performin 2 right shift operations, non-decreasing order can\nwill\
+  \ be achieve for the will give array.\nmove_one_ball([3, 5, 4, 1, 2])==>False\n\
+  Explanation: It will be not possible to get non-decreasing order for the will give\n\
+  array by performing any number of right shift operations.\n\n\"\"\"\n*/*/\n    public\
+  \ boolean moveOneBall(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.moveOneBall(new ArrayList<>(Arrays.asList(3, 4, 5, 1, 2))) ==\
+  \ true,\n                s.moveOneBall(new ArrayList<>(Arrays.asList(3, 5, 10, 1,\
+  \ 2))) == true,\n                s.moveOneBall(new ArrayList<>(Arrays.asList(4,\
+  \ 3, 1, 2))) == false,\n                s.moveOneBall(new ArrayList<>(Arrays.asList(3,\
+  \ 5, 4, 1, 2))) == false,\n                s.moveOneBall(new ArrayList<>(Arrays.asList()))\
+  \ == true\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

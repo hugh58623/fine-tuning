@@ -1,0 +1,21 @@
+"name": "CPP_56"
+"language": "cpp"
+"prompt": "/*\nbrackets is a string of \"<\" and \">.\" returns TRUE if each opening\
+  \ bracket has a corresponding closing bracket.\n\n>>> correct_bracketing(\"<\")\n\
+  False\n>>> correct_bracketing(\"<>\")\nTrue\n>>> correct_bracketing(\"<<><>>\")\n\
+  True\n>>> correct_bracketing(\"><<>\")\nFalse\n*/\n#include<stdio.h>\n#include<string>\n\
+  using namespace std;\nbool correct_bracketing(string brackets){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (correct_bracketing(\"\
+  <>\"));\n    assert (correct_bracketing(\"<<><>>\"));\n    assert (correct_bracketing(\"\
+  <><><<><>><>\"));\n    assert (correct_bracketing(\"<><><<<><><>><>><<><><<>>>\"\
+  ));\n    assert (not (correct_bracketing(\"<<<><>>>>\")));\n    assert (not (correct_bracketing(\"\
+  ><<>\")));\n    assert (not (correct_bracketing(\"<\")));\n    assert (not (correct_bracketing(\"\
+  <<<<\")));\n    assert (not (correct_bracketing(\">\")));\n    assert (not (correct_bracketing(\"\
+  <<>\")));\n    assert (not (correct_bracketing(\"<><><<><>><>><<>\")));\n    assert\
+  \ (not (correct_bracketing(\"<><><<><>><>>><>\")));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

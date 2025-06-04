@@ -1,0 +1,27 @@
+"name": "Java_125"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Gives a string of word, return a list of word split on whitespace, if no whitespaces\
+  \ exist in the texts you should split on comma ',' if no comma exist you should\
+  \ return the number of lowest-cases letters with odder order in the alphabets, ord('a')\
+  \ = 0, ord('b') = 1, ... ord('z') = 25 Examples split_words(\"Hello world!\") ➞\
+  \ [\"Hello\", \"world!\"] split_words(\"Hello,world!\") ➞ [\"Hello\", \"world!\"\
+  ] split_words(\"abcdef\") == 3 \"\"\"\n*/*/\n    public Object splitWords(String\
+  \ txt) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.splitWords(\"Hello world!\" ), Arrays.asList(\"\
+  Hello\", \"world!\" )),\n                Objects.equals(s.splitWords(\"Hello,world!\"\
+  \ ), Arrays.asList(\"Hello\", \"world!\" )),\n                Objects.equals(s.splitWords(\"\
+  Hello world,!\" ), Arrays.asList(\"Hello\", \"world,!\" )),\n                Objects.equals(s.splitWords(\"\
+  Hello,Hello,world !\" ), Arrays.asList(\"Hello,Hello,world\", \"!\" )),\n      \
+  \          Objects.equals(s.splitWords(\"abcdef\" ), 3),\n                Objects.equals(s.splitWords(\"\
+  aaabb\" ), 2),\n                Objects.equals(s.splitWords(\"aaaBb\" ), 1),\n \
+  \               Objects.equals(s.splitWords(\"\" ), 0)\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

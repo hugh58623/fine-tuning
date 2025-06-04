@@ -1,0 +1,15 @@
+name: mbpp_72
+language: py
+prompt: "\n\ndef dif_Square(n):\n    \"\"\"\n    Write a python function to check\
+  \ whether the given number can be represented as difference of two squares or not.\n\
+  \    >>> dif_Square(5)\n    True\n    >>> dif_Square(10)\n    False\n    >>> dif_Square(15)\n\
+  \    True\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5) == True\n\
+  \    assert candidate(10) == False\n    assert candidate(15) == True\n\n\n\ndef\
+  \ test_check():\n    check(dif_Square)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+name: mbpp_234
+language: py
+prompt: "\n\ndef volume_cube(l):\n  \"\"\"\n  Write a function to find the volume\
+  \ of a cube.\n  >>> volume_cube(3)\n  27\n  >>> volume_cube(2)\n  8\n  >>> volume_cube(5)\n\
+  \  125\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(3)==27\n\
+  \    assert candidate(2)==8\n    assert candidate(5)==125\n\n\n\ndef test_check():\n\
+  \    check(volume_cube)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

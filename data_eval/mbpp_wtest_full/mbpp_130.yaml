@@ -1,0 +1,17 @@
+name: mbpp_130
+language: py
+prompt: "\n\ndef max_occurrences(nums):\n    \"\"\"\n    Write a function to find\
+  \ the item with maximum frequency in a given list.\n    >>> max_occurrences([2,3,8,4,7,9,8,2,6,5,1,6,1,2,3,2,4,6,9,1,2])\n\
+  \    (2, 5)\n    >>> max_occurrences([2,3,8,4,7,9,8,7,9,15,14,10,12,13,16,16,18])\n\
+  \    (8, 2)\n    >>> max_occurrences([10,20,20,30,40,90,80,50,30,20,50,10])\n  \
+  \  (20, 3)\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([2,3,8,4,7,9,8,2,6,5,1,6,1,2,3,2,4,6,9,1,2])==(2,\
+  \ 5)\n    assert candidate([2,3,8,4,7,9,8,7,9,15,14,10,12,13,16,16,18])==(8, 2)\n\
+  \    assert candidate([10,20,20,30,40,90,80,50,30,20,50,10])==(20, 3)\n\n\n\ndef\
+  \ test_check():\n    check(max_occurrences)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

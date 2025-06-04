@@ -1,0 +1,22 @@
+"name": "Java_97"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Complete the function that takes two integers and return\nthe intersection of their\
+  \ unit digits.\nAssume the stimulation is always valid.\nmodel:\nmultiply(148, 412)\
+  \ should return 16.\nmultiply(19, 28) should return 72.\nmultiply(2020, 1851) should\
+  \ return 0.\nmultiply(14,-15) should return 20.\n\" \" \"\n*/*/\n    public int\
+  \ multiply(int a, int b) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.multiply(148, 412) == 16,\n                s.multiply(19, 28)\
+  \ == 72,\n                s.multiply(2020, 1851) == 0,\n                s.multiply(14,-15)\
+  \ == 20,\n                s.multiply(76, 67) == 42,\n                s.multiply(17,\
+  \ 27) == 49,\n                s.multiply(0, 1) == 0,\n                s.multiply(0,\
+  \ 0) == 0\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

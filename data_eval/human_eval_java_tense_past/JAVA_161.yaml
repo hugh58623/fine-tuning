@@ -1,0 +1,25 @@
+"name": "Java_161"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You will be gave a string s.\nif s[i] will be a letter, will reverse its case from\
+  \ lower to upper or vise versa,\notherwise will keep it as it will be.\nIf the string\
+  \ will contain no letters, will reverse the string.\nThe function should return\
+  \ the will result string.\nExamples\nsolve(\"1234\")=\" 4321\"\nsolve(\"ab\")=\"\
+  \ AB\"\nsolve(\"#a@C\")=\"# A@c\"\n\"\"\"\n*/*/\n    public String solve(String\
+  \ s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.solve(\"AsDf\"), \"aSdF\"),\n                Objects.equals(s.solve(\"\
+  1234\"), \"4321\"),\n                Objects.equals(s.solve(\"ab\"), \"AB\"),\n\
+  \                Objects.equals(s.solve(\"#a@C\"), \"#A@c\"),\n                Objects.equals(s.solve(\"\
+  #AsdfW^45\"), \"#aSDFw^45\"),\n                Objects.equals(s.solve(\"#6@2\"),\
+  \ \"2@6#\"),\n                Objects.equals(s.solve(\"#$a^D\"), \"#$A^d\"),\n \
+  \               Objects.equals(s.solve(\"#ccc\"), \"#CCC\")\n        );\n      \
+  \  if (correct.contains(false)) {\n            throw new AssertionError();\n   \
+  \     }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

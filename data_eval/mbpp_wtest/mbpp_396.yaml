@@ -1,0 +1,15 @@
+name: mbpp_396
+language: py
+prompt: "\n\ndef check_char(string):\n\t\"\"\"\n\tWrite a function to check whether\
+  \ the given string starts and ends with the same character or not using regex.\n\
+  \t>>> check_char(\"abba\")\n\t\"Valid\"\n\t>>> check_char(\"a\")\n\t\"Valid\"\n\t\
+  >>> check_char(\"abcd\")\n\t\"Invalid\"\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abba\"\
+  ) == \"Valid\"\n    assert candidate(\"a\") == \"Valid\"\n    assert candidate(\"\
+  abcd\") == \"Invalid\"\n\n\n\ndef test_check():\n    check(check_char)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_42
+language: py
+prompt: "\n\ndef find_Sum(arr,n):\n    \"\"\"\n    Write a python function to find\
+  \ the sum of repeated elements in a given array.\n    >>> find_Sum([1,2,3,1,1,4,5,6],8)\n\
+  \    3\n    >>> find_Sum([1,2,3,1,1],5)\n    3\n    >>> find_Sum([1,1,2],3)\n  \
+  \  2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,1,1,4,5,6],8)\
+  \ == 3\n    assert candidate([1,2,3,1,1],5) == 3\n    assert candidate([1,1,2],3)\
+  \ == 2\n\n\n\ndef test_check():\n    check(find_Sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

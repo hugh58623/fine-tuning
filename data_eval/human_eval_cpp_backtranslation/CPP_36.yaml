@@ -1,0 +1,17 @@
+"name": "CPP_36"
+"language": "cpp"
+"prompt": "/*\nRindicates how often the digit 7 appears in integers smaller than n,\
+  \ which are divisible by 11 or 13.\n>>> fizz_buzz(50)\n0\n>>> fizz_buzz(78)\n2\n\
+  >>> fizz_buzz(79)\n3\n*/\n#include<stdio.h>\nusing namespace std;\nint fizz_buzz(int\
+  \ n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fizz_buzz(50)\
+  \ == 0);\n    assert (fizz_buzz(78) == 2);\n    assert (fizz_buzz(79) == 3);\n \
+  \   assert (fizz_buzz(100) == 3);\n    assert (fizz_buzz(200) == 6);\n    assert\
+  \ (fizz_buzz(4000) == 192);\n    assert (fizz_buzz(10000) == 639);\n    assert (fizz_buzz(100000)\
+  \ == 8026);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

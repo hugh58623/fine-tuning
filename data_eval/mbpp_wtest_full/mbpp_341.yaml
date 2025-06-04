@@ -1,0 +1,16 @@
+name: mbpp_341
+language: py
+prompt: "\n\ndef set_to_tuple(s):\n  \"\"\"\n  Write a function to convert the given\
+  \ set into tuples.\n  >>> set_to_tuple({1, 2, 3, 4, 5})\n  (1, 2, 3, 4, 5)\n  >>>\
+  \ set_to_tuple({6, 7, 8, 9, 10, 11})\n  (6, 7, 8, 9, 10, 11)\n  >>> set_to_tuple({12,\
+  \ 13, 14, 15, 16})\n  (12, 13, 14, 15, 16)\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate({1, 2,\
+  \ 3, 4, 5}) == (1, 2, 3, 4, 5)\n    assert candidate({6, 7, 8, 9, 10, 11}) == (6,\
+  \ 7, 8, 9, 10, 11)\n    assert candidate({12, 13, 14, 15, 16}) == (12, 13, 14, 15,\
+  \ 16)\n\n\n\ndef test_check():\n    check(set_to_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

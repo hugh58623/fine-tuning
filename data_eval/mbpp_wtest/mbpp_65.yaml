@@ -1,0 +1,16 @@
+name: mbpp_65
+language: py
+prompt: "\n\ndef recursive_list_sum(data_list):\n\t\"\"\"\n\tWrite a function of recursion\
+  \ list sum.\n\t>>> recursive_list_sum(([1, 2, [3,4],[5,6]]))\n\t21\n\t>>> recursive_list_sum(([7,\
+  \ 10, [15,14],[19,41]]))\n\t106\n\t>>> recursive_list_sum(([10, 20, [30,40],[50,60]]))\n\
+  \t210\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(([1, 2,\
+  \ [3,4],[5,6]]))==21\n    assert candidate(([7, 10, [15,14],[19,41]]))==106\n  \
+  \  assert candidate(([10, 20, [30,40],[50,60]]))==210\n\n\n\ndef test_check():\n\
+  \    check(recursive_list_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_415
+language: py
+prompt: "\n\ndef max_Product(arr):\n    \"\"\"\n    Write a python function to find\
+  \ a pair with highest product from a given array of integers.\n    >>> max_Product([1,2,3,4,7,0,8,4])\n\
+  \    (7,8)\n    >>> max_Product([0,-1,-2,-4,5,0,-6])\n    (-4,-6)\n    >>> max_Product([1,2,3])\n\
+  \    (2,3)\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,2,3,4,7,0,8,4])\
+  \ == (7,8)\n    assert candidate([0,-1,-2,-4,5,0,-6]) == (-4,-6)\n    assert candidate([1,2,3])\
+  \ == (2,3)\n\n\n\ndef test_check():\n    check(max_Product)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,31 @@
+"name": "Java_112"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Task\nWe are given two strings s and c, you have to erase all the character in s\
+  \ that are equal to any character in c\nthen check if the result string is palindrome.\n\
+  A bowed stringed instrument is called palindrome if it reads the same backward as\
+  \ fore.\nYou should return a tuple containing the result string and True/False for\
+  \ the check.\nExample\nFor s = \" abcde \", c = \" ae \", the resultant role should\
+  \ be (' bcd',False)\nFor s = \" abcdef \", c = \" b \"   the solution should exist\
+  \ (' acdef',False)\nFor s = \" abcdedcba \", c = \" ab \", the result should exist\
+  \ (' cdedc',True)\n\" \" \"\n*/*/\n    public List<Object> reverseDelete(String\
+  \ s, String c) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.reverseDelete(\"abcde\", \"ae\" ).equals(Arrays.asList(\"bcd\"\
+  , false)),\n                s.reverseDelete(\"abcdef\", \"b\" ).equals(Arrays.asList(\"\
+  acdef\", false)),\n                s.reverseDelete(\"abcdedcba\", \"ab\" ).equals(Arrays.asList(\"\
+  cdedc\", true)),\n                s.reverseDelete(\"dwik\", \"w\" ).equals(Arrays.asList(\"\
+  dik\", false)),\n                s.reverseDelete(\"a\", \"a\" ).equals(Arrays.asList(\"\
+  \", true)),\n                s.reverseDelete(\"abcdedcba\", \"\" ).equals(Arrays.asList(\"\
+  abcdedcba\", true)),\n                s.reverseDelete(\"abcdedcba\", \"v\" ).equals(Arrays.asList(\"\
+  abcdedcba\", true)),\n                s.reverseDelete(\"vabba\", \"v\" ).equals(Arrays.asList(\"\
+  abba\", true)),\n                s.reverseDelete(\"mamma\", \"mia\" ).equals(Arrays.asList(\"\
+  \", true))\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

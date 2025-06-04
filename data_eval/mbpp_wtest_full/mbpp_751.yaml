@@ -1,0 +1,17 @@
+name: mbpp_751
+language: py
+prompt: "\n\ndef check_min_heap(arr, i):\n    \"\"\"\n    Write a function to check\
+  \ if the given array represents min heap or not.\n    >>> check_min_heap([1, 2,\
+  \ 3, 4, 5, 6], 0)\n    True\n    >>> check_min_heap([2, 3, 4, 5, 10, 15], 0)\n \
+  \   True\n    >>> check_min_heap([2, 10, 4, 5, 3, 15], 0)\n    False\n    \"\"\"\
+  \n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 3, 4, 5, 6], 0) == True\n    assert candidate([2, 3, 4, 5, 10, 15], 0) == True\n\
+  \    assert candidate([2, 10, 4, 5, 3, 15], 0) == False\n\n\n\ndef test_check():\n\
+  \    check(check_min_heap)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

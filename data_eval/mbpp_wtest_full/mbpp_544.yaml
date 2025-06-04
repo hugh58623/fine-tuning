@@ -1,0 +1,20 @@
+name: mbpp_544
+language: py
+prompt: "\n\ndef flatten_tuple(test_list):\n  \"\"\"\n  Write a function to flatten\
+  \ the tuple list to a string.\n  >>> flatten_tuple([('1', '4', '6'), ('5', '8'),\
+  \ ('2', '9'), ('1', '10')])\n  '1 4 6 5 8 2 9 1 10'\n  >>> flatten_tuple([('2',\
+  \ '3', '4'), ('6', '9'), ('3', '2'), ('2', '11')])\n  '2 3 4 6 9 3 2 2 11'\n  >>>\
+  \ flatten_tuple([('14', '21', '9'), ('24', '19'), ('12', '29'), ('23', '17')])\n\
+  \  '14 21 9 24 19 12 29 23 17'\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([('1',\
+  \ '4', '6'), ('5', '8'), ('2', '9'), ('1', '10')]) == '1 4 6 5 8 2 9 1 10'\n   \
+  \ assert candidate([('2', '3', '4'), ('6', '9'), ('3', '2'), ('2', '11')]) == '2\
+  \ 3 4 6 9 3 2 2 11'\n    assert candidate([('14', '21', '9'), ('24', '19'), ('12',\
+  \ '29'), ('23', '17')]) == '14 21 9 24 19 12 29 23 17'\n\n\n\ndef test_check():\n\
+  \    check(flatten_tuple)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

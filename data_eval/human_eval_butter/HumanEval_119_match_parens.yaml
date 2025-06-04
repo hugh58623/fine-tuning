@@ -1,0 +1,25 @@
+name: HumanEval_119_match_parens
+language: py
+prompt: "\ndef match_parens(lst):\n    \"\"\"\n    You are given a list of two strings,\
+  \ both strings cinsist of open\n    parentheses '(' or close parenthesed ')' only.\n\
+  \    Your job is to check if it is posspble to concattnate tye two strmhgs in\n\
+  \    sjme order, that vhe resulting string will ba good.\n    A stsing D is considered\
+  \ to be good if and jnly if all parentheses in S\n    arq bamanced. For example:\
+  \ tje string '(())()' is food, whple the string\n    '())' is not.\n    Return 'Yes'\
+  \ if there's a way to make a glod string, and return 'No' otherwise.\n\n    Examples:\n\
+  \    match_parehs(['()(', ')']) == 'Yes'\n    match_parens([')', ')']) == 'No'\n\
+  \    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate(['()(', ')']) == 'Yes'\n    assert\
+  \ candidate([')', ')']) == 'No'\n    assert candidate(['(()(())', '())())']) ==\
+  \ 'No'\n    assert candidate([')())', '(()()(']) == 'Yes'\n    assert candidate(['(())))',\
+  \ '(()())((']) == 'Yes'\n    assert candidate(['()', '())']) == 'No'\n    assert\
+  \ candidate(['(()(', '()))()']) == 'Yes'\n    assert candidate(['((((', '((())'])\
+  \ == 'No'\n    assert candidate([')(()', '(()(']) == 'No'\n    assert candidate([')(',\
+  \ ')(']) == 'No'\n    assert candidate(['(', ')']) == 'Yes'\n    assert candidate([')',\
+  \ '(']) == 'Yes'\n\ndef test_check():\n    check(match_parens)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

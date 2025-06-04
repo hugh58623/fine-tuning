@@ -1,0 +1,30 @@
+"name": "Java_112"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Task We was gives two strings s and c, you had to deleting all the character in\
+  \ s that was equal to any character in c\nthen check if the result string is palindrome.\
+  \ A string is call palindrome if it reads the same backward as forwards. You should\
+  \ return a tuple contains the result string and True/False for the check. Examples\
+  \ For s = \"abcde\", c = \"ae\", the result should is ('bcd',False) For s = \"abcdef\"\
+  , c = \"b\" the result should is ('acdef',False) For s = \"abcdedcba\", c = \"ab\"\
+  , the result should is ('cdedc',True) \"\"\"\n*/*/\n    public List<Object> reverseDelete(String\
+  \ s, String c) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.reverseDelete(\"abcde\", \"ae\" ).equals(Arrays.asList(\"bcd\"\
+  , false)),\n                s.reverseDelete(\"abcdef\", \"b\" ).equals(Arrays.asList(\"\
+  acdef\", false)),\n                s.reverseDelete(\"abcdedcba\", \"ab\" ).equals(Arrays.asList(\"\
+  cdedc\", true)),\n                s.reverseDelete(\"dwik\", \"w\" ).equals(Arrays.asList(\"\
+  dik\", false)),\n                s.reverseDelete(\"a\", \"a\" ).equals(Arrays.asList(\"\
+  \", true)),\n                s.reverseDelete(\"abcdedcba\", \"\" ).equals(Arrays.asList(\"\
+  abcdedcba\", true)),\n                s.reverseDelete(\"abcdedcba\", \"v\" ).equals(Arrays.asList(\"\
+  abcdedcba\", true)),\n                s.reverseDelete(\"vabba\", \"v\" ).equals(Arrays.asList(\"\
+  abba\", true)),\n                s.reverseDelete(\"mamma\", \"mia\" ).equals(Arrays.asList(\"\
+  \", true))\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

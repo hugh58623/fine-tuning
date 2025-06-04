@@ -1,0 +1,33 @@
+name: HumanEval_153_Strongest_Extension
+language: py
+prompt: "\ndef Strongest_Extension(class_name, extensions):\n    \"\"\"You wIll bE\
+  \ giveN thE name Of a clAss (a strIng) And a list oF extensions.\n    ThE extensions\
+  \ ArE tO be uSEd tO load additionAL ClasSes to the clAss. The\n    strengTh of tHe\
+  \ EXtEnSIoN is as Follows: lEt cap be ThE NUmbEr OF tHe uppErcAse\n    LEttErs in\
+  \ thE exTeNsION'S naMe, and let Sm BE The number oF lOWercase LetteRs \n    in tHe\
+  \ extENsIon'S NamE, tHe sTRengTh iS gIVEn by thE fraction cAp - sm. \n    YoU sHOuLd\
+  \ fInD THe StRoNgest ExteNsion and return A StRIng in this \n    forMat: CLassNaMe.sTrONGesTExTensioNNamE.\n\
+  \    IF TherE ARe two oR MoRE extensions WItH THe same strengtH, you should\n  \
+  \  cHOoSE thE onE tHAt COmes fiRst in thE list.\n    FOR exAmPle, if you ARe giVen\
+  \ \"Slices\" As the cLAss and a list OF the\n    extensions: ['SERViNGSlICeS', 'ChEese',\
+  \ 'sTufFEd'] tHeN You SHoUld\n    return 'sLIcEs.SERviNgSLices' sINcE 'SeRVInGSlICeS'\
+  \ is tHe stRONgesT extensiOn \n    (iTs stREngTH is -1).\n    EXamplE:\n    fOr\
+  \ stROngeST_exteNsIOn('My_ClAss', ['AA', 'Be', 'CC']) == 'mY_clAss.Aa'\n    \"\"\
+  \"\n"
+tests: "def check(candidate):\n    assert candidate('Watashi', ['tEN', 'niNE', 'eIGHt8OKe'])\
+  \ == 'Watashi.eIGHt8OKe'\n    assert candidate('Boku123', ['nani', 'NazeDa', 'YEs.WeCaNe',\
+  \ '32145tggg']) == 'Boku123.YEs.WeCaNe'\n    assert candidate('__YESIMHERE', ['t',\
+  \ 'eMptY', 'nothing', 'zeR00', 'NuLl__', '123NoooneB321']) == '__YESIMHERE.NuLl__'\n\
+  \    assert candidate('K', ['Ta', 'TAR', 't234An', 'cosSo']) == 'K.TAR'\n    assert\
+  \ candidate('__HAHA', ['Tab', '123', '781345', '-_-']) == '__HAHA.123'\n    assert\
+  \ candidate('YameRore', ['HhAas', 'okIWILL123', 'WorkOut', 'Fails', '-_-']) == 'YameRore.okIWILL123'\n\
+  \    assert candidate('finNNalLLly', ['Die', 'NowW', 'Wow', 'WoW']) == 'finNNalLLly.WoW'\n\
+  \    assert candidate('_', ['Bb', '91245']) == '_.Bb'\n    assert candidate('Sp',\
+  \ ['671235', 'Bb']) == 'Sp.671235'\n\ndef test_check():\n    check(Strongest_Extension)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

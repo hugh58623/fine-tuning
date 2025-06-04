@@ -1,0 +1,23 @@
+"name": "Java_31"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Return true if a given number is a prime number and false otherwise.\n\n>>>>>> isPrime(6)\n\
+  \    false\n    >>> isPrime(101)\n    true\n    >>> isPrime(11)\n    true\n    >>>\
+  \ isPrime(13441)\n    true\n    >>> isPrime(61)\n    true\n    >>> isPrime(4)\n\
+  \    false\n    >>> isPrime(1)\n    false\n     */\n    public boolean isPrime(int\
+  \ n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.isPrime(6),\n                s.isPrime(101),\n             \
+  \   s.isPrime(11),\n                s.isPrime(13441),\n                s.isPrime(61),\n\
+  \                !s.isPrime(4),\n                !s.isPrime(1),\n              \
+  \  s.isPrime(5),\n                s.isPrime(11),\n                s.isPrime(17),\n\
+  \                !s.isPrime(5 * 17),\n                !s.isPrime(11 * 7),\n    \
+  \            !s.isPrime(13441 * 19)\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

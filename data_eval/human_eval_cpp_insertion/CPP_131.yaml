@@ -1,0 +1,16 @@
+"name": "CPP_131"
+"language": "cpp"
+"prompt": "/*\nGiven a positive integer n, return the product of the odd digits.\n\
+  Return 0 if all digits are even.\nFor example exercise:\ndigits(1)   = = 1\ndigits(4)\
+  \   = = 0\ndigits(235) = = 15\n*/\n#include<stdio.h>\n#include<string>\nusing namespace\
+  \ std;\nint digits(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (digits(5) ==\
+  \ 5);\n    assert (digits(54) == 5);\n    assert (digits(120) ==1);\n    assert\
+  \ (digits(5014) == 5);\n    assert (digits(98765) == 315);\n    assert (digits(5576543)\
+  \ == 2625);\n    assert (digits(2468) == 0);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

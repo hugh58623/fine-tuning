@@ -1,0 +1,24 @@
+"name": "Java_41"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Imagine a road that's a perfectly square boundlessly long line.\nn car are drive\
+  \ exit to correctly;   simultaneously, a unlike set of n car\nare drive right to\
+  \ left.    The two sets of cars start out be very far from\neach early.   All cars\
+  \ motivate in the like amphetamine.   Two cars are said to clash\nwhen a car that's\
+  \ move left to proper hit a car that's move good to left.\nHowever, the cars are\
+  \ infinitely sturdy and hard; as a solution, they continue be active\nin their trajectory\
+  \ as if they did not clash.\n\nThis function output the number of such collisions.\n\
+  \" \" \"\n*/*/\n    public int carRaceCollision(int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.carRaceCollision(2) == 4,\n                s.carRaceCollision(3)\
+  \ == 9,\n                s.carRaceCollision(4) == 16,\n                s.carRaceCollision(8)\
+  \ == 64,\n                s.carRaceCollision(10) == 100\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

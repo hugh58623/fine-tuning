@@ -1,0 +1,22 @@
+"name": "Java_80"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  You aRe giVen a sTriNg s.\nYouR task Is to cheCk iF the sTriNG iS hAppy OR noT.\n\
+  A string is hapPY If itS length is aT least 3 and eveRy 3 conSeCUtIvE LeTters Are\
+  \ distINcT\nfOr eXaMPLe:\niS_hAPpY(a) => False\nis_hAppY(aa) => False\nIS_haPpy(abCd)\
+  \ => True\niS_hApPY(AAbb) => False\nIs_happy(adB) => True\nIS_Happy(xyy) => False\n\
+  \"\"\"\n*/*/\n    public boolean isHappy(String s) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                !s.isHappy(\"a\"),\n                !s.isHappy(\"aa\"),\n     \
+  \           s.isHappy(\"abcd\"),\n                !s.isHappy(\"aabb\"),\n      \
+  \          s.isHappy(\"adb\"),\n                !s.isHappy(\"xyy\"),\n         \
+  \       s.isHappy(\"iopaxpoi\"),\n                !s.isHappy(\"iopaxioi\")\n   \
+  \     );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

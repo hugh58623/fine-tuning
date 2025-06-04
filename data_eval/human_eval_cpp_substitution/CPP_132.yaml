@@ -1,0 +1,24 @@
+"name": "CPP_132"
+"language": "cpp"
+"prompt": "/*\nCreate a function that takes a string as input which check entirely\
+  \ square brackets.\nThe affair should return True if and only if there be a valid\
+  \ posteriority of brackets\nwhere at least one bracket in the posteriority is nest.\n\
+  \nis_nested (' [ [ ] ]') ➞ True\nis_nested (' [ ] ] ] ] ] ] ] [ [ [ [ [ ]') ➞ False\n\
+  is_nested (' [ ] [ ]') ➞ False\nis_nested (' [ ]') ➞ False\nis_nested (' [ [ ] [\
+  \ ] ]') ➞ True\nis_nested (' [ [ ] ] [ [') ➞ True\n'\"\n*/\n#include<stdio.h>\n\
+  #include<string>\nusing namespace std;\nbool is_nested(string str){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_nested(\"\
+  [[]]\") == true);\n    assert (is_nested(\"[]]]]]]][[[[[]\") == false);\n    assert\
+  \ (is_nested(\"[][]\") == false);\n    assert (is_nested((\"[]\")) == false);\n\
+  \    assert (is_nested(\"[[[[]]]]\") == true);\n    assert (is_nested(\"[]]]]]]]]]]\"\
+  ) == false);\n    assert (is_nested(\"[][][[]]\") == true);\n    assert (is_nested(\"\
+  [[]\") == false);\n    assert (is_nested(\"[]]\") == false);\n    assert (is_nested(\"\
+  [[]][[\") == true);\n    assert (is_nested(\"[[][]]\") == true);\n    assert (is_nested(\"\
+  \") == false);\n    assert (is_nested(\"[[[[[[[[\") == false);\n    assert (is_nested(\"\
+  ]]]]]]]]\") == false);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

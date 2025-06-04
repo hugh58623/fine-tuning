@@ -1,0 +1,15 @@
+name: mbpp_227
+language: py
+prompt: "\n\ndef min_of_three(a,b,c):\n      \"\"\"\n      Write a function to find\
+  \ minimum of three numbers.\n      >>> min_of_three(10,20,0)\n      0\n      >>>\
+  \ min_of_three(19,15,18)\n      15\n      >>> min_of_three(-10,-20,-30)\n      -30\n\
+  \      \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10,20,0)==0\n\
+  \    assert candidate(19,15,18)==15\n    assert candidate(-10,-20,-30)==-30\n\n\n\
+  \ndef test_check():\n    check(min_of_three)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,14 @@
+"name": "CPP_13"
+"language": "cpp"
+"prompt": "/*\nReturn a greatest common divisor of two integer a and b\n>>> greatest_common_divisor(3,\
+  \ 5)\n1\n>>> greatest_common_divisor(25, 15)\n5\n*/\n#include<stdio.h>\nusing namespace\
+  \ std;\nint greatest_common_divisor(int a, int b){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (greatest_common_divisor(3,\
+  \ 7) == 1);\n     assert (greatest_common_divisor(10, 15) == 5);\n      assert (greatest_common_divisor(49,\
+  \ 14) == 7);\n     assert (greatest_common_divisor(144, 60) == 12);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

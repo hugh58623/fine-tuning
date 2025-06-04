@@ -1,0 +1,24 @@
+"name": "Java_54"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Chefk if two words have the same characters.\n\n>>>>>> sameChars(\"eabcdzzzz\",\
+  \ \"dddzzzzzzzddeddabc\")\n    true\n    >>> sameChars(\"abcd\", \"dddddddabc\"\
+  )\n    true\n    >>> sameChars(\"dddddddabc\", \"abcd\")\n    true\n    >>> sameChars(\"\
+  eabcd\", \"dddddddabc\")\n    false\n    >>> sameChars(\"abcd\", \"dddddddabce\"\
+  )\n    false\n    >>> sameChars(\"eabcdzzzz\", \"dddzzzzzzzddddabc\")\n    false\n\
+  \     */\n    public boolean sameChars(String s0, String s1) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.sameChars(\"eabcdzzzz\", \"dddzzzzzzzddeddabc\"),\n         \
+  \       s.sameChars(\"abcd\", \"dddddddabc\"),\n                s.sameChars(\"dddddddabc\"\
+  , \"abcd\"),\n                !s.sameChars(\"eabcd\", \"dddddddabc\"),\n       \
+  \         !s.sameChars(\"abcd\", \"dddddddabcf\"),\n                !s.sameChars(\"\
+  eabcdzzzz\", \"dddzzzzzzzddddabc\"),\n                !s.sameChars(\"aabb\", \"\
+  aaccc\")\n        );\n        if (correct.contains(false)) {\n            throw\
+  \ new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

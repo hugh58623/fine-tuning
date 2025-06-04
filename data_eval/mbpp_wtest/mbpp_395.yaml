@@ -1,0 +1,16 @@
+name: mbpp_395
+language: py
+prompt: "\n\ndef first_non_repeating_character(str1):\n  \"\"\"\n  Write a python\
+  \ function to find the first non-repeated character in a given string.\n  >>> first_non_repeating_character(\"\
+  abcabc\")\n  None\n  >>> first_non_repeating_character(\"abc\")\n  \"a\"\n  >>>\
+  \ first_non_repeating_character(\"ababc\")\n  \"c\"\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abcabc\"\
+  ) == None\n    assert candidate(\"abc\") == \"a\"\n    assert candidate(\"ababc\"\
+  ) == \"c\"\n\n\n\ndef test_check():\n    check(first_non_repeating_character)\n\n\
+  test_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

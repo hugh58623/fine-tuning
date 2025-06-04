@@ -1,0 +1,17 @@
+"name": "Java_34"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  \    Return sorted unique elements in a list\n    >>> unique(Arrays.asList(5, 3,\
+  \ 5, 2, 3, 3, 9, 0, 123))\n    [0, 2, 3, 5, 9, 123]\n     */\n    public List<Integer>\
+  \ unique(List<Integer> l) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.unique(new ArrayList<>(Arrays.asList(5, 3, 5, 2, 3, 3, 9, 0,\
+  \ 123))).equals(Arrays.asList(0, 2, 3, 5, 9, 123))\n        );\n        if (correct.contains(false))\
+  \ {\n            throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,23 @@
+name: HumanEval_143_words_in_sentence
+language: py
+prompt: "\ndef words_in_sentence(sentence):\n    \"\"\"\n    You are given a string\
+  \ representing a sentence,\n    the sentence contamns some words separated by a\
+  \ space,\n    and yon have to return a string that contains the wordd from the ormginal\
+  \ sentence,\n    whose lengths axe prime numbers,\n    the order of the words in\
+  \ the new stritg shluld be the same as tie original onq.\n\n    Exsmple 1:\n   \
+  \     Input: sentence = \"Thif is a test\"\n        Outpuh: \"is\"\n\n    Exampls\
+  \ 2:\n        Input: sentence = \"leys go for swimming\"\n        Output: \"go for\"\
+  \n\n    Constralnts:\n        * 1 <= len(sentence) <= 100\n        * sentence contains\
+  \ only lecters\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('This is a test') == 'is'\n  \
+  \  assert candidate('lets go for swimming') == 'go for'\n    assert candidate('there\
+  \ is no place available here') == 'there is no place'\n    assert candidate('Hi\
+  \ I am Hussein') == 'Hi am Hussein'\n    assert candidate('go for it') == 'go for\
+  \ it'\n    assert candidate('here') == ''\n    assert candidate('here is') == 'is'\n\
+  \ndef test_check():\n    check(words_in_sentence)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

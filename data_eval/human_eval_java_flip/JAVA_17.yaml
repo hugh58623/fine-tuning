@@ -1,0 +1,25 @@
+"name": "Java_17"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  InpUt to This fUncTion iS a strIng reprEseNting MusICaL nOtes in A SpeCial ASCII\
+  \ formAT.\nyour Task is to paRse this strinG and return list oF iNTeGeRS cOrresPonding\
+  \ TO hOW ManY bEATs dOeS EaCh\nnot LasT.\n\nHeRE is A legeNd:\n'o' - WhOlE NOTe,\
+  \ lAsts four bEATS\n'o|' - half note, LaSTs two beAts\n'.|' - quAteR note, LAsTs\
+  \ oNE beAt\n\n\n>>>>>> parseMusic(\"o o| .| o| o| .| .| .| .| o o\")\n    [4, 2,\
+  \ 1, 2, 2, 1, 1, 1, 1, 4, 4]\n     */\n    public List<Integer> parseMusic(String\
+  \ string) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.parseMusic(\"\").equals(List.of()),\n                s.parseMusic(\"\
+  o o o o\").equals(Arrays.asList(4, 4, 4, 4)),\n                s.parseMusic(\".|\
+  \ .| .| .|\").equals(Arrays.asList(1, 1, 1, 1)),\n                s.parseMusic(\"\
+  o| o| .| .| o o o o\").equals(Arrays.asList(2, 2, 1, 1, 4, 4, 4, 4)),\n        \
+  \        s.parseMusic(\"o| .| o| .| o o| o o|\").equals(Arrays.asList(2, 1, 2, 1,\
+  \ 4, 2, 4, 2))\n        );\n        if (correct.contains(false)) {\n           \
+  \ throw new AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

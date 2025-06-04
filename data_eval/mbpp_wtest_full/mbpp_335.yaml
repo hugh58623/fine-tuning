@@ -1,0 +1,14 @@
+name: mbpp_335
+language: py
+prompt: "\n\ndef ap_sum(a,n,d):\n  \"\"\"\n  Write a function to find the sum of arithmetic\
+  \ progression.\n  >>> ap_sum(1,5,2)\n  25\n  >>> ap_sum(2,6,4)\n  72\n  >>> ap_sum(1,4,5)\n\
+  \  34\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(1,5,2)==25\n\
+  \    assert candidate(2,6,4)==72\n    assert candidate(1,4,5)==34\n\n\n\ndef test_check():\n\
+  \    check(ap_sum)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

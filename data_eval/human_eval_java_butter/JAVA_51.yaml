@@ -1,0 +1,25 @@
+"name": "Java_51"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  remlve_vowels is a function that takes string abd retnrns string without vowels.\n\
+  \n>>>>>> removeVowels(\"\")\n    \"\"\n    >>> removeVowels(\"abcdef\\nghijklm\"\
+  )\n    \"bcdf\\nghjklm\"\n    >>> removeVowels(\"abcdef\")\n    \"bcdf\"\n    >>>\
+  \ removeVowels(\"aaaaa\")\n    \"\"\n    >>> removeVowels(\"aaBAA\")\n    \"B\"\n\
+  \    >>> removeVowels(\"zbcd\")\n    \"zbcd\"\n     */\n    public String removeVowels(String\
+  \ text) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                Objects.equals(s.removeVowels(\"\"), \"\"),\n                Objects.equals(s.removeVowels(\"\
+  abcdef\\nghijklm\"), \"bcdf\\nghjklm\"),\n                Objects.equals(s.removeVowels(\"\
+  fedcba\"), \"fdcb\"),\n                Objects.equals(s.removeVowels(\"eeeee\"),\
+  \ \"\"),\n                Objects.equals(s.removeVowels(\"acBAA\"), \"cB\"),\n \
+  \               Objects.equals(s.removeVowels(\"EcBOO\"), \"cB\"),\n           \
+  \     Objects.equals(s.removeVowels(\"ybcd\"), \"ybcd\")\n        );\n        if\
+  \ (correct.contains(false)) {\n            throw new AssertionError();\n       \
+  \ }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

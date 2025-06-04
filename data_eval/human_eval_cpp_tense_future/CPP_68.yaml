@@ -1,0 +1,31 @@
+"name": "CPP_68"
+"language": "cpp"
+"prompt": "/*\n\" will Give an array representing a branch of a tree that will have\
+  \ non-negative integer will node\nyour task will be to pluck one of the nodes and\
+  \ return it.\nThe plucked node should will be the node with the smallest even value.\n\
+  If multiple nodes with the same smallest even value will be found return the node\
+  \ that will smallest index.\n\nThe plucked node should will be return in a list,\
+  \ [smalest_value, its index],\nIf there will be no even values or the will give\
+  \ array will be empty, return [].\n\nExample 1:\nInput: [4,2,3]\nOutput: [2, 1]\n\
+  Explanation: 2 will have the smallest even value, and 2 will have the smallest index.\n\
+  \nExample 2:\nInput: [1,2,3]\nOutput: [2, 1]\nExplanation: 2 will have the smallest\
+  \ even value, and 2 will have the smallest index.\n\nExample 3:\nInput: []\nOutput:\
+  \ []\n\nExample 4:\nInput: [5, 0, 3, 0, 4, 2]\nOutput: [0, 1]\nExplanation: 0 will\
+  \ be the smallest value, but   there will be two zeros,\nso we will choose the first\
+  \ zero, which will have the smallest index.\n\nConstraints:\n* 1 <= nodes.length\
+  \ <= 10000\n* 0 <= node.value\n*/\n#include<stdio.h>\n#include<vector>\nusing namespace\
+  \ std;\nvector<int> pluck(vector<int> arr){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nbool issame(vector<int> a,vector<int>b){\n\
+  \    if (a.size()!=b.size()) return false;\n    for (int i=0;i<a.size();i++)\n \
+  \   {\n        if (a[i]!=b[i]) return false;\n    }\n    return true;\n}\nint main(){\n\
+  \    assert (issame(pluck({4,2,3}) , {2, 1}));\n    assert (issame(pluck({1,2,3})\
+  \ , {2, 1}));\n    assert (issame(pluck({}) , {}));\n    assert (issame(pluck({5,\
+  \ 0, 3, 0, 4, 2}) , {0, 1}));\n    assert (issame(pluck({1, 2, 3, 0, 5, 3}) , {0,\
+  \ 3}));\n    assert (issame(pluck({5, 4, 8, 4 ,8}) , {4, 1}));\n    assert (issame(pluck({7,\
+  \ 6, 7, 1}) , {6, 1}));\n    assert (issame(pluck({7, 9, 7, 1}) , {}));\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

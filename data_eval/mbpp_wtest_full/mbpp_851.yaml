@@ -1,0 +1,15 @@
+name: mbpp_851
+language: py
+prompt: "\n\ndef Sum_of_Inverse_Divisors(N,Sum):\n    \"\"\"\n    Write a python function\
+  \ to find sum of inverse of divisors.\n    >>> Sum_of_Inverse_Divisors(6,12)\n \
+  \   2\n    >>> Sum_of_Inverse_Divisors(9,13)\n    1.44\n    >>> Sum_of_Inverse_Divisors(1,4)\n\
+  \    4\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(6,12) ==\
+  \ 2\n    assert candidate(9,13) == 1.44\n    assert candidate(1,4) == 4\n\n\n\n\
+  def test_check():\n    check(Sum_of_Inverse_Divisors)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

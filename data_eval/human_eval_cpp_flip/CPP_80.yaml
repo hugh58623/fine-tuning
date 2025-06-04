@@ -1,0 +1,19 @@
+"name": "CPP_80"
+"language": "cpp"
+"prompt": "/*\nYou aRe giVen a sTriNg s.\nYouR task Is to cheCk iF the sTriNG iS hAppy\
+  \ OR noT.\nA string is hapPY If itS length is aT least 3 and eveRy 3 conSeCUtIvE\
+  \ LeTters Are distINcT\nfOr eXaMPLe:\niS_hAPpY(a) => False\nis_hAppY(aa) => False\n\
+  IS_haPpy(abCd) => True\niS_hApPY(AAbb) => False\nIs_happy(adB) => True\nIS_Happy(xyy)\
+  \ => False\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nbool\
+  \ is_happy(string s){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_happy(\"\
+  a\") == false );\n    assert (is_happy(\"aa\") == false );\n    assert (is_happy(\"\
+  abcd\") == true );\n    assert (is_happy(\"aabb\") == false );\n    assert (is_happy(\"\
+  adb\") == true );\n    assert (is_happy(\"xyy\") == false );\n    assert (is_happy(\"\
+  iopaxpoi\") == true );\n    assert (is_happy(\"iopaxioi\") == false );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

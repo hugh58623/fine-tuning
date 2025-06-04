@@ -1,0 +1,18 @@
+"name": "CPP_63"
+"language": "cpp"
+"prompt": "/*\nThe FibFib number sequence is a sequence similar to the Fibbonacci\
+  \ sequnece that's defined as follow:\nfibfib(0) = = 0\nfibfib(1) = = 0\nfibfib(2)\
+  \ = = 1\nfibfib(n) = = fibfib(n-1) + fibfib(n-2) + fibfib(n-3).\nPlease publish\
+  \ a affair to efficiently calculate the n-th component of the fibfib phone number\
+  \ sequence.\n>>> fibfib(1)\n0\n>>> fibfib(5)\n4\n>>> fibfib(8)\n24\n*/\n#include<stdio.h>\n\
+  using namespace std;\nint fibfib(int n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fibfib(2) ==\
+  \ 1);\n    assert (fibfib(1) == 0);\n    assert (fibfib(5) == 4);\n    assert (fibfib(8)\
+  \ == 24);\n    assert (fibfib(10) == 81);\n    assert (fibfib(12) == 274);\n   \
+  \ assert (fibfib(14) == 927);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

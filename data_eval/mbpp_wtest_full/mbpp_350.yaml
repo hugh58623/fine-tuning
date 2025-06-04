@@ -1,0 +1,15 @@
+name: mbpp_350
+language: py
+prompt: "\n\ndef minimum_Length(s) :\n    \"\"\"\n    Write a python function to minimize\
+  \ the length of the string by removing occurrence of only one character.\n    >>>\
+  \ minimum_Length(\"mnm\")\n    1\n    >>> minimum_Length(\"abcda\")\n    3\n   \
+  \ >>> minimum_Length(\"abcb\")\n    2\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"mnm\"\
+  ) == 1\n    assert candidate(\"abcda\") == 3\n    assert candidate(\"abcb\") ==\
+  \ 2\n\n\n\ndef test_check():\n    check(minimum_Length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

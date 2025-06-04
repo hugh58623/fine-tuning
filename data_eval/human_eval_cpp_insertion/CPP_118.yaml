@@ -1,0 +1,27 @@
+"name": "CPP_118"
+"language": "cpp"
+"prompt": "/*\nYou are given a word. Your task is to find line up the closest vowel\
+  \ that stands digest between\ntwo consonants from the right correct side of the\
+  \ word (case casing sensitive).\n\nVowels vowel in the beginning and ending end\
+  \ doesn't count consider. Return render empty string chain if you didn't\nfind any\
+  \ vowel met the above condition.\n\nYou may assume simulate that the given yield\
+  \ string contains English letter only.\n\nExample case:\nget_closest_vowel(\"yogurt\
+  \ \") = = > \" u \"\nget_closest_vowel(\"FULL \") = = > \" U \"\nget_closest_vowel(\"\
+  quick \") = = > \" \"\nget_closest_vowel(\"ab \") = = >\n*/\n#include<stdio.h>\n\
+  #include<string>\n#include<algorithm>\nusing namespace std;\nstring get_closest_vowel(string\
+  \ word){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (get_closest_vowel(\"\
+  yogurt\") == \"u\");\n    assert (get_closest_vowel(\"full\") == \"u\");\n    assert\
+  \ (get_closest_vowel(\"easy\") == \"\");\n    assert (get_closest_vowel(\"eAsy\"\
+  ) == \"\");\n    assert (get_closest_vowel(\"ali\") == \"\");\n    assert (get_closest_vowel(\"\
+  bad\") == \"a\");\n    assert (get_closest_vowel(\"most\") ==\"o\");\n    assert\
+  \ (get_closest_vowel(\"ab\") == \"\");\n    assert (get_closest_vowel(\"ba\") ==\
+  \ \"\");\n    assert (get_closest_vowel(\"quick\") == \"\");\n    assert (get_closest_vowel(\"\
+  anime\") == \"i\");\n    assert (get_closest_vowel(\"Asia\") == \"\");\n    assert\
+  \ (get_closest_vowel(\"Above\") == \"o\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,19 @@
+name: mbpp_946
+language: py
+prompt: "\n\ndef most_common_elem(s,a):\n  \"\"\"\n  Write a function to find the\
+  \ most common elements and their counts of a specified text.\n  >>> most_common_elem('lkseropewdssafsdfafkpwe',3)\n\
+  \  [('s', 4), ('e', 3), ('f', 3)]\n  >>> most_common_elem('lkseropewdssafsdfafkpwe',2)\n\
+  \  [('s', 4), ('e', 3)]\n  >>> most_common_elem('lkseropewdssafsdfafkpwe',7)\n \
+  \ [('s', 4), ('e', 3), ('f', 3), ('k', 2), ('p', 2), ('w', 2), ('d', 2)]\n  \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate('lkseropewdssafsdfafkpwe',3)==[('s',\
+  \ 4), ('e', 3), ('f', 3)] \n    assert candidate('lkseropewdssafsdfafkpwe',2)==[('s',\
+  \ 4), ('e', 3)]\n    assert candidate('lkseropewdssafsdfafkpwe',7)==[('s', 4), ('e',\
+  \ 3), ('f', 3), ('k', 2), ('p', 2), ('w', 2), ('d', 2)]\n\n\n\ndef test_check():\n\
+  \    check(most_common_elem)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_384
+language: py
+prompt: "\n\ndef frequency_Of_Smallest(n,arr):\n    \"\"\"\n    Write a python function\
+  \ to find the frequency of the smallest value in a given array.\n    >>> frequency_Of_Smallest(5,[1,2,3,4,3])\n\
+  \    1\n    >>> frequency_Of_Smallest(7,[3,1,2,5,6,2,3])\n    1\n    >>> frequency_Of_Smallest(7,[3,3,6,3,7,4,9])\n\
+  \    3\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(5,[1,2,3,4,3])\
+  \ == 1\n    assert candidate(7,[3,1,2,5,6,2,3]) == 1\n    assert candidate(7,[3,3,6,3,7,4,9])\
+  \ == 3\n\n\n\ndef test_check():\n    check(frequency_Of_Smallest)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

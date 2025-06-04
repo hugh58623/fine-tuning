@@ -1,0 +1,22 @@
+"name": "Java_121"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Given a non-empty list of integers, return the sum of all of the odd elements that\
+  \ will be in even positions.\n\n\nExamples\nsolution([5, 8, 7, 1])==> 12\nsolution([3,\
+  \ 3, 3, 3, 3])==> 9\nsolution([30, 13, 24, 321])==> 0\n\"\"\"\n*/*/\n    public\
+  \ int solution(List<Integer> lst) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.solution(Arrays.asList(5, 8, 7, 1)) == 12,\n                s.solution(Arrays.asList(3,\
+  \ 3, 3, 3, 3)) == 9,\n                s.solution(Arrays.asList(30, 13, 24, 321))\
+  \ == 0,\n                s.solution(Arrays.asList(5, 9)) == 5,\n               \
+  \ s.solution(Arrays.asList(2, 4, 8)) == 0,\n                s.solution(Arrays.asList(30,\
+  \ 13, 23, 32)) == 23,\n                s.solution(Arrays.asList(3, 13, 2, 9)) ==\
+  \ 3\n        );\n        if (correct.contains(false)) {\n            throw new AssertionError();\n\
+  \        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

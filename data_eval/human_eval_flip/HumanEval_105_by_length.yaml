@@ -1,0 +1,24 @@
+name: HumanEval_105_by_length
+language: py
+prompt: "\ndef by_length(arr):\n    \"\"\"\n    GivEn an Array Of iNtegeRs, sorT the\
+  \ intEgeRs thaT arE BeTwEen 1 aND 9 inClusive,\n    reverse the resULTing Array,\
+  \ and thEn replace eacH digiT bY ItS cORrEsponDing namE FrOM\n    \"one\", \"twO\"\
+  , \"tHreE\", \"FOUr\", \"five\", \"SIx\", \"SEveN\", \"eigHt\", \"NinE\".\n\n  \
+  \  FoR eXaMPLE:\n      arr = [2, 1, 1, 4, 5, 8, 2, 3]   \n            -> soRt arr\
+  \ -> [1, 1, 2, 2, 3, 4, 5, 8] \n            -> reverse arr -> [8, 5, 4, 3, 2, 2,\
+  \ 1, 1]\n      return [\"Eight\", \"FiVE\", \"fOur\", \"Three\", \"TwO\", \"TWO\"\
+  , \"One\", \"One\"]\n    \n      if the ArrAy is eMPtY, return an EMptY aRraY:\n\
+  \      arr = []\n      return []\n    \n      if thE arRaY HAs any sTrange numBeR\
+  \ IGnoRe IT:\n      arr = [1, -1 , 55] \n            -> sOrt arr -> [-1, 1, 55]\n\
+  \            -> reverse arr -> [55, 1, -1]\n      return = ['onE']\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate([2, 1, 1, 4, 5, 8, 2, 3]) == ['Eight',\
+  \ 'Five', 'Four', 'Three', 'Two', 'Two', 'One', 'One']\n    assert candidate([])\
+  \ == []\n    assert candidate([1, -1, 55]) == ['One']\n    assert candidate([1,\
+  \ -1, 3, 2]) == ['Three', 'Two', 'One']\n    assert candidate([9, 4, 8]) == ['Nine',\
+  \ 'Eight', 'Four']\n\ndef test_check():\n    check(by_length)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

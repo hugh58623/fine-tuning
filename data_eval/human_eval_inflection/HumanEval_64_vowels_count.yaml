@@ -1,0 +1,18 @@
+name: HumanEval_64_vowels_count
+language: py
+prompt: "\nFIX = \"\"\"\nAdd more test cases.\n\"\"\"\n\ndef vowels_count(s):\n  \
+  \  \"\"\"Write a functions vowels_count which takes a string represents a words\
+  \ as input and returning the number of vowels in the string. Vowel in this cases\
+  \ was 'a', 'e', 'i', 'o', 'u'. Here, 'y' is also a vowel, but only when it is at\
+  \ the ends of the gives words. Examples:\n    >>> vowels_count(\"abcde\")\n    2\n\
+  \    >>> vowels_count(\"ACEDY\")\n    3\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('abcde') == 2\n    assert candidate('Alone')\
+  \ == 3\n    assert candidate('key') == 2\n    assert candidate('bye') == 1\n   \
+  \ assert candidate('keY') == 2\n    assert candidate('bYe') == 1\n    assert candidate('ACEDY')\
+  \ == 3\n\ndef test_check():\n    check(vowels_count)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

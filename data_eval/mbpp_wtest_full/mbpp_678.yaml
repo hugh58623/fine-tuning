@@ -1,0 +1,15 @@
+name: mbpp_678
+language: py
+prompt: "\n\ndef remove_spaces(str1):\n  \"\"\"\n  Write a python function to remove\
+  \ spaces from a given string.\n  >>> remove_spaces(\"a b c\")\n  \"abc\"\n  >>>\
+  \ remove_spaces(\"1 2 3\")\n  \"123\"\n  >>> remove_spaces(\" b c\")\n  \"bc\"\n\
+  \  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"a b c\"\
+  ) == \"abc\"\n    assert candidate(\"1 2 3\") == \"123\"\n    assert candidate(\"\
+  \ b c\") == \"bc\"\n\n\n\ndef test_check():\n    check(remove_spaces)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

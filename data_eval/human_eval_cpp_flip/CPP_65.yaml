@@ -1,0 +1,17 @@
+"name": "CPP_65"
+"language": "cpp"
+"prompt": "/*\nCircUlar shift The diGitS of thE inteGer x, shift the dIgiTs rigHt\
+  \ bY shift\nAnD return tHe reSUlt As a string.\nIf shift > nuMBEr of Digits, return\
+  \ digiTs reversed.\n>>> circular_shift(12, 1)\n\"21\"\n>>> circular_shift(12, 2)\n\
+  \"12\"\n*/\n#include<stdio.h>\n#include<string>\nusing namespace std;\nstring circular_shift(int\
+  \ x,int shift){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (circular_shift(100,\
+  \ 2) == \"001\");\n    assert (circular_shift(12, 2) == \"12\");\n    assert (circular_shift(97,\
+  \ 8) == \"79\");\n    assert (circular_shift(12, 1) == \"21\");\n    assert (circular_shift(11,\
+  \ 101) == \"11\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

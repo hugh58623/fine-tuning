@@ -1,0 +1,19 @@
+"name": "CPP_140"
+"language": "cpp"
+"prompt": "/*\nGiven a string text, replace all spaces in it with underscores, \n\
+  and if a string has more than 2 consecutive spaces, \nthen replace all consecutive\
+  \ spaces with - \n\nfix_spaces(\"Example\") == \"Example\"\nfix_spaces(\"Example\
+  \ 1\") == \"Example_1\"\nfix_spaces(\" Example 2\") == \"_Example_2\"\nfix_spaces(\"\
+  \ Example   3\") == \"_Example-3\"\n*/\n#include<stdio.h>\n#include<string>\nusing\
+  \ namespace std;\nstring fix_spaces(string text){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (fix_spaces(\"\
+  Example\") == \"Example\");\n    assert (fix_spaces(\"Mudasir Hanif \") == \"Mudasir_Hanif_\"\
+  );\n    assert (fix_spaces(\"Yellow Yellow  Dirty  Fellow\") == \"Yellow_Yellow__Dirty__Fellow\"\
+  );\n    assert (fix_spaces(\"Exa   mple\") == \"Exa-mple\");\n    assert (fix_spaces(\"\
+  \   Exa 1 2 2 mple\") == \"-Exa_1_2_2_mple\");\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

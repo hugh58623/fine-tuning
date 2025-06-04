@@ -1,0 +1,15 @@
+name: mbpp_646
+language: py
+prompt: "\n\ndef No_of_cubes(N,K):\n    \"\"\"\n    Write a python function to count\
+  \ number of cubes of size k in a cube of size n.\n    >>> No_of_cubes(2,1)\n   \
+  \ 8\n    >>> No_of_cubes(5,2)\n    64\n    >>> No_of_cubes(1,1)\n    1\n    \"\"\
+  \"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(2,1) ==\
+  \ 8\n    assert candidate(5,2) == 64\n    assert candidate(1,1) == 1\n\n\n\ndef\
+  \ test_check():\n    check(No_of_cubes)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

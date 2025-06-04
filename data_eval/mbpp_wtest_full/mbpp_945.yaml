@@ -1,0 +1,16 @@
+name: mbpp_945
+language: py
+prompt: "\n\ndef tuple_to_set(t):\n  \"\"\"\n  Write a function to convert the given\
+  \ tuples into set.\n  >>> tuple_to_set(('x', 'y', 'z') )\n  {'y', 'x', 'z'}\n  >>>\
+  \ tuple_to_set(('a', 'b', 'c') )\n  {'c', 'a', 'b'}\n  >>> tuple_to_set(('z', 'd',\
+  \ 'e') )\n  {'d', 'e', 'z'}\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(('x', 'y',\
+  \ 'z') ) == {'y', 'x', 'z'}\n    assert candidate(('a', 'b', 'c') ) == {'c', 'a',\
+  \ 'b'}\n    assert candidate(('z', 'd', 'e') ) == {'d', 'e', 'z'}\n\n\n\ndef test_check():\n\
+  \    check(tuple_to_set)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

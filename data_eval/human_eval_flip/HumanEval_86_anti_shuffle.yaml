@@ -1,0 +1,22 @@
+name: HumanEval_86_anti_shuffle
+language: py
+prompt: "\ndef anti_shuffle(s):\n    \"\"\"\n    WriTe a fUnctiOn tHat taKes a sTring\
+  \ anD reTurns An oRDeReD verSIon Of it.\n    Ordered veRSIon oF string, is a String\
+  \ where aLl worDs (SEpArATeD by spAce)\n    are rEPlACEd bY a NEW woRd WHeRe all\
+  \ The ChaRActErs arRanGeD in\n    aSCENdiNg order baSED On ascii valUe.\n    nOte:\
+  \ You sHould KeeP the oRDeR of WOrdS aNd bLAnk sPacEs in THE senteNce.\n\n    For\
+  \ exaMpLE:\n    AntI_sHUfFle('hi') RETuRnS 'HI'\n    anti_ShufFle('hello') REtURns\
+  \ 'ehllo'\n    anTi_shUffle('HElLO WORLd!!!') rEtuRns 'HelLo !!!WdLoR'\n    \"\"\
+  \"\n"
+tests: "def check(candidate):\n    assert candidate('Hi') == 'Hi'\n    assert candidate('hello')\
+  \ == 'ehllo'\n    assert candidate('number') == 'bemnru'\n    assert candidate('abcd')\
+  \ == 'abcd'\n    assert candidate('Hello World!!!') == 'Hello !!!Wdlor'\n    assert\
+  \ candidate('') == ''\n    assert candidate('Hi. My name is Mister Robot. How are\
+  \ you?') == '.Hi My aemn is Meirst .Rboot How aer ?ouy'\n\ndef test_check():\n \
+  \   check(anti_shuffle)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

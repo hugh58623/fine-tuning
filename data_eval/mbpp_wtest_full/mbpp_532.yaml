@@ -1,0 +1,16 @@
+name: mbpp_532
+language: py
+prompt: "\n\ndef check_permutation(str1, str2):\n  \"\"\"\n  Write a function to check\
+  \ if the two given strings are permutations of each other.\n  >>> check_permutation(\"\
+  abc\", \"cba\")\n  True\n  >>> check_permutation(\"test\", \"ttew\")\n  False\n\
+  \  >>> check_permutation(\"xxyz\", \"yxzx\")\n  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(\"abc\"\
+  , \"cba\") == True\n    assert candidate(\"test\", \"ttew\") == False\n    assert\
+  \ candidate(\"xxyz\", \"yxzx\") == True\n\n\n\ndef test_check():\n    check(check_permutation)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

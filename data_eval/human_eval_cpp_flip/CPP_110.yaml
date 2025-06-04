@@ -1,0 +1,25 @@
+"name": "CPP_110"
+"language": "cpp"
+"prompt": "/*\nIn thIs prOblem, You Will iMplemEnt a funCtiOn thaT taKEs TwO lisTS\
+  \ of Numbers,\nand detERMineS whether it Is possible to PerfoRm AN exchange oF eLEmEnts\n\
+  bEtween tHEm TO MakE lst1 a list OF OnlY even nUMbErs.\nThEre Is nO LimIt on tHe\
+  \ nUmBeR OF ExcHanged eleMENTs between lst1 aNd lst2.\niF it is poSsiblE to exchange\
+  \ ElemeNTs BetWEen ThE lst1 anD lst2 To maKe\naLl THE elemeNts of lst1 to be even,\
+  \ return \"yEs\".\noTheRwISe, return \"nO\".\nFOr EXAmPlE:\nexchange([1, 2, 3, 4],\
+  \ [1, 2, 3, 4]) => \"YeS\"\nexchange([1, 2, 3, 4], [1, 5, 3, 4]) => \"NO\"\nIT is\
+  \ aSsumed thAT tHE input listS wilL be non-EmPTy.\n*/\n#include<stdio.h>\n#include<vector>\n\
+  #include<string>\nusing namespace std;\nstring exchange(vector<int> lst1,vector<int>\
+  \ lst2){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (exchange({1,\
+  \ 2, 3, 4}, {1, 2, 3, 4}) == \"YES\");\n    assert (exchange({1, 2, 3, 4}, {1, 5,\
+  \ 3, 4}) == \"NO\");\n    assert (exchange({1, 2, 3, 4}, {2, 1, 4, 3}) == \"YES\"\
+  \ );\n    assert (exchange({5, 7, 3}, {2, 6, 4}) == \"YES\");\n    assert (exchange({5,\
+  \ 7, 3}, {2, 6, 3}) == \"NO\" );\n    assert (exchange({3, 2, 6, 1, 8, 9}, {3, 5,\
+  \ 5, 1, 1, 1}) == \"NO\");\n    assert (exchange({100, 200}, {200, 200}) == \"YES\"\
+  );\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

@@ -1,0 +1,15 @@
+name: mbpp_46
+language: py
+prompt: "\n\ndef test_distinct(data):\n  \"\"\"\n  Write a python function to determine\
+  \ whether all the numbers are different from each other are not.\n  >>> test_distinct([1,5,7,9])\n\
+  \  True\n  >>> test_distinct([2,4,5,5,7,9])\n  False\n  >>> test_distinct([1,2,3])\n\
+  \  True\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1,5,7,9])\
+  \ == True\n    assert candidate([2,4,5,5,7,9]) == False\n    assert candidate([1,2,3])\
+  \ == True\n\n\n\ndef test_check():\n    check(test_distinct)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

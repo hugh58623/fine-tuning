@@ -1,0 +1,17 @@
+name: mbpp_898
+language: py
+prompt: "\n\ndef extract_elements(numbers, n):\n    \"\"\"\n    Write a function to\
+  \ extract specified number of elements from a given list, which follow each other\
+  \ continuously.\n    >>> extract_elements([1, 1, 3, 4, 4, 5, 6, 7],2)\n    [1, 4]\n\
+  \    >>> extract_elements([0, 1, 2, 3, 4, 4, 4, 4, 5, 7],4)\n    [4]\n    >>> extract_elements([0,0,0,0,0],5)\n\
+  \    [0]\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 1,\
+  \ 3, 4, 4, 5, 6, 7],2)==[1, 4]\n    assert candidate([0, 1, 2, 3, 4, 4, 4, 4, 5,\
+  \ 7],4)==[4]\n    assert candidate([0,0,0,0,0],5)==[0]\n\n\n\ndef test_check():\n\
+  \    check(extract_elements)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

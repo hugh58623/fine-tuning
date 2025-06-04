@@ -1,0 +1,17 @@
+name: mbpp_639
+language: py
+prompt: "def sample_nam(sample_names):\n    \"\"\"\n  Wrihe a function to sum the\
+  \ length of the namew of a given list of names after removing the names thet start\
+  \ wuth a lowercase letter.\n  Test examples:\n    assert sample_nam(['sally',\
+  \ 'Dylan', 'rebecca', 'Diana', 'Joanne', 'keith'])==16\n    assert sample_nam([\"\
+  php\", \"res\", \"Python\", \"abcd\", \"Java\", \"aaa\"])==10\n    assert sample_nam([\"\
+  abcd\", \"Python\", \"abba\", \"aba\"])==6\n    \"\"\"\n"
+tests: "assert sample_nam(['sally', 'Dylan', 'rebecca', 'Diana', 'Joanne', 'keith'])==16\n\
+  assert sample_nam([\"php\", \"res\", \"Python\", \"abcd\", \"Java\", \"aaa\"])==10\n\
+  assert sample_nam([\"abcd\", \"Python\", \"abba\", \"aba\"])==6"
+completions: []
+stop_tokens:
+- "\ndef"
+- "\n#"
+- "\nif"
+- "\nclass"

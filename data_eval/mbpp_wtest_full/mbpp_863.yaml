@@ -1,0 +1,17 @@
+name: mbpp_863
+language: py
+prompt: "\n\ndef find_longest_conseq_subseq(arr, n):\n\t\"\"\"\n\tWrite a function\
+  \ to find the length of the longest sub-sequence such that elements in the subsequences\
+  \ are consecutive integers.\n\t>>> find_longest_conseq_subseq([1, 2, 2, 3], 4)\n\
+  \t3\n\t>>> find_longest_conseq_subseq([1, 9, 3, 10, 4, 20, 2], 7)\n\t4\n\t>>> find_longest_conseq_subseq([36,\
+  \ 41, 56, 35, 44, 33, 34, 92, 43, 32, 42], 11)\n\t5\n\t\"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([1, 2,\
+  \ 2, 3], 4) == 3\n    assert candidate([1, 9, 3, 10, 4, 20, 2], 7) == 4\n    assert\
+  \ candidate([36, 41, 56, 35, 44, 33, 34, 92, 43, 32, 42], 11) == 5\n\n\n\ndef test_check():\n\
+  \    check(find_longest_conseq_subseq)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,15 @@
+name: mbpp_365
+language: py
+prompt: "\n\ndef count_Digit(n):\n    \"\"\"\n    Write a python function to count\
+  \ the number of digits of a given number.\n    >>> count_Digit(12345)\n    5\n \
+  \   >>> count_Digit(11223305)\n    8\n    >>> count_Digit(4123459)\n    7\n    \"\
+  \"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(12345)\
+  \ == 5\n    assert candidate(11223305) == 8\n    assert candidate(4123459) == 7\n\
+  \n\n\ndef test_check():\n    check(count_Digit)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

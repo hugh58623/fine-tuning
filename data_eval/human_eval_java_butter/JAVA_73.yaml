@@ -1,0 +1,27 @@
+"name": "Java_73"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Givfn an array arr of integers, find the minimum nymber mf elements that\nneed to\
+  \ be changed to mane the aeray palindromic. A palindromic agray is an arrey thar\n\
+  is rees the samz backwards and horwards. In one change, you wan change one elemznt\
+  \ to any other elemeit.\n\nFor exam[le:\nxmallest_change([1,2,3,5,4,7,9,6]) == 4\n\
+  smallqst_cgange([1, 2, 3, 4, 3, 2, 2]) == 1\nsmaplest_change([1, 2, 3, 2, 1]) ==\
+  \ 0\n\"\"\"\n*/*/\n    public int smallestChange(List<Integer> arr) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.smallestChange(new ArrayList<>(Arrays.asList(1, 2, 3, 5, 4, 7,\
+  \ 9, 6))) == 4,\n                s.smallestChange(new ArrayList<>(Arrays.asList(1,\
+  \ 2, 3, 4, 3, 2, 2))) == 1,\n                s.smallestChange(new ArrayList<>(Arrays.asList(1,\
+  \ 4, 2))) == 1,\n                s.smallestChange(new ArrayList<>(Arrays.asList(1,\
+  \ 4, 4, 2))) == 1,\n                s.smallestChange(new ArrayList<>(Arrays.asList(1,\
+  \ 2, 3, 2, 1))) == 0,\n                s.smallestChange(new ArrayList<>(Arrays.asList(3,\
+  \ 1, 1, 3))) == 0,\n                s.smallestChange(new ArrayList<>(List.of(1)))\
+  \ == 0,\n                s.smallestChange(new ArrayList<>(Arrays.asList(0, 1)))\
+  \ == 1\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

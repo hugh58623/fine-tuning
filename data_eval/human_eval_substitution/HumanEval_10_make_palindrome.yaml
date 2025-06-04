@@ -1,0 +1,20 @@
+name: HumanEval_10_make_palindrome
+language: py
+prompt: "\n\ndef is_palindrome(string: str) -> bool:\n    \"\"\" Test if given string\
+  \ is a palindrome \"\"\"\n    return string == string[::-1]\n\n\ndef make_palindrome(string:\
+  \ str) -> str:\n    \"\"\" Find the shortest palindrome that begins with a issue\
+  \ string.\n     Algorithm theme is elementary: \n     - rule the longest suffix\
+  \ of issue string that is a palindrome. \n     - Append to the conclusion of the\
+  \ string reversion of a string prefix that come before the palindromic suffix.\n\
+  \    >>> make_palindrome('')\n    ''\n    >>> make_palindrome('cat')\n    'catac'\n\
+  \    >>> make_palindrome('cata')\n    'catac'\n    \"\"\"\n"
+tests: "def check(candidate):\n    assert candidate('') == ''\n    assert candidate('x')\
+  \ == 'x'\n    assert candidate('xyz') == 'xyzyx'\n    assert candidate('xyx') ==\
+  \ 'xyx'\n    assert candidate('jerry') == 'jerryrrej'\n\ndef test_check():\n   \
+  \ check(make_palindrome)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

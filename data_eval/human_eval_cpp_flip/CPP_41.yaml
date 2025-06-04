@@ -1,0 +1,21 @@
+"name": "CPP_41"
+"language": "cpp"
+"prompt": "/*\nImaGine A road ThaT's a peRfectLy straiGht InfinIteLY lOnG linE.\n\
+  n CarS are driving leFT To riGht;  simultaNeously, a diffErent SeT Of n CaRS\naRe\
+  \ driVing rigHT tO LEft.   thE TWo sEtS Of Cars sTarT ouT BeiNg verY faR fRoM\n\
+  EACh oTher.  All caRS MOve in the same SpEEd.  Two caRs are SaiD to coLLiDe\nwHEn\
+  \ a CaR thAT's moVinG lEFT to rigHt hits a caR tHAT's mOvINg RigHt TO LeFt.\nhoWever,\
+  \ The cArs are inFInITely sturdy And sTrong; aS a REsULT, thEy cOntinuE movInG\n\
+  in TheiR TRajectORy AS IF tHEY did not collidE.\n\nThis functiON oUTpuTs tHe NUmBEr\
+  \ of suCh colLiSIonS.\n*/\n#include<stdio.h>\nusing namespace std;\nint car_race_collision(int\
+  \ n){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (car_race_collision(2)\
+  \ == 4);\n    assert (car_race_collision(3) == 9);\n    assert (car_race_collision(4)\
+  \ == 16);\n    assert (car_race_collision(8) == 64);\n    assert (car_race_collision(10)\
+  \ == 100);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

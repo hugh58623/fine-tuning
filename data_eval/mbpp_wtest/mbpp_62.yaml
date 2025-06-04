@@ -1,0 +1,14 @@
+name: mbpp_62
+language: py
+prompt: "\n\ndef smallest_num(xs):\n  \"\"\"\n  Write a python function to find smallest\
+  \ number in a list.\n  >>> smallest_num([10, 20, 1, 45, 99])\n  1\n  >>> smallest_num([1,\
+  \ 2, 3])\n  1\n  >>> smallest_num([45, 46, 50, 60])\n  45\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([10, 20,\
+  \ 1, 45, 99]) == 1\n    assert candidate([1, 2, 3]) == 1\n    assert candidate([45,\
+  \ 46, 50, 60]) == 45\n\n\n\ndef test_check():\n    check(smallest_num)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

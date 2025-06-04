@@ -1,0 +1,17 @@
+name: mbpp_875
+language: py
+prompt: "\n\ndef min_difference(test_list):\n  \"\"\"\n  Write a function to find\
+  \ the minimum difference in the tuple pairs of given tuples.\n  >>> min_difference([(3,\
+  \ 5), (1, 7), (10, 3), (1, 2)])\n  1\n  >>> min_difference([(4, 6), (12, 8), (11,\
+  \ 4), (2, 13)])\n  2\n  >>> min_difference([(5, 17), (3, 9), (12, 5), (3, 24)])\n\
+  \  6\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([(3, 5),\
+  \ (1, 7), (10, 3), (1, 2)]) == 1\n    assert candidate([(4, 6), (12, 8), (11, 4),\
+  \ (2, 13)]) == 2\n    assert candidate([(5, 17), (3, 9), (12, 5), (3, 24)]) == 6\n\
+  \n\n\ndef test_check():\n    check(min_difference)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

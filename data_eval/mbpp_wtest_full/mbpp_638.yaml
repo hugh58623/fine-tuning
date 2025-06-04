@@ -1,0 +1,14 @@
+name: mbpp_638
+language: py
+prompt: "\n\ndef wind_chill(v,t):\n \"\"\"\n Write a function to calculate wind chill\
+  \ index.\n >>> wind_chill(120,35)\n 40\n >>> wind_chill(40,70)\n 86\n >>> wind_chill(10,100)\n\
+  \ 116\n \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(120,35)==40\n\
+  \    assert candidate(40,70)==86\n    assert candidate(10,100)==116\n\n\n\ndef test_check():\n\
+  \    check(wind_chill)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

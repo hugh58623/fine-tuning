@@ -1,0 +1,19 @@
+"name": "CPP_75"
+"language": "cpp"
+"prompt": "/*\nWriet a function that rteurns true if the given number is the multipilcation\
+  \ of 3 prmie numbers\nand false otherwise.\nKnowing that (a) is less then 100.\n\
+  Example:\nis_multiply_prime(30) == True\n30 = 2 * 3 * 5\n*/\n#include<stdio.h>\n\
+  using namespace std;\nbool is_multiply_prime(int a){\n"
+"tests": "#undef NDEBUG\n#include<assert.h>\nint main(){\n    assert (is_multiply_prime(5)\
+  \ == false);\n    assert (is_multiply_prime(30) == true);\n    assert (is_multiply_prime(8)\
+  \ == true);\n    assert (is_multiply_prime(10) == false);\n    assert (is_multiply_prime(125)\
+  \ == true);\n    assert (is_multiply_prime(3 * 5 * 7) == true);\n    assert (is_multiply_prime(3\
+  \ * 6 * 7) == false);\n    assert (is_multiply_prime(9 * 9 * 9) == false);\n   \
+  \ assert (is_multiply_prime(11 * 9 * 9) == false);\n    assert (is_multiply_prime(11\
+  \ * 13 * 7) == true);\n}\n"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

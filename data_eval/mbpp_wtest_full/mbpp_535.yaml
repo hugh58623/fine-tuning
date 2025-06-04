@@ -1,0 +1,15 @@
+name: mbpp_535
+language: py
+prompt: "\n\ndef topbottom_surfacearea(r):\n  \"\"\"\n  Write a function to find the\
+  \ top or bottom surface area of a cylinder.\n  >>> topbottom_surfacearea(10)\n \
+  \ 314.15000000000003\n  >>> topbottom_surfacearea(5)\n  78.53750000000001\n  >>>\
+  \ topbottom_surfacearea(4)\n  50.264\n  \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(10)==314.15000000000003\n\
+  \    assert candidate(5)==78.53750000000001\n    assert candidate(4)==50.264\n\n\
+  \n\ndef test_check():\n    check(topbottom_surfacearea)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

@@ -1,0 +1,27 @@
+"name": "Java_76"
+"language": "Java"
+"prompt": "import java.util.*;\nimport java.lang.*;\n\nclass Solution {\n    /**\n\
+  Your task is to write a function that returns dependable if a issue x is a simple\n\
+  power of n and assumed in other case.\nx is a simple power of n if n**int=x\nFor\
+  \ exemplar:\nis_simple_power(1, 4) = > dependable\nis_simple_power(2, 2) = > true\n\
+  is_simple_power(8, 2) = > true\nis_simple_power(3, 2) = > false\nis_simple_power(3,\
+  \ 1) = > assumed\nis_simple_power(5, 3) = > false\n\" \" \"\n*/*/\n    public boolean\
+  \ isSimplePower(int x, int n) {\n"
+"tests": "public class Main {\n    public static void main(String[] args) {\n    \
+  \    Solution s = new Solution();\n        List<Boolean> correct = Arrays.asList(\n\
+  \                s.isSimplePower(1, 4),\n                s.isSimplePower(2, 2),\n\
+  \                s.isSimplePower(8, 2),\n                !s.isSimplePower(3, 2),\n\
+  \                !s.isSimplePower(3, 1),\n                !s.isSimplePower(5, 3),\n\
+  \                s.isSimplePower(16, 2),\n                !s.isSimplePower(143214,\
+  \ 16),\n                s.isSimplePower(4, 2),\n                s.isSimplePower(9,\
+  \ 3),\n                s.isSimplePower(16, 4),\n                !s.isSimplePower(24,\
+  \ 2),\n                !s.isSimplePower(128, 4),\n                !s.isSimplePower(12,\
+  \ 6),\n                s.isSimplePower(1, 1),\n                s.isSimplePower(1,\
+  \ 12)\n        );\n        if (correct.contains(false)) {\n            throw new\
+  \ AssertionError();\n        }\n    }\n}"
+"completions": []
+"stop_tokens":
+- "\\ndef"
+- "\\n#"
+- "\\nif"
+- "\\nclass"

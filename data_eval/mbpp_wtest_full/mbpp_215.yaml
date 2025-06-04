@@ -1,0 +1,20 @@
+name: mbpp_215
+language: py
+prompt: "\n\ndef decode_list(alist):\n    \"\"\"\n    Write a function to decode a\
+  \ run-length encoded given list.\n    >>> decode_list([[2, 1], 2, 3, [2, 4], 5,1])\n\
+  \    [1,1,2,3,4,4,5,1]\n    >>> decode_list(['a', 'u', 't', 'o', 'm', 'a', 't',\
+  \ 'i', 'c', 'a', [2, 'l'], 'y'])\n    ['a', 'u', 't', 'o', 'm', 'a', 't', 'i', 'c',\
+  \ 'a', 'l', 'l', 'y']\n    >>> decode_list(['p', 'y', 't', 'h', 'o', 'n'])\n   \
+  \ ['p', 'y', 't', 'h', 'o', 'n']\n    \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate([[2, 1],\
+  \ 2, 3, [2, 4], 5,1])==[1,1,2,3,4,4,5,1]\n    assert candidate(['a', 'u', 't', 'o',\
+  \ 'm', 'a', 't', 'i', 'c', 'a', [2, 'l'], 'y'])==['a', 'u', 't', 'o', 'm', 'a',\
+  \ 't', 'i', 'c', 'a', 'l', 'l', 'y']\n    assert candidate(['p', 'y', 't', 'h',\
+  \ 'o', 'n'])==['p', 'y', 't', 'h', 'o', 'n']\n\n\n\ndef test_check():\n    check(decode_list)\n\
+  \ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass

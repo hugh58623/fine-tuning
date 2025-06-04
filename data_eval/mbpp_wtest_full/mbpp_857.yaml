@@ -1,0 +1,25 @@
+name: mbpp_857
+language: py
+prompt: "\n\ndef listify_list(list1):\n  \"\"\"\n  Write a function to list out the\
+  \ list of given strings individually using map function.\n  >>> listify_list(['Red',\
+  \ 'Blue', 'Black', 'White', 'Pink'])\n  [['R', 'e', 'd'], ['B', 'l', 'u', 'e'],\
+  \ ['B', 'l', 'a', 'c', 'k'], ['W', 'h', 'i', 't', 'e'], ['P', 'i', 'n', 'k']]\n\
+  \  >>> listify_list(['python'])\n  [['p', 'y', 't', 'h', 'o', 'n']]\n  >>> listify_list(['\
+  \ red ', 'green',' black', 'blue ',' orange', 'brown'])\n  [[' ', 'r', 'e', 'd',\
+  \ ' '], ['g', 'r', 'e', 'e', 'n'], [' ', 'b', 'l', 'a', 'c', 'k'], ['b', 'l', 'u',\
+  \ 'e', ' '], [' ', 'o', 'r', 'a', 'n', 'g', 'e'], ['b', 'r', 'o', 'w', 'n']]\n \
+  \ \"\"\"\n"
+tests: "\n\nMETADATA = {}\n\n\ndef check(candidate):\n    assert candidate(['Red',\
+  \ 'Blue', 'Black', 'White', 'Pink'])==[['R', 'e', 'd'], ['B', 'l', 'u', 'e'], ['B',\
+  \ 'l', 'a', 'c', 'k'], ['W', 'h', 'i', 't', 'e'], ['P', 'i', 'n', 'k']]\n    assert\
+  \ candidate(['python'])==[['p', 'y', 't', 'h', 'o', 'n']]\n    assert candidate(['\
+  \ red ', 'green',' black', 'blue ',' orange', 'brown'])==[[' ', 'r', 'e', 'd', '\
+  \ '], ['g', 'r', 'e', 'e', 'n'], [' ', 'b', 'l', 'a', 'c', 'k'], ['b', 'l', 'u',\
+  \ 'e', ' '], [' ', 'o', 'r', 'a', 'n', 'g', 'e'], ['b', 'r', 'o', 'w', 'n']]\n\n\
+  \n\ndef test_check():\n    check(listify_list)\n\ntest_check()\n"
+completions: []
+stop_tokens:
+- \ndef
+- \n#
+- \nif
+- \nclass
