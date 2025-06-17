@@ -5,7 +5,7 @@ The repository contains the detailed results and replication package for the pap
 
 Our proposed approach of our experiments and our research questions:
 
-![Framework](./overview.pdf  "Our proposed approach in this study to address our RQs")
+![Framework](./overview.png  "Our proposed approach in this study to address our RQs")
 
 We use this repository to answer following research questions:
 
