@@ -1,4 +1,4 @@
-# Log Representation - Supplimental Materials
+# Finetuning
 The repository contains the detailed results and replication package for the paper "Improving Robustness of Large Language Models in Code Task by Fine-tuning with Perturbed Data".
 
 ## Introduction
